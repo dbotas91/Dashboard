@@ -47,7 +47,7 @@ kanban-plugin: board
 - [x] [[A importância de dividir BEM]] ✅ 2025-10-27
 - [x] [[Não te desvies da Verdade]] ✅ 2025-10-27
 - [x] [[Compreende e memoriza]] ✅ 2025-10-27
-- [x] [[Estão todos perdoados?]] ✅ 2025-10-27
+- [x] [[Estão todos perdoados]] ✅ 2025-10-27
 - [x] [[O inferno e a provisão de Deus]] ✅ 2025-10-27
 - [x] [[Ingratidão e murmúrio]] ✅ 2025-10-27
 - [x] [[Salmo 8.38]] ✅ 2025-10-27

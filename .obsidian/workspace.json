@@ -11,15 +11,24 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/obsidian-git/data.json",
-                "bFile": ".obsidian/plugins/obsidian-git/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Estão todos perdoados.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
+              "icon": "lucide-file",
+              "title": "Estão todos perdoados"
             }
           }
         ]
@@ -270,11 +279,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Ciência explica Deus.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Entendimento e compreensão.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
