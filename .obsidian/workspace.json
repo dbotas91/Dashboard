@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Estão todos perdoados.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Predestinados.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Estão todos perdoados"
+              "title": "Predestinados"
             }
           }
         ]
@@ -63,10 +63,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "?",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -94,11 +94,12 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 516.5026054382324
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -279,8 +280,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "09 - STATUS NOTES/Adult.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estão todos perdoados.md",
+    "09 - STATUS NOTES/Adult.md",
     "Home.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",

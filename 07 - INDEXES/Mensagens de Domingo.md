@@ -82,7 +82,7 @@ kanban-plugin: board
 - [x] [[Paradigma da natureza]] ✅ 2025-11-28
 - [x] [[Obra de Deus]] ✅ 2025-11-28
 - [x] [[Boas batalhas para bons soldados]] ✅ 2025-11-28
-- [x] [[Predestinados?]] ✅ 2025-11-28
+- [x] [[Predestinados]] ✅ 2025-11-28
 - [x] [[Guardar Silêncio]] ✅ 2025-11-28
 - [x] [[Pés]] ✅ 2025-11-28
 - [x] [[Resoluções de Ano Novo]] ✅ 2025-11-28
