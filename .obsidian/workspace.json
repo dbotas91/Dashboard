@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "e8a5997fe90a7b8b",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "0aa46a1778706ab0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "split-diff-view",
               "state": {
-                "file": "08 - ATTACHMENTS/Attachments/1ZKnU8s47Aw.jpeg"
+                "aFile": ".obsidian/plugins/recent-files-obsidian/data.json",
+                "bFile": ".obsidian/plugins/recent-files-obsidian/data.json",
+                "aRef": ""
               },
-              "icon": "lucide-image",
-              "title": "1ZKnU8s47Aw"
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
             }
           }
         ]
@@ -86,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 641.5026054382324
+    "width": 310.5026054382324
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -265,10 +267,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d187ad581aa11266",
+  "active": "0aa46a1778706ab0",
   "lastOpenFiles": [
-    "08 - ATTACHMENTS/Attachments/1i-nTw.png",
+    "Home.md",
+    "09 - STATUS NOTES/Adult.md",
     "08 - ATTACHMENTS/Attachments/1ZKnU8s47Aw.jpeg",
+    "08 - ATTACHMENTS/Attachments/1i-nTw.png",
     "08 - ATTACHMENTS/Attachments/1D1F63DB-2354-4315-8E2A-AD36A24CFC64.jpeg",
     "08 - ATTACHMENTS/Attachments/1*CSkNDtkCWSewONFLGi-nTw1.png",
     "08 - ATTACHMENTS/b545f302-6e3b-472b-8110-493d34c52c1e_Secularismo_e_a_maldio_das_naes.pdf",
@@ -279,11 +283,8 @@
     "08 - ATTACHMENTS/Attachments/zap 1.svg",
     "08 - ATTACHMENTS/Attachments/zap.svg",
     "08 - ATTACHMENTS/Attachments/youtube.svg",
-    "08 - ATTACHMENTS/Attachments/youtube.png",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Predestinados.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estão todos perdoados.md",
-    "09 - STATUS NOTES/Adult.md",
-    "Home.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",

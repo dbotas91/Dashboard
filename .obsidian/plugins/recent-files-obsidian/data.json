@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "Adult",
+      "path": "09 - STATUS NOTES/Adult.md"
+    },
+    {
       "basename": "1ZKnU8s47Aw",
       "path": "08 - ATTACHMENTS/Attachments/1ZKnU8s47Aw.jpeg"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Untitled 47 1",
       "path": "08 - ATTACHMENTS/Attachments/Untitled 47 1.png"
-    },
-    {
-      "basename": "Untitled 47",
-      "path": "08 - ATTACHMENTS/Attachments/Untitled 47.png"
-    },
-    {
-      "basename": "Untitled 48",
-      "path": "08 - ATTACHMENTS/Attachments/Untitled 48.png"
     }
   ],
   "omittedPaths": [],
