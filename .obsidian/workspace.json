@@ -11,24 +11,12 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Predestinados.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "08 - ATTACHMENTS/Attachments/1*CSkNDtkCWSewONFLGi-nTw1.png"
               },
-              "icon": "lucide-file",
-              "title": "Predestinados"
+              "icon": "lucide-image",
+              "title": "1*CSkNDtkCWSewONFLGi-nTw1"
             }
           }
         ]
@@ -94,8 +82,7 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -278,8 +265,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "d187ad581aa11266",
   "lastOpenFiles": [
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Predestinados.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estão todos perdoados.md",
     "09 - STATUS NOTES/Adult.md",
     "Home.md",
@@ -305,7 +293,6 @@
     "07 - INDEXES/Cozinha.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Não te desvies da Verdade.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Vários Batismos.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que cada cristão deve saber acerca do Islão.md",
     "Reuniões de Jovens",
     "Meditações",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled.base",
