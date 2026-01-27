@@ -1,0 +1,8 @@
+---
+dg-pubish: "true"
+dg-publish: "true"
+dg-note-icon: signpost
+dgPassFrontmatter: "true"
+noteIcon: signpost
+---
+[[Home|Back home]]

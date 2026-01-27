@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- signpost.svg -->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="150" height="205" version="1.1" viewBox="0 0 39.688 54.24" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0 -.8262)" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Avatar à esquerda -->
+    <circle cx="19.3" cy="10.3" r="4" stroke-width="2.4"/>
+    <path d="M13.3 21c2.8-2.4 5.2-3.4 6.4-3.4s3.6 1 6.4 3.4" stroke-width="2.3"/>
+    <!-- Mastro -->
+    <path d="M26.8 7.2v18.4" stroke-width="2.4"/>
+    <!-- Bandeira direcional -->
+    <path d="M26.8 9.2h7l2.2 2.2-2.2 2.2h-7z" stroke-width="2.4"/>
+    <!-- Tronco (vertical a partir do centro) -->
+    <path d="M19.844 20.6v15.8" stroke-width="2.6"/>
+    <!-- Pernas (duas hastes com ligeira abertura) -->
+    <path d="M17.2 38.2l-3.2 6.8" stroke-width="2.6"/>
+    <path d="M22.5 38.2l3.2 6.8" stroke-width="2.6"/>
+    <!-- Base -->
+    <path d="M6.9 47.743h25.896" stroke-width="2.6"/>
+  </g>
+</svg>

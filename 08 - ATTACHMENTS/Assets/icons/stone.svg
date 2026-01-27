@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- stone.svg (faceted, shapier) -->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="150" height="205" version="1.1" viewBox="0 0 39.688 54.24" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0 -.8262)" fill="none" stroke="#9CA3AF" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cabeça -->
+    <circle cx="19.844" cy="10.1" r="4.1" stroke-width="2.4"/>
+    <!-- Busto neutro -->
+    <path d="M11.2 21c3.2-2.4 6.2-3.4 8.6-3.4s5.4 1 8.6 3.4" stroke-width="2.3"/>
+
+    <!-- Tronco (vertical a partir do centro) -->
+    <path d="M19.844 20.6v15.8" stroke-width="2.6"/>
+    <!-- Pernas (duas hastes com ligeira abertura) -->
+    <path d="M17.2 38.2l-3.2 6.8" stroke-width="2.6"/>
+    <path d="M22.5 38.2l3.2 6.8" stroke-width="2.6"/>
+
+    <!-- Pedra facetada (substitui o crachá/tag) -->
+    <!-- Polígono principal (octagonal-ish) -->
+    <path d="M26.4 24.0l3.0 0.6 2.0 2.2-0.6 3.0-2.2 2.0-3.0-0.6-2.0-2.2 0.6-3.0z" stroke-width="2.2"/>
+    <!-- Facetas internas -->
+    <path d="M27.2 24.6l1.6 1.2M29.2 25.0l1.3 1.7M29.8 27.2l-0.8 1.8M28.0 29.0l-1.8-0.8M26.8 27.6l-1.2-1.6" stroke-width="1.8"/>
+
+    <!-- Base (mais próxima dos pés) -->
+    <path d="M6.9 47.743h25.896" stroke-width="2.6"/>
+  </g>
+</svg>

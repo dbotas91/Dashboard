@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- legacy.svg -->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="150" height="205" version="1.1" viewBox="0 0 39.688 54.24" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0 -.8262)" fill="none" stroke="#C9A227" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cabeça -->
+    <circle cx="19.844" cy="9.6" r="4.3" stroke-width="2.5"/>
+    <!-- Busto/ombros -->
+    <path d="M10.2 22.2c2.7-3.3 6.2-4.6 9.6-4.6s6.9 1.3 9.6 4.6" stroke-width="2.4"/>
+
+    <!-- Tronco (vertical a partir do centro) -->
+    <path d="M19.844 17.6v15.8" stroke-width="2.6"/>
+
+    <!-- Vara esquerda: linha reta da base até ao início da cabeça -->
+    <!-- Início da cabeça está aproximadamente em y = 5.3 (9.6 - 4.3), usamos x ~ 12.0 para alinhar com o ombro esquerdo -->
+    <path d="M12 40.2V14.3" stroke-width="2.4"/>
+
+    <!-- Pernas (duas hastes com ligeira abertura) -->
+    <path d="M17.2 33.2l-3.2 6.8" stroke-width="2.6"/>
+    <path d="M22.5 33.2l3.2 6.8" stroke-width="2.6"/>
+
+    <!-- Medalha/roseta -->
+    <circle cx="28.8" cy="26.4" r="2.1" stroke-width="2.2"/>
+    <path d="M28.8 28.3l1.7 3.2-3.2-1.7-3.2 1.7 1.7-3.2" stroke-width="2.2"/>
+
+    <!-- Base aproximada aos pés -->
+    <path d="M6.9 40.2h25.896" stroke-width="2.6"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="150" height="205" version="1.1" viewBox="0 0 39.688 54.24" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0 -.8262)" fill="none" stroke="#7EC8E3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Chapéu: aba + topo -->
+    <!-- Aba do chapéu, ligeiramente curvada, centrada na cabeça -->
+    <path d="M15.6 8.4c1.6-1.2 3.3-1.8 4.2-1.8 0 0 1.8.2 3.8 1.5" stroke-width="2.3"/>
+    <!-- Pala reta (direita) -->
+    <path d="M22.6 9.0 L27.2 9.0" stroke-width="2.3"/>
+
+    <!-- Cabeça (menor) -->
+    <circle cx="19.844" cy="11.5" r="3.6" stroke-width="2.4"/>
+    <!-- Tronco curto -->
+    <path d="M19.844 15.5v14.2" stroke-width="2.4"/>
+    <!-- Braços curtos -->
+    <path d="M12.5 19.3h14.688" stroke-width="2.4"/>
+    <!-- Pernas curtas -->
+    <path d="M16.5 29.7l-2.8 6.2M23.2 29.7l2.8 6.2" stroke-width="2.4"/>
+    <!-- Base aproximada aos pés -->
+    <path d="M6.9 38.5h25.896" stroke-width="2.4"/>
+  </g>
+</svg>
+

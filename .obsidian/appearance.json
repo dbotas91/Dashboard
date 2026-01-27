@@ -1,0 +1,9 @@
+{
+  "cssTheme": "GitHub Theme",
+  "enabledCssSnippets": [
+    "Colored Sidebar Items"
+  ],
+  "theme": "obsidian",
+  "baseFontSizeAction": true,
+  "baseFontSize": 11
+}

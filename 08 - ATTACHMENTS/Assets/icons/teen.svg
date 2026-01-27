@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- teen.svg -->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="150" height="205" version="1.1" viewBox="0 0 39.688 54.24" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0 -.8262)" fill="none" stroke="#F5A623" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cabeça -->
+    <circle cx="19.844" cy="10.2" r="4" stroke-width="2.4"/>
+    <!-- Tronco -->
+    <path d="M19.844 14v16.2" stroke-width="2.4"/>
+    <!-- Braços -->
+    <path d="M11.8 18.5h16.088" stroke-width="2.4"/>
+    <!-- Mochila (ombro esquerdo) -->
+    <path d="M15.2 14.5c-1.6 1-2.5 2.5-2.5 4.3v3.8" stroke-width="2.2"/>
+    <!-- Pernas -->
+    <path d="M16.4 30.2l-2.8 6.6M23.3 30.2l2.8 6.6" stroke-width="2.4"/>
+    <!-- Base -->
+    <path d="M6.9 38.743h25.896" stroke-width="2.4"/>
+  </g>
+</svg>

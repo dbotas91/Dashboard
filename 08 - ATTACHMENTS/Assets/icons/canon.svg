@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- canon.svg (opcional) -->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="150" height="205" version="1.1" viewBox="0 0 39.688 54.24" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0 -.8262)" fill="none" stroke="#B8860B" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cabeça -->
+    <circle cx="19.844" cy="9.6" r="4.3" stroke-width="2.5"/>
+    <!-- Louros -->
+    <path d="M13.2 9.8c-1.8 1.5-2.8 3.2-3 5.1M26.4 9.8c1.8 1.5 2.8 3.2 3 5.1" stroke-width="2.1"/>
+    <path d="M12.2 14.8c1 .2 2-.3 2.8-1.2M27.5 14.8c-1 .2-2-.3-2.8-1.2" stroke-width="2.1"/>
+    <!-- Busto -->
+    <path d="M10.4 22.2c2.7-3.3 6.2-4.6 9.6-4.6s6.9 1.3 9.6 4.6" stroke-width="2.3"/>
+    <!-- Tronco (vertical a partir do centro) -->
+    <path d="M19.844 20.6v15.8" stroke-width="2.6"/>
+    <!-- Pernas (duas hastes com ligeira abertura) -->
+    <path d="M17.2 38.2l-3.2 6.8" stroke-width="2.6"/>
+    <path d="M22.5 38.2l3.2 6.8" stroke-width="2.6"/>
+    <!-- Base -->
+    <path d="M6.9 47.743h25.896" stroke-width="2.6"/>
+  </g>
+</svg>
