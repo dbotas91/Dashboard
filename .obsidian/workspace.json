@@ -11,20 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "split-diff-view",
               "state": {
-                "file": "07 - INDEXES/Mensagens de Domingo.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "aFile": ".obsidian/plugins/obsidian-git/data.json",
+                "bFile": ".obsidian/plugins/obsidian-git/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-trello",
-              "title": "Mensagens de Domingo"
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
             }
           }
         ]
@@ -275,9 +270,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "07 - INDEXES/Mensagens de Domingo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Ciência explica Deus.md",
