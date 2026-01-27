@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e8a5997fe90a7b8b",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "0aa46a1778706ab0",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": ".obsidian/plugins/recent-files-obsidian/data.json",
-                "bFile": ".obsidian/plugins/recent-files-obsidian/data.json",
+                "aFile": ".obsidian/plugins/obsidian-git/data.json",
+                "bFile": ".obsidian/plugins/obsidian-git/data.json",
                 "aRef": ""
               },
               "icon": "diff",
@@ -267,7 +267,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0aa46a1778706ab0",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
     "Home.md",
     "09 - STATUS NOTES/Adult.md",
