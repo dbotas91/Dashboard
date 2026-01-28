@@ -41,7 +41,7 @@ kanban-plugin: board
 - [x] [[Provados]] ✅ 2025-10-27
 - [x] [[A presente verdade]] ✅ 2025-10-27
 - [x] [[Presentes diferentes]] ✅ 2025-10-27
-- [x] [[1 Timóteo]] ✅ 2025-10-27
+- [x] [[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo]] ✅ 2025-10-27
 - [x] [[A criação do Salvador]] ✅ 2025-10-27
 - [x] [[A fraqueza pode ser uma coisa boa]] ✅ 2025-10-27
 - [x] [[A importância de dividir BEM]] ✅ 2025-10-27
