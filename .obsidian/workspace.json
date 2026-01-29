@@ -11,14 +11,24 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/obsidian-git/data.json",
-                "bFile": ".obsidian/plugins/obsidian-git/data.json",
-                "aRef": ""
+                "file": "Home.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Home"
             }
           }
         ]
@@ -97,6 +107,7 @@
       {
         "id": "66d2499bd7c7c2cf",
         "type": "tabs",
+        "dimension": 71.48760330578513,
         "children": [
           {
             "id": "ca992fb3ee138cd9",
@@ -201,6 +212,7 @@
       {
         "id": "aa213c339baded63",
         "type": "tabs",
+        "dimension": 28.512396694214875,
         "children": [
           {
             "id": "4f23ffc45f683c25",
@@ -269,6 +281,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
+    "07 - INDEXES/Estudo Bíblico - microscópico.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "Home.md",
     "09 - STATUS NOTES/Adult.md",
     "08 - ATTACHMENTS/Attachments/1ZKnU8s47Aw.jpeg",
@@ -286,8 +302,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Predestinados.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estão todos perdoados.md",
     "07 - INDEXES/Mensagens de Domingo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Ciência explica Deus.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Entendimento e compreensão.md",
@@ -305,7 +319,6 @@
     "07 - INDEXES/EJC.md",
     "07 - INDEXES/COURSE 1.md",
     "07 - INDEXES/Cozinha.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Não te desvies da Verdade.md",
     "Reuniões de Jovens",
     "Meditações",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled.base",
