@@ -30,6 +30,30 @@
               "icon": "lucide-file",
               "title": "Home"
             }
+          },
+          {
+            "id": "4197c40247300bcd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-10-2025.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Estudo Bíblico - 29-10-2025"
+            }
           }
         ]
       }
@@ -98,7 +122,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 310.5026054382324
+    "width": 310.5026054382324,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -279,13 +304,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-02.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Estudo Bíblico 04-02-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-10-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
+    "10 - TAGS/2025-02.md",
+    "Home.md",
+    "10 - TAGS/2025-06.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 05-02-2025.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
     "07 - INDEXES/Estudo Bíblico - microscópico.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
-    "Home.md",
     "09 - STATUS NOTES/Adult.md",
     "08 - ATTACHMENTS/Attachments/1ZKnU8s47Aw.jpeg",
     "08 - ATTACHMENTS/Attachments/1i-nTw.png",
@@ -310,15 +344,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Comunicação eficaz - Nobres examinadores - Perceber a Bíblia.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Economia na Bíblia.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Os rejeitados.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A má doutrina corrompe o comportamento.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A presente verdade.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A criação do Salvador.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/CS104 Lecture 5.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md",
-    "07 - INDEXES/Escola Dominical.md",
-    "07 - INDEXES/EJC.md",
-    "07 - INDEXES/COURSE 1.md",
-    "07 - INDEXES/Cozinha.md",
     "Reuniões de Jovens",
     "Meditações",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled.base",
