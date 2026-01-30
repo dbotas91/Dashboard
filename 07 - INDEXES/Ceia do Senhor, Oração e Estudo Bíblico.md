@@ -19,7 +19,7 @@ Estão organizados por ano-mês com referências às Tags.
 - [[2026-02]]
 
 ### Todas as notas (ordenadas por data ascendente)
-- [[Estudo Bíblico 04-02-2026]]
+- [[Estudo Bíblico - 04-02-2026]]
 ## 2025
 ### Tags (Por ano-mês)
 - [[2025-02]]
