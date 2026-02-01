@@ -25,16 +25,18 @@ Tags: [[2026-02]]
 > 13 Todos estes morreram na fé, sem terem recebido as promessas, mas, vendo-as de longe, e crendo _nelas,_ e abraçando-_as,_ confessaram que eram estrangeiros e peregrinos na terra. 14 Porque os que isso dizem claramente mostram que buscam uma pátria. 15 E se, na verdade, se lembrassem daquela de onde haviam saído, teriam oportunidade de tornar. 16 Mas, agora, desejam uma melhor, isto é, a celestial. Pelo que também Deus não se envergonha deles, de se chamar seu Deus, porque _já_ lhes preparou uma cidade.
 
 # Motivos de oração 
-- [ ] Local do Congresso da Páscoa e data
-- [ ] Pai do Paulo Ferreira
+- [x] Local do Congresso da Páscoa e data ✅ 2026-02-01
+- [x] Pai do Paulo Ferreira ✅ 2026-02-01
+- [x] Tibério - terceira ✅ 2026-02-01
+	- [ ] Boa Tarde meu querido e Amado irmão Carlos Oliveira e Esposa irmã Lúcia e irmã Odete meu querido irmão deixei o medicamento Priadel há dois dias não consigo aguentar com ele ontem os sintomas secundários eram falta de equilíbrio mto tonto náuseas horrível hoje estou menos que ontem mas estou mto tonto sem forças estou mto preocupado com os sintomas retiramos o medicamento logo infelizmente será mto dificil estar com vocês peço oração para melhorar agradeçendo a todas as irmãs e irmãos pelas suas orações Amor e Carinho sejam sempre mto felizes e uma ótima e Abençoada semana um FORTE E CARINHOSO ABRAÇO
 - [ ] Irmã Carmen
 - [ ] Irmã Celeste e Mário (filho) e neto
 - [ ] Carlos Alves, Andreza e Tiago
 - [ ] Família Cóias
 - [ ] Filipe (filho do irmão José Carvalho)
 - [ ] Filipe Gonçalves, Lena, Cláudia + Pedro, Bruno + Kat e Lucas (neto)
-- [ ] José Teles e esposa
-- [ ] Carlos Cerqueira e Margarida (EUA)
+- [x] José Teles e esposa ✅ 2026-02-01
+- [x] Carlos Cerqueira e Margarida (EUA) ✅ 2026-02-01
 - [ ] António Dias e João (Alcaniça)
 - [ ] João Artur (Castelo)
 - [ ] Lucas Ferreira (S. João da Madeira)
@@ -42,12 +44,12 @@ Tags: [[2026-02]]
 - [ ] Rosélia (mãe do Wellington) e Bernardo
 - [ ] Cinaik(conversão do marido) e filhos em S. Tomé.
 - [ ] Irineia (depressão) e 3 filhos
-- [ ] Irene (Trás-os-Montes)
-- [ ] José António Pinho (prostatite)
+- [x] Irene (Trás-os-Montes) ✅ 2026-02-01
+- [x] José António Pinho (prostatite) ✅ 2026-02-01
 - [ ] Toni (cunhado do Duarte, tumor numa perna e salvação da alma)
 - [ ] Anabela (erupção no nariz)
-- [ ] Filomena (S. João da Madeira)
-- [ ] Dinita (Soalheira)
+- [x] Filomena (S. João da Madeira) ✅ 2026-02-01
+- [x] Dinita (Soalheira) ✅ 2026-02-01
 - [ ] Vanessa Rosa (Marinha) a convalescer pós cirurgia.
 - [ ] Débora Pinho (Inglaterra)
 - [ ] Daniel Costa e Suzana (S. Tiago de Compostela)
