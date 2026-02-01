@@ -8,7 +8,7 @@
     "https://github.com/dbotas91/my-garden/pull/12"
   ],
   "baseTheme": "dark",
-  "theme": "{\"name\":\"Catppuccin\",\"author\":\"Marshall Beckrich\",\"repo\":\"catppuccin/obsidian\",\"screenshot\":\"assets/screenshot.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/catppuccin/obsidian/HEAD/theme.css\"}",
+  "theme": "{\"name\":\"Dracula for Obsidian\",\"author\":\"jarodise\",\"repo\":\"jarodise/Dracula-for-Obsidian.md\",\"screenshot\":\"screencap.jpg\",\"modes\":[\"dark\"],\"cssUrl\":\"https://raw.githubusercontent.com/jarodise/Dracula-for-Obsidian.md/HEAD/theme.css\"}",
   "faviconPath": "08 - ATTACHMENTS/dario-catpuccin.svg",
   "logoPath": "",
   "useFullResolutionImages": true,
