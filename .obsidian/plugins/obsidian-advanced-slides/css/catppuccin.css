@@ -1,0 +1,123 @@
+/* catppuccin.css - Tema Mocha para Advanced Slides */
+
+/* 1. Fundo e Cor Base */
+.reveal {
+    background-color: #1e1e2e !important;
+    color: #cdd6f4 !important;
+}
+.reveal .slides section {
+    background-color: #1e1e2e !important;
+}
+
+/* 2. Títulos (H1 a H6) */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    color: #89b4fa !important; /* Azul */
+    font-family: 'Inter', sans-serif; /* Opcional: Fonte mais moderna */
+    text-transform: none !important; /* Remove caixa alta forçada */
+}
+
+/* 3. Links */
+.reveal a {
+    color: #f5c2e7 !important; /* Rosa */
+    text-decoration: none;
+}
+.reveal a:hover {
+    color: #cba6f7 !important; /* Roxo ao passar o mouse */
+}
+
+/* 4. Tabelas (Estilo Genérico para todas as tabelas) */
+.reveal table th {
+    color: #89b4fa !important;
+    border-bottom: 2px solid #45475a !important;
+}
+.reveal table td {
+    border-bottom: 1px solid #313244 !important;
+}
+
+/* 5. Código (Blocos de código) */
+.reveal pre code {
+    background-color: #181825 !important;
+    border: 1px solid #313244;
+    border-radius: 8px;
+}
+
+/* 6. Listas e Itens */
+.reveal ul, .reveal ol {
+    color: #bac2de;
+}
+
+/* 7. CLASSE ESPECIAL: TABELA INTELIGENTE */
+.reveal .tabela-compacta table {
+    font-size: 0.40em !important; /* Fonte ligeiramente menor para segurança */
+    width: 100% !important;
+    margin: 0 auto;
+    border-collapse: collapse !important;
+    table-layout: fixed !important; /* O SEGREDO: Fixa a estrutura para não "dançar" */
+}
+
+/* Definição das larguras das colunas (Soma = 100%) */
+/* Coluna 1: Quem batiza? (Pequena) */
+.reveal .tabela-compacta th:nth-child(1) { width: 12%; } 
+/* Coluna 2: Em quê? (Pequena) */
+.reveal .tabela-compacta th:nth-child(2) { width: 13%; } 
+/* Coluna 3: Propósito (Média) */
+.reveal .tabela-compacta th:nth-child(3) { width: 30%; } 
+/* Coluna 4: Versos (Grande - leva o resto do espaço) */
+.reveal .tabela-compacta th:nth-child(4) { width: 45%; }
+
+.reveal .tabela-compacta th {
+    background-color: #313244 !important;
+    color: #89b4fa !important;
+    border-bottom: 2px solid #45475a !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 5px !important;
+}
+
+.reveal .tabela-compacta td {
+    border-bottom: 1px solid #313244 !important;
+    padding: 3px 6px !important;
+    line-height: 1.15 !important;
+    vertical-align: middle !important; /* Centraliza verticalmente */
+    
+    /* Configurações para quebra de texto dinâmica */
+    white-space: normal !important;   /* Obriga o texto a quebrar linha */
+    word-wrap: break-word !important; /* Parte palavras se forem demasiado longas */
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;         /* Hifenização automática para poupar espaço */
+}
+
+/* 8. CLASSE ESPECIAL: CAIXAS DE VERSÍCULOS */
+.reveal .verso-box {
+    background-color: #313244; /* Surface0 */
+    border-left: 6px solid #89b4fa; /* Borda Azul */
+    color: #cdd6f4;
+    padding: 15px 25px;
+    margin-bottom: 20px !important;
+    text-align: left;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.reveal .verso-ref {
+    color: #89b4fa; /* Azul */
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+.reveal .verso-texto {
+    font-size: 0.85em;
+    font-style: italic;
+    line-height: 1.4;
+    color: #bac2de; /* Subtext1 */
+}
+
+/* Variação de cor: Laranja (Peach) */
+.reveal .destaque-peach {
+    border-left-color: #fab387 !important;
+}
+.reveal .destaque-peach .verso-ref {
+    color: #fab387 !important;
+}

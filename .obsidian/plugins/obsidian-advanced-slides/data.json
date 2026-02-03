@@ -7,8 +7,8 @@
   "enableMenu": true,
   "enablePointer": false,
   "enableTimeBar": false,
-  "theme": "black",
-  "highlightTheme": "zenburn",
+  "theme": "css/catppuccin.css",
+  "highlightTheme": "monokai",
   "transition": "slide",
   "transitionSpeed": "normal",
   "controls": true,
@@ -17,5 +17,5 @@
   "showGrid": false,
   "autoComplete": "inPreview",
   "paneMode": "split",
-  "motm": "2025-10-15T08:36:35.862Z"
+  "motm": "2026-02-03T14:02:30.882Z"
 }
