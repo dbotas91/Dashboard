@@ -47,3 +47,8 @@ dgPassFrontmatter: "true"
     <span class="verso-ref">Gálatas 3:27</span>
     <span class="verso-texto">"Porque todos quantos fostes batizados em Cristo já vos revestistes de Cristo."</span>
 </div>
+
+<div class="verso-box destaque-peach">
+    <span class="verso-ref">Gálatas 3:27</span>
+    <span class="verso-texto">"Porque todos quantos fostes batizados em Cristo já vos revestistes de Cristo."</span>
+</div>

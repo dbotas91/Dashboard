@@ -57,6 +57,7 @@ O batismo, quando percebemos bem o que é, vamos perceber que:
 O batismo é consequência do evangelho pregado e da rendição do que crê.
 Sem salvação, nem evangelho e rendição, não há batismo.
 Em Atos 2 lemos:
+
 > [!quote]+ Atos 2:36-38
  > 36 Saiba, pois, com certeza, toda a casa de Israel que a esse Jesus, a quem vós crucificastes, Deus o fez Senhor e Cristo.
 > 37 Ouvindo eles isto, compungiram-se em seu coração e perguntaram a Pedro e aos demais apóstolos: Que faremos, varões irmãos? 
@@ -65,6 +66,8 @@ Em Atos 2 lemos:
 Um evangelho mal pregado, leva a um batismo mal aplicado/entendido.
 Um evangelho mal pregado, pode levar a uma rendição mal entendida e um batismo que não deveria ser feito. Porque se o Evangelho da Graça de Deus é acerca de tudo o que Deus fez por nós na cruz (e fez para estarmos com Ele eternamente), a rendição tem de ser total, o crer / aceitação tem de ser total sem que possamos fazer nada para pertencer a Deus e ao corpo de Cristo.
 O Batismo e principalmente o batismo hoje, ensina como pertencemos a Ele e não o que devemos fazer para pertencer a Deus ou ao corpo de Cristo.
+Por exemplo, assim como as boas obras não nos mantém no Corpo de Cristo, também o batismo na água não nos agrega ao Corpo de Cristo. Apenas a obra de Cristo consumada na cruz é que permite essa agregação e manutenção no corpo. Tudo se deve a Cristo e nada a nós.
+As boas obras cabem ao caminho que Deus preparou para nós andarmos e não para conquistarmos.
 
 ---
 
