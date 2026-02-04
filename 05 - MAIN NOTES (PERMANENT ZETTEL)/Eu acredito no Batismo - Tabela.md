@@ -31,12 +31,61 @@ dgPassFrontmatter: "true"
 
 ---
 
-## Passagens
+# Igreja Batista de Queluz
 
-<div class="verso-box">
-    <span class="verso-ref">Mateus 28:19</span>
-    <span class="verso-texto">"Portanto ide, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo..."</span>
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que <b>as ordenanças conferidas por Cristo à sua Igreja são duas: o Baptismo e a Ceia do Senhor;</b>”
 </div>
+
+---
+
+# Igreja Batista de Queluz
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que <b>as ordenanças conferidas por Cristo à sua Igreja são duas: o Baptismo e a Ceia do Senhor;</b>”
+</div>
+
+---
+
+# Igreja Batista de Queluz
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que <b>as ordenanças conferidas por Cristo à sua Igreja são duas: o Baptismo e a Ceia do Senhor;</b>”
+</div>
+
+---
+
+# Igreja Batista de Queluz
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que <b>as ordenanças conferidas por Cristo à sua Igreja são duas: o Baptismo e a Ceia do Senhor;</b>”
+</div>
+
+---
+
+# Igreja Batista de Queluz
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que <b>as ordenanças conferidas por Cristo à sua Igreja são duas: o Baptismo e a Ceia do Senhor;</b>”
+</div>
+
+---
+
+# Igreja Batista de Queluz
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que <b>as ordenanças conferidas por Cristo à sua Igreja são duas: o Baptismo e a Ceia do Senhor;</b>”
+</div>
+
+---
+
+# Igreja Batista de Queluz
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que <b>as ordenanças conferidas por Cristo à sua Igreja são duas: o Baptismo e a Ceia do Senhor;</b>”
+</div>
+
+---
 
 <div class="verso-box">
     <span class="verso-ref">Romanos 6:3-4</span>
