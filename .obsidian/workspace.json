@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,23 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Reunião Zoom IQC - 01-02-2025"
+              "title": "Home"
+            }
+          },
+          {
+            "id": "8e118a858e976b90",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -54,7 +67,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de ficheiros"
             }
           },
           {
@@ -98,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242
+    "width": 239.00260543823242,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -205,6 +219,18 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "9275b0c2fcd66d98",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Eu acredito no Batismo - Tabela"
+            }
           }
         ],
         "currentTab": 6
@@ -257,15 +283,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
+      "switcher:Abrir Quick Switcher": false,
+      "graph:Abrir Visualização de diagrama de grafo": false,
+      "daily-notes:Abrir nota de hoje": false,
+      "templates:Inserir templates": false,
+      "command-palette:Abrir paleta de comando": false,
+      "workspaces:Gerir esquema da área de trabalho": false,
+      "publish:Publicar alterações": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
       "bases:Create new base": false,
-      "publish:Publish changes...": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
@@ -279,18 +305,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "8e118a858e976b90",
   "lastOpenFiles": [
+    "Home.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A criação do Salvador.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A importância de dividir BEM.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A má doutrina corrompe o comportamento.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A presente verdade.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "Home.md",
     "10 - TAGS/2026-02.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 04-02-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Balance Your Portfolio.md",
@@ -303,10 +333,6 @@
     "10 - TAGS/2025-06.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 05-02-2025.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
-    "07 - INDEXES/Estudo Bíblico - microscópico.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
-    "09 - STATUS NOTES/Adult.md",
     "08 - ATTACHMENTS/Attachments/1ZKnU8s47Aw.jpeg",
     "08 - ATTACHMENTS/Attachments/1i-nTw.png",
     "08 - ATTACHMENTS/Attachments/1D1F63DB-2354-4315-8E2A-AD36A24CFC64.jpeg",

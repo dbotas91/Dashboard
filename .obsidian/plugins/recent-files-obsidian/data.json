@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "Eu acredito no Batismo",
+      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md"
+    },
+    {
+      "basename": "Mensagens de Domingo",
+      "path": "07 - INDEXES/Mensagens de Domingo.md"
+    },
+    {
+      "basename": "Mensagens Escritas",
+      "path": "00 - MAPS OF CONTENT/Mensagens Escritas.md"
+    },
+    {
       "basename": "Reunião Zoom IQC - 01-02-2025",
       "path": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md"
     },
@@ -23,10 +39,6 @@
     {
       "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
       "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
     },
     {
       "basename": "2026-02",
@@ -83,10 +95,6 @@
     {
       "basename": "Estudo Bíblico - microscópico",
       "path": "07 - INDEXES/Estudo Bíblico - microscópico.md"
-    },
-    {
-      "basename": "Eu acredito no Batismo",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md"
     },
     {
       "basename": "Eu acredito no Batismo - Tabela",
@@ -191,14 +199,6 @@
     {
       "basename": "Untitled 68",
       "path": "08 - ATTACHMENTS/Attachments/Untitled 68.png"
-    },
-    {
-      "basename": "Untitled 67",
-      "path": "08 - ATTACHMENTS/Attachments/Untitled 67.png"
-    },
-    {
-      "basename": "Untitled 66",
-      "path": "08 - ATTACHMENTS/Attachments/Untitled 66.png"
     }
   ],
   "omittedPaths": [],
