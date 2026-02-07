@@ -35,12 +35,14 @@
             "id": "8e118a858e976b90",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "split-diff-view",
               "state": {
-                "currentVersion": "1.11.7"
+                "aFile": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
+                "bFile": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
+                "aRef": ""
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
+              "icon": "diff",
+              "title": "Diff: Eu acredito no Batismo  (Working Tree)"
             }
           }
         ],
