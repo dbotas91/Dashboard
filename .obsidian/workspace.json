@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,21 +28,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Eu acredito no Batismo"
             }
           },
           {
-            "id": "8e118a858e976b90",
+            "id": "0f22f1bad727ca0d",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
-                "bFile": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Eu acredito no Batismo  (Working Tree)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nova aba"
             }
           }
         ],
@@ -307,12 +303,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8e118a858e976b90",
+  "active": "0f22f1bad727ca0d",
   "lastOpenFiles": [
-    "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "Home.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",

@@ -195,7 +195,7 @@ Se lermos Mateus 3:11-17 encontramos 4 batismos diferentes, com significados dif
 - Batismo com fogo - Apocalipse;
 - Batismo na água para cumprir toda a justiça;
 
-**Eu acredito no batismo, mas não que a Bíblia ensina que o batismo é única e exclusivamente na água ou apenas no Espírito Santo.**
+**Eu acredito no batismo, mas não que a Bíblia ensina que o batismo é única e exclusivamente na água ou apenas ser cheio do Espírito Santo.**
 
 ---
 
