@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
+                "file": "02 - AREAS (PARA)/0. Read me - Areas.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -58,7 +58,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Eu acredito no Batismo - Tabela"
+              "title": "0. Read me - Areas"
             }
           }
         ]
@@ -323,6 +323,9 @@
   },
   "active": "0f22f1bad727ca0d",
   "lastOpenFiles": [
+    "02 - AREAS (PARA)/O meu currículo.md",
+    "02 - AREAS (PARA)/0. Read me - Areas.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/style.css",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/plugin.js",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/README.md",
@@ -336,7 +339,6 @@
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/README.md",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chart/plugin.js",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chart/chart.min.js",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chart/README.md",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/sponge.png",
@@ -353,7 +355,6 @@
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/README.md",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/CONTRIBUTING.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
@@ -368,7 +369,6 @@
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 04-02-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Balance Your Portfolio.md",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
