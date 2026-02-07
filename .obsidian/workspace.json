@@ -30,19 +30,38 @@
               "icon": "lucide-file",
               "title": "Eu acredito no Batismo"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "f6d84fea8815bdc7",
+        "type": "tabs",
+        "children": [
           {
             "id": "0f22f1bad727ca0d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Eu acredito no Batismo - Tabela"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242,
-    "collapsed": true
+    "width": 239.00260543823242
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -305,13 +323,42 @@
   },
   "active": "0f22f1bad727ca0d",
   "lastOpenFiles": [
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/style.css",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/chart.min.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/style.css",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chart/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chart/chart.min.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chart/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/whiteboard.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/sponge.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-yellow.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-white.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-red.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-purple.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-orange.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-green.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/boardmarker-green.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-blue.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chalkboard/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/CONTRIBUTING.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A criação do Salvador.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A importância de dividir BEM.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A má doutrina corrompe o comportamento.md",
@@ -322,35 +369,6 @@
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Balance Your Portfolio.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/0. Read me - Rough Notes.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-10-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
-    "10 - TAGS/2025-02.md",
-    "10 - TAGS/2025-06.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 05-02-2025.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
-    "08 - ATTACHMENTS/Attachments/1ZKnU8s47Aw.jpeg",
-    "08 - ATTACHMENTS/Attachments/1i-nTw.png",
-    "08 - ATTACHMENTS/Attachments/1D1F63DB-2354-4315-8E2A-AD36A24CFC64.jpeg",
-    "08 - ATTACHMENTS/Attachments/1*CSkNDtkCWSewONFLGi-nTw1.png",
-    "08 - ATTACHMENTS/b545f302-6e3b-472b-8110-493d34c52c1e_Secularismo_e_a_maldio_das_naes.pdf",
-    "08 - ATTACHMENTS/2099120-ffffff.svg",
-    "08 - ATTACHMENTS/2099120-b4befe.svg",
-    "08 - ATTACHMENTS/160ae410-5bcf-4826-8309-89a6b553f9eb---ca3pia-AzG7OMGx6nH9M6Jd.avif",
-    "08 - ATTACHMENTS/06 - Tratado De Tordesilhas.pdf",
-    "08 - ATTACHMENTS/Attachments/zap 1.svg",
-    "08 - ATTACHMENTS/Attachments/zap.svg",
-    "08 - ATTACHMENTS/Attachments/youtube.svg",
-    "Reuniões de Jovens",
-    "Meditações",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled.base",
-    "Cozinha/Receitas",
-    "Cozinha",
-    "08 - ATTACHMENTS/Assets/icons",
-    "08 - ATTACHMENTS/Assets",
-    "pasta sem nome",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]

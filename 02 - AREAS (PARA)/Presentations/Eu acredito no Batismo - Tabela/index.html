@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Eu acredito no Batismo</title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="css/catppuccin.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+	<link rel="stylesheet" href="plugin/chalkboard/style.css">
+
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Batismo
+
+| Quem batiza?      | Em quê?         | Com que propósito?              | Versos Bíblicos                                          |
+| :---------------- | :-------------- | :------------------------------ | :------------------------------------------------------- |
+| Sacerdotes        | água            | purificação/limpeza/sacerdócio  | Êx. 29.4, 30.18-21; Ez. 16:3-10; 36.24-27; Hb. 6.1-3     |
+| 1º João           | Água            | Arrependimento / perdão pecados | Mateus 3.1-17; Marcos 1.2-11; Lucas 3.2-18; João 1.19-34 |
+| João              | batiza Jesus    | Cumprir toda a justiça          | Mateus 3:13-16; Lc. 3:21-22                              |
+| Deus              | Na cruz         | Condenação dos pecados          | Lucas 12:50                                              |
+| 2º Jesus          | Espírito Santo  | Nova Aliança / Reino de Deus    | Ez 36.25; Mt 3.11; Mc 1.8; Lc 3.16; Jo 1.33              |
+| Jesus             | Fogo            | Destruição / julgamento         | Mateus 3.11-12; Lucas 3.16-17, 12.49-51                  |
+| Deus              | Moisés          | identificar a nação de Israel   | 1 Cor. 10.1-2; Êx. 14                                    |
+| ~~E.S./Deus~~ Nós | morte/cruz      | salvação / identificação        | Romanos 6.3; Col. 2.12                                   |
+| Espírito Santo    | corpo de Cristo | co-herdeiros na promessa        | 1 Cor. 12.13; Ef. 2.6,16; Gl. 3.27                       |
+| Espírito Santo    | em Cristo       | Revestidos de Cristo            | Gálatas 3.27                                             |
+</div></script></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Igreja Batista de Queluz
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que <b>as ordenanças conferidas por Cristo à sua Igreja são duas: o Baptismo e a Ceia do Senhor;</b>”
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Igreja da Lapa
+
+<div class="verso-box" style=”font-size: 24px;”>
+Com a manutenção das ordenanças: o Baptismo (de crentes por imersão em nome do Pai, do Filho e do Espírito Santo) e a Ceia do Senhor (aberta a membros em união com uma igreja evangélica local).”
+
+Espírito Santo glorifica o Senhor Jesus Cristo, e, como o outro Paracleto, está presente com e dentro dos crentes. Ele convence o mundo do pecado, justiça, e julgamento, e através do seu trabalho poderoso e misterioso regenera espiritualmente pecadores mortos, acordando-os para o arrependimento e fé, e <b>nele são baptizados</b> numa união com o Senhor Jesus“
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# 2ª Igreja Evangélica Baptista do Barreiro
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos que a Igreja é um conjunto de crentes eleitos, <b>baptizados no Espírito Santo em um corpo cuja o cabeça é Cristo</b> e cujo propósito é a glória do Senhor. A sua missão no mundo é realizada através de congregações locais autónomas que, independentes do estado e cooperantes com outras da mesma fé e ordem, são responsáveis por fazer discípulos dentre as nações, transmitindo Cristo aos homens, evangelizando-os, <b>baptizando-os por imersão</b>, como testemunho convicto da sua fé, edificando-os, disciplinando-os e observando a Ceia do Senhor.””
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Igreja Baptista de Miratejo
+
+<div class="verso-box" style=”font-size: 24px;”>
+“<b>Das Ordenanças da Igreja</b>
+<h3><b>Batismo</b></h3>
+É a imersão do crente em CRISTO em água, em nome Do PAI, FILHO e ESPÍRITO SANTO, demonstrando a fé do batizado no SALVADOR crucificado, sepultado e ressurreto, significando também que o batizado morreu para o pecado e o mundo, e ressuscitou para a vida nova em CRISTO. O batismo é pré-requisito para o indivíduo ser membro da Igreja Local.
+<i>Atos 8:36-39; Romanos 6:3-5</i>
+ <h3><b>Ceia do Senhor</b></h3>
+Os elementos da ceia são símbolos do corpo e sangue de CRISTO, e a ceia é uma comemoração da morte do SENHOR JESUS CRISTO. O crente em CRISTO, para receber a ceia, deve antes examinar-se para participar dignamente nela.<i>1ª Coríntios 10:16-17, 11:23-28</i>”
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Igreja Evangélica Baptista Parede
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos que o baptismo só deve ser ministrado a quem conscientemente e de livre vontade confessa Cristo como seu Salvador.”
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# estudos-biblicos.net
+
+<div class="callout callout-color9">
+<div class="callout-title">
+<div class="callout-icon">
+
+<i class="fas fa-quote-left" ></i>
+
+
+</div>
+<div class="callout-title-inner">
+
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->[Estudos-biblicos.net](http://Estudos-biblicos.net)
+
+</div>
+</div>
+<div class="callout-content">
+
+[**Batismo - Documento de Lima (MC)**](http://www.estudos-biblicos.net/lima.html)
+
+[**Batismo consciente - Só adultos (CC)**](http://www.estudos-biblicos.net/batcons.html)
+
+[**Batismo de fogo (CC)**](http://www.estudos-biblicos.net/batfogo.html)
+
+[**Batismo infantil (JL)**](http://www.estudos-biblicos.net/batinfant.html)
+
+[**Batismo infantil (MC)**](http://www.estudos-biblicos.net/batpcard.html)
+
+[**Batismo por aspersão (CC)**](http://www.estudos-biblicos.net/aspersao.html)
+
+[**Batismo por imersão (CC)**](http://www.estudos-biblicos.net/imersao.html)
+
+[**Batismos no Antigo Testamento (MC)**](http://www.estudos-biblicos.net/batismosAT.html)
+
+</div>
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Aliança Evangélica
+
+<div class="verso-box" style=”font-size: 24px;”>
+“Cremos também que Cristo conferiu à sua Igreja, com carácter de permanência, duas ordenanças: o Baptismo e a Ceia do Senhor.”
+</div>
+</div></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box destaque-peach">
+    O batismo é por água;
+</div>
+
+<div class="verso-box">O batismo é com água e pelo Espírito Santo;
+</div>
+<div class="verso-box destaque-peach">
+O batismo é por água que é um símbolo ou sinal visível, tanto de purificação como de regeneração do Espírito Santo;
+</div>
+<div class="verso-box">Os batismos são símbolos da atividade do Espírito Santo;
+</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box destaque-peach">O batismo na água é para salvação;</div>
+<div class="verso-box destaque-peach">O batismo na água é uma ordenança;</div>
+<div class="verso-box destaque-peach">O batismo na água é sugestivo;</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box"> 
+<span class="verso-ref">O batismo na água é por imersão;</span>
+<span class="verso-texto"> Tem de ser num tanque ou piscina
+<p>Tem de ser no rio</p>
+<p>Tem de ser num lago</p>
+<p>Tem de ser no mar</p>
+<p>Pode ser em qualquer lado</p>
+<p>Pode ser utilizando uma mangueira se não houver nada de água abundante por perto</p>
+</span>
+</div>
+<div class="verso-box destaque-peach"> O batismo na água é por derramamento;</div>
+<div class="verso-box"> O batismo na água é por aspersão;</div>
+<div class="verso-box destaque-peach"> O batismo na água é por qualquer uma das formas anteriores, desde que seja realizado;</div>
+<div class="verso-box"> O batismo na água só pode ser feito duma forma exclusiva</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box destaque-peach">O batismo só pode ser feito por pastores;</div>
+
+<div class="verso-box">O batismo só pode ser feito por diáconos;</div>
+
+<div class="verso-box destaque-peach">O batismo só pode ser feito por autoridades na igreja local (pastores ou diáconos);</div>
+
+<div class="verso-box">O batismo na água pode ser feito por qualquer crente;</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box destaque-peach">O batismo é no nome do Pai, Filho e Espírito Santo;</div>
+
+<div class="verso-box">O batismo é no nome do Senhor Jesus;</div>
+
+<div class="verso-box destaque-peach">O batismo pode ser num dos dois anteriores;</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box">O batismo na água é só para adultos que têm de fazer essa escolha;</div>
+
+<div class="verso-box destaque-peach">O batismo na água pode ser também para bebés e crianças;</div>
+
+<div class="verso-box">O batismo na água pode ser para qualquer pessoa que creia em Jesus como seu Salvador e Senhor;</div>
+
+<div class="verso-box destaque-peach">O batismo é após a pessoa passar por um processo de regeneração (ser regenerada e o pecado não ser mais um problema);</div>
+
+<div class="verso-box">O batismo pode ser antes da pessoa ser regenerada;</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box destaque-peach">O batismo na água tem de ser feito assim que a pessoa é salva (o mais rápido possível);</div>
+
+<div class="verso-box">O batismo na água tem de ser feito após a pessoa crer em Jesus para seja salva;</div>
+
+<div class="verso-box destaque-peach">O batismo pode ser feito num dia agendado pela igreja local para realizar vários batismos;</div>
+</div></script></section><section data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box">A pessoa tem de ter um certificado que é batizada;</div>
+
+<div class="verso-box destaque-peach">Não é preciso certificado, basta indicado na carta de recomendação;</div>
+
+<div class="verso-box">O batismo na água é necessário para que a pessoa seja reconhecida como membro da igreja local;</div>
+
+<div class="verso-box destaque-peach">O batismo na água é para obediência a Deus, como sinal de confissão dos seus pecados a Deus;</div>
+
+<div class="verso-box">O batismo na água é para testemunho de que facto creu no Evangelho;</div>
+
+<div class="verso-box destaque-peach">O batismo na água mostra a graça de Deus revelada, manifestada ou recebida pela pessoa;</div>
+</div></script></section></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="verso-box">
+    <span class="verso-ref">Romanos 6:3-4</span>
+    <span class="verso-texto">"Ou não sabeis que todos quantos fomos batizados em Jesus Cristo fomos batizados na sua morte?"</span>
+</div>
+
+<div class="verso-box destaque-peach">
+    <span class="verso-ref">Gálatas 3:27</span>
+    <span class="verso-texto">"Porque todos quantos fostes batizados em Cristo já vos revestistes de Cristo."</span>
+</div>
+
+<div class="verso-box destaque-peach">
+    <span class="verso-ref">Gálatas 3:27</span>
+    <span class="verso-texto">"Porque todos quantos fostes batizados em Cristo já vos revestistes de Cristo."</span>
+</div>
+</div></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+	<script src="plugin/chalkboard/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+		  RevealMenu,
+		  RevealChalkboard, 
+        ],
+
+
+    	allottedTime: 120 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+				{id: 'toggle-overview',
+				title: 'Toggle overview (O)',
+				icon: '<i class="fa fa-th"></i>',
+				action: 'Reveal.toggleOverview();'
+				},
+				{ icon: '<i class="fa fa-pen-square"></i>',
+				title: 'Toggle chalkboard (B)',
+				action: 'RevealChalkboard.toggleChalkboard();'
+				},
+				{ icon: '<i class="fa fa-pen"></i>',
+				title: 'Toggle notes canvas (C)',
+				action: 'RevealChalkboard.toggleNotesCanvas();'
+				},
+			]
+		},
+		menu: {
+			loadIcons: false
+		}
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"normal"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
