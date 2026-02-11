@@ -1,6 +1,5 @@
 - [x] verificação do ficheiro error_log ✅ 2026-02-11
-	- [x] ficheiro descarregado e apagado no servidor. Foi criado um novo para que o joomla continue a escrever lá. ✅ 2026-02-11
+	- [x] ficheiro descarregado e apagado no servidor. Foi criado um novo para que o joomla continue a escrever lá. ✅˚ 2026-02-11
 - [ ] Joomla na versão 3.10.12 para a versão 4
 	- [ ] Atualização dos plugins no local
 	- [ ] Atualização do joomla no local
-	- [ ] 
