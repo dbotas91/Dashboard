@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
+                "file": "11 - TEMPLATES/Estudos Bíblicos.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Tarefas no site IQC"
+              "title": "Estudos Bíblicos"
+            }
+          },
+          {
+            "id": "3edde75fdc96d131",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Estudo Bíblico - 11-02-2026"
             }
           }
         ]
@@ -293,7 +317,16 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "11 - TEMPLATES/Cultos.md",
+    "11 - TEMPLATES/Estudos Bíblicos.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "Home.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 05-02-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
     "01 - PROJECTS (PARA)/IQC Maintenance",
     "02 - AREAS (PARA)/0. Read me - Areas.md",
@@ -329,16 +362,7 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A criação do Salvador.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A importância de dividir BEM.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A má doutrina corrompe o comportamento.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A presente verdade.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "10 - TAGS/2026-02.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 04-02-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]

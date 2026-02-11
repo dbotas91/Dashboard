@@ -443,7 +443,7 @@ Nestes assuntos, a cristandade e o mundo em geral confunde direitos (Direitos Hu
 
 Eu posso ter mais capacidade que alguns políticos para governar, mas não quer dizer que seja o meu lugar ou tenha permissão para o fazer.
 
-## Aprender em silêncio
+### Aprender em silêncio
 
 A passagem de 1 Tim. 2:11 mostra mais uma vez que a aprendizagem da mulher na igreja é em silêncio.
 
@@ -451,13 +451,21 @@ Esta passagem à luz de 1 Coríntios 14:28-40, Tito 2:3-5 coloca em ordem a apre
 
 **1 Coríntios 14:28 “**Mas, se não houver intérprete, esteja calado na igreja e fale consigo mesmo e com Deus.  **29** E falem dois ou três profetas, e os outros julguem.  **30** Mas, se a outro, que estiver assentado, for revelada _alguma coisa,_ cale-se o primeiro.  **31** Porque todos podereis profetizar, uns depois dos outros, para que todos aprendam e todos sejam consolados.”
 
-## Aprender e permanecer no que está escrito
+### Aprender e permanecer no que está escrito
 
 [**Romanos 16:17](https://www.biblegateway.com/passage/?search=Romanos%2016%3A17&version=ARC) - E rogo-vos, irmãos, que noteis os que promovem dissensões e escândalos contra a doutrina que aprendestes; desviai-vos deles.**
 
 [**1 Coríntios 4:6](https://www.biblegateway.com/passage/?search=1%20Cor%C3%ADntios%204%3A6&version=ARC) - E eu, irmãos, apliquei essas _coisas,_ por semelhança, a mim e a Apolo, por amor de vós, para que, em nós, aprendais a não ir além do que está escrito, não vos ensoberbecendo a favor de um contra outro.**
 
 [**2 Timóteo 3:14](https://www.biblegateway.com/passage/?search=2%20Tim%C3%B3teo%203%3A14&version=ARC) - Tu, porém, permanece naquilo que aprendeste e _de que_ foste inteirado, sabendo de quem o tens aprendido.**
+
+
+## Verso 13-14
+
+> [!quote]+ 1 Timóteo 2:13-14
+> 13 Porque primeiro foi formado Adão, depois Eva. 14 E Adão não foi enganado, mas a mulher, sendo enganada, caiu em transgressão.
+
+
 
 [azurevpnconfig (4) 1.xml](https://prod-files-secure.s3.us-west-2.amazonaws.com/08799754-5d94-410c-ae8d-2eb4bb3aba90/1824b438-7c5a-47d8-888e-d124001c579a/azurevpnconfig_\(4\)_1.xml)
 
