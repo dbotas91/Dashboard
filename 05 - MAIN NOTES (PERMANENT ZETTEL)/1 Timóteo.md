@@ -465,7 +465,35 @@ Esta passagem à luz de 1 Coríntios 14:28-40, Tito 2:3-5 coloca em ordem a apre
 > [!quote]+ 1 Timóteo 2:13-14
 > 13 Porque primeiro foi formado Adão, depois Eva. 14 E Adão não foi enganado, mas a mulher, sendo enganada, caiu em transgressão.
 
+Estes dois versos mostram claramente a ordem na criação. Ordem essa que tem sido contradita, contraposta e erradamente teorizada.
+O engano de então “Foi assim que Deus disse?” tem sido o engano de agora.
 
+> [!quote]+ 1 Timóteo 6:20-21
+> 20 Ó Timóteo, guarda o depósito que _te_ foi confiado, tendo horror aos clamores vãos e profanos e às oposições da falsamente chamada ciência; 21 a qual professando-a alguns, se desviaram da fé. A graça _seja_ contigo. Amém!
+
+
+## Verso 15
+
+> [!quote]+ 1 Timóteo 2:15
+> 15 Salvar-se-á, porém, dando à luz filhos, se permanecer com modéstia na fé, no amor e na santificação.
+
+Esta passagem tem de ser vista em contexto com o que foi dito nos versos anteriores (desde o verso 9) e em contraste com o papel da mulher tanto na Igreja, Corpo de Cristo como também em casa.
+
+Como ouvimos muito bem, o estigma em relação à imagem desde o jardim do Éden tem-se mantido.
+E desde então a imagem da mulher tem sido distorcida e mudada. Mudada tantas vezes que hoje já ninguém sabe qual é a imagem correta.
+Por exemplo, com as ideologias de género, homens têm podido dizer que são mulheres (ao contrário de tudo o que a ciência, medicina, etc… possa dizer) e vão competir em áreas que são de mulheres. Derrotam e roubam medalhas às mulheres em muitas ou todas as competições.
+E esta imagem da mulher que já veio distorcida, mudada e corrompida… está em meios de ser destruída. 
+Já ninguém sabe o que é uma mulher, “quem” pode ser mulher, qual a imagem certa da mulher. E o mesmo para o homem.
+
+A Palavra de Deus põe e só ela pode pôr às claras todo este erro e outros. E mesmo salvar a imagem da mulher mostrando a imagem real e verdadeira da mulher, que é a imagem que Deus tem da mulher.
+
+A mulher (e homem) que perceber qual é o seu papel na igreja (Corpo de Cristo) conforme as epístolas paulinas e permanecer com modéstia nestas três coisas: fé, amor e santificação, a consequência natural é que se tiver e criar filhos, os mesmos também poderão permanecer nestas mesmas coisas.
+Timóteo, pela graça de Deus, mesmo sem pai exemplar, teve uma mãe e avó exemplares que acabaram com este estigma que havia em relação a Eva.
+Como ouvimos, o papel da mulher é muito importante - o na criação de filhos que permanecem nas mesmas coisas que elas… mesmo que os pais não sejam assim.
+
+Este tipo de mentalidade que vemos do verso 9 até aqui, sem dúvida que ajuda a perceber e relembrar o quão é importante o papel da mulher na igreja e no lar.
+
+A avó Loide e a mãe Eunice não eram líderes de igreja e muito menos pregadoras ou ensinadoras na igreja. Mas a permanência na fé não fingida, no amor e santificação fê-las criar um Timóteo com fé não fingida que foi um líder e ensinador na Igreja.
 
 [azurevpnconfig (4) 1.xml](https://prod-files-secure.s3.us-west-2.amazonaws.com/08799754-5d94-410c-ae8d-2eb4bb3aba90/1824b438-7c5a-47d8-888e-d124001c579a/azurevpnconfig_\(4\)_1.xml)
 

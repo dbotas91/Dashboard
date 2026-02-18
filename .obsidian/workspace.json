@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "10ee36e271971da7",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "06518899a2c0f1b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "11 - TEMPLATES/Estudos Bíblicos.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,11 +28,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Estudos Bíblicos"
+              "title": "1 Timóteo"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "17381de4be74109f",
+        "type": "tabs",
+        "children": [
           {
-            "id": "3edde75fdc96d131",
+            "id": "bcc27453aed01e87",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +84,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de ficheiros"
+              "title": "Files"
             }
           },
           {
@@ -122,7 +128,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242
+    "width": 223.00260543823242,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -229,18 +236,6 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "9275b0c2fcd66d98",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for Eu acredito no Batismo - Tabela"
-            }
           }
         ],
         "currentTab": 6
@@ -293,15 +288,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir Quick Switcher": false,
-      "graph:Abrir Visualização de diagrama de grafo": false,
-      "daily-notes:Abrir nota de hoje": false,
-      "templates:Inserir templates": false,
-      "command-palette:Abrir paleta de comando": false,
-      "workspaces:Gerir esquema da área de trabalho": false,
-      "publish:Publicar alterações": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
       "bases:Create new base": false,
+      "publish:Publish changes...": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
@@ -315,36 +310,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "06518899a2c0f1b6",
   "lastOpenFiles": [
-    "11 - TEMPLATES/Cultos.md",
-    "11 - TEMPLATES/Estudos Bíblicos.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-02-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
-    "Home.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 05-02-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
+    "Home.md",
+    "11 - TEMPLATES/Estudos Bíblicos.md",
+    "11 - TEMPLATES/Cultos.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
     "01 - PROJECTS (PARA)/IQC Maintenance",
-    "02 - AREAS (PARA)/0. Read me - Areas.md",
-    "02 - AREAS (PARA)/O meu currículo.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/style.css",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/plugin.js",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/README.md",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/plugin.js",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/README.md",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/chart.min.js",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/style.css",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/plugin.js",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/README.md",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chart/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/zoom/zoom.esm.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/zoom/zoom.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/zoom/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/zoom",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/search/search.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/search/search.esm.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/search/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/search",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/reveal-pointer/pointer.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/CONTRIBUTING.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/README.md",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-yellow.png",
@@ -353,16 +344,20 @@
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-purple.png",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-orange.png",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-green.png",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/boardmarker-green.png",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-blue.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/boardmarker-yellow.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/README.md",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/README.md",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/README.md",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chalkboard/README.md",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/README.md",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/CONTRIBUTING.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Estudo sobre o batismo na água.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A criação do Salvador.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A importância de dividir BEM.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A má doutrina corrompe o comportamento.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A presente verdade.md",
+    "10 - TAGS/2026-02.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 04-02-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
