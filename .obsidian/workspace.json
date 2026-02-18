@@ -4,36 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "10ee36e271971da7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "06518899a2c0f1b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "1 Timóteo"
-            }
-          }
-        ]
-      },
-      {
         "id": "17381de4be74109f",
         "type": "tabs",
         "children": [
@@ -41,24 +11,14 @@
             "id": "bcc27453aed01e87",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/plugins/obsidian-git/data.json",
+                "bFile": ".obsidian/plugins/obsidian-git/data.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Estudo Bíblico - 11-02-2026"
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
             }
           }
         ]
@@ -128,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.00260543823242,
-    "collapsed": true
+    "width": 223.00260543823242
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -310,12 +269,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "06518899a2c0f1b6",
+  "active": "bcc27453aed01e87",
   "lastOpenFiles": [
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-02-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-02-2026.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "Home.md",
     "11 - TEMPLATES/Estudos Bíblicos.md",
     "11 - TEMPLATES/Cultos.md",
