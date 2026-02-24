@@ -1,11 +1,11 @@
 {
   "githubRepo": "my-garden",
-  "githubToken": "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",
+  "githubToken": "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",
   "githubUserName": "dbotas91",
   "gardenBaseUrl": "",
   "prHistory": [
-    "https://github.com/dbotas91/my-garden/pull/6",
-    "https://github.com/dbotas91/my-garden/pull/12"
+    "https://github.com/dbotas91/my-garden/pull/12",
+    "https://github.com/dbotas91/my-garden/pull/6"
   ],
   "baseTheme": "dark",
   "theme": "{\"name\":\"Dracula for Obsidian\",\"author\":\"jarodise\",\"repo\":\"jarodise/Dracula-for-Obsidian.md\",\"screenshot\":\"screencap.jpg\",\"modes\":[\"dark\"],\"cssUrl\":\"https://raw.githubusercontent.com/jarodise/Dracula-for-Obsidian.md/HEAD/theme.css\"}",
