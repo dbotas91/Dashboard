@@ -9,7 +9,7 @@ Status: [[Por fazer]]
 Tags: [[2026-02]]
  
 # Passagem em estudo
-[[1 Timóteo#Verso 13-14]]
+[[1 Timóteo#Verso 15]]
 
 # Músicas
 Cantarei um cântico ao senhor

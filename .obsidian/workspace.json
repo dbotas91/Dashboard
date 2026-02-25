@@ -13,36 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Estudo Bíblico - 04-03-2026"
-            }
-          }
-        ]
-      },
-      {
-        "id": "72ef0b9d94f90c33",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "60ad359e383aad72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md",
                 "mode": "source",
                 "source": false,
@@ -59,6 +29,30 @@
               },
               "icon": "lucide-file",
               "title": "Estudo Bíblico - 25-02-2026"
+            }
+          },
+          {
+            "id": "d9e1f1dc9d401a9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "1 Timóteo"
             }
           }
         ]
@@ -247,6 +241,16 @@
               "icon": "lucide-info",
               "title": "File properties for Eu acredito no Batismo - Tabela"
             }
+          },
+          {
+            "id": "d2e6ab0b849de0ce",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
           }
         ],
         "currentTab": 6
@@ -321,19 +325,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d187ad581aa11266",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
+    "Sem título.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
     "10 - TAGS/2026-03.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-02-2026.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "Home.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
     "11 - TEMPLATES/Estudos Bíblicos.md",
     "11 - TEMPLATES/Cultos.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
@@ -368,7 +373,6 @@
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-blue.png",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/README.md",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/chalkboard/README.md",
-    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/menu/README.md",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
