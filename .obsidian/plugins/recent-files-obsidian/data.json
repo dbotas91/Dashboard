@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Guia de atualização do Joomla",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla.md"
+      "basename": "Estudo Bíblico - 04-03-2026",
+      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Estudo Bíblico - 04-03-2026.md"
+    },
+    {
+      "basename": "Estudo Bíblico - 25-02-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md"
+    },
+    {
+      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
+      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
+    },
+    {
+      "basename": "Estudo Bíblico - 11-02-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md"
+    },
+    {
+      "basename": "2026-03",
+      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-03.md"
+    },
+    {
+      "basename": "Estudo Bíblico - 18-02-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-02-2026.md"
+    },
+    {
+      "basename": "Atividades e tarefas",
+      "path": "00 - MAPS OF CONTENT/Atividades e tarefas.md"
     },
     {
       "basename": "Home",
       "path": "Home.md"
+    },
+    {
+      "basename": "Guia de atualização do Joomla",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla.md"
     },
     {
       "basename": "Tarefas no site IQC",
@@ -17,28 +45,12 @@
       "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md"
     },
     {
-      "basename": "Estudo Bíblico - 18-02-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-02-2026.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 11-02-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md"
-    },
-    {
-      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
-      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
-    },
-    {
       "basename": "Estudos Bíblicos",
       "path": "11 - TEMPLATES/Estudos Bíblicos.md"
     },
     {
       "basename": "Cultos",
       "path": "11 - TEMPLATES/Cultos.md"
-    },
-    {
-      "basename": "Atividades e tarefas",
-      "path": "00 - MAPS OF CONTENT/Atividades e tarefas.md"
     },
     {
       "basename": "Artigo Histórico sobre Bart Ehrman para a IQC",
@@ -187,18 +199,6 @@
     {
       "basename": "username_gray",
       "path": "08 - ATTACHMENTS/Attachments/username_gray.svg"
-    },
-    {
-      "basename": "Untitled_design-8",
-      "path": "08 - ATTACHMENTS/Attachments/Untitled_design-8.png"
-    },
-    {
-      "basename": "Untitled_(1)",
-      "path": "08 - ATTACHMENTS/Attachments/Untitled_(1).png"
-    },
-    {
-      "basename": "Untitled_design_(1)",
-      "path": "08 - ATTACHMENTS/Attachments/Untitled_design_(1).png"
     }
   ],
   "omittedPaths": [],

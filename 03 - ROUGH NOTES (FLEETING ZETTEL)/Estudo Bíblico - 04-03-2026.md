@@ -1,12 +1,12 @@
 ---
 tags:
-  - 2026-02
+  - 2026-03
 dg-publish: "true"
-dg-note-icon: chest
-noteIcon: chest
+dg-note-icon: stone
+noteIcon: stone
 ---
-Status: [[Concluído]]
-Tags: [[2026-02]]
+Status: [[Por fazer]]
+Tags: [[2026-03]]
  
 # Passagem em estudo
 [[1 Timóteo#Verso 13-14]]
@@ -15,13 +15,19 @@ Tags: [[2026-02]]
 Cantarei um cântico ao senhor
 
 # Leitura da Bíblia 
-Marcos 14:29-32, 66-72; Lucas 22:60-62 
+## O Auxílio do Espírito Santo
+
+Esta é talvez a passagem mais reconfortante sobre a nossa limitação humana na oração.
+
+>[!quote]- **Romanos 8:26-27:** 
+>"E da mesma maneira também o Espírito ajuda as nossas fraquezas; porque não sabemos o que havemos de pedir como convém, mas o mesmo Espírito intercede por nós com gemidos inexprimíveis."
+    
 
 # Motivos de oração 
 
-- [ ] Pai do Paulo Ferreira
-	- [ ] Vão começar a planear a quimioterapia
-- [ ] Carlos Alves, Andreza e Tiago
+Pai do Paulo Ferreira
+	- [ ] Começou a quimioterapia na terça(?)
+- [ ] Orar pelo consolo da irmã Andreza Alves e família (por causa da partida para a glória do irmão Carlos Alves)
 - [ ] Filipe Gonçalves, Lena, Cláudia + Pedro, Bruno + Kat e Lucas (neto)
 - [ ] Irmã Carmen
 - [ ] Lucinda, Mina e Patrícia (sobrinha) 
