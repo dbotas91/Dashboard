@@ -9,8 +9,24 @@
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
     },
     {
+      "basename": "Joomla!",
+      "path": "10 - TAGS/Joomla!.md"
+    },
+    {
       "basename": "Tarefas no site IQC",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "Canon",
+      "path": "09 - STATUS NOTES/Canon.md"
+    },
+    {
+      "basename": "Calado",
+      "path": "09 - STATUS NOTES/Calado.md"
     },
     {
       "basename": "Estudo Bíblico - 04-03-2026",
@@ -23,10 +39,6 @@
     {
       "basename": "Atividades e tarefas",
       "path": "00 - MAPS OF CONTENT/Atividades e tarefas.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
     },
     {
       "basename": "Estudo Bíblico - 25-02-2026",
@@ -187,18 +199,6 @@
     {
       "basename": "06 - Tratado De Tordesilhas",
       "path": "08 - ATTACHMENTS/06 - Tratado De Tordesilhas.pdf"
-    },
-    {
-      "basename": "zap",
-      "path": "08 - ATTACHMENTS/Attachments/zap.svg"
-    },
-    {
-      "basename": "youtube",
-      "path": "08 - ATTACHMENTS/Attachments/youtube.svg"
-    },
-    {
-      "basename": "youtube",
-      "path": "08 - ATTACHMENTS/Attachments/youtube.png"
     }
   ],
   "omittedPaths": [],

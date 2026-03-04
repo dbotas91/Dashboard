@@ -7488,6 +7488,7 @@ Fgc
 FORTE
 Focar
 Finaliza
+FROM
 Creator
 CreationDate
 CW
@@ -78700,6 +78701,7 @@ manifestas
 mudada
 medalhas
 mysql
+migra
 qd
 qm
 qI
@@ -101706,6 +101708,7 @@ roubam
 relembrar
 remo
 reiniciar
+repor
 hF
 hj
 hC

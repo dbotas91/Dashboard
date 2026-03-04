@@ -1,3 +1,20 @@
+---
+dg-publish: "true"
+tags:
+  - Canon
+  - Joomla
+  - migração
+mature-status: canon
+created: 2026-03-04 11:58
+dg-note-icon: canon
+noteIcon: canon
+updated: 2026-03-04 11:58
+dgPassFrontmatter: "true"
+---
+[[Home|Back home]]
+Status: [[Canon]]
+Tags:  [[Joomla!]]
+
 # Guia de Atualização Joomla (3.10.12 para 5.4.14)  
   
 Este documento serve como guião para o processo de atualização do site IQC, garantindo a integridade dos dados e a compatibilidade das extensões.
@@ -30,4 +47,5 @@ Pela BD:
 - [SELECT](https://cpanel101.dnscpanel.com:2083/cpsess3865914358/3rdparty/phpMyAdmin/url.php?url=https://dev.mysql.com/doc/refman/8.0/en/select.html) * FROM `fzvai_extensions`
 
 #### Confirmação das extensões que têm versões no Joomla 5
-
+As seguintes extensões têm atualizações no Joomla 5:
+- 
