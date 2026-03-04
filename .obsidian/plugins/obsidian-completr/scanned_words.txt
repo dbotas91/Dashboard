@@ -1967,6 +1967,7 @@ Passagem
 Pastas
 Primeira
 Plugin
+Parar
 obj
 oQw
 ot
@@ -9590,6 +9591,9 @@ Caracteres
 Configurar
 Criar
 Consultar
+Clonar
+Confirma
+Componentes
 Mozilla
 ModDate
 MK
@@ -15586,6 +15590,7 @@ Acompanhar
 Aceder
 Atualizar
 Ativar
+Apagar
 KHTML
 Kn
 KA
@@ -19232,6 +19237,7 @@ lembrassem
 lasc
 lftp
 lampp
+listagem
 Gecko
 Group
 GQ
@@ -31308,6 +31314,7 @@ clamores
 claras
 congelado
 compat
+calendariza
 BM
 BBox
 BHq
@@ -53441,6 +53448,7 @@ antigas
 apache
 apontando
 acentos
+atualizam
 dA
 dD
 dd
@@ -63457,6 +63465,7 @@ nacionalidade
 nariz
 nano
 nativas
+nativos
 pM
 pg
 pd
@@ -66781,6 +66790,7 @@ phpMyAdmin
 pare
 puderes
 phpmyadmin
+pacotes
 OaL
 Oar
 OQ

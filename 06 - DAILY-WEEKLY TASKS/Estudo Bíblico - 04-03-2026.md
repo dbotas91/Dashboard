@@ -25,7 +25,7 @@ Esta é talvez a passagem mais reconfortante sobre a nossa limitação humana na
 
 # Motivos de oração 
 
-Pai do Paulo Ferreira
+- [ ] Pai do Paulo Ferreira
 	- [ ] Começou a quimioterapia na terça(?)
 - [ ] Orar pelo consolo da irmã Andreza Alves e família (por causa da partida para a glória do irmão Carlos Alves)
 - [ ] Filipe Gonçalves, Lena, Cláudia + Pedro, Bruno + Kat e Lucas (neto)
