@@ -7,7 +7,7 @@ noteIcon: chest
 ---
 Status: [[Concluído]]
 Created: June 24, 2021
-Tags: [[2021-06]] 
+Tags: [[2021-06]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
 
 ![](Dashboard/Attachments/met_georges_seurat_1884.jpg)
 

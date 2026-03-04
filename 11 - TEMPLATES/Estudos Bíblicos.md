@@ -8,7 +8,7 @@ Status:
 Tags: 
  
 # Passagem em estudo
-[[1 Timóteo#Verso 13-14]]
+[[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 13-14]]
 
 # Músicas
 Cantarei um cântico ao senhor

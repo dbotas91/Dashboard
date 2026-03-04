@@ -16,7 +16,7 @@ dgPassFrontmatter: "true"
 [[Home|Back home]]
 Status: [[Teen]], [[A fazer]]
 Local: [[IQC]]
-Tags: [[Timóteo]]
+Tags: [[Timóteo]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
 
 # Capítulo 1
 

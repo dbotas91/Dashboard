@@ -9,7 +9,7 @@ noteIcon: chest
 
 Status: [[Concluído]]
 Created: 2025-10-15 18:13
-Tags: [[2025-10]], 
+Tags: [[2025-10]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Músicas 
 

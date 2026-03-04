@@ -6,10 +6,10 @@ dg-note-icon: stone
 noteIcon: stone
 ---
 Status: [[Por fazer]]
-Tags: [[2026-03]]
+Tags: [[2026-03]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Passagem em estudo
-[[1 Timóteo#Verso 13-14]]
+[[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 13-14]]
 
 # Músicas
 Cantarei um cântico ao senhor

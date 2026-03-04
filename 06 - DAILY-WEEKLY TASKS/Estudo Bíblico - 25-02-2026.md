@@ -6,10 +6,10 @@ dg-note-icon: chest
 noteIcon: chest
 ---
 Status: [[Por fazer]]
-Tags: [[2026-02]]
+Tags: [[2026-02]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Passagem em estudo
-[[1 Timóteo#Verso 15]]
+[[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 15]]
 
 # Músicas
 Cantarei um cântico ao senhor

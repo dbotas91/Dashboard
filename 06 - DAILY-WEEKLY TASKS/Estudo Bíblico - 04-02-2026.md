@@ -6,7 +6,7 @@ dg-note-icon: chest
 noteIcon: chest
 ---
 Status: [[Concluído]]
-Tags: [[2026-02]]
+Tags: [[2026-02]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Músicas
 

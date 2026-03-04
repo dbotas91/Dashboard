@@ -7,7 +7,7 @@ noteIcon: chest
 ---
 Status: [[Concluído]]
 Created: August 06, 2025
-Tags: [[2025-08]] 
+Tags: [[2025-08]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
 
 # Estudo Bíblico
 
