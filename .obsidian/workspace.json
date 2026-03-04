@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Motivos de oração 24-06-2021.md",
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,59 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Motivos de oração 24-06-2021"
+              "title": "Guia de atualização do Joomla no ambiente local"
+            }
+          },
+          {
+            "id": "29f90a565b9adacd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Script de migração do Joomla da versão 3 para a versão 5"
+            }
+          },
+          {
+            "id": "b7a50fa91f28c6b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Estudo Bíblico - 04-03-2026"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -301,8 +350,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3cbe0c851eddb196",
+  "active": "b7a50fa91f28c6b2",
   "lastOpenFiles": [
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "07 - INDEXES/2025 - Atividades e Tarefas.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "Home.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "06 - DAILY-WEEKLY TASKS/Motivos de oração 24-06-2021.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 25-06-2025.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 06-08-2025.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 05-02-2025.md",
@@ -321,14 +378,6 @@
     "10 - TAGS/transformação.md",
     "10 - TAGS/torre de babel.md",
     "10 - TAGS/templates.md",
-    "10 - TAGS/tasks.md",
-    "10 - TAGS/tags.md",
-    "10 - TAGS/soldados.md",
-    "10 - TAGS/silêncio.md",
-    "10 - TAGS/servir.md",
-    "10 - TAGS/seminário.md",
-    "10 - TAGS/secularismo.md",
-    "10 - TAGS/santidade.md",
     "01 - PROJECTS (PARA)/IQC Maintenance",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/style.css",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/plugin.js",

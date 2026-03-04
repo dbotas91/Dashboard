@@ -17,6 +17,7 @@ Estão organizados por ano-mês com referências às Tags.
 ## 2026
 ### Tags (Por ano-mês)
 - [[2026-02]]
+- [[2026-03]]
 
 ### Todas as notas (ordenadas por data ascendente)
 - [[Reunião Zoom IQC - 01-02-2025]]
