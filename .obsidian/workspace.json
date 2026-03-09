@@ -37,12 +37,12 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
-                "bFile": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Script de migração do Joomla da versão 3 para a versão 5  (Working Tree)"
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ],
@@ -316,8 +316,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "29f90a565b9adacd",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
@@ -343,7 +344,6 @@
     "10 - TAGS/Timóteo.md",
     "10 - TAGS/vírus mortal.md",
     "10 - TAGS/vírus.md",
-    "10 - TAGS/transformação.md",
     "01 - PROJECTS (PARA)/IQC Maintenance",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/style.css",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/plugin.js",
