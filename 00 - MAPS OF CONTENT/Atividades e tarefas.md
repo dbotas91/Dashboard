@@ -17,4 +17,5 @@ Estão organizados por ano e referências aos INDEXES.
 
 ## [[Ceia do Senhor, Oração e Estudo Bíblico]]
 
+## [[2026 - Atividades e Tarefas]]
 ## [[2025 - Atividades e Tarefas]]
