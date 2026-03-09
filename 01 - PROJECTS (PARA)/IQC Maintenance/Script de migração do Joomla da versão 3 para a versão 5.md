@@ -15,7 +15,7 @@ dgPassFrontmatter: "true"
 Status: [[Canon]]
 Tags:  [[Joomla!]]
 
-# Guia de Atualização Joomla (3.10.12 para 5.4.14)  
+# Guia de Atualização Joomla (3.10.12 para 5.4.3)  
   
 Este documento serve como guião para o processo de atualização do site IQC, garantindo a integridade dos dados e a compatibilidade das extensões.
   

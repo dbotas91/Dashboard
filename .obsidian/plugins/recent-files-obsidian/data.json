@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Script de migração do Joomla da versão 3 para a versão 5",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md"
+    },
+    {
+      "basename": "Guia de atualização do Joomla no ambiente local",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
+    },
+    {
       "basename": "conversa_github_public_key",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key.md"
     },
     {
-      "basename": "Script de migração do Joomla da versão 3 para a versão 5",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md"
+      "basename": "conversa_github",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github.md"
+    },
+    {
+      "basename": "conversa",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md"
+    },
+    {
+      "basename": "Auditoria_IQC_MoonSec",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md"
     },
     {
       "basename": "Home",
@@ -31,10 +47,6 @@
     {
       "basename": "2026 - Atividades e Tarefas",
       "path": "07 - INDEXES/2026 - Atividades e Tarefas.md"
-    },
-    {
-      "basename": "Guia de atualização do Joomla no ambiente local",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
     },
     {
       "basename": "Motivos de oração 24-06-2021",
@@ -187,18 +199,6 @@
     {
       "basename": "perdão",
       "path": "10 - TAGS/perdão.md"
-    },
-    {
-      "basename": "pecado",
-      "path": "10 - TAGS/pecado.md"
-    },
-    {
-      "basename": "peace",
-      "path": "10 - TAGS/peace.md"
-    },
-    {
-      "basename": "paz",
-      "path": "10 - TAGS/paz.md"
     }
   ],
   "omittedPaths": [],
