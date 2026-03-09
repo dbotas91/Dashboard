@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "conversa_github_public_key",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key.md"
+    },
+    {
       "basename": "Script de migração do Joomla da versão 3 para a versão 5",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "paz",
       "path": "10 - TAGS/paz.md"
-    },
-    {
-      "basename": "Paulo",
-      "path": "10 - TAGS/Paulo.md"
     }
   ],
   "omittedPaths": [],
