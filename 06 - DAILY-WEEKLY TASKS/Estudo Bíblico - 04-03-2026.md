@@ -5,7 +5,7 @@ dg-publish: "true"
 dg-note-icon: chest
 noteIcon: chest
 ---
-Status: [[Por fazer]]
+Status: [[Concluído]]
 Tags: [[2026-03]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Passagem em estudo

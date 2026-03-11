@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6b1744c2c346e08a",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "a0df2628041a7ce1",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Estudo Bíblico - 11-03-2026"
+              "title": "Estudo Bíblico - 04-03-2026"
             }
           }
         ]
@@ -301,22 +301,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a0df2628041a7ce1",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
+    "Home.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
     "06 - DAILY-WEEKLY TASKS/0. Read me - Tasks.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_manha_10032025.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
-    "Home.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key.md",

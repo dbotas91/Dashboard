@@ -9653,6 +9653,7 @@ Criei
 COLE
 CONTEUDO
 CHAVE
+Confer
 Mozilla
 ModDate
 MK
@@ -11582,6 +11583,7 @@ Modificados
 Migrar
 Migre
 Markdown
+Marta
 Linux
 Length
 LJ
