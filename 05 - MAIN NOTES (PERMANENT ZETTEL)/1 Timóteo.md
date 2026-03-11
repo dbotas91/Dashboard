@@ -495,9 +495,9 @@ Este tipo de mentalidade que vemos do verso 9 até aqui, sem dúvida que ajuda a
 
 A avó Loide e a mãe Eunice não eram líderes de igreja e muito menos pregadoras ou ensinadoras na igreja. Mas a permanência na fé não fingida, no amor e santificação fê-las criar um Timóteo com fé não fingida que foi um líder e ensinador na Igreja.
 
-[azurevpnconfig (4) 1.xml](https://prod-files-secure.s3.us-west-2.amazonaws.com/08799754-5d94-410c-ae8d-2eb4bb3aba90/1824b438-7c5a-47d8-888e-d124001c579a/azurevpnconfig_\(4\)_1.xml)
+# Capítulo 3
 
-[vnet-ReferenceManual20-westeurope-dev-001.AzureVpnProfile.xml](https://prod-files-secure.s3.us-west-2.amazonaws.com/08799754-5d94-410c-ae8d-2eb4bb3aba90/393a1e53-17d6-4777-a521-d2d05a2c4649/vnet-ReferenceManual20-westeurope-dev-001.AzureVpnProfile.xml)
+## Verso 1
 
 # Referências
 

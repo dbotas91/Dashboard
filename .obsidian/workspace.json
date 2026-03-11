@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "6b1744c2c346e08a",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "a0df2628041a7ce1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Estudo Bíblico - 11-03-2026"
             }
           }
         ]
@@ -37,15 +37,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c4f9280abf8c4df9",
+    "id": "237d815bc5e5dc5c",
     "type": "split",
     "children": [
       {
-        "id": "cbb3069114198dc6",
+        "id": "c0de3aba8404472b",
         "type": "tabs",
         "children": [
           {
-            "id": "87e0140d58bdf018",
+            "id": "d187ad581aa11266",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -54,19 +54,19 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de ficheiros"
             }
           },
           {
-            "id": "b3cb4c03cbd04602",
+            "id": "aa9fdd5b9455a314",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "?",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -75,7 +75,7 @@
             }
           },
           {
-            "id": "51e7437a56b62b6f",
+            "id": "f023e4afcc29a9e8",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -83,28 +83,39 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "7915ede7c8509f0f",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 239.00260543823242
   },
   "right": {
-    "id": "1205787ef275a812",
+    "id": "a359acdbbd8fb8e7",
     "type": "split",
     "children": [
       {
-        "id": "70a07c768c538aa1",
+        "id": "66d2499bd7c7c2cf",
         "type": "tabs",
+        "dimension": 71.48760330578513,
         "children": [
           {
-            "id": "dd6d8c82805b377e",
+            "id": "ca992fb3ee138cd9",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Dividir bem para estar confirmado na presente verd ba62a412a24148be9e3787ba5bbab5a0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,30 +125,31 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Home"
+              "title": "Backlinks for Dividir bem para estar confirmado na presente verd ba62a412a24148be9e3787ba5bbab5a0"
             }
           },
           {
-            "id": "5d69b14d30948bf8",
+            "id": "3cdbdf0c75eddbee",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Untitled"
             }
           },
           {
-            "id": "6d7b6c64150eb1dc",
+            "id": "45d3e6267f5c1127",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -146,7 +158,22 @@
             }
           },
           {
-            "id": "d1489fd014a080c5",
+            "id": "5d6c2ca1d24e464c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "09 - STATUS NOTES/Adult.md",
+                "followCursor": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Adult"
+            }
+          },
+          {
+            "id": "52cee0595bf7d5b2",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -160,31 +187,17 @@
             }
           },
           {
-            "id": "ffee06b40639e1fe",
+            "id": "f34122c6fa88596e",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
-          {
-            "id": "9de58c9fef5e207c",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
+              "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
-            "id": "d0d2545ee6f443f4",
+            "id": "c4892fd3bf0af16c",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -192,25 +205,89 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "9275b0c2fcd66d98",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md"
+              },
+              "icon": "lucide-info",
+              "title": "Propriedades do ficheiro para Estudo Bíblico - 11-03-2026"
+            }
+          },
+          {
+            "id": "d2e6ab0b849de0ce",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
           }
         ],
         "currentTab": 6
+      },
+      {
+        "id": "aa213c339baded63",
+        "type": "tabs",
+        "dimension": 28.512396694214875,
+        "children": [
+          {
+            "id": "4f23ffc45f683c25",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "c7bf261309fc083c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "09 - STATUS NOTES/Adult.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Adult"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 218
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false,
-      "publish:Publish changes...": false,
-      "bases:Create new base": false,
+      "canvas:Criar novo Canvas": false,
+      "bases:Criar nova base": false,
+      "switcher:Abrir Quick Switcher": false,
+      "graph:Abrir Visualização de diagrama de grafo": false,
+      "daily-notes:Abrir nota de hoje": false,
+      "templates:Inserir templates": false,
+      "command-palette:Abrir paleta de comando": false,
+      "workspaces:Gerir esquema da área de trabalho": false,
+      "publish:Publicar alterações": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
@@ -224,10 +301,55 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "a0df2628041a7ce1",
   "lastOpenFiles": [
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
+    "06 - DAILY-WEEKLY TASKS/0. Read me - Tasks.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
+    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_manha_10032025.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
+    "Home.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
-    "Home.md"
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "07 - INDEXES/2025 - Atividades e Tarefas.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "06 - DAILY-WEEKLY TASKS/Motivos de oração 24-06-2021.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 25-06-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 06-08-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 05-02-2025.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/style.css",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart/chart.min.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chart",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/style.css",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols/plugin.js",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/plugin/customcontrols",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/whiteboard.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/sponge.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-yellow.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-white.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-red.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-purple.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-orange.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-green.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/boardmarker-green.png",
+    "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/chalkboard/img/chalk-blue.png",
+    "00 - MAPS OF CONTENT/DashBoard.canvas",
+    "Untitled.canvas"
   ]
 }
