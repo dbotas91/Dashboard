@@ -6,6 +6,7 @@
       {
         "id": "4509724f8bf84da7",
         "type": "tabs",
+        "dimension": 48.84937238493724,
         "children": [
           {
             "id": "e7a7b303c61786dc",
@@ -29,6 +30,37 @@
               },
               "icon": "lucide-file",
               "title": "Estudo Bíblico - 11-03-2026"
+            }
+          }
+        ]
+      },
+      {
+        "id": "273c1d12b37e0436",
+        "type": "tabs",
+        "dimension": 51.15062761506276,
+        "children": [
+          {
+            "id": "de22790bc5eb340c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-03-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Estudo Bíblico - 18-03-2026"
             }
           }
         ]
@@ -301,24 +333,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "de22790bc5eb340c",
   "lastOpenFiles": [
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
-    "Home.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-03-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
+    "09 - STATUS NOTES/Por fazer.md",
+    "Home.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
     "06 - DAILY-WEEKLY TASKS/0. Read me - Tasks.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_manha_10032025.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
@@ -327,8 +361,6 @@
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "06 - DAILY-WEEKLY TASKS/Motivos de oração 24-06-2021.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 25-06-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 06-08-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico 05-02-2025.md",
     "01 - PROJECTS (PARA)/IQC Maintenance",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/style.css",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/customcontrols/plugin.js",

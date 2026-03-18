@@ -1,20 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Estudo Bíblico - 18-03-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-03-2026.md"
+    },
+    {
       "basename": "Estudo Bíblico - 11-03-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md"
     },
     {
-      "basename": "Estudo Bíblico - 04-03-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md"
+      "basename": "Estudo Bíblico - 04-02-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md"
+    },
+    {
+      "basename": "Estudo Bíblico - 11-02-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md"
+    },
+    {
+      "basename": "Por fazer",
+      "path": "09 - STATUS NOTES/Por fazer.md"
     },
     {
       "basename": "Home",
       "path": "Home.md"
     },
     {
-      "basename": "Estudo Bíblico - 04-02-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md"
+      "basename": "Guia de atualização do Joomla no ambiente local",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
+    },
+    {
+      "basename": "Auditoria_IQC_MoonSec",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md"
+    },
+    {
+      "basename": "Estudo Bíblico - 04-03-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md"
     },
     {
       "basename": "1 Timóteo",
@@ -33,16 +53,8 @@
       "path": "01 - PROJECTS (PARA)/Obsidian digital garden setup.md"
     },
     {
-      "basename": "Auditoria_IQC_MoonSec",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md"
-    },
-    {
       "basename": "Tarefas no site IQC",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 11-02-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md"
     },
     {
       "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
@@ -67,10 +79,6 @@
     {
       "basename": "2026 - Atividades e Tarefas",
       "path": "07 - INDEXES/2026 - Atividades e Tarefas.md"
-    },
-    {
-      "basename": "Guia de atualização do Joomla no ambiente local",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
     },
     {
       "basename": "Motivos de oração 24-06-2021",
@@ -191,14 +199,6 @@
     {
       "basename": "provação",
       "path": "10 - TAGS/provação.md"
-    },
-    {
-      "basename": "projects",
-      "path": "10 - TAGS/projects.md"
-    },
-    {
-      "basename": "presente verdade",
-      "path": "10 - TAGS/presente verdade.md"
     }
   ],
   "omittedPaths": [],
