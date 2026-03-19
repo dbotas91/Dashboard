@@ -5,6 +5,26 @@
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
     },
     {
+      "basename": "conversa",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md"
+    },
+    {
+      "basename": "Auditoria_IQC_MoonSec",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md"
+    },
+    {
+      "basename": "conversa_manha_10032025",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa_manha_10032025.md"
+    },
+    {
+      "basename": "Tarefas no site IQC",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md"
+    },
+    {
+      "basename": "Script de migração do Joomla da versão 3 para a versão 5",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
@@ -57,10 +77,6 @@
       "path": "09 - STATUS NOTES/Por fazer.md"
     },
     {
-      "basename": "Auditoria_IQC_MoonSec",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md"
-    },
-    {
       "basename": "Estudo Bíblico - 04-03-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md"
     },
@@ -79,14 +95,6 @@
     {
       "basename": "Obsidian digital garden setup",
       "path": "01 - PROJECTS (PARA)/Obsidian digital garden setup.md"
-    },
-    {
-      "basename": "Tarefas no site IQC",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md"
-    },
-    {
-      "basename": "Script de migração do Joomla da versão 3 para a versão 5",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md"
     },
     {
       "basename": "conversa_github_public_key",
@@ -191,14 +199,6 @@
     {
       "basename": "santidade",
       "path": "10 - TAGS/santidade.md"
-    },
-    {
-      "basename": "salvação",
-      "path": "10 - TAGS/salvação.md"
-    },
-    {
-      "basename": "salmos",
-      "path": "10 - TAGS/salmos.md"
     }
   ],
   "omittedPaths": [],

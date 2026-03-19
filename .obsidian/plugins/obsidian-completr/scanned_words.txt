@@ -1988,6 +1988,8 @@ Programador
 Passos
 PGID
 PRIVATE
+Prompt
+PCManFM
 obj
 oQw
 ot
@@ -5730,6 +5732,12 @@ Testar
 Terceiros
 TinyMCE
 Teremos
+TERM
+TeXInfo
+TexInfo
+TextEditor
+Teletype
+TerminalEmulator
 FEFF
 Form
 Font
@@ -7525,6 +7533,13 @@ Firewall
 Featured
 Ficheiro
 Fonta
+FileZilla
+FTP
+FTPS
+FileTransfer
+FileTools
+FileManager
+FETCH
 Creator
 CreationDate
 CW
@@ -9655,6 +9670,9 @@ COLE
 CONTEUDO
 CHAVE
 Confer
+ConsoleOnly
+Config
+Certifique
 Mozilla
 ModDate
 MK
@@ -11585,6 +11603,8 @@ Migrar
 Migre
 Markdown
 Marta
+MATE
+Multimedia
 Linux
 Length
 LJ
@@ -13345,6 +13365,7 @@ Localizar
 Limpar
 Lateral
 LIMPA
+LXDE
 AppleWebKit
 ADN
 Ak
@@ -15697,6 +15718,7 @@ Altera
 Attempted
 AQUI
 Adolfo
+Accessories
 KHTML
 Kn
 KA
@@ -19356,6 +19378,9 @@ limpe
 ltiplo
 limitou
 listam
+lesshst
+lxde
+libexec
 Gecko
 Group
 GQ
@@ -21000,6 +21025,10 @@ Gantry
 Garanta
 Gato
 GitLab
+GNOME
+GTK
+Games
+Graphics
 HeadlessChrome
 HX
 HSG
@@ -22665,6 +22694,8 @@ Homebrew
 HACKED
 Hacker
 HEAD
+Handler
+Htop
 Safari
 Skia
 Subtype
@@ -24713,6 +24744,10 @@ Seletiva
 Sanitizada
 Susana
 Santiago
+SFTP
+SessionAgent
+Snapd
+Sound
 endobj
 endstream
 eV
@@ -27757,6 +27792,8 @@ elimina
 exporta
 exportar
 eval
+env
+estritamente
 ca
 cW
 cEu
@@ -31505,6 +31542,7 @@ copiado
 crie
 chmod
 colar
+commandline
 BM
 BBox
 BHq
@@ -33157,6 +33195,10 @@ Bluege
 Backward
 Backend
 BEGIN
+Byobu
+Brave
+Browser
+Backups
 Normal
 NM
 Nf
@@ -42465,6 +42507,7 @@ trustedFolders
 tamanhos
 traseiras
 temp
+tar
 stream
 sWz
 sj
@@ -45474,6 +45517,9 @@ sugeres
 subdom
 syntax
 silenciosa
+snapd
+secrets
+snapcraft
 xU
 xM
 xLq
@@ -46935,6 +46981,9 @@ xZPM
 xFo
 xFM
 xampp
+xdg
+xterm
+xpm
 Jn
 JJu
 JT
@@ -50276,6 +50325,10 @@ gmendes
 gravar
 github
 gravidez
+gitconfig
+gvim
+gcr
+gnome
 am
 ah
 as
@@ -53741,6 +53794,9 @@ aparecesse
 apagasse
 args
 apagando
+aedcfaf
+accessories
+amusements
 dA
 dD
 dd
@@ -56916,6 +56972,10 @@ digite
 datas
 descobri
 directories
+debian
+denied
+diretoria
+devolver
 zR
 zD
 zJ
@@ -58383,6 +58443,7 @@ zSX
 zlv
 zKK
 zvWn
+zutty
 we
 wo
 wh
@@ -60193,6 +60254,7 @@ wgo
 wzF
 woqx
 wget
+wallpapers
 Is
 IL
 If
@@ -61989,6 +62051,7 @@ Investigar
 IPs
 Identificadas
 Identifique
+Interpreter
 nk
 nu
 nC
@@ -67159,6 +67222,11 @@ prefiro
 preferir
 phtml
 partilhado
+prompter
+python
+pixmaps
+preferences
+pref
 OaL
 Oar
 OQ
@@ -70397,6 +70465,8 @@ Wellington
 WSOD
 WebxSolution
 WSO
+WebBrowser
+Would
 jg
 jr
 jN
@@ -73594,6 +73664,10 @@ Utilizador
 Utilizadores
 USER
 Usada
+Utility
+Unlock
+URIs
+Unicode
 VP
 Vn
 VD
@@ -75290,6 +75364,8 @@ Videos
 Verifique
 Verifiquei
 Veredito
+Vim
+Viewer
 QX
 QY
 QP
@@ -79115,6 +79191,8 @@ mapear
 migrado
 markdown
 migracao
+multimedia
+modifique
 qd
 qm
 qI
@@ -83360,6 +83438,8 @@ injetou
 injetarem
 importe
 injet
+internos
+impedindo
 kC
 kp
 kN
@@ -86304,6 +86384,7 @@ ZKw
 ZYh
 ZxQ
 Zone
+Zutty
 uh
 uF
 uj
@@ -95494,6 +95575,8 @@ bytes
 backdoors
 bloquear
 backdoor
+byobu
+bird
 vdjL
 vd
 vR
@@ -97468,6 +97551,7 @@ vulnerabilidades
 verifique
 visuais
 verificaria
+viewer
 Dnb
 DFp
 DX
@@ -99303,6 +99387,8 @@ Directory
 Downloads
 Destaque
 Dica
+Debian
+DesktopSettings
 rQ
 ru
 rg

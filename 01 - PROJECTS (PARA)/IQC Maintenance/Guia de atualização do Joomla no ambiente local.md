@@ -55,8 +55,9 @@ wget https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.0.30/xampp-lin
 2. **Download do Site (via lftp):**  
    - Para descarregar o `public_html`:  
 ```bash  
-     lftp -u 'utilizador','password' -e "mirror /public_html /home/dariobotas/iqc/public_html_local; quit" ftp.iqc.
+     lftp -u 'dapb@iqc.pt' -e "set ssl:verify-certificate no; mirror --verbose /public_html /home/dariobotas/iqc/public_html_local; quit" ftp.iqc.pt
 ```   
+ Irá pedir a senha de ftp e depois irá descarregar os ficheiros para a pasta indicada no /home/dariobotas …
  - Para descarregar a Base de Dados (Dump SQL):  
 ```bash  
      lftp -u 'utilizador','password' -e "get iqc_antes_update.sql; quit" ftp.iqc.pt  
