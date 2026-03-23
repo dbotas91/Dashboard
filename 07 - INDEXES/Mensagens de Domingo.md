@@ -21,6 +21,8 @@ kanban-plugin: board
 - [ ] [[O lugar]]
 - [ ] [[Entenda a sua Bíblia]]
 - [ ] [[Abraão, o pai da fé]]
+- [ ] [[Corrompida?]]
+- [ ] [[A tua morte é um dever!]]
 
 
 ## A falar

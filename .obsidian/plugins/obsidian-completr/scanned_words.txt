@@ -1990,6 +1990,7 @@ PGID
 PRIVATE
 Prompt
 PCManFM
+Pordata
 obj
 oQw
 ot
@@ -3877,6 +3878,7 @@ oauth
 ofuscado
 ocultos
 origin
+olharmos
 Title
 Type
 Transparency
@@ -7540,6 +7542,7 @@ FileTransfer
 FileTools
 FileManager
 FETCH
+Facto
 Creator
 CreationDate
 CW
@@ -9673,6 +9676,8 @@ Confer
 ConsoleOnly
 Config
 Certifique
+Corrompida
+Casar
 Mozilla
 ModDate
 MK
@@ -11605,6 +11610,7 @@ Markdown
 Marta
 MATE
 Multimedia
+Millennials
 Linux
 Length
 LJ
@@ -19381,6 +19387,8 @@ listam
 lesshst
 lxde
 libexec
+laboral
+localidades
 Gecko
 Group
 GQ
@@ -27794,6 +27802,7 @@ exportar
 eval
 env
 estritamente
+empurrem
 ca
 cW
 cEu
@@ -31543,6 +31552,11 @@ crie
 chmod
 colar
 commandline
+cadas
+casamentos
+celebrados
+casam
+cancelando
 BM
 BBox
 BHq
@@ -42508,6 +42522,7 @@ tamanhos
 traseiras
 temp
 tar
+taxas
 stream
 sWz
 sj
@@ -45520,6 +45535,8 @@ silenciosa
 snapd
 secrets
 snapcraft
+seguidos
+sobretudo
 xU
 xM
 xLq
@@ -50329,6 +50346,7 @@ gitconfig
 gvim
 gcr
 gnome
+grosso
 am
 ah
 as
@@ -53797,6 +53815,12 @@ apagando
 aedcfaf
 accessories
 amusements
+apoiados
+aumentou
+anualmente
+acentuada
+adiar
+abdiquem
 dA
 dD
 dd
@@ -56976,6 +57000,9 @@ debian
 denied
 diretoria
 devolver
+demogr
+divorciar
+dissolver
 zR
 zD
 zJ
@@ -62052,6 +62079,7 @@ IPs
 Identificadas
 Identifique
 Interpreter
+INE
 nk
 nu
 nC
@@ -63872,6 +63900,9 @@ nProcess
 nFoi
 ndrwx
 ndrwxr
+nascidas
+norma
+normalizou
 pM
 pg
 pd
@@ -67227,6 +67258,8 @@ python
 pixmaps
 preferences
 pref
+panorama
+pique
 OaL
 Oar
 OQ
@@ -83440,6 +83473,8 @@ importe
 injet
 internos
 impedindo
+independ
+idades
 kC
 kp
 kN
@@ -95577,6 +95612,8 @@ bloquear
 backdoor
 byobu
 bird
+bibliacorrompida
+brutal
 vdjL
 vd
 vR
@@ -102316,6 +102353,9 @@ rebase
 reposit
 rsa
 restritas
+ronda
+rondam
+reunem
 hF
 hj
 hC
@@ -104067,6 +104107,7 @@ htop
 hackeado
 hash
 hashes
+historia
 Äb
 Äc
 Äj

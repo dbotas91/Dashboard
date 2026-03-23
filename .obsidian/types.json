@@ -33,6 +33,7 @@
     "category": "multitext",
     "created": "text",
     "dg-pubish": "text",
-    "title": "text"
+    "title": "text",
+    "TQ_show_toolbar": "checkbox"
   }
 }
