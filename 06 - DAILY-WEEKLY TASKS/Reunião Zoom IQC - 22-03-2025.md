@@ -2,10 +2,10 @@
 tags:
   - 2026-03
 dg-publish: "true"
-dg-note-icon: stone
-noteIcon: stone
+dg-note-icon: chest
+noteIcon: chest
 ---
-Status: [[Por fazer]]
+Status: [[Concluído]]
 Tags: [[2026-03]], [[Zoom]]
  
 # Músicas
