@@ -4,71 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "04424726d34f8948",
-        "type": "split",
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
         "children": [
           {
-            "id": "4509724f8bf84da7",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "e7a7b303c61786dc",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Ceia e culto - 29-03-2026"
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
-              }
-            ]
-          },
-          {
-            "id": "d9dc3bedd5be2824",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "78a65563eeb3cb69",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-03-2026.md",
-                    "mode": "source",
-                    "source": false,
-                    "backlinks": true,
-                    "backlinkOpts": {
-                      "collapseAll": false,
-                      "extraContext": false,
-                      "sortOrder": "alphabetical",
-                      "showSearch": false,
-                      "searchQuery": "",
-                      "backlinkCollapsed": false,
-                      "unlinkedCollapsed": true
-                    }
-                  },
-                  "icon": "lucide-file",
-                  "title": "Estudo Bíblico - 25-03-2026"
-                }
-              }
-            ]
+              },
+              "icon": "lucide-file",
+              "title": "Criação da Estrutura de menus e categorias para Joomla 6"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -316,15 +279,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d187ad581aa11266",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
+    "Home.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-03-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md",
     "07 - INDEXES/Mensagens de Domingo.md",
-    "Home.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-03-2026.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
@@ -341,9 +307,6 @@
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida?.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/A tua morte é um dever!.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
     "01 - PROJECTS (PARA)/IQC Maintenance",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/zoom/zoom.esm.js",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/zoom/zoom.js",

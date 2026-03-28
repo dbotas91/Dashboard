@@ -5740,6 +5740,7 @@ TexInfo
 TextEditor
 Teletype
 TerminalEmulator
+Teu
 FEFF
 Form
 Font
@@ -9678,6 +9679,7 @@ Config
 Certifique
 Corrompida
 Casar
+Conheci
 Mozilla
 ModDate
 MK
@@ -45537,6 +45539,7 @@ secrets
 snapcraft
 seguidos
 sobretudo
+senha
 xU
 xM
 xLq
@@ -57003,6 +57006,8 @@ devolver
 demogr
 divorciar
 dissolver
+deixo
+dariobotas
 zR
 zD
 zJ
@@ -67260,6 +67265,7 @@ preferences
 pref
 panorama
 pique
+prazo
 OaL
 Oar
 OQ
@@ -80939,6 +80945,7 @@ qItI
 qru
 quiseres
 queueview
+quiserem
 ih
 ip
 iV
@@ -83475,6 +83482,7 @@ internos
 impedindo
 independ
 idades
+inaugura
 kC
 kp
 kN
@@ -93414,6 +93422,7 @@ focaremos
 fzvai
 flex
 fego
+ftp
 br
 bJ
 bW
