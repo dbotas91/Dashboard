@@ -29,7 +29,8 @@ Estão organizados por ano-mês com referências às Tags.
 - [[Estudo Bíblico - 11-03-2026]]
 - [[Estudo Bíblico - 18-03-2026]]
 - [[Reunião Zoom IQC - 22-03-2025]]
-
+- [[Estudo Bíblico - 25-03-2026]]
+- 
 ## 2025
 ### Tags (Por ano-mês)
 - [[2025-02]]
