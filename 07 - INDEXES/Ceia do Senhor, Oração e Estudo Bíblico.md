@@ -30,7 +30,7 @@ Estão organizados por ano-mês com referências às Tags.
 - [[Estudo Bíblico - 18-03-2026]]
 - [[Reunião Zoom IQC - 22-03-2025]]
 - [[Estudo Bíblico - 25-03-2026]]
-- 
+- [[Ceia e culto - 29-03-2026]]
 ## 2025
 ### Tags (Por ano-mês)
 - [[2025-02]]
