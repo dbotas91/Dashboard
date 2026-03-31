@@ -1991,6 +1991,7 @@ PRIVATE
 Prompt
 PCManFM
 Pordata
+Prizes
 obj
 oQw
 ot
@@ -9680,6 +9681,9 @@ Certifique
 Corrompida
 Casar
 Conheci
+CMS
+Calendariza
+Catppuccin
 Mozilla
 ModDate
 MK
@@ -11613,6 +11617,11 @@ Marta
 MATE
 Multimedia
 Millennials
+Multim
+Mapa
+Mencionaste
+Mocha
+Medicina
 Linux
 Length
 LJ
@@ -13374,6 +13383,8 @@ Limpar
 Lateral
 LIMPA
 LXDE
+Literatura
+Layout
 AppleWebKit
 ADN
 Ak
@@ -19391,6 +19402,7 @@ lxde
 libexec
 laboral
 localidades
+lateral
 Gecko
 Group
 GQ
@@ -21039,6 +21051,7 @@ GNOME
 GTK
 Games
 Graphics
+Geral
 HeadlessChrome
 HX
 HSG
@@ -24758,6 +24771,15 @@ SFTP
 SessionAgent
 Snapd
 Sound
+Subcategorias
+Seleciona
+Separador
+Subset
+Subcategories
+Subcategory
+Shalev
+Stephen
+Scientist
 endobj
 endstream
 eV
@@ -27805,6 +27827,10 @@ eval
 env
 estritamente
 empurrem
+estruturar
+elegantes
+enfraquecer
+efetivamente
 ca
 cW
 cEu
@@ -31559,6 +31585,9 @@ casamentos
 celebrados
 casam
 cancelando
+cores
+criares
+concedidos
 BM
 BBox
 BHq
@@ -33215,6 +33244,9 @@ Byobu
 Brave
 Browser
 Backups
+Blog
+Blogue
+Baruch
 Normal
 NM
 Nf
@@ -34954,6 +34986,7 @@ Nativos
 Newsfeeds
 Notei
 Natasha
+Naqueles
 XObject
 Xf
 XW
@@ -38253,6 +38286,7 @@ Recomenda
 Resetar
 Rasto
 Revogue
+Regra
 ExtGState
 Ei
 ET
@@ -40141,6 +40175,8 @@ Encontrada
 Excelente
 Estrutural
 Elena
+Espelhamento
+Eventos
 true
 tTr
 tQr
@@ -45540,6 +45576,8 @@ snapcraft
 seguidos
 sobretudo
 senha
+sugerida
+subcategorias
 xU
 xM
 xLq
@@ -50350,6 +50388,8 @@ gvim
 gcr
 gnome
 grosso
+ganhadores
+ganharam
 am
 ah
 as
@@ -53824,6 +53864,10 @@ anualmente
 acentuada
 adiar
 abdiquem
+automatizada
+artif
+apare
+agnosticismo
 dA
 dD
 dd
@@ -57008,6 +57052,8 @@ divorciar
 dissolver
 deixo
 dariobotas
+desenhar
+destruiu
 zR
 zD
 zJ
@@ -63908,6 +63954,8 @@ ndrwxr
 nascidas
 norma
 normalizou
+nativa
+nov
 pM
 pg
 pd
@@ -67266,6 +67314,8 @@ pref
 panorama
 pique
 prazo
+personalizar
+pesadelo
 OaL
 Oar
 OQ
@@ -68865,6 +68915,7 @@ Ocorreu
 Output
 OPENSSH
 Oleiros
+Otimiza
 WR
 Wfwp
 WY
@@ -73707,6 +73758,7 @@ Utility
 Unlock
 URIs
 Unicode
+Usa
 VP
 Vn
 VD
@@ -75405,6 +75457,7 @@ Verifiquei
 Veredito
 Vim
 Viewer
+Visualiza
 QX
 QY
 QP
@@ -79232,6 +79285,9 @@ markdown
 migracao
 multimedia
 modifique
+mestre
+mapa
+moderna
 qd
 qm
 qI
@@ -83483,6 +83539,7 @@ impedindo
 independ
 idades
 inaugura
+identificaram
 kC
 kp
 kN
@@ -93423,6 +93480,9 @@ fzvai
 flex
 fego
 ftp
+funcionalidade
+fies
+filtrando
 br
 bJ
 bW
@@ -97598,6 +97658,7 @@ verifique
 visuais
 verificaria
 viewer
+varre
 Dnb
 DFp
 DX
@@ -99435,6 +99496,7 @@ Destaque
 Dica
 Debian
 DesktopSettings
+Deves
 rQ
 ru
 rg
@@ -102365,6 +102427,8 @@ restritas
 ronda
 rondam
 reunem
+rebeldia
+retrospectiva
 hF
 hj
 hC

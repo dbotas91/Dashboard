@@ -11,7 +11,7 @@ message_category:
 created: 2025-10-14 18:12
 speech-status: Proferido
 local: fontaínhas
-updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+updated: 2026-03-29 15:39
 title: Abraão, o pai da fé
 dgPassFrontmatter: "true"
 ---

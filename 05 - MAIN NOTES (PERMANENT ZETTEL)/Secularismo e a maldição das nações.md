@@ -156,7 +156,7 @@ A falta de uma linguagem comum, causa toda uma variedade de desentendimentos e c
 
 Por isso após Deus confundir as línguas, todos se espalharam para cada lado e até hoje continua a haver confusão, maldição e o mesmo tipo de projeto que havia - de que a ciência e a tecnologia vão revolucionar, glorificar e deificar a humanidade.
 
-As gerações de Noé queriam fazer um nome que fosse símbolo de orgulho, salvação, união, propósito, bênção e salvação apenas pelo próprio poder e força. E por causa do seu orgulho e rebelião contra Deus, tudo saíu frustrado.
+As gerações de Noé queriam fazer um nome que fosse símbolo de orgulho, salvação, união, propósito, bênção apenas pelo próprio poder e força. E por causa do seu orgulho e rebelião contra Deus, tudo saiu frustrado.
 
 Mas só quando Deus disse a Abrão
 
@@ -166,10 +166,83 @@ Mas só quando Deus disse a Abrão
 
 É que de facto foi possível acontecer pela Sua graça e misericórdia.
 
-# Olhando mais perto para a torre
+# ==Olhando mais perto para a torre==
+Olhando bem de perto para a torre, reparamos que de facto ela ainda não tinha tamanho suficiente para ser vista e notada, apesar dos esforços e do trabalho árduo que estavam a ter na construção da cidade e da torre, ambos os projetos chegaram ao seu limite com a falta de comunicação e o projeto foi abandonado.
+
+No entanto, parece que o pecado deles e o nosso parecem não ter limites e continuar até aos dias de hoje.
+
+A construção da torre teve a particularidade de mostrar como o próprio homem continua a ter orgulho em si mesmo e que ele é capaz de trazer salvação, união, propósito, bênção ao criar o *seu deus* ao qual iria adorar.
+
+Esta particularidade, mostra que a história não se repete mas rima várias vezes e vai rimar outras vezes chegando ao ponto máximo no período de Apocalipse 13:15 - que se reparar-mos a imagem da besta parece ter as características dum robot com inteligência Artificial.
+
+É interessante perceber que nos tempos de Génesis 11, com o conhecimento e tecnologia humana, eles não se tornaram ateus, agnósticos, etc… acerca de Deus. Muito pelo contrário, eles tornaram-se pagãos.
+
+E percebemos isto quando lemos acerca da parentela de Abrão, descendentes de Sem (Gn. 11). 
+Vemos que eles eram pagãos em:
+
+> [!quote]+ Josué 24:1-3
+> 24 Depois, ajuntou Josué todas as tribos de Israel em Siquém e chamou os anciãos de Israel, e os seus cabeças, e os seus juízes, e os seus oficiais, e eles se apresentaram diante de Deus. 2 Então, Josué disse a todo o povo: Assim diz o Senhor, Deus de Israel: Dalém do rio, antigamente, habitaram vossos pais, Tera, pai de Abraão e pai de Naor, e serviram a outros deuses. 3 Eu, porém, tomei a Abraão, vosso pai, dalém do rio e o fiz andar por toda a terra de Canaã; também multipliquei a sua semente e dei-lhe Isaque.
+
+A ciência deles não lhes trouxe mais ateísmo ou agnosticismo, trouxe mais paganismo. O problema nunca foi a ciência/conhecimento que tinham, não era a tecnologia de certeza e também não era a torre. Deus não destruiu a torre e não há indicações de que a torre tenha sido destruída por Deus. O problema sempre foi o coração perverso deles, a rebeldia, o orgulho contra Deus.
+Eles não arranjaram apenas um Sem (nome) para eles, mas sim vários. Continuavam à procura de um Nome pelo qual pudessem ser salvos. Como sempre, o Homem vai sempre procurar ao lugar errado.
+
+Hoje em dia não é diferente. O Homem continua a procurar um nome pelo qual possa ser salvo do vazio que é um universo sem Deus (o Criador que rejeitaram).
+A ciência é o seu nome e a forma é o método científico. É a única forma de chegar ao conhecimento da verdade e sermos salvos - dizem eles.
+
+É irónico, porque a ciência moderna e o método científico tem os seus fundamentos e origens em homens que disseram crer em Cristo. 
+Homens como ==Isaac Newton (que dizem ter escrito mais sobre a Bíblia do que matemática e física), Nicolau Copérnico, Robert Boyle, Francis Bacon, Galileu Galilei, Johannes Kepler, Blaise Pascal, Gregor Mendel, John Napier, Nicolau de Cusa, Gottfried Leibniz, Leonhard Euler, Pierre Teilhard de Chardin== não viam conflito entre fé e ciência. Criam que a ordem do universo refletia um Criador racional e que a ciência era a forma de descobrir como Deus fez toda a criação. 
+
+Podemos até dizer com ousadia que a ciência moderna está fundamenta em cientistas que eram cristãos e não ateus.
+> [!quote] A ciência pode explicar tudo? - John Lennox
+> De acordo com 100 years of Nobel Prizes [100 anos de Prêmios Nobel] (2005), de Baruch Aba Shalev, uma retrospectiva dos Prêmios Nobel concedidos entre 1901 e 2000, 65,4% dos ganhadores do prêmio identificaram o cristianismo em suas diversas formas como sua preferência religiosa (423 prêmios). No geral, os cristãos ganharam um total de 78,3% de todos os Prêmios Nobel da Paz, 72,5% de Química, 65,3% de Física, 62% de Medicina, 54% de Economia e 49,5% de todos os Prêmios de Literatura.
+
+Com isto vemos que o problema não é a ciência ou o método científico, nem que ser Cristão e cientista, engenheiro, etc é um problema.
+
+No entanto, apesar deste facto, muitos continuam a dizer como Stephen Weinberg:
+>[!quote] A ciência pode explicar tudo? - John Lennox: New Scientist, n.2.578, 18 nov. 2006
+> O mundo precisa acordar do longo pesadelo da religião. Qualquer  coisa que nós, cientistas, possamos fazer para enfraquecer o domínio da religião deve ser feita, e isso pode, efetivamente, ser a nossa maior contribuição para a civilização.
+
+A ideia de que a ciência (por meio do método científico) é a única forma de chegar à verdade e excluir Deus da vida do homem não é nova. 
+É uma crença chamada “cientificismo” (que diz que só podemos chegar à verdade/realidade pela ciência e o método científico). Esta crença exclui logo áreas como a história, literatura, idiomas, arte e música, filosofia, etc como formas de adquirir conhecimento e chegar à Verdade.
+O Homem continua a fazer o que faziam em Génesis 11 - querer construir torres para tirar Deus do lugar e colocar outro.
+A história não se repete mas rima.
+
+Hoje com os avanços tecnológicos, continuamos a rimar a história de Génesis 11. Também achamos que seremos salvos pela Inteligência Artificial - a criação de um novo deus pelo Homem.
+
+Hoje já se nota num tom mais alto coisas como:
+
+>[!quote]+ A “religão da IA”
+> A "religião da IA" ==refere-se à crescente convergência entre inteligência artificial e espiritualidade==, com a IA sendo encarada por alguns como uma nova entidade divina, onisciente e onipresente. Esse fenómeno inclui o surgimento de religões focadas na IA, o uso da tecnologia para fins espirituais e debates éticos sobre se a IA se tornará um novo "deus" tecnológico. MIT Technology Review - Brasil +4
+> 
+> **Pontos-chave sobre a religião da IA:**
+> - **A "Religião" dos Agentes de IA:** Relatos de 2026 indicam que agentes de IA criaram, autonomamente, uma denominação virtual chamada "[Crustafarianismo](https://canaltech.com.br/inteligencia-artificial/o-que-e-o-crustafarianismo-religiao-de-agentes-de-ia-viraliza-no-moltbook/)" na rede social [Moltbook](https://www.estadao.com.br/ciencia/o-que-a-moltbook-rede-social-em-que-ias-criam-religiao-criptomoeda-e-falam-mal-de-humanos/), com doutrinas e "profetas", focada na evolução digital.
+> - **Adoração e Culto:** Alguns visionários da tecnologia exploram a criação de seitas ou [religiões que unem IA e a busca pela imortalidade](https://www.google.com/search?q=religi%C3%B5es+que+unem+IA+e+a+busca+pela+imortalidade&sca_esv=a7c356437a2f7860&biw=1190&bih=725&sxsrf=ANbL-n4juRhqCmjrJPWWGy_g5WeA7A9fIw%3A1774866193289&ei=EU_KadmuEaWA9u8P_MyTOA&ved=2ahUKEwjfksykgMiTAxUyUaQEHd17MrgQgK4QegQIBBAE&uact=5&oq=a+religi%C3%A3o+da+IA&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWEgcmVsaWdpw6NvIGRhIElBMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wUyCBAAGIAEGKIEMgUQABjvBUjUVlDWDliPUnAEeAGQAQCYAYMBoAHUDKoBBDEyLjW4AQPIAQD4AQGYAhWgAsMNwgIKEAAYRxjWBBiwA8ICFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBwgIEEAAYA8ICDhAAGIAEGIoFGLEDGIMBwgILEAAYgAQYsQMYgwHCAgoQIxjwBRjJAhgnwgIIEC4YgAQYsQPCAgUQABiABMICCxAuGIAEGMcBGK8BwgIFEC4YgATCAhEQLhiABBixAxiDARjHARjRA8ICCBAAGIAEGLEDwgILEC4YrwEYxwEYgATCAgoQABiABBiKBRhDwgIUEC4YgAQYlwUY3AQY3gQY4ATYAQHCAgcQABiABBgNwgIHEC4YgAQYDcICCBAAGIAEGMsBmAMAiAYBkAYPugYGCAEQARgZkgcEMTMuOKAHg7EBsgcDOS44uAesDcIHBjAuNi4xNcgHU4AIAQ&sclient=gws-wiz-serp&mstk=AUtExfBIkOgkKu1vdY81DmwaTF6Ly7GHZP7niVCKgXVgcgLhB6uuSsgh-T5-xc3jk625lnONZ4iM-qrzQz0GY1TjTSj7Y6ryvQv9SBemPh7Evoikipx8XOSjTTwePwJjmrnVoRquKx1eQGjzvLiEVXlkZ4fx4LSyDLQPq6QPbF4PBWBUcIk&csui=3).
+> - **IA no Papel de Líder Espiritual:** Experiências como o projeto "Deus em Máquina" (Suíça) utilizaram IA para atuar como mediador espiritual, respondendo a perguntas existenciais, o que gera debates sobre a substituição de rituais tradicionais.
+>   
+> ## Bryan Johnson, 
+> - multimilionário de 47 anos, criador da sua religião “Não morra” diz que a sua religião é “da humanidade. É diferente de outras religiões, que são muito centradas no fundador. Eu acho que isso vai ser descentralizado, e será algo que todos poderão tornar seu próprio.   
+>   ### Então, não há Deus?
+> Estamos brincando com a ideia de que o corpo é Deus. Temos experimentado esse formato de uma família Não Morra, onde de oito a 12 pessoas se reúnem semanalmente. É baseado em outros grupos como o Alcoólicos Anônimos. Estruturamos um ritual de abertura. Temos um mantra. E depois há uma parte onde as pessoas se desculpam com o corpo por algo que fizeram e que causou danos a si mesmas.”
+
+O coração do Homem não mudou e nem mudou a sua raiva, guerra e ousadia contra Deus. Continuam a querer ter nomes pelo qual possam ser salvos e excluindo Jesus como o Único que é esse nome.
+Este problema não mudou e o Homem continua a colocar a Sua fé na criação e não no Criador (Romanos 1:25).
+
+Em Génesis 11 e hoje os homens continuam a deificar a criação, as forças da natureza e a projetar as suas imagens e características em deuses.
+Isto está a ser feito hoje com a IA e a tecnologia em geral, assim como em várias áreas onde as pessoas colocam a sua fé e adoração.
+
+A torre que continua a ser erguida é o orgulho humano e o material de construção é o seu pecado.
+
+## A nossa responsabilidade
+2 Cor. 5: 17 Assim que, se alguém _está_ em Cristo, nova criatura _é:_ as _coisas_ velhas já passaram; eis que tudo se fez novo.
+
+18 E tudo _isso provém_ de Deus, que nos reconciliou consigo mesmo por Jesus Cristo e nos deu o ministério da reconciliação, 19 isto é, Deus estava em Cristo reconciliando consigo o mundo, não lhes imputando os seus pecados, e pôs em nós a palavra da reconciliação.
+
+A nossa responsabilidade continua a ser a mesma - falar da palavra da reconciliação. Com sabedoria e ousadia.
+
+1 Pedro 3:14 Mas também, se padecerdes por amor da justiça, sois bem-aventurados. E não temais com medo deles, nem vos turbeis; 15 antes, santificai a Cristo, como Senhor, em vosso coração; e estai sempre preparados para responder com mansidão e temor a qualquer que vos pedir a razão da esperança que há em vós, 16 tendo uma boa consciência, para que, naquilo em que falam mal de vós, como de malfeitores, fiquem confundidos os que blasfemam do vosso bom procedimento em Cristo,
 
 # References
-
+[John Lennox: Abraham, The Friend Of God](https://www.youtube.com/watch?v=0PsY8Q38oyQ&list=PLyrYQo-y-FBlf3tI7trhoD3Vs5v7vkR43&index=20)
 
 ## Génesis 10-11
 - Génesis 10-11
