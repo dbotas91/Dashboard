@@ -167,11 +167,15 @@ Mas só quando Deus disse a Abrão
 É que de facto foi possível acontecer pela Sua graça e misericórdia.
 
 # ==Olhando mais perto para a torre==
-Olhando bem de perto para a torre, reparamos que de facto ela ainda não tinha tamanho suficiente para ser vista e notada, apesar dos esforços e do trabalho árduo que estavam a ter na construção da cidade e da torre, ambos os projetos chegaram ao seu limite com a falta de comunicação e o projeto foi abandonado.
+Olhando bem de perto para a torre, reparamos que de facto ela ainda não tinha tamanho suficiente para ser vista e notada dos céus, apesar dos esforços e do trabalho árduo que estavam a ter na construção da cidade e da torre, ambos os projetos chegaram ao seu limite com a falta de comunicação e o projeto foi abandonado.
+No entanto, parece que ao olhar de cima, Deus teve de descer para ver bem (porque não era assim tão alta) e por notar que eles tinham um problema grave nos fundamento.
 
-No entanto, parece que o pecado deles e o nosso parecem não ter limites e continuar até aos dias de hoje.
+Notem que Deus disse: “e isto é o que começam a fazer”. De facto o problema estava nos fundamentos do projeto: na cultura da cidade (que estava mal), na moralidade e valores (que eram péssimos), nos valores (que eram péssimos), na ideologia, na filosofia, na própria ciência e principalmente estava mau no propósito.
+Além dos fundamentos estarem mal, havia um fundamento que estava ausente daquele projeto, que era o Senhor.
 
-A construção da torre teve a particularidade de mostrar como o próprio homem continua a ter orgulho em si mesmo e que ele é capaz de trazer salvação, união, propósito, bênção ao criar o *seu deus* ao qual iria adorar.
+No entanto, apesar do projeto apresentar os seus limites, dos fundamentos terem falhas graves, parece que o pecado deles e o nosso não tinha limites e a construção desta torre parece continuar até aos dias de hoje.
+
+A construção da torre também teve a particularidade de mostrar como o próprio homem continua a ter orgulho em si mesmo e que ele é capaz de trazer salvação, união, propósito, bênção ao criar o *seu deus* ao qual iria adorar.
 
 Esta particularidade, mostra que a história não se repete mas rima várias vezes e vai rimar outras vezes chegando ao ponto máximo no período de Apocalipse 13:15 - que se reparar-mos a imagem da besta parece ter as características dum robot com inteligência Artificial.
 
