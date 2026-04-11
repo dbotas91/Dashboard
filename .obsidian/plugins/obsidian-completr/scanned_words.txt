@@ -1994,6 +1994,8 @@ Pordata
 Prizes
 Pascal
 Pierre
+Pleiotropia
+Perspectiva
 obj
 oQw
 ot
@@ -3883,6 +3885,8 @@ ocultos
 origin
 olharmos
 onipresente
+organismos
+oxig
 Title
 Type
 Transparency
@@ -5746,6 +5750,7 @@ Teletype
 TerminalEmulator
 Teu
 Teilhard
+Tel
 FEFF
 Form
 Font
@@ -9694,6 +9699,7 @@ Cusa
 Chardin
 Criam
 Continuam
+Compensa
 Mozilla
 ModDate
 MK
@@ -11634,6 +11640,8 @@ Mocha
 Medicina
 Mendel
 Morra
+Manter
+Morremos
 Linux
 Length
 LJ
@@ -13399,6 +13407,7 @@ Literatura
 Layout
 Leibniz
 Leonhard
+Limite
 AppleWebKit
 ADN
 Ak
@@ -15755,6 +15764,7 @@ Accessories
 Agentes
 Adora
 Alco
+Antag
 KHTML
 Kn
 KA
@@ -19421,6 +19431,8 @@ libexec
 laboral
 localidades
 lateral
+lulas
+lula
 Gecko
 Group
 GQ
@@ -22741,6 +22753,7 @@ Hacker
 HEAD
 Handler
 Htop
+Hayflick
 Safari
 Skia
 Subtype
@@ -24802,6 +24815,7 @@ Subcategory
 Shalev
 Stephen
 Scientist
+Subprodutos
 endobj
 endstream
 eV
@@ -27860,6 +27874,13 @@ exploram
 existenciais
 excluindo
 erguida
+extremidades
+encurtam
+estagnaria
+evolutiva
+entropia
+ecossistema
+evoluindo
 ca
 cW
 cEu
@@ -31620,6 +31641,16 @@ concedidos
 cientificismo
 converg
 centradas
+cromossomos
+capas
+curtos
+causam
+cumulativos
+continuidade
+clim
+cerebral
+cerebrais
+coletivo
 BM
 BBox
 BHq
@@ -33284,6 +33315,7 @@ Bacon
 Blaise
 Brasil
 Bryan
+Biol
 Normal
 NM
 Nf
@@ -38327,6 +38359,8 @@ Revogue
 Regra
 Religi
 Relatos
+Renova
+Reciclagem
 ExtGState
 Ei
 ET
@@ -40219,6 +40253,10 @@ Espelhamento
 Eventos
 Euler
 Estruturamos
+Encurtamento
+Entropia
+Evolutiva
+Eventualmente
 true
 tTr
 tQr
@@ -42603,6 +42641,11 @@ traseiras
 temp
 tar
 taxas
+tel
+termodin
+triunfo
+trica
+tomos
 stream
 sWz
 sj
@@ -45622,6 +45665,7 @@ sugerida
 subcategorias
 ssimos
 semanalmente
+senesc
 xU
 xM
 xLq
@@ -53916,6 +53960,7 @@ agnosticismo
 arranjaram
 agentes
 autonomamente
+apoptose
 dA
 dD
 dd
@@ -57104,6 +57149,9 @@ desenhar
 destruiu
 descentralizado
 desculpam
+drasticamente
+desaparecem
+devolvidos
 zR
 zD
 zJ
@@ -67368,6 +67416,10 @@ prazo
 personalizar
 pesadelo
 projetar
+protetoras
+prosperem
+prejudiciais
+poeira
 OaL
 Oar
 OQ
@@ -68968,6 +69020,7 @@ Output
 OPENSSH
 Oleiros
 Otimiza
+Oxida
 WR
 Wfwp
 WY
@@ -79342,6 +79395,7 @@ mapa
 moderna
 multimilion
 morra
+metabolismo
 qd
 qm
 qI
@@ -81056,6 +81110,7 @@ qru
 quiseres
 queueview
 quiserem
+queiras
 ih
 ip
 iV
@@ -83595,6 +83650,8 @@ idades
 inaugura
 identificaram
 imputando
+imortais
+ineficiente
 kC
 kp
 kN
@@ -93539,6 +93596,7 @@ ftp
 funcionalidade
 fies
 filtrando
+funcionando
 br
 bJ
 bW
@@ -102498,6 +102556,8 @@ relig
 rede
 reconciliou
 reconciliando
+reprodu
+rmico
 hF
 hj
 hC

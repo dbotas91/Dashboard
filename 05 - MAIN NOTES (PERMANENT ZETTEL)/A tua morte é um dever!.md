@@ -75,6 +75,11 @@ Para a ciência atual, a consciência é um produto da atividade cerebral. Quand
 E todas estas explicações naturalistas não nos ajudam a dizer o motivo. 
 O como não satisfaz o motivo.
 
+Na filosofia e outras ideologias e religiões não têm dado grande ajuda. Têm agravado mais o problema e trazido mais problemas.
+
+
+
+
 
 # Referências
 
