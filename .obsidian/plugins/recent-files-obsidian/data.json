@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Corrompida?",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida?.md"
+      "basename": "A tua morte é um dever!",
+      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md"
+    },
+    {
+      "basename": "morte",
+      "path": "10 - TAGS/morte.md"
     },
     {
       "basename": "Mensagens de Domingo",
@@ -15,6 +19,10 @@
     {
       "basename": "Home",
       "path": "Home.md"
+    },
+    {
+      "basename": "Corrompida?",
+      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida?.md"
     },
     {
       "basename": "Secularismo e a maldição das nações",
@@ -67,10 +75,6 @@
     {
       "basename": "Artigo Histórico sobre Bart Ehrman para a IQC",
       "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md"
-    },
-    {
-      "basename": "A tua morte é um dever!",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/A tua morte é um dever!.md"
     },
     {
       "basename": "Balance Your Portfolio",
@@ -195,10 +199,6 @@
     {
       "basename": "conversa_github_public_key",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key.md"
-    },
-    {
-      "basename": "2025 - Atividades e Tarefas",
-      "path": "07 - INDEXES/2025 - Atividades e Tarefas.md"
     }
   ],
   "omittedPaths": [],

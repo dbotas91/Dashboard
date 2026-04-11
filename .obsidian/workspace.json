@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "63ed87ce9224b682",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "1e360377104bbade",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida?.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Corrompida?"
+              "title": "A tua morte é um dever!"
             }
           }
         ]
@@ -279,11 +279,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "1e360377104bbade",
   "lastOpenFiles": [
+    "10 - TAGS/morte.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida?.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
@@ -304,9 +307,6 @@
     "10 - TAGS/2026-03.md",
     "10 - TAGS/1 Timóteo.md",
     "09 - STATUS NOTES/Canon.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
     "01 - PROJECTS (PARA)/IQC Maintenance",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/zoom/zoom.esm.js",
     "02 - AREAS (PARA)/Presentations/Eu acredito no Batismo - Tabela/plugin/zoom/zoom.js",
