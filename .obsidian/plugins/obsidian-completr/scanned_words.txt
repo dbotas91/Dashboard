@@ -3901,6 +3901,11 @@ ocular
 oculares
 orais
 omitido
+onPopState
+onpopstate
+onmessage
+offsetHeight
+onreadystatechange
 Title
 Type
 Transparency
@@ -19499,6 +19504,7 @@ luto
 lucrativas
 legalmente
 leveza
+loadIcons
 Gecko
 Group
 GQ
@@ -24895,6 +24901,7 @@ Seguidores
 Sinaiticus
 Sangue
 Sinceridade
+Slides
 endobj
 endstream
 eV
@@ -27973,6 +27980,8 @@ enfrentaram
 errante
 enterrados
 envelhecimento
+endnotes
+endnote
 ca
 cW
 cEu
@@ -31768,6 +31777,15 @@ celular
 caracterizado
 compararmos
 consciente
+charset
+catppuccin
+customcontrols
+chalkboard
+classList
+clearInterval
+convex
+concave
+chtml
 BM
 BBox
 BHq
@@ -38487,6 +38505,7 @@ Reciclagem
 Rylands
 Reconstru
 Reais
+Reveal
 ExtGState
 Ei
 ET
@@ -42792,6 +42811,9 @@ trazia
 transmito
 toquei
 transcendente
+trim
+tex
+transitionSpeed
 stream
 sWz
 sj
@@ -45821,6 +45843,13 @@ seguidor
 sentindo
 surto
 suic
+scrollHeight
+stateCheck
+setInterval
+substr
+smartLists
+smartypants
+slideNumber
 xU
 xM
 xLq
@@ -50638,6 +50667,11 @@ gozar
 guardavam
 gida
 governantes
+getElementsByClassName
+getComputedStyle
+getPropertyValue
+gfm
+getQueryHash
 am
 ah
 as
@@ -54142,6 +54176,8 @@ abandonou
 assustados
 audazes
 alegava
+abs
+allottedTime
 dA
 dD
 dd
@@ -57348,6 +57384,10 @@ decifrou
 detalhe
 disruptiva
 dualidade
+defer
+doc
+documentElement
+defaultOptions
 zR
 zD
 zJ
@@ -64255,6 +64295,7 @@ normalizou
 nativa
 nov
 notada
+noteref
 pM
 pg
 pd
@@ -67633,6 +67674,9 @@ paredes
 prefeririam
 prest
 programada
+postMessage
+parseInt
+pedantic
 OaL
 Oar
 OQ
@@ -79634,6 +79678,11 @@ mortes
 mart
 mentiram
 moldou
+monokai
+mermaid
+mathjax
+mml
+mangle
 qd
 qm
 qI
@@ -81351,6 +81400,7 @@ quiserem
 queiras
 queimados
 queima
+queryOptions
 ih
 ip
 iV
@@ -83902,6 +83952,11 @@ invento
 implicam
 inventado
 impessoal
+itemsToFit
+indexOf
+isLight
+init
+initialize
 kC
 kp
 kN
@@ -93860,6 +93915,16 @@ fiabilidade
 filtrar
 filtram
 fisiol
+fontawesome
+forgetPop
+fitElements
+fitText
+fitElement
+fontSize
+fnref
+footnotes
+footnote
+fade
 br
 bJ
 bW
@@ -96066,6 +96131,7 @@ breves
 bambu
 baseando
 baseava
+bgColor
 vdjL
 vd
 vR
@@ -98051,6 +98117,7 @@ valorizava
 violenta
 violentas
 valida
+viewport
 Dnb
 DFp
 DX
@@ -102847,6 +102914,7 @@ registar
 ren
 ridicularizado
 roubaram
+readyState
 hF
 hj
 hC
@@ -104604,6 +104672,9 @@ historiador
 herdaram
 humilhante
 homeostase
+href
+hasOwnProperty
+hex
 Äb
 Äc
 Äj

@@ -4,31 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "63ed87ce9224b682",
+        "id": "9a69c42bb2c293d8",
         "type": "tabs",
         "children": [
           {
-            "id": "1e360377104bbade",
+            "id": "3d8d4b2c5f2bbcdd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "A tua morte é um dever!"
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
             }
           }
         ]
@@ -279,8 +270,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d187ad581aa11266",
+  "active": "3d8d4b2c5f2bbcdd",
   "lastOpenFiles": [
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled Kanban.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever! - apresentação.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
@@ -291,7 +286,6 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-green.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-blue.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-yellow.png",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-red.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/style.css",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin (copy).js",
@@ -307,8 +301,6 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/customcontrols/README.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/menu/README.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/menu/CONTRIBUTING.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever! - apresentação.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
@@ -326,7 +318,6 @@
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-03-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-03-2026.md",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
