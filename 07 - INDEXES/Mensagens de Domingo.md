@@ -22,11 +22,11 @@ kanban-plugin: board
 - [ ] [[Entenda a sua Bíblia]]
 - [ ] [[Abraão, o pai da fé]]
 - [ ] [[Corrompida?]]
-- [ ] [[A tua morte é um dever!]]
 
 
 ## A falar
 
+- [ ] [[A tua morte é um dever!]]
 - [ ] [[Eu acredito no Batismo]]
 - [ ] [[Sunday Preaching#^sahlyp|1 Tessalonicenses - 1st Thessalonians]]
 - [ ] [[A má doutrina corrompe o comportamento]]

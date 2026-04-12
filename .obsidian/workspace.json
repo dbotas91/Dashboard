@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "9a69c42bb2c293d8",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "3d8d4b2c5f2bbcdd",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
+              "icon": "lucide-file",
+              "title": "A tua morte é um dever!"
             }
           }
         ]
@@ -270,8 +279,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d8d4b2c5f2bbcdd",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "Home.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled Kanban.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
@@ -297,17 +309,13 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/chart.min.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/README.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/customcontrols/style.css",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/customcontrols/README.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/menu/README.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/menu/CONTRIBUTING.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
     "10 - TAGS/morte.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida?.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",

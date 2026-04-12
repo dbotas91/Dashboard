@@ -404,3 +404,4 @@ Mas se face à informação que temos acerca dos dois, se continuam a negar que 
 
 # Referências
 
+[William Lane Craig Reacts! to Physicist Brian Cox and Wanting More from Life.](https://fb.watch/GrOVLRQNkp/)
