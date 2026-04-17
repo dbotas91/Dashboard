@@ -21,7 +21,7 @@ kanban-plugin: board
 - [ ] [[O lugar]]
 - [ ] [[Entenda a sua Bíblia]]
 - [ ] [[Abraão, o pai da fé]]
-- [ ] [[Corrompida?]]
+- [ ] [[Corrompida]]
 
 
 ## A falar
