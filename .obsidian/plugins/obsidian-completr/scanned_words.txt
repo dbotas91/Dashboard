@@ -5778,6 +5778,7 @@ Teol
 Textos
 Tsinghua
 Tradi
+Tesouro
 FEFF
 Form
 Font
@@ -38507,6 +38508,7 @@ Rylands
 Reconstru
 Reais
 Reveal
+Rendo
 ExtGState
 Ei
 ET

@@ -5,13 +5,13 @@ dg-publish: "true"
 dg-note-icon: chest
 noteIcon: chest
 ---
-Status: [[Por fazer]]
+Status: [[Concluído]]
 Tags: [[2026-04]], [[Zoom]]
  
 # Músicas
 Tesouro
 Eu me Rendo
-
+Amigo incomparável
 
 # Leitura da Bíblia 
 > [!quote] Salmo 19:7-11
@@ -25,6 +25,7 @@ Eu me Rendo
 
 - [ ] Orar pelo Nando e a Família e a mãe dele
 - [ ] Orar pelos pais que têm sido instruídos na educação dos filhos;
+- [ ] Orar pelo pai do Paulo, Adolfo, Paulo Ribeiro
 - [ ] Pela obra em Angola e os irmãos que se reunem nas várias localidades;
 - [ ] Agradecer pela conferência da Páscoa em Oiã
 - [ ] Orar pelo pregador - José Carvalho
