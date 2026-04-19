@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida.md",
+                "file": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Corrompida"
+              "title": "Reunião Zoom IQC - 22-03-2025"
             }
           }
         ]
@@ -253,7 +253,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 244
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -281,6 +281,10 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-04.md",
     "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida.md",
     "07 - INDEXES/Mensagens de Domingo.md",
@@ -323,10 +327,6 @@
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
