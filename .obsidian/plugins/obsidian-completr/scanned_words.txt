@@ -54184,6 +54184,7 @@ allottedTime
 alegram
 alumia
 admoestado
+apolog
 dA
 dD
 dd

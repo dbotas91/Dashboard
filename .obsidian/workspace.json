@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
+                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Reunião Zoom IQC - 19-04-2025"
-            }
-          },
-          {
-            "id": "b09d6f1ba7df433b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
+              "title": "0. Descobrindo o Porquê da Fé - leitura inicial"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -304,12 +279,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b09d6f1ba7df433b",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "10 - TAGS/2026-03.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "10 - TAGS/apologética.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/1 Conceitos Básicos da Estatística.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
+    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
     "Home.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "10 - TAGS/2026-03.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
@@ -343,15 +323,10 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/plugin.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/chart.min.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/README.md",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/customcontrols/README.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/menu/README.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/menu/CONTRIBUTING.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo - Tabela.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
-    "10 - TAGS/morte.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
