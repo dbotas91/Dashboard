@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -281,12 +282,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "10 - TAGS/apologética.md",
+    "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
+    "10 - TAGS/apologética.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/1 Conceitos Básicos da Estatística.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
-    "Home.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "10 - TAGS/2026-03.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
