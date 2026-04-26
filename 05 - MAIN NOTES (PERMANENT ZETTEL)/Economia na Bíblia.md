@@ -61,6 +61,8 @@ A palavra oikonomia que é junção de duas: oikos que normalmente é traduzido 
 
 Assim, a palavra oikonomia traduzida ficaria como “administração/gestão da casa”, “normas/leis da casa”, “edificação da casa”, “plano de governo”, “dispensação da casa” ou apenas dispensação.
 
+**A administração pode ser dos recursos, da obra, do tempo, de pessoas (ou servos), da família, da igreja, da saúde (a nossa ou de outros).**
+
 Em relação à pessoa responsável pela aplicação da gestão, dispensação, normas ou plano, a palavra é traduzida como, mordomo, gestor, administrador, despenseiro.
 
 A administração da casa nós vemos essencialmente de algumas formas na Bíblia:
@@ -223,7 +225,7 @@ Enquanto o povo provavelmente estava desperdiçando o excesso (como é comum em 
 
 Você percebe como a "tecnologia" de José não foi criar algo novo, mas sim aplicar **disciplina e logística** sobre o que já existia?
 
-## José como referência na mordomia durante a crise
+## José como referência na mordomia durante a crise - (falado no zoom até aqui)
 ### As Etapas da Crise (Génesis 41-47:14-26)
 
 A transição da "pobreza" para a servidão total ocorreu de forma escalonada sob a administração de José:

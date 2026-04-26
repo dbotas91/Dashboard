@@ -124,7 +124,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -180,7 +181,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Etiquetas"
             }
           },
           {
@@ -189,13 +190,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "09 - STATUS NOTES/Adult.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Economia na Bíblia.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Adult"
+              "title": "Índice de Economia na Bíblia"
             }
           },
           {
@@ -305,13 +306,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ed7b48ac9b031d3e",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
     "07 - INDEXES/Mensagens de Domingo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Economia na Bíblia.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
+    "10 - TAGS/economia na biblia.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A má doutrina corrompe o comportamento.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Economia na Bíblia.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Messias sem sucesso.md",
     "10 - TAGS/Messias.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida.md",
@@ -332,9 +335,7 @@
     "10 - TAGS/2026-04.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026 2.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled Kanban.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
