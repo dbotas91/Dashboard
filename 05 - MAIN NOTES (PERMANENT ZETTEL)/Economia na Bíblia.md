@@ -255,7 +255,7 @@ Este evento marcou uma mudança estrutural profunda no Egito. José comprou toda
 - **Imposto de 20%:** Ele estabeleceu uma lei que perdurou por muito tempo: o povo cultivaria a terra (que agora pertencia ao Estado) e entregaria **um quinto (20%)** da colheita ao Faraó.
     
 
-### Resumo da Progressão Econômica
+### Resumo da Progressão Económica
 
 |**Fase**|**O que foi entregue**|**Consequência**|
 |---|---|---|
