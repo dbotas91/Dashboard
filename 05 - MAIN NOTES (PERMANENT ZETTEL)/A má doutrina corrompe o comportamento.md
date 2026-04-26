@@ -50,12 +50,12 @@ O mesmo vemos na Palavra de Deus. A boa doutrina leva a bom comportamento.
 
 Nas cartas de Paulo vemos uma prática comum do nosso apóstolo em falar de doutrina antes de chegar ao comportamento, à aplicação da doutrina na nossa vida:
 
-||Doutrina (41 capítulos)|Comportamento (46 capítulos)|
-|---|---|---|
-|Romanos|69% (capítulos 1-11)|31% (capítulos12-16)|
-|Cortíntios até 2 Tessalonicenses|50% (em cada carta)|50% (em cada carta)|
-|1 e 2 Timóteo|25%|75%|
-|Tito e Filemon|0|100%|
+|                                  | Doutrina (41 capítulos) | Comportamento (46 capítulos) |
+| -------------------------------- | ----------------------- | ---------------------------- |
+| Romanos                          | 69% (capítulos 1-11)    | 31% (capítulos12-16)         |
+| Cortíntios até 2 Tessalonicenses | 50% (em cada carta)     | 50% (em cada carta)          |
+| 1 e 2 Timóteo                    | 25%                     | 75%                          |
+| Tito e Filemon                   | 0                       | 100%                         |
 
 Vemos que Paulo fala bem mais acerca do comportamento, porque o comportamento é o reflexo da doutrina. E a doutrina, mesmo que menos, é muito importante. Daí falar-se primeiro da doutrina tal como o Senhor lhe entregou para que o comportamento possa ser o correto.
 

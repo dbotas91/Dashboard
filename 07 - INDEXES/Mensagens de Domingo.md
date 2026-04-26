@@ -22,6 +22,7 @@ kanban-plugin: board
 - [ ] [[Entenda a sua Bíblia]]
 - [ ] [[Abraão, o pai da fé]]
 - [ ] [[Corrompida]]
+- [ ] [[Messias sem sucesso]]
 
 
 ## A falar

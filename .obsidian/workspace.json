@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "0. Descobrindo o Porquê da Fé - leitura inicial"
             }
+          },
+          {
+            "id": "ed7b48ac9b031d3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Economia na Bíblia.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Economia na Bíblia"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,12 +119,12 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -280,10 +305,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "ed7b48ac9b031d3e",
   "lastOpenFiles": [
-    "Home.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/A má doutrina corrompe o comportamento.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Economia na Bíblia.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Messias sem sucesso.md",
+    "10 - TAGS/Messias.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Inquietação.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "Home.md",
     "10 - TAGS/apologética.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/1 Conceitos Básicos da Estatística.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
@@ -295,15 +330,11 @@
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
     "10 - TAGS/2026-04.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026 2.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled Kanban.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever! - apresentação.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
@@ -319,15 +350,9 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin (copy).js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/_style.css",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/README.md",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/plugin.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/chart.min.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/README.md",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/customcontrols/README.md",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/menu/README.md",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/menu/CONTRIBUTING.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Eu acredito no Batismo.md",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
