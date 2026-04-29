@@ -217,3 +217,6 @@ As provações de facto, são para sermos, fazermos e escolhermos o melhor. Que 
     ![](Dashboard/Attachments/cropped-eagle-192x192.jpg)http://www.sokratiko.com/words/dokimazein/
     
     ![](Dashboard/Attachments/LOGO-SOKRATIKO-150x140.png)](http://www.sokratiko.com/words/dokimazein/)
+
+# Referências
+[Is This the Hardest Objection to Christianity?](https://youtu.be/2G5iYMoNlLU?si=lvHkWbRlObKWfYyJ)
