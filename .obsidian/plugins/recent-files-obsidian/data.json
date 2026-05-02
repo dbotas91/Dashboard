@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "17. Manual de Erros Comuns que Enfraquecem a Fé Infantil",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/17. Manual de Erros Comuns que Enfraquecem a Fé Infantil.md"
+    },
+    {
+      "basename": "16. Guia dos pais pensadores",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/16. Guia dos pais pensadores.md"
+    },
+    {
+      "basename": "15. 50 respostas curtas para objecções ateístas",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/15. 50 respostas curtas para objecções ateístas.md"
+    },
+    {
+      "basename": "14. Guia de Transição - Dos 14 para os 18 Anos",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/14. Guia de Transição - Dos 14 para os 18 Anos.md"
+    },
+    {
+      "basename": "13. Vivendo a fé - 4 perguntas para continuar pensando no futuro",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/13. Vivendo a fé - 4 perguntas para continuar pensando no futuro.md"
+    },
+    {
+      "basename": "12. Escolhas e Consequências - 4 perguntas sobre decidir, errar e aprender",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/12. Escolhas e Consequências - 4 perguntas sobre decidir, errar e aprender.md"
+    },
+    {
+      "basename": "11. Identidade e Valor - 4 perguntas sobre quem eu sou e por que importo",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/11. Identidade e Valor - 4 perguntas sobre quem eu sou e por que importo.md"
+    },
+    {
+      "basename": "10. Dúvidas difíceis - 4 perguntas sobre questionar sem medo",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/10. Dúvidas difíceis - 4 perguntas sobre questionar sem medo.md"
+    },
+    {
+      "basename": "9. Escola e mundo - 4 perguntas sobre pensar pela própria cabeça",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/9. Escola e mundo - 4 perguntas sobre pensar pela própria cabeça.md"
+    },
+    {
+      "basename": "8. Ciência e fé - 4 perguntas sobre conhecer o mundo e crer em Deus",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/8. Ciência e fé - 4 perguntas sobre conhecer o mundo e crer em Deus.md"
+    },
+    {
+      "basename": "7. Fé e vida - 4 perguntas sobre viver a fé todos os dias",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/7. Fé e vida - 4 perguntas sobre viver a fé todos os dias.md"
+    },
+    {
+      "basename": "6. Jesus - 4 perguntas sobre quem Ele foi e por que isso importa",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/6. Jesus - 4 perguntas sobre quem Ele foi e por que isso importa.md"
+    },
+    {
+      "basename": "5. A Bíblia - 4 perguntas sobre confiança, história e significado",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/5. A Bíblia - 4 perguntas sobre confiança, história e significado.md"
+    },
+    {
+      "basename": "4. Sofrimento e dor - 4 perguntas difícieis que fazem acerca do sofrimento e da dor",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/4. Sofrimento e dor - 4 perguntas difícieis que fazem acerca do sofrimento e da dor.md"
+    },
+    {
+      "basename": "3. Bem e mal - 4 perguntas sobre o certo, errado e consciência",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/3. Bem e mal - 4 perguntas sobre o certo, errado e consciência.md"
+    },
+    {
+      "basename": "2. Deus e a Criação - 4 perguntas sobre origem, causa e existência",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/2. Deus e a Criação - 4 perguntas sobre origem, causa e existência.md"
+    },
+    {
+      "basename": "1. A Verdade - 4 perguntas para aprendera pensar antes de acreditar",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/1. A Verdade - 4 perguntas para aprendera pensar antes de acreditar.md"
+    },
+    {
+      "basename": "0. Descobrindo o Porquê da Fé - leitura inicial",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
       "basename": "Mensagens de Domingo",
       "path": "07 - INDEXES/Mensagens de Domingo.md"
     },
@@ -15,14 +91,6 @@
     {
       "basename": "Mensagens Escritas",
       "path": "00 - MAPS OF CONTENT/Mensagens Escritas.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
-    },
-    {
-      "basename": "0. Descobrindo o Porquê da Fé - leitura inicial",
-      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md"
     },
     {
       "basename": "Economia na Bíblia",
@@ -131,74 +199,6 @@
     {
       "basename": "morte",
       "path": "10 - TAGS/morte.md"
-    },
-    {
-      "basename": "Abraão, o pai da fé",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md"
-    },
-    {
-      "basename": "Criação da Estrutura de menus e categorias para Joomla 6",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md"
-    },
-    {
-      "basename": "Guia de atualização do Joomla no ambiente local",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
-    },
-    {
-      "basename": "Script de migração do Joomla da versão 3 para a versão 5",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 25-03-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-03-2026.md"
-    },
-    {
-      "basename": "Ceia e culto - 26-10-2025",
-      "path": "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 18-03-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-03-2026.md"
-    },
-    {
-      "basename": "Balance Your Portfolio",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Balance Your Portfolio.md"
-    },
-    {
-      "basename": "Baroque Forms Kandinsky",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md"
-    },
-    {
-      "basename": "Build your optimal study environment",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md"
-    },
-    {
-      "basename": "Glorificar a Deus no corpo",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Glorificar a Deus no corpo.md"
-    },
-    {
-      "basename": "O pecado dos pais para os filhos",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md"
-    },
-    {
-      "basename": "Vestuário Cristão",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Vestuário Cristão.md"
-    },
-    {
-      "basename": "corrupcao da biblia",
-      "path": "10 - TAGS/corrupcao da biblia.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 04-02-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 04-03-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 25-02-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md"
     }
   ],
   "omittedPaths": [],

@@ -11,20 +11,36 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "07 - INDEXES/Mensagens de Domingo.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
+                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/17. Manual de Erros Comuns que Enfraquecem a Fé Infantil.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-trello",
-              "title": "Mensagens de Domingo"
+              "icon": "lucide-file",
+              "title": "17. Manual de Erros Comuns que Enfraquecem a Fé Infantil"
+            }
+          },
+          {
+            "id": "eb842192bd337d59",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Notas da versão 1.12.7"
             }
           }
         ]
@@ -90,13 +106,11 @@
               "title": "Recent Files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 239.00260543823242
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -152,7 +166,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Etiquetas"
+              "title": "Tags"
             }
           },
           {
@@ -161,13 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
+                "file": "09 - STATUS NOTES/Adult.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Índice de 0. Descobrindo o Porquê da Fé - leitura inicial"
+              "title": "Outline of Adult"
             }
           },
           {
@@ -202,6 +216,28 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
+            }
+          },
+          {
+            "id": "9275b0c2fcd66d98",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md"
+              },
+              "icon": "lucide-info",
+              "title": "Propriedades do ficheiro para Estudo Bíblico - 11-03-2026"
+            }
+          },
+          {
+            "id": "d2e6ab0b849de0ce",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
             }
           }
         ],
@@ -251,19 +287,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244
+    "width": 218
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:Criar novo Canvas": false,
+      "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
       "graph:Abrir Visualização de diagrama de grafo": false,
-      "canvas:Criar novo Canvas": false,
       "daily-notes:Abrir nota de hoje": false,
       "templates:Inserir templates": false,
       "command-palette:Abrir paleta de comando": false,
       "workspaces:Gerir esquema da área de trabalho": false,
       "publish:Publicar alterações": false,
-      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
@@ -279,34 +315,42 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Chegar à excelência por meio da provação.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/O lugar.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "Home.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/16. Guia dos pais pensadores.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/17. Manual de Erros Comuns que Enfraquecem a Fé Infantil.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/15. 50 respostas curtas para objecções ateístas.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/14. Guia de Transição - Dos 14 para os 18 Anos.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/13. Vivendo a fé - 4 perguntas para continuar pensando no futuro.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/12. Escolhas e Consequências - 4 perguntas sobre decidir, errar e aprender.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/11. Identidade e Valor - 4 perguntas sobre quem eu sou e por que importo.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/10. Dúvidas difíceis - 4 perguntas sobre questionar sem medo.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/9. Escola e mundo - 4 perguntas sobre pensar pela própria cabeça.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/8. Ciência e fé - 4 perguntas sobre conhecer o mundo e crer em Deus.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/7. Fé e vida - 4 perguntas sobre viver a fé todos os dias.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/6. Jesus - 4 perguntas sobre quem Ele foi e por que isso importa.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/5. A Bíblia - 4 perguntas sobre confiança, história e significado.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/4. Sofrimento e dor - 4 perguntas difícieis que fazem acerca do sofrimento e da dor.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/3. Bem e mal - 4 perguntas sobre o certo, errado e consciência.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/2. Deus e a Criação - 4 perguntas sobre origem, causa e existência.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/1. A Verdade - 4 perguntas para aprendera pensar antes de acreditar.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Economia na Bíblia.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
-    "10 - TAGS/economia na biblia.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A má doutrina corrompe o comportamento.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Messias sem sucesso.md",
-    "10 - TAGS/Messias.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Inquietação.md",
+    "Home.md",
+    "10 - TAGS/morte.md",
     "10 - TAGS/apologética.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/1 Conceitos Básicos da Estatística.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
-    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "10 - TAGS/2026-03.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
+    "10 - TAGS/Messias.md",
     "10 - TAGS/2026-04.md",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Messias sem sucesso.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Corrompida.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.esm.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/reveal-pointer/pointer.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
@@ -317,14 +361,6 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-green.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-blue.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-yellow.png",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/style.css",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin (copy).js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/_style.css",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/chart.min.js",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
