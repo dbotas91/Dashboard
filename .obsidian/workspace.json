@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -281,13 +282,13 @@
   },
   "active": "7e41c9c700af9f12",
   "lastOpenFiles": [
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/1. A Verdade - 4 perguntas para aprendera pensar antes de acreditar.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-05.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/2. Deus e a Criação - 4 perguntas sobre origem, causa e existência.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/1. A Verdade - 4 perguntas para aprendera pensar antes de acreditar.md",
     "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/6. Jesus - 4 perguntas sobre quem Ele foi e por que isso importa.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/7. Fé e vida - 4 perguntas sobre viver a fé todos os dias.md",

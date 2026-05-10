@@ -39,7 +39,7 @@ Bondade de Cristo
 # Motivos de oração 
 
 - [ ] Orar pelas Filomenas: Inglaterra, São João da Madeira, 2 IQC (da Mariquinha e minha mãe), Viseu
-- [ ] Orar pelos pais que têm sido instruídos na educação dos filhos;
+- [ ] Orar pela irmã Gabriela e irmã Aninhas, Cipriano, Dorin, Pedro
 - [ ] Orar pelo pai do Paulo, Adolfo, Paulo Ribeiro, Dinita
 - [ ] Agradecer pela ED e a atividade que fizeram
 - [ ] Pela obra em Angola e os irmãos que se reunem nas várias localidades;
