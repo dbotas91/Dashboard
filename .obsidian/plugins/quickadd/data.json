@@ -47,8 +47,9 @@
                 "mode": "default",
                 "focus": true
               },
-              "fileExistsMode": "Increment the file name",
-              "setFileExistsBehavior": false
+              "fileExistsBehavior": {
+                "kind": "prompt"
+              }
             }
           }
         ]
@@ -61,7 +62,7 @@
   "devMode": false,
   "templateFolderPath": "11-TEMPLATES",
   "announceUpdates": "all",
-  "version": "2.12.0",
+  "version": "2.12.3",
   "globalVariables": {},
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,
@@ -169,6 +170,9 @@
     "migrateFileOpeningSettings": true,
     "setProviderModelDiscoveryMode": true,
     "backfillFileOpeningDefaults": true,
-    "migrateProviderApiKeysToSecretStorage": true
-  }
+    "migrateProviderApiKeysToSecretStorage": true,
+    "consolidateFileExistsBehavior": true,
+    "repairTemplateFileExistsBehavior": true
+  },
+  "macros": []
 }
