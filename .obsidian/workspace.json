@@ -11,17 +11,48 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Esforça-te e Sê Homem"
+            }
+          },
+          {
+            "id": "b2a571bf71b4631a",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "07 - INDEXES/Reunião de Homens.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "Reunião de Homens"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,8 +115,7 @@
               "title": "Recent files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -270,11 +300,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "b2a571bf71b4631a",
   "lastOpenFiles": [
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+    "07 - INDEXES/Reunião de Homens.md",
+    "07 - INDEXES/Sunday Preaching.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Construindo um lar cristão.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Filhos.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Casamento.md",
+    "07 - INDEXES/Reuniões de Jovens.md",
+    "07 - INDEXES/Estudo Bíblico - microscópico.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/1. A Verdade - 4 perguntas para aprendera pensar antes de acreditar.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-05.md",
@@ -289,15 +328,6 @@
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/5. A Bíblia - 4 perguntas sobre confiança, história e significado.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/4. Sofrimento e dor - 4 perguntas difícieis que fazem acerca do sofrimento e da dor.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/3. Bem e mal - 4 perguntas sobre o certo, errado e consciência.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/17. Manual de Erros Comuns que Enfraquecem a Fé Infantil.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/16. Guia dos pais pensadores.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/15. 50 respostas curtas para objecções ateístas.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/14. Guia de Transição - Dos 14 para os 18 Anos.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/13. Vivendo a fé - 4 perguntas para continuar pensando no futuro.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/12. Escolhas e Consequências - 4 perguntas sobre decidir, errar e aprender.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/11. Identidade e Valor - 4 perguntas sobre quem eu sou e por que importo.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/10. Dúvidas difíceis - 4 perguntas sobre questionar sem medo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Chegar à excelência por meio da provação.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",

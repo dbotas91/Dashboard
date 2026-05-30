@@ -12,6 +12,7 @@ tags:
 > # [[Mensagens de Domingo]]
 > # [[Estudo Bíblico - microscópico]]
 > # [[Meditações]]
+> # [[Reunião de Homens]]
 > # [[Reunião de Natal]]
 > # [[Reuniões de Jovens]]
 >
