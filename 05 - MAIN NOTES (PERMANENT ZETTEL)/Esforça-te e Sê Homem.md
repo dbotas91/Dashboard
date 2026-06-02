@@ -1,3 +1,23 @@
+---
+dg-publish: "true"
+tags:
+  - reuniaodehomens
+mature-status: Child
+message_category: Doutrinal
+created: 02-06-2026
+speech-status: Calado
+local: iqc
+dg-note-icon: child
+noteIcon: child
+updated: 2026-06-02 14:24
+title: Esforça-te e Sê Homem
+dgPassFrontmatter: "true"
+---
+[[Home|Back home]]
+Status: [[Child]], [[Calado]]
+Local: [[IQC]]
+Tags: [[reunião de homens]]
+
 # Esforça-te e Sê Homem: Um Tratado Teológico e Prático sobre a Masculinidade e as Responsabilidades do Homem Solteiro e Casado
 
 ## O Contexto Histórico e Teológico de 1 Reis 2:1-4
@@ -81,3 +101,6 @@ O presente roteiro foi estruturado para servir de guia teológico e metodológic
 |**Clamor e Consagração (_O Alinhamento com a Cruz_)**|15 min|Oração coletiva de arrependimento e compromisso com a retidão.|_Quais pecados e omissões na sua vida de liderança pessoal exigem uma confissão sincera diante do Senhor neste exato momento para a restauração do seu caráter?_|
 
 A conclusão prática da reunião de homens deve focar na tomada de decisões concretas e na promoção mútua de crescimento espiritual. O facilitador do estudo deve incentivar cada participante a escolher um parceiro de prestação de contas dentro do grupo, estabelecendo um compromisso de reuniões periódicas para avaliar o progresso moral, a fidelidade no casamento ou na solteirice, e o engajamento espiritual na comunidade. O restabelecimento da masculinidade bíblica não ocorre por meio de resoluções emocionais temporárias, mas sim através do alinhamento diário da conduta com os preceitos imutáveis da palavra de Deus, garantindo que a herança da fé seja transmitida com fidelidade às próximas gerações.
+
+
+# Referências
