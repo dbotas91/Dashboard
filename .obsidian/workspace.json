@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Esforça-te e Sê Homem"
+              "title": "Home"
             }
           }
         ]
@@ -94,8 +94,7 @@
               "title": "Recent files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -302,12 +301,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "d187ad581aa11266",
   "lastOpenFiles": [
-    "07 - INDEXES/Reunião de Homens.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+    "07 - INDEXES/Reunião de Homens.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-05.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/7. Fé e vida - 4 perguntas sobre viver a fé todos os dias.md",
