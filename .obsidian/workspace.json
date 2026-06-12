@@ -163,13 +163,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "09 - STATUS NOTES/Adult.md",
+                "file": "Home.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Adult"
+              "title": "Índice de Home"
             }
           },
           {
@@ -301,8 +301,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d187ad581aa11266",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
+    "07 - INDEXES/Estudo Bíblico - microscópico.md",
     "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
     "07 - INDEXES/Reunião de Homens.md",
@@ -327,8 +329,6 @@
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/10. Dúvidas difíceis - 4 perguntas sobre questionar sem medo.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/9. Escola e mundo - 4 perguntas sobre pensar pela própria cabeça.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/8. Ciência e fé - 4 perguntas sobre conhecer o mundo e crer em Deus.md",
-    "10 - TAGS/morte.md",
-    "10 - TAGS/apologética.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",

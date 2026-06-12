@@ -5,6 +5,14 @@
       "path": "Home.md"
     },
     {
+      "basename": "1 Timóteo",
+      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md"
+    },
+    {
+      "basename": "Estudo Bíblico - microscópico",
+      "path": "07 - INDEXES/Estudo Bíblico - microscópico.md"
+    },
+    {
       "basename": "Esforça-te e Sê Homem",
       "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "Reuniões de Jovens",
       "path": "07 - INDEXES/Reuniões de Jovens.md"
-    },
-    {
-      "basename": "Estudo Bíblico - microscópico",
-      "path": "07 - INDEXES/Estudo Bíblico - microscópico.md"
     },
     {
       "basename": "Mensagens de Domingo",
@@ -195,10 +199,6 @@
     {
       "basename": "1 Conceitos Básicos da Estatística",
       "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/1 Conceitos Básicos da Estatística.md"
-    },
-    {
-      "basename": "Obsidian digital garden setup",
-      "path": "01 - PROJECTS (PARA)/Obsidian digital garden setup.md"
     }
   ],
   "omittedPaths": [],

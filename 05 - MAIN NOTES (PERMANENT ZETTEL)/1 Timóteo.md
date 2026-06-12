@@ -499,5 +499,16 @@ A avó Loide e a mãe Eunice não eram líderes de igreja e muito menos pregador
 
 ## Verso 1
 
+## Verso 4-5
+> [!quote] Verso 4
+> que governe bem a sua própria casa, tendo _seus_ filhos em sujeição, com toda a modéstia
+
+
+
+> [!quote] Verso 5
+> (porque, se alguém não sabe governar a sua própria casa, terá cuidado da igreja de Deus?);
+
+
+
 # Referências
 
