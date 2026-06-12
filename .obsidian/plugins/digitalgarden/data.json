@@ -5,10 +5,11 @@
   "gardenBaseUrl": "",
   "prHistory": [
     "https://github.com/dbotas91/my-garden/pull/12",
-    "https://github.com/dbotas91/my-garden/pull/6"
+    "https://github.com/dbotas91/my-garden/pull/6",
+    "https://github.com/dbotas91/my-garden/pull/17"
   ],
   "baseTheme": "dark",
-  "theme": "{\"name\":\"Dracula for Obsidian\",\"author\":\"jarodise\",\"repo\":\"jarodise/Dracula-for-Obsidian.md\",\"screenshot\":\"screencap.jpg\",\"modes\":[\"dark\"],\"cssUrl\":\"https://raw.githubusercontent.com/jarodise/Dracula-for-Obsidian.md/HEAD/theme.css\"}",
+  "theme": "{\"name\":\"Catppuccin\",\"author\":\"catppuccin\",\"repo\":\"catppuccin/obsidian\",\"screenshot\":\"assets/screenshot.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/catppuccin/obsidian/HEAD/theme.css\"}",
   "faviconPath": "08 - ATTACHMENTS/dario-catpuccin.svg",
   "logoPath": "",
   "useFullResolutionImages": true,

@@ -4,31 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "23304e9804042cd8",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "e6ac57af980951db",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Home.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Home"
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
             }
           }
         ]
@@ -163,13 +154,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Índice de Home"
+              "title": "Índice"
             }
           },
           {
@@ -301,11 +291,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4892fd3bf0af16c",
+  "active": "e6ac57af980951db",
   "lastOpenFiles": [
+    "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
     "07 - INDEXES/Estudo Bíblico - microscópico.md",
-    "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
     "07 - INDEXES/Reunião de Homens.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
