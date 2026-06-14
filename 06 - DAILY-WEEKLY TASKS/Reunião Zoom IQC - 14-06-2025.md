@@ -1,26 +1,26 @@
 ---
 tags:
-  - 2026-05
+  - 2026-06
 dg-publish: "true"
 dg-note-icon: chest
 noteIcon: chest
 ---
-Status: [[Concluído]]
-Tags: [[2026-05]], [[Zoom]]
+Status: [[Por fazer]]
+Tags: [[2026-06]], [[Zoom]]
 
 # Ordem
 1. Oração e Leitura
 2. Música 1
 3. Motivos de oração
-4. Vídeo das crianças
+4. Música 2
 5. mensagem
-6. Música 2
+6. Música 3
 7. final - oração
 
 # Músicas
-Como agradecer
-ED - Vídeo
-Bondade de Cristo
+A Rocha Inabalável
+Cordeiro de Deus
+Cuido dos detalhes
 
 # Leitura da Bíblia 
 > [!quote]- Salmo 42
@@ -38,10 +38,8 @@ Bondade de Cristo
 
 # Motivos de oração 
 
-- [ ] Orar pelas Filomenas: Inglaterra, São João da Madeira, 2 IQC (da Mariquinha e minha mãe), Viseu
 - [ ] Orar pela irmã Gabriela e irmã Aninhas, Cipriano, Dorin, Pedro
-- [ ] Orar pelo pai do Paulo, Adolfo, Paulo Ribeiro, Dinita
-- [ ] Agradecer pela ED e a atividade que fizeram
+- [ ] Orar pelo pai do Paulo, Adolfo, Paulo Ribeiro, Dinita, Umberto (pai da irmã Paula Gomes), Irene (operação dela), irmão José (marido da irmã Celeste)
 - [ ] Pela obra em Angola e os irmãos que se reunem nas várias localidades;
-- [ ] Orar pelo pregador - Fernando Quental
+- [ ] Orar pelo pregador - David Gomes
 - [ ] 

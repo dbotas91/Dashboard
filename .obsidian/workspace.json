@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "23304e9804042cd8",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "e6ac57af980951db",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "10 - TAGS/2026-05.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
+              "icon": "lucide-file",
+              "title": "2026-05"
             }
           }
         ]
@@ -291,16 +300,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e6ac57af980951db",
+  "active": "d187ad581aa11266",
   "lastOpenFiles": [
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
+    "09 - STATUS NOTES/Zoom.md",
+    "10 - TAGS/2026-06.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
     "07 - INDEXES/Estudo Bíblico - microscópico.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
     "07 - INDEXES/Reunião de Homens.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-05.md",
+    "10 - TAGS/2026-05.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/7. Fé e vida - 4 perguntas sobre viver a fé todos os dias.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/6. Jesus - 4 perguntas sobre quem Ele foi e por que isso importa.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/5. A Bíblia - 4 perguntas sobre confiança, história e significado.md",
@@ -313,12 +328,6 @@
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/16. Guia dos pais pensadores.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/15. 50 respostas curtas para objecções ateístas.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/14. Guia de Transição - Dos 14 para os 18 Anos.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/13. Vivendo a fé - 4 perguntas para continuar pensando no futuro.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/12. Escolhas e Consequências - 4 perguntas sobre decidir, errar e aprender.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/11. Identidade e Valor - 4 perguntas sobre quem eu sou e por que importo.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/10. Dúvidas difíceis - 4 perguntas sobre questionar sem medo.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/9. Escola e mundo - 4 perguntas sobre pensar pela própria cabeça.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/8. Ciência e fé - 4 perguntas sobre conhecer o mundo e crer em Deus.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
