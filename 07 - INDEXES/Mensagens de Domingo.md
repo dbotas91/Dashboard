@@ -23,6 +23,7 @@ kanban-plugin: board
 - [ ] [[Abraão, o pai da fé]]
 - [ ] [[Corrompida]]
 - [ ] [[Messias sem sucesso]]
+- [ ] [[As promessas de Deus para nós hoje]]
 
 
 ## A falar
