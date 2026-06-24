@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2025.md",
+                "file": "02 - AREAS (PARA)/Programming Languages/App idea.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,37 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Reunião Zoom IQC - 14-06-2025"
-            }
-          }
-        ]
-      },
-      {
-        "id": "4655e652aa4c8502",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "202249014ef19aff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "As promessas de Deus para nós hoje"
+              "title": "App idea"
             }
           }
         ]
@@ -93,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "?",
+                "query": "nobel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -101,7 +71,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Procurar"
             }
           },
           {
@@ -128,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242
+    "width": 200
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -184,7 +154,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Etiquetas"
             }
           },
           {
@@ -193,12 +163,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Índice"
+              "title": "Índice de 0. Descobrindo o Porquê da Fé - leitura inicial"
             }
           },
           {
@@ -233,28 +204,6 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
-            }
-          },
-          {
-            "id": "9275b0c2fcd66d98",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md"
-              },
-              "icon": "lucide-info",
-              "title": "Propriedades do ficheiro para Estudo Bíblico - 11-03-2026"
-            }
-          },
-          {
-            "id": "d2e6ab0b849de0ce",
-            "type": "leaf",
-            "state": {
-              "type": "git-history-view",
-              "state": {},
-              "icon": "history",
-              "title": "History"
             }
           }
         ],
@@ -304,19 +253,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218
+    "width": 244
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Criar novo Canvas": false,
-      "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
       "graph:Abrir Visualização de diagrama de grafo": false,
+      "canvas:Criar novo Canvas": false,
       "daily-notes:Abrir nota de hoje": false,
       "templates:Inserir templates": false,
       "command-palette:Abrir paleta de comando": false,
       "workspaces:Gerir esquema da área de trabalho": false,
       "publish:Publicar alterações": false,
+      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
@@ -332,42 +281,34 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
-    "Home.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
+    "02 - AREAS (PARA)/Programming Languages/Javascript/Programas simples.md",
+    "02 - AREAS (PARA)/Programming Languages/App idea.md",
     "10 - TAGS/promessas.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2025.md",
-    "10 - TAGS/2026-05.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
-    "09 - STATUS NOTES/Zoom.md",
     "10 - TAGS/2026-06.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
-    "07 - INDEXES/Estudo Bíblico - microscópico.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+    "10 - TAGS/2026-05.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2025.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
+    "Home.md",
     "07 - INDEXES/Reunião de Homens.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/7. Fé e vida - 4 perguntas sobre viver a fé todos os dias.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/6. Jesus - 4 perguntas sobre quem Ele foi e por que isso importa.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/5. A Bíblia - 4 perguntas sobre confiança, história e significado.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/4. Sofrimento e dor - 4 perguntas difícieis que fazem acerca do sofrimento e da dor.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/3. Bem e mal - 4 perguntas sobre o certo, errado e consciência.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/2. Deus e a Criação - 4 perguntas sobre origem, causa e existência.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+    "07 - INDEXES/Sunday Preaching.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Construindo um lar cristão.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Filhos.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Casamento.md",
+    "07 - INDEXES/Reuniões de Jovens.md",
+    "07 - INDEXES/Estudo Bíblico - microscópico.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/1. A Verdade - 4 perguntas para aprendera pensar antes de acreditar.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/17. Manual de Erros Comuns que Enfraquecem a Fé Infantil.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-05.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/2. Deus e a Criação - 4 perguntas sobre origem, causa e existência.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.esm.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/reveal-pointer/pointer.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
@@ -378,6 +319,14 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-green.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-blue.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-yellow.png",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/style.css",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin (copy).js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/_style.css",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/chart.min.js",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
