@@ -6,22 +6,82 @@
       {
         "id": "4509724f8bf84da7",
         "type": "tabs",
+        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Artigo Histórico sobre Bart Ehrman para a IQC"
+            }
+          },
+          {
+            "id": "34d605f0a0d07602",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Abraão, o pai da fé"
+            }
+          },
+          {
+            "id": "ef620a8f77614a6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Por que dividir a Bíblia corretamente"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -258,8 +318,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "ef620a8f77614a6e",
   "lastOpenFiles": [
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Entenda a sua Bíblia.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Messias sem sucesso.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O lugar.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "Home.md",
     "02 - AREAS (PARA)/Programming Languages/App idea.md",
     "02 - AREAS (PARA)/Programming Languages/Javascript/Programas simples.md",
     "10 - TAGS/promessas.md",
@@ -267,9 +338,7 @@
     "10 - TAGS/2026-05.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2025.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
-    "Home.md",
     "07 - INDEXES/Reunião de Homens.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
     "07 - INDEXES/Sunday Preaching.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Construindo um lar cristão.md",
@@ -277,15 +346,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Casamento.md",
     "07 - INDEXES/Reuniões de Jovens.md",
     "07 - INDEXES/Estudo Bíblico - microscópico.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/1. A Verdade - 4 perguntas para aprendera pensar antes de acreditar.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-05.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2025.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/2. Deus e a Criação - 4 perguntas sobre origem, causa e existência.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",

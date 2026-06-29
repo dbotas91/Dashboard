@@ -18,3 +18,5 @@ Referências:
 [https://jimmyakin.com/2022/03/where-bart-ehrman-and-i-agree.html](https://jimmyakin.com/2022/03/where-bart-ehrman-and-i-agree.html)
 
 [https://www.youtube.com/watch?v=6JTXgYw8_fE&t=99s](https://www.youtube.com/watch?v=6JTXgYw8_fE&t=99s)
+
+[# How Bart Ehrman Exploits His Audience's Ignorance](https://www.youtube.com/watch?v=DpNgxsiNoOA&pp=ugUEEgJlbg%3D%3D)

@@ -20,10 +20,11 @@ kanban-plugin: board
 - [ ] [[Vários Batismos]]
 - [ ] [[O lugar]]
 - [ ] [[Entenda a sua Bíblia]]
-- [ ] [[Abraão, o pai da fé]]
 - [ ] [[Corrompida]]
 - [ ] [[Messias sem sucesso]]
 - [ ] [[As promessas de Deus para nós hoje]]
+- [ ] [[Por que dividir a Bíblia corretamente]]
+- [ ] Por que não sou islâmico
 
 
 ## A falar
@@ -38,6 +39,7 @@ kanban-plugin: board
 - [ ] [[Provados]]
 - [ ] [[Secularismo e a maldição das nações]]
 - [ ] [[Entendimento e compreensão]]
+- [ ] [[Abraão, o pai da fé]]
 
 
 ## Finalizado
