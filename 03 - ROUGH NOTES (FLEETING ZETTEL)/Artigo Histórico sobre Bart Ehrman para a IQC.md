@@ -20,3 +20,6 @@ Referências:
 [https://www.youtube.com/watch?v=6JTXgYw8_fE&t=99s](https://www.youtube.com/watch?v=6JTXgYw8_fE&t=99s)
 
 [# How Bart Ehrman Exploits His Audience's Ignorance](https://www.youtube.com/watch?v=DpNgxsiNoOA&pp=ugUEEgJlbg%3D%3D)
+
+[William Lane Craig on Bart Ehrman (1 of 6)](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DzANl-OcPnfI&ved=2ahUKEwigi5v7uK2VAxV0UaQEHd0vAmAQwqsBegQIGBAB&usg=AOvVaw0oqZLSsFUFRnSwM16QcKfM)
+
