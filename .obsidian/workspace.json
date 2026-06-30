@@ -11,23 +11,38 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "07 - INDEXES/Mensagens de Domingo.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
+                "file": "Home.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-trello",
-              "title": "Mensagens de Domingo"
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "ff88e6cbfb1c3777",
+            "type": "leaf",
+            "state": {
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -296,8 +311,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4892fd3bf0af16c",
+  "active": "ff88e6cbfb1c3777",
   "lastOpenFiles": [
+    "07 - INDEXES/Mensagens de Domingo.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
@@ -305,7 +321,6 @@
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2025.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
     "10 - TAGS/promessas.md",
     "10 - TAGS/2026-05.md",
