@@ -5804,6 +5804,7 @@ Tecnol
 TcBsAouK
 TcBRbvenT
 TWFmEyqEEoxRkQAAAAAA
+Testaments
 FEFF
 Form
 Font
@@ -31955,6 +31956,7 @@ circumcision
 chiefest
 confess
 cornerstone
+contradictory
 BM
 BBox
 BHq
@@ -46094,6 +46096,7 @@ seedline
 separation
 standing
 swords
+speaking
 xU
 xM
 xLq
@@ -50930,6 +50933,7 @@ gBAAAAAAAAAAAA
 gVAIykC
 gxYhvKcIsYAAAAASUVORK
 gainsayers
+gincana
 am
 ah
 as
@@ -54470,6 +54474,7 @@ atone
 abomination
 answered
 angels
+ages
 dA
 dD
 dd
@@ -57706,6 +57711,7 @@ digitar
 disciples
 dominion
 division
+dispensational
 zR
 zD
 zJ
@@ -68042,6 +68048,7 @@ profissionais
 prejudicar
 punishable
 prophesied
+prophecy
 OaL
 Oar
 OQ
@@ -80075,6 +80082,8 @@ manipula
 masterbuilder
 mysteries
 ministers
+muleta
+mystery
 qd
 qm
 qI

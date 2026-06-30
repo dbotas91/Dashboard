@@ -24,6 +24,40 @@ Não entendem, não querem entender, não acham importante, relevante e dizem qu
 
 Para muitos é tentador pensar que isso não faz muita diferença na vida cristã.
 
+Na minha experiência, no que toca ao batismo na água (por exemplo), já ouvi “pastores” a mudarem de opinião no que toca à forma de batizar.
+Uns a dizerem que qualquer forma de batismo é certa desde que seja batizado em água. Outros a dizerem a crentes de forma sincera pode ser batizada por derramamento e a outros que essa forma de batismo não é válido e tem de ser exclusivamente por imersão.
+
+Outros, no que toca à pluralidade de anciãos e diáconos a dizerem que não é muito importante se na Bíblia mostra que uma igreja tem de ter vários ou não. E até que na experiência deles as igrejas não funcionam muito bem com vários anciãos e diáconos.
+E já ouvi esses mesmos que dizem isso (que igrejas com vários anciãos não funciona), a serem anciãos únicos e depois a fecharem as suas igrejas locais e juntarem-se a outras e passarem a fazer parte de igrejas com vários anciãos.
+
+E com isso os cristãos contradizem-se e desmentem-se e causam confusão, simplesmente por não dividirem a Palavra da Verdade.
+Paulo quando escreve esta passagem (mais em baixo) aos Coríntios, escreve numa altura de confusão. 
+
+Um altura em que havia uma confusão relativa:
+- ao batismo na água (que estava a causar divisões e que hoje continua), 
+- à imoralidade dentro da igreja e a disciplina exercida (Ananias e Safira caíram logo mortos mas agora ninguém morria assim por atos semelhantes), 
+- ao casamento
+- solteirismo, 
+- à alimentação (agora não há restrições desde que seja dado graças a Deus, mesmo até sabendo que era sacrificado ao ídolo), 
+- ao uso do véu para a mulher e o homem não cobrir a cabeça 
+- e a ordem no culto e Ceia do Senhor, 
+- o lugar da mulher e do homem na igreja, 
+- aos dons das línguas e profecias, 
+- aos hinos de amor ao Senhor (capítulo 13) como o melhor dom (em comparação com os anteriores), 
+- à ressurreição do Senhor como base para a ressurreição do nosso corpo para habitar para sempre com o Senhor como ele inicialmente planeou 
+- e por fim à coleta e o seu uso.
+
+E a determinada altura, Paulo escreve assim
+>[!quote]+ 1 Coríntios 14:32-34 
+>32 E os espíritos dos profetas estão sujeitos aos profetas. 
+>33 Porque Deus não é _Deus_ de confusão, senão de paz, como em todas as igrejas dos santos. 
+>34 As mulheres estejam caladas nas igrejas, porque lhes não é permitido falar; mas estejam sujeitas, como também ordena a lei.
+
+Ele escreve assim, porque desde então ele foi a pessoa usada por Deus para colocar ordem. E aqui, a ordem é a divisão das coisas que Deus separou.
+
+Sim, Deus separa certas coisas. E há coisas que ele quer ver unidas, como a Igreja Corpo de Cristo, o casamento, etc. Assim como quer separar o Seu Evangelho hoje o que estava antes e fazia parte do programa anterior.
+É por isso que Paulo diz em Rm: 1.1: “chamado _para_ apóstolo, **separado** para o evangelho de Deus”.
+
 Por isso temos em mente as seguintes questões como:
 - Dividir corretamente a palavra da verdade é importante? 
 - Por que é importante reconhecer a importância da revelação progressiva e da dispensação especial da graça em que vivemos agora?
@@ -80,7 +114,9 @@ Outras, sem necessidade disso, porque o Espírito na hora há que dar o que fala
 > 15 Medita estas _coisas,_ ocupa-te nelas, para que o teu aproveitamento seja manifesto a todos. 
 > 16 Tem cuidado de ti mesmo e da doutrina; persevera nestas coisas; porque, fazendo isto, te salvarás, tanto a ti mesmo como aos que te ouvem.
 
-No fundo, a divisão correta da Palavra da Verdade, vai esclarecer se o entendimento correto vem do Senhor abrir o entendimento para ler (Lucas 24:44-46) ou ler para abrir o entendimento (Efésios 3:1-7).
+No fundo, a divisão correta da Palavra da Verdade, vai esclarecer se o entendimento correto vem: 
+- do Senhor abrir o entendimento para ler (Lucas 24:44-46) 
+- ou ler para abrir o entendimento (Efésios 3:1-7).
 
 # 4 Seu Crescimento e Caminhada Cristã
 
