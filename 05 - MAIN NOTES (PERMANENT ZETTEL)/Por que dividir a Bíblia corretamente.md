@@ -55,8 +55,8 @@ E a determinada altura, Paulo escreve assim
 
 Ele escreve assim, porque desde então ele foi a pessoa usada por Deus para colocar ordem. E aqui, a ordem é a divisão das coisas que Deus separou.
 
-Sim, Deus separa certas coisas. E há coisas que ele quer ver unidas, como a Igreja Corpo de Cristo, o casamento, etc. Assim como quer separar o Seu Evangelho hoje o que estava antes e fazia parte do programa anterior.
-É por isso que Paulo diz em Rm: 1.1: “chamado _para_ apóstolo, **separado** para o evangelho de Deus”.
+Sim, Deus separa certas coisas. E há coisas que ele quer ver unidas, como a Igreja Corpo de Cristo, o casamento, etc. Assim como quer separar o Seu Evangelho hoje do que estava antes e fazia parte do programa anterior.
+É por isso que Paulo diz em Rm: 1.1: “chamado _para_ apóstolo, **separado** para o evangelho de Deus”. E continua a mostrar a obra de Cristo usada para revelação do mistério e a separação entre Israel (e o seu propósito) e a Igreja (e o seu propósito distinto de Israel).
 
 Por isso temos em mente as seguintes questões como:
 - Dividir corretamente a palavra da verdade é importante? 
@@ -75,8 +75,9 @@ Ou como pregar:
 - Devemos conhecer (o que está na Bíblia), pensar e meditar naquilo que vamos pregar? - **1 Tim 4:15 & 2 Tim 3:15-17**
 - Ou o Espírito Santo vai guiar tudo e não precisamos conhecer, pensar ou meditar no que vamos pregar porque o Espírito Santo vai tomar conta do recado? - **Lucas 21:14; Marcos 13:11**
 
-Slogans e slogans cristãos abundam em testemunhos pessoais, causando sérias dúvidas sobre se os auto-proclamados cristãos estão realmente confiando no evangelho de Cristo ou não. 
+Slogans e slogans cristãos abundam em testemunhos pessoais (principalmente na internet), causando sérias dúvidas sobre se os auto-proclamados cristãos estão realmente confiando no evangelho de Cristo ou não. 
 As pessoas “recebem Jesus”, “renunciam ao pecado” e “acreditam em Deus” sem conhecer a pregação da cruz.
+
 Uma falha em dividir corretamente muitas vezes permite um evangelho sem cruz, o que resulta em pessoas não salvas pensando que são e origina as seitas que existem.
 
 # 2 Sua Bíblia
@@ -93,6 +94,7 @@ Três exemplos dessas contradições (de uma pequena lista de 104):
 Um só baptismo ou mais? – [Eph 4:5](https://av1611.com/verseclick/gobible.php?p=Eph_4.5) & [Mat 3:11](https://av1611.com/verseclick/gobible.php?p=Mat_3.11)
 Devemos saber como orar ou não (temos ajuda do Espírito)? – [Luke 11:1](https://av1611.com/verseclick/gobible.php?p=Luke_11.1) & [Rom 8:26](https://av1611.com/verseclick/gobible.php?p=Rom_8.26)  Atenção não estou a dizer aprender a orar, mas sim como orar. Isto porque relaciona-se com a questão seguinte.
 Recebemos o que pedimos ou mais do que pedimos? – [Mat 21:22](https://av1611.com/verseclick/gobible.php?p=Mat_21.22) & [Eph 3:20](https://av1611.com/verseclick/gobible.php?p=Eph_3.20)
+
 # 3 Seu Entendimento
 
 O analfabetismo bíblico é um resultado direto de não dividir corretamente a Palavra da Verdade. 
@@ -120,7 +122,23 @@ No fundo, a divisão correta da Palavra da Verdade, vai esclarecer se o entendim
 
 # 4 Seu Crescimento e Caminhada Cristã
 
-O crescimento espiritual só pode acontecer depois que as pessoas forem salvas (veja o primeiro item acima). Após a salvação, não dividir corretamente pode prejudicar severamente o crescimento espiritual. Se um bebé cristão pensa que seu crescimento é encontrado em manter a lei das letras vermelhas em Mateus 5, o trabalho persistente dos hebreus, Tiago ou a ausência de pecado de 1 João, então eles estão em apuros. Um cristão salvo pela graça precisa andar em graça, e essa instrução é encontrada apenas nas epístolas de Paulo.
+O crescimento espiritual só pode acontecer depois das pessoas serem salvas (veja o primeiro item acima). 
+
+Após a salvação, não dividir corretamente pode prejudicar severamente o crescimento espiritual. 
+Se um bebé cristão pensa que o seu crescimento é encontrado em:
+- manter a lei das letras vermelhas em Mateus 5, 
+- o trabalho persistente visto na epístola aos Hebreus, 
+- Tiago (onde diz que a fé sem obras é morta - Tiago 2:14-26)
+- ou a ausência de pecado de 1 João (5:18 por exemplo), 
+então eles estão em apuros. 
+ 
+Um cristão salvo pela graça precisa andar em graça, e essa instrução é encontrada apenas nas epístolas de Paulo.
+
+E nelas sabe que as boas obras foram preparadas pelo nosso Deus para nós andarmos nelas e não para mostrar o tamanho da nossa fé (Ef. 2:8-10). 
+
+Também sabe que em Romanos 6, 7 e 8, o Senhor por meio de Paulo mostra as nossas duas naturezas pecaminosas, que nenhuma condenação há para os que estão em Cristo Jesus e que a liberdade conquistada por Ele para nós tem de ser usada para fazer muito mais para Ele. A nossa condição nova, dada por graça, é dada para andarmos em novidade de vida e nas boas obras que o próprio Deus preparou para nós (Romanos 6:4; Ef. 2:10).
+
+A divisão correta da Palavra da Verdade é que vai esclarecer o nosso entendimento, levar ao crescimento e saber qual a nossa caminhada.
 
 #5 Suas Finanças
 
