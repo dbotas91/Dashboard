@@ -508,7 +508,31 @@ A avó Loide e a mãe Eunice não eram líderes de igreja e muito menos pregador
 > [!quote] Verso 5
 > (porque, se alguém não sabe governar a sua própria casa, terá cuidado da igreja de Deus?);
 
+## Verso 6
+> [!quote] Verso 6
+> não neófito, para que, ensoberbecendo-se, não caia na condenação do diabo.
 
+A experiência na caminha com Deus vem do tempo a percorrê-la. A estudar, orar, evangelizar, servir, ouvir, aprender a Bíblia.
+Vem também do sofrimento, dos momentos baixos, nos vales, nos desertos, nas dificuldades, nas lutas, nas tormentas, nas tribulações que produzem a paciência que por fim produz a esperança (Rm 5:.2-5).
+Isto não é obtido no início é adquirido com experiência ganha ao longo do tempo.
+Isso vai ajudar a adquirir a humildade, a confiança no Senhor e a maturidade para servir e não haver orgulho nisso.
+
+Por vezes o serviço pode ser um motivo de orgulho (Lucas 20:45-47; Mateus 7:22, 23:1-12).
+O episcopado não é motivo de orgulho mas de humildade. Também não é para a pessoa achar que pode ser “alguém” acima dos outros.
+
+O episcopado é ter sempre a mentalidade de João Batista:
+
+>[!quote] [João 3:30](https://www.biblegateway.com/passage/?search=Jo%C3%A3o%203%3A30&version=ARC)
+> É necessário que ele cresça e que **eu** **diminua**.)
+
+E lembrar sempre que assim como o rei Uzias que já ouvimos antes, a soberba pode levar à ruína.
+E normalmente o neófito na fé (e até quem não o é) pode ter tendência a ser soberbo.
+
+Temos também de lembrar dos nossos novos na fé para que possam aprender a humildade no Senhor e crescerem na sua caminhada com Cristo.
+
+## Verso 7
+> [!quote] Verso 7
+> Convém, também, que tenha bom testemunho dos que estão de fora, para que não caia em afronta e no laço do diabo.
 
 # Referências
 
