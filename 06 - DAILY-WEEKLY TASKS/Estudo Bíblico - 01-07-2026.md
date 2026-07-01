@@ -9,16 +9,23 @@ Status: [[Por fazer]]
 Tags: [[2026-07]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Passagem em estudo
-[[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 1|1 Timóteo 3:1]]
+[[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 6|1 Timóteo 3:6]]
+[[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 7|1 Timóteo 3:7]]
+
 
 # Músicas
 
 
 # Leitura da Bíblia 
-> [!quote]- **Colossenses 1:9-10:** 
-> __Paulo pede que eles sejam "cheios do conhecimento da sua vontade".__
-> 9 Por esta razão, nós também, desde o dia em que o ouvimos, não cessamos de orar por vós e de pedir que sejais cheios do conhecimento da sua vontade, em toda a sabedoria e inteligência espiritual; 
-> 10 para que possais andar dignamente _diante_ do Senhor, agradando-lhe em tudo, frutificando em toda boa obra e crescendo no conhecimento de Deus; 
+> [!quote]- **Salmo 78** 
+>  Escutai a minha lei, povo meu; inclinai os ouvidos às palavras da minha boca. 
+>  2 Abrirei a boca _numa_parábola; proporei enigmas da antiguidade, 
+>  3 os quais temos ouvido e sabido, e nossos pais no-los têm contado. 
+>  4 Não os encobriremos aos seus filhos, mostrando à geração futura os louvores do Senhor, assim como a sua força e as maravilhas que fez.
+>  5 Porque ele estabeleceu _um_ testemunho em Jacó, e pôs _uma_ lei em Israel, e ordenou aos nossos pais que a fizessem conhecer a seus filhos, 
+>  6 para que a geração vindoura _a_ soubesse, e os filhos _que_ nascessem se levantassem e _a_ contassem a seus filhos; 
+>  7 para que pusessem em Deus a sua esperança e se não esquecessem das obras de Deus, mas guardassem os seus mandamentos 
+>  8 e não fossem como seus pais, geração contumaz e rebelde, geração _que_ não regeu o seu coração, e cujo espírito não foi fiel para com Deus.
 
 # Motivos de oração 
 
