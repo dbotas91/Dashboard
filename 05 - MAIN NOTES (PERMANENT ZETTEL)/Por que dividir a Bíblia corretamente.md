@@ -2,23 +2,27 @@
 dg-publish: "true"
 tags:
   - divisaodabiblia
-mature-status: Child
+mature-status: Teen
 message_category: Doutrinal
 created: 2026-06-29 18:16
 speech-status: Calado
 local: fontaínhas
-dg-note-icon: child
-noteIcon: child
+dg-note-icon: teen
+noteIcon: teen
 updated: 2026-06-29 18:16
 title: Por que dividir a Bíblia corretamente
 dgPassFrontmatter: "true"
 ---
 [[Home|Back home]]
-Status: [[Child]], [[Calado]]
+Status: [[Teen]], [[Calado]]
 Local: [[Fontainhas]]
 Tags: [[divisão da Bíblia]]
 
 # Por que dividir a Bíblia corretamente
+
+>[!quote] 1 Timóteo 2:15
+> Procura apresentar-te a Deus, aprovado, como obreiro que não tem de que se envergonhar, que maneja bem a palavra da verdade;
+
 Na cristandade a maioria das pessoas parece **seguir a vida cristã perfeitamente bem** sem entender **como dividir a Bíblia corretamente** e mesmo até sem entenderem por que é importante dividir corretamente. 
 Não entendem, não querem entender, não acham importante, relevante e dizem que pessoas como eu são a minoria a falar desta necessidade (sim por que é uma necessidade). 
 
