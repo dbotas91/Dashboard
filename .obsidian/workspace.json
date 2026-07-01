@@ -11,33 +11,35 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "07 - INDEXES/Mensagens de Domingo.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false
+                  ]
                 }
               },
-              "icon": "lucide-file",
-              "title": "Por que dividir a Bíblia corretamente"
+              "icon": "lucide-trello",
+              "title": "Mensagens de Domingo"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "e6cb73de805a5220",
+        "type": "tabs",
+        "children": [
           {
-            "id": "41af7ffc55efa9a0",
+            "id": "91ffa6fa70d1c7d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que não sou ateu.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +54,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Estudo Bíblico - 01-07-2026"
+              "title": "Por que não sou ateu"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -88,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "?",
+                "query": "nobel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -96,7 +97,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Procurar"
             }
           },
           {
@@ -115,15 +116,16 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent files"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 290.0026054382324
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -132,7 +134,7 @@
       {
         "id": "66d2499bd7c7c2cf",
         "type": "tabs",
-        "dimension": 71.48760330578513,
+        "dimension": 47.82608695652174,
         "children": [
           {
             "id": "ca992fb3ee138cd9",
@@ -179,7 +181,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Etiquetas"
             }
           },
           {
@@ -188,12 +190,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Índice"
+              "title": "Índice de 0. Descobrindo o Porquê da Fé - leitura inicial"
             }
           },
           {
@@ -207,21 +210,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "Todas as propriedades"
             }
           },
           {
-            "id": "f34122c6fa88596e",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
-            "id": "c4892fd3bf0af16c",
+            "id": "78c720107f04a0ac",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -229,36 +222,14 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "9275b0c2fcd66d98",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md"
-              },
-              "icon": "lucide-info",
-              "title": "Propriedades do ficheiro para Estudo Bíblico - 11-03-2026"
-            }
-          },
-          {
-            "id": "d2e6ab0b849de0ce",
-            "type": "leaf",
-            "state": {
-              "type": "git-history-view",
-              "state": {},
-              "icon": "history",
-              "title": "History"
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "aa213c339baded63",
         "type": "tabs",
-        "dimension": 28.512396694214875,
+        "dimension": 52.17391304347826,
         "children": [
           {
             "id": "4f23ffc45f683c25",
@@ -294,24 +265,23 @@
               "title": "Adult"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 218
+    "width": 244
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:Criar novo Canvas": false,
-      "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
       "graph:Abrir Visualização de diagrama de grafo": false,
+      "canvas:Criar novo Canvas": false,
       "daily-notes:Abrir nota de hoje": false,
       "templates:Inserir templates": false,
       "command-palette:Abrir paleta de comando": false,
       "workspaces:Gerir esquema da área de trabalho": false,
       "publish:Publicar alterações": false,
+      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
@@ -320,49 +290,41 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "homepage:Open homepage": false,
       "digitalgarden:Digital Garden Publication Center": false,
+      "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "41af7ffc55efa9a0",
+  "active": "91ffa6fa70d1c7d2",
   "lastOpenFiles": [
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-07.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-03-2026.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que não sou ateu.md",
     "07 - INDEXES/Mensagens de Domingo.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-07.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md",
+    "09 - STATUS NOTES/Adult.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Entenda a sua Bíblia.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Messias sem sucesso.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O lugar.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md",
     "02 - AREAS (PARA)/Programming Languages/App idea.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2025.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
+    "02 - AREAS (PARA)/Programming Languages/Javascript/Programas simples.md",
     "10 - TAGS/promessas.md",
-    "10 - TAGS/2026-05.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
-    "09 - STATUS NOTES/Zoom.md",
     "10 - TAGS/2026-06.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2025.md",
-    "07 - INDEXES/Estudo Bíblico - microscópico.md",
+    "10 - TAGS/2026-05.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2025.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
+    "07 - INDEXES/Reunião de Homens.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+    "07 - INDEXES/Sunday Preaching.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Construindo um lar cristão.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.esm.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/reveal-pointer/pointer.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
@@ -373,6 +335,14 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-green.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-blue.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-yellow.png",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/style.css",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin (copy).js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/_style.css",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chart/chart.min.js",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]

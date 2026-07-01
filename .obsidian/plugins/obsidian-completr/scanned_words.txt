@@ -2019,7 +2019,6 @@ Perdi
 Pauline
 Prophecy
 Plowshares
-Prima
 obj
 oQw
 ot
@@ -28120,7 +28119,6 @@ effectual
 earth
 engender
 exercida
-episcopado
 ca
 cW
 cEu
@@ -31963,7 +31961,6 @@ contradictory
 coleta
 caladas
 conquistada
-caminha
 BM
 BBox
 BHq
@@ -43044,7 +43041,6 @@ twelve
 tithe
 tithing
 temple
-tormentas
 stream
 sWz
 sj
@@ -57724,7 +57720,6 @@ dispensational
 desmentem
 dividirem
 dolo
-desertos
 zR
 zD
 zJ
@@ -64649,7 +64644,6 @@ nfZi
 njuge
 nations
 nation
-ncreas
 pM
 pg
 pd
@@ -68064,7 +68058,6 @@ punishable
 prophesied
 prophecy
 planeou
-percorr
 OaL
 Oar
 OQ
@@ -74522,8 +74515,6 @@ URIs
 Unicode
 Usa
 Ungido
-Umberto
-Uzias
 VP
 Vn
 VD
@@ -94395,7 +94386,6 @@ fbgH
 forgiven
 forgiveness
 fecharem
-fito
 br
 bJ
 bW
