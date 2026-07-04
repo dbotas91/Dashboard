@@ -68,7 +68,7 @@ Por isso temos em mente as seguintes questões como:
 
 Aqui estão alguns motivos que quero desenvolver de porque é importante e necessário dividir a Bíblia corretamente.
 
-# 1 Sua Salvação
+## 1 Sua Salvação
 A igreja está a enfrentar uma crise na explanação do Evangelho. Parece que hoje ninguém sabe explicar o evangelho e misturam tudo.
 Ninguém pode concordar sobre o que é o evangelho:
 - O evangelho é arrependimento e batismo?
@@ -84,7 +84,7 @@ As pessoas “recebem Jesus”, “renunciam ao pecado” e “acreditam em Deus
 
 Uma falha em dividir corretamente muitas vezes permite um evangelho sem cruz, o que resulta em pessoas não salvas pensando que são e origina as seitas que existem.
 
-# 2 Sua Bíblia
+## 2 Sua Bíblia
 
 Uma das principais razões para as pessoas não acreditarem na Bíblia é por causa de supostas contradições. 
 Existe um historiador/ou crítico textual do Novo Testamento, que é o Bart Ehrman. Ele estudou e escreveu alguns livros com um crente historiador chamado Bruce Metzger. Em alguns vídeos ele explica que tornou-se agnóstico por não conseguir conciliar as contradições na Bíblia.
@@ -99,7 +99,7 @@ Um só baptismo ou mais? – [Eph 4:5](https://av1611.com/verseclick/gobible.ph
 Devemos saber como orar ou não (temos ajuda do Espírito)? – [Luke 11:1](https://av1611.com/verseclick/gobible.php?p=Luke_11.1) & [Rom 8:26](https://av1611.com/verseclick/gobible.php?p=Rom_8.26)  Atenção não estou a dizer aprender a orar, mas sim como orar. Isto porque relaciona-se com a questão seguinte.
 Recebemos o que pedimos ou mais do que pedimos? – [Mat 21:22](https://av1611.com/verseclick/gobible.php?p=Mat_21.22) & [Eph 3:20](https://av1611.com/verseclick/gobible.php?p=Eph_3.20)
 
-# 3 Seu Entendimento
+## 3 Seu Entendimento
 
 O analfabetismo bíblico é um resultado direto de não dividir corretamente a Palavra da Verdade. 
 Os seminários são a muleta pela qual as igrejas tentam remover esse analfabetismo. É verdade que se pode aprender muita coisa interessante, como grego, latim, hebraico, filosofia, história para dar suporte ao estudo. Mas não será muitas vezes que um pouco de tudo e nada de Bíblia?
@@ -124,7 +124,7 @@ No fundo, a divisão correta da Palavra da Verdade, vai esclarecer se o entendim
 - do Senhor abrir o entendimento para ler (Lucas 24:44-46) 
 - ou ler para abrir o entendimento (Efésios 3:1-7).
 
-# 4 Seu Crescimento e Caminhada Cristã
+## 4 Seu Crescimento e Caminhada Cristã
 
 O crescimento espiritual só pode acontecer depois das pessoas serem salvas (veja o primeiro item acima). 
 
@@ -144,23 +144,23 @@ Também sabe que em Romanos 6, 7 e 8, o Senhor por meio de Paulo mostra as nossa
 
 A divisão correta da Palavra da Verdade é que vai esclarecer o nosso entendimento, levar ao crescimento e saber qual a nossa caminhada.
 
-#5 Suas Finanças
+## 5 Suas Finanças
 
 A menos que você viva debaixo de uma rocha, todo mundo sabe que há fraude financeira no que agora é uma indústria de igrejas multibilionárias. O que é menos conhecido é que é um resultado direto de uma doutrina errada. Você não seria o primeiro ou o último cristão a colocar sua última esperança de libertação financeira nas manipulações e mentiras de pastores em pele de carneiro que ensinam o princípio do dízimo da lei em vez da dispensação da graça de Deus para dar.
 
-#6 Seu Casamento
+## 6 Seu Casamento
 
 Entender a mudança dispensacional da lei para a graça mudará para sempre a maneira como você pensa sobre seu relacionamento com seu cônjuge e filhos. A face sem graça do legalismo muitas vezes habita em lares e casamentos cristãos. Quando o mistério de Cristo e da igreja é ensinado, o legalismo é despejado, e o amor pode crescer entre pessoas que de outra forma seriam incompatíveis.
 
-#7 Sua Saúde
+## 7 Sua Saúde
 
 Desde evitar ajuda médica até colocar todas as suas esperanças em uma cura, a fé de muitos é destruída quando coisas ruins acontecem e entes queridos morrem. Entender o que Deus está fazendo hoje (a questão dispensacional) lhe dá graça e sabedoria suficientes para saber como os problemas podem tornar sua fé mais forte em vez de mais fraca.
 
-#8 Sua Carreira
+## 8 Sua Carreira
 
 Os cristãos bem-sintados querem servir ao Senhor, mas não conhecem sua vontade. Esperar por sinais que nunca vêm, atribuir um propósito divino às circunstâncias ou se mover na direção errada, são todos erros de carreira que os cristãos enfrentam por causa de uma falha em dividir corretamente. Aprender a vontade de Deus é necessário para o sucesso na vida cristã. A vontade de Deus deve ser dividida corretamente.
 
-#9 Suas Orações
+## 9 Suas Orações
 
 Talvez sua confusão sobre a oração esteja diretamente relacionada a não entender o que Deus está fazendo hoje e por quê. Afinal, Jesus não prometeu dar o que pedimos em seu nome? Mais uma vez, dividir corretamente coloca a oração em seu devido lugar.
 

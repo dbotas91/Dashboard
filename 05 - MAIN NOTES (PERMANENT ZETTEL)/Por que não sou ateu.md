@@ -1,23 +1,40 @@
 ---
 dg-publish: "true"
 tags:
+  - ateísmo
 mature-status: Child
-message_category:
+message_category: Evangelização
 created: 2026-07-01 23:26
 speech-status: Calado
-local:
+local: iqc
 dg-note-icon: child
 noteIcon: child
 updated: 2026-07-01 23:26
-title:
+title: Por que não sou ateu
 dgPassFrontmatter: "true"
 ---
 [[Home|Back home]]
 Status: [[Child]], [[Calado]]
-Local: 
-Tags: 
+Local: [[I]]
+Tags: [[ateísmo]]
 
 # Por que não sou ateu
+
+## 1 Ateísmo leva a nada
+Richard Dawkins no seu livro **O Rio que Saía do Éden** (_River Out of Eden_), Dawkins descrever o universo como 
+
+>[!quote]
+>O universo que observamos tem precisamente as propriedades que deveríamos esperar se, no fundo, não houvesse design/planeamento, nem propósito, nem mal, nem bem, nada além de uma indiferença impiedosa.
+
+Ao qual o irmão John Lennox respondeu
+
+>[!quote]
+> "O ateísmo pode parecer oferecer uma solução ao remover Deus da equação, mas, ao fazê-lo, remove toda a esperança. Sem Deus, não há justiça última, nem vida após a morte. O ateísmo é uma fé sem esperança." [[1](https://www.evangelicalmagazine.com/article/a-crown-of-hope/)]
+
+E penso que o irmão Lennox tem razão.
+
+Todas as vezes que tento fazer uma “comparação existêncial” entre ambas as posições tentando-as reduzir ao absurdo (reductio ad absurdum). A conclusão que chego, é que o ateísmo é a pior posição em que poderia colocar a minha fé. 
+Aliás, fazendo isso só vejo que a minha fé seria cega e vazia.
 
 
 
@@ -87,7 +104,8 @@ Responder
 
 [há 11 dias (editado)](https://www.youtube.com/watch?v=pBvRuFMSKH4&lc=UgwaiQkxJ8k6wOackbp4AaABAg.AY9kqc6C-hnAYI1ptuNTW2)
 
-​ [@pineapplepenumbra](https://www.youtube.com/channel/UCCIuoh8XRbKrLB4okjMdS6w)  Firstly, I don't have to give an example of his argument that isn't a logical fallacy because I never claimed he had logical claims. You were the one who made a claim. But, let's look at your example for the logical fallacy. What you cited was from October 2024, during a message he delivered as the president of the OCCA, he was directly responding to a famous quote by Dawkins from his book "River out of Eden", where Dawkins described the universe as having "no design, no purpose, no evil, no good, nothing but pitiless indifference"...Lennox addressed this and the exact quote from that address states: "Atheism might seem to offer a solution by removing God from the equation, but in doing so, it removes all hope. Without God, there is no ultimate justice, no life beyond death. Atheism is a hopeless faith." That is NOT an "Appeal to Consequences"...it would be if he said Atheism were hopeless "therefore it's false", but that wasn't what he said or even implied...He was making an "existential comparison". He was addressing ontology and existentialism, not "epistemology"...so, basically saying "if Richard Dawkins' version of atheism is true, then the logical consequences is a universe of pitiless indifference where ultimate hope cannot exist". That's actually a valid logical technique...a reductio ad absurdum. He basically took what Dawkins said and followed it to its logical conclusion. In fact, he was agreeing with a conclusion that many secular philosophers openly admitted like Nietzche and in this case, Dawkins. If you misconstrue what he said, then it makes sense why you'd think he makes logically fallacious arguments.
+​ [@pineapplepenumbra](https://www.youtube.com/channel/UCCIuoh8XRbKrLB4okjMdS6w)  Firstly, I don't have to give an example of his argument that isn't a logical fallacy because I never claimed he had logical claims. You were the one who made a claim. 
+But, let's look at your example for the logical fallacy. What you cited was from October 2024, during a message he delivered as the president of the OCCA, he was directly responding to a famous quote by Dawkins from his book "River out of Eden", where Dawkins described the universe as having "no design, no purpose, no evil, no good, nothing but pitiless indifference"... Lennox addressed this and the exact quote from that address states: "Atheism might seem to offer a solution by removing God from the equation, but in doing so, it removes all hope. Without God, there is no ultimate justice, no life beyond death. Atheism is a hopeless faith." That is NOT an "Appeal to Consequences"...it would be if he said Atheism were hopeless "therefore it's false", but that wasn't what he said or even implied...He was making an "existential comparison". He was addressing ontology and existentialism, not "epistemology"...so, basically saying "if Richard Dawkins' version of atheism is true, then the logical consequences is a universe of pitiless indifference where ultimate hope cannot exist". That's actually a valid logical technique...a reductio ad absurdum. He basically took what Dawkins said and followed it to its logical conclusion. In fact, he was agreeing with a conclusion that many secular philosophers openly admitted like Nietzche and in this case, Dawkins. If you misconstrue what he said, then it makes sense why you'd think he makes logically fallacious arguments.
 
 Responder
 
