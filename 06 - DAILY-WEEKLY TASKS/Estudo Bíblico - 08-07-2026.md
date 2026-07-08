@@ -9,32 +9,51 @@ Status: [[Por fazer]]
 Tags: [[2026-07]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Passagem em estudo
-[[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 6|1 Timóteo 3:6]]
 [[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 7|1 Timóteo 3:7]]
-
 
 # Músicas
 
 
-# Leitura da Bíblia 
-> [!quote]- **Salmo 78** 
->  Escutai a minha lei, povo meu; inclinai os ouvidos às palavras da minha boca. 
->  2 Abrirei a boca _numa_parábola; proporei enigmas da antiguidade, 
->  3 os quais temos ouvido e sabido, e nossos pais no-los têm contado. 
->  4 Não os encobriremos aos seus filhos, mostrando à geração futura os louvores do Senhor, assim como a sua força e as maravilhas que fez.
->  5 Porque ele estabeleceu _um_ testemunho em Jacó, e pôs _uma_ lei em Israel, e ordenou aos nossos pais que a fizessem conhecer a seus filhos, 
->  6 para que a geração vindoura _a_ soubesse, e os filhos _que_ nascessem se levantassem e _a_ contassem a seus filhos; 
->  7 para que pusessem em Deus a sua esperança e se não esquecessem das obras de Deus, mas guardassem os seus mandamentos 
->  8 e não fossem como seus pais, geração contumaz e rebelde, geração _que_ não regeu o seu coração, e cujo espírito não foi fiel para com Deus.
+# Leitura da Bíblia
+## A Cruz Torna a Oração Possível
+> [!quote]- Romanos 8:32
+>  _Aquele que nem mesmo a Seu próprio Filho poupou, antes O entregou por todos nós, como nos não dará também com Ele todas as coisas?
+
+Porque Deus é sempre bom, coloca o teu bem acima do d’Ele.
+
+Esta é a Boa Notícia: que o Rei se sacrifica pelo Seu povo. Nos contos de fadas, todos morrem pelo rei e protegem o rei a todo o custo. Só há uma história no mundo em que o Rei morre pelo seu povo. Chama-se Evangelho.
+
+O Cristianismo é marcado por um enredo único, diferente de todas as outras religiões do mundo. Deus diz que pecaste e mereces castigo. Mas este não é o fim da história. A esperança encontra-se em Romanos 6:23, onde a Bíblia diz: 
+> [!quote] Romanos 6:23
+> Porque o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna, por Cristo Jesus, nosso Senhor.
+
+Isto significa que, porque Deus é justo, alguém deve pagar pelo teu pecado. Mas porque é um Deus bom e santo e te ama, fez um plano para te salvar. Veio à Terra como Filho de Deus, Jesus Cristo, e morreu pelos teus pecados. Esta é a expressão máxima do amor – o Rei a morrer pelo Seu povo, o Pastor a morrer pelas Suas ovelhas.
+
+Nunca ninguém se ofereceu para pagar pelos teus pecados – exceto Deus. O Senhor Jesus não morreu na cruz por causa do governo romano. Ele morreu por causa do amor. Ele amou-te tanto que esteve disposto a morrer por ti porque é bom e misericordioso.
+
+O que Deus fez por ti na cruz torna possível a oração.
+
+> [!quote]- Romanos 8:32
+>  Aquele que nem mesmo a Seu próprio Filho poupou, antes O entregou por todos nós, como nos não dará também com Ele todas as coisas?
+
+Quando o Senhor Jesus Cristo morreu por ti na cruz, resolveu o teu maior problema. Qualquer outro problema que tenhas na vida é pequeno para Ele! Se Deus te amou o suficiente para morrer por ti – na Sua bondade – não achas que te ama o suficiente para te ajudar com as tuas contas, a tua saúde e os teus relacionamentos? Nada é demasiado grande para Deus. Mas também, nada que te interesse é demasiado pequeno para falares com Ele.
+
+Não há nada que não possas levar a Deus em oração. Ele amou-te o suficiente para morrer por ti e ama-te o suficiente para responder às tuas orações.
+
+**REFLEXÃO**
+
+- O que é que não levaste a Deus em oração porque achaste que era demasiado grande ou demasiado pequeno?
+- Quando consideras que o Senhor Jesus resolveu o teu maior problema na cruz, como é que isso muda a tua perspetiva sobre a oração?
+- O que confiarás a Deus hoje porque já confiaste n’Ele para a tua salvação?
 
 # Motivos de oração 
 
-| Motivos                                                             | de                                                                                     | oração                                                                                                                                                                                 |
-| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Paulo Ferreira (pai e gravidez da Raquel)                           | Irene, Aninhas, Anabela (família), pai da nossa irmã Paula (Umberto)                   | Prima do Nando que está com um cancro no pâncreas<br>                                                                                                                                  |
-| Casamento do Márcio e Natasha                                       | Pedro, Cipriano, João Miguel Alves                                                     | Irmão José Almeida                                                                                                                                                                     |
-| Viagem do Nando a Angola                                            | Igrejas em Angola:<br>Luanda, Luena, Lubango                                           | Reunião de Homens                                                                                                                                                                      |
-| Igreja em Ovar<br>Irmão Adolfo Costa de Ovar<br>José Teles e esposa | Igreja em Oiã:<br>Rita e gravidez, restante família e restantes irmãos na igreja local | Costeiras:<br>Esposa do irmão Paulo Oliveira das Costeiras <br>João Pedro Lopes que se reúne nas Costeiras (saúde) + Susana, Filipe, Marta e família<br>José Pires e Pat Pires (saúde) |
+| Motivos                                                             | de                                                                   | oração                                                                                                                                                                                 |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Paulo Ferreira (pai e gravidez da Raquel)                           | Irene, Aninhas, Anabela (família), pai da nossa irmã Paula (Umberto) | Prima do Nando que está com um cancro no pâncreas<br>                                                                                                                                  |
+| Casamento do Márcio e Natasha                                       | Pedro, Cipriano, João Miguel Alves                                   | Irmão José Almeida                                                                                                                                                                     |
+| Viagem do Nando a Angola                                            | Igrejas em Angola:<br>Luanda, Luena, Lubango                         | Reunião de Homens e Culto de mulheres                                                                                                                                                  |
+| Igreja em Ovar<br>Irmão Adolfo Costa de Ovar<br>José Teles e esposa | Família Gomes<br>Mariquinha e família                                | Costeiras:<br>Esposa do irmão Paulo Oliveira das Costeiras <br>João Pedro Lopes que se reúne nas Costeiras (saúde) + Susana, Filipe, Marta e família<br>José Pires e Pat Pires (saúde) |
 
 
 - [ ] **Pai do Paulo Ferreira**

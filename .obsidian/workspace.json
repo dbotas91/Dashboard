@@ -8,13 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "02257c1df6568a02",
+            "id": "21a377bcb586fa7e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Estudo Bíblico - 08-07-2026"
             }
           }
         ]
@@ -286,8 +300,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "02257c1df6568a02",
+  "active": "21a377bcb586fa7e",
   "lastOpenFiles": [
+    "09 - STATUS NOTES/Adult.md",
     "Home.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
@@ -313,7 +328,6 @@
     "10 - TAGS/promessas.md",
     "10 - TAGS/2026-05.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2025.md",
-    "09 - STATUS NOTES/Zoom.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",

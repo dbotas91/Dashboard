@@ -2019,9 +2019,9 @@ Perdi
 Pauline
 Prophecy
 Plowshares
+Prima
 Pooh
 Pagan
-Prima
 obj
 oQw
 ot
@@ -3930,7 +3930,6 @@ observance
 ontology
 opinion
 organiser
-observamos
 Title
 Type
 Transparency
@@ -28148,6 +28147,7 @@ effectual
 earth
 engender
 exercida
+episcopado
 existential
 epistemology
 encountering
@@ -31999,6 +31999,7 @@ contradictory
 coleta
 caladas
 conquistada
+caminha
 claimed
 cited
 criticisms
@@ -32009,7 +32010,6 @@ contradict
 clue
 christianity
 consort
-chego
 contumaz
 BM
 BBox
@@ -43097,13 +43097,13 @@ twelve
 tithe
 tithing
 temple
+tormentas
 tangible
 triangularity
 thunder
 trawl
 torment
 teachings
-tento
 stream
 sWz
 sj
@@ -57817,6 +57817,7 @@ dispensational
 desmentem
 dividirem
 dolo
+desertos
 dismissing
 depressing
 disease
@@ -64752,12 +64753,11 @@ nfZi
 njuge
 nations
 nation
+ncreas
 nonsense
 noticed
 nauseating
 nose
-ncial
-ncreas
 pM
 pg
 pd
@@ -68172,6 +68172,7 @@ punishable
 prophesied
 prophecy
 planeou
+percorr
 pump
 president
 pitiless
@@ -74640,6 +74641,7 @@ Unicode
 Usa
 Ungido
 Umberto
+Uzias
 VP
 Vn
 VD
@@ -84537,8 +84539,6 @@ irrelevant
 illogical
 infantile
 irony
-indiferen
-impiedosa
 inclinai
 kC
 kp
@@ -94541,6 +94541,7 @@ fbgH
 forgiven
 forgiveness
 fecharem
+fito
 fallacious
 fallacies
 favourite
