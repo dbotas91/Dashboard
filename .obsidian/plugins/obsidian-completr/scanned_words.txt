@@ -2019,9 +2019,9 @@ Perdi
 Pauline
 Prophecy
 Plowshares
-Prima
 Pooh
 Pagan
+Prima
 obj
 oQw
 ot
@@ -3930,6 +3930,7 @@ observance
 ontology
 opinion
 organiser
+observamos
 Title
 Type
 Transparency
@@ -15923,6 +15924,7 @@ Atheism
 Appeal
 Aristotle
 Ate
+Abrirei
 KHTML
 Kn
 KA
@@ -28146,7 +28148,6 @@ effectual
 earth
 engender
 exercida
-episcopado
 existential
 epistemology
 encountering
@@ -28155,6 +28156,7 @@ errant
 emotion
 erroneously
 elyon
+enigmas
 ca
 cW
 cEu
@@ -31997,7 +31999,6 @@ contradictory
 coleta
 caladas
 conquistada
-caminha
 claimed
 cited
 criticisms
@@ -32008,6 +32009,8 @@ contradict
 clue
 christianity
 consort
+chego
+contumaz
 BM
 BBox
 BHq
@@ -40680,6 +40683,7 @@ Esperar
 Eden
 Evidence
 Elyon
+Escutai
 true
 tTr
 tQr
@@ -43093,13 +43097,13 @@ twelve
 tithe
 tithing
 temple
-tormentas
 tangible
 triangularity
 thunder
 trawl
 torment
 teachings
+tento
 stream
 sWz
 sj
@@ -54572,6 +54576,7 @@ appeal
 accusation
 allah
 alleged
+antiguidade
 dA
 dD
 dd
@@ -57812,7 +57817,6 @@ dispensational
 desmentem
 dividirem
 dolo
-desertos
 dismissing
 depressing
 disease
@@ -64748,11 +64752,12 @@ nfZi
 njuge
 nations
 nation
-ncreas
 nonsense
 noticed
 nauseating
 nose
+ncial
+ncreas
 pM
 pg
 pd
@@ -68167,7 +68172,6 @@ punishable
 prophesied
 prophecy
 planeou
-percorr
 pump
 president
 pitiless
@@ -68175,6 +68179,7 @@ pretending
 posting
 prophet
 pointing
+proporei
 OaL
 Oar
 OQ
@@ -74635,7 +74640,6 @@ Unicode
 Usa
 Ungido
 Umberto
-Uzias
 VP
 Vn
 VD
@@ -76342,6 +76346,7 @@ Vaticanus
 Verba
 Viseu
 VYGdMo
+Viagem
 QX
 QY
 QP
@@ -84532,6 +84537,9 @@ irrelevant
 illogical
 infantile
 irony
+indiferen
+impiedosa
+inclinai
 kC
 kp
 kN
@@ -94533,7 +94541,6 @@ fbgH
 forgiven
 forgiveness
 fecharem
-fito
 fallacious
 fallacies
 favourite
@@ -103601,6 +103608,7 @@ revealing
 rooftops
 rose
 reasonably
+regeu
 hF
 hj
 hC
