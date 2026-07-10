@@ -23,13 +23,13 @@ kanban-plugin: board
 - [ ] [[Corrompida]]
 - [ ] [[Messias sem sucesso]]
 - [ ] [[As promessas de Deus para nós hoje]]
-- [ ] [[Por que dividir a Bíblia corretamente]]
 - [ ] Por que não sou islâmico
 - [ ] [[Por que não sou ateu]]
 
 
 ## A falar
 
+- [ ] [[Por que dividir a Bíblia corretamente]]
 - [ ] [[A tua morte é um dever!]]
 - [ ] [[Eu acredito no Batismo]]
 - [ ] [[Sunday Preaching#^sahlyp|1 Tessalonicenses - 1st Thessalonians]]
