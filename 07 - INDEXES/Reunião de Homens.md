@@ -12,6 +12,7 @@ kanban-plugin: board
 ## Para falar
 
 - [ ] 📓 [[Esforça-te e Sê Homem]]
+- [ ] [[Homens de valor]]
 
 
 ## A falar
