@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Por que dividir a Bíblia corretamente"
+              "title": "Esforça-te e Sê Homem"
             }
           }
         ]
@@ -90,15 +90,15 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent files"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 205.00260543823242
+    "width": 281
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -241,8 +241,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -274,7 +274,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218
+    "width": 337
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -302,8 +302,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "07 - INDEXES/2022 Habit Tracker & Journal.md",
+    "07 - INDEXES/Reunião de Homens.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+    "Home.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+    "07 - INDEXES/2022 Habit Tracker & Journal.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
@@ -315,7 +318,6 @@
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
-    "Home.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md",
     "09 - STATUS NOTES/Adult.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que não sou ateu.md",
@@ -326,8 +328,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-03-2026.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
