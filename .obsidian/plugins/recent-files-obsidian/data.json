@@ -5,6 +5,10 @@
       "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md"
     },
     {
+      "basename": "reuniaodehomens",
+      "path": "10 - TAGS/reuniaodehomens.md"
+    },
+    {
       "basename": "Reunião de Homens",
       "path": "07 - INDEXES/Reunião de Homens.md"
     },
@@ -191,14 +195,6 @@
     {
       "basename": "Filhos",
       "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Filhos.md"
-    },
-    {
-      "basename": "Casamento",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Casamento.md"
-    },
-    {
-      "basename": "Reuniões de Jovens",
-      "path": "07 - INDEXES/Reuniões de Jovens.md"
     }
   ],
   "omittedPaths": [],

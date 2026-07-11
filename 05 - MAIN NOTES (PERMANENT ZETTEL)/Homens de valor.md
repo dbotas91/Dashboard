@@ -1,21 +1,22 @@
 ---
 dg-publish: "true"
 tags:
+  - reuniaodehomens
 mature-status: Child
-message_category:
+message_category: Devocional
 created: 2026-07-11 13:39
 speech-status: Calado
-local:
+local: iqc
 dg-note-icon: child
 noteIcon: child
 updated: 2026-07-11 13:39
-title:
+title: Homens de valor
 dgPassFrontmatter: "true"
 ---
 [[Home|Back home]]
 Status: [[Child]], [[Calado]]
-Local: 
-Tags: 
+Local: [[IQC]], 
+Tags: [[reuniaodehomens]]
 
 # Valor do Homem
 
