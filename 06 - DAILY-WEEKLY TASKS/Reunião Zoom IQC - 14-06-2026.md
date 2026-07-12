@@ -5,7 +5,7 @@ dg-publish: "true"
 dg-note-icon: chest
 noteIcon: chest
 ---
-Status: [[Por fazer]]
+Status: [[Concluído]]
 Tags: [[2026-06]], [[Zoom]]
 
 # Ordem
@@ -42,4 +42,3 @@ Cuido dos detalhes
 - [ ] Orar pelo pai do Paulo, Adolfo, Paulo Ribeiro, Dinita, Umberto (pai da irmã Paula Gomes), Irene (operação dela), irmão José (marido da irmã Celeste)
 - [ ] Pela obra em Angola e os irmãos que se reunem nas várias localidades;
 - [ ] Orar pelo pregador - David Gomes
-- [ ] 

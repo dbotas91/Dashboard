@@ -9844,6 +9844,7 @@ Coroa
 Cumprido
 Coragem
 Cunhada
+Camila
 Mozilla
 ModDate
 MK
@@ -11802,6 +11803,7 @@ Metzger
 Masculinidade
 Moveu
 Mandamento
+Maur
 Linux
 Length
 LJ
@@ -13577,6 +13579,9 @@ Liberty
 Letters
 Legitima
 Lideran
+Liberto
+Leucemia
+Linfobl
 AppleWebKit
 ADN
 Ak
@@ -15977,6 +15982,8 @@ Alinhamento
 Alma
 Aprovado
 Aborde
+Adorar
+Aguda
 KHTML
 Kn
 KA
@@ -21338,6 +21345,7 @@ Genetic
 Generalisation
 Garantir
 Grupos
+GPS
 HeadlessChrome
 HX
 HSG
@@ -58016,6 +58024,7 @@ diametralmente
 dilig
 dependem
 dicas
+diagn
 zR
 zD
 zJ

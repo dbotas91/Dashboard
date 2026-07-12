@@ -5,7 +5,7 @@ dg-publish: "true"
 dg-note-icon: chest
 noteIcon: chest
 ---
-Status: [[Concluído]]
+Status: [[Por fazer]]
 Tags: [[2026-07]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Passagem em estudo
@@ -15,36 +15,47 @@ Tags: [[2026-07]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
 
 
 # Leitura da Bíblia
-## A Cruz Torna a Oração Possível
-> [!quote]- Romanos 8:32
->  _Aquele que nem mesmo a Seu próprio Filho poupou, antes O entregou por todos nós, como nos não dará também com Ele todas as coisas?
+## A Cruz Torna a Oração Possível## Para orares eficazmente, conhece Deus
 
-Porque Deus é sempre bom, coloca o teu bem acima do d’Ele.
+![Por Que Oramos? - Guia na Vida de Fé](https://watv.org/wp-content/uploads/2019/03/prayer-03.jpg) 
 
-Esta é a Boa Notícia: que o Rei se sacrifica pelo Seu povo. Nos contos de fadas, todos morrem pelo rei e protegem o rei a todo o custo. Só há uma história no mundo em que o Rei morre pelo seu povo. Chama-se Evangelho.
+     _“Porque as Suas coisas invisíveis, desde a criação do mundo, tanto o Seu eterno poder, como a Sua divindade, se entendem, e claramente se vêem pelas coisas que estão criadas, para que eles fiquem inescusáveis [ou, sem desculpa]”_ Romanos 1:20
 
-O Cristianismo é marcado por um enredo único, diferente de todas as outras religiões do mundo. Deus diz que pecaste e mereces castigo. Mas este não é o fim da história. A esperança encontra-se em Romanos 6:23, onde a Bíblia diz: 
-> [!quote] Romanos 6:23
-> Porque o salário do pecado é a morte, mas o dom gratuito de Deus é a vida eterna, por Cristo Jesus, nosso Senhor.
+      A fecundidade das tuas orações não depende do quanto sabes sobre a oração, mas sim do quanto sabes sobre Deus. Quanto mais compreenderes Deus, mais eficazes serão as tuas orações.
 
-Isto significa que, porque Deus é justo, alguém deve pagar pelo teu pecado. Mas porque é um Deus bom e santo e te ama, fez um plano para te salvar. Veio à Terra como Filho de Deus, Jesus Cristo, e morreu pelos teus pecados. Esta é a expressão máxima do amor – o Rei a morrer pelo Seu povo, o Pastor a morrer pelas Suas ovelhas.
+     Mais importante do que aprenderes tudo sobre a oração é compreenderes mais sobre Deus. Começa por saber que Deus é multidimensional. Isto significa que Deus está no passado, no presente e no futuro. Ele está na terra e no mundo espiritual.
 
-Nunca ninguém se ofereceu para pagar pelos teus pecados – exceto Deus. O Senhor Jesus não morreu na cruz por causa do governo romano. Ele morreu por causa do amor. Ele amou-te tanto que esteve disposto a morrer por ti porque é bom e misericordioso.
+     Eis algumas maneiras de poderes ver o caráter multidimensional de Deus.
 
-O que Deus fez por ti na cruz torna possível a oração.
+     **Na criação de Deus.**
 
-> [!quote]- Romanos 8:32
->  Aquele que nem mesmo a Seu próprio Filho poupou, antes O entregou por todos nós, como nos não dará também com Ele todas as coisas?
+     O Deus que criou um mundo e um universo multidimensionais é um Criador multidimensional. _“Pois desde a criação do mundo, as qualidades invisíveis de Deus — o Seu poder eterno e a Sua natureza divina — têm sido claramente vistas, sendo compreendidas a partir das coisas que foram criadas, de modo que as pessoas ficam indesculpáveis”_ (Romanos 1:20 ).
 
-Quando o Senhor Jesus Cristo morreu por ti na cruz, resolveu o teu maior problema. Qualquer outro problema que tenhas na vida é pequeno para Ele! Se Deus te amou o suficiente para morrer por ti – na Sua bondade – não achas que te ama o suficiente para te ajudar com as tuas contas, a tua saúde e os teus relacionamentos? Nada é demasiado grande para Deus. Mas também, nada que te interesse é demasiado pequeno para falares com Ele.
+     Podes aprender muito sobre Deus apenas olhando para a natureza. Por exemplo, sabes que Deus gosta de variedade e é organizado, criativo e poderoso. A criação é complexa, por isso sabe que Deus tem de ser ainda mais complexo.
 
-Não há nada que não possas levar a Deus em oração. Ele amou-te o suficiente para morrer por ti e ama-te o suficiente para responder às tuas orações.
+     **Na encarnação de Jesus.**
+
+     João 1:14 diz: _“E o Verbo Se fez carne, e habitou entre nós, e vimos a Sua glória, como a glória do unigénito do Pai, cheio de graça e de verdade.”_
+
+     Se Deus quisesse comunicar com as formigas, ter-se-ia tornado formiga. Se quisesse comunicar com vacas, teria-se tornado vaca. Mas Deus quis comunicar com os seres humanos e amá-los, por isso tornou-Se um de nós.
+
+     O Senhor Jesus não está limitado pelo espaço nem pelo tempo porque é multidimensional: _“Graça e paz seja convosco da parte d’Aquele que é, e que era, e que há de vir”_ (Apocalipse 1:4).
+
+     **Na forma como o Espírito Santo Se move.**
+
+     _“O vento assopra onde quer e ouves a sua voz; mas não sabes donde vem, nem para onde vai; assim é todo aquele que é nascido do Espírito.”_ (João 3:8).
+
+     Não podes colocar o Espírito Santo numa caixa! Não podes controlá-Lo. Ele é como o vento. Não sabes de onde vem e não sabes para onde vai. Ele move-Se em dimensões nas quais nós não nos movemos.
+
+     Não deixes que este seja o fim do teu estudo sobre o caráter multidimensional de Deus. Conhecer Deus é uma busca para toda a vida — uma busca que tornará a tua vida mais doce e significativa a cada dia.
 
 **REFLEXÃO**
 
-- O que é que não levaste a Deus em oração porque achaste que era demasiado grande ou demasiado pequeno?
-- Quando consideras que o Senhor Jesus resolveu o teu maior problema na cruz, como é que isso muda a tua perspetiva sobre a oração?
-- O que confiarás a Deus hoje porque já confiaste n’Ele para a tua salvação?
+- Que observações sobre a criação mostram outros aspetos do caráter de Deus?
+- Saberes que existem dimensões de Deus que não consegues compreender deixa-te mais ou menos ansioso por conhecê-Lo melhor? Porquê?
+- Como podes conhecer melhor Deus?
+
+- R. W.
 
 # Motivos de oração 
 
