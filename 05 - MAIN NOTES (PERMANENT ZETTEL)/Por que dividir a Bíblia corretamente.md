@@ -68,9 +68,12 @@ Por isso temos em mente as seguintes questões como:
 
 O mistério e evangelho da Graça de Deus revelada a Paulo é a chave pela qual podemos dividir corretamente a Bíblia, compreendê-la e tirar proveito para o nosso crescimento e caminhada cristã.
 
+Vejamos:
+
+
 Aqui estão alguns motivos que quero desenvolver de porque é importante e necessário dividir a Bíblia corretamente.
 
-# Porque dividir a Bíblia corretamente conforme o apostolado de Paulo
+# Porque dividir a Bíblia correctamente conforme o apostolado de Paulo
 ## 1 Sua Salvação
 A igreja está a enfrentar uma crise na explanação do Evangelho. Parece que hoje ninguém sabe explicar o evangelho e misturam tudo.
 Ninguém pode concordar sobre o que é o evangelho:
@@ -328,3 +331,96 @@ We can reconcile the contradictions below by identifying who is speaking, to who
 
 **Editor’s note:**   
 This is not an exhaustive list. This list is not intended to engender doubt about the truth of the Bible. Mid Acts Pauline right division resolves every contradiction above.
+
+---
+
+O apóstolo Paulo é muito específico nas suas epístolas sobre o caráter único do ministério que recebeu diretamente de Jesus Cristo ressuscitado. Ele usa frequentemente expressões como "o meu evangelho", "a mim me foi confiado" ou "o meu apostolado" para distinguir a revelação do **Mistério** (a Igreja como o corpo de Cristo, onde judeus e gentios são iguais) do ministério que os doze apóstolos tinham em Jerusalém.
+
+Aqui tens a compilação detalhada das passagens bíblicas, organizadas por temas, conforme pediste:
+
+## 1. O Evangelho da Graça e o Mistério a ele confiado
+
+Nestas passagens, Paulo usa termos como "a dispensação da graça", "o mistério" e o facto de este evangelho lhe ter sido entregue especificamente para os gentios.
+
+- **Efésios 3:1-3 e 7-9**
+    
+    > "Por esta razão, eu, Paulo, o prisioneiro de Cristo Jesus por amor de vós, os gentios; se é que tendes ouvido falar da **dispensação da graça de Deus, que para convosco me foi dada**; como ele, por revelação, me manifestou **o mistério**... do qual fui feito ministro, segundo o dom da graça de Deus, que me foi dada segundo a operação do seu poder; **a mim, o mínimo de todos os santos, me foi dada esta graça** de anunciar entre os gentios por meio do evangelho as riquezas incompreensíveis de Cristo, e demonstrar a todos qual seja a dispensação do mistério..."
+    
+- **Atos 20:24**
+    
+    > "Mas em nada tenho a minha vida por preciosa, contanto que cumpra com alegria a minha carreira, e o ministério que recebi do Senhor Jesus, para dar testemunho do **evangelho da graça de Deus**."
+    
+- **Colossenses 1:25-26**
+    
+    > "Da qual eu estou feito ministro segundo a **dispensação de Deus, que me foi dada para convosco**, para cumprir a palavra de Deus; **o mistério** que esteve oculto desde os séculos, e em todas as gerações, e que agora foi manifesto aos seus santos."
+    
+
+## 2. Expressões de Paulo: "O Meu Evangelho" e "A Mim Confiado"
+
+Paulo tinha tanta consciência da exclusividade da sua mensagem para a Igreja que se referia a ela como um depósito pessoal que lhe foi confiado.
+
+- **Gálatas 1:11-12**
+    
+    > "Mas faço-vos saber, irmãos, que **o evangelho que por mim foi anunciado não é segundo os homens**. Porque não o recebi, nem o aprendi de homem algum, mas pela revelação de Jesus Cristo."
+    
+- **Romanos 2:16**
+    
+    > "No dia em que Deus há de julgar os segredos dos homens, por Jesus Cristo, **segundo o meu evangelho**."
+    
+- **Romanos 16:25**
+    
+    > "Ora, àquele que é poderoso para vos confirmar **segundo o meu evangelho** e a pregação de Jesus Cristo, conforme a **revelação do mistério** que desde tempos eternos esteve oculto."
+    
+- **2 Timóteo 2:8**
+    
+    > "Lembra-te de que Jesus Cristo, da descendência de David, ressuscitou dos mortos, **segundo o meu evangelho**."
+    
+- **1 Timóteo 1:11**
+    
+    > "Segundo o evangelho da glória do Deus bem-aventurado, **que me foi confiado**."
+    
+- **Tito 1:3**
+    
+    > "Mas a seu tempo manifestou a sua palavra pela pregação **que me foi confiada** segundo o mandamento de Deus, nosso Salvador."
+    
+- **1 Coríntios 9:17**
+    
+    > "Porque, se o faço de boa mente, terei prémio; mas, se de má vontade, **apenas uma dispensação me é confiada**."
+    
+
+## 3. Expressões sobre "O Meu Apostolado" e Autoridade
+
+Paulo defende frequentemente o seu chamamento apostólico como sendo vindo diretamente do céu, e não por sucessão apostólica terrena.
+
+- **Romanos 1:5**
+    
+    > "Pelo qual recebemos a graça e **o apostolado**, para a obediência da fé entre todas as gentes pelo seu nome."
+    
+- **1 Coríntios 9:2**
+    
+    > "Se eu não sou apóstolo para os outros, ao menos o sou para vós; porque vós sois o selo do **meu apostolado** no Senhor."
+    
+- **Gálatas 2:8**
+    
+    > "(Porque aquele que operou eficazmente em Pedro para o apostolado da circuncisão, operou também em mim eficazmente para com os gentios)."
+    
+- **Romanos 11:13**
+    
+    > "Porque convosco falo, gentios, que, **como apóstolo dos gentios, glorifico o meu ministério**."
+    
+
+## 4. O Reconhecimento do Ministério de Paulo pelos Outros Apóstolos
+
+O ministério de Paulo não foi uma "rebeldia" isolada; foi formalmente validado pelos pilares da igreja de Jerusalém (Pedro, Tiago e João) e mais tarde reforçado nas suas próprias cartas escritas à comunidade judaico-cristã.
+
+- **Gálatas 2:7-9 (O aperto de mão em Jerusalém)**
+    
+    > "Antes, pelo contrário, vendo que **o evangelho da incircuncisão [gentios] me estava confiado, como a Pedro o da circuncisão [judeus]**... E conhecendo Tiago, Cefas [Pedro] e João, que eram considerados como as colunas, a graça que me havia sido dada, **deram-nos as destras de companheirismo** a mim e a Barnabé, para que nós fôssemos aos gentios, e eles à circuncisão."
+    
+- **2 Pedro 3:15-16 (Pedro valida as cartas de Paulo como Escritura)**
+    
+    > "E tende por salvação a longanimidade de nosso Senhor; como também **o nosso amado irmão Paulo vos escreveu, segundo a sabedoria que lhe foi dada**; falando disto, como em todas as suas epístolas, entre as quais há pontos difíceis de entender, que os indoutos e inconstantes torcem, e igualmente as outras Escrituras, para sua própria perdição."
+    
+- **Atos 15:25-26 (A carta oficial do Concílio de Jerusalém enviada às igrejas)**
+    
+    > "Pareceu-nos bem, reunidos concordemente, eleger alguns homens e enviá-los com **os nossos amados Barnabé e Paulo**, homens que já expuseram as suas vidas pelo nome de nosso Senhor Jesus Cristo."

@@ -18,7 +18,7 @@ Tags: [[2026-07]], [[Zoom]]
 7. final - oração
 
 # Músicas
-Abraça a Cruz de Cristo
+Abraça a Cruz de Cristo - Abraçar a cruz é abraçar a vida que vem da morte.
 Quero andar com meu Jesus
 Viemos Te Adorar - Karen e Camila
 
@@ -40,7 +40,8 @@ Viemos Te Adorar - Karen e Camila
 	- [ ] Dora, prima do Nando
 	- [ ] Irene
 	- [ ] **_filha_** do irmão **_Luis da Silva_**, por ele e pela **_esposa_** **(****_Vitória_****)** que se reunem na igreja no **Luena** (Angola). Ela está com um pré-diagnóstico de Leucemia Linfoblástica Aguda (LLA).
+	- [ ] Alberto Miranda
+	- [ ] Dinita manda saudações para todos e não consegue estar por estar a ajudar uma outra senhora. Orar por ela e pela filha que vai tentar estar com ela
 - [ ] Pela obra em Angola e os irmãos que se reúnem nas várias localidades;
 - [ ] O **avô** do nosso jovem irmão **Rafael Maurício**, deixou este mundo. Oremos pelo Rafael, pela avó e demais família, que são um motivo de preocupação no toca à salvação da família.
 - [ ] Orar pelo pregador - Carlos Alberto Oliveira
-- [ ] 
