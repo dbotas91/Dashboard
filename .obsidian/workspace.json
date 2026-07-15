@@ -4,11 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "4ebd05eaede7643f",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "9afc03e0b9679da9",
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Estudo Bíblico - 15-07-2026"
+            }
+          },
+          {
+            "id": "8f8fb29c306ce4ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,40 +53,6 @@
               },
               "icon": "lucide-file",
               "title": "Reunião Zoom IQC - 12-07-2026"
-            }
-          },
-          {
-            "id": "4f3b7b44bfcd8e02",
-            "type": "leaf",
-            "state": {
-              "type": "digital-garden-publication-center",
-              "state": {},
-              "icon": "book-up",
-              "title": "Publication Center"
-            }
-          },
-          {
-            "id": "ed073d83a9d52324",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Por que dividir a Bíblia corretamente"
             }
           }
         ]
@@ -132,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 200
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -275,8 +265,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -308,7 +298,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337
+    "width": 218
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -334,34 +324,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9afc03e0b9679da9",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
-    "10 - TAGS/2026-07.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-10-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 18-02-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-02-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 04-02-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026 1.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "07 - INDEXES/Estudo Bíblico - microscópico.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "Home.md",
-    "09 - STATUS NOTES/Adult.md",
     "07 - INDEXES/Reunião de Homens.md",
     "10 - TAGS/reuniaodehomens.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Untitled.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "07 - INDEXES/2022 Habit Tracker & Journal.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
     "06 - DAILY-WEEKLY TASKS/Motivos de oração 24-06-2021.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 01-02-2025.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
@@ -371,7 +362,6 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.esm.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/plugin.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/reveal-pointer/pointer.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",

@@ -15,39 +15,47 @@ Tags: [[2026-07]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
 
 
 # Leitura da Bíblia
-## A Cruz Torna a Oração Possível## Para orares eficazmente, conhece Deus
+## Para orares eficazmente, conhece Deus
 
 ![Por Que Oramos? - Guia na Vida de Fé](https://watv.org/wp-content/uploads/2019/03/prayer-03.jpg) 
 
-     _“Porque as Suas coisas invisíveis, desde a criação do mundo, tanto o Seu eterno poder, como a Sua divindade, se entendem, e claramente se vêem pelas coisas que estão criadas, para que eles fiquem inescusáveis [ou, sem desculpa]”_ Romanos 1:20
+> [!quote] Romanos 1:20
+>“Porque as Suas coisas invisíveis, desde a criação do mundo, tanto o Seu eterno poder, como a Sua  divindade, se entendem, e claramente se vêem pelas coisas que estão criadas, para que eles fiquem inescusáveis [ou, sem desculpa]”
 
-      A fecundidade das tuas orações não depende do quanto sabes sobre a oração, mas sim do quanto sabes sobre Deus. Quanto mais compreenderes Deus, mais eficazes serão as tuas orações.
 
-     Mais importante do que aprenderes tudo sobre a oração é compreenderes mais sobre Deus. Começa por saber que Deus é multidimensional. Isto significa que Deus está no passado, no presente e no futuro. Ele está na terra e no mundo espiritual.
+A fecundidade das tuas orações não depende do quanto sabes sobre a oração, mas sim do quanto sabes sobre Deus. Quanto mais compreenderes Deus, mais eficazes serão as tuas orações.
 
-     Eis algumas maneiras de poderes ver o caráter multidimensional de Deus.
+Mais importante do que aprenderes tudo sobre a oração é compreenderes mais sobre Deus. Começa por saber que Deus é multidimensional. Isto significa que Deus está no passado, no presente e no futuro. Ele está na terra e no mundo espiritual.
 
-     **Na criação de Deus.**
+Eis algumas maneiras de poderes ver o caráter multidimensional de Deus.
 
-     O Deus que criou um mundo e um universo multidimensionais é um Criador multidimensional. _“Pois desde a criação do mundo, as qualidades invisíveis de Deus — o Seu poder eterno e a Sua natureza divina — têm sido claramente vistas, sendo compreendidas a partir das coisas que foram criadas, de modo que as pessoas ficam indesculpáveis”_ (Romanos 1:20 ).
+**Na criação de Deus.**
 
-     Podes aprender muito sobre Deus apenas olhando para a natureza. Por exemplo, sabes que Deus gosta de variedade e é organizado, criativo e poderoso. A criação é complexa, por isso sabe que Deus tem de ser ainda mais complexo.
+O Deus que criou um mundo e um universo multidimensionais é um Criador multidimensional. 
+>[!quote] Romanos 1:20
+>“Pois desde a criação do mundo, as qualidades invisíveis de Deus — o Seu poder eterno e a Sua natureza divina — têm sido claramente vistas, sendo compreendidas a partir das coisas que foram criadas, de modo que as pessoas ficam indesculpáveis”
 
-     **Na encarnação de Jesus.**
+Podes aprender muito sobre Deus apenas olhando para a natureza. Por exemplo, sabes que Deus gosta de variedade e é organizado, criativo e poderoso. A criação é complexa, por isso sabe que Deus tem de ser ainda mais complexo.
 
-     João 1:14 diz: _“E o Verbo Se fez carne, e habitou entre nós, e vimos a Sua glória, como a glória do unigénito do Pai, cheio de graça e de verdade.”_
+**Na encarnação de Jesus.**
 
-     Se Deus quisesse comunicar com as formigas, ter-se-ia tornado formiga. Se quisesse comunicar com vacas, teria-se tornado vaca. Mas Deus quis comunicar com os seres humanos e amá-los, por isso tornou-Se um de nós.
+>[!quote] João 1:14 
+>“E o Verbo Se fez carne, e habitou entre nós, e vimos a Sua glória, como a glória do unigénito do Pai, cheio de graça e de verdade.”
 
-     O Senhor Jesus não está limitado pelo espaço nem pelo tempo porque é multidimensional: _“Graça e paz seja convosco da parte d’Aquele que é, e que era, e que há de vir”_ (Apocalipse 1:4).
+Se Deus quisesse comunicar com as formigas, ter-se-ia tornado formiga. Se quisesse comunicar com vacas, teria-se tornado vaca. Mas Deus quis comunicar com os seres humanos e amá-los, por isso tornou-Se um de nós.
 
-     **Na forma como o Espírito Santo Se move.**
+O Senhor Jesus não está limitado pelo espaço nem pelo tempo porque é multidimensional: 
+>[!quote] Apocalipse 1:4 
+>“Graça e paz seja convosco da parte d’Aquele que é, e que era, e que há de vir”
 
-     _“O vento assopra onde quer e ouves a sua voz; mas não sabes donde vem, nem para onde vai; assim é todo aquele que é nascido do Espírito.”_ (João 3:8).
+**Na forma como o Espírito Santo Se move.**
 
-     Não podes colocar o Espírito Santo numa caixa! Não podes controlá-Lo. Ele é como o vento. Não sabes de onde vem e não sabes para onde vai. Ele move-Se em dimensões nas quais nós não nos movemos.
+>[!quote] João 3:8
+>O vento assopra onde quer e ouves a sua voz; mas não sabes donde vem, nem para onde vai; assim é todo aquele que é nascido do Espírito.
 
-     Não deixes que este seja o fim do teu estudo sobre o caráter multidimensional de Deus. Conhecer Deus é uma busca para toda a vida — uma busca que tornará a tua vida mais doce e significativa a cada dia.
+Não podes colocar o Espírito Santo numa caixa! Não podes controlá-Lo. Ele é como o vento. Não sabes de onde vem e não sabes para onde vai. Ele move-Se em dimensões nas quais nós não nos movemos.
+
+Não deixes que este seja o fim do teu estudo sobre o caráter multidimensional de Deus. Conhecer Deus é uma busca para toda a vida — uma busca que tornará a tua vida mais doce e significativa a cada dia.
 
 **REFLEXÃO**
 
@@ -59,12 +67,12 @@ Tags: [[2026-07]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
 
 # Motivos de oração 
 
-| Motivos                                                             | de                                                                   | oração                                                                                                                                                                                 |
-| ------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Paulo Ferreira (pai e gravidez da Raquel)                           | Irene, Aninhas, Anabela (família), pai da nossa irmã Paula (Umberto) | Prima do Nando que está com um cancro no pâncreas<br>                                                                                                                                  |
-| Casamento do Márcio e Natasha                                       | Pedro, Cipriano, João Miguel Alves                                   | Irmão José Almeida                                                                                                                                                                     |
-| Viagem do Nando a Angola                                            | Igrejas em Angola:<br>Luanda, Luena, Lubango                         | Reunião de Homens e Culto de mulheres                                                                                                                                                  |
-| Igreja em Ovar<br>Irmão Adolfo Costa de Ovar<br>José Teles e esposa | Família Gomes<br>Mariquinha e família                                | Costeiras:<br>Esposa do irmão Paulo Oliveira das Costeiras <br>João Pedro Lopes que se reúne nas Costeiras (saúde) + Susana, Filipe, Marta e família<br>José Pires e Pat Pires (saúde) |
+| Motivos                                                                | de                                              | oração                                                                                                                                    |
+| ---------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Irmão Adolfo e família                                                 | Pai da nossa irmã Paula (Umberto)               | Prima do Nando (Dora) que está com um cancro no pâncreas<br>                                                                              |
+| irmão José Almeida (hospitalizado) e família                           | Irene, Dinita, Filomena                         | filha do irmão Luís da Silva e a esposa Vitória ( Ayla Tchileza de 7 meses), com um pré-diagnóstico de Leucemia Linfoblástica Aguda (LLA) |
+| Viagem do Nando a Angola, Igrejas em Angola:<br>Luanda, Luena, Lubango | Alberto Miranda, Liberto (pai do Paulo), Rafael | Estudos feitos pelo irmão Peter acerca do Aliancismo. Na próxima quarta-feira teremos a continuação do estudo.                            |
+|                                                                        |                                                 |                                                                                                                                           |
 
 
 - [ ] **Pai do Paulo Ferreira**
