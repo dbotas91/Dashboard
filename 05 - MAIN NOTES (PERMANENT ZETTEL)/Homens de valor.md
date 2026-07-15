@@ -20,21 +20,10 @@ Tags: [[reuniaodehomens]]
 
 # Valor do Homem
 
-# Homem de valor
-
-# References
-
-Este é um tema riquíssimo e muito profundo nas Escrituras. Na Bíblia, o "valor do homem" não está associado ao que ele possui ou ao seu status social, mas sim à sua **origem e propósito em Deus**. Já o conceito de um "homem de valor" (o caráter aprovado) está ligado à sua **fidelidade, integridade e submissão à vontade divina**.
-
-Para te ajudar a estruturar o seu texto, dividi as passagens bíblicas em dois blocos temáticos claros.
-
-## 1. O Valor Intrínseco do Homem (O que a Bíblia diz que o homem vale)
-
-Estas passagens mostram que o ser humano tem um valor imenso para Deus, sendo o topo da criação e o alvo do Seu amor redentor.
 
 - **Criado à imagem de Deus (Origem e Identidade):**
     
-    > **Gênesis 1:27** — _"Criou Deus, pois, o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou."_
+    > **Génesis 1:27** — _"Criou Deus, pois, o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou."_
     
     - _Ideia para o texto:_ O valor do homem começa no fato de ele ser o único ser vivo que carrega a "impressão digital" e a imagem do Criador.
         
@@ -54,10 +43,46 @@ Estas passagens mostram que o ser humano tem um valor imenso para Deus, sendo o 
     
     > **1 Pedro 1:18-19** — _"Sabendo que não foi com coisas corruptíveis, como prata ou ouro, que fostes resgatados... mas com o precioso sangue de Cristo, como de um cordeiro imaculado e incontaminado."_
     
-    - _Ideia para o texto:_ O valor de um objeto é medido pelo preço que alguém está disposto a pagar por ele. Deus pagou o preço mais alto possível pelo homem: o sangue de Seu próprio Filho.
+    - _Ideia para o texto:_ O valor de um objecto é medido pelo preço que alguém está disposto a pagar por ele. Deus pagou o preço mais alto possível pelo homem: o sangue de Seu próprio Filho.
+
+# Homem de valor
+
+# References
+
+Este é um tema riquíssimo e muito profundo nas Escrituras. Na Bíblia, o "valor do homem" não está associado ao que ele possui ou ao seu status social, mas sim à sua **origem e propósito em Deus**. Já o conceito de um "homem de valor" (o caráter aprovado) está ligado à sua **fidelidade, integridade e submissão à vontade divina**.
+
+Para te ajudar a estruturar o seu texto, dividi as passagens bíblicas em dois blocos temáticos claros.
+
+## 1. O Valor Intrínseco do Homem (O que a Bíblia diz que o homem vale)
+
+Estas passagens mostram que o ser humano tem um valor imenso para Deus, sendo o topo da criação e o alvo do Seu amor redentor.
+
+- **Criado à imagem de Deus (Origem e Identidade):**
+    
+    > **Génesis 1:27** — _"Criou Deus, pois, o homem à sua imagem; à imagem de Deus o criou; homem e mulher os criou."_
+    
+    - _Ideia para o texto:_ O valor do homem começa no fato de ele ser o único ser vivo que carrega a "impressão digital" e a imagem do Criador.
+        
+- **A Coroa da Criação (Posição de Honra):**
+    
+    > **Salmo 8:4-5** — _"Que é o homem mortal para que te lembres dele? E o filho do homem, para que o visites? Pois pouco menor o fizeste do que os anjos, e de glória e de honra o coroaste."_
+    
+    - _Ideia para o texto:_ O salmista expressa espanto com o cuidado de Deus pelo homem, mostrando que fomos colocados numa posição de alta honra na criação.
+        
+- **O Valor de uma Alma (Insuficiência do mundo):**
+    
+    > **Mateus 16:26** — _"Pois que aproveita ao homem ganhar o mundo inteiro, se perder a sua alma? Ou que dará o homem em recompensa da sua alma?"_
+    
+    - _Ideia para o texto:_ Jesus deixa claro que a vida de um único homem vale mais do que todas as riquezas e planetas do universo somados.
+        
+- **O Valor da Redenção (O preço pago):**
+    
+    > **1 Pedro 1:18-19** — _"Sabendo que não foi com coisas corruptíveis, como prata ou ouro, que fostes resgatados... mas com o precioso sangue de Cristo, como de um cordeiro imaculado e incontaminado."_
+    
+    - _Ideia para o texto:_ O valor de um objecto é medido pelo preço que alguém está disposto a pagar por ele. Deus pagou o preço mais alto possível pelo homem: o sangue de Seu próprio Filho.
         
 
-## 2. O que define um "Homem de Valor" (O Caráter Aprovado)
+## 2. O que define um "Homem de Valor" (O Carácter Aprovado)
 
 Na Bíblia, um homem de valor não é o mais forte ou o mais rico, mas aquele que manifesta virtudes espirituais e morais.
 
