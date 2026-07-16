@@ -4,21 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "605faeedac69fae3",
+        "id": "02e54de1d7a3465f",
         "type": "tabs",
         "children": [
           {
-            "id": "532fd30cf44ab6ef",
+            "id": "e8c5a95afddd5a0e",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
-                "bFile": "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
-                "aRef": ""
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Homens de valor  (Working Tree)"
+              "title": "Diff: data.json  (Index)"
             }
           }
         ]
@@ -290,14 +291,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "532fd30cf44ab6ef",
+  "active": "e8c5a95afddd5a0e",
   "lastOpenFiles": [
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
-    "09 - STATUS NOTES/Adult.md",
     "07 - INDEXES/Reunião de Homens.md",
+    "Home.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "09 - STATUS NOTES/Adult.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
-    "Home.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "07 - INDEXES/Mensagens de Domingo.md",
@@ -318,7 +320,6 @@
     "07 - INDEXES/2022 Habit Tracker & Journal.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
     "06 - DAILY-WEEKLY TASKS/Motivos de oração 24-06-2021.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2026.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
