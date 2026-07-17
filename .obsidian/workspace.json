@@ -11,24 +11,15 @@
             "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Homens de valor"
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
             }
           }
         ]
@@ -302,6 +293,7 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
     "07 - INDEXES/Reunião de Homens.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "Home.md",
@@ -309,7 +301,6 @@
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "09 - STATUS NOTES/Adult.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
