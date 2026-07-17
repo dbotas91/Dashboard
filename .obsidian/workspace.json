@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "02e54de1d7a3465f",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "e8c5a95afddd5a0e",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
+              "icon": "lucide-file",
+              "title": "Homens de valor"
             }
           }
         ]
@@ -291,19 +300,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e8c5a95afddd5a0e",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
     "07 - INDEXES/Reunião de Homens.md",
-    "Home.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "Home.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "09 - STATUS NOTES/Adult.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "07 - INDEXES/Mensagens de Domingo.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
     "10 - TAGS/2026-07.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
@@ -318,8 +329,6 @@
     "10 - TAGS/reuniaodehomens.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Esforça-te e Sê Homem.md",
     "07 - INDEXES/2022 Habit Tracker & Journal.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/A tua morte é um dever!.md",
-    "06 - DAILY-WEEKLY TASKS/Motivos de oração 24-06-2021.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",

@@ -7,14 +7,14 @@ message_category: Devocional
 created: 2026-07-11 13:39
 speech-status: Calado
 local: iqc
-dg-note-icon: child
-noteIcon: child
+dg-note-icon: teen
+noteIcon: teen
 updated: 2026-07-11 13:39
 title: Homens de valor
 dgPassFrontmatter: "true"
 ---
 [[Home|Back home]]
-Status: [[Child]], [[Calado]]
+Status: [[Teen]], [[Calado]]
 Local: [[IQC]], 
 Tags: [[reuniaodehomens]]
 
@@ -173,12 +173,10 @@ Eis o que a Bíblia ensina sobre Jesus como o exemplo supremo do homem de valor:
 
 A Bíblia mostra que o primeiro homem, Adão, falhou no seu propósito, trazendo o egoísmo e a queda à humanidade. Jesus é apresentado como o **"Último Adão"**, o homem que veio fazer tudo bem, mostrando como a humanidade e a masculinidade foram originalmente desenhadas para ser.
 
-> ### 1 Coríntios 15:47-49
-> 
+> [!quote] 1 Coríntios 15:47-49
 > _"O primeiro homem, sendo da terra, é terreno; o segundo homem, o Senhor, é do céu. (...) E, assim como trouxemos a imagem do terreno, traremos também a imagem do celestial."_
 
 - **O significado:** O homem que quer saber como agir, como falar, como liderar e como amar não deve olhar para os padrões do mundo ("o terreno"), mas sim para Jesus ("o celestial"), que é o molde original do homem ideal.
-    
 
 ## 2. A Força Canalizada para o Serviço (Liderança Servil)
 
@@ -191,18 +189,15 @@ O mundo muitas vezes define o "homem de valor" pelo poder que exerce sobre os ou
 - **O exemplo prático (João 13):** Na última ceia, Jesus — o Mestre e Senhor — ajoelhou-se e lavou os pés sujos dos seus discípulos (uma tarefa que cabia ao escravo mais baixo da casa).
     
 - **A lição para o homem:** O verdadeiro homem de valor não usa a sua força ou posição para ser servido pela esposa, pelos filhos ou pelos outros. Ele usa a sua força para carregar os fardos mais pesados e servir aqueles que estão debaixo do seu cuidado.
-    
 
 ## 3. O Amor Sacrificial (O Padrão para o Casamento)
 
 Quando a Bíblia dá instruções aos maridos sobre como liderar as suas famílias, o padrão exigido não é o de um ditador, mas sim o de um homem disposto a morrer pela sua família, exatamente como Jesus fez.
 
-> ### Efésios 5:25
-> 
+> [!1quote] Efésios 5:25
 > _"Vós, maridos, **amai vossas mulheres, como também Cristo amou a igreja, e a si mesmo se entregou por ela**"_
 
 - **O significado:** A liderança masculina inspirada em Cristo é sacrificial. Ser o "cabeça" da casa, à luz da Bíblia, significa ser o primeiro a sacrificar o seu próprio conforto, o seu ego e os seus desejos pelo bem-estar e crescimento da sua esposa e filhos. O homem de valor protege entregando a sua vida, não exigindo submissão cega.
-    
 
 ## 4. O Equilíbrio Perfeito: Força e Sensibilidade
 
@@ -217,12 +212,10 @@ Muitas vezes, a cultura empurra o homem para dois extremos: ou um bruto insensí
 
 O Novo Testamento é explícito: o objetivo final do crescimento de um homem é tornar-se parecido com Jesus Cristo.
 
-> ### Efésios 4:13
-> 
+> [!quote] Efésios 4:13
 > _"...até que todos cheguemos à unidade da fé, e ao conhecimento do Filho de Deus, **a homem perfeito, à medida da estatura completa de Cristo**"_
 
-> ### 1 Pedro 2:21
-> 
+> [!quote] 1 Pedro 2:21
 > _"Porque para isto fostes chamados; pois também Cristo padeceu por nós, **deixando-nos o exemplo, para que sigais as suas pisadas**."_
 
 ### Resumo: O que é ser um "Homem de Valor" ao olhar para Jesus?

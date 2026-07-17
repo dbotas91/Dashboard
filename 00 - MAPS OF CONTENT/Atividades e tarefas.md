@@ -14,7 +14,6 @@ dgPassFrontmatter: "true"
 Este índice cobre as atividades tarefas e outros tópicos ao longo dos anos.
 Estão organizados por ano e referências aos INDEXES.
 
-
 ## [[Ceia do Senhor, Oração e Estudo Bíblico]]
 
 ## [[2026 - Atividades e Tarefas]]
