@@ -1,6 +1,66 @@
 {
   "recentFiles": [
     {
+      "basename": "Estudo Bíblico - 22-07-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md"
+    },
+    {
+      "basename": "aliancismo",
+      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/aliancismo.md"
+    },
+    {
+      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
+      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
+    },
+    {
+      "basename": "Atividades e tarefas",
+      "path": "00 - MAPS OF CONTENT/Atividades e tarefas.md"
+    },
+    {
+      "basename": "2026 - Atividades e Tarefas",
+      "path": "07 - INDEXES/2026 - Atividades e Tarefas.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "conversa_github_public_key_continue",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md"
+    },
+    {
+      "basename": "conversa",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md"
+    },
+    {
+      "basename": "Auditoria_IQC_MoonSec",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md"
+    },
+    {
+      "basename": "Obsidian digital garden setup",
+      "path": "01 - PROJECTS (PARA)/Obsidian digital garden setup.md"
+    },
+    {
+      "basename": "Tarefas no site IQC",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md"
+    },
+    {
+      "basename": "Script de migração do Joomla da versão 3 para a versão 5",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md"
+    },
+    {
+      "basename": "Guia de atualização do Joomla no ambiente local",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
+    },
+    {
+      "basename": "Criação da Estrutura de menus e categorias para Joomla 6",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md"
+    },
+    {
+      "basename": "Mensagens de Domingo",
+      "path": "07 - INDEXES/Mensagens de Domingo.md"
+    },
+    {
       "basename": "Homens de valor",
       "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md"
     },
@@ -11,22 +71,6 @@
     {
       "basename": "Mensagens Escritas",
       "path": "00 - MAPS OF CONTENT/Mensagens Escritas.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
-    },
-    {
-      "basename": "Atividades e tarefas",
-      "path": "00 - MAPS OF CONTENT/Atividades e tarefas.md"
-    },
-    {
-      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
-      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
-    },
-    {
-      "basename": "2026 - Atividades e Tarefas",
-      "path": "07 - INDEXES/2026 - Atividades e Tarefas.md"
     },
     {
       "basename": "Adult",
@@ -51,10 +95,6 @@
     {
       "basename": "Plano de estudos",
       "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md"
-    },
-    {
-      "basename": "Mensagens de Domingo",
-      "path": "07 - INDEXES/Mensagens de Domingo.md"
     },
     {
       "basename": "Por que dividir a Bíblia corretamente",
@@ -159,42 +199,6 @@
     {
       "basename": "Baroque Forms Kandinsky",
       "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md"
-    },
-    {
-      "basename": "Entenda a sua Bíblia",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Entenda a sua Bíblia.md"
-    },
-    {
-      "basename": "Messias sem sucesso",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Messias sem sucesso.md"
-    },
-    {
-      "basename": "O lugar",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/O lugar.md"
-    },
-    {
-      "basename": "Secularismo e a maldição das nações",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Secularismo e a maldição das nações.md"
-    },
-    {
-      "basename": "App idea",
-      "path": "02 - AREAS (PARA)/Programming Languages/App idea.md"
-    },
-    {
-      "basename": "Programas simples",
-      "path": "02 - AREAS (PARA)/Programming Languages/Javascript/Programas simples.md"
-    },
-    {
-      "basename": "As promessas de Deus para nós hoje",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md"
-    },
-    {
-      "basename": "promessas",
-      "path": "10 - TAGS/promessas.md"
-    },
-    {
-      "basename": "2026-05",
-      "path": "10 - TAGS/2026-05.md"
     }
   ],
   "omittedPaths": [],

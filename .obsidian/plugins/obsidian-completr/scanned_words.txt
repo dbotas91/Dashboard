@@ -5834,6 +5834,7 @@ Too
 Tratado
 Temor
 Temei
+Tchileza
 FEFF
 Form
 Font
@@ -9852,6 +9853,7 @@ Cunhada
 Camila
 Canalizada
 Chamado
+Conseguiu
 Mozilla
 ModDate
 MK
@@ -15993,6 +15995,9 @@ Aborde
 Adorar
 Aguda
 Andam
+Adicionar
+Ayla
+Aliancismo
 KHTML
 Kn
 KA
@@ -23038,6 +23043,8 @@ HsJCTDL
 Hasty
 Honrar
 Honrai
+Host
+HostName
 Safari
 Skia
 Subtype
@@ -32179,6 +32186,7 @@ coabitai
 competirem
 cordas
 chorou
+configur
 BM
 BBox
 BHq
@@ -46393,6 +46401,7 @@ sirva
 servido
 sujos
 sigais
+souber
 xU
 xM
 xLq
@@ -54824,6 +54833,7 @@ ansioso
 alicerce
 ajoelhou
 amai
+ajudarei
 dA
 dD
 dd
@@ -58096,6 +58106,8 @@ definitivo
 desenhadas
 ditador
 dorsal
+decrypt
+dbotas
 zR
 zD
 zJ
@@ -63199,6 +63211,9 @@ Insufici
 Integridade
 Imagem
 Igualmente
+IdentityFile
+IdentitiesOnly
+Iniciar
 nk
 nu
 nC
@@ -65040,6 +65055,12 @@ nose
 ntrica
 negligenciara
 normativo
+nssh
+nCould
+nEnter
+nLoad
+null
+norigin
 pM
 pg
 pd
@@ -68490,6 +68511,9 @@ parceira
 preciosa
 prolonguem
 pisou
+passphrase
+prune
+publickey
 OaL
 Oar
 OQ
@@ -94924,6 +94948,8 @@ fixam
 fartos
 fecundidade
 formigas
+fatal
+fetch
 br
 bJ
 bW
@@ -105797,6 +105823,7 @@ healing
 hominem
 hopeless
 humildemente
+hospitalizado
 Äb
 Äc
 Äj
