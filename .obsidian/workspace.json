@@ -4,34 +4,102 @@
     "type": "split",
     "children": [
       {
-        "id": "1cfae90bc9ed7909",
+        "id": "8781b4570c7f1aaf",
         "type": "tabs",
         "children": [
           {
-            "id": "b6a8d154989a18a0",
+            "id": "05ddc5b33981466a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07 - INDEXES/Site IQC.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Site IQC"
+            }
+          },
+          {
+            "id": "a89ee8bc19a533c1",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.facebook.com/",
+                "title": "Facebook",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Facebook"
+            }
+          },
+          {
+            "id": "71e0febb93c2fe41",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.youtube.com/",
+                "title": "YouTube",
+                "mode": "blank"
+              },
+              "icon": "globe-2",
+              "title": "YouTube"
+            }
+          },
+          {
+            "id": "10967a6ba86f650e",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.xda-developers.com/turned-obsidian-into-personal-command-center-barely-open-separate-apps/",
+                "title": "I turned Obsidian into a personal command center, and now I barely open separate apps",
+                "mode": "blank"
+              },
+              "icon": "globe-2",
+              "title": "I turned Obsidian into a personal command center, and now I barely open separate apps"
+            }
+          },
+          {
+            "id": "7471d92bdf76aa1a",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
                 "aFile": ".obsidian/plugins/digitalgarden/data.json",
                 "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
+                "aRef": "HEAD",
+                "bRef": ""
               },
               "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "title": "Diff: data.json  (Index)"
             }
           },
           {
-            "id": "be808bd55fc0e14b",
+            "id": "32b922d5a73d9d4e",
             "type": "leaf",
             "state": {
-              "type": "digital-garden-publication-center",
+              "type": "hearth-home-view",
               "state": {},
-              "icon": "book-up",
-              "title": "Publication Center"
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -301,8 +369,22 @@
       "hearth:Open Hearth home": false
     }
   },
-  "active": "b6a8d154989a18a0",
+  "active": "7471d92bdf76aa1a",
   "lastOpenFiles": [
+    "07 - INDEXES/Site IQC.md",
+    "Site IQC/Tarefas/Artigo Histórico sobre Bart Ehrman para a IQC 189535ff8bdc80e4a6e6e1dd64df5f0a.html.md",
+    "10 - TAGS/aliancismo.md",
+    "Site IQC/Tarefas",
+    "Site IQC",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Ingratidão e murmúrio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que cada cristão deve saber acerca do Islão.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "09 - STATUS NOTES/Adult.md",
     "Home.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
@@ -311,34 +393,20 @@
     "00 - MAPS OF CONTENT/Áreas.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "07 - INDEXES/Estudo Bíblico - microscópico.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/aliancismo.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
     "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
-    "07 - INDEXES/Reunião de Homens.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/plugin.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.esm.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",

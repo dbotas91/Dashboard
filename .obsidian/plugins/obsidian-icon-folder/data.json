@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiBookmark",
       "LiSpeech",
       "LiFileType",
       "LiVideo",
-      "LiPodcast",
-      "LiPaperclip"
+      "LiPodcast"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -52,5 +52,6 @@
   "04 - RESOURCES MATERIAL (PARA ZETTEL)/Podcast": "LiPodcast",
   "04 - RESOURCES MATERIAL (PARA ZETTEL)/Videos": "LiVideo",
   "11 - TEMPLATES": "LiLayoutTemplate",
-  "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning": "LiSpeech"
+  "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning": "LiSpeech",
+  "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web": "LiBookmark"
 }

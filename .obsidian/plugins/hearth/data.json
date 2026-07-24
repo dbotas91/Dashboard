@@ -14,7 +14,7 @@
   "backgroundBlur": 2,
   "openOnStartup": true,
   "replaceNewTabs": true,
-  "mobileSearchOnly": false,
+  "mobileSearchOnly": true,
   "showMobileActionBar": true,
   "mobileActionButtons": [
     {
@@ -100,7 +100,11 @@
           "fx": 0,
           "fw": 0.2848101265822785,
           "fy": 170,
-          "fh": 262
+          "fh": 262,
+          "calendar": {
+            "sources": [],
+            "eventNote": {}
+          }
         },
         {
           "id": "card-stats",
@@ -208,7 +212,27 @@
           "h": 3,
           "fx": 0,
           "fy": 0,
-          "fw": 1,
+          "fw": 0.659350307287094,
+          "fh": 406
+        },
+        {
+          "id": "card-mryt1su7-2814",
+          "x": 0,
+          "y": 0,
+          "kind": "tasks",
+          "title": "Tasks",
+          "tasks": {
+            "source": "checkbox",
+            "folderScope": "all",
+            "folders": [
+              "07 - INDEXES"
+            ]
+          },
+          "w": 4,
+          "h": 4,
+          "fx": 0.6733977172958736,
+          "fy": 0,
+          "fw": 0.32660228270412645,
           "fh": 406
         }
       ],
@@ -250,16 +274,90 @@
           "fx": 0,
           "fy": 0,
           "fw": 0.6633416458852868,
-          "fh": 406
+          "fh": 406,
+          "leafView": {
+            "viewType": "webviewer"
+          },
+          "editable": true
         }
       ],
       "iconLucide": "rss",
       "header": {
         "showTitle": true
       }
+    },
+    {
+      "id": "dash-mrys1og4-5375",
+      "name": "Redes sociais",
+      "cards": [
+        {
+          "id": "card-mrysdkfq-486",
+          "x": 0,
+          "y": 0,
+          "kind": "web",
+          "title": "",
+          "url": "https://www.biblegateway.com",
+          "w": 6,
+          "h": 4,
+          "fx": 0,
+          "fy": 336,
+          "fw": 1,
+          "fh": 713,
+          "sandboxTrusted": true,
+          "leafView": {
+            "viewType": "webviewer"
+          }
+        },
+        {
+          "id": "card-mrytohcq-9864",
+          "x": 0,
+          "y": 4,
+          "kind": "embed",
+          "title": "",
+          "w": 4,
+          "h": 3,
+          "fx": 0,
+          "fy": 0,
+          "fw": 0.5,
+          "fh": 320,
+          "target": "07 - INDEXES/Mensagens de Domingo.md",
+          "editable": true,
+          "secondView": {
+            "target": "07 - INDEXES/Reunião de Homens.md",
+            "editable": true
+          }
+        },
+        {
+          "id": "card-mryu0cnx-8123",
+          "x": 6,
+          "y": 0,
+          "kind": "embed",
+          "title": "",
+          "target": "07 - INDEXES/Reuniões de Jovens.md",
+          "w": 6,
+          "h": 3,
+          "fx": 0.5050632911392405,
+          "fy": 0,
+          "fw": 0.49493670886075947,
+          "fh": 320,
+          "secondView": {
+            "target": "07 - INDEXES/Meditações.md",
+            "editable": true
+          },
+          "editable": true
+        }
+      ],
+      "iconLucide": "book",
+      "fitToPage": false,
+      "showSearch": false,
+      "header": {
+        "showTitle": true,
+        "title": "Mensagens",
+        "logo": ""
+      }
     }
   ],
-  "activeDashboardId": "dash-mryonvc1-2834",
+  "activeDashboardId": "dash-mrys1og4-5375",
   "pinnedCards": [],
   "gridColumns": 12,
   "rowHeight": 92,

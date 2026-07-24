@@ -28298,6 +28298,9 @@ engravidar
 entregando
 empurra
 espinha
+esperarei
+esperas
+esperavas
 ca
 cW
 cEu
@@ -32188,6 +32191,8 @@ competirem
 cordas
 chorou
 configur
+curasse
+continuarias
 BM
 BBox
 BHq
@@ -35613,6 +35618,7 @@ NgCg
 NJOIBuHUTr
 NafEaDnX
 Nietzche
+Nasci
 XObject
 Xf
 XW
@@ -40879,6 +40885,7 @@ Encontro
 Exposi
 Equil
 Enfrentou
+Essencialmente
 true
 tTr
 tQr
@@ -43306,6 +43313,9 @@ temporada
 transformadora
 trouxemos
 traremos
+tirasse
+terminou
+tire
 stream
 sWz
 sj
@@ -46403,6 +46413,8 @@ servido
 sujos
 sigais
 souber
+superares
+soubesses
 xU
 xM
 xLq
@@ -58109,6 +58121,7 @@ ditador
 dorsal
 decrypt
 dbotas
+dolorosa
 zR
 zD
 zJ
@@ -68515,6 +68528,8 @@ pisou
 passphrase
 prune
 publickey
+pedi
+prometer
 OaL
 Oar
 OQ
@@ -80589,6 +80604,7 @@ mitol
 molde
 mide
 marginalizados
+mate
 qd
 qm
 qI
@@ -82312,6 +82328,7 @@ quinta
 quinto
 quran
 quebrando
+querias
 ih
 ip
 iV
@@ -104056,6 +104073,7 @@ restabelecimento
 resgate
 recuou
 regista
+responderia
 hF
 hj
 hC
