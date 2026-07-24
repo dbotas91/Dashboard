@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "856f70a4c6d416d2",
+        "id": "a13cf328d71ddc47",
         "type": "tabs",
         "children": [
           {
-            "id": "4f10e8330db407c9",
+            "id": "ca28ad4dfc9ff109",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           }
         ]
@@ -278,7 +273,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4f10e8330db407c9",
+  "active": "ca28ad4dfc9ff109",
   "lastOpenFiles": [
     "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
