@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "Adult",
+      "path": "09 - STATUS NOTES/Adult.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "Atividades e tarefas",
+      "path": "00 - MAPS OF CONTENT/Atividades e tarefas.md"
+    },
+    {
+      "basename": "Livros Cristãos",
+      "path": "07 - INDEXES/Livros Cristãos.md"
+    },
+    {
+      "basename": "Formação",
+      "path": "00 - MAPS OF CONTENT/Formação.md"
+    },
+    {
+      "basename": "Áreas",
+      "path": "00 - MAPS OF CONTENT/Áreas.md"
+    },
+    {
+      "basename": "Mensagens Escritas",
+      "path": "00 - MAPS OF CONTENT/Mensagens Escritas.md"
+    },
+    {
+      "basename": "Estudo Bíblico - microscópico",
+      "path": "07 - INDEXES/Estudo Bíblico - microscópico.md"
+    },
+    {
+      "basename": "Mensagens de Domingo",
+      "path": "07 - INDEXES/Mensagens de Domingo.md"
+    },
+    {
       "basename": "Estudo Bíblico - 22-07-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md"
     },
@@ -13,16 +49,8 @@
       "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
     },
     {
-      "basename": "Atividades e tarefas",
-      "path": "00 - MAPS OF CONTENT/Atividades e tarefas.md"
-    },
-    {
       "basename": "2026 - Atividades e Tarefas",
       "path": "07 - INDEXES/2026 - Atividades e Tarefas.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
     },
     {
       "basename": "conversa_github_public_key_continue",
@@ -57,24 +85,12 @@
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md"
     },
     {
-      "basename": "Mensagens de Domingo",
-      "path": "07 - INDEXES/Mensagens de Domingo.md"
-    },
-    {
       "basename": "Homens de valor",
       "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md"
     },
     {
       "basename": "Reunião de Homens",
       "path": "07 - INDEXES/Reunião de Homens.md"
-    },
-    {
-      "basename": "Mensagens Escritas",
-      "path": "00 - MAPS OF CONTENT/Mensagens Escritas.md"
-    },
-    {
-      "basename": "Adult",
-      "path": "09 - STATUS NOTES/Adult.md"
     },
     {
       "basename": "Estudo Bíblico - 15-07-2026",
@@ -87,10 +103,6 @@
     {
       "basename": "Estudo Bíblico - 08-07-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md"
-    },
-    {
-      "basename": "Estudo Bíblico - microscópico",
-      "path": "07 - INDEXES/Estudo Bíblico - microscópico.md"
     },
     {
       "basename": "Plano de estudos",
@@ -187,18 +199,6 @@
     {
       "basename": "Estudo Bíblico - 25-03-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-03-2026.md"
-    },
-    {
-      "basename": "Artigo Histórico sobre Bart Ehrman para a IQC",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md"
-    },
-    {
-      "basename": "Abraão, o pai da fé",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Abraão, o pai da fé.md"
-    },
-    {
-      "basename": "Baroque Forms Kandinsky",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md"
     }
   ],
   "omittedPaths": [],

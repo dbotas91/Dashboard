@@ -4,59 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "1cfae90bc9ed7909",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "b6a8d154989a18a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "conversa_github_public_key_continue"
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
             }
           },
           {
-            "id": "aa58335f7015cfe7",
+            "id": "be808bd55fc0e14b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Estudo Bíblico - 22-07-2026"
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +81,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Marcadores"
             }
           },
           {
@@ -266,8 +241,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -322,17 +297,25 @@
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "hearth:Open Hearth home": false
     }
   },
-  "active": "aa58335f7015cfe7",
+  "active": "b6a8d154989a18a0",
   "lastOpenFiles": [
+    "09 - STATUS NOTES/Adult.md",
+    "Home.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "07 - INDEXES/Livros Cristãos.md",
+    "00 - MAPS OF CONTENT/Formação.md",
+    "00 - MAPS OF CONTENT/Áreas.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "07 - INDEXES/Estudo Bíblico - microscópico.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/aliancismo.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
-    "Home.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
@@ -341,19 +324,12 @@
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
     "07 - INDEXES/Reunião de Homens.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "09 - STATUS NOTES/Adult.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
-    "10 - TAGS/2026-07.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-10-2025.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",

@@ -5,17 +5,6 @@ dg-pinned: "true"
 dg-note-icon: signpost
 noteIcon: signpost
 ---
-> [!WARNING] Atenção / Warning
-> [PT]
-> Algumas notas / páginas estão escritas tanto em português como em inglês.
-> Não tenho qualquer tipo de identificação de quando será em inglês ou português.
-> No entanto também tenho notas só em inglês como em português.
-> [EN]
-> Some notes/pages are written in both Portuguese and English, without consistent labeling.
-> - Some notes/pages are written in both Portuguese and English.
-> - I don’t have any indication of when a note will be in English or Portuguese.
-> - I also have notes exclusively in English as well as exclusively in Portuguese.
-
 # [[Mensagens Escritas|Mensagens Escritas]]
 
 # [[Projetos]]
@@ -28,10 +17,20 @@ noteIcon: signpost
 
 # [[Atividades e tarefas]]
 
+
+> [!WARNING] Atenção / Warning
+> [PT]
+> Algumas notas / páginas estão escritas tanto em português como em inglês.
+> Não tenho qualquer tipo de identificação de quando será em inglês ou português.
+> No entanto também tenho notas só em inglês como em português.
+> [EN]
+> Some notes/pages are written in both Portuguese and English, without consistent labeling.
+> - Some notes/pages are written in both Portuguese and English.
+> - I don’t have any indication of when a note will be in English or Portuguese.
+> - I also have notes exclusively in English as well as exclusively in Portuguese.
+
 # Organização de pastas/menus
 As pastas e menus seguem uma lógica de criação e organização do Zettelkasten e o método PARA (Projects, Areas, Resources, Archive).
-
-
 
 # Acerca dos níveis de maturidade das notas
 Os níveis de maturidade das notas é uma representação minha em termos de organização do conteúdo que produzo em termos de notas.

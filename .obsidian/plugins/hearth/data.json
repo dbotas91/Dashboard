@@ -1,0 +1,274 @@
+{
+  "title": "Home",
+  "showTitle": true,
+  "logo": "",
+  "themeColorTarget": "both",
+  "searchPlaceholder": "Search or command",
+  "showNewNoteButton": true,
+  "newNoteButtonMode": "newNote",
+  "searchContents": true,
+  "searchEngine": "builtin",
+  "backgroundKind": "default",
+  "backgroundValue": "",
+  "backgroundOpacity": 0.35,
+  "backgroundBlur": 2,
+  "openOnStartup": true,
+  "replaceNewTabs": true,
+  "mobileSearchOnly": false,
+  "showMobileActionBar": true,
+  "mobileActionButtons": [
+    {
+      "id": "action-new-note",
+      "label": "New note",
+      "icon": "plus",
+      "type": "command",
+      "target": "hearth:new-note"
+    },
+    {
+      "id": "action-new-drawing",
+      "label": "New drawing",
+      "icon": "pen-tool",
+      "type": "command",
+      "target": "hearth:new-drawing"
+    },
+    {
+      "id": "action-record-voice",
+      "label": "Record voice",
+      "icon": "mic",
+      "type": "command",
+      "target": "hearth:record-voice"
+    },
+    {
+      "id": "action-daily-note",
+      "label": "Daily note",
+      "icon": "calendar",
+      "type": "command",
+      "target": "hearth:open-daily-note"
+    }
+  ],
+  "disableExternalCalls": false,
+  "compact": false,
+  "arrangeButtonVisibility": "always",
+  "dashboardSwitcherVisibility": "always",
+  "cardOpacity": 0.5,
+  "cardBlur": 7,
+  "cardRadius": 14,
+  "cardBorderWidth": 1,
+  "hiddenFilters": [],
+  "dashboards": [
+    {
+      "id": "dash-mrylwy5u-271",
+      "name": "Summary",
+      "cards": [
+        {
+          "id": "card-clock",
+          "kind": "clock",
+          "title": "",
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 3,
+          "fx": 0,
+          "fw": 0.2848101265822785,
+          "fy": 0,
+          "fh": 154,
+          "clock": {
+            "mode": "digital"
+          }
+        },
+        {
+          "id": "card-daily",
+          "kind": "daily",
+          "title": "Today's Note",
+          "x": 0,
+          "y": 3,
+          "w": 7,
+          "h": 6,
+          "fx": 0.3050632911392405,
+          "fw": 0.6949367088607595,
+          "fy": 0,
+          "fh": 308
+        },
+        {
+          "id": "card-calendar",
+          "kind": "calendar",
+          "title": "",
+          "x": 7,
+          "y": 3,
+          "w": 5,
+          "h": 6,
+          "fx": 0,
+          "fw": 0.2848101265822785,
+          "fy": 170,
+          "fh": 262
+        },
+        {
+          "id": "card-stats",
+          "kind": "stats",
+          "title": "",
+          "x": 7,
+          "y": 9,
+          "w": 5,
+          "h": 4,
+          "fx": 0,
+          "fw": 0.2848101265822785,
+          "fy": 448,
+          "fh": 258,
+          "stats": {}
+        },
+        {
+          "id": "card-mrympf8d-6725",
+          "x": 4,
+          "y": 0,
+          "kind": "embed",
+          "title": "Home Notes",
+          "target": "Home.md",
+          "w": 6,
+          "h": 3,
+          "fx": 0,
+          "fy": 722,
+          "fw": 1,
+          "fh": 423
+        },
+        {
+          "id": "card-mrynx5z3-2743",
+          "x": 0,
+          "y": 4,
+          "kind": "recent",
+          "title": "Recent",
+          "count": 8,
+          "w": 4,
+          "h": 3,
+          "fx": 0.7291139240506329,
+          "fy": 324,
+          "fw": 0.2708860759493671,
+          "fh": 382
+        },
+        {
+          "id": "card-mryo8ira-6451",
+          "x": 0,
+          "y": 6,
+          "kind": "leaf",
+          "title": "Graph",
+          "leafView": {
+            "viewType": "graph"
+          },
+          "w": 5,
+          "h": 4,
+          "fx": 0.3050632911392405,
+          "fy": 324,
+          "fw": 0.41139240506329117,
+          "fh": 382
+        }
+      ],
+      "fitToPage": false,
+      "header": {
+        "showTitle": true
+      },
+      "iconLucide": "home",
+      "maxWidth": 1600
+    },
+    {
+      "id": "dash-mrym426c-1281",
+      "name": "Mensagens Escritas",
+      "cards": [
+        {
+          "id": "card-mrym47p4-7396",
+          "x": 0,
+          "y": 0,
+          "kind": "embed",
+          "title": "Mensagens escritas",
+          "target": "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+          "w": 6,
+          "h": 3,
+          "fx": 0,
+          "fy": 0,
+          "fw": 1,
+          "fh": 406
+        }
+      ],
+      "fitToPage": false,
+      "header": {
+        "showTitle": true
+      },
+      "iconLucide": "scroll-text"
+    },
+    {
+      "id": "dash-mryn5rqa-6356",
+      "name": "Atividades e tarefas",
+      "cards": [
+        {
+          "id": "card-mryn63rl-4807",
+          "x": 0,
+          "y": 0,
+          "kind": "embed",
+          "title": "Atividades e Tarefas",
+          "target": "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+          "w": 6,
+          "h": 3,
+          "fx": 0,
+          "fy": 0,
+          "fw": 1,
+          "fh": 406
+        }
+      ],
+      "iconLucide": "calendar-check"
+    },
+    {
+      "id": "dash-mryonvc1-2834",
+      "name": "News",
+      "cards": [
+        {
+          "id": "card-mryooft6-4704",
+          "x": 0,
+          "y": 0,
+          "kind": "rss",
+          "title": "RSS",
+          "rss": {
+            "sources": [
+              {
+                "id": "rss-mryorw6t-9849",
+                "name": "IQC",
+                "url": "https://iqc.pt/portao/noticias-e-artigos-na-iqc?format=feed&type=rss"
+              }
+            ]
+          },
+          "w": 4,
+          "h": 5,
+          "fx": 0.6733167082294265,
+          "fy": 0,
+          "fw": 0.3266832917705736,
+          "fh": 406
+        },
+        {
+          "id": "card-mryoop9h-5446",
+          "x": 4,
+          "y": 0,
+          "kind": "daily",
+          "w": 6,
+          "h": 4,
+          "fx": 0,
+          "fy": 0,
+          "fw": 0.6633416458852868,
+          "fh": 406
+        }
+      ],
+      "iconLucide": "rss",
+      "header": {
+        "showTitle": true
+      }
+    }
+  ],
+  "activeDashboardId": "dash-mryonvc1-2834",
+  "pinnedCards": [],
+  "gridColumns": 12,
+  "rowHeight": 92,
+  "favorites": [],
+  "fitToPage": true,
+  "taskNotesStatusField": "status",
+  "taskNotesDueField": "due",
+  "taskNotesPriorityField": "priority",
+  "taskNotesDoneValue": "done",
+  "maxWidth": 1600,
+  "lastSeenVersion": "1.15.0"
+}
