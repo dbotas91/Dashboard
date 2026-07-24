@@ -193,7 +193,8 @@
       ],
       "fitToPage": false,
       "header": {
-        "showTitle": true
+        "showTitle": true,
+        "title": "Mensagens Escritas"
       },
       "iconLucide": "scroll-text"
     },
@@ -236,7 +237,10 @@
           "fh": 406
         }
       ],
-      "iconLucide": "calendar-check"
+      "iconLucide": "calendar-check",
+      "header": {
+        "title": "Atividades e tarefas"
+      }
     },
     {
       "id": "dash-mryonvc1-2834",
@@ -254,14 +258,122 @@
                 "id": "rss-mryorw6t-9849",
                 "name": "IQC",
                 "url": "https://iqc.pt/portao/noticias-e-artigos-na-iqc?format=feed&type=rss"
+              },
+              {
+                "id": "rss-mrywj7pf-5349",
+                "name": "",
+                "url": "https://medium.freecodecamp.com/feed"
+              },
+              {
+                "id": "rss-mrywo5mq-780",
+                "name": "",
+                "url": "http://nodeweekly.com/rss/1j9a0ll9"
+              },
+              {
+                "id": "rss-mrywobrr-1418",
+                "name": "",
+                "url": "http://blogdoxbox.com/feed/"
+              },
+              {
+                "id": "rss-mrywok4w-908",
+                "name": "",
+                "url": "http://feeds.feedburner.com/JavaCodeGeeks"
+              },
+              {
+                "id": "rss-mrywou54-5409",
+                "name": "",
+                "url": "http://codeascraft.etsy.com/feed/"
+              },
+              {
+                "id": "rss-mrywp3rh-5201",
+                "name": "",
+                "url": "http://planet.python.org/rss10.xml"
+              },
+              {
+                "id": "rss-mrywsbax-2963",
+                "name": "",
+                "url": "http://feeds.feedburner.com/blogspot/hsDu"
+              },
+              {
+                "id": "rss-mrywsvtc-240",
+                "name": "",
+                "url": "http://spring.io/blog.atom"
+              },
+              {
+                "id": "rss-mrywvlj0-7552",
+                "name": "",
+                "url": "http://javascriptweekly.com/rss"
+              },
+              {
+                "id": "rss-mryyvo53-3708",
+                "name": "",
+                "url": "https://www.codeguru.com/feed/"
+              },
+              {
+                "id": "rss-mryyvovf-2626",
+                "name": "",
+                "url": "http://feeds.feedburner.com/CssTricks"
+              },
+              {
+                "id": "rss-mryyvpl8-6153",
+                "name": "",
+                "url": "http://feeds.feedburner.com/Techcrunch"
+              },
+              {
+                "id": "rss-mryyvq50-9026",
+                "name": "",
+                "url": "http://www.eurogamer.pt/?format=rss"
+              },
+              {
+                "id": "rss-mryyvqs0-5028",
+                "name": "",
+                "url": "http://www.engadget.com/rss-full.xml"
+              },
+              {
+                "id": "rss-mryyvrbt-722",
+                "name": "",
+                "url": "http://news.ycombinator.com/rss"
+              },
+              {
+                "id": "rss-mryyvrxf-9872",
+                "name": "",
+                "url": "http://blog.cleancoder.com/atom.xml"
+              },
+              {
+                "id": "rss-mryyvt1h-184",
+                "name": "",
+                "url": "http://feeds.harvardbusiness.org/harvardbusiness/"
+              },
+              {
+                "id": "rss-mryyvu3w-4038",
+                "name": "",
+                "url": "https://nodejs.org/en/feed/blog.xml"
+              },
+              {
+                "id": "rss-mryyy71k-4264",
+                "name": "",
+                "url": "http://blog.golang.org/feeds/posts/default"
+              },
+              {
+                "id": "rss-mryzgcxx-5630",
+                "name": "",
+                "url": "https://goodgearguide.com.au/feed/"
+              },
+              {
+                "id": "rss-mryzihn6-3669",
+                "name": "",
+                "url": "http://feeds.howtogeek.com/HowToGeek"
               }
-            ]
+            ],
+            "mergeAll": true,
+            "layout": "cards",
+            "refreshMin": 90
           },
           "w": 4,
           "h": 5,
-          "fx": 0.6733167082294265,
-          "fy": 0,
-          "fw": 0.3266832917705736,
+          "fx": 0,
+          "fy": 422,
+          "fw": 0.6637089618456078,
           "fh": 406
         },
         {
@@ -271,20 +383,38 @@
           "kind": "daily",
           "w": 6,
           "h": 4,
-          "fx": 0,
-          "fy": 0,
-          "fw": 0.6633416458852868,
+          "fx": 0.673469387755102,
+          "fy": 422,
+          "fw": 0.32653061224489793,
           "fh": 406,
           "leafView": {
             "viewType": "webviewer"
           },
           "editable": true
+        },
+        {
+          "id": "card-mryvyo4c-7397",
+          "x": 0,
+          "y": 0,
+          "kind": "web",
+          "title": "start.me",
+          "url": "https://start.me/p/PwDll2/everything",
+          "w": 6,
+          "h": 4,
+          "fx": 0,
+          "fy": 0,
+          "fw": 1,
+          "fh": 406,
+          "sandboxTrusted": true
         }
       ],
       "iconLucide": "rss",
       "header": {
-        "showTitle": true
-      }
+        "showTitle": true,
+        "title": "News"
+      },
+      "fitToPage": false,
+      "showSearch": false
     },
     {
       "id": "dash-mrys1og4-5375",
@@ -357,7 +487,7 @@
       }
     }
   ],
-  "activeDashboardId": "dash-mrys1og4-5375",
+  "activeDashboardId": "dash-mryonvc1-2834",
   "pinnedCards": [],
   "gridColumns": 12,
   "rowHeight": 92,
