@@ -5,14 +5,13 @@ dg-publish: "true"
 dg-note-icon: chest
 noteIcon: chest
 ---
-Status: [[Concluído]]
-Tags: [[2026-07]], [[aliancismo]]
+Status: [[Por fazer]]
+Tags: [[2026-07]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Passagem em estudo
-O irmão Peter Cerqueira vai continuar a falar do tema acerca do Aliancismo
+[[05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo#Verso 8|1 Timóteo 3:8]]
 
 # Músicas
-Sem músicas
 
 # Leitura da Bíblia
 
@@ -22,7 +21,7 @@ Fazer algum momento livre para orar, antes de dar a palavra ao irmão Peter Cerq
 
 | Motivos                                                                | de                                              | oração                                                                                                                                    |
 | ---------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Irmão Adolfo e família                                                 | Pai da nossa irmã Paula (Umberto)               | Prima do Nando (Dora) que está com um cancro no pâncreas<br>                                                                              |
+| Família do irmão Adolfo (Deolinda, David e Daniel)                     | Pai da nossa irmã Paula (Umberto)               | Prima do Nando (Dora) que está com um cancro no pâncreas<br>                                                                              |
 | consolo da irmã Celeste Almeida e família após a perda do marido       | Irene, Dinita, Filomena                         | filha do irmão Luís da Silva e a esposa Vitória ( Ayla Tchileza de 7 meses), com um pré-diagnóstico de Leucemia Linfoblástica Aguda (LLA) |
 | Viagem do Nando a Angola, Igrejas em Angola:<br>Luanda, Luena, Lubango | Alberto Miranda, Liberto (pai do Paulo), Rafael | Estudos feitos pelo irmão Peter acerca do Aliancismo. Na próxima quarta-feira teremos a continuação do estudo.                            |
 |                                                                        |                                                 |                                                                                                                                           |

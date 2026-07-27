@@ -534,5 +534,11 @@ Temos também de lembrar dos nossos novos na fé para que possam aprender a humi
 > [!quote] Verso 7
 > Convém, também, que tenha bom testemunho dos que estão de fora, para que não caia em afronta e no laço do diabo.
 
+
+## Verso 8
+> [!quote] Verso 8
+> Da mesma sorte os diáconos sejam honestos, não de língua dobre, não dados a muito vinho, não cobiçosos de torpe ganância,
+
+
 # Referências
 
