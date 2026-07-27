@@ -13,8 +13,8 @@
             "state": {
               "type": "hearth-home-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "hearth-home-view"
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           },
           {
@@ -92,33 +92,8 @@
               "icon": "globe-2",
               "title": "I started using Python in Excel for boring tasks, and it completely changed my workflow"
             }
-          },
-          {
-            "id": "a9661a3d796b843d",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/recent-files-obsidian/data.json",
-                "bFile": ".obsidian/plugins/recent-files-obsidian/data.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
-            }
-          },
-          {
-            "id": "f9d891c973b84fb4",
-            "type": "leaf",
-            "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
-            }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -350,7 +325,6 @@
       "obsidian-importer:Open Importer": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "homepage:Open homepage": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
@@ -358,7 +332,7 @@
       "hearth:Open Hearth home": false
     }
   },
-  "active": "f9d891c973b84fb4",
+  "active": "1aa9c0374d13c72c",
   "lastOpenFiles": [
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
