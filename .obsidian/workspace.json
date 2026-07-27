@@ -13,8 +13,8 @@
             "state": {
               "type": "hearth-home-view",
               "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "icon": "lucide-ghost",
+              "title": "hearth-home-view"
             }
           },
           {
@@ -99,16 +99,26 @@
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": ".obsidian/plugins/hearth/data.json",
-                "bFile": ".obsidian/plugins/hearth/data.json",
+                "aFile": ".obsidian/plugins/recent-files-obsidian/data.json",
+                "bFile": ".obsidian/plugins/recent-files-obsidian/data.json",
                 "aRef": ""
               },
               "icon": "diff",
               "title": "Diff: data.json  (Working Tree)"
             }
+          },
+          {
+            "id": "f9d891c973b84fb4",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -167,11 +177,12 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "recent-files"
+              "icon": "clock",
+              "title": "Recent files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -347,7 +358,7 @@
       "hearth:Open Hearth home": false
     }
   },
-  "active": "a9661a3d796b843d",
+  "active": "f9d891c973b84fb4",
   "lastOpenFiles": [
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
