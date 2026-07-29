@@ -21,24 +21,29 @@
             "id": "ce2f0b9356beb1d7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Estudo Bíblico - 29-07-2026"
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
+            }
+          },
+          {
+            "id": "ec5e31576fd271a0",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://forestry.md/",
+                "title": "Forestry.md - Open Source Digital Garden Hosting",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Forestry.md - Open Source Digital Garden Hosting"
             }
           },
           {
@@ -61,12 +66,40 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://mail.google.com/mail/u/0/#inbox",
-                "title": "Caixa de entrada (324) - dario.botas@gmail.com - Gmail",
+                "url": "https://notas-dario.vercel.app/06-daily-weekly-tasks/estudo-biblico-29-07-2026/",
+                "title": "Estudo Bíblico - 29-07-2026",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Caixa de entrada (324) - dario.botas@gmail.com - Gmail"
+              "title": "Estudo Bíblico - 29-07-2026"
+            }
+          },
+          {
+            "id": "4dfa22c0b9906d15",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://mail.google.com/mail/u/2/#inbox",
+                "title": "Caixa de entrada (7 003) - darioabotas@gmail.com - Gmail",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Caixa de entrada (7 003) - darioabotas@gmail.com - Gmail"
+            }
+          },
+          {
+            "id": "d276da884c229871",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://vercel.com/darios-projects-4e59f1f1/my-garden/deployments",
+                "title": "my-garden – Deployments – Vercel",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "my-garden – Deployments – Vercel"
             }
           },
           {
@@ -84,7 +117,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -151,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281,
-    "collapsed": true
+    "width": 281
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -340,11 +372,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e709e03bb4427547",
+  "active": "ce2f0b9356beb1d7",
   "lastOpenFiles": [
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-    "10 - TAGS/2026-07.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "10 - TAGS/2026-07.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
     "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
