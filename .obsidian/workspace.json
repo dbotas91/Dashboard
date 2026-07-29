@@ -4,49 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bc64d7c430291d2f",
+        "id": "a13cf328d71ddc47",
         "type": "tabs",
         "children": [
           {
-            "id": "1aa9c0374d13c72c",
+            "id": "57588c1d11e58878",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           },
           {
-            "id": "67e55d4c2569c20b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Estudo Bíblico - 15-07-2026"
-            }
-          },
-          {
-            "id": "3e49022452b002fa",
+            "id": "ce2f0b9356beb1d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -70,34 +42,49 @@
             }
           },
           {
-            "id": "203da44ed0668375",
+            "id": "e88f0a16c2541b8d",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://start.me/p/PwDll2/everything",
-                "title": "Everything - Start.me",
+                "url": "https://www.youtube.com/",
+                "title": "YouTube",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Everything - Start.me"
+              "title": "YouTube"
             }
           },
           {
-            "id": "54382dcacf5ba8df",
+            "id": "e709e03bb4427547",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.howtogeek.com/microsoft-excel-python-handle-spreadsheet-tasks-usually-put-off/",
-                "title": "I started using Python in Excel for boring tasks, and it completely changed my workflow",
+                "url": "https://iqc.pt/edificacao/devocional/meditacoes/23282-quando-deus-nao-alivia-a-dor",
+                "title": "Quando Deus não alivia a dor",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "I started using Python in Excel for boring tasks, and it completely changed my workflow"
+              "title": "Quando Deus não alivia a dor"
+            }
+          },
+          {
+            "id": "358b1328da5e93be",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.on4tech.pt/p5-registo-utilizador-pt?id_enc=8512&show_compras=1",
+                "title": "Registo Utilizador - www.on4tech.pt",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Registo Utilizador - www.on4tech.pt"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,7 +116,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nobel",
+                "query": "?",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -137,7 +124,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Procurar"
+              "title": "Search"
             }
           },
           {
@@ -147,7 +134,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Marcadores"
             }
           },
           {
@@ -160,12 +147,12 @@
               "title": "Recent files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 206
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -174,7 +161,7 @@
       {
         "id": "66d2499bd7c7c2cf",
         "type": "tabs",
-        "dimension": 47.82608695652174,
+        "dimension": 51.864035087719294,
         "children": [
           {
             "id": "ca992fb3ee138cd9",
@@ -221,7 +208,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Etiquetas"
+              "title": "Tags"
             }
           },
           {
@@ -230,13 +217,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Índice de 0. Descobrindo o Porquê da Fé - leitura inicial"
+              "title": "Índice"
             }
           },
           {
@@ -250,11 +236,21 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Todas as propriedades"
+              "title": "All properties"
             }
           },
           {
-            "id": "78c720107f04a0ac",
+            "id": "f34122c6fa88596e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "c4892fd3bf0af16c",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -262,14 +258,36 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "9275b0c2fcd66d98",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md"
+              },
+              "icon": "lucide-info",
+              "title": "Propriedades do ficheiro para Estudo Bíblico - 11-03-2026"
+            }
+          },
+          {
+            "id": "d2e6ab0b849de0ce",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "aa213c339baded63",
         "type": "tabs",
-        "dimension": 52.17391304347826,
+        "dimension": 48.135964912280706,
         "children": [
           {
             "id": "4f23ffc45f683c25",
@@ -285,24 +303,10 @@
             "id": "c7bf261309fc083c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "09 - STATUS NOTES/Adult.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Adult"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização de diagrama de grafo"
             }
           }
         ],
@@ -310,64 +314,70 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283
+    "width": 337
   },
   "left-ribbon": {
     "hiddenItems": {
+      "hearth:Open Hearth home": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "canvas:Criar novo Canvas": false,
+      "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
       "graph:Abrir Visualização de diagrama de grafo": false,
-      "canvas:Criar novo Canvas": false,
       "daily-notes:Abrir nota de hoje": false,
       "templates:Inserir templates": false,
       "command-palette:Abrir paleta de comando": false,
       "workspaces:Gerir esquema da área de trabalho": false,
       "publish:Publicar alterações": false,
-      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
       "obsidian-importer:Open Importer": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "digitalgarden:Digital Garden Publication Center": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "hearth:Open Hearth home": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1aa9c0374d13c72c",
+  "active": "ce2f0b9356beb1d7",
   "lastOpenFiles": [
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
     "10 - TAGS/2026-07.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md",
-    "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "09 - STATUS NOTES/Adult.md",
-    "10 - TAGS/reuniaodehomens.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bookmarks - Obsidian Help.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
-    "10 - TAGS/aliancismo.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
     "Home.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que não sou ateu.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bookmarks - Obsidian Help.md",
+    "07 - INDEXES/Site IQC.md",
+    "10 - TAGS/aliancismo.md",
+    "09 - STATUS NOTES/Adult.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
     "07 - INDEXES/Mensagens de Domingo.md",
+    "Site IQC/Tarefas/Artigo Histórico sobre Bart Ehrman para a IQC 189535ff8bdc80e4a6e6e1dd64df5f0a.html.md",
+    "Site IQC/Tarefas",
+    "Site IQC",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Ingratidão e murmúrio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que cada cristão deve saber acerca do Islão.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "07 - INDEXES/Livros Cristãos.md",
+    "00 - MAPS OF CONTENT/Formação.md",
+    "00 - MAPS OF CONTENT/Áreas.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "07 - INDEXES/Estudo Bíblico - microscópico.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
@@ -378,12 +388,6 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-green.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-blue.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-yellow.png",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/style.css",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin (copy).js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/_style.css",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]

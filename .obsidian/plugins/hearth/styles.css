@@ -339,17 +339,48 @@
 
 /* ---- Filters -------------------------------------------------------- */
 
+/* The chips share out the row's leftover space as gap, growing to at most 48px,
+ * and wrap only once even the 8px minimum no longer fits.
+ *
+ * The gap therefore depends on how many chips there are, which a plain flex gap
+ * can't express: it's a fixed length. justify-content: space-between (the old
+ * behaviour) does respond to the count but hands out ALL the leftover space, so
+ * three chips ended up stranded across the whole search width. An auto-fit grid
+ * can't do it either — the repeat count is derived from the track's max sizing
+ * function, so capping a track at 48px of slack also makes it wrap as soon as
+ * 48px doesn't fit, far too early.
+ *
+ * So the count comes from :has() instead. --n resolves to the number of chips
+ * (each rule below overrides the last, so the highest match wins) and the gap
+ * is the exact leftover split between them, clamped to the 8-48px range. When
+ * the clamp bottoms out at 8px the row no longer fits and flex wraps, which is
+ * precisely the intended wrap point. */
 .hearth-filters {
 	display: flex;
 	flex-wrap: wrap;
-	/* Spread the chips from the first to the last edge of the row so they span
-	 * the whole search width and stay evenly distributed. Sizes are unchanged;
-	 * only the spacing between them is. Width matches the search column (i.e.
-	 * the search field), not the New-note button beside it. */
-	justify-content: space-between;
-	gap: 8px;
+	justify-content: flex-start;
+	--n: 1;
+	/* max(…, 1) keeps the single-chip case from dividing by zero. */
+	column-gap: clamp(8px, calc((100% - var(--n) * 38px) / max(var(--n) - 1, 1)), 48px);
+	/* A percentage row-gap would resolve against the container's indefinite
+	 * height and can collapse to 0, so wrapped rows get a fixed gap. */
+	row-gap: 8px;
 	width: 100%;
 }
+
+.hearth-filters:has(.hearth-filter:nth-child(2)) { --n: 2; }
+.hearth-filters:has(.hearth-filter:nth-child(3)) { --n: 3; }
+.hearth-filters:has(.hearth-filter:nth-child(4)) { --n: 4; }
+.hearth-filters:has(.hearth-filter:nth-child(5)) { --n: 5; }
+.hearth-filters:has(.hearth-filter:nth-child(6)) { --n: 6; }
+.hearth-filters:has(.hearth-filter:nth-child(7)) { --n: 7; }
+.hearth-filters:has(.hearth-filter:nth-child(8)) { --n: 8; }
+.hearth-filters:has(.hearth-filter:nth-child(9)) { --n: 9; }
+.hearth-filters:has(.hearth-filter:nth-child(10)) { --n: 10; }
+.hearth-filters:has(.hearth-filter:nth-child(11)) { --n: 11; }
+.hearth-filters:has(.hearth-filter:nth-child(12)) { --n: 12; }
+.hearth-filters:has(.hearth-filter:nth-child(13)) { --n: 13; }
+.hearth-filters:has(.hearth-filter:nth-child(14)) { --n: 14; }
 
 .hearth-filter {
 	display: flex;
@@ -1655,6 +1686,58 @@
 	height: 24px;
 }
 
+/* A vault image used as a tile icon (#119): the image covers the whole tile and
+ * the label is overlaid on top of it. */
+.hearth-link-tile.hearth-tile-has-image {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+
+.hearth-tile-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+/* Label sits over the image with a legibility scrim (a darkened pill) so text
+ * stays readable on any picture, light or dark. */
+.hearth-link-tile.hearth-tile-has-image .hearth-link-label {
+	position: relative;
+	z-index: 1;
+	max-width: calc(100% - 8px);
+	padding: 2px 8px;
+	border-radius: 6px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.55);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* An image tile that's too small to show its label just shows the image. */
+.hearth-link-tile.hearth-tile-has-image.is-icon-only .hearth-link-label {
+	display: none;
+}
+
+/* The small "?" help badge beside an icon field in the card editors (#119). */
+.hearth-icon-help {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	margin-left: 4px;
+	border-radius: 50%;
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--text-muted);
+	background: var(--background-modifier-border);
+	cursor: help;
+	flex: none;
+}
+
 /* When a tile is shrunk too small to show its label (added by applyTileSize),
  * hide the label and drop the gap so the icon centres exactly. Without this the
  * empty label + gap keep reserving space and push the icon above centre, so it
@@ -2237,8 +2320,8 @@
 }
 
 .hearth-agenda-row.is-today .hearth-agenda-daynum {
-	color: var(--text-on-accent);
-	background: var(--interactive-accent);
+	color: var(--interactive-accent);
+	background: color-mix(in srgb, var(--interactive-accent) 16%, transparent);
 	border-radius: 999px;
 	width: 24px;
 	height: 24px;
@@ -2279,8 +2362,8 @@
 }
 
 .hearth-agenda-row.is-today {
-	outline: 2px solid var(--interactive-accent);
-	outline-offset: -2px;
+	outline: 1px solid color-mix(in srgb, var(--interactive-accent) 45%, transparent);
+	outline-offset: -1px;
 }
 
 /* Heatmap tint for agenda rows, mirroring the grid's per-day tint. Built from
@@ -3248,12 +3331,22 @@
 	align-items: flex-start;
 }
 
+/* Columns read as tinted lanes, not opaque plates. The list layout draws no
+ * surface of its own, so the card's translucency and frost show through it; a
+ * solid --background-secondary column covered all of that and made a Kanban
+ * card look like a slab next to an otherwise see-through board. The lane tint
+ * is therefore both weakened and scaled by the board's --card-opacity, so it
+ * fades in step with the card surface it sits on. */
 .hearth-kanban-col {
 	flex: 1 0 140px;
 	min-width: 130px;
 	display: flex;
 	flex-direction: column;
-	background: var(--background-secondary);
+	background: color-mix(
+		in srgb,
+		var(--background-secondary) calc(var(--card-opacity, 1) * 40%),
+		transparent
+	);
 	border-radius: 8px;
 	max-height: 100%;
 }
@@ -3289,8 +3382,15 @@
 	border-radius: 6px;
 }
 
+/* Cards on the lane: a translucent fill (scaled by --card-opacity for the same
+ * reason as the column) with the hairline border doing the work of defining the
+ * card, rather than an opaque --background-primary tile. */
 .hearth-kanban-card {
-	background: var(--background-primary);
+	background: color-mix(
+		in srgb,
+		var(--background-primary) calc(var(--card-opacity, 1) * 55%),
+		transparent
+	);
 	border: 1px solid var(--background-modifier-border);
 	border-radius: 6px;
 	padding: 6px 8px;
@@ -3323,6 +3423,32 @@
 .hearth-task-column {
 	background: var(--background-modifier-hover);
 	color: var(--text-muted);
+}
+
+/* The TaskNotes status chip in the list layout. Raw frontmatter values are
+   usually lowercase ("open", "in-progress"), so capitalize them to read like a
+   label rather than a field value. */
+.hearth-task-statuschip {
+	text-transform: capitalize;
+}
+
+/* The chip is left-aligned against the task title instead of drifting into the
+   right-hand chip cluster: the title stops filling the row, and the chip's auto
+   right margin pushes the priority and date chips to the far edge. The marker
+   class is set in renderTaskStatus() rather than matched with :has(), which is
+   avoided here for its broad selector-invalidation cost. */
+.hearth-task.has-statuschip .hearth-task-text {
+	flex: 0 1 auto;
+	min-width: 0;
+}
+
+.hearth-task.has-statuschip .hearth-task-statuschip {
+	margin-right: auto;
+}
+
+/* A completed task's status chip recedes with the rest of the row. */
+.hearth-task.is-done .hearth-task-statuschip {
+	color: var(--text-faint);
 }
 
 /* "Add card" control at the bottom of a Kanban column (Kanban source). */

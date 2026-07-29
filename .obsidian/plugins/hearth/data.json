@@ -14,6 +14,8 @@
   "backgroundBlur": 2,
   "openOnStartup": true,
   "replaceNewTabs": true,
+  "focusSearchOnOpen": false,
+  "liveRefresh": false,
   "mobileSearchOnly": true,
   "showMobileActionBar": true,
   "mobileActionButtons": [
@@ -170,7 +172,8 @@
         "showTitle": true
       },
       "iconLucide": "home",
-      "maxWidth": 1600
+      "maxWidth": 1600,
+      "mobileDefault": true
     },
     {
       "id": "dash-mrym426c-1281",
@@ -498,5 +501,5 @@
   "taskNotesPriorityField": "priority",
   "taskNotesDoneValue": "done",
   "maxWidth": 1600,
-  "lastSeenVersion": "1.16.0"
+  "lastSeenVersion": "1.17.0"
 }
