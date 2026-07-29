@@ -61,12 +61,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://iqc.pt/edificacao/devocional/meditacoes/23282-quando-deus-nao-alivia-a-dor",
-                "title": "Quando Deus não alivia a dor",
+                "url": "https://mail.google.com/mail/u/0/#inbox",
+                "title": "Caixa de entrada (324) - dario.botas@gmail.com - Gmail",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Quando Deus não alivia a dor"
+              "title": "Caixa de entrada (324) - dario.botas@gmail.com - Gmail"
             }
           },
           {
@@ -84,7 +84,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -340,7 +340,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ce2f0b9356beb1d7",
+  "active": "e709e03bb4427547",
   "lastOpenFiles": [
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "10 - TAGS/2026-07.md",
