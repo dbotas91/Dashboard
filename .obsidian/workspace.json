@@ -18,32 +18,27 @@
             }
           },
           {
-            "id": "ce2f0b9356beb1d7",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
-            }
-          },
-          {
             "id": "ec5e31576fd271a0",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://forestry.md/",
-                "title": "Forestry.md - Open Source Digital Garden Hosting",
+                "url": "https://dashboard.forestry.md/pages/notas-dario?tab=site-settings",
+                "title": "notas-dario - Forestry Dashboard",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Forestry.md - Open Source Digital Garden Hosting"
+              "title": "notas-dario - Forestry Dashboard"
+            }
+          },
+          {
+            "id": "fb943fbb65833841",
+            "type": "leaf",
+            "state": {
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
             }
           },
           {
@@ -66,12 +61,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://notas-dario.vercel.app/06-daily-weekly-tasks/estudo-biblico-29-07-2026/",
-                "title": "Estudo Bíblico - 29-07-2026",
+                "url": "https://notas-dario.vercel.app/",
+                "title": "Home",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Estudo Bíblico - 29-07-2026"
+              "title": "Home"
             }
           },
           {
@@ -81,11 +76,11 @@
               "type": "webviewer",
               "state": {
                 "url": "https://mail.google.com/mail/u/2/#inbox",
-                "title": "Caixa de entrada (7 003) - darioabotas@gmail.com - Gmail",
+                "title": "Caixa de entrada (7 004) - darioabotas@gmail.com - Gmail",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Caixa de entrada (7 003) - darioabotas@gmail.com - Gmail"
+              "title": "Caixa de entrada (7 004) - darioabotas@gmail.com - Gmail"
             }
           },
           {
@@ -115,9 +110,23 @@
               "icon": "globe-2",
               "title": "Registo Utilizador - www.on4tech.pt"
             }
+          },
+          {
+            "id": "725d411d47c9135b",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -372,7 +381,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ce2f0b9356beb1d7",
+  "active": "725d411d47c9135b",
   "lastOpenFiles": [
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "10 - TAGS/2026-07.md",
