@@ -35,6 +35,7 @@ Estão organizados por ano-mês e referências aos Tags.
 - [[2026-07]]
 
 ### Agosto
+- [[2026-08]]
 ### Setembro
 ### Outubro
 ### Novembro

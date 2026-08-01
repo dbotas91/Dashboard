@@ -22,6 +22,7 @@ Estão organizados por ano-mês com referências às Tags.
 - [[2026-05]]
 - [[2026-06]]
 - [[2026-07]]
+- [[2026-08]]
 
 ### Todas as notas (ordenadas por data ascendente)
 - [[Reunião Zoom IQC - 01-02-2025]]
@@ -44,6 +45,7 @@ Estão organizados por ano-mês com referências às Tags.
 - [[Estudo Bíblico - 15-07-2026]]
 - [[Estudo Bíblico - 22-07-2026]]
 - [[Estudo Bíblico - 29-07-2026]]
+- [[Ceia e ED - 02-08-2026]]
 
 ## 2025
 ### Tags (Por ano-mês)

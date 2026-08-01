@@ -18,6 +18,45 @@
             }
           },
           {
+            "id": "8e5cbc7c17aebc23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
+            }
+          },
+          {
+            "id": "799b8db9e1be1eac",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
+            }
+          },
+          {
             "id": "e88f0a16c2541b8d",
             "type": "leaf",
             "state": {
@@ -37,30 +76,31 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://notas-dario.vercel.app/06-daily-weekly-tasks/estudo-biblico-29-07-2026/",
-                "title": "Estudo Bíblico - 29-07-2026",
+                "url": "https://www.bibliaon.com/salmos_para_ansiedade/",
+                "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Estudo Bíblico - 29-07-2026"
+              "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia"
             }
           },
           {
-            "id": "3b294d7cb4b6d3d1",
+            "id": "ed007ed2c004fa06",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": ".obsidian/bookmarks.json",
-                "bFile": ".obsidian/bookmarks.json",
-                "aRef": ""
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
               "icon": "diff",
-              "title": "Diff: bookmarks.json  (Working Tree)"
+              "title": "Diff: data.json  (Index)"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -123,8 +163,7 @@
               "title": "Recent files"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -316,11 +355,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b294d7cb4b6d3d1",
+  "active": "ed007ed2c004fa06",
   "lastOpenFiles": [
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "10 - TAGS/2026-07.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "10 - TAGS/2026-08.md",
+    "10 - TAGS/2026-07.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
     "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
@@ -337,16 +382,10 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/O que cada cristão deve saber acerca do Islão.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
-    "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "07 - INDEXES/Livros Cristãos.md",
     "00 - MAPS OF CONTENT/Formação.md",
-    "00 - MAPS OF CONTENT/Áreas.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "07 - INDEXES/Estudo Bíblico - microscópico.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",

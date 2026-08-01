@@ -2040,6 +2040,7 @@ Palm
 Pilots
 Pressing
 ProCTHX
+Pisar
 obj
 oQw
 ot
@@ -7669,6 +7670,7 @@ Firstly
 Foco
 Firme
 FiDCellular
+Familiar
 Creator
 CreationDate
 CW
@@ -19742,6 +19744,8 @@ limitations
 legs
 loops
 lineup
+livrarei
+livr
 Gecko
 Group
 GQ
@@ -28377,6 +28381,8 @@ ecosystem
 enhanced
 extender
 erratically
+esconderijo
+encarecidamente
 ca
 cW
 cEu
@@ -32288,6 +32294,8 @@ crashing
 caching
 clearing
 caches
+confiarei
+calcar
 BM
 BBox
 BHq
@@ -39057,6 +39065,7 @@ RunwayML
 Reboot
 Reality
 Restart
+Reconhecemos
 ExtGState
 Ei
 ET
@@ -43434,6 +43443,7 @@ tucked
 touching
 tops
 trapped
+tosquenejar
 stream
 sWz
 sj
@@ -46553,6 +46563,10 @@ switches
 splitters
 silly
 slowness
+seta
+suceder
+spide
+serpente
 xU
 xM
 xLq
@@ -54996,6 +55010,9 @@ adapter
 affordable
 adapters
 alivia
+acompanhantes
+ande
+assole
 dA
 dD
 dd
@@ -63389,6 +63406,7 @@ IdentitiesOnly
 Iniciar
 Into
 Ideation
+Inclusive
 nk
 nu
 nC
@@ -68709,6 +68727,12 @@ proprietary
 promoted
 processingDCloud
 plug
+permitida
+passarinheiro
+peste
+perniciosa
+penas
+praga
 OaL
 Oar
 OQ
@@ -70319,6 +70343,8 @@ OXck
 OCCA
 Orou
 Overheating
+Olho
+Onipotente
 WR
 Wfwp
 WY
@@ -80793,6 +80819,8 @@ mate
 marketer
 microphone
 movies
+mortandade
+molestar
 qd
 qm
 qI
@@ -85136,6 +85164,7 @@ indispensable
 inflections
 invaluable
 irreplaceable
+invocar
 kC
 kp
 kN
@@ -97413,6 +97442,7 @@ blending
 brimming
 buffering
 buffers
+broquel
 vdjL
 vd
 vR
@@ -99422,6 +99452,8 @@ vendilh
 voices
 voiceovers
 ventilation
+voe
+vacilar
 Dnb
 DFp
 DX
@@ -104301,6 +104333,8 @@ reboot
 reboots
 receiver
 router
+retiro
+responderei
 hF
 hj
 hC
