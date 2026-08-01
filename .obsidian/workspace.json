@@ -18,115 +18,49 @@
             }
           },
           {
-            "id": "ec5e31576fd271a0",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://dashboard.forestry.md/pages/notas-dario?tab=site-settings",
-                "title": "notas-dario - Forestry Dashboard",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "notas-dario - Forestry Dashboard"
-            }
-          },
-          {
-            "id": "fb943fbb65833841",
-            "type": "leaf",
-            "state": {
-              "type": "digital-garden-publication-center",
-              "state": {},
-              "icon": "book-up",
-              "title": "Publication Center"
-            }
-          },
-          {
             "id": "e88f0a16c2541b8d",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.youtube.com/",
-                "title": "YouTube",
+                "url": "https://www.youtube.com/watch?v=P5J9-9ynrUE&list=TLPQMjkwNzIwMjaC2EkuQmkdLg&index=5",
+                "title": "1 MÊS COM O RETROID POCKET 5 DA OLX: VALEU A PENA COMPRAR USADO? - YouTube",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "YouTube"
+              "title": "1 MÊS COM O RETROID POCKET 5 DA OLX: VALEU A PENA COMPRAR USADO? - YouTube"
             }
           },
           {
-            "id": "e709e03bb4427547",
+            "id": "5932a97b4de7989d",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://notas-dario.vercel.app/",
-                "title": "Home",
+                "url": "https://notas-dario.vercel.app/06-daily-weekly-tasks/estudo-biblico-29-07-2026/",
+                "title": "Estudo Bíblico - 29-07-2026",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Home"
+              "title": "Estudo Bíblico - 29-07-2026"
             }
           },
           {
-            "id": "4dfa22c0b9906d15",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://mail.google.com/mail/u/2/#inbox",
-                "title": "Caixa de entrada (7 004) - darioabotas@gmail.com - Gmail",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Caixa de entrada (7 004) - darioabotas@gmail.com - Gmail"
-            }
-          },
-          {
-            "id": "d276da884c229871",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://vercel.com/darios-projects-4e59f1f1/my-garden/deployments",
-                "title": "my-garden – Deployments – Vercel",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "my-garden – Deployments – Vercel"
-            }
-          },
-          {
-            "id": "358b1328da5e93be",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.on4tech.pt/p5-registo-utilizador-pt?id_enc=8512&show_compras=1",
-                "title": "Registo Utilizador - www.on4tech.pt",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Registo Utilizador - www.on4tech.pt"
-            }
-          },
-          {
-            "id": "725d411d47c9135b",
+            "id": "3b294d7cb4b6d3d1",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aFile": ".obsidian/bookmarks.json",
+                "bFile": ".obsidian/bookmarks.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "title": "Diff: bookmarks.json  (Working Tree)"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -189,7 +123,8 @@
               "title": "Recent files"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -381,7 +316,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "725d411d47c9135b",
+  "active": "3b294d7cb4b6d3d1",
   "lastOpenFiles": [
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "10 - TAGS/2026-07.md",

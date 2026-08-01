@@ -9,6 +9,43 @@
       "type": "file",
       "ctime": 1784891772680,
       "path": "07 - INDEXES/Mensagens de Domingo.md"
+    },
+    {
+      "type": "group",
+      "ctime": 1785319835361,
+      "items": [
+        {
+          "type": "url",
+          "ctime": 1785318865072,
+          "url": "https://notas-dario.forestry.md/",
+          "title": "Notas-Dario Forestry.md - Home"
+        },
+        {
+          "type": "url",
+          "ctime": 1785318890920,
+          "url": "https://notas-dario.vercel.app/",
+          "title": "Notas-Dario Vercel - Home"
+        },
+        {
+          "type": "url",
+          "ctime": 1785319761040,
+          "url": "https://dashboard.forestry.md/",
+          "title": "notas-dario - Forestry Dashboard"
+        },
+        {
+          "type": "url",
+          "ctime": 1785319865513,
+          "url": "https://vercel.com/darios-projects-4e59f1f1/my-garden/deployments",
+          "title": "my-garden – Deployments – Vercel"
+        }
+      ],
+      "title": "Notas online"
+    },
+    {
+      "type": "url",
+      "ctime": 1785342188466,
+      "url": "https://www.youtube.com/watch?v=nxYWXBjxDew",
+      "title": "Lenovo ThinkPad X390 Internal 4G LTE WWAN Modem Install (M.2 Guide) - YouTube"
     }
   ]
 }

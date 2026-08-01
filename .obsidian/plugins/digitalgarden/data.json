@@ -4,6 +4,7 @@
   "githubUserName": "dbotas91",
   "gardenBaseUrl": "",
   "prHistory": [
+    "https://github.com/dbotas91/my-garden/pull/21",
     "https://github.com/dbotas91/my-garden/pull/20",
     "https://github.com/dbotas91/my-garden/pull/19",
     "https://github.com/dbotas91/my-garden/pull/12",
@@ -37,9 +38,9 @@
   "publishPlatform": "SelfHosted",
   "contentClassesKey": "dg-content-classes",
   "forestrySettings": {
-    "forestryPageName": "",
-    "apiKey": "",
-    "baseUrl": ""
+    "forestryPageName": "notas-dario",
+    "apiKey": "fmd_27VY0hUy0OJuJvbhUqHwI9LbqLBSQSoSb",
+    "baseUrl": "notas-dario.forestry.md"
   },
   "defaultNoteSettings": {
     "dgHomeLink": true,

@@ -10813,6 +10813,9 @@ function notePathBase(settings) {
 function imagePathBase(settings) {
   return `${contentBaseDir(settings)}${IMAGE_PATH_BASE}`;
 }
+function imageHashKey(assetPath) {
+  return assetPath.replace(/^\/img\/user\//, "");
+}
 function sitePath(settings, sub) {
   return `${contentBaseDir(settings)}src/site${sub}`;
 }
@@ -12781,7 +12784,10 @@ function tryDVEvaluate(query, file, dvApi) {
 function tryEval(query) {
   let result = "";
   try {
-    result = (0, eval)("const dv = DataviewAPI;" + query);
+    const evaluateQuery = new Function("dv", `return ${query}`);
+    result = evaluateQuery(
+      window.DataviewAPI
+    );
   } catch (e) {
     import_js_logger5.default.warn("eval did not yield any result", e);
   }
@@ -12809,6 +12815,73 @@ function delay(milliseconds) {
 
 // src/compiler/CanvasCompiler.ts
 var import_obsidian4 = require("obsidian");
+
+// src/compiler/frontmatterLinks.ts
+var FRONTMATTER_IMAGE_EXTENSIONS = /\.(png|jpg|jpeg|gif|webp|svg)$/i;
+function getFrontmatterImageLinkpath(value) {
+  if (typeof value !== "string") {
+    return null;
+  }
+  let linkpath = value.trim();
+  const wikilink = linkpath.match(/^!?\[\[([^\]]+)\]\]$/);
+  if (wikilink) {
+    linkpath = wikilink[1].split("|")[0].split("#")[0].trim();
+  }
+  if (linkpath.startsWith("http")) {
+    return null;
+  }
+  if (!FRONTMATTER_IMAGE_EXTENSIONS.test(linkpath)) {
+    return null;
+  }
+  return linkpath;
+}
+function resolveFrontmatterImageValue(value, resolveLinkpath) {
+  const linkpath = getFrontmatterImageLinkpath(value);
+  if (!linkpath) {
+    return value;
+  }
+  const resolvedPath = resolveLinkpath(linkpath);
+  if (!resolvedPath || resolvedPath === linkpath) {
+    return value;
+  }
+  const trimmed = value.trim();
+  const wikilink = trimmed.match(/^(!?)\[\[([^\]]+)\]\]$/);
+  if (wikilink) {
+    const suffixStart = wikilink[2].search(/[|#]/);
+    const suffix = suffixStart === -1 ? "" : wikilink[2].slice(suffixStart);
+    return `${wikilink[1]}[[${resolvedPath}${suffix}]]`;
+  }
+  return resolvedPath;
+}
+function resolveFrontmatterValue(value, resolveLinkpath) {
+  if (Array.isArray(value)) {
+    return value.map(
+      (item) => resolveFrontmatterValue(item, resolveLinkpath)
+    );
+  }
+  if (typeof value !== "string") {
+    return value;
+  }
+  if (getFrontmatterImageLinkpath(value)) {
+    return resolveFrontmatterImageValue(value, resolveLinkpath);
+  }
+  const wikilink = value.trim().match(/^(!?)\[\[([^\]]+)\]\]$/);
+  if (!wikilink) {
+    return value;
+  }
+  const suffixStart = wikilink[2].search(/[|#]/);
+  const target = (suffixStart === -1 ? wikilink[2] : wikilink[2].slice(0, suffixStart)).trim();
+  const suffix = suffixStart === -1 ? "" : wikilink[2].slice(suffixStart);
+  const resolvedPath = resolveLinkpath(target);
+  if (!resolvedPath || !resolvedPath.endsWith(".md")) {
+    return value;
+  }
+  const noteLinkpath = resolvedPath.slice(0, -".md".length);
+  if (noteLinkpath === target) {
+    return value;
+  }
+  return `${wikilink[1]}[[${noteLinkpath}${suffix}]]`;
+}
 
 // src/compiler/FrontmatterCompiler.ts
 var FrontmatterCompiler = class {
@@ -12863,7 +12936,10 @@ var FrontmatterCompiler = class {
       publishedFrontMatter
     );
     publishedFrontMatter = this.addTimestampsFrontmatter(file)(publishedFrontMatter);
-    const userProperties = this.extractUserProperties(fileFrontMatter);
+    const userProperties = this.resolveLinkProperties(
+      this.extractUserProperties(fileFrontMatter),
+      file
+    );
     const fullFrontMatter = (publishedFrontMatter == null ? void 0 : publishedFrontMatter.dgPassFrontmatter) ? __spreadProps(__spreadValues(__spreadValues({}, fileFrontMatter), publishedFrontMatter), {
       "dg-note-properties": userProperties
     }) : __spreadProps(__spreadValues({}, publishedFrontMatter), { "dg-note-properties": userProperties });
@@ -12977,10 +13053,27 @@ ${frontMatterString}
     return publishedFrontMatter;
   }
   /**
-   * Extracts all user-defined frontmatter properties, excluding
-   * Obsidian internal fields and dg-* plugin fields that are already
-   * handled by the compilation pipeline.
+   * Rewrite link-shaped property values (images and note wikilinks,
+   * including arrays of them) to full vault paths via the vault's own
+   * link resolution, so the published values match where assets are
+   * uploaded and which notes they target.
    */
+  resolveLinkProperties(userProps, file) {
+    const resolved = {};
+    for (const [key2, value] of Object.entries(userProps)) {
+      resolved[key2] = resolveFrontmatterValue(
+        value,
+        (linkpath) => {
+          var _a6, _b3;
+          return (_b3 = (_a6 = file.metadataCache.getFirstLinkpathDest(
+            linkpath,
+            file.getPath()
+          )) == null ? void 0 : _a6.path) != null ? _b3 : null;
+        }
+      );
+    }
+    return resolved;
+  }
   extractUserProperties(frontmatter) {
     if (!frontmatter) return {};
     const skipKeys = /* @__PURE__ */ new Set([
@@ -19582,24 +19675,6 @@ function createBaseCodeBlock(baseFileText, transclusionFileName) {
   const [baseFileName, selectedViewName] = transclusionFileName.split("#");
   return "\n```base\n" + selectBaseView(baseFileText, selectedViewName == null ? void 0 : selectedViewName.trim(), baseFileName) + "\n```\n";
 }
-var FRONTMATTER_IMAGE_EXTENSIONS = /\.(png|jpg|jpeg|gif|webp|svg)$/i;
-function getFrontmatterImageLinkpath(value) {
-  if (typeof value !== "string") {
-    return null;
-  }
-  let linkpath = value.trim();
-  const wikilink = linkpath.match(/^!?\[\[([^\]]+)\]\]$/);
-  if (wikilink) {
-    linkpath = wikilink[1].split("|")[0].split("#")[0].trim();
-  }
-  if (linkpath.startsWith("http")) {
-    return null;
-  }
-  if (!FRONTMATTER_IMAGE_EXTENSIONS.test(linkpath)) {
-    return null;
-  }
-  return linkpath;
-}
 var GardenPageCompiler = class {
   constructor(vault, settings, metadataCache, getFilesMarkedForPublishing) {
     this.resolveLinkedFile = (linkPath, sourcePath) => {
@@ -20867,8 +20942,7 @@ var Publisher = class {
   uploadAssets(_0) {
     return __async(this, arguments, function* (assets, remoteImageHashes = {}) {
       for (const image of assets.images) {
-        const hashKey = image.path.replace("/img/user/", "");
-        const remoteHash = remoteImageHashes[hashKey];
+        const remoteHash = remoteImageHashes[imageHashKey(image.path)];
         if (remoteHash && image.localHash && remoteHash === image.localHash) {
           import_js_logger7.default.debug(`Skipping unchanged image: ${image.path}`);
           continue;
@@ -20974,12 +21048,15 @@ var PublishStatusManager = class {
       const marked = yield this.publisher.getFilesMarkedForPublishing();
       for (const file of marked.notes) {
         const compiledFile = yield file.compile();
-        const [content, _] = compiledFile.getCompiledFile();
+        const [content, assets] = compiledFile.getCompiledFile();
         const localHash = generateBlobHash(content);
         const remoteHash = remoteNoteHashes[file.getPath()];
+        const hasMissingRemoteImage = assets.images.some(
+          (image) => !remoteImageHashes[imageHashKey(image.path)]
+        );
         if (!remoteHash) {
           unpublishedNotes.push(compiledFile);
-        } else if (remoteHash === localHash) {
+        } else if (remoteHash === localHash && !hasMissingRemoteImage) {
           compiledFile.setRemoteHash(remoteHash);
           publishedNotes.push(compiledFile);
         } else {
@@ -25262,7 +25339,7 @@ var flags = EFFECT_TRANSPARENT | EFFECT_PRESERVED;
 function boundary(node, props, children, transform_error) {
   new Boundary(node, props, children, transform_error);
 }
-var _anchor, _hydrate_open, _props, _children, _effect, _main_effect, _pending_effect, _failed_effect, _offscreen_fragment, _local_pending_count, _pending_count, _pending_count_update_queued, _dirty_effects, _maybe_dirty_effects, _effect_pending, _effect_pending_subscriber, _Boundary_instances, hydrate_resolved_content_fn, hydrate_failed_content_fn, hydrate_pending_content_fn, render_fn, resolve_fn, run_fn, update_pending_count_fn, handle_error_fn;
+var _anchor, _hydrate_open, _props, _children, _effect, _main_effect, _pending_effect, _failed_effect, _offscreen_fragment, _local_pending_count, _pending_count, _pending_count_update_queued, _dirty_effects, _maybe_dirty_effects, _effect_pending, _effect_pending_subscriber, _Boundary_instances, hydrate_resolved_content_fn, hydrate_failed_content_fn, create_reset_fn, hydrate_pending_content_fn, render_fn, resolve_fn, run_fn, update_pending_count_fn, handle_error_fn;
 var Boundary = class {
   /**
    * @param {TemplateNode} node
@@ -25453,15 +25530,55 @@ hydrate_resolved_content_fn = function() {
  */
 hydrate_failed_content_fn = function(error) {
   const failed = __privateGet(this, _props).failed;
+  const { reset: reset2, invoke_onerror } = __privateMethod(this, _Boundary_instances, create_reset_fn).call(this, error);
+  queue_micro_task(invoke_onerror);
   if (!failed) return;
   __privateSet(this, _failed_effect, branch(() => {
     failed(
       __privateGet(this, _anchor),
       () => error,
-      () => () => {
-      }
+      () => reset2
     );
   }));
+};
+/**
+ * Creates the `reset` function for a failed boundary, along with a function
+ * that invokes `onerror` with it (if provided)
+ * @param {unknown} error
+ * @returns {{ reset: () => void, invoke_onerror: () => void }}
+ */
+create_reset_fn = function(error) {
+  var did_reset = false;
+  var calling_on_error = false;
+  const reset2 = () => {
+    if (did_reset) {
+      svelte_boundary_reset_noop();
+      return;
+    }
+    did_reset = true;
+    if (calling_on_error) {
+      svelte_boundary_reset_onerror();
+    }
+    if (__privateGet(this, _failed_effect) !== null) {
+      pause_effect(__privateGet(this, _failed_effect), () => {
+        __privateSet(this, _failed_effect, null);
+      });
+    }
+    __privateMethod(this, _Boundary_instances, run_fn).call(this, () => {
+      __privateMethod(this, _Boundary_instances, render_fn).call(this);
+    });
+  };
+  const invoke_onerror = () => {
+    var _a6, _b3;
+    try {
+      calling_on_error = true;
+      (_b3 = (_a6 = __privateGet(this, _props)).onerror) == null ? void 0 : _b3.call(_a6, error, reset2);
+      calling_on_error = false;
+    } catch (err) {
+      invoke_error_boundary(err, __privateGet(this, _effect) && __privateGet(this, _effect).parent);
+    }
+  };
+  return { reset: reset2, invoke_onerror };
 };
 hydrate_pending_content_fn = function() {
   const pending2 = __privateGet(this, _props).pending;
@@ -25602,36 +25719,10 @@ handle_error_fn = function(error) {
     next();
     set_hydrate_node(skip_nodes());
   }
-  var onerror = __privateGet(this, _props).onerror;
   let failed = __privateGet(this, _props).failed;
-  var did_reset = false;
-  var calling_on_error = false;
-  const reset2 = () => {
-    if (did_reset) {
-      svelte_boundary_reset_noop();
-      return;
-    }
-    did_reset = true;
-    if (calling_on_error) {
-      svelte_boundary_reset_onerror();
-    }
-    if (__privateGet(this, _failed_effect) !== null) {
-      pause_effect(__privateGet(this, _failed_effect), () => {
-        __privateSet(this, _failed_effect, null);
-      });
-    }
-    __privateMethod(this, _Boundary_instances, run_fn).call(this, () => {
-      __privateMethod(this, _Boundary_instances, render_fn).call(this);
-    });
-  };
   const handle_error_result = (transformed_error) => {
-    try {
-      calling_on_error = true;
-      onerror == null ? void 0 : onerror(transformed_error, reset2);
-      calling_on_error = false;
-    } catch (error2) {
-      invoke_error_boundary(error2, __privateGet(this, _effect) && __privateGet(this, _effect).parent);
-    }
+    const { reset: reset2, invoke_onerror } = __privateMethod(this, _Boundary_instances, create_reset_fn).call(this, transformed_error);
+    invoke_onerror();
     if (failed) {
       __privateSet(this, _failed_effect, __privateMethod(this, _Boundary_instances, run_fn).call(this, () => {
         try {
@@ -32721,7 +32812,8 @@ var TextInputSuggest = class {
     const suggestions = this.getSuggestions(inputStr);
     if (suggestions.length > 0) {
       this.suggest.setSuggestions(suggestions);
-      this.open(this.app.dom.appContainerEl, this.inputEl);
+      const appContainerEl = this.app.dom.appContainerEl;
+      this.open(appContainerEl, this.inputEl);
     }
   }
   open(container, inputEl) {
@@ -36848,6 +36940,16 @@ var SettingView = class {
           markAsChanged();
         });
       });
+      new import_obsidian15.Setting(noteSettingsModal.contentEl).setName("Show Graph Depth Control (dg-show-graph-depth-control)").setDesc("When turned on, graph will show a depth slider.").addToggle((t) => {
+        toggles["dgShowGraphDepthControl"] = t;
+        t.setValue(
+          this.settings.defaultNoteSettings.dgShowGraphDepthControl
+        );
+        t.onChange((val) => {
+          this.settings.defaultNoteSettings.dgShowGraphDepthControl = val;
+          markAsChanged();
+        });
+      });
       new import_obsidian15.Setting(noteSettingsModal.contentEl).setName("Show backlinks for notes (dg-show-backlinks)").setDesc(
         "When turned on, notes will show backlinks in a sidebar on desktop and at the bottom of the page on mobile."
       ).addToggle((t) => {
@@ -40216,6 +40318,7 @@ var DEFAULT_SETTINGS = {
     dgPassFrontmatter: false,
     dgShowBacklinks: false,
     dgShowLocalGraph: false,
+    dgShowGraphDepthControl: false,
     dgShowInlineTitle: false,
     dgShowFileTree: false,
     dgEnableSearch: false,
