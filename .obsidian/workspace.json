@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a13cf328d71ddc47",
+        "id": "bc64d7c430291d2f",
         "type": "tabs",
         "children": [
           {
-            "id": "57588c1d11e58878",
+            "id": "bfa53c0c546034a1",
             "type": "leaf",
             "state": {
               "type": "hearth-home-view",
@@ -18,88 +18,63 @@
             }
           },
           {
-            "id": "8e5cbc7c17aebc23",
+            "id": "203da44ed0668375",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "url": "https://www.biblegateway.com/passage/?search=Tito%201%3A8%2D10&version=ARC",
+                "title": "Tito 1:8-10 ARC - mas dado à hospitalidade, amigo do - Bible Gateway",
+                "mode": "webview"
               },
-              "icon": "lucide-file",
-              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
+              "icon": "globe-2",
+              "title": "Tito 1:8-10 ARC - mas dado à hospitalidade, amigo do - Bible Gateway"
             }
           },
           {
-            "id": "799b8db9e1be1eac",
+            "id": "5add47f0fb0e18cf",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
                 "aFile": ".obsidian/plugins/digitalgarden/data.json",
                 "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
-            }
-          },
-          {
-            "id": "e88f0a16c2541b8d",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.youtube.com/watch?v=P5J9-9ynrUE&list=TLPQMjkwNzIwMjaC2EkuQmkdLg&index=5",
-                "title": "1 MÊS COM O RETROID POCKET 5 DA OLX: VALEU A PENA COMPRAR USADO? - YouTube",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "1 MÊS COM O RETROID POCKET 5 DA OLX: VALEU A PENA COMPRAR USADO? - YouTube"
-            }
-          },
-          {
-            "id": "5932a97b4de7989d",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.bibliaon.com/salmos_para_ansiedade/",
-                "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia"
-            }
-          },
-          {
-            "id": "ed007ed2c004fa06",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
                 "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "title": "Diff: data.json  (Working Tree)"
+            }
+          },
+          {
+            "id": "68e886bd0c4b49cf",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://gemini.google.com/app/e74934542b4d691f",
+                "title": "Resposta a Carta de Fábio - Google Gemini",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Resposta a Carta de Fábio - Google Gemini"
+            }
+          },
+          {
+            "id": "647796238c1eac69",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://duck.ai/chat",
+                "title": "access apolo from artemis outside local network",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "access apolo from artemis outside local network"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -131,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "?",
+                "query": "nobel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -139,7 +114,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Procurar"
             }
           },
           {
@@ -166,7 +141,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 206
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -175,7 +150,7 @@
       {
         "id": "66d2499bd7c7c2cf",
         "type": "tabs",
-        "dimension": 51.864035087719294,
+        "dimension": 47.82608695652174,
         "children": [
           {
             "id": "ca992fb3ee138cd9",
@@ -222,7 +197,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Etiquetas"
             }
           },
           {
@@ -231,12 +206,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Índice"
+              "title": "Índice de 0. Descobrindo o Porquê da Fé - leitura inicial"
             }
           },
           {
@@ -250,21 +226,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "Todas as propriedades"
             }
           },
           {
-            "id": "f34122c6fa88596e",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
-            "id": "c4892fd3bf0af16c",
+            "id": "78c720107f04a0ac",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -272,36 +238,14 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "9275b0c2fcd66d98",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md"
-              },
-              "icon": "lucide-info",
-              "title": "Propriedades do ficheiro para Estudo Bíblico - 11-03-2026"
-            }
-          },
-          {
-            "id": "d2e6ab0b849de0ce",
-            "type": "leaf",
-            "state": {
-              "type": "git-history-view",
-              "state": {},
-              "icon": "history",
-              "title": "History"
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "aa213c339baded63",
         "type": "tabs",
-        "dimension": 48.135964912280706,
+        "dimension": 52.17391304347826,
         "children": [
           {
             "id": "4f23ffc45f683c25",
@@ -317,10 +261,24 @@
             "id": "c7bf261309fc083c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização de diagrama de grafo"
+              "type": "markdown",
+              "state": {
+                "file": "09 - STATUS NOTES/Adult.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Adult"
             }
           }
         ],
@@ -328,70 +286,64 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337
+    "width": 283
   },
   "left-ribbon": {
     "hiddenItems": {
-      "hearth:Open Hearth home": false,
-      "digitalgarden:Digital Garden Publication Center": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "canvas:Criar novo Canvas": false,
-      "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
       "graph:Abrir Visualização de diagrama de grafo": false,
+      "canvas:Criar novo Canvas": false,
       "daily-notes:Abrir nota de hoje": false,
       "templates:Inserir templates": false,
       "command-palette:Abrir paleta de comando": false,
       "workspaces:Gerir esquema da área de trabalho": false,
       "publish:Publicar alterações": false,
+      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
       "obsidian-importer:Open Importer": false,
       "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false
+      "hearth:Open Hearth home": false
     }
   },
-  "active": "ed007ed2c004fa06",
+  "active": "5add47f0fb0e18cf",
   "lastOpenFiles": [
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-    "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "10 - TAGS/2026-08.md",
-    "10 - TAGS/2026-07.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
-    "Home.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bookmarks - Obsidian Help.md",
-    "07 - INDEXES/Site IQC.md",
-    "10 - TAGS/aliancismo.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
+    "10 - TAGS/2026-07.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "09 - STATUS NOTES/Adult.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "Site IQC/Tarefas/Artigo Histórico sobre Bart Ehrman para a IQC 189535ff8bdc80e4a6e6e1dd64df5f0a.html.md",
-    "Site IQC/Tarefas",
-    "Site IQC",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Ingratidão e murmúrio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que cada cristão deve saber acerca do Islão.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 01-07-2026.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
-    "07 - INDEXES/Livros Cristãos.md",
-    "00 - MAPS OF CONTENT/Formação.md",
+    "10 - TAGS/reuniaodehomens.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2026.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bookmarks - Obsidian Help.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
+    "10 - TAGS/aliancismo.md",
+    "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
@@ -402,6 +354,12 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-green.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-blue.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-yellow.png",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/style.css",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin (copy).js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/_style.css",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]

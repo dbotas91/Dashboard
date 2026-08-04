@@ -4,12 +4,11 @@
   "githubUserName": "dbotas91",
   "gardenBaseUrl": "",
   "prHistory": [
-    "https://github.com/dbotas91/my-garden/pull/21",
-    "https://github.com/dbotas91/my-garden/pull/20",
-    "https://github.com/dbotas91/my-garden/pull/19",
-    "https://github.com/dbotas91/my-garden/pull/12",
+    "https://github.com/dbotas91/my-garden/pull/17",
     "https://github.com/dbotas91/my-garden/pull/6",
-    "https://github.com/dbotas91/my-garden/pull/17"
+    "https://github.com/dbotas91/my-garden/pull/12",
+    "https://github.com/dbotas91/my-garden/pull/19",
+    "https://github.com/dbotas91/my-garden/pull/20"
   ],
   "baseTheme": "dark",
   "theme": "{\"name\":\"Catppuccin\",\"author\":\"catppuccin\",\"repo\":\"catppuccin/obsidian\",\"screenshot\":\"assets/screenshot.png\",\"modes\":[\"dark\",\"light\"],\"cssUrl\":\"https://raw.githubusercontent.com/catppuccin/obsidian/HEAD/theme.css\"}",
@@ -38,9 +37,9 @@
   "publishPlatform": "SelfHosted",
   "contentClassesKey": "dg-content-classes",
   "forestrySettings": {
-    "forestryPageName": "notas-dario",
-    "apiKey": "fmd_27VY0hUy0OJuJvbhUqHwI9LbqLBSQSoSb",
-    "baseUrl": "notas-dario.forestry.md"
+    "forestryPageName": "",
+    "apiKey": "",
+    "baseUrl": ""
   },
   "defaultNoteSettings": {
     "dgHomeLink": true,
