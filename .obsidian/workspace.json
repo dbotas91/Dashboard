@@ -39,7 +39,7 @@
               "state": {
                 "url": "https://gemini.google.com/app/e74934542b4d691f",
                 "title": "Resposta a Carta de Fábio - Google Gemini",
-                "mode": "blank"
+                "mode": "webview"
               },
               "icon": "globe-2",
               "title": "Resposta a Carta de Fábio - Google Gemini"
@@ -298,7 +298,7 @@
       "obsidian-importer:Import notes": false
     }
   },
-  "active": "68e886bd0c4b49cf",
+  "active": "78c720107f04a0ac",
   "lastOpenFiles": [
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
