@@ -5,5 +5,12 @@
   "showLineNumber": true,
   "promptDelete": false,
   "attachmentFolderPath": "08 - ATTACHMENTS",
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 100
+  }
 }

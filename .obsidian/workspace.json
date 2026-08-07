@@ -32,6 +32,16 @@
             }
           },
           {
+            "id": "e308fd315811904f",
+            "type": "leaf",
+            "state": {
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
+            }
+          },
+          {
             "id": "68e886bd0c4b49cf",
             "type": "leaf",
             "state": {
@@ -52,15 +62,30 @@
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat",
-                "title": "access apolo from artemis outside local network",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "access apolo from artemis outside local network"
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+            }
+          },
+          {
+            "id": "7a68420d928fade3",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -298,12 +323,12 @@
       "obsidian-importer:Import notes": false
     }
   },
-  "active": "78c720107f04a0ac",
+  "active": "7a68420d928fade3",
   "lastOpenFiles": [
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
     "09 - STATUS NOTES/Adult.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "10 - TAGS/2026-08.md",
