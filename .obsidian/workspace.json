@@ -23,26 +23,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.biblegateway.com/passage/?search=Tito%201%3A8%2D10&version=ARC",
-                "title": "Tito 1:8-10 ARC - mas dado à hospitalidade, amigo do - Bible Gateway",
+                "url": "https://www.biblegateway.com/passage/?search=Colossenses%202&version=ARC",
+                "title": "Colossenses 2 ARC - Porque quero que saibais quão grande - Bible Gateway",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Tito 1:8-10 ARC - mas dado à hospitalidade, amigo do - Bible Gateway"
-            }
-          },
-          {
-            "id": "5add47f0fb0e18cf",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "title": "Colossenses 2 ARC - Porque quero que saibais quão grande - Bible Gateway"
             }
           },
           {
@@ -53,7 +39,7 @@
               "state": {
                 "url": "https://gemini.google.com/app/e74934542b4d691f",
                 "title": "Resposta a Carta de Fábio - Google Gemini",
-                "mode": "webview"
+                "mode": "blank"
               },
               "icon": "globe-2",
               "title": "Resposta a Carta de Fábio - Google Gemini"
@@ -150,7 +136,7 @@
       {
         "id": "66d2499bd7c7c2cf",
         "type": "tabs",
-        "dimension": 47.82608695652174,
+        "dimension": 48.2367758186398,
         "children": [
           {
             "id": "ca992fb3ee138cd9",
@@ -245,7 +231,7 @@
       {
         "id": "aa213c339baded63",
         "type": "tabs",
-        "dimension": 52.17391304347826,
+        "dimension": 51.7632241813602,
         "children": [
           {
             "id": "4f23ffc45f683c25",
@@ -286,7 +272,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283
+    "width": 253
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -302,19 +288,23 @@
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
-      "obsidian-importer:Open Importer": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "hearth:Open Hearth home": false
+      "hearth:Open Hearth home": false,
+      "obsidian-importer:Import notes": false
     }
   },
-  "active": "5add47f0fb0e18cf",
+  "active": "68e886bd0c4b49cf",
   "lastOpenFiles": [
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
+    "09 - STATUS NOTES/Adult.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "10 - TAGS/2026-08.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
@@ -326,7 +316,6 @@
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "09 - STATUS NOTES/Adult.md",
     "10 - TAGS/reuniaodehomens.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2026.md",
@@ -338,10 +327,7 @@
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bookmarks - Obsidian Help.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
-    "10 - TAGS/aliancismo.md",
-    "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",

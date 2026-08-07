@@ -19,7 +19,7 @@ Tags:
 
 Querido irmão Fábio,
 
-Graça e paz do Senhor Jesus.
+Graça e paz do Senhor Jesus e de nós na IQC (principalmente dos jovens).
 
 Olho para a tua carta de 21 de janeiro de 2018 e é impossível não sorrir ao recordar a tua dedicação, aquela tua oração e a simplicidade sincera com que te dirigiste a nós. Escreveste-nos às 4 da manhã, movido pelo zelo de manejar bem a Palavra da Verdade (2 Timóteo 2:15), e recordaste-nos de que, mesmo com um oceano a separar-nos, o Espírito Santo nos mantinha do mesmo lado.
 
@@ -43,14 +43,19 @@ A Palavra de Deus que tanto amas lembra-nos em Isaías 40:29-31 que Ele _"dá fo
 
 Não te escrevemos para te fazer cobranças, nem para julgar o teu momento espiritual. Escrevemos-te como irmãos que te amam, que se lembram do teu zelo e que continuam a orar por ti. O mesmo Deus que esteve contigo naquelas madrugadas de estudo e no Quimbo é o Deus que te quer abraçar hoje, onde quer que estejas. As portas do nosso coração e da nossa comunhão continuam abertas para ti, exatamente como estavam há oito anos.
 
-Gostaria muito de saber como estás, ouvir a tua voz e reconectar-me contigo. Quando puderes e quiseres, dá-nos notícias tuas.
+Gostaria muito de saber como estás, ouvir a tua voz e ajudar no que conseguir. Quando puderes e quiseres, dá-nos notícias tuas.
 
 Que o Senhor Jesus guarde a tua vida, fortaleça o teu coração e te lembre, a cada dia, do amor incomparável que Ele tem por ti.
 
 Com fraterno amor em Cristo e muitas saudades,
 
-**[Dário Botas]**
+**Dário Botas**
 
-_(Em nome da tua família e dos teus irmãos em Cristo na Quinta do Conde)_
+_(Em nome da minha família e dos teus irmãos em Cristo na Quinta do Conde)_
 
 P.S. As crianças da Escola Dominical de hoje, os jovens e as famílias mandam-te abraços e saudações no Senhor! Muitos deles já cresceram desde aquela altura, mas outros (como os meus filhos) estão agora na Escola Dominical e também estão a trabalhar para a obra com as professoras.
+
+
+---
+
+Agora quero escrever uma outra dirigida ao Cristóvão. Dentro da mesma lógica. Lembrando da igreja local que ele tinha começado com a evangelização de várias pessoas, o pouco tempo que estive com eles mas que foi marcante e que recordo e falo com a minha esposa até hoje

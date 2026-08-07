@@ -2022,6 +2022,7 @@ Plowshares
 Pooh
 Pagan
 Prima
+Praticamente
 obj
 oQw
 ot
@@ -9815,6 +9816,7 @@ Carreira
 Consequences
 Classical
 Christianity
+Compreendo
 Mozilla
 ModDate
 MK
@@ -11771,6 +11773,7 @@ Moeda
 Monop
 Metzger
 Miranda
+Mudaste
 Linux
 Length
 LJ
@@ -13548,6 +13551,8 @@ Leucemia
 Linfobl
 Liberto
 Lembras
+Lembran
+Lembro
 AppleWebKit
 ADN
 Ak
@@ -15937,6 +15942,7 @@ Aliancismo
 Ayla
 Aguda
 Assunto
+Acompanhamos
 KHTML
 Kn
 KA
@@ -19628,6 +19634,8 @@ listening
 launching
 levaste
 lembram
+liano
+lembras
 Gecko
 Group
 GQ
@@ -21291,6 +21299,7 @@ Grace
 Gentile
 Genetic
 Generalisation
+Gostar
 HeadlessChrome
 HX
 HSG
@@ -28183,6 +28192,10 @@ estimamos
 enfrentaste
 enfrentas
 escrevemos
+empenho
+enviem
+enche
+encurtar
 ca
 cW
 cEu
@@ -32053,6 +32066,16 @@ carregas
 cobran
 conserveis
 consumados
+conversar
+cuidaram
+compartilham
+caminharem
+compreendi
+concedendo
+consolava
+centralidade
+caloroso
+carregado
 BM
 BBox
 BHq
@@ -38801,6 +38824,7 @@ Rocha
 RxZoYT
 Rightly
 River
+Recordamos
 ExtGState
 Ei
 ET
@@ -40731,6 +40755,8 @@ Essencialmente
 Escreveste
 Examina
 Escrevemos
+Escrevo
+Enviamos
 true
 tTr
 tQr
@@ -46232,6 +46258,9 @@ stating
 sacrifica
 superares
 soubesses
+soubessem
+semearam
+separe
 xU
 xM
 xLq
@@ -51076,6 +51105,8 @@ goalpost
 generous
 gospels
 geography
+generosa
+grandemente
 am
 ah
 as
@@ -54637,6 +54668,16 @@ ansioso
 achaste
 alivia
 amas
+atualizada
+acolhedora
+assistindo
+amparo
+abordando
+afastaram
+afazeres
+amizade
+aguente
+alcanceis
 dA
 dD
 dd
@@ -57893,6 +57934,10 @@ dolorosa
 dirigiste
 dificultam
 desencanto
+desejavas
+deparei
+divergimos
+demova
 zR
 zD
 zJ
@@ -62988,6 +63033,7 @@ IuylZZBbXAkiyAAAAAAAAAAAAAPxWAO
 IprodstQCiIQwUVQDwLExuKydEQAAAAAAAAAAAEAzZ
 IyNSWfIC
 Isn
+Ignaldio
 nk
 nu
 nC
@@ -68254,6 +68300,13 @@ percorr
 pedi
 prometer
 professoras
+parceira
+pego
+prontid
+priorizando
+presenteou
+perspetivas
+preciosidade
 OaL
 Oar
 OQ
@@ -69863,6 +69916,7 @@ Oculta
 OXck
 OCCA
 Olho
+Oramos
 WR
 Wfwp
 WY
@@ -73136,6 +73190,7 @@ jWDAAAAAAAAAAAAMDzqLbiuHT
 jGcC
 judging
 janeiro
+julgamentos
 UF
 Uw
 Uz
@@ -80315,6 +80370,8 @@ marcado
 mate
 mantinha
 madrugadas
+madura
+mencionou
 qd
 qm
 qI
@@ -84630,6 +84687,10 @@ impiedosa
 inclinai
 inescus
 inabal
+imensos
+indescrit
+inconsist
+interceder
 kC
 kp
 kN
@@ -89286,6 +89347,8 @@ unity
 unambiguously
 unusable
 unig
+unindo
+une
 YJ
 YQ
 YCG
@@ -94645,6 +94708,8 @@ fadas
 falares
 fito
 fortale
+fraterna
+feiras
 br
 bJ
 bW
@@ -96873,6 +96938,7 @@ blatantly
 brainwashed
 bullocks
 biblr
+buscas
 vdjL
 vd
 vR
@@ -98869,6 +98935,7 @@ volcanoes
 validity
 vaca
 voou
+vacilam
 Dnb
 DFp
 DX
@@ -103713,6 +103780,9 @@ resolveu
 responderia
 recordaste
 reconectar
+recordo
+respeitosa
+repleto
 hF
 hj
 hC
