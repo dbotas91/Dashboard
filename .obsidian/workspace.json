@@ -4,26 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "bc64d7c430291d2f",
+        "id": "a13cf328d71ddc47",
         "type": "tabs",
         "children": [
           {
-            "id": "bfa53c0c546034a1",
+            "id": "9b099c858eefb4ab",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "5932a97b4de7989d",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
                 "aFile": ".obsidian/plugins/digitalgarden/data.json",
                 "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: data.json  (Index)"
+              "title": "Diff: data.json  (Working Tree)"
             }
           },
           {
-            "id": "74888646ae1e44be",
+            "id": "ed007ed2c004fa06",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.biblegateway.com/passage/?search=Salmo%2091%2C%20121%2C%20123&version=ARC",
+                "title": "Salmo 91, 121, 123 ARC - A segurança daquele que se refugia em - Bible Gateway",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Salmo 91, 121, 123 ARC - A segurança daquele que se refugia em - Bible Gateway"
+            }
+          },
+          {
+            "id": "d897150c934292bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -45,50 +68,9 @@
               "icon": "lucide-file",
               "title": "Despedida de solteiro"
             }
-          },
-          {
-            "id": "203da44ed0668375",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.biblegateway.com/passage/?search=Colossenses%202&version=ARC",
-                "title": "Colossenses 2 ARC - Porque quero que saibais quão grande - Bible Gateway",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Colossenses 2 ARC - Porque quero que saibais quão grande - Bible Gateway"
-            }
-          },
-          {
-            "id": "68e886bd0c4b49cf",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://gemini.google.com/app/7b5a401431bd1f0f",
-                "title": "Gelsoft Despedida: Caça ao Passaporte - Google Gemini",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Gelsoft Despedida: Caça ao Passaporte - Google Gemini"
-            }
-          },
-          {
-            "id": "647796238c1eac69",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://duck.ai/chat",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +104,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nobel",
+                "query": "?",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -130,7 +112,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Procurar"
+              "title": "Search"
             }
           },
           {
@@ -157,7 +139,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206
+    "width": 281
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -166,7 +148,7 @@
       {
         "id": "66d2499bd7c7c2cf",
         "type": "tabs",
-        "dimension": 48.2367758186398,
+        "dimension": 51.864035087719294,
         "children": [
           {
             "id": "ca992fb3ee138cd9",
@@ -213,7 +195,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Etiquetas"
+              "title": "Tags"
             }
           },
           {
@@ -222,13 +204,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé/0. Descobrindo o Porquê da Fé - leitura inicial.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Índice de 0. Descobrindo o Porquê da Fé - leitura inicial"
+              "title": "Índice"
             }
           },
           {
@@ -242,11 +223,21 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Todas as propriedades"
+              "title": "All properties"
             }
           },
           {
-            "id": "78c720107f04a0ac",
+            "id": "f34122c6fa88596e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "c4892fd3bf0af16c",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -256,22 +247,34 @@
             }
           },
           {
-            "id": "7b82dd5438ada4a5",
+            "id": "9275b0c2fcd66d98",
             "type": "leaf",
             "state": {
-              "type": "footnotes",
+              "type": "file-properties",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 11-03-2026.md"
+              },
+              "icon": "lucide-info",
+              "title": "Propriedades do ficheiro para Estudo Bíblico - 11-03-2026"
+            }
+          },
+          {
+            "id": "d2e6ab0b849de0ce",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
               "state": {},
-              "icon": "lucide-file-signature",
-              "title": "Notas de rodapé"
+              "icon": "history",
+              "title": "History"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "aa213c339baded63",
         "type": "tabs",
-        "dimension": 51.7632241813602,
+        "dimension": 48.135964912280706,
         "children": [
           {
             "id": "4f23ffc45f683c25",
@@ -287,24 +290,10 @@
             "id": "c7bf261309fc083c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "09 - STATUS NOTES/Adult.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Adult"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização de diagrama de grafo"
             }
           }
         ],
@@ -312,66 +301,71 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253
+    "width": 337
   },
   "left-ribbon": {
     "hiddenItems": {
+      "zk-prefixer:Crie uma nova nota única": false,
+      "obsidian-importer:Import notes": false,
+      "hearth:Open Hearth home": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "canvas:Criar novo Canvas": false,
+      "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
       "graph:Abrir Visualização de diagrama de grafo": false,
-      "canvas:Criar novo Canvas": false,
       "daily-notes:Abrir nota de hoje": false,
       "templates:Inserir templates": false,
       "command-palette:Abrir paleta de comando": false,
       "workspaces:Gerir esquema da área de trabalho": false,
       "publish:Publicar alterações": false,
-      "bases:Criar nova base": false,
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "digitalgarden:Digital Garden Publication Center": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "hearth:Open Hearth home": false,
-      "obsidian-importer:Import notes": false,
-      "zk-prefixer:Crie uma nova nota única": false,
-      "markdown-importer:Importador de Open Markdown": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bfa53c0c546034a1",
+  "active": "5932a97b4de7989d",
   "lastOpenFiles": [
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
-    "09 - STATUS NOTES/Adult.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
-    "10 - TAGS/2026-08.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/1 Timóteo.md",
-    "10 - TAGS/2026-07.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 08-07-2026.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "10 - TAGS/reuniaodehomens.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 19-04-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 10-05-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Homens de valor.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
+    "10 - TAGS/2026-08.md",
+    "10 - TAGS/2026-07.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
+    "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bookmarks - Obsidian Help.md",
+    "07 - INDEXES/Site IQC.md",
+    "10 - TAGS/aliancismo.md",
+    "09 - STATUS NOTES/Adult.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "Site IQC/Tarefas/Artigo Histórico sobre Bart Ehrman para a IQC 189535ff8bdc80e4a6e6e1dd64df5f0a.html.md",
+    "Site IQC/Tarefas",
+    "Site IQC",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Ingratidão e murmúrio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/plugin.js",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
+    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
@@ -382,12 +376,6 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-green.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-blue.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-yellow.png",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/style.css",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/plugin (copy).js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/_style.css",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
