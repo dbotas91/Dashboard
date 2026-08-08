@@ -11,10 +11,39 @@
             "id": "bfa53c0c546034a1",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
+            }
+          },
+          {
+            "id": "74888646ae1e44be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Despedida de solteiro"
             }
           },
           {
@@ -32,27 +61,17 @@
             }
           },
           {
-            "id": "e308fd315811904f",
-            "type": "leaf",
-            "state": {
-              "type": "digital-garden-publication-center",
-              "state": {},
-              "icon": "book-up",
-              "title": "Publication Center"
-            }
-          },
-          {
             "id": "68e886bd0c4b49cf",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://gemini.google.com/app/e74934542b4d691f",
-                "title": "Resposta a Carta de Fábio - Google Gemini",
+                "url": "https://gemini.google.com/app/7b5a401431bd1f0f",
+                "title": "Gelsoft Despedida: Caça ao Passaporte - Google Gemini",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Resposta a Carta de Fábio - Google Gemini"
+              "title": "Gelsoft Despedida: Caça ao Passaporte - Google Gemini"
             }
           },
           {
@@ -68,24 +87,8 @@
               "icon": "globe-2",
               "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
-          },
-          {
-            "id": "7a68420d928fade3",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +108,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de ficheiros"
@@ -249,6 +254,16 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "7b82dd5438ada4a5",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {},
+              "icon": "lucide-file-signature",
+              "title": "Notas de rodapé"
+            }
           }
         ],
         "currentTab": 5
@@ -320,11 +335,14 @@
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "hearth:Open Hearth home": false,
-      "obsidian-importer:Import notes": false
+      "obsidian-importer:Import notes": false,
+      "zk-prefixer:Crie uma nova nota única": false,
+      "markdown-importer:Importador de Open Markdown": false
     }
   },
-  "active": "7a68420d928fade3",
+  "active": "bfa53c0c546034a1",
   "lastOpenFiles": [
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
@@ -351,7 +369,6 @@
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado/Plano de estudos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/index.html",

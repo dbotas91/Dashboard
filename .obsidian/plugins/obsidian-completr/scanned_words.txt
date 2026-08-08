@@ -2023,6 +2023,8 @@ Pooh
 Pagan
 Prima
 Praticamente
+Passaporte
+Premissa
 obj
 oQw
 ot
@@ -3933,6 +3935,7 @@ opinion
 organiser
 observamos
 orares
+obrigatorio
 Title
 Type
 Transparency
@@ -5819,6 +5822,7 @@ Tradition
 Too
 Tchileza
 Tivemos
+Trai
 FEFF
 Form
 Font
@@ -7638,6 +7642,8 @@ Filomenas
 FcdoLKHa
 Fallacy
 Firstly
+FASE
+FINAL
 Creator
 CreationDate
 CW
@@ -9817,6 +9823,12 @@ Consequences
 Classical
 Christianity
 Compreendo
+Capturar
+Carga
+Chegando
+Cerco
+CONTRA
+Condi
 Mozilla
 ModDate
 MK
@@ -15943,6 +15955,7 @@ Ayla
 Aguda
 Assunto
 Acompanhamos
+Ativo
 KHTML
 Kn
 KA
@@ -21300,6 +21313,9 @@ Gentile
 Genetic
 Generalisation
 Gostar
+Gerais
+Gel
+Guardi
 HeadlessChrome
 HX
 HSG
@@ -28196,6 +28212,7 @@ empenho
 enviem
 enche
 encurtar
+emboscada
 ca
 cW
 cEu
@@ -32076,6 +32093,11 @@ consolava
 centralidade
 caloroso
 carregado
+confiscado
+converte
+companheiro
+conquistar
+combinado
 BM
 BBox
 BHq
@@ -33750,6 +33772,7 @@ Brigas
 Bondade
 Baptism
 Body
+Boss
 Normal
 NM
 Nf
@@ -35498,6 +35521,7 @@ NJOIBuHUTr
 NafEaDnX
 Nietzche
 Nasci
+NOIVO
 XObject
 Xf
 XW
@@ -38825,6 +38849,11 @@ RxZoYT
 Rightly
 River
 Recordamos
+Resgate
+Regras
+Recrutamento
+Reviravolta
+Rota
 ExtGState
 Ei
 ET
@@ -40757,6 +40786,7 @@ Examina
 Escrevemos
 Escrevo
 Enviamos
+Especial
 true
 tTr
 tQr
@@ -46261,6 +46291,7 @@ soubesses
 soubessem
 semearam
 separe
+secar
 xU
 xM
 xLq
@@ -49255,6 +49286,7 @@ Judaica
 JkUxlN
 Justification
 Jew
+Jogo
 gh
 grd
 gCy
@@ -51107,6 +51139,7 @@ gospels
 geography
 generosa
 grandemente
+gargalhada
 am
 ah
 as
@@ -54678,6 +54711,13 @@ afazeres
 amizade
 aguente
 alcanceis
+atravessar
+atordoado
+ajoelhar
+aliado
+aliados
+apito
+apitar
 dA
 dD
 dd
@@ -57938,6 +57978,8 @@ desejavas
 deparei
 divergimos
 demova
+disparar
+derrota
 zR
 zD
 zJ
@@ -63034,6 +63076,8 @@ IprodstQCiIQwUVQDwLExuKydEQAAAAAAAAAAAEAzZ
 IyNSWfIC
 Isn
 Ignaldio
+Impactos
+Inimigos
 nk
 nu
 nC
@@ -68307,6 +68351,8 @@ priorizando
 presenteou
 perspetivas
 preciosidade
+passaporte
+pressionar
 OaL
 Oar
 OQ
@@ -69917,6 +69963,7 @@ OXck
 OCCA
 Olho
 Oramos
+Opera
 WR
 Wfwp
 WY
@@ -73191,6 +73238,9 @@ jGcC
 judging
 janeiro
 julgamentos
+jogador
+junta
+jogou
 UF
 Uw
 Uz
@@ -80372,6 +80422,7 @@ mantinha
 madrugadas
 madura
 mencionou
+massacre
 qd
 qm
 qI
@@ -84691,6 +84742,7 @@ imensos
 indescrit
 inconsist
 interceder
+impactos
 kC
 kp
 kN
@@ -94710,6 +94762,7 @@ fito
 fortale
 fraterna
 feiras
+filmar
 br
 bJ
 bW
@@ -100792,6 +100845,7 @@ Dorin
 DzLb
 Dawkins
 Deolinda
+Disparo
 rQ
 ru
 rg
@@ -103783,6 +103837,11 @@ reconectar
 recordo
 respeitosa
 repleto
+resgatar
+retaguarda
+rota
+recuam
+recruta
 hF
 hj
 hC
