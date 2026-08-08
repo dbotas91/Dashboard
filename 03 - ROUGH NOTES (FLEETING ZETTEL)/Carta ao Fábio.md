@@ -3,10 +3,10 @@ dg-publish: "true"
 tags:
   - carta
 mature-status: Child
-created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+created: 2026-08-08 12:24
 dg-note-icon: child
 noteIcon: child
-updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+updated: 2026-08-08 12:24
 dgPassFrontmatter: "true"
 ---
 [[Home|Back home]]
