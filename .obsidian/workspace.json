@@ -21,14 +21,14 @@
             "id": "5932a97b4de7989d",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "webviewer",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
+                "url": "https://www.bibliaon.com/salmos_para_ansiedade/",
+                "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia",
+                "mode": "webview"
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "icon": "globe-2",
+              "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia"
             }
           },
           {
@@ -51,7 +51,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -66,11 +66,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Despedida de solteiro"
+              "title": "Despedida de solteiro - Noivo"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -328,9 +328,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5932a97b4de7989d",
+  "active": "d897150c934292bc",
   "lastOpenFiles": [
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
@@ -357,7 +358,6 @@
     "Site IQC/Tarefas",
     "Site IQC",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Ingratidão e murmúrio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Testes Excelência na Bíblia.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
