@@ -9887,6 +9887,7 @@ Chegando
 Cerco
 CONTRA
 Condi
+Conquistar
 Mozilla
 ModDate
 MK
@@ -58365,6 +58366,7 @@ derrota
 dirigiste
 dificultam
 desencanto
+derrotar
 zR
 zD
 zJ
@@ -97535,6 +97537,7 @@ brimming
 buffering
 buffers
 broquel
+boss
 vdjL
 vd
 vR
