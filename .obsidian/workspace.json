@@ -18,17 +18,41 @@
             }
           },
           {
+            "id": "4f1c1bd147347e29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Estudo Bíblico - 29-07-2026"
+            }
+          },
+          {
             "id": "5932a97b4de7989d",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.bibliaon.com/salmos_para_ansiedade/",
-                "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia",
+                "url": "https://iqc.pt/edificacao/devocional/meditacoes/18260-morte-da-dona-reuniao-de-oracao?highlight=WyJvcmFcdTAwZTdcdTAwZTNvIiwib3JhXHUwMGU3XHUwMGUzb1x1MjAxZC4iLCJvcmFcdTAwZTdcdTAwZTNvXHUyMDFkLCIsIm9yYVx1MDBlN1x1MDBlM28sXHUyMDFkIiwib3JhXHUwMGU3XHUwMGUzb1x1MjAxZCIsIm9yYVx1MDBlN1x1MDBlM29cdTAwYmIsIiwib3JhXHUwMGU3XHUwMGUzby1wb2VzaWEiLCJvcmFcdTAwZTdcdTAwZTNvLlx1MjAxZCIsIm9yYVx1MDBlN1x1MDBlM28uMSIsIm9yYVx1MDBlN1x1MDBlM29cdTAwYmIuIl0=",
+                "title": "Morte da Dona Reunião de Oração",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia"
+              "title": "Morte da Dona Reunião de Oração"
             }
           },
           {
@@ -46,12 +70,75 @@
             }
           },
           {
-            "id": "d897150c934292bc",
+            "id": "7901284cd542bb47",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://4gnews.pt/eclipse-de-12-de-agosto-a-que-horas-ver-em-cada-distrito-de-portugal/",
+                "title": "Eclipse de 12 de agosto: a que horas ver em cada distrito de Portugal - 4gnews",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Eclipse de 12 de agosto: a que horas ver em cada distrito de Portugal - 4gnews"
+            }
+          },
+          {
+            "id": "181fde27afe3bbd8",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.tellows.pt/num/%2B351926829152",
+                "title": "Quem é 926829152 de TMN | Score do número: 5 - +351926829152 tellows",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Quem é 926829152 de TMN | Score do número: 5 - +351926829152 tellows"
+            }
+          },
+          {
+            "id": "7634f0fc7a625c97",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://duck.ai/chat",
+                "title": "Real-time eclipse",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Real-time eclipse"
+            }
+          },
+          {
+            "id": "f6de484b8c27dd42",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.nasa.gov/live/",
+                "title": "NASA Live - NASA",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "NASA Live - NASA"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "0982924503b4b85d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be8858102b1881e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Estudo Bíblico - 12-08-2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -66,11 +153,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Despedida de solteiro - Noivo"
+              "title": "Estudo Bíblico - 12-08-2026"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -139,7 +225,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -328,12 +415,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d897150c934292bc",
+  "active": "be8858102b1881e8",
   "lastOpenFiles": [
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Estudo Bíblico - 12-08-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
@@ -341,7 +430,6 @@
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "10 - TAGS/2026-08.md",
     "10 - TAGS/2026-07.md",
@@ -357,7 +445,6 @@
     "Site IQC/Tarefas/Artigo Histórico sobre Bart Ehrman para a IQC 189535ff8bdc80e4a6e6e1dd64df5f0a.html.md",
     "Site IQC/Tarefas",
     "Site IQC",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Ingratidão e murmúrio.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",

@@ -46,6 +46,7 @@ Estão organizados por ano-mês com referências às Tags.
 - [[Estudo Bíblico - 22-07-2026]]
 - [[Estudo Bíblico - 29-07-2026]]
 - [[Ceia e ED - 02-08-2026]]
+- [[Estudo Bíblico - 12-08-2026]]
 
 ## 2025
 ### Tags (Por ano-mês)
