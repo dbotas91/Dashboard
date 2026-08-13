@@ -19827,6 +19827,82 @@ var GardenPageCompiler = class {
       }
       return convertedText;
     });
+    /**
+     * Converts markdown-style links to vault files (e.g. [X](../a/b.md),
+     * written by Obsidian's "relative"/"shortest path" markdown link formats
+     * or by external tools) into full-path wikilinks, the same output as
+     * convertLinksToFullPath. Published relative hrefs would otherwise break
+     * under the site's trailing-slash URLs and stay invisible to the graph.
+     */
+    this.convertMarkdownLinksToFullPath = (file) => (text2) => __async(this, null, function* () {
+      let convertedText = text2;
+      const textToBeProcessed = yield this.stripAwayCodeFencesAndFrontmatter(file)(text2);
+      const markdownLinkRegex = new RegExp("(?<!!)\\[([^[\\]]*)\\]\\(\\s*([^)\\s]+?\\.(?:md|markdown|canvas))((?:#[^)\\s]*)?)\\s*\\)", "gi");
+      const decode2 = (value) => {
+        try {
+          return decodeURIComponent(value);
+        } catch (e) {
+          return value;
+        }
+      };
+      const resolveRelative = (target) => {
+        const sourcePath = file.getPath();
+        const sourceDir = sourcePath.includes("/") ? sourcePath.substring(0, sourcePath.lastIndexOf("/")) : "";
+        const segments = sourceDir ? sourceDir.split("/") : [];
+        for (const part of target.split("/")) {
+          if (part === "" || part === ".") continue;
+          if (part === "..") {
+            if (segments.length === 0) return null;
+            segments.pop();
+            continue;
+          }
+          segments.push(part);
+        }
+        return segments.join("/");
+      };
+      let match2;
+      while (match2 = markdownLinkRegex.exec(textToBeProcessed)) {
+        try {
+          const [fullMatch, displayText, rawTarget, rawFragment] = match2;
+          if (/^[a-z][a-z0-9+.-]*:/i.test(rawTarget)) {
+            continue;
+          }
+          const target = decode2(rawTarget);
+          const isExplicitRelative = target.startsWith("./") || target.startsWith("../");
+          const relativeTarget = resolveRelative(target);
+          const candidates = isExplicitRelative ? [relativeTarget, target] : [target, relativeTarget];
+          let linkedFile = null;
+          for (const candidate of candidates) {
+            if (candidate === null) continue;
+            linkedFile = this.metadataCache.getFirstLinkpathDest(
+              candidate,
+              file.getPath()
+            );
+            if (linkedFile) break;
+          }
+          if (!linkedFile || linkedFile.extension !== "md" && linkedFile.extension !== "canvas") {
+            continue;
+          }
+          const extensionlessPath = linkedFile.path.substring(
+            0,
+            linkedFile.path.lastIndexOf(".")
+          );
+          const linkPath = linkedFile.extension === "canvas" ? `${extensionlessPath}.canvas` : extensionlessPath;
+          const headerPath = decode2(rawFragment != null ? rawFragment : "");
+          const linkDisplayName = displayText || extensionlessPath.substring(
+            extensionlessPath.lastIndexOf("/") + 1
+          );
+          convertedText = convertedText.replaceAll(
+            fullMatch,
+            `[[${linkPath}${headerPath}\\|${linkDisplayName}]]`
+          );
+        } catch (e) {
+          console.log(e);
+          continue;
+        }
+      }
+      return convertedText;
+    });
     this.createTranscludedText = (currentDepth) => (file) => (text2) => __async(this, null, function* () {
       var _a6, _b3, _c2;
       if (currentDepth >= 4) {
@@ -20529,6 +20605,7 @@ ${headerSection}
         this.createTranscludedText(0),
         this.convertDataViews,
         this.convertLinksToFullPath,
+        this.convertMarkdownLinksToFullPath,
         this.removeObsidianComments,
         this.createSvgEmbeds
       ];
@@ -20570,6 +20647,7 @@ ${headerSection}
         this.createTranscludedText(0),
         this.convertDataViews,
         this.convertLinksToFullPath,
+        this.convertMarkdownLinksToFullPath,
         this.removeObsidianComments,
         this.createSvgEmbeds
       ];

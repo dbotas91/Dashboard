@@ -3,6 +3,7 @@
   "showTitle": true,
   "logo": "",
   "themeColorTarget": "both",
+  "showSearch": true,
   "searchPlaceholder": "Search or command",
   "showNewNoteButton": true,
   "newNoteButtonMode": "newNote",
@@ -49,6 +50,16 @@
     }
   ],
   "disableExternalCalls": false,
+  "openIn": "tab",
+  "openInOverrides": {
+    "link": "default",
+    "search": "default",
+    "card": "default",
+    "newNote": "default"
+  },
+  "openFromOutside": "same",
+  "lowPower": false,
+  "lowPowerBackgroundColor": "#4a4459",
   "compact": false,
   "arrangeButtonVisibility": "always",
   "dashboardSwitcherVisibility": "always",
@@ -500,8 +511,10 @@
   "taskNotesDueField": "due",
   "taskNotesPriorityField": "priority",
   "taskNotesDoneValue": "done",
+  "taskFieldsEnabled": false,
+  "taskFields": [],
   "customFileIcons": true,
   "iconizeIconProperty": "icon",
   "maxWidth": 1600,
-  "lastSeenVersion": "1.18.0"
+  "lastSeenVersion": "2.0.0"
 }

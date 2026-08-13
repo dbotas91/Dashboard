@@ -7678,8 +7678,6 @@ FiDCellular
 Familiar
 FASE
 FINAL
-Faleceu
-Frios
 Creator
 CreationDate
 CW
@@ -9890,8 +9888,6 @@ Cerco
 CONTRA
 Condi
 Conquistar
-Constataram
-Carapinha
 Mozilla
 ModDate
 MK
@@ -11857,9 +11853,6 @@ Mega
 Multilingual
 Magazine
 ModeBWi
-Morreu
-Mundanismo
-Mariana
 Linux
 Length
 LJ
@@ -13641,7 +13634,6 @@ Linfobl
 Lite
 LTE
 Lembras
-Luzia
 AppleWebKit
 ADN
 Ak
@@ -16066,7 +16058,6 @@ ATurbo
 Adapter
 Ativo
 Assunto
-Administraram
 KHTML
 Kn
 KA
@@ -21449,7 +21440,6 @@ Gouveia
 Gerais
 Gel
 Guardi
-Gentileza
 HeadlessChrome
 HX
 HSG
@@ -28421,8 +28411,6 @@ estimamos
 enfrentaste
 enfrentas
 escrevemos
-exagerada
-existiriam
 ca
 cW
 cEu
@@ -32346,9 +32334,6 @@ consumados
 correria
 carregas
 cobran
-constataram
-comprimidos
-clubes
 BM
 BBox
 BHq
@@ -35784,7 +35769,6 @@ NafEaDnX
 Nietzche
 Nasci
 NOIVO
-Negligentes
 XObject
 Xf
 XW
@@ -39127,9 +39111,6 @@ Regras
 Recrutamento
 Reviravolta
 Rota
-Rua
-Resolveu
-Recentemente
 ExtGState
 Ei
 ET
@@ -43513,7 +43494,6 @@ tops
 trapped
 tosquenejar
 tiveste
-tratamentos
 stream
 sWz
 sj
@@ -46641,7 +46621,6 @@ serva
 sobremodo
 soberbos
 secar
-sufocou
 xU
 xM
 xLq
@@ -48108,7 +48087,6 @@ xterm
 xpm
 xgow
 xica
-xarope
 Jn
 JJu
 JT
@@ -55101,11 +55079,6 @@ aliados
 apito
 apitar
 amas
-avivamentos
-adiantou
-acampamentos
-agendas
-autismo
 dA
 dD
 dd
@@ -58394,13 +58367,6 @@ dirigiste
 dificultam
 desencanto
 derrotar
-dona
-dobravam
-diagnosticaram
-doses
-desportivas
-desviou
-diagnosticado
 zR
 zD
 zJ
@@ -68846,13 +68812,6 @@ praga
 passaporte
 pressionar
 professoras
-provocou
-provocando
-pastilhas
-psulas
-psia
-prolongados
-participava
 OaL
 Oar
 OQ
@@ -77035,7 +76994,6 @@ Viagem
 Visual
 VOICE
 Voice
-Viva
 QX
 QY
 QP
@@ -80952,10 +80910,6 @@ molestar
 massacre
 mantinha
 madrugadas
-medicada
-medicaram
-mes
-minioma
 qd
 qm
 qI
@@ -82682,8 +82636,6 @@ quebrando
 querias
 quicker
 quotidiano
-quido
-quimio
 ih
 ip
 iV
@@ -85304,9 +85256,6 @@ invaluable
 irreplaceable
 invocar
 impactos
-injec
-importun
-impinge
 kC
 kp
 kN
@@ -95347,9 +95296,6 @@ factory
 farta
 filmar
 fortale
-frieza
-frequentava
-feriados
 br
 bJ
 bW
@@ -99604,7 +99550,6 @@ ventilation
 voe
 vacilar
 voou
-veias
 Dnb
 DFp
 DX
@@ -101472,9 +101417,6 @@ Dive
 Dolby
 Deolinda
 Disparo
-Dona
-Deram
-Desconhecido
 rQ
 ru
 rg
@@ -104497,11 +104439,6 @@ recuam
 recruta
 recordaste
 recordo
-reaviv
-regime
-rivalidades
-repouso
-retoma
 hF
 hj
 hC

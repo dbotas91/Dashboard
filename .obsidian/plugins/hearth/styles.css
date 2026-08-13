@@ -19,6 +19,62 @@
 	background-position: center;
 }
 
+/* The live weather sky as the board's backdrop. It is the same element the
+ * weather card's artistic style draws (see sky.ts), so it arrives styled —
+ * all it needs here is to fill the layer instead of sitting in a card's flex
+ * column, and to stay behind everything. The layer's own opacity and blur
+ * still apply, so a sky can be dialled back to a wash like any wallpaper. */
+.hearth-bg > .hearth-weather-sky {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+}
+
+/* ---- Low power mode ---------------------------------------------------
+ *
+ * The paint-cost half of the setting. Everything with a value behind it — the
+ * background, the card blur, card opacity, the refresh timers — is handled by
+ * the effective* resolvers in types.ts, which report low power values without
+ * touching what the user configured. What is left here is the decoration that
+ * has no setting to override: transitions, animations, shadows and hover
+ * transforms. They are killed wholesale rather than case by case, so a card,
+ * tile or control added later is covered without anyone remembering to.
+ *
+ * Nothing in this block changes layout, so toggling the mode never moves
+ * anything on the board — it only stops it from being animated or filtered. */
+.hearth-view.hearth-low-power *,
+.hearth-view.hearth-low-power *::before,
+.hearth-view.hearth-low-power *::after {
+	transition: none !important;
+	animation: none !important;
+	/* Belt and braces: with every resolved blur at 0 the frost layers are never
+	 * built, but hard-coded backdrop filters elsewhere (the arrange-mode card
+	 * header) are switched off here too — each one is a separate backdrop root
+	 * the compositor has to re-filter on scroll. */
+	backdrop-filter: none !important;
+	-webkit-backdrop-filter: none !important;
+	box-shadow: none !important;
+}
+
+/* Loading spinners are the one animation worth keeping: frozen mid-spin they
+ * read as a broken card rather than a calm one. */
+.hearth-view.hearth-low-power .is-loading {
+	animation: hearth-rss-spin 0.9s linear infinite !important;
+}
+
+/* Hover lift on cards and tiles: a transform promotes the element to its own
+ * compositor layer on every pointer move across the board. */
+.hearth-view.hearth-low-power .hearth-card:hover,
+.hearth-view.hearth-low-power .hearth-link-tile:hover {
+	transform: none;
+}
+
+/* The card's drop shadow is applied through a variable so merged edges can drop
+ * it; clear the variable as well as the resolved shadow above. */
+.hearth-view.hearth-low-power .hearth-card {
+	--hearth-card-lift: none;
+}
+
 .hearth-scroll {
 	position: relative;
 	z-index: 1;
@@ -331,10 +387,56 @@
 	text-overflow: ellipsis;
 }
 
+/* A note-body excerpt is a sentence of context, not a short tag chip. In accent
+ * colour a whole line of it shouts as loudly as the file name above it and the
+ * list turns into a wall of highlight, so the context recedes to muted and only
+ * the matched words keep the accent (via .hearth-result-mark). */
+.hearth-result-badge.is-excerpt {
+	color: var(--text-muted);
+	line-height: 1.35;
+	/* Two lines of context read far better than one clipped one, and the row
+	 * height stays predictable because the clamp caps it. */
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* Excerpts come out of arbitrary note text — a long URL or path must not
+	 * push the row wider than the dropdown. */
+	overflow-wrap: anywhere;
+}
+
+/* Wrapping excerpts make rows different heights; align the icon to the first
+ * line rather than to the middle of a two-line block. */
+.hearth-result.has-excerpt {
+	align-items: flex-start;
+}
+
+.hearth-result.has-excerpt .hearth-result-icon {
+	margin-top: 2px;
+}
+
+/* Give the wrapped excerpt a definite width to clamp against, instead of
+ * letting it size to its (very long) content. */
+.hearth-result.has-excerpt .hearth-result-text {
+	flex: 1;
+	min-width: 0;
+}
+
 .hearth-search-empty {
 	padding: 12px;
 	text-align: center;
 	color: var(--text-muted);
+}
+
+/* Open upwards when there is no room below the field (search.ts measures and
+   sets .is-above). Only the search-bar card hits this — placed low on the
+   board, or in fit-to-page mode where the grid clips its overflow. */
+.hearth-search-results.is-above {
+	top: auto;
+	bottom: calc(100% + 6px);
 }
 
 /* ---- Filters -------------------------------------------------------- */
@@ -398,6 +500,109 @@
 
 .hearth-filter-icon {
 	display: flex;
+}
+
+/* ---- Search-bar card ------------------------------------------------- */
+
+/* The search-bar card hosts the very same SearchSection the header renders, so
+   the bar, chips and dropdown need no styling of their own — only a positioned
+   column for the overlay to hang off, matching .hearth-search-col.
+
+   The column fills the card so the bar can be sized BY the card: there is no
+   thickness setting, you drag the card taller and the field gets chunkier. It
+   centres its contents, so past the bar's maximum the extra height reads as
+   space around a thick bar rather than an ever-taller pill. */
+.hearth-searchbar-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* "safe" keeps a card too short for its contents overflowing downwards only,
+	 * instead of centring the overflow and pushing the bar up out of the card.
+	 * Ignored by engines that don't know it, which leaves plain centring. */
+	justify-content: safe center;
+	gap: 8px;
+	width: 100%;
+	height: 100%;
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.hearth-card.is-searchbar-card .hearth-card-body {
+	display: flex;
+}
+
+/* The bar's row takes whatever height is left after the (optional) chip row,
+   between a floor that keeps it tappable at the board's smallest card (56px
+   tall, less the body's padding) and a ceiling that stops an accidentally huge
+   card from becoming an absurd pill. The header's bar is a flat 52px; this
+   starts at 68 at the card's default one-row height. */
+.hearth-searchbar-row {
+	display: flex;
+	align-items: stretch;
+	gap: 12px;
+	flex: 1 1 auto;
+	min-height: 36px;
+	max-height: 120px;
+}
+
+/* Both children stretch to the row's height instead of the fixed 52px they
+   carry in the header. */
+.hearth-searchbar-row .hearth-search-bar,
+.hearth-searchbar-row .hearth-newnote {
+	height: auto;
+}
+
+/* Let the field be narrowed as far as the user likes. An <input> carries an
+   intrinsic width — roughly 20 characters — and a flex item's automatic minimum
+   size honours it, so without this the bar refuses to shrink past ~200px: the
+   card narrows, the field doesn't, and the button beside it is pushed out
+   through the card's side. Both elements need it — the bar for its own flex
+   line, the input for the bar's. */
+.hearth-searchbar-row .hearth-search-bar,
+.hearth-searchbar-row .hearth-search-input {
+	min-width: 0;
+}
+
+/* The chip row is a fixed-size band under the bar — it must not absorb the
+   card's extra height, that is the bar's to take. */
+.hearth-searchbar-card .hearth-filters {
+	flex: 0 0 auto;
+}
+
+/* The results dropdown is an overlay that has to leave the card box; both the
+   card and its body clip by default (see .hearth-card / .hearth-card-body), so
+   a list of matches would be cut off at the card's edge. Nothing else in this
+   card scrolls, so letting it overflow costs nothing. */
+.hearth-card.is-searchbar-card,
+.hearth-card.is-searchbar-card .hearth-card-body {
+	overflow: visible;
+}
+
+/* Seamless: the card stops being a card. No frame, no surface, no shadow and no
+   padding, so the bar sits directly on the board (or the wallpaper) exactly as
+   the header's does. The card is still a card underneath — it drags, resizes
+   and configures like any other. */
+.hearth-card.is-seamless {
+	border-color: transparent;
+	background: none;
+	box-shadow: none;
+}
+
+.hearth-card.is-seamless:hover {
+	--hearth-card-lift: none;
+}
+
+.hearth-card.is-seamless .hearth-card-body {
+	padding: 0;
+}
+
+/* The title row goes with the frame — but only outside arrange mode, where that
+   same row carries the title input and the card's actions. The card still has
+   an edge to aim at while arranging: the dashed ::after outline every card gets
+   there is drawn on this one too. */
+.hearth-grid:not(.is-arranging) .hearth-card.is-seamless .hearth-card-head {
+	display: none;
 }
 
 /* ---- Recent-card type filter (card editor) -------------------------- */
@@ -511,12 +716,17 @@
 	border-radius: var(--hearth-card-radius, 14px);
 	border: var(--card-border-width, 1px) solid
 		var(--background-modifier-border);
-	/* --card-opacity (0..1) tints the card surface without dimming content. */
-	background: color-mix(
+	/* --card-opacity (0..1) tints the card surface without dimming content.
+	 * Published as a variable so content INSIDE the card that has to paint its
+	 * own surface (a Bases table's sticky header, say) can reuse the exact same
+	 * colour. It resolves here, against the card's real --background-primary, so
+	 * it stays correct even where a descendant neutralises that variable. */
+	--hearth-card-surface: color-mix(
 		in srgb,
 		var(--background-primary) calc(var(--card-opacity, 1) * 100%),
 		transparent
 	);
+	background: var(--hearth-card-surface);
 	/* Drop shadow via a variable so merged edges can drop it (see below) and
 	 * hover can lift it without re-declaring the whole shadow. */
 	--hearth-card-lift: 0 2px 12px rgba(0, 0, 0, 0.06);
@@ -616,17 +826,70 @@
 	flex: 1;
 	min-height: 0;
 	overflow: auto;
-	padding: 12px 14px;
+	--hearth-card-pad-x: 14px;
+	padding: 12px var(--hearth-card-pad-x);
 }
 
 /* When a card body holds a read-only embed/daily-note host directly, the host
  * is the scroll container (one vertical scrollbar) — the body itself doesn't
  * scroll, so it can't stack a second scrollbar next to the embed's. The same
  * applies to the editable embed wrapper (.hearth-jot), whose preview/textarea
- * handle their own scrolling. */
+ * handle their own scrolling.
+ *
+ * Those hosts also clip horizontally, so the side gutter has to move *inside*
+ * them (issue #137): Obsidian pulls a task-list checkbox back out of its list
+ * item (`margin-inline-start: calc(var(--checkbox-size) * -1.5)`), and when the
+ * embedded text renders smaller than `--font-text-size` that pull-back is wider
+ * than the list's own `3ch` indent. Padding on the body sits *outside* the clip
+ * box and so can't absorb the overhang — the checkbox is simply cut off. Reading
+ * view avoids this because its `--file-margins` gutter is interior. The rules
+ * below zero the body's inline padding and re-apply it on the scroll/clip
+ * elements themselves, so text lands in exactly the same place. */
 .hearth-card-body.is-embed-host,
 .hearth-card-body.is-jot-host {
 	overflow: hidden;
+}
+
+/* Scoped through `.hearth-card` purely for specificity: compact mode sets the
+ * body's `padding` shorthand later in this file, which would otherwise put the
+ * inline padding back and double it against the host's own. */
+.hearth-card > .hearth-card-body.is-embed-host,
+.hearth-card > .hearth-card-body.is-jot-host {
+	padding-inline: 0;
+}
+
+/* Read-only embed and jot hosts. `.hearth-embed-live` (canvas/Excalidraw) is
+ * excluded — it's deliberately edge-to-edge and its body already zeroes all
+ * padding.
+ *
+ * The start gutter is sized from the hang itself rather than being a flat
+ * number, because the hang has no upper bound. Obsidian computes
+ * `--checkbox-size` once on `body` from `--font-text-size`, while card text is
+ * sized in `rem` and doesn't follow that slider — so `1.5 × --checkbox-size`
+ * grows with the font setting while the `3ch` indent it hangs out of stays put,
+ * and any constant gutter is eventually outgrown (14px still clipped on a large
+ * setting). Both terms resolve here on the host, whose font size is the one the
+ * list items inherit, so the calc measures what the list actually does.
+ *
+ * `max()` keeps every ordinary card pixel-identical to the flat gutter: the
+ * hang only widens it once it would otherwise eat in. The gutter is added on
+ * top of the hang, not compared against it, so the checkbox keeps a full
+ * gutter's clearance instead of landing flush against the clip edge. */
+.hearth-card-body.is-embed-host > .hearth-embed:not(.hearth-embed-live),
+.hearth-card-body.is-jot-host .hearth-jot-preview {
+	padding-inline-start: max(
+		var(--hearth-card-pad-x),
+		calc(var(--checkbox-size, 1em) * 1.5 - 3ch + var(--hearth-card-pad-x))
+	);
+	padding-inline-end: var(--hearth-card-pad-x);
+}
+
+/* The raw editor is a *sibling* of the preview inside `.hearth-jot`, not a
+ * descendant, so it needs the gutter too or the two views disagree on their
+ * left edge as the card toggles between them. Plain text, no checkbox to hang,
+ * so the flat gutter is enough. Covers the jot card and the editable embed. */
+.hearth-card-body.is-jot-host .hearth-jot-edit {
+	padding-inline: var(--hearth-card-pad-x);
 }
 
 /* Empty states */
@@ -738,6 +1001,12 @@
 	--background-primary-alt: transparent;
 	--background-secondary: transparent;
 	--background-secondary-alt: transparent;
+	/* A hosted view may be a Bases table, which paints through the table
+	 * variables as well — see the .hearth-embed-base block for the reasoning. */
+	--table-background: transparent;
+	--table-row-background: transparent;
+	--table-row-alt-background: transparent;
+	--table-header-background: var(--hearth-card-surface, var(--background-primary));
 }
 
 .hearth-leaf-host > .workspace-leaf {
@@ -790,6 +1059,117 @@
 .hearth-setting-note-icon .svg-icon {
 	width: var(--icon-s);
 	height: var(--icon-s);
+}
+
+/* A bulleted "what this does" list inside a note (low power mode's effects). */
+.hearth-setting-note-list {
+	margin: 4px 0 0;
+	padding-left: 1.1em;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+/* The loud variant of the note above, for the one hint a user really should
+ * not skim past: the plugin-view card's performance warning. Same layout, but
+ * it reads as a callout — tinted panel, warning-coloured rule down the side,
+ * and a titled first line instead of muted grey body text. */
+.hearth-setting-warning {
+	margin-top: 8px;
+	padding: 10px 12px;
+	border-radius: 8px;
+	border-left: 3px solid var(--color-orange, #e8a33d);
+	background: color-mix(
+		in srgb,
+		var(--color-orange, #e8a33d) 12%,
+		var(--background-secondary)
+	);
+}
+
+.hearth-setting-warning .setting-item-name {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	color: var(--color-orange, #e8a33d);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	font-size: var(--font-ui-smaller);
+}
+
+.hearth-setting-warning .setting-item-name .hearth-setting-note-icon {
+	margin-top: 0;
+	color: var(--color-orange, #e8a33d);
+}
+
+/* Override the muted grey the plain note variant sets: a warning that looks
+ * like every other hint isn't a warning. */
+.hearth-setting-warning .setting-item-description {
+	display: block;
+	color: var(--text-normal);
+	font-size: var(--font-ui-smaller);
+}
+
+.hearth-setting-warning-extra {
+	margin-top: 6px;
+	color: var(--text-muted);
+}
+
+/* The integrations catalogue: every plugin and service Hearth works with,
+ * listed whether or not it's installed. Rows are informational first — a status
+ * pill beside the name, and a line under the description saying where the
+ * settings are — so they read tighter than a normal settings row. */
+.hearth-integration-group:not(:first-child) {
+	margin-top: 18px;
+}
+
+.hearth-integration-row .setting-item-name {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+/* The status pill. Sized down to a badge and colour-coded by state: green when
+ * Hearth is actually using it, muted for everything that just isn't on. */
+.hearth-integration-status {
+	flex: 0 0 auto;
+	padding: 1px 7px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 999px;
+	background: var(--background-modifier-hover);
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	font-weight: var(--font-normal);
+	line-height: 1.5;
+	white-space: nowrap;
+}
+
+.hearth-integration-status.is-enabled {
+	border-color: var(--color-green, var(--interactive-accent));
+	color: var(--color-green, var(--interactive-accent));
+	background: transparent;
+}
+
+.hearth-integration-status.is-disabled {
+	border-color: var(--color-orange, var(--background-modifier-border));
+	color: var(--color-orange, var(--text-muted));
+	background: transparent;
+}
+
+/* Where this integration's settings live (or that it has none). Quieter than
+ * the description above it — it's a signpost, not the point of the row. */
+.hearth-integration-where {
+	margin-top: 3px;
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+}
+
+/* Settings whose value low power mode is currently overriding. Still live and
+ * editable — they simply aren't what's on screen right now — so this dims them
+ * rather than disabling them. */
+.hearth-settings-overridden .setting-item:not(.hearth-setting-note) {
+	opacity: 0.55;
 }
 
 /* Obsidian renders a canvas/Excalidraw embed as:
@@ -933,69 +1313,49 @@
 	resize: vertical;
 }
 
-/* ---- Settings tab: foldable sections --------------------------------
+/* ---- Settings tab: section groups -----------------------------------
    These styles apply in Obsidian's settings UI (not the home view), so they're
-   not scoped under .hearth-view. Each section is a .hearth-section with a
-   clickable heading (.hearth-section-head) that toggles the body below it. */
+   not scoped under .hearth-view. Each section is a .hearth-section: a heading
+   (.hearth-section-head) above a bordered box of rows (.hearth-section-body).
+
+   Sections were collapsible cards when a tab held a whole category in one
+   scroll. Each category now has its own page holding a handful of groups, so
+   there's nothing to fold — the heading sits outside the box, labelling it. */
 
 .hearth-section {
-	margin-bottom: 8px;
-}
-
-/* The heading row mirrors Obsidian's own .setting-item-heading look but is
-   interactive (click to fold). */
-.hearth-section-head {
 	display: flex;
-	align-items: center;
-	gap: 10px;
-	padding: 14px 0 10px;
-	cursor: pointer;
-	user-select: none;
-	border-bottom: 1px solid var(--background-modifier-border);
+	flex-direction: column;
 }
 
-.hearth-section-head:hover .hearth-section-title {
-	color: var(--interactive-accent);
-}
-
-.hearth-section-titles {
-	flex: 1;
-	min-width: 0;
+.hearth-section-head {
+	padding: 0 4px 8px;
 }
 
 .hearth-section-title {
-	font-size: var(--font-ui-medium);
+	font-size: var(--font-ui-small);
 	font-weight: 600;
 	color: var(--text-normal);
-	transition: color 120ms ease;
 }
 
 .hearth-section-desc {
-	margin-top: 4px;
+	margin-top: 3px;
 	font-size: var(--font-ui-smaller);
 	color: var(--text-muted);
-	line-height: 1.4;
-}
-
-/* The chevron rotates to indicate collapsed state. */
-.hearth-section-chevron {
-	display: flex;
-	color: var(--text-muted);
-	transition: transform 180ms ease;
-}
-
-.hearth-section-chevron.is-rotated {
-	transform: rotate(-90deg);
+	line-height: 1.45;
+	max-width: 60ch;
 }
 
 .hearth-section-body {
-	/* Smooth collapse/expand. Only height animates; display:none is the real
-	   toggle (so inputs don't remain focusable when hidden). */
-	transition: opacity 150ms ease;
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	padding: 2px 16px;
 }
 
-.hearth-section.is-collapsed .hearth-section-head {
-	border-bottom-color: transparent;
+/* Obsidian rules off every .setting-item with a top border; the first row in a
+   box has the box's own edge above it already. */
+.hearth-section-body > .setting-item:first-child {
+	border-top: none;
 }
 
 /* On Obsidian 1.13+ the whole pane is hosted inside a single declarative
@@ -1008,28 +1368,173 @@
 	padding: 0;
 }
 
-/* ---- Settings tab: category ribbon ----------------------------------
-   A row of tabs pinned to the top of the settings pane; clicking one shows
-   only that category's sections in the body below. */
+/* ---- Settings tab: the category index -------------------------------
+   The pane's first level: every category as a full-width row that opens its
+   own page. This replaced a ribbon of seven tabs pinned to the top of the
+   pane. Seven pills never fit a stock-width pane — they wrapped onto a ragged
+   second line, and clipped the last two once made to scroll — and pinning the
+   row left content sliced behind it. Rows are vertical and nothing here is
+   pinned, so neither failure mode exists.
 
-.hearth-settings-ribbon {
+   Note the ribbon *tab* styles below survive: the card- and dashboard-settings
+   modals reuse .hearth-ribbon-tab for their own tab strips. */
+
+.hearth-settings-index-head {
+	padding: 18px 4px 4px;
+}
+
+.hearth-settings-index-title {
+	font-size: var(--font-ui-larger);
+	font-weight: 600;
+	color: var(--text-normal);
+	letter-spacing: -0.01em;
+}
+
+.hearth-settings-index-sub {
+	margin-top: 4px;
+	font-size: var(--font-ui-small);
+	color: var(--text-muted);
+	line-height: 1.5;
+	max-width: 56ch;
+}
+
+.hearth-settings-index-grouplabel {
+	padding: 22px 4px 8px;
+	font-size: var(--font-ui-smaller);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: var(--text-faint);
+}
+
+.hearth-settings-index-rows {
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+/* A div with role="button" (see HomeSettingTab.indexRow), so none of Obsidian's
+   base button styling applies — in particular its fixed height, which a
+   two-line row overflows. */
+.hearth-settings-index-row {
 	display: flex;
-	flex-wrap: wrap;
+	align-items: center;
+	gap: 14px;
+	padding: 14px 16px;
+	cursor: pointer;
+	transition: background 110ms ease;
+}
+
+.hearth-settings-index-row:focus-visible {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: -2px;
+}
+
+.hearth-settings-index-row + .hearth-settings-index-row {
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.hearth-settings-index-row:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-settings-index-glyph {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 8px;
+	background: var(--background-modifier-border);
+	color: var(--text-normal);
+}
+
+.hearth-settings-index-glyph .svg-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.hearth-settings-index-rowtext {
+	flex: 1;
+	min-width: 0;
+}
+
+.hearth-settings-index-rowname {
+	font-size: var(--font-ui-medium);
+	color: var(--text-normal);
+}
+
+.hearth-settings-index-rowdesc {
+	margin-top: 2px;
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	line-height: 1.45;
+}
+
+.hearth-settings-index-go {
+	display: inline-flex;
+	flex-shrink: 0;
+	color: var(--text-faint);
+}
+
+/* ---- Settings tab: a category page ----------------------------------
+   The second level: one category's groups, with the way back at the top. */
+
+/* Also a div rather than a button — see .hearth-settings-index-row. */
+.hearth-settings-back {
+	display: inline-flex;
+	align-items: center;
 	gap: 4px;
-	position: sticky;
-	top: 0;
-	z-index: 5;
-	padding: 4px 0 10px;
-	margin-bottom: 8px;
-	background: var(--background-primary);
-	border-bottom: 1px solid var(--background-modifier-border);
+	margin: 14px 0 0;
+	padding: 5px 10px 5px 6px;
+	border-radius: 7px;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	cursor: pointer;
+}
+
+.hearth-settings-back:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-settings-back:focus-visible {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: 2px;
+}
+
+.hearth-settings-back-icon {
+	display: inline-flex;
+}
+
+.hearth-settings-back-icon .svg-icon {
+	width: 15px;
+	height: 15px;
+}
+
+.hearth-settings-page-title {
+	padding: 10px 4px 0;
+	font-size: var(--font-ui-larger);
+	font-weight: 600;
+	color: var(--text-normal);
+	letter-spacing: -0.01em;
+}
+
+.hearth-settings-page-desc {
+	padding: 4px 4px 0;
+	font-size: var(--font-ui-small);
+	color: var(--text-muted);
+	line-height: 1.5;
+	max-width: 58ch;
 }
 
 .hearth-ribbon-tab {
 	display: inline-flex;
 	align-items: center;
 	gap: 6px;
-	padding: 6px 12px;
+	padding: 6px 10px;
 	border-radius: 8px;
 	border: 1px solid transparent;
 	background: transparent;
@@ -1038,6 +1543,7 @@
 	font-weight: 500;
 	cursor: pointer;
 	white-space: nowrap;
+	flex-shrink: 0;
 	box-shadow: none;
 	transition:
 		background 120ms ease,
@@ -1072,7 +1578,25 @@
 }
 
 .hearth-settings-tabbody {
+	padding-top: 20px;
 	animation: hearth-tab-fade 140ms ease;
+}
+
+/* Margin rather than a flex gap on the parent: a page is mostly .hearth-section
+   groups, but a couple of pages drop a bare .setting-item straight into the
+   body, and those must not be spaced as if they were groups. */
+.hearth-section,
+.hearth-settings-tabbody > .setting-item {
+	margin-bottom: 22px;
+}
+
+/* A stray row that belongs to no group still gets the group's box, so it reads
+   as deliberate rather than unfinished. */
+.hearth-settings-tabbody > .setting-item {
+	background: var(--background-secondary);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	padding: 14px 16px;
 }
 
 /* Inline error shown when a section (or tab) fails to render, so one broken
@@ -1258,6 +1782,37 @@
 	text-overflow: ellipsis;
 }
 
+/* A list row that carries a note-body excerpt stacks name over excerpt instead
+ * of putting them side by side — a sentence squeezed into the row's spare
+ * horizontal space is unreadable at any list width. */
+.hearth-list-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	min-width: 0;
+	flex: 1;
+}
+
+.hearth-list-excerpt {
+	font-size: 0.76rem;
+	line-height: 1.35;
+	color: var(--text-muted);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	overflow: hidden;
+	overflow-wrap: anywhere;
+}
+
+.hearth-list-item.has-excerpt {
+	align-items: flex-start;
+}
+
+.hearth-list-item.has-excerpt .hearth-list-icon {
+	margin-top: 2px;
+}
+
 /* Bookmark groups (folders): collapsible, nesting to any depth like Obsidian's
    own bookmarks pane. The group wraps a header row over its children. */
 .hearth-bookmark-group,
@@ -1292,8 +1847,48 @@
 }
 
 /* Tasks card */
+
+/* A task list row is one line per task: the checkbox and title on the left, the
+   chips gathered at the right edge, and only the title yielding when there
+   isn't room for everything — it ellipsizes rather than wrapping the row (see
+   the `is-done` rule below for what a completed one looks like). */
+.hearth-task-main {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	/* Zero basis: a flex item is broken onto the next line by its *content*
+	   width, so a long title would wrap the row however freely it can shrink
+	   afterwards. With no basis to overflow it stays put and shrinks instead. */
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+/* The chips, held against the right edge. They keep their size until they alone
+   outgrow the row, at which point they wrap among themselves — the title is
+   already down to an ellipsis by then, and chips spilling past the card's edge
+   would be worse than a second line of them. */
+.hearth-task-metas {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	gap: 8px;
+	flex: 0 1 auto;
+	min-width: 0;
+	margin-left: auto;
+}
+
+/* A task with no chips at all shouldn't pay for the row's gap. */
+.hearth-task-metas:empty {
+	display: none;
+}
+
+/* The title takes only the width it needs, so anything drawn beside it (the
+   TaskNotes status chip, a Kanban card's column badge) sits against it rather
+   than being pushed to the far edge. */
 .hearth-task-text {
-	flex: 1;
+	flex: 0 1 auto;
+	min-width: 0;
 }
 
 .hearth-task.is-done .hearth-task-text {
@@ -1528,6 +2123,45 @@
 	font-family: var(--font-text);
 	font-size: 0.92rem;
 	line-height: 1.5;
+}
+
+/* Keep the raw editor invisible as a *form field* (#160). The `background:
+ * transparent` above is a bare class selector, so it loses to Obsidian's and a
+ * theme's own textarea rules — `body.is-mobile textarea`, and the hover/active
+ * states — which paint `--background-modifier-form-field`. The visible result
+ * was a grey box appearing under the text the moment you double-clicked a note
+ * to edit it. Same reasoning as the focus-ring guard near the end of this file:
+ * this control owns its own surface (it stands in for the rendered preview),
+ * whatever a theme writes. Focus outline/box-shadow are handled there. */
+.hearth-text,
+.hearth-text:hover,
+.hearth-text:active,
+.hearth-text:focus {
+	background: transparent !important;
+	border: none !important;
+}
+
+/* Live-preview note card: Obsidian's real editor hosted in the card body. The
+ * generic `.hearth-leaf-host` rules already make the pane transparent and drop
+ * the view header; what's left is the editor's own page chrome, which is sized
+ * for a full-width tab.
+ *
+ * The two knobs are Obsidian's own editor variables rather than rules aimed at
+ * CodeMirror's internals, so they keep working as that markup changes:
+ * `--file-margins` replaces the wide page padding with the card's own gutter,
+ * and `--file-line-width` drops the readable-line-length cap, which would
+ * otherwise centre a narrow column inside an already-narrow card. */
+.hearth-jot-live {
+	--file-margins: var(--hearth-card-pad-x, 14px);
+	--file-line-width: 100%;
+}
+
+/* The inline title and property table repeat what the card already shows (its
+ * own header names the note, and the read-only embed strips frontmatter the same
+ * way), and on a small card they'd push the text itself out of sight. */
+.hearth-jot-live .inline-title,
+.hearth-jot-live .metadata-container {
+	display: none;
 }
 
 /* Calculator */
@@ -2107,6 +2741,1011 @@
 	text-overflow: ellipsis;
 }
 
+/* ======================================================================
+ * Weather card
+ *
+ * One card with five styles, sharing the pieces below (glyph, temperature,
+ * hourly strip, daily rows, metric tiles) and diverging only where the style
+ * demands it. `.hearth-weather` carries `is-<style>`; the artistic style also
+ * asks its card body for `.hearth-weather-flush`, because a painted sky has to
+ * reach the card's edges.
+ * ====================================================================== */
+.hearth-weather {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	/* Fill the body, but grow past it rather than clipping when a lot of detail
+	 * is switched on — the card body is the scroll container. */
+	min-height: 100%;
+	color: var(--text-normal);
+}
+
+/* The card body is the size container the styles measure against, so a
+ * temperature can be bounded by the card's height as well as its width and the
+ * dense styles can tighten up on a short card instead of spilling out of it.
+ * The body is flex-sized by the card, so containment changes nothing about how
+ * big it is — it only makes that size queryable. */
+.hearth-card-body.hearth-weather-host {
+	container-type: size;
+}
+
+/* The artistic style paints the whole card; drop the body's own padding and
+ * clip the sky to the card's rounded corners. */
+.hearth-card-body.hearth-weather-flush {
+	padding: 0;
+	overflow: hidden;
+}
+
+/* The loading / offline placeholder still needs the padding the sky gave up. */
+.hearth-card-body.hearth-weather-flush .hearth-card-empty {
+	padding: 12px 14px;
+}
+
+/* ---- Shared pieces ---- */
+
+/* The condition glyph. Sized in em so each style can scale it by setting its
+ * own font size on the container. */
+.hearth-weather-glyph {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--text-normal);
+}
+
+.hearth-weather-glyph .svg-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.hearth-weather-temp {
+	font-weight: 300;
+	/* Slightly over 1: at these sizes a line-height of exactly 1 clips the
+	 * bottom of the digits against any ancestor that hides its overflow. */
+	line-height: 1.08;
+	letter-spacing: -0.02em;
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-weather-condition {
+	color: var(--text-normal);
+	font-size: 0.9rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.hearth-weather-place {
+	color: var(--text-muted);
+	font-size: 0.8rem;
+	line-height: 1.25;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.hearth-weather-meta {
+	color: var(--text-muted);
+	font-size: 0.76rem;
+	line-height: 1.3;
+}
+
+/* Metric lines can run long; let them wrap instead of clipping. */
+.hearth-weather-meta-wrap {
+	overflow-wrap: anywhere;
+}
+
+.hearth-weather-updated {
+	color: var(--text-faint);
+	font-size: 0.7rem;
+	margin-top: auto;
+}
+
+/* ---- Minimal: one glyph, one number, centred ---- */
+.hearth-weather.is-minimal {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 4px;
+}
+
+.hearth-weather-hero {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	min-width: 0;
+}
+
+.hearth-weather-hero .hearth-weather-glyph {
+	font-size: clamp(1.2rem, min(14cqw, 26cqh), 3rem);
+}
+
+.hearth-weather-hero .hearth-weather-temp {
+	font-size: clamp(1.5rem, min(22cqw, 38cqh), 4.5rem);
+}
+
+/* ---- Compact / forecast: a single reading row ---- */
+.hearth-weather-row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	min-width: 0;
+}
+
+.hearth-weather-row .hearth-weather-glyph {
+	font-size: 2rem;
+}
+
+.hearth-weather-row .hearth-weather-temp {
+	font-size: 2.4rem;
+}
+
+.hearth-weather-row-tight .hearth-weather-glyph {
+	font-size: 1.5rem;
+}
+
+.hearth-weather-row-tight .hearth-weather-temp {
+	font-size: 1.7rem;
+}
+
+.hearth-weather-rowtext {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+/* ---- Detailed: a taller header above the metric grid ---- */
+.hearth-weather-head {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	min-width: 0;
+}
+
+.hearth-weather-head .hearth-weather-glyph {
+	font-size: 2.8rem;
+	color: var(--text-accent);
+}
+
+.hearth-weather-headtext {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.hearth-weather-headtext .hearth-weather-temp {
+	font-size: 2.6rem;
+}
+
+/* ---- Short cards ----
+ *
+ * A card the reader has made short still has to say everything it was asked to
+ * say. Rather than letting the last line fall off the bottom, the type and the
+ * gaps step down twice — first at the height where the row style stops fitting
+ * its meta line, then again where only the essentials fit at all. */
+@container (max-height: 150px) {
+	.hearth-weather {
+		gap: 4px;
+	}
+
+	.hearth-weather-row .hearth-weather-glyph,
+	.hearth-weather-row-tight .hearth-weather-glyph {
+		font-size: 1.6rem;
+	}
+
+	.hearth-weather-row .hearth-weather-temp,
+	.hearth-weather-row-tight .hearth-weather-temp {
+		font-size: 1.9rem;
+	}
+
+	.hearth-weather-condition {
+		font-size: 0.82rem;
+	}
+
+	.hearth-weather-meta {
+		font-size: 0.7rem;
+	}
+}
+
+@container (max-height: 110px) {
+	.hearth-weather-row {
+		gap: 8px;
+	}
+
+	.hearth-weather-row .hearth-weather-glyph,
+	.hearth-weather-row-tight .hearth-weather-glyph {
+		font-size: 1.3rem;
+	}
+
+	.hearth-weather-row .hearth-weather-temp,
+	.hearth-weather-row-tight .hearth-weather-temp {
+		font-size: 1.5rem;
+	}
+
+	.hearth-weather-condition {
+		font-size: 0.76rem;
+	}
+
+	.hearth-weather-place,
+	.hearth-weather-meta {
+		font-size: 0.66rem;
+		line-height: 1.2;
+	}
+}
+
+/* Scoped through `.hearth-weather-sky` for specificity: the artistic style's
+ * own rules are further down the file and would otherwise win the tie. The
+ * container being measured is the card body, which for an edge-to-edge style
+ * is the sky's own box. */
+@container (max-height: 170px) {
+	.hearth-weather-sky .hearth-weather-art-content {
+		padding: 8px 10px;
+		gap: 2px;
+	}
+
+	.hearth-weather-sky .hearth-weather-art-place {
+		font-size: 0.78rem;
+	}
+
+	.hearth-weather-sky .hearth-weather-art-condition,
+	.hearth-weather-sky .hearth-weather-art-meta {
+		font-size: 0.68rem;
+		line-height: 1.25;
+	}
+}
+
+/* ---- Metric tiles ---- */
+.hearth-weather-metrics {
+	display: grid;
+	/* Tiles fill the row and wrap; a narrow card ends up with one column
+	 * rather than a squeezed two. */
+	grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+	gap: 6px;
+}
+
+.hearth-weather-metric {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 8px;
+	border-radius: 8px;
+	background: var(--background-modifier-hover);
+	min-width: 0;
+}
+
+.hearth-weather-metric-icon {
+	flex: 0 0 auto;
+	display: flex;
+	color: var(--text-muted);
+}
+
+.hearth-weather-metric-icon .svg-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.hearth-weather-metric-text {
+	min-width: 0;
+}
+
+.hearth-weather-metric-label {
+	color: var(--text-faint);
+	font-size: 0.68rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.hearth-weather-metric-value {
+	color: var(--text-normal);
+	font-size: 0.84rem;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ---- Hourly strip ---- */
+.hearth-weather-hours {
+	display: flex;
+	gap: 2px;
+	overflow-x: auto;
+	scrollbar-width: none;
+	flex: 0 0 auto;
+}
+
+.hearth-weather-hours::-webkit-scrollbar {
+	display: none;
+}
+
+.hearth-weather-hour {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	flex: 1 0 auto;
+	min-width: 42px;
+	padding: 4px 2px;
+	border-radius: 8px;
+}
+
+.hearth-weather-hour:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-weather-hour-label {
+	color: var(--text-faint);
+	font-size: 0.68rem;
+	white-space: nowrap;
+}
+
+.hearth-weather-hour-icon {
+	display: flex;
+	color: var(--text-muted);
+}
+
+.hearth-weather-hour-icon .svg-icon {
+	width: 17px;
+	height: 17px;
+}
+
+.hearth-weather-hour-temp {
+	font-size: 0.8rem;
+	font-weight: 500;
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-weather-hour-precip {
+	color: var(--color-blue);
+	font-size: 0.65rem;
+}
+
+/* ---- Daily rows ---- */
+.hearth-weather-days {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-height: 0;
+	overflow-y: auto;
+}
+
+.hearth-weather-day {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 3px 4px;
+	border-radius: 8px;
+	font-size: 0.78rem;
+}
+
+.hearth-weather-day:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-weather-day-label {
+	flex: 0 0 3.4em;
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-weather-day-icon {
+	flex: 0 0 auto;
+	display: flex;
+	color: var(--text-muted);
+}
+
+.hearth-weather-day-icon .svg-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.hearth-weather-day-precip {
+	flex: 0 0 2.6em;
+	color: var(--color-blue);
+	font-size: 0.68rem;
+	text-align: end;
+}
+
+.hearth-weather-day-low,
+.hearth-weather-day-high {
+	flex: 0 0 2.4em;
+	font-variant-numeric: tabular-nums;
+	text-align: end;
+}
+
+.hearth-weather-day-low {
+	color: var(--text-faint);
+}
+
+.hearth-weather-day-high {
+	color: var(--text-normal);
+	font-weight: 500;
+}
+
+/* The range bar: each day's low-to-high span placed against the whole strip's
+ * span, so a warm day's bar sits visibly further right than a cold one's. */
+.hearth-weather-day-track {
+	position: relative;
+	flex: 1 1 auto;
+	height: 4px;
+	min-width: 24px;
+	border-radius: 999px;
+	background: var(--background-modifier-border);
+}
+
+.hearth-weather-day-bar {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	border-radius: 999px;
+	background: linear-gradient(90deg, var(--color-blue), var(--color-orange));
+}
+
+/* ---- Forecast curve ---- */
+.hearth-weather.is-forecast {
+	/* Bounded to the card so the curve has a height to flex against; every
+	 * other block in this style is fixed, and the daily list scrolls itself. */
+	height: 100%;
+}
+
+.hearth-weather.is-forecast .hearth-weather-row,
+.hearth-weather.is-forecast .hearth-weather-metrics {
+	flex: 0 0 auto;
+}
+
+.hearth-weather-chart {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+/* Stretched to the card's width, so each point lands over its label column.
+ * The stroke is drawn with `vector-effect: non-scaling-stroke` in the markup,
+ * which is what keeps that stretch from wedging the line. */
+.hearth-weather-curve {
+	width: 100%;
+	/* The curve is what gives up height on a short card: a shorter curve still
+	 * reads, a clipped hour label does not. */
+	flex: 1 1 auto;
+	min-height: 28px;
+	overflow: visible;
+}
+
+.hearth-weather-curve-line {
+	fill: none;
+	stroke: var(--interactive-accent);
+	stroke-width: 2px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.hearth-weather-curve-fill {
+	fill: var(--interactive-accent);
+	opacity: 0.12;
+}
+
+.hearth-weather-curve-dot {
+	fill: var(--interactive-accent);
+	/* Squashed back against the viewBox stretch so the dots stay round-ish. */
+	transform: scaleX(0.35);
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+.hearth-weather-chart-labels {
+	display: flex;
+	flex: 0 0 auto;
+}
+
+.hearth-weather-chart-label {
+	flex: 1 1 0;
+	min-width: 0;
+	text-align: center;
+}
+
+.hearth-weather-chart-temp {
+	font-size: 0.74rem;
+	font-weight: 500;
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-weather-chart-hour {
+	color: var(--text-faint);
+	font-size: 0.64rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ======================================================================
+ * Artistic style: the painted sky
+ *
+ * The gradient is the sky; the SVG in front of it holds whatever moves (sun,
+ * moon, stars, clouds, rain, snow, a bolt). Every palette is deep enough for
+ * white text, so the overlay never has to switch colour with the theme — and
+ * every animation is gated behind `.is-animated`, which the card drops in low
+ * power mode and when the reader turns motion off.
+ * ====================================================================== */
+.hearth-weather.is-artistic {
+	gap: 0;
+	/* The sky is painted, not scrolled: it fills the card exactly and the
+	 * overlay inside it scrolls if the reading outgrows it. */
+	height: 100%;
+}
+
+.hearth-weather-sky {
+	position: relative;
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow: hidden;
+	color: #fff;
+	/* Overcast day is the fallback palette; each sky-* class below replaces it. */
+	background: linear-gradient(170deg, #7b8ca3 0%, #58687d 55%, #3f4c5e 100%);
+}
+
+.hearth-weather-sky.sky-clear {
+	background: linear-gradient(170deg, #4fa8e0 0%, #2d7fc4 50%, #1b5c96 100%);
+}
+
+.hearth-weather-sky.sky-partly {
+	background: linear-gradient(170deg, #6bb3e3 0%, #4a8bc0 55%, #35668f 100%);
+}
+
+.hearth-weather-sky.sky-fog {
+	background: linear-gradient(170deg, #9aa6b0 0%, #7d8892 55%, #5f6971 100%);
+}
+
+.hearth-weather-sky.sky-drizzle {
+	background: linear-gradient(170deg, #7286a0 0%, #556680 55%, #3b485c 100%);
+}
+
+.hearth-weather-sky.sky-rain {
+	background: linear-gradient(170deg, #5d7086 0%, #46566e 55%, #2f3b4c 100%);
+}
+
+.hearth-weather-sky.sky-snow {
+	background: linear-gradient(170deg, #a8bccd 0%, #8098b0 55%, #5d7288 100%);
+}
+
+.hearth-weather-sky.sky-thunder {
+	background: linear-gradient(170deg, #4a4a63 0%, #363549 55%, #23222f 100%);
+}
+
+/* Night: one deeper palette for every condition, because after dark the
+ * difference between overcast and drizzle is not a colour — it's what falls. */
+.hearth-weather-sky.is-night {
+	background: linear-gradient(170deg, #1d2a44 0%, #162034 55%, #0d1422 100%);
+}
+
+.hearth-weather-sky.is-night.sky-clear,
+.hearth-weather-sky.is-night.sky-partly {
+	background: linear-gradient(170deg, #24365c 0%, #182543 55%, #0c1322 100%);
+}
+
+.hearth-weather-sky.is-night.sky-thunder {
+	background: linear-gradient(170deg, #2a2740 0%, #1c1a2c 55%, #101019 100%);
+}
+
+.hearth-weather-art {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ---- Sun and moon ---- */
+.hearth-weather-sun-disc {
+	fill: #fff3c4;
+}
+
+.hearth-weather-sun-glow {
+	fill: #ffe9a3;
+	opacity: 0.28;
+}
+
+.hearth-weather-moon-disc {
+	fill: #eef2ff;
+}
+
+.hearth-weather-moon-glow {
+	fill: #cdd8ff;
+	opacity: 0.16;
+}
+
+.is-animated .hearth-weather-sun-glow,
+.is-animated .hearth-weather-moon-glow {
+	animation: hearth-weather-breathe 6s ease-in-out infinite;
+	/* Scale about the glow's own centre. Naming a point in user units instead
+	 * is what made the moon slide sideways as it breathed: the moon's crescent
+	 * is drawn in a group that is translated into place, so a coordinate that
+	 * is correct on screen is the wrong point inside that group — and scaling
+	 * about a point off to one side moves the disc rather than growing it.
+	 * `fill-box` sidesteps the whole question. */
+	transform-box: fill-box;
+	transform-origin: center;
+}
+
+@keyframes hearth-weather-breathe {
+	0%,
+	100% {
+		transform: scale(1);
+		opacity: 0.22;
+	}
+	50% {
+		transform: scale(1.12);
+		opacity: 0.34;
+	}
+}
+
+/* ---- Stars ---- */
+.hearth-weather-stars circle {
+	fill: #fff;
+	opacity: 0.75;
+}
+
+.is-animated .hearth-weather-stars circle {
+	animation: hearth-weather-twinkle 4s ease-in-out infinite;
+}
+
+@keyframes hearth-weather-twinkle {
+	0%,
+	100% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.9;
+	}
+}
+
+/* ---- Clouds ---- */
+.hearth-weather-cloud ellipse,
+.hearth-weather-cloud rect {
+	fill: #fff;
+}
+
+/* The opacity belongs on the group, not the shapes: a cloud is four
+ * overlapping discs, and fading them individually shows every seam. */
+.hearth-weather-cloud {
+	opacity: 0.32;
+}
+
+.hearth-weather-sky.is-night .hearth-weather-cloud {
+	opacity: 0.18;
+}
+
+/* Each lane drifts at its own speed, so the bank never moves as one slab. The
+ * duration and the phase are set per cloud in sky.ts (they depend on where in
+ * the box the cloud starts); the stylesheet only says what the motion is. */
+.is-animated .hearth-weather-cloud {
+	animation-name: hearth-weather-drift;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* The distances are variables because they are the one part of the animation
+ * that has to know how wide the box is: a board-sized sky is drawn in a wider
+ * viewBox, and a cloud that stops at the card's 260 would strand mid-screen.
+ * sky.ts sets them; the fallbacks are the card's. */
+@keyframes hearth-weather-drift {
+	from {
+		transform: translateX(var(--sky-drift-from, -60px));
+	}
+	to {
+		transform: translateX(var(--sky-drift-to, 260px));
+	}
+}
+
+/* ---- Fog ----
+ *
+ * A bank of overlapping wisps rather than a few bands. The group is faded as a
+ * whole so the overlaps merge into one body of haze; each wisp carries its own
+ * opacity (set in sky.ts, by depth) and its own speed, and they drift the same
+ * way the clouds do. */
+.hearth-weather-fogbank {
+	opacity: 0.5;
+}
+
+.hearth-weather-fogbank ellipse {
+	fill: #fff;
+}
+
+.is-animated .hearth-weather-fogbank ellipse {
+	animation-name: hearth-weather-drift;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* ---- Rain, drizzle and snow ---- */
+.hearth-weather-fall line {
+	stroke: #cfe4ff;
+	stroke-width: 1.4;
+	stroke-linecap: round;
+	opacity: 0.55;
+}
+
+.hearth-weather-fall.is-drizzle line {
+	stroke-width: 1;
+	opacity: 0.4;
+}
+
+.hearth-weather-fall circle {
+	fill: #fff;
+	opacity: 0.8;
+}
+
+/* Falling is one long drop down the whole box; the per-drop delay and duration
+ * are set in the markup so the field never marches in step. Without animation
+ * the drops still sit in the sky at their start offsets, which reads as light
+ * precipitation rather than as an empty sky. */
+.is-animated .hearth-weather-fall line,
+.is-animated .hearth-weather-fall circle {
+	animation-name: hearth-weather-rainfall;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.is-animated .hearth-weather-fall.is-snow circle {
+	animation-name: hearth-weather-snowfall;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes hearth-weather-rainfall {
+	from {
+		transform: translate(0, -20px);
+		opacity: 0;
+	}
+	15% {
+		opacity: 0.6;
+	}
+	to {
+		transform: translate(-24px, var(--sky-fall, 140px));
+		opacity: 0;
+	}
+}
+
+@keyframes hearth-weather-snowfall {
+	from {
+		transform: translate(0, -12px);
+		opacity: 0;
+	}
+	20% {
+		opacity: 0.85;
+	}
+	to {
+		transform: translate(14px, var(--sky-fall, 140px));
+		opacity: 0;
+	}
+}
+
+/* ---- Lightning ----
+ *
+ * A stroke, not a filled shape: a discharge is a line that forked, and drawing
+ * it as one lets the same path carry a bright core and a soft halo. */
+.hearth-weather-bolt {
+	fill: none;
+	stroke: #fff6cf;
+	stroke-width: 1.4;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	opacity: 0;
+	/* The halo. Cheaper than a blur filter over the whole backdrop, and it
+	 * survives on hardware where filters are the first thing to stutter. */
+	filter: drop-shadow(0 0 3px rgba(255, 240, 170, 0.9));
+}
+
+/* A still storm (low power, motion off, reduced motion) still needs to look
+ * like a storm rather than plain rain, so the discharges simply stay lit. */
+.hearth-weather-sky:not(.is-animated) .hearth-weather-bolt {
+	opacity: 0.85;
+}
+
+.hearth-weather-flash {
+	fill: #fff;
+	opacity: 0;
+}
+
+/* Each bolt gets its own duration and phase in sky.ts, so the strikes drift
+ * out of step instead of firing together on a loop. */
+.is-animated .hearth-weather-bolt {
+	animation-name: hearth-weather-strike;
+	animation-timing-function: steps(1, end);
+	animation-iteration-count: infinite;
+}
+
+.is-animated .hearth-weather-flash {
+	animation: hearth-weather-sheet 11.1s steps(1, end) infinite;
+}
+
+/* Most of the cycle is dark. The strike itself is a stutter — bright, gone,
+ * brighter — because that flicker is what the eye reads as lightning. */
+@keyframes hearth-weather-strike {
+	0%,
+	2.4%,
+	100% {
+		opacity: 0;
+	}
+	0.4% {
+		opacity: 0.95;
+	}
+	0.9% {
+		opacity: 0.15;
+	}
+	1.4% {
+		opacity: 1;
+	}
+	1.9% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes hearth-weather-sheet {
+	0%,
+	3%,
+	100% {
+		opacity: 0;
+	}
+	0.5% {
+		opacity: 0.16;
+	}
+	1% {
+		opacity: 0.04;
+	}
+	1.6% {
+		opacity: 0.2;
+	}
+	2.2% {
+		opacity: 0.05;
+	}
+}
+
+/* A reader who has asked the OS for less motion gets a still sky: the shapes
+ * stay where sky.ts placed them (drops are spread down the field for exactly
+ * this case), so nothing disappears — it simply stops moving. */
+@media (prefers-reduced-motion: reduce) {
+	.hearth-weather-sky.is-animated * {
+		animation: none !important;
+	}
+}
+
+/* ---- The reading laid over the sky ---- */
+.hearth-weather-art-content {
+	/* Pinned to the sky's box rather than sized as a percentage of it: the
+	 * overlay then fills the card however the sky's own height resolves, and
+	 * the padding can never push the last line of the reading outside the clip
+	 * box (which hides it completely, sky and all still showing). */
+	position: absolute;
+	inset: 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 12px 14px;
+	gap: 8px;
+	/* A soft scrim under the text: the sun or a pale cloud can drift straight
+	 * behind a line and a plain white glyph would vanish into it. */
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.28) 0%,
+		rgba(0, 0, 0, 0) 38%,
+		rgba(0, 0, 0, 0.34) 100%
+	);
+	overflow-y: auto;
+	scrollbar-width: none;
+}
+
+.hearth-weather-art-content::-webkit-scrollbar {
+	display: none;
+}
+
+.hearth-weather-art-top,
+.hearth-weather-art-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.hearth-weather-art-place {
+	font-size: 0.86rem;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.hearth-weather-art-condition {
+	font-size: 0.76rem;
+	opacity: 0.85;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.hearth-weather-art-temp {
+	/* Bounded by the card's height as well as its width: a short, wide card
+	 * would otherwise ask for a temperature taller than the sky it sits in,
+	 * and the digits would be cropped. */
+	font-size: clamp(1.4rem, min(22cqw, 30cqh), 4.5rem);
+	font-weight: 200;
+	line-height: 1.08;
+	letter-spacing: -0.03em;
+	font-variant-numeric: tabular-nums;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hearth-weather-art-meta {
+	font-size: 0.74rem;
+	opacity: 0.85;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* Over a sky, the strips and rows drop their theme colours for the overlay's
+ * white — the card's own palette has no contrast against a painted backdrop. */
+.hearth-weather-art-content .hearth-weather-hour-label,
+.hearth-weather-art-content .hearth-weather-hour-temp,
+.hearth-weather-art-content .hearth-weather-hour-icon,
+.hearth-weather-art-content .hearth-weather-hour-precip,
+.hearth-weather-art-content .hearth-weather-day,
+.hearth-weather-art-content .hearth-weather-day-label,
+.hearth-weather-art-content .hearth-weather-day-icon,
+.hearth-weather-art-content .hearth-weather-day-precip,
+.hearth-weather-art-content .hearth-weather-day-low,
+.hearth-weather-art-content .hearth-weather-day-high,
+.hearth-weather-art-content .hearth-weather-updated {
+	color: #fff;
+}
+
+.hearth-weather-art-content .hearth-weather-hour-label,
+.hearth-weather-art-content .hearth-weather-day-label,
+.hearth-weather-art-content .hearth-weather-day-low,
+.hearth-weather-art-content .hearth-weather-updated {
+	opacity: 0.75;
+}
+
+.hearth-weather-art-content .hearth-weather-hour:hover,
+.hearth-weather-art-content .hearth-weather-day:hover {
+	background: rgba(255, 255, 255, 0.12);
+}
+
+.hearth-weather-art-content .hearth-weather-day-track {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+/* ---- Editor: the place picker ---- */
+.hearth-weather-search-input {
+	min-width: 12em;
+}
+
+.hearth-weather-search-empty {
+	padding: 4px 0 8px;
+}
+
+.hearth-weather-result .setting-item-name {
+	font-size: 0.9rem;
+}
+
+/* Manual coordinates: two inputs beside a label leave the name/description a
+   sliver of the dialog ("Coord…" over a one-word-per-line paragraph). Stack
+   the pair under the label and let them share the full width. */
+.hearth-weather-coords {
+	display: block;
+}
+
+.hearth-weather-coords .setting-item-control {
+	margin-top: 8px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.hearth-weather-coord-input {
+	flex: 1 1 8em;
+	min-width: 0;
+}
+
 /* Mini calendar card */
 .hearth-calendar {
 	display: flex;
@@ -2304,8 +3943,12 @@
 	cursor: pointer;
 }
 
-.hearth-agenda-row:hover {
-	background: var(--background-modifier-hover);
+/* Hover is guarded to pointers that can actually hover: on touch the state
+   sticks after a tap, leaving a row looking permanently selected. */
+@media (hover: hover) {
+	.hearth-agenda-row:hover {
+		background: var(--background-modifier-hover);
+	}
 }
 
 .hearth-agenda-date {
@@ -2330,9 +3973,12 @@
 	color: var(--text-normal);
 }
 
+/* Today is marked on the date badge, not by flooding the row: an accent ring
+   around the day number reads at a glance without fighting the row's text. */
 .hearth-agenda-row.is-today .hearth-agenda-daynum {
 	color: var(--interactive-accent);
-	background: color-mix(in srgb, var(--interactive-accent) 16%, transparent);
+	background: color-mix(in srgb, var(--interactive-accent) 14%, transparent);
+	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 55%, transparent);
 	border-radius: 999px;
 	width: 24px;
 	height: 24px;
@@ -2340,6 +3986,10 @@
 	align-items: center;
 	justify-content: center;
 	font-weight: 700;
+}
+
+.hearth-agenda-row.is-today .hearth-agenda-dow {
+	color: color-mix(in srgb, var(--interactive-accent) 70%, var(--text-muted));
 }
 
 .hearth-agenda-main {
@@ -2372,11 +4022,11 @@
 	margin-left: auto;
 }
 
-.hearth-agenda-row.is-today {
-	outline: 1px solid color-mix(in srgb, var(--interactive-accent) 45%, transparent);
-	outline-offset: -1px;
-}
-
+/* At rest today's row is only faintly tinted — the accent badge above carries
+   the marking. The stronger accent wash is kept for hover, so pointing at the
+   row is what lights it up rather than it shouting all the time. The row owns
+   both states explicitly so a theme's own (sometimes very saturated) hover
+   colour can't turn it into an unreadable slab. */
 /* Heatmap tint for agenda rows, mirroring the grid's per-day tint. Built from
  * the stable --accent-h/s/l vars for the same reason (see the grid rule). */
 .hearth-agenda-row.has-heat {
@@ -2388,8 +4038,10 @@
 	);
 }
 
-.hearth-agenda-row.has-heat:hover {
-	background-color: var(--background-modifier-hover);
+@media (hover: hover) {
+	.hearth-agenda-row.has-heat:hover {
+		background-color: var(--background-modifier-hover);
+	}
 }
 
 .hearth-agenda-row.is-static {
@@ -2398,6 +4050,20 @@
 
 .hearth-agenda-row.is-static:hover {
 	background: transparent;
+}
+
+/* Today's row, last so it wins over the heat tint and the static reset. */
+.hearth-agenda-row.is-today,
+.hearth-agenda-row.is-today.has-heat,
+.hearth-agenda-row.is-today.is-static:hover {
+	background-color: color-mix(in srgb, var(--interactive-accent) 8%, transparent);
+}
+
+@media (hover: hover) {
+	.hearth-agenda-row.is-today:hover,
+	.hearth-agenda-row.is-today.has-heat:hover {
+		background-color: color-mix(in srgb, var(--interactive-accent) 20%, transparent);
+	}
 }
 
 /* External calendar events listed under an agenda day. The left inset lines
@@ -2463,6 +4129,45 @@
 	padding: 0 5px;
 	border-radius: 6px;
 	background: var(--background-modifier-hover);
+}
+
+/* TaskNotes entries in the agenda: a completion box in place of the bullet,
+   markers for a due date / timeblock, and a struck-through, faded row once the
+   task (or, for a recurring task, this occurrence) is complete. */
+.hearth-agenda-evcheck {
+	flex: 0 0 auto;
+	align-self: center;
+	margin: 0;
+	width: 12px;
+	height: 12px;
+	accent-color: var(--ev-color, var(--interactive-accent));
+	cursor: pointer;
+}
+
+.hearth-agenda-event.is-done .hearth-agenda-evtitle {
+	text-decoration: line-through;
+	color: var(--text-faint);
+}
+
+.hearth-agenda-event.is-done .hearth-agenda-evtime {
+	opacity: 0.6;
+}
+
+.hearth-agenda-evbadge.is-due {
+	color: var(--text-on-accent);
+	background: var(--ev-color, var(--color-red));
+}
+
+.hearth-agenda-evbadge.is-timeblock {
+	color: var(--text-muted);
+	border: 1px solid var(--background-modifier-border);
+	background: transparent;
+}
+
+/* A completed task's day-grid dot fades, so a busy day still reads as what is
+   left to do. */
+.hearth-calendar-evdot.is-done {
+	opacity: 0.4;
 }
 
 /* Event details modal (opened from a calendar day picker or agenda event) */
@@ -2568,6 +4273,657 @@
 	max-width: 9em;
 }
 
+/* ===================================================================== */
+/*  Calendar card (kind "schedule")                                      */
+/* ===================================================================== */
+
+.hearth-sched {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 0;
+	gap: 8px;
+}
+
+.hearth-sched-body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 0;
+}
+
+/* ---- Toolbar ---- */
+
+.hearth-sched-toolbar {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.hearth-sched-nav {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+
+.hearth-sched-navbtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 26px;
+	width: 26px;
+	height: 26px;
+	padding: 0;
+	border: none;
+	border-radius: 7px;
+	background: transparent;
+	color: var(--text-muted);
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.hearth-sched-navbtn:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-sched-navbtn .svg-icon,
+.hearth-sched-navbtn svg {
+	width: 17px;
+	height: 17px;
+}
+
+.hearth-sched-today {
+	padding: 3px 9px;
+	height: 26px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 7px;
+	background: transparent;
+	color: var(--text-muted);
+	font-size: 0.74rem;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.hearth-sched-today:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-sched-title {
+	flex: 1;
+	min-width: 0;
+	font-size: 0.92rem;
+	font-weight: 600;
+	color: var(--text-normal);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* The view switcher reads as one segmented control rather than four buttons. */
+.hearth-sched-views {
+	display: flex;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+.hearth-sched-view {
+	padding: 3px 9px;
+	height: 26px;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	color: var(--text-muted);
+	font-size: 0.74rem;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.hearth-sched-view + .hearth-sched-view {
+	border-left: 1px solid var(--background-modifier-border);
+}
+
+.hearth-sched-view:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-sched-view.is-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+/* The per-view toggles read as one list under their shared description. */
+.hearth-sched-viewtoggle {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+/* ---- Shared event chip (month cells and the all-day band) ---- */
+
+.hearth-sched-chip {
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
+	padding: 1px 5px;
+	border-radius: 5px;
+	border-left: 3px solid var(--ev-color, var(--interactive-accent));
+	background: color-mix(in srgb, var(--ev-color, var(--interactive-accent)) 16%, transparent);
+	font-size: 0.72rem;
+	line-height: 1.45;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.hearth-sched-chip:hover {
+	background: color-mix(in srgb, var(--ev-color, var(--interactive-accent)) 30%, transparent);
+}
+
+/* An all-day chip is the block itself, so it takes the source's colour solid. */
+.hearth-sched-chip.is-allday {
+	border-left: none;
+	background: var(--ev-color, var(--interactive-accent));
+	color: var(--text-on-accent);
+}
+
+.hearth-sched-chip.is-done {
+	opacity: 0.55;
+}
+
+.hearth-sched-chip.is-done .hearth-sched-chiptitle {
+	text-decoration: line-through;
+}
+
+.hearth-sched-chiptime {
+	flex: 0 0 auto;
+	color: var(--text-muted);
+	font-variant-numeric: tabular-nums;
+	font-size: 0.68rem;
+}
+
+.hearth-sched-chip.is-allday .hearth-sched-chiptime {
+	color: inherit;
+}
+
+.hearth-sched-chiptitle {
+	color: var(--text-normal);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-sched-chip.is-allday .hearth-sched-chiptitle {
+	color: inherit;
+}
+
+/* A day that already has a daily note carries the same accent dot everywhere
+   it appears — month cell, week header, list row. */
+.hearth-sched-notedot {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: var(--interactive-accent);
+	flex: 0 0 4px;
+}
+
+/* ---- Month view ---- */
+
+.hearth-sched-month {
+	display: grid;
+	grid-template-columns: repeat(var(--sched-cols, 7), minmax(0, 1fr));
+	/* Header row sized to its text, the weeks sharing what's left equally. */
+	grid-template-rows: auto repeat(var(--sched-rows, 6), minmax(0, 1fr));
+	gap: 1px;
+	flex: 1;
+	min-height: 0;
+	overflow: hidden;
+}
+
+.hearth-sched-month.has-week-numbers {
+	grid-template-columns: minmax(0, 0.4fr) repeat(var(--sched-cols, 7), minmax(0, 1fr));
+}
+
+.hearth-sched-dow,
+.hearth-sched-wk {
+	font-size: 0.68rem;
+	color: var(--text-faint);
+	text-align: center;
+	padding-bottom: 2px;
+}
+
+.hearth-sched-wk {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-sched-cell {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-height: 0;
+	padding: 2px 3px;
+	border-radius: 6px;
+	background: var(--background-modifier-hover);
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.hearth-sched-cell:hover {
+	background: var(--background-modifier-border);
+}
+
+.hearth-sched-cell.is-outside {
+	background: transparent;
+}
+
+.hearth-sched-cell.is-outside .hearth-sched-daynum {
+	color: var(--text-faint);
+}
+
+.hearth-sched-cell.is-today {
+	outline: 1px solid var(--interactive-accent);
+	outline-offset: -1px;
+}
+
+.hearth-sched-cellhead {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+
+.hearth-sched-daynum {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 18px;
+	height: 18px;
+	border-radius: 999px;
+	font-size: 0.74rem;
+	color: var(--text-normal);
+	cursor: pointer;
+}
+
+.hearth-sched-daynum:hover {
+	background: var(--background-modifier-border);
+}
+
+.hearth-sched-cell.is-today .hearth-sched-daynum {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	font-weight: 700;
+}
+
+.hearth-sched-cellevents {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	min-height: 0;
+	overflow-y: auto;
+}
+
+/* The dots layout: the mini calendar's density, inside the bigger grid. */
+.hearth-sched-month.is-dots .hearth-sched-cellevents {
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 3px;
+	padding: 2px 1px;
+}
+
+.hearth-sched-dot {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: var(--ev-color, var(--interactive-accent));
+	cursor: pointer;
+}
+
+.hearth-sched-dot.is-done {
+	opacity: 0.4;
+}
+
+.hearth-sched-more {
+	font-size: 0.68rem;
+	color: var(--text-muted);
+	padding-left: 3px;
+	cursor: pointer;
+}
+
+.hearth-sched-more:hover {
+	color: var(--text-normal);
+	text-decoration: underline;
+}
+
+/* ---- Week and day views ---- */
+
+.hearth-sched-timegrid {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 0;
+	--sched-gutter: 46px;
+}
+
+.hearth-sched-gridhead {
+	display: flex;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.hearth-sched-gutterhead {
+	flex: 0 0 var(--sched-gutter);
+}
+
+.hearth-sched-headcols {
+	display: grid;
+	grid-template-columns: repeat(var(--sched-cols, 7), minmax(0, 1fr));
+	flex: 1;
+	min-width: 0;
+}
+
+.hearth-sched-headday {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	gap: 4px;
+	padding: 2px 0 5px;
+	border-radius: 6px 6px 0 0;
+	cursor: pointer;
+}
+
+.hearth-sched-headday:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-sched-headdow {
+	font-size: 0.68rem;
+	color: var(--text-faint);
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.hearth-sched-headnum {
+	font-size: 0.86rem;
+	color: var(--text-normal);
+}
+
+.hearth-sched-headday.is-today .hearth-sched-headnum {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 19px;
+	height: 19px;
+	border-radius: 999px;
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+	font-weight: 700;
+}
+
+/* The band for everything without an hour of its own. */
+.hearth-sched-allday {
+	display: flex;
+	align-items: stretch;
+	gap: 0;
+	padding: 3px 0;
+	border-bottom: 1px solid var(--background-modifier-border);
+	max-height: 22%;
+	overflow-y: auto;
+}
+
+.hearth-sched-alldaylabel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 var(--sched-gutter);
+	color: var(--text-faint);
+}
+
+.hearth-sched-alldaylabel .svg-icon,
+.hearth-sched-alldaylabel svg {
+	width: 13px;
+	height: 13px;
+}
+
+.hearth-sched-alldaycols {
+	display: grid;
+	grid-template-columns: repeat(var(--sched-cols, 7), minmax(0, 1fr));
+	flex: 1;
+	min-width: 0;
+	gap: 2px;
+}
+
+.hearth-sched-alldaycol {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.hearth-sched-scroll {
+	flex: 1;
+	min-height: 0;
+	overflow-y: auto;
+}
+
+.hearth-sched-canvas {
+	display: flex;
+	height: var(--sched-height, 1056px);
+}
+
+.hearth-sched-gutter {
+	flex: 0 0 var(--sched-gutter);
+	display: flex;
+	flex-direction: column;
+}
+
+.hearth-sched-hour {
+	height: var(--sched-hour, 44px);
+	position: relative;
+}
+
+/* The label straddles its hour line, except the first one, which would be cut
+   off by the top edge of the scroller. */
+.hearth-sched-hourlabel {
+	position: absolute;
+	top: 0;
+	right: 7px;
+	transform: translateY(-50%);
+	font-size: 0.66rem;
+	color: var(--text-faint);
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.hearth-sched-hour:first-child .hearth-sched-hourlabel {
+	transform: none;
+}
+
+.hearth-sched-cols {
+	display: grid;
+	grid-template-columns: repeat(var(--sched-cols, 7), minmax(0, 1fr));
+	flex: 1;
+	min-width: 0;
+}
+
+/* One hour line per row, drawn by the background rather than by an element per
+   hour — the grid stays one element deep however tall the day is. */
+.hearth-sched-col {
+	position: relative;
+	border-left: 1px solid var(--background-modifier-border);
+	background-image: linear-gradient(
+		to bottom,
+		var(--background-modifier-border) 0,
+		var(--background-modifier-border) 1px,
+		transparent 1px
+	);
+	background-size: 100% var(--sched-hour, 44px);
+}
+
+.hearth-sched-col.is-today {
+	background-color: color-mix(in srgb, var(--interactive-accent) 6%, transparent);
+}
+
+.hearth-sched-block {
+	position: absolute;
+	top: var(--ev-top, 0);
+	height: var(--ev-height, 5%);
+	left: calc(var(--ev-left, 0%) + 2px);
+	width: calc(var(--ev-width, 100%) - 4px);
+	display: flex;
+	flex-direction: column;
+	padding: 1px 4px;
+	border-radius: 5px;
+	border-left: 3px solid var(--ev-color, var(--interactive-accent));
+	background: color-mix(in srgb, var(--ev-color, var(--interactive-accent)) 22%, var(--background-primary));
+	color: var(--text-normal);
+	font-size: 0.7rem;
+	line-height: 1.3;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+/* A block with room for one line only puts the title and the time on that
+   line, side by side, rather than stacking text it cannot show. */
+.hearth-sched-block.is-inline {
+	flex-direction: row;
+	align-items: baseline;
+	gap: 5px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.hearth-sched-block.is-inline .hearth-sched-blocktitle {
+	min-width: 0;
+}
+
+/* On a narrow (or column-split) block the title has the whole line; the time
+   gives way rather than squeezing the title out. */
+.hearth-sched-block.is-inline .hearth-sched-blocktime {
+	flex: 0 1 auto;
+	min-width: 0;
+}
+
+.hearth-sched-block:hover {
+	background: color-mix(in srgb, var(--ev-color, var(--interactive-accent)) 36%, var(--background-primary));
+	z-index: 2;
+}
+
+/* A block continuing beyond the drawn window loses the rounding on that side,
+   so it reads as cut off rather than as ending there. */
+.hearth-sched-block.is-clipped-start {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.hearth-sched-block.is-clipped-end {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.hearth-sched-block.is-done {
+	opacity: 0.55;
+}
+
+.hearth-sched-block.is-done .hearth-sched-blocktitle {
+	text-decoration: line-through;
+}
+
+.hearth-sched-blocktitle {
+	font-weight: 600;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-sched-blocktime,
+.hearth-sched-blockplace {
+	color: var(--text-muted);
+	font-size: 0.66rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-sched-now {
+	position: absolute;
+	top: var(--now-top, 0);
+	left: 0;
+	right: 0;
+	height: 0;
+	border-top: 2px solid var(--color-red);
+	pointer-events: none;
+	z-index: 3;
+}
+
+/* The knob on the left end, so the line reads as "now" and not as a border. */
+.hearth-sched-now::before {
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -3px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: var(--color-red);
+}
+
+.hearth-sched-now.is-hidden {
+	display: none;
+}
+
+/* ---- List view ---- */
+
+.hearth-sched-list {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	min-height: 0;
+	overflow-y: auto;
+}
+
+.hearth-sched-listday {
+	display: flex;
+	align-items: baseline;
+	gap: 7px;
+	padding: 7px 4px 3px;
+	cursor: pointer;
+}
+
+.hearth-sched-listday.is-static {
+	cursor: default;
+}
+
+.hearth-sched-listday:not(.is-static):hover .hearth-sched-listdate {
+	text-decoration: underline;
+}
+
+.hearth-sched-listdate {
+	font-size: 0.78rem;
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
+.hearth-sched-listday.is-today .hearth-sched-listdate {
+	color: var(--interactive-accent);
+}
+
+.hearth-sched-listrel {
+	font-size: 0.68rem;
+	color: var(--text-faint);
+}
+
+/* The rows themselves are the shared agenda rows (renderEventRow), indented
+   under their day the way the mini calendar's agenda indents them. */
+.hearth-sched-listevents {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	padding: 0 8px 4px 14px;
+}
+
 /* Vault statistics card */
 .hearth-stats {
 	display: grid;
@@ -2611,6 +4967,10 @@
 	display: flex;
 	justify-content: flex-end;
 	gap: 8px;
+	/* Arrange mode shows four labelled buttons; in a narrow pane they wrap onto
+	 * a second row (still right-aligned) instead of overflowing the board. */
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .hearth-tool-btn {
@@ -3239,8 +5599,11 @@
 	padding: 6px 10px;
 }
 
+/* Sets the gutter through `--hearth-card-pad-x` so embed/jot hosts, which carry
+ * the inline padding themselves (see `.is-embed-host` above), follow suit. */
 .hearth-compact .hearth-card-body {
-	padding: 8px 10px;
+	--hearth-card-pad-x: 10px;
+	padding: 8px var(--hearth-card-pad-x);
 }
 
 /* ---- Calendar: week numbers & heatmap ------------------------------- */
@@ -3443,20 +5806,6 @@
 	text-transform: capitalize;
 }
 
-/* The chip is left-aligned against the task title instead of drifting into the
-   right-hand chip cluster: the title stops filling the row, and the chip's auto
-   right margin pushes the priority and date chips to the far edge. The marker
-   class is set in renderTaskStatus() rather than matched with :has(), which is
-   avoided here for its broad selector-invalidation cost. */
-.hearth-task.has-statuschip .hearth-task-text {
-	flex: 0 1 auto;
-	min-width: 0;
-}
-
-.hearth-task.has-statuschip .hearth-task-statuschip {
-	margin-right: auto;
-}
-
 /* A completed task's status chip recedes with the rest of the row. */
 .hearth-task.is-done .hearth-task-statuschip {
 	color: var(--text-faint);
@@ -3567,6 +5916,78 @@
 	font-size: 0.82rem;
 	line-height: 1.5;
 	resize: vertical;
+}
+
+/* Datacore query/script editor: same monospaced code box as Dataview's. */
+.hearth-datacore-input {
+	width: 100%;
+	font-family: var(--font-monospace);
+	font-size: 0.82rem;
+	line-height: 1.5;
+	resize: vertical;
+}
+
+/* Datacore card body: Datacore's own rendered views (tables, lists, cards).
+   Deliberately almost empty. Datacore's `.datacore-table` is `width: 100%` with
+   `max-width: 100%` cells — it already fits its container, unlike Dataview's
+   content-sized tables — so the card wants no width opinions of its own: the
+   card should render what a note renders. All that's left is a scroll box, for
+   content that is intrinsically wide (a Markdown table, a long code line)
+   rather than forcing the whole board wider. */
+.hearth-datacore {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+/* A failed Datacore query or script. Left-aligned, not centred like the generic
+   empty state: the detail below is the engine's own message, and Datacore's
+   parse errors are ASCII drawings (a numbered echo of the query with a caret
+   under the offending column) that only line up in a monospaced block. */
+.hearth-datacore-error {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	padding: 0.75em 0.9em;
+	min-width: 0;
+}
+
+.hearth-datacore-error-head {
+	display: flex;
+	align-items: center;
+	gap: 0.45em;
+	color: var(--text-muted);
+}
+
+.hearth-datacore-error-icon {
+	display: flex;
+	color: var(--text-warning);
+}
+
+.hearth-datacore-error-icon .svg-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.hearth-datacore-error-title {
+	font-size: 0.9rem;
+}
+
+/* The engine's message, verbatim. Scrolls in its own box rather than stretching
+   the card, and keeps its line breaks so the caret stays under its column. */
+.hearth-datacore-error-detail {
+	margin: 0;
+	max-height: 14em;
+	overflow: auto;
+	padding: 0.6em 0.7em;
+	border-radius: var(--radius-s);
+	background: var(--background-secondary);
+	color: var(--text-muted);
+	font-family: var(--font-monospace);
+	font-size: 0.75rem;
+	line-height: 1.45;
+	white-space: pre;
+	tab-size: 4;
 }
 
 /* Dataview card body: Dataview's own rendered output (tables, lists, task
@@ -3897,6 +6318,22 @@ body.hearth-dv-resizing {
 	border-bottom: 1px solid var(--background-modifier-border);
 }
 
+/* Priority and status rows: a strip of chips, and status can carry a dozen
+   custom values (TaskNotes statuses, Kanban columns). Obsidian's side-by-side
+   .setting-item gives the control the room and squeezes the name into a sliver
+   — "Status" arrives as "Sta…" — then right-aligns the wrapped chips into a
+   staggered block (#164). Stack the chips under the label instead and run them
+   left-to-right, the way the other crowded settings in Hearth do. */
+.hearth-taskfilter-row {
+	display: block;
+}
+
+.hearth-taskfilter-row .setting-item-control {
+	margin-top: 8px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
 .hearth-taskfilter-chips {
 	display: flex;
 	flex-wrap: wrap;
@@ -3966,6 +6403,48 @@ body.hearth-dv-resizing {
 .hearth-embed-hide-base-header .bases-header,
 .hearth-embed-hide-base-header .bases-toolbar {
 	display: none !important;
+}
+
+/* Embedded Bases: let the view show the card's translucent surface (#opacity).
+ * The list/cards views paint nothing of their own, so they honoured
+ * --card-opacity for free; the table view fills its container, rows and cells
+ * with the base surface (it needs opaque paint for its sticky header and sticky
+ * first column to cover what scrolls beneath), which read as a solid slab on a
+ * translucent card.
+ *
+ * Same fix as .hearth-leaf-host: rather than chase every element that paints —
+ * Bases' internals are not a public API and its class names can change between
+ * releases — neutralise the base-surface variables *within the embed host*, so
+ * whichever element does the painting resolves to transparent and the card's own
+ * tint shows through. Accent surfaces (hover, selection, form fields) use
+ * --*-modifier-* variables, which are untouched, so row hover and selection keep
+ * their look. Scoped to .base embeds so no other embed kind is affected. */
+.hearth-embed-base {
+	--background-primary: transparent;
+	--background-primary-alt: transparent;
+	--background-secondary: transparent;
+	--background-secondary-alt: transparent;
+	/* Obsidian's table variables default to the base surfaces above, but a theme
+	 * may point them at a literal colour, so clear them here too. */
+	--table-background: transparent;
+	--table-row-background: transparent;
+	--table-row-alt-background: transparent;
+	/* The header row is sticky, so it can't be fully transparent or the rows
+	 * scrolling under it would collide with the column titles. Give it the card's
+	 * own surface colour: at opacity 1 it's exactly the old opaque header, and
+	 * below 1 it fades with the card like everything else. */
+	--table-header-background: var(--hearth-card-surface, var(--background-primary));
+}
+
+/* Belt-and-braces, mirroring the leaf-host rule: clear the structural wrappers
+ * directly in case a theme hard-codes their fill to a literal colour instead of
+ * the variables neutralised above. Deliberately limited to containers — cells
+ * and rows are left alone so hover/selection highlights still paint. */
+.hearth-embed-base .bases-view,
+.hearth-embed-base .bases-table-container,
+.hearth-embed-base .bases-table,
+.hearth-embed-base .bases-tbody {
+	background: transparent !important;
 }
 
 /* ---- Embed second-view switcher ------------------------------------- */
@@ -4154,40 +6633,78 @@ body.hearth-dv-resizing {
 	font-size: 0.72rem;
 	color: var(--text-muted);
 	flex-shrink: 0;
+	/* The level's colour, in one place: the dot fills with it, and the chip and
+	   text forms tint with it exactly as another field's value colour does. */
+	--level-color: var(--text-faint);
 }
 
 .hearth-task-priority-dot {
 	width: 7px;
 	height: 7px;
 	border-radius: 50%;
-	background: var(--text-faint);
+	background: var(--level-color);
 }
 
 /* Five distinct priority colours (highest → lowest). Highest is a filled
    deep red; high a lighter red; medium orange; low blue; lowest a muted blue.
    Highest/lowest also get a thin ring so they read apart from high/low even
    for colour-blind users or at a glance. */
+.hearth-task-priority.is-highest {
+	--level-color: var(--color-pink, #d01e5b);
+}
+
 .hearth-task-priority.is-highest .hearth-task-priority-dot {
-	background: var(--color-pink, #d01e5b);
 	box-shadow: 0 0 0 2px
 		color-mix(in srgb, var(--color-pink, #d01e5b) 35%, transparent);
 }
 
-.hearth-task-priority.is-high .hearth-task-priority-dot {
-	background: var(--color-red, #e05252);
+.hearth-task-priority.is-high {
+	--level-color: var(--color-red, #e05252);
 }
 
-.hearth-task-priority.is-medium .hearth-task-priority-dot {
-	background: var(--color-orange, #e0913b);
+.hearth-task-priority.is-medium {
+	--level-color: var(--color-orange, #e0913b);
 }
 
-.hearth-task-priority.is-low .hearth-task-priority-dot {
-	background: var(--color-blue, #4a8fe0);
+.hearth-task-priority.is-low {
+	--level-color: var(--color-blue, #4a8fe0);
+}
+
+.hearth-task-priority.is-lowest {
+	--level-color: var(--color-blue, #4a8fe0);
 }
 
 .hearth-task-priority.is-lowest .hearth-task-priority-dot {
 	background: transparent;
-	border: 1.5px solid var(--color-blue, #4a8fe0);
+	border: 1.5px solid var(--level-color);
+}
+
+/* Chip and text forms: the same shapes every other field's value takes, tinted
+   by the level instead of by a colour the user had to set. Only the
+   dot-and-label form (`is-dotlabel`) stays particular to a priority. */
+.hearth-task-priority.is-pill {
+	padding: 1px 8px;
+	border-radius: 999px;
+	white-space: nowrap;
+	background: color-mix(in srgb, var(--level-color) 18%, transparent);
+	color: color-mix(in srgb, var(--level-color) 70%, var(--text-normal));
+	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--level-color) 32%, transparent);
+}
+
+.hearth-task-priority.is-text {
+	color: color-mix(in srgb, var(--level-color) 70%, var(--text-normal));
+}
+
+/* A level with no colour of its own ("other") would tint towards the faint
+   grey the dot uses, which on a chip reads as a mistake rather than a choice. */
+.hearth-task-priority.is-other.is-pill:not(.is-colored) {
+	background: var(--background-modifier-hover);
+	color: var(--text-muted);
+	box-shadow: none;
+}
+
+.hearth-task-priority.is-other.is-text:not(.is-colored) {
+	color: var(--text-muted);
 }
 
 .hearth-task-priority-label {
@@ -4197,9 +6714,602 @@ body.hearth-dv-resizing {
 .hearth-kanban-card-meta {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	gap: 6px;
 	flex-wrap: wrap;
+}
+
+/* Chips read left to right in the card's configured field order, but the last
+   one still hugs the right edge — which is what the row looked like when it
+   held exactly a priority chip and a due date. */
+.hearth-kanban-card-meta > :last-child:not(:first-child) {
+	margin-left: auto;
+}
+
+/* Host for a board card's full-width fields (the description). `contents` keeps
+   the children as direct flex items of the card, so nothing about their layout
+   changes by being grouped. */
+.hearth-kanban-card-block {
+	display: contents;
+}
+
+/* ---- Configurable task field chips ---------------------------------- */
+
+/* One metadata value on a task: a frontmatter property, or a built-in field
+   whose style the user changed. Drawn as a filled chip, a bare coloured dot, or
+   plain text (see src/taskfields.ts). */
+.hearth-task-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	flex-shrink: 0;
+	font-size: 0.72rem;
+	color: var(--text-muted);
+}
+
+.hearth-task-chip.is-pill {
+	padding: 1px 8px;
+	border-radius: 999px;
+	background: var(--background-modifier-hover);
+	white-space: nowrap;
+}
+
+/* The optional "Project:" prefix recedes behind the value it names. */
+.hearth-task-chip-label {
+	opacity: 0.7;
+}
+
+.hearth-task-chip-dot {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: var(--text-faint);
+}
+
+/* A value's colour — either picked by the user or auto-assigned from the value
+   itself — arrives as --chip-color. Tinting rather than filling keeps a row of
+   chips readable in both themes and against any theme's card background. */
+.hearth-task-chip.is-colored.is-pill,
+.hearth-task-status.is-colored.is-pill {
+	background: color-mix(in srgb, var(--chip-color) 18%, transparent);
+	color: color-mix(in srgb, var(--chip-color) 70%, var(--text-normal));
+	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--chip-color) 32%, transparent);
+}
+
+.hearth-task-chip.is-colored.is-text {
+	color: color-mix(in srgb, var(--chip-color) 70%, var(--text-normal));
+}
+
+.hearth-task-chip.is-colored .hearth-task-chip-dot,
+.hearth-task-status.is-colored .hearth-task-chip-dot {
+	background: var(--chip-color);
+}
+
+/* Dot form: no pill behind it, just the dot. */
+.hearth-task-status.is-dot,
+.hearth-task-chip.is-dot {
+	padding: 0;
+	background: none;
+	box-shadow: none;
+}
+
+/* An explicit colour on a priority value overrides its level colour, including
+   the rings the highest/lowest levels carry. Taking over the level variable
+   covers the chip and text forms; the dot needs its ring and border cleared
+   too. */
+.hearth-task-priority.is-colored {
+	--level-color: var(--chip-color);
+}
+
+.hearth-task-priority.is-colored .hearth-task-priority-dot {
+	background: var(--chip-color);
+	border: none;
+	box-shadow: none;
+}
+
+.hearth-task-priority.is-colored .hearth-task-priority-label {
+	color: color-mix(in srgb, var(--chip-color) 70%, var(--text-normal));
+}
+
+/* Chip form for the date fields, for cards that want them to read as chips
+   rather than as bare text. */
+.hearth-task-due.is-pill,
+.hearth-task-meta.is-pill {
+	padding: 1px 8px;
+	border-radius: 999px;
+	background: var(--background-modifier-hover);
+}
+
+/* A date field coloured by its relation to today (before / on / after). These
+   sit after the `.is-overdue` and `.is-recurring` rules above and match them
+   for specificity, so a colour the user set wins over the built-in red and
+   accent. The overdue class is only applied when no colour is configured, so
+   the two never actually contend. */
+.hearth-task-due.is-colored,
+.hearth-task-meta.is-colored {
+	color: color-mix(in srgb, var(--chip-color) 70%, var(--text-normal));
+}
+
+.hearth-task-due.is-colored.is-pill,
+.hearth-task-meta.is-colored.is-pill {
+	background: color-mix(in srgb, var(--chip-color) 18%, transparent);
+	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--chip-color) 32%, transparent);
+}
+
+.hearth-task-meta.is-colored .hearth-task-meta-emoji {
+	opacity: 1;
+}
+
+/* Dot form for the date fields: the chip's words are gone (they live in the
+   tooltip), so the dot has to carry the colour the text used to — the relation
+   colour the user set, the built-in overdue red, or the recurring accent. */
+.hearth-task-due.is-dot,
+.hearth-task-meta.is-dot {
+	display: inline-flex;
+	align-items: center;
+	padding: 0;
+	background: none;
+	box-shadow: none;
+}
+
+.hearth-task-meta-done .hearth-task-chip-dot {
+	background: var(--text-faint);
+}
+
+.hearth-task-due.is-overdue .hearth-task-chip-dot,
+.hearth-task-meta.is-overdue .hearth-task-chip-dot,
+.hearth-task-datechip.is-overdue .hearth-task-chip-dot {
+	background: var(--text-error);
+}
+
+.hearth-task-due.is-recurring .hearth-task-chip-dot {
+	background: var(--interactive-accent);
+}
+
+/* Last, so a colour the user set for the relation wins over all of them — the
+   same order the text forms above resolve in. */
+.hearth-task-due.is-colored .hearth-task-chip-dot,
+.hearth-task-meta.is-colored .hearth-task-chip-dot {
+	background: var(--chip-color);
+}
+
+/* ---- Task fields editor --------------------------------------------- */
+
+/* A field, its keys and their value tables are three levels deep, which the
+   default modal width cannot hold without crowding every row in the table.
+   Height is a flex chain rather than a `vh` cap on the list: the modal frame
+   knows how tall it may be (and on a phone that is the whole screen), so the
+   list takes the room that is left over and scrolls inside it. A fixed cap
+   plus a header and a footer adds up to more than the frame allows, and the
+   difference is cut off with nothing to scroll. */
+.hearth-taskfields-modal {
+	display: flex;
+	flex-direction: column;
+	width: min(840px, 94vw);
+	max-width: min(840px, 94vw);
+}
+
+/* The class is doubled to outweigh a theme's own `.modal-content` rules: the
+   column layout here is what makes the list scroll instead of being cut off,
+   so it must not be a cascade coin toss. */
+.hearth-taskfields.hearth-taskfields {
+	display: flex;
+	flex-direction: column;
+	/* min-height: 0 at every step, or a flex item refuses to shrink below its
+	   content and the scroll never engages. */
+	min-height: 0;
+	flex: 1 1 auto;
+}
+
+.hearth-taskfields h3 {
+	margin: 0 0 4px;
+	flex: 0 0 auto;
+}
+
+.hearth-taskfields > .hearth-taskfields-hint,
+.hearth-taskfields > .setting-item {
+	flex: 0 0 auto;
+}
+
+.hearth-taskfields-hint {
+	margin: 0 0 14px;
+	color: var(--text-muted);
+	font-size: 0.88em;
+	line-height: 1.45;
+}
+
+.hearth-taskfields-body {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	/* The scroller: it takes whatever height the frame has left, never more. */
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	/* Room for focus rings on the outermost controls, which a scroll container
+	   would otherwise clip. */
+	padding: 2px;
+}
+
+/* Nothing inside a bounded flex column may shrink. A field card is `overflow:
+   hidden` for its rounded corners, so a shrunk card doesn't overflow visibly —
+   it silently cuts its own content off, and the list has nothing left to
+   scroll. The rows must keep their height and let the scroller do its job. */
+.hearth-taskfields-body > *,
+.hearth-taskfields-section > *,
+.hearth-taskfields-table > * {
+	flex-shrink: 0;
+}
+
+/* ---- Panels: a card per field, a lighter card per key --------------- */
+
+.hearth-taskfields-field,
+.hearth-taskfields-key {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	background: var(--background-secondary);
+	overflow: hidden;
+}
+
+.hearth-taskfields-key {
+	background: var(--background-primary);
+	border-radius: 8px;
+}
+
+/* An open panel is outlined so its body reads as belonging to it rather than
+   to whatever follows. */
+.hearth-taskfields-field.is-open,
+.hearth-taskfields-key.is-open {
+	border-color: var(--background-modifier-border-hover);
+}
+
+/* The header strip: chevron, what it is and what it holds, then its buttons. */
+.hearth-taskfields-head {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 14px;
+}
+
+.hearth-taskfields-head.is-expandable {
+	cursor: pointer;
+}
+
+.hearth-taskfields-head.is-expandable:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-taskfields-key .hearth-taskfields-head {
+	padding: 10px 12px;
+}
+
+.hearth-taskfields-chevron {
+	display: flex;
+	align-items: center;
+	width: 16px;
+	color: var(--text-muted);
+}
+
+.hearth-taskfields-headtext {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.hearth-taskfields-title {
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.hearth-taskfields-summary {
+	margin-top: 2px;
+	color: var(--text-muted);
+	font-size: 0.82em;
+	line-height: 1.35;
+}
+
+.hearth-taskfields-actions {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	flex-shrink: 0;
+}
+
+/* What a panel expands into. */
+.hearth-taskfields-panelbody {
+	padding: 0 14px 14px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.hearth-taskfields-key .hearth-taskfields-panelbody {
+	padding: 0 12px 12px;
+}
+
+/* Obsidian's own rows, given room to breathe and no rule between them: the
+   panel edges already say where one group ends. */
+.hearth-taskfields-panelbody .setting-item {
+	padding: 14px 0 12px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.hearth-taskfields-panelbody > .setting-item:first-child {
+	border-top: none;
+}
+
+.hearth-taskfields-panelbody .hearth-taskfields-hint {
+	margin: 12px 0 0;
+}
+
+/* A hint about something already saved that will not render — louder than the
+   explanatory hints, quieter than an error. */
+.hearth-taskfields-hint.is-warning {
+	color: var(--text-warning, var(--text-accent));
+}
+
+/* ---- The keys section inside a field ------------------------------- */
+
+.hearth-taskfields-section {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-top: 16px;
+	padding-top: 14px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.hearth-taskfields-sectiontitle {
+	font-weight: 600;
+	font-size: 0.95em;
+}
+
+.hearth-taskfields-sectiondesc {
+	margin-top: 2px;
+	color: var(--text-muted);
+	font-size: 0.85em;
+	line-height: 1.45;
+}
+
+/* ---- The value table ----------------------------------------------- */
+
+/* One grid per key: the columns line up down the whole table and each input
+   fills its own, rather than every row being a settings item with an empty
+   name and its controls crowded against the right edge. */
+.hearth-taskfields-table {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin: 12px 0 10px;
+}
+
+.hearth-taskfields-trow {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto auto;
+	gap: 10px;
+	align-items: center;
+}
+
+.hearth-taskfields-thead {
+	color: var(--text-faint);
+	font-size: 0.74em;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.hearth-taskfields-cell {
+	min-width: 0;
+}
+
+/* The fixed first column of the date table ("Before today"). */
+.hearth-taskfields-cell.is-fixed {
+	font-size: 0.9em;
+}
+
+.hearth-taskfields-trow input[type="text"] {
+	width: 100%;
+}
+
+.hearth-taskfields-cell.is-color {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.hearth-taskfields-cell.is-actions {
+	display: flex;
+	justify-content: flex-end;
+	/* Reserve the button's width on the rows that have none, so every column
+	   above and below still lines up. */
+	min-width: 26px;
+}
+
+/* Preview of the colour a value renders in, and what opens the palette. The
+   colour itself is set inline by the editor (see `colorCell`), because no
+   selector here can be sure of outranking what Obsidian and themes apply to
+   controls inside a modal; this only gives the swatch its shape. */
+.hearth-taskfields-cell.is-color .hearth-taskfields-swatch {
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background-image: none;
+	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+	cursor: pointer;
+}
+
+.hearth-taskfields-cell.is-color .hearth-taskfields-swatch:hover {
+	box-shadow: inset 0 0 0 1px var(--background-modifier-border-hover);
+}
+
+.hearth-taskfields-cell.is-color .hearth-taskfields-swatch:focus-visible {
+	box-shadow:
+		inset 0 0 0 1px var(--background-modifier-border),
+		0 0 0 2px var(--interactive-accent);
+	outline: none;
+}
+
+/* The free picker beside it. Deliberately a rounded square rather than a second
+   dot: the circle previews what the value renders as, this opens the OS colour
+   picker, and two identical dots would read as two previews. */
+.hearth-taskfields-cell.is-color .hearth-taskfields-picker {
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 6px;
+	background: none;
+	cursor: pointer;
+}
+
+.hearth-taskfields-picker::-webkit-color-swatch-wrapper {
+	padding: 2px;
+}
+
+.hearth-taskfields-picker::-webkit-color-swatch {
+	border: none;
+	border-radius: 4px;
+}
+
+/* Two lines per value on a narrow screen: the value it matches owns the first,
+   its label and colour share the second. Each value is then ruled off from the
+   next, so a table that has become six lines tall still reads as three rows. */
+@media (max-width: 620px) {
+	.hearth-taskfields-table {
+		gap: 0;
+	}
+
+	.hearth-taskfields-trow {
+		grid-template-columns: minmax(0, 1fr) auto auto;
+		row-gap: 6px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid var(--background-modifier-border);
+	}
+
+	.hearth-taskfields-trow:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+
+	/* The matched value, on its own line above the rest. */
+	.hearth-taskfields-trow > .hearth-taskfields-cell:first-child {
+		grid-column: 1 / -1;
+	}
+
+	.hearth-taskfields-thead {
+		display: none;
+	}
+}
+
+/* ---- Footers: the buttons that add things -------------------------- */
+
+.hearth-taskfields-foot {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.hearth-taskfields-foot.is-add {
+	margin-top: 4px;
+}
+
+.hearth-taskfields-foot button {
+	/* Obsidian's default button margins would break the row's own gap. */
+	margin: 0;
+}
+
+.hearth-taskfields-footnote {
+	flex: 1 1 220px;
+	min-width: 0;
+	color: var(--text-muted);
+	font-size: 0.82em;
+	line-height: 1.4;
+}
+
+.hearth-taskfields-footer {
+	margin-top: 14px;
+	padding-top: 14px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+/* ---- Ambient field styles (hue / glow) ------------------------------ */
+
+/* An ambient field puts nothing on the task and colours the whole thing
+   instead. The tint is a background *image* rather than a background colour,
+   so it layers over whatever the row or card already paints — the Kanban
+   card's translucent fill, the list row's hover — instead of replacing it. */
+.hearth-task.is-hued,
+.hearth-kanban-card.is-hued {
+	background-image: linear-gradient(
+		color-mix(in srgb, var(--hue-color) calc(var(--hue-alpha) * 1%), transparent),
+		color-mix(in srgb, var(--hue-color) calc(var(--hue-alpha) * 1%), transparent)
+	);
+}
+
+/* The ring form: an inner edge plus a soft bloom, both derived from the one
+   strength so a single slider controls the whole effect. */
+.hearth-task.is-glowing,
+.hearth-kanban-card.is-glowing {
+	box-shadow:
+		inset 0 0 0 1px color-mix(in srgb, var(--hue-color) calc(var(--hue-alpha) * 1%), transparent),
+		0 0 8px -1px color-mix(in srgb, var(--hue-color) calc(var(--hue-alpha) * 0.6%), transparent);
+}
+
+/* A completed task recedes; its colour should recede with it rather than
+   keeping a finished row as loud as a live one. */
+.hearth-task.is-done.is-hued,
+.hearth-task.is-done.is-glowing {
+	opacity: 0.7;
+}
+
+/* Quick picks beside the calendar in the date picker. */
+.hearth-taskdate-shortcuts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 4px 0 12px;
+}
+
+/* A date held in a frontmatter property carries no emoji marker, so it leans on
+   the same overdue colour the Tasks-plugin dates use. */
+.hearth-task-datechip.is-overdue {
+	color: var(--text-error);
+}
+
+/* A chip whose value can be changed by clicking it. The affordance stays quiet
+   until hover: a task row is already clickable, and every chip advertising
+   itself would make the list noisy. */
+.hearth-task-chip.is-editable,
+.hearth-task-status.is-editable,
+.hearth-task-priority.is-editable {
+	cursor: pointer;
+}
+
+.hearth-task-chip.is-editable:hover,
+.hearth-task-status.is-editable:hover,
+.hearth-task-priority.is-editable:hover {
+	box-shadow: 0 0 0 1px var(--background-modifier-border-hover);
+}
+
+.hearth-task-due.is-editable,
+.hearth-task-meta.is-editable {
+	cursor: pointer;
+}
+
+/* A date drawn as a bare dot has nothing else to hover, so the dot itself takes
+   the ring the chip forms get. */
+.hearth-task-priority.is-editable.is-dot:hover .hearth-task-priority-dot,
+.hearth-task-chip.is-editable.is-dot:hover .hearth-task-chip-dot,
+.hearth-task-due.is-editable.is-dot:hover .hearth-task-chip-dot,
+.hearth-task-meta.is-editable.is-dot:hover .hearth-task-chip-dot {
+	box-shadow: 0 0 0 2px var(--background-modifier-border-hover);
+}
+
+.hearth-taskfields-empty {
+	padding: 8px 0;
+	color: var(--text-muted);
+	font-size: 0.85em;
 }
 
 /* ---- Kanban column header controls ---------------------------------- */
@@ -4319,55 +7429,130 @@ body.hearth-dv-resizing {
 
 /* ── "What's new" release-notes dialog ─────────────────────────────────── */
 .hearth-whatsnew-modal {
-	max-width: 620px;
+	max-width: 680px;
+	width: min(680px, 92vw);
+}
+
+/* Intro and footer stay put; only the release list scrolls, so the close
+ * button is reachable however long the log is. */
+.hearth-whatsnew-modal .modal-content {
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	max-height: min(70vh, 720px);
 }
 
 .hearth-whatsnew-modal .hearth-whatsnew-intro {
-	margin: 0 0 12px;
+	flex: none;
+	margin: 0 0 14px;
 	color: var(--text-muted);
 }
 
-/* CHANGELOG.md rendered as Markdown. Each release is an h2 heading; a hairline
- * rule above every heading after the first stacks the log as dated entries
- * rather than one run-on list. */
-.hearth-whatsnew-body h2 {
-	margin: 0 0 8px;
-	font-size: 1.05rem;
+.hearth-whatsnew-body {
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+	/* Room for the scrollbar so text doesn't run under it. */
+	padding-right: 8px;
 }
 
-.hearth-whatsnew-body h2:not(:first-child) {
-	margin-top: 20px;
-	padding-top: 16px;
+/* One release. A hairline rule above every section after the first stacks the
+ * log as dated entries rather than one run-on list. */
+.hearth-whatsnew-release + .hearth-whatsnew-release {
+	margin-top: 24px;
+	padding-top: 20px;
 	border-top: 1px solid var(--background-modifier-border);
 }
 
+.hearth-whatsnew-release-header {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.hearth-whatsnew-version {
+	margin: 0;
+	font-size: 1.15rem;
+	font-weight: 650;
+	line-height: 1.2;
+}
+
+.hearth-whatsnew-version-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.hearth-whatsnew-version-link:hover {
+	color: var(--text-accent);
+	text-decoration: underline;
+}
+
+.hearth-whatsnew-date {
+	font-size: 0.78rem;
+	color: var(--text-faint);
+	white-space: nowrap;
+}
+
 /* The Added / Changed / Fixed section labels within a release. */
-.hearth-whatsnew-body h3 {
-	margin: 14px 0 6px;
-	font-size: 0.8rem;
+.hearth-whatsnew-release-body h3 {
+	margin: 18px 0 8px;
+	font-size: 0.72rem;
+	font-weight: 600;
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.08em;
 	color: var(--text-muted);
 }
 
-.hearth-whatsnew-body p {
-	line-height: 1.45;
+.hearth-whatsnew-release-body h3:first-child {
+	margin-top: 0;
 }
 
-.hearth-whatsnew-body ul {
+.hearth-whatsnew-release-body p {
+	margin: 0 0 8px;
+	line-height: 1.55;
+}
+
+.hearth-whatsnew-release-body ul,
+.hearth-whatsnew-release-body ol {
 	margin: 0;
-	padding-left: 1.2em;
+	padding-left: 1.25em;
 }
 
-.hearth-whatsnew-body li {
-	margin: 5px 0;
-	line-height: 1.45;
+.hearth-whatsnew-release-body li {
+	margin: 0 0 10px;
+	line-height: 1.55;
+}
+
+.hearth-whatsnew-release-body li:last-child {
+	margin-bottom: 0;
+}
+
+/* A bullet's follow-on paragraphs sit tight under its first line. */
+.hearth-whatsnew-release-body li > p {
+	margin: 0 0 6px;
+}
+
+.hearth-whatsnew-release-body li > p:last-child {
+	margin-bottom: 0;
+}
+
+.hearth-whatsnew-release-body code {
+	font-size: 0.85em;
 }
 
 .hearth-whatsnew-footer {
-	margin: 18px 0 0;
+	flex: none;
+	margin: 16px 0 0;
 	font-size: 0.82rem;
 	color: var(--text-muted);
+}
+
+/* The close button row — never squeezed out by a long log. */
+.hearth-whatsnew-modal .modal-content > .setting-item {
+	flex: none;
+	border-top: none;
+	padding-bottom: 0;
 }
 
 /* Jira saved-filter card */
@@ -4650,4 +7835,1195 @@ body.hearth-dv-resizing {
 .hearth-taskdetail-title-edit:focus-visible {
 	outline: none !important;
 	box-shadow: none !important;
+}
+
+/* ---------------------------------------------------------------------------
+   Git card
+
+   A window onto the obsidian-git plugin: a status line, a button row, the
+   changed files, and optionally the recent commits. The sections are stacked
+   in the order the card's settings list them, and any of them can be off, so
+   nothing here assumes a neighbour exists — each section owns its own spacing
+   and the flex column does the rest.
+   --------------------------------------------------------------------------- */
+.hearth-git {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 0;
+	gap: 8px;
+}
+
+/* A queued operation is running (or the repo is being re-read). The card stays
+   readable and interactive-looking rather than greying out — the buttons
+   disable themselves, which is the part that matters. */
+.hearth-git.is-busy .hearth-git-status {
+	opacity: 0.7;
+}
+
+/* ---- Status line ---- */
+
+.hearth-git-status {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 6px 10px;
+	flex: 0 0 auto;
+}
+
+.hearth-git-branch {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	max-width: 100%;
+	padding: 3px 9px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 999px;
+	background: var(--background-primary-alt);
+	color: var(--text-normal);
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+.hearth-git-branch:hover {
+	border-color: var(--interactive-accent);
+}
+
+.hearth-git-branch:focus-visible,
+.hearth-git-action:focus-visible,
+.hearth-git-commit:focus-visible,
+.hearth-git-more:focus-visible {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: 2px;
+}
+
+.hearth-git-branch-icon {
+	display: flex;
+	color: var(--text-muted);
+	flex-shrink: 0;
+}
+
+.hearth-git-branch-name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-family: var(--font-monospace);
+	font-size: 0.75rem;
+}
+
+.hearth-git-chips {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.hearth-git-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 3px;
+	color: var(--text-muted);
+	font-size: 0.78rem;
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-git-chip-icon {
+	display: flex;
+}
+
+.hearth-git-chip-icon .svg-icon {
+	width: 13px;
+	height: 13px;
+}
+
+/* The three states worth colouring: a conflict is a stop sign, staged work is
+   about to be committed, unpushed commits are the "you are not backed up yet"
+   signal. Unstaged changes stay muted — they are the normal state of a vault
+   you are working in. */
+.hearth-git-chip.is-conflicted {
+	color: var(--text-error);
+}
+
+.hearth-git-chip.is-staged {
+	color: var(--text-success, var(--interactive-accent));
+}
+
+.hearth-git-chip.is-unpushed {
+	color: var(--text-accent);
+}
+
+.hearth-git-clean {
+	color: var(--text-muted);
+	font-size: 0.78rem;
+}
+
+.hearth-git-lastcommit {
+	margin-left: auto;
+	color: var(--text-faint);
+	font-size: 0.72rem;
+	white-space: nowrap;
+}
+
+/* The manual re-read, which doubles as the busy indicator — it spins while a
+   read is in flight. Last in the row, and pushed to the end unless the
+   last-commit line already took the margin. */
+.hearth-git-refresh {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	padding: 3px;
+	border: none;
+	border-radius: 5px;
+	background: transparent;
+	color: var(--text-faint);
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.hearth-git-lastcommit + .hearth-git-refresh {
+	margin-left: 0;
+}
+
+.hearth-git-refresh:hover {
+	color: var(--text-normal);
+	background: var(--background-modifier-hover);
+}
+
+.hearth-git-refresh:focus-visible {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: 2px;
+}
+
+.hearth-git-refresh .svg-icon {
+	width: 14px;
+	height: 14px;
+}
+
+.hearth-git-refresh.is-loading {
+	animation: hearth-rss-spin 0.9s linear infinite;
+}
+
+/* ---- Buttons ---- */
+
+.hearth-git-actions {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 6px;
+	flex: 0 0 auto;
+}
+
+.hearth-git-action {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	height: 30px;
+	min-width: 30px;
+	padding: 0 8px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 7px;
+	background: var(--background-primary-alt);
+	color: var(--text-normal);
+	font-size: 0.78rem;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.hearth-git-action:hover:not(:disabled) {
+	background: var(--background-modifier-hover);
+	border-color: var(--interactive-accent);
+}
+
+.hearth-git-action:disabled {
+	opacity: 0.45;
+	cursor: default;
+}
+
+/* Labelled buttons need room for the text and read better a touch wider; icon
+   buttons stay square. */
+.hearth-git-actions.is-labelled .hearth-git-action {
+	padding: 0 11px;
+}
+
+.hearth-git-action-icon {
+	display: flex;
+}
+
+.hearth-git-action-icon .svg-icon {
+	width: 15px;
+	height: 15px;
+}
+
+/* Commit-and-sync is the one-click "save my vault" action, so it reads as the
+   primary one of the row. */
+.hearth-git-action.is-commitAndSync {
+	color: var(--text-accent);
+	border-color: var(--background-modifier-border-hover);
+}
+
+.hearth-git-action.is-destructive:hover:not(:disabled) {
+	color: var(--text-error);
+	border-color: var(--text-error);
+}
+
+/* ---- Changed files ---- */
+
+.hearth-git-changes {
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+}
+
+.hearth-git-list {
+	gap: 0;
+}
+
+.hearth-git-file {
+	gap: 8px;
+	padding: 4px 6px;
+}
+
+/* The single-letter status badge. Monospaced and boxed so a column of them
+   lines up and reads as a gutter rather than as part of the file name. */
+.hearth-git-letter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	width: 17px;
+	height: 17px;
+	border-radius: 4px;
+	background: var(--background-modifier-border);
+	color: var(--text-muted);
+	font-family: var(--font-monospace);
+	font-size: 0.66rem;
+	line-height: 1;
+}
+
+.hearth-git-file.is-conflicted .hearth-git-letter {
+	background: var(--background-modifier-error);
+	color: var(--text-error);
+}
+
+.hearth-git-file.is-untracked .hearth-git-letter,
+.hearth-git-file.is-added .hearth-git-letter {
+	color: var(--text-success, var(--interactive-accent));
+}
+
+.hearth-git-file.is-deleted .hearth-git-letter {
+	color: var(--text-error);
+}
+
+/* Staged files carry a rail on the left: the same "this is going into the next
+   commit" cue the status chip uses, without a second badge per row. */
+.hearth-git-file.is-staged {
+	box-shadow: inset 2px 0 0 0 var(--text-success, var(--interactive-accent));
+}
+
+.hearth-git-file-main {
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.hearth-git-file .hearth-list-label {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.85rem;
+}
+
+.hearth-git-file-path {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--text-faint);
+	font-size: 0.7rem;
+}
+
+.hearth-git-none {
+	padding: 6px 2px;
+	color: var(--text-muted);
+	font-size: 0.8rem;
+}
+
+.hearth-git-more {
+	padding: 4px 6px;
+	color: var(--text-accent);
+	font-size: 0.76rem;
+	cursor: pointer;
+}
+
+/* ---- Recent commits ---- */
+
+.hearth-git-log {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+}
+
+.hearth-git-commit {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+	padding: 4px 6px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.hearth-git-commit:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-git-commit-hash {
+	flex: 0 0 auto;
+	color: var(--text-faint);
+	font-family: var(--font-monospace);
+	font-size: 0.68rem;
+}
+
+.hearth-git-commit-main {
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.hearth-git-commit-message {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--text-normal);
+	font-size: 0.82rem;
+}
+
+.hearth-git-commit-meta {
+	color: var(--text-faint);
+	font-size: 0.7rem;
+}
+
+/* ---- No repository yet ---- */
+
+.hearth-git-notready {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	height: 100%;
+}
+
+.hearth-git-notready-button {
+	font-size: 0.78rem;
+	cursor: pointer;
+}
+
+/* ========================================================================
+ * Pet card
+ *
+ * A 16×16 pixel sprite drawn as an SVG of run-length rects, recolored from
+ * two CSS variables the card sets from its config. Everything that moves is
+ * a CSS animation on the stage — the card itself repaints only on vault
+ * events and a five-minute tick — and every one of them is dropped for a
+ * reader who asked for less motion, or by low power mode (`is-still`).
+ * ===================================================================== */
+
+.hearth-pet {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	height: 100%;
+	min-height: 0;
+	padding: 4px 8px 8px;
+	box-sizing: border-box;
+	text-align: center;
+	--hearth-pet-eye: #23242b;
+	--hearth-pet-shine: #ffffff;
+	--hearth-pet-stage: 92px;
+}
+
+.hearth-pet.is-sm {
+	--hearth-pet-stage: 64px;
+}
+
+.hearth-pet.is-lg {
+	--hearth-pet-stage: 128px;
+}
+
+.hearth-pet-stage {
+	position: relative;
+	flex: 0 1 auto;
+	min-height: 0;
+	width: var(--hearth-pet-stage);
+	max-width: 100%;
+	aspect-ratio: 1;
+	cursor: pointer;
+	/* The sprite is pixel art: keep the pixels square and crisp at any scale. */
+	image-rendering: pixelated;
+	border-radius: 6px;
+}
+
+.hearth-pet-stage:focus-visible {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: 3px;
+}
+
+.hearth-pet-sprite {
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: visible;
+	/* One transform origin for every mood animation: the pet's feet, so it
+	 * squashes and hops off the ground rather than about its middle. */
+	transform-origin: 50% 100%;
+}
+
+.hearth-pet-name {
+	margin-top: 4px;
+	font-weight: 600;
+	font-size: 0.9rem;
+	color: var(--text-normal);
+	line-height: 1.2;
+}
+
+.hearth-pet-mood {
+	font-size: 0.78rem;
+	color: var(--text-muted);
+	line-height: 1.2;
+}
+
+.hearth-pet-activity {
+	font-size: 0.7rem;
+	color: var(--text-faint);
+	line-height: 1.2;
+}
+
+/* ---- Moods ----
+ *
+ * Two layers of motion, and they compose:
+ *
+ *  1. FRAMES. The sprite carries every frame of its mood as a stacked <g>,
+ *     and each mood's schedule below fades all but one out. That is drawn
+ *     animation — a blink, a head wagging, a body squashing on the landing,
+ *     a chest rising in its sleep — which is what actually tells the moods
+ *     apart at a glance. Nothing is redrawn to animate: the card paints once
+ *     per vault event and the compositor does the rest.
+ *  2. MOTION. A transform on the whole sprite, anchored at the feet, for what
+ *     a frame swap can't carry: the arc of a hop, a slow sway, a slump.
+ *
+ * The quiet moods are also drained of color and pushed down the card, so a
+ * bored or sleeping pet reads as one across the room, not only by its face.
+ */
+
+.hearth-pet-frame {
+	opacity: 0;
+}
+
+.hearth-pet-frame[data-f="0"] {
+	opacity: 1;
+}
+
+/* An even three-way cycle, shared by the moods that want one. Each frame runs
+ * the same square wave, offset by a third of the cycle with a negative delay. */
+@keyframes hearth-pet-cycle3 {
+	0%, 33.32% { opacity: 1; }
+	33.33%, 100% { opacity: 0; }
+}
+
+.hearth-pet-stage.is-excited .hearth-pet-frame,
+.hearth-pet-stage.is-happy .hearth-pet-frame,
+.hearth-pet-stage.is-sleepy .hearth-pet-frame {
+	animation: hearth-pet-cycle3 var(--hearth-pet-cycle) steps(1, end) infinite;
+}
+
+.hearth-pet-stage.is-excited .hearth-pet-frame[data-f="1"],
+.hearth-pet-stage.is-happy .hearth-pet-frame[data-f="1"],
+.hearth-pet-stage.is-sleepy .hearth-pet-frame[data-f="1"] {
+	animation-delay: calc(var(--hearth-pet-cycle) / -3);
+}
+
+.hearth-pet-stage.is-excited .hearth-pet-frame[data-f="2"],
+.hearth-pet-stage.is-happy .hearth-pet-frame[data-f="2"],
+.hearth-pet-stage.is-sleepy .hearth-pet-frame[data-f="2"] {
+	animation-delay: calc(var(--hearth-pet-cycle) / -1.5);
+}
+
+/* ---- Excited: a fast three-frame hop ---- */
+
+.hearth-pet-stage.is-excited {
+	--hearth-pet-cycle: 0.66s;
+}
+
+.hearth-pet-stage.is-excited .hearth-pet-sprite {
+	animation: hearth-pet-hop 0.66s cubic-bezier(0.3, 0, 0.4, 1) infinite;
+}
+
+@keyframes hearth-pet-hop {
+	0% { transform: translateY(0) rotate(0deg); }
+	18% { transform: translateY(2%) rotate(-3deg); }
+	42% { transform: translateY(-16%) rotate(3deg); }
+	62% { transform: translateY(-19%) rotate(-2deg); }
+	85% { transform: translateY(1%) rotate(1deg); }
+	100% { transform: translateY(0) rotate(0deg); }
+}
+
+/* ---- Happy: a head wag over a bob ---- */
+
+.hearth-pet-stage.is-happy {
+	--hearth-pet-cycle: 1.1s;
+}
+
+.hearth-pet-stage.is-happy .hearth-pet-sprite {
+	animation: hearth-pet-bob 1.1s ease-in-out infinite;
+}
+
+@keyframes hearth-pet-bob {
+	0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+	25% { transform: translateY(-6%) rotate(0deg); }
+	50% { transform: translateY(0) rotate(1.5deg); }
+	75% { transform: translateY(-6%) rotate(0deg); }
+}
+
+/* ---- Content: mostly still, with a blink and a glance ---- */
+
+.hearth-pet-stage.is-content .hearth-pet-sprite {
+	animation: hearth-pet-breathe 3.4s ease-in-out infinite;
+}
+
+/* Hand-scheduled rather than an even cycle: a blink that lasted a third of
+ * the time would be a pet falling asleep on and off. */
+.hearth-pet-stage.is-content .hearth-pet-frame[data-f="0"] {
+	animation: hearth-pet-content-0 5.4s steps(1, end) infinite;
+}
+
+.hearth-pet-stage.is-content .hearth-pet-frame[data-f="1"] {
+	animation: hearth-pet-content-1 5.4s steps(1, end) infinite;
+}
+
+.hearth-pet-stage.is-content .hearth-pet-frame[data-f="2"] {
+	animation: hearth-pet-content-2 5.4s steps(1, end) infinite;
+}
+
+@keyframes hearth-pet-content-0 {
+	0%, 57% { opacity: 1; }
+	58%, 100% { opacity: 0; }
+}
+
+@keyframes hearth-pet-content-1 {
+	0%, 57% { opacity: 0; }
+	58%, 62% { opacity: 1; }
+	63%, 100% { opacity: 0; }
+}
+
+@keyframes hearth-pet-content-2 {
+	0%, 62% { opacity: 0; }
+	63%, 100% { opacity: 1; }
+}
+
+@keyframes hearth-pet-breathe {
+	0%, 100% { transform: scaleY(1); }
+	50% { transform: scaleY(1.04); }
+}
+
+/* ---- Bored: slouched, draining color, with a long slow blink ---- */
+
+.hearth-pet-stage.is-bored .hearth-pet-sprite {
+	animation: hearth-pet-slouch 4.6s ease-in-out infinite;
+	filter: saturate(0.72);
+}
+
+.hearth-pet-stage.is-bored .hearth-pet-frame[data-f="0"] {
+	animation: hearth-pet-bored-0 7.2s steps(1, end) infinite;
+}
+
+.hearth-pet-stage.is-bored .hearth-pet-frame[data-f="1"] {
+	animation: hearth-pet-bored-1 7.2s steps(1, end) infinite;
+}
+
+.hearth-pet-stage.is-bored .hearth-pet-frame[data-f="2"] {
+	animation: hearth-pet-bored-2 7.2s steps(1, end) infinite;
+}
+
+@keyframes hearth-pet-bored-0 {
+	0%, 44% { opacity: 1; }
+	45%, 100% { opacity: 0; }
+}
+
+/* The heavy blink: a full second of shut eyes, the kind boredom actually
+ * looks like. */
+@keyframes hearth-pet-bored-1 {
+	0%, 44% { opacity: 0; }
+	45%, 58% { opacity: 1; }
+	59%, 100% { opacity: 0; }
+}
+
+@keyframes hearth-pet-bored-2 {
+	0%, 58% { opacity: 0; }
+	59%, 100% { opacity: 1; }
+}
+
+@keyframes hearth-pet-slouch {
+	0%, 100% { transform: rotate(-2.5deg) translateY(2%); }
+	50% { transform: rotate(2.5deg) translateY(3%); }
+}
+
+/* ---- Sleepy: curled down, colorless, breathing slowly ---- */
+
+.hearth-pet-stage.is-sleepy {
+	--hearth-pet-cycle: 5.4s;
+}
+
+.hearth-pet-stage.is-sleepy .hearth-pet-sprite {
+	animation: hearth-pet-sleep 5.4s ease-in-out infinite;
+	filter: saturate(0.4) brightness(0.88);
+	opacity: 0.9;
+}
+
+@keyframes hearth-pet-sleep {
+	0%, 100% { transform: translateY(4%) scaleY(1); }
+	50% { transform: translateY(4%) scaleY(0.98); }
+}
+
+/* ---- Eyes that follow the pointer ----
+ *
+ * The card sets two custom properties from a pointermove; the eyes are their
+ * own group inside every frame, with the face drawn whole underneath, so this
+ * transform is the entire effect — no redraw, and the mood's frame animation
+ * keeps running under it. Inside an SVG a CSS px is one user unit, so the
+ * shift stays under one pixel of the 16×16 grid and crispEdges snaps it,
+ * which is how pixel-art eyes should move. A sleeping pet has none of this:
+ * its eyes are shut, and shut eyes do not wander.
+ */
+.hearth-pet-eyes {
+	transform: translate(var(--hearth-pet-look-x, 0px), var(--hearth-pet-look-y, 0px));
+	transition: transform 0.12s ease-out;
+}
+
+.hearth-pet-stage.is-sleepy .hearth-pet-eyes,
+.hearth-pet-stage.is-still .hearth-pet-eyes {
+	transform: none;
+}
+
+/* ---- Sleeping z's, and the moon of a pet asleep for the night ---- */
+
+.hearth-pet-zzz {
+	position: absolute;
+	top: -2%;
+	right: -4%;
+	pointer-events: none;
+}
+
+.hearth-pet-z::after {
+	content: "z";
+}
+
+.hearth-pet-z {
+	position: absolute;
+	right: 0;
+	font-size: 0.72rem;
+	font-weight: 700;
+	color: var(--text-faint);
+	opacity: 0;
+	animation: hearth-pet-float 3.6s ease-out infinite;
+	animation-delay: calc(var(--i) * 1.2s);
+}
+
+@keyframes hearth-pet-float {
+	0% { transform: translate(0, 0) scale(0.7); opacity: 0; }
+	20% { opacity: 0.9; }
+	100% { transform: translate(10px, -22px) scale(1.15); opacity: 0; }
+}
+
+/* Asleep because of the hour rather than the vault: one moon, hanging still
+ * and breathing with the pet, instead of a stream of z's. */
+.hearth-pet-zzz.is-moon .hearth-pet-z::after {
+	content: "\263D";
+}
+
+.hearth-pet-zzz.is-moon .hearth-pet-z {
+	animation: hearth-pet-moon 6s ease-in-out infinite;
+	animation-delay: 0s;
+	font-size: 0.95rem;
+	font-weight: 400;
+	color: var(--text-muted);
+}
+
+@keyframes hearth-pet-moon {
+	0%, 100% { transform: translateY(0); opacity: 0.5; }
+	50% { transform: translateY(-3px); opacity: 0.9; }
+}
+
+/* ---- Hearts, on petting ---- */
+
+.hearth-pet-heart {
+	position: absolute;
+	left: 50%;
+	bottom: 28%;
+	font-size: 0.85rem;
+	color: var(--color-red, #e05a6a);
+	pointer-events: none;
+	animation: hearth-pet-heart 0.9s ease-out forwards;
+	animation-delay: calc(var(--i) * 0.09s);
+}
+
+@keyframes hearth-pet-heart {
+	0% { transform: translate(-50%, 0) scale(0.6); opacity: 0; }
+	25% { opacity: 1; }
+	100% { transform: translate(calc(-50% + (var(--i) - 1) * 16px), -34px) scale(1.1); opacity: 0; }
+}
+
+/* Low power mode and a reduced-motion preference both leave a perfectly
+ * readable pet — the mood is in its face, not in the movement. */
+.hearth-pet-stage.is-still .hearth-pet-sprite,
+.hearth-pet-stage.is-still .hearth-pet-frame {
+	animation: none;
+	opacity: 1;
+}
+
+/* A reader who asked for less motion keeps the pet, its posture and its
+ * colors — only the movement and the frame cycling stop, on the frame the
+ * mood leads with. */
+@media (prefers-reduced-motion: reduce) {
+	.hearth-pet-sprite,
+	.hearth-pet-frame,
+	.hearth-pet-z,
+	.hearth-pet-heart {
+		animation: none !important;
+	}
+
+	.hearth-pet-frame[data-f="0"] {
+		opacity: 1;
+	}
+
+	.hearth-pet-frame:not([data-f="0"]) {
+		opacity: 0;
+	}
+
+	/* The pointer tracking is motion too — the eyes hold still. */
+	.hearth-pet-eyes {
+		transform: none !important;
+		transition: none;
+	}
+
+	/* The z's and the moon stop moving but stay legible. */
+	.hearth-pet-z {
+		opacity: 0.7;
+	}
+
+	.hearth-pet-z {
+		opacity: 0.7;
+	}
+}
+
+/* ── Add-card picker ───────────────────────────────────────────────────
+   The card catalogue outgrew a dropdown: ~30 templates in one column, with
+   nothing but a name each. This is a browsable modal instead — a category
+   rail down the side, a searchable grid of described tiles, and a last rail
+   entry for requesting a card that doesn't exist yet.
+
+   Height is a flex chain (frame → content → results), not a `vh` cap: the
+   modal frame already knows how tall it may be — the whole screen on a phone
+   — so the results column takes what's left and scrolls inside it. */
+.hearth-card-picker-modal {
+	display: flex;
+	flex-direction: column;
+	width: min(860px, 94vw);
+	max-width: min(860px, 94vw);
+}
+
+.hearth-card-picker.hearth-card-picker {
+	display: flex;
+	flex-direction: column;
+	/* min-height: 0 at every step, or a flex item refuses to shrink below its
+	   content and the scroll never engages. */
+	min-height: 0;
+	flex: 1 1 auto;
+	/* A fixed height, not a max: with a max, every category sized the modal to
+	   its own content, so clicking from "Notes & files" (nine tiles) to "Fun"
+	   (one) collapsed the dialog and moved the rail out from under the pointer.
+	   Pinning the height keeps the frame still and lets the results column
+	   scroll inside it. */
+	height: min(66vh, 640px);
+}
+
+/* ---- Search field ---- */
+.hearth-picker-search {
+	flex: none;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 0 10px;
+	margin-bottom: 12px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	background: var(--background-modifier-form-field);
+}
+
+.hearth-picker-search:focus-within {
+	border-color: var(--interactive-accent);
+}
+
+.hearth-picker-search-icon {
+	display: inline-flex;
+	color: var(--text-muted);
+	flex: none;
+}
+
+/* The field is the box's whole interior — its own border and background would
+   draw a second frame inside the first. */
+.hearth-picker-search-input {
+	flex: 1 1 auto;
+	min-width: 0;
+	padding: 8px 0;
+	border: none;
+	background: transparent;
+	box-shadow: none;
+	font-size: var(--font-ui-medium);
+	color: var(--text-normal);
+}
+
+.hearth-picker-search-input:focus {
+	box-shadow: none;
+}
+
+/* ---- Rail + results ---- */
+.hearth-picker-body {
+	display: flex;
+	gap: 16px;
+	min-height: 0;
+	flex: 1 1 auto;
+}
+
+.hearth-picker-rail {
+	flex: none;
+	width: 168px;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	overflow-y: auto;
+	padding-right: 4px;
+	border-right: 1px solid var(--background-modifier-border);
+}
+
+/* Same reason as .hearth-card-tile: these are buttons, so left alignment has
+   to be asked for. */
+.hearth-picker-rail-btn {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 8px;
+	width: 100%;
+	padding: 6px 10px;
+	border: none;
+	border-radius: 6px;
+	background: transparent;
+	box-shadow: none;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	text-align: left;
+	cursor: pointer;
+}
+
+.hearth-picker-rail-btn:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-picker-rail-btn.is-active {
+	background: var(--background-modifier-active-hover, var(--background-modifier-hover));
+	color: var(--text-normal);
+	font-weight: 600;
+}
+
+.hearth-picker-rail-icon {
+	display: inline-flex;
+	flex: none;
+}
+
+.hearth-picker-rail-icon .svg-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.hearth-picker-rail-label {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.hearth-picker-rail-sep {
+	height: 1px;
+	margin: 8px 10px;
+	background: var(--background-modifier-border);
+}
+
+.hearth-picker-rail-btn.is-request {
+	color: var(--text-accent);
+}
+
+.hearth-picker-results {
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 0;
+	overflow-y: auto;
+	/* Room for the scrollbar so tiles don't run under it. */
+	padding-right: 6px;
+}
+
+.hearth-picker-section {
+	font-size: var(--font-ui-smaller);
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	margin: 4px 0 8px;
+}
+
+.hearth-picker-section:not(:first-child) {
+	margin-top: 20px;
+}
+
+/* auto-fill, not auto-fit: a category with one card (Fun) keeps a card-sized
+   tile instead of stretching it across the whole row. */
+.hearth-picker-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+	gap: 8px;
+}
+
+/* ---- One card tile ---- */
+/* justify-content and text-align are spelled out because Obsidian's own
+   `button` rules centre both: without them a tile whose name and description
+   are narrower than its column had its whole icon-and-text block pushed to the
+   middle, so tiles in the same row started at different offsets. */
+.hearth-card-tile {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 10px;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+	background: var(--background-primary);
+	box-shadow: none;
+	text-align: left;
+	cursor: pointer;
+}
+
+.hearth-card-tile:hover {
+	background: var(--background-modifier-hover);
+	border-color: var(--background-modifier-border-hover);
+}
+
+.hearth-card-tile:focus-visible {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: 1px;
+}
+
+.hearth-card-tile-icon {
+	display: inline-flex;
+	flex: none;
+	margin-top: 1px;
+	color: var(--text-accent);
+}
+
+.hearth-card-tile-text {
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.hearth-card-tile-name {
+	font-weight: 600;
+	color: var(--text-normal);
+	line-height: 1.3;
+}
+
+.hearth-card-tile-desc {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	line-height: 1.35;
+	white-space: normal;
+}
+
+/* A missing dependency is a footnote, not a barrier: the card can still be
+   added and explains itself in place once it's on the board. */
+.hearth-card-tile-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	margin-top: 4px;
+	font-size: var(--font-ui-smaller);
+	color: var(--text-faint);
+}
+
+.hearth-card-tile-badge-icon {
+	display: inline-flex;
+}
+
+.hearth-card-tile-badge-icon .svg-icon {
+	width: 12px;
+	height: 12px;
+}
+
+.hearth-card-tile.is-unmet .hearth-card-tile-icon {
+	color: var(--text-muted);
+}
+
+/* ---- Empty result & the footer prompt ---- */
+.hearth-picker-empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 48px 16px;
+	color: var(--text-muted);
+	text-align: center;
+}
+
+.hearth-picker-empty-icon {
+	display: inline-flex;
+	color: var(--text-faint);
+}
+
+.hearth-picker-empty-icon .svg-icon {
+	width: 28px;
+	height: 28px;
+}
+
+.hearth-picker-foot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	flex-wrap: wrap;
+	margin-top: 24px;
+	padding-top: 14px;
+	border-top: 1px solid var(--background-modifier-border);
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+}
+
+.hearth-picker-foot-link {
+	padding: 0;
+	border: none;
+	background: transparent;
+	box-shadow: none;
+	color: var(--text-accent);
+	font-size: inherit;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* ---- Request a card ---- */
+.hearth-picker-request-intro {
+	margin-bottom: 14px;
+	color: var(--text-muted);
+	line-height: 1.45;
+}
+
+.hearth-picker-request-option {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px;
+	margin-bottom: 8px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 8px;
+}
+
+.hearth-picker-request-icon {
+	display: inline-flex;
+	flex: none;
+	color: var(--text-accent);
+}
+
+.hearth-picker-request-icon .svg-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.hearth-picker-request-text {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.hearth-picker-request-title {
+	font-weight: 600;
+	color: var(--text-normal);
+}
+
+.hearth-picker-request-desc {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	line-height: 1.35;
+	overflow-wrap: anywhere;
+}
+
+.hearth-picker-request-option .mod-cta {
+	flex: none;
+}
+
+.hearth-picker-request-note {
+	margin-top: 12px;
+	font-size: var(--font-ui-smaller);
+	color: var(--text-faint);
+	line-height: 1.4;
+}
+
+/* On a phone the rail becomes a scrolling chip row above the grid: 168px of
+   sidebar would leave the tiles nowhere to live. */
+@media (max-width: 620px) {
+	.hearth-picker-body {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.hearth-picker-rail {
+		width: 100%;
+		flex-direction: row;
+		gap: 6px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		padding: 0 0 8px;
+		border-right: none;
+		border-bottom: 1px solid var(--background-modifier-border);
+	}
+
+	.hearth-picker-rail-btn {
+		width: auto;
+		flex: none;
+		border: 1px solid var(--background-modifier-border);
+		border-radius: 999px;
+		white-space: nowrap;
+	}
+
+	.hearth-picker-rail-sep {
+		display: none;
+	}
+
+	.hearth-picker-grid {
+		grid-template-columns: 1fr;
+	}
+
+	/* Grid, not flex-wrap: a wrapping flex line breaks before it shrinks, which
+	   put the icon, the text and the button on three lines of their own. Here
+	   the icon keeps the text beside it and only the button drops. */
+	.hearth-picker-request-option {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		align-items: start;
+		row-gap: 10px;
+	}
+
+	.hearth-picker-request-option .mod-cta {
+		grid-column: 1 / -1;
+	}
 }

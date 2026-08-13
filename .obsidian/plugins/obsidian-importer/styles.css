@@ -14,7 +14,8 @@
 	border-top: var(--border-width) solid var(--background-modifier-border);
 }
 .modal.mod-importer .modal-button-container {
-	margin: 0 0 0 calc(var(--size-4-4) * -1);
+	margin: 0;
+	margin-inline-start: calc(var(--size-4-4) * -1);
 	padding: var(--size-4-4);
 	display: flex;
 	justify-content: flex-end;
@@ -26,27 +27,21 @@
 	width: 100%;
 }
 
-/* The format picker has no buttons, so nothing to leave room for */
 .modal.mod-importer.is-picking-format .modal-content {
 	margin-bottom: 0;
 }
 
-/* The way onward sits at the far side from the ways back out */
+/* Back and Help sit at the start of a step, and the primary button is pushed
+   to the end by its own auto margin. Scoped like the rule above so it wins,
+   and only for a step: the progress and finish screens stay end-aligned. */
+.modal.mod-importer .importer-step-buttons {
+	justify-content: flex-start;
+}
+
 .importer-step-buttons .mod-cta {
 	margin-inline-start: auto;
 }
 
-/*
- * The app each format comes from, drawn the way the help site draws it.
- *
- * Lifted from obsidian-help/en/publish.css, where the same artwork sits beside
- * the same list of import guides - including the treatments the marks need to
- * stay legible: a border for the ones that are white to the edge, and an
- * inversion in dark mode for the ones drawn in black.
- *
- * A format the help site has no mark for is given a Lucide glyph instead; see
- * FALLBACK_ICONS in main.ts.
- */
 .importer-app-icon {
 	width: var(--icon-s);
 	height: var(--icon-s);
@@ -59,7 +54,8 @@
 .importer-app-icon.mod-evernote {
 	background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 163 190'%3E%3Cpath d='M50.8 42.7c0 1.8-.1 5-2 7-2 2-5.2 2-7 2H21.5c-5.9 0-9.3 0-11.7.4-1.2.2-2.8.8-3.6 1.1-.3.2-.3 0-.2-.2L52 6.3c.2-.2.3-.2.2.2-.4.7-1 2.3-1.1 3.6-.4 2.3-.4 5.8-.4 11.6v21ZM93.7 184a23 23 0 0 1-11-19.5c0-13 10.6-23.8 23.9-23.8A7 7 0 0 1 110 154a9 9 0 0 1-2.7 1c-.7.1-3.7.5-5.1 1.7a7.3 7.3 0 0 0-2.9 5.5c0 2.4 1 4.6 2.5 6.2a15 15 0 0 0 10.7 4.4c10.7 0 19.4-8.7 19.4-19.4 0-9.6-6.5-18-15-21.9-1.2-.6-3.3-1-5.1-1.5l-4.8-.8c-6.6-.8-23.1-6-24.2-20.7 0 0-4.9 22-14.6 28a21.1 21.1 0 0 1-7 1.7c-16 1-32.9-4-44.5-16 0 0-7.9-6.4-12-24.5-1-4.4-2.8-12.3-4-19.7-.4-2.7-.5-4.7-.7-6.6 0-7.7 4.7-13 10.7-13.7h32.1c5.5 0 8.7-1.4 10.7-3.3 2.7-2.5 3.3-6.1 3.3-10.4V10.7C57.6 4.9 62.8 0 70.5 0h3.8l5.2.3 4.2 1c9.6 2.3 11.7 12 11.7 12l27.2 4.8c8.7 1.6 30 3 34.2 24.6 9.6 51.3 3.7 101 3.3 101-6.8 48.5-47 46.1-47 46.1-8.7 0-15.2-2.8-19.4-5.8Zm36.2-103.1c-5.2-.5-9.6 1.6-11.2 5.5-.3.8-.7 1.7-.5 2.2.2.5.5.6.8.8 1.9 1 5 1.4 9.6 1.9s7.7.8 9.8.5c.3 0 .6-.2.9-.7.3-.4.2-1.4.2-2.2-.7-4.4-4.5-7.4-9.6-8Z' fill='%2300A82D'%3E%3C/path%3E%3C/svg%3E");
 }
-.importer-app-icon.mod-onenote {
+.importer-app-icon.mod-onenote,
+.importer-app-icon.mod-onenote-file {
 	background-image: url("data:image/svg+xml,%3Csvg fill='%237F2DA6' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22 42.66h17.2a3.46 3.46 0 0 0 3.26-2.3h1.35a3.46 3.46 0 0 0 3.46-3.47v-5.76c0-.85-.31-1.67-.88-2.3.57-.63.88-1.46.88-2.31v-5.77c0-.85-.31-1.67-.88-2.3.57-.63.88-1.45.88-2.3v-5.77a3.46 3.46 0 0 0-3.46-3.46h-1.35a3.46 3.46 0 0 0-3.26-2.3H22v2.3h17.2a1.15 1.15 0 0 1 1.15 1.15v1.15h3.46a1.15 1.15 0 0 1 1.16 1.16v5.76a1.15 1.15 0 0 1-1.16 1.16h-3.46v21.9a1.15 1.15 0 0 1-1.15 1.15H22v2.31Zm22.88-5.32c.06-.15.1-.3.09-.45v-5.76a1.15 1.15 0 0 0-1.16-1.15h-1.15v8.07h1.15a1.15 1.15 0 0 0 1.07-.71Zm0-10.38c.06-.14.09-.29.09-.44v-5.77a1.15 1.15 0 0 0-1.16-1.15h-1.15v8.07h1.15a1.15 1.15 0 0 0 1.07-.7Z'%3E%3C/path%3E%3Cpath d='M27 10.38h8.74v2.3H27v-2.3Zm0 6.91h8.74V15H27v2.29Zm0 4.62h8.74V19.6H27v2.31Zm0 4.6h8.74v-2.3H27v2.3Zm0 4.62h8.74v-2.3H27v2.3Zm0 4.61h8.74v-2.3H27v2.3Z'%3E%3C/path%3E%3Cpath d='M27 10.38h8.74v2.3H27v-2.3Zm0 6.91h8.74V15H27v2.29Zm0 4.62h8.74V19.6H27v2.31Zm0 4.6h8.74v-2.3H27v2.3Zm0 4.62h8.74v-2.3H27v2.3Zm0 4.61h8.74v-2.3H27v2.3Z'%3E%3C/path%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 5.76 27.67 0v47.27L0 41.51V5.76Zm17.58 21.62V13.84l3.75-.57v20.16l-4.15-.23-6.8-14.23v13.79l-3.46-.2V14.42l3.46-.3s7.12 13.09 7.2 13.26Z'%3E%3C/path%3E%3C/svg%3E");
 }
 .importer-app-icon.mod-keep {
@@ -91,7 +87,6 @@
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 170'%3E%3Cpath fill='%23FCB400' d='M90.04 6.65 15.12 37.65c-4.17 1.72-4.13 7.64.07 9.3l75.23 29.84a26.6 26.6 0 0 0 19.63 0l75.23-29.84c4.2-1.66 4.24-7.58.07-9.3l-74.92-31a26.6 26.6 0 0 0-20.4 0'%3E%3C/path%3E%3Cpath fill='%2318BFFF' d='M105.7 88.4v74.55c0 3.55 3.58 5.99 6.88 4.68l83.85-32.55a5.03 5.03 0 0 0 3.17-4.68V55.86c0-3.55-3.58-5.98-6.88-4.67l-83.85 32.54a5.03 5.03 0 0 0-3.17 4.68'%3E%3C/path%3E%3Cpath fill='%23F82B60' d='m86.05 92.26-24.89 12.02-2.53 1.22-52.5 25.13C2.8 132.24 0 130.29 0 127.37V56.18c0-1.06.54-1.97 1.27-2.65a4.6 4.6 0 0 1 1.02-.76 4.6 4.6 0 0 1 3.9-.38l79.55 31.5c4.05 1.6 4.36 7.27.31 8.37'%3E%3C/path%3E%3Cpath fill='%23BA1E45' d='m86.05 92.26-24.89 12.02L1.27 53.53a4.6 4.6 0 0 1 1.02-.76 4.6 4.6 0 0 1 3.9-.38l79.55 31.5c4.05 1.6 4.36 7.27.31 8.37'%3E%3C/path%3E%3C/svg%3E");
 }
 
-/* Black marks, which would disappear against a dark background */
 .theme-dark .importer-app-icon.mod-notion,
 .theme-dark .importer-app-icon.mod-notion-api,
 .theme-dark .importer-app-icon.mod-roam-json {
@@ -102,10 +97,6 @@
 	filter: brightness(1.7) saturate(0.7);
 }
 
-/*
- * The format list is the app's own .setting-group markup, so all it needs from
- * here is the arrow that says the row leads to the next step.
- */
 .importer-format-chevron {
 	display: flex;
 	color: var(--text-faint);
@@ -130,7 +121,6 @@
 	background-color: var(--interactive-accent);
 }
 
-/* Paused: the bar is not filling, and says as much rather than looking stuck */
 .is-paused .importer-progress-bar-inner {
 	background-color: var(--text-faint);
 }
@@ -178,14 +168,22 @@
 }
 
 .importer-log .list-item {
-	display: inline-block;
+	/* Keep the log prefix and entry in normal block flow. */
+	display: block;
 	line-height: var(--line-height-normal);
-	white-space: pre;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
 	margin: var(--size-2-1);
 }
 
 .importer-error {
 	color: var(--text-error);
+	white-space: nowrap;
+}
+
+/* Separate the report action from the navigation actions. */
+.modal-button-container .importer-report-button {
+	margin-inline-end: auto;
 }
 
 /* Template configuration styles */
@@ -274,11 +272,6 @@
 	min-width: 95px;
 }
 
-/*
- * The count beside a row. .file-tree paints this for the coloured pills Sync
- * and Publish put there; here it is a quiet aside, as it is in the app's own
- * trees - "310 files" beside Vault in the startup time modal.
- */
 .import-section .tree-item-flair {
 	color: var(--text-faint);
 	padding: 0;
@@ -288,7 +281,6 @@
 	max-height: 200px;
 	height: 200px;
 	overflow-y: auto;
-	background-color: var(--background-primary-alt);
 	padding: var(--size-4-2);
 	background-color: var(--setting-items-background);
 	border-radius: var(--setting-items-radius);
@@ -352,4 +344,22 @@
 	height: var(--icon-s);
 	flex-shrink: 0;
 	margin: 0 var(--size-4-1) 0 auto;
+}
+
+.importer-drop-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: var(--layer-modal);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--background-modifier-cover);
+	pointer-events: none;
+}
+
+.importer-drop-message {
+	padding: var(--size-4-4) var(--size-4-8);
+	color: var(--text-normal);
+	font-size: var(--font-ui-large);
+	font-weight: var(--font-medium);
 }
