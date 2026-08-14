@@ -11,10 +11,24 @@
             "id": "9b099c858eefb4ab",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "hearth-home-view"
+              "type": "markdown",
+              "state": {
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Artigo Histórico sobre Bart Ehrman para a IQC"
             }
           },
           {
@@ -46,45 +60,48 @@
             }
           },
           {
-            "id": "d897150c934292bc",
+            "id": "77958e421bf881f3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "url": "https://www.youtube.com/",
+                "title": "YouTube",
+                "mode": "webview"
               },
-              "icon": "lucide-file",
-              "title": "Despedida de solteiro - Noivo"
+              "icon": "globe-2",
+              "title": "YouTube"
             }
           },
           {
-            "id": "0270fc96c45a5bb5",
+            "id": "dd51a5782cf386b5",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "webviewer",
               "state": {
-                "aFile": ".obsidian/plugins/obsidian-git/main.js",
-                "bFile": ".obsidian/plugins/obsidian-git/main.js",
-                "aRef": ""
+                "url": "https://duckduckgo.com/?q=how+to+configure+moonlight+to+stream&ia=web",
+                "title": "how to configure moonlight to stream at DuckDuckGo",
+                "mode": "webview"
               },
-              "icon": "diff",
-              "title": "Diff: main.js  (Working Tree)"
+              "icon": "globe-2",
+              "title": "how to configure moonlight to stream at DuckDuckGo"
+            }
+          },
+          {
+            "id": "940a2ae9655736f6",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://duck.ai/chat?assist=false",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -343,17 +360,22 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "0270fc96c45a5bb5",
+  "active": "9b099c858eefb4ab",
   "lastOpenFiles": [
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Estudo Bíblico - 12-08-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Vestuário Cristão.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Glorificar a Deus no corpo.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Cristóvão.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
@@ -366,11 +388,6 @@
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bookmarks - Obsidian Help.md",
     "07 - INDEXES/Site IQC.md",
-    "10 - TAGS/aliancismo.md",
-    "09 - STATUS NOTES/Adult.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "Site IQC/Tarefas/Artigo Histórico sobre Bart Ehrman para a IQC 189535ff8bdc80e4a6e6e1dd64df5f0a.html.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",

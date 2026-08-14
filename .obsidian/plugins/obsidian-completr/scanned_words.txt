@@ -9888,6 +9888,7 @@ Cerco
 CONTRA
 Condi
 Conquistar
+Carapinha
 Mozilla
 ModDate
 MK
@@ -11853,6 +11854,7 @@ Mega
 Multilingual
 Magazine
 ModeBWi
+Mariana
 Linux
 Length
 LJ
@@ -13634,6 +13636,9 @@ Linfobl
 Lite
 LTE
 Lembras
+Luzia
+Lembran
+Lembro
 AppleWebKit
 ADN
 Ak
@@ -21440,6 +21445,7 @@ Gouveia
 Gerais
 Gel
 Guardi
+Gostar
 HeadlessChrome
 HX
 HSG
@@ -28411,6 +28417,8 @@ estimamos
 enfrentaste
 enfrentas
 escrevemos
+empenho
+enviem
 ca
 cW
 cEu
@@ -32334,6 +32342,9 @@ consumados
 correria
 carregas
 cobran
+conversar
+cuidaram
+casei
 BM
 BBox
 BHq
@@ -39111,6 +39122,8 @@ Regras
 Recrutamento
 Reviravolta
 Rota
+Recentemente
+Recordamos
 ExtGState
 Ei
 ET
@@ -41055,6 +41068,7 @@ Especial
 Escreveste
 Examina
 Escrevemos
+Escrevo
 true
 tTr
 tQr
@@ -43494,6 +43508,7 @@ tops
 trapped
 tosquenejar
 tiveste
+tratamentos
 stream
 sWz
 sj
@@ -46621,6 +46636,8 @@ serva
 sobremodo
 soberbos
 secar
+soubessem
+semearam
 xU
 xM
 xLq
@@ -51477,6 +51494,7 @@ gordura
 guerreiros
 gadgets
 gargalhada
+generosa
 am
 ah
 as
@@ -55079,6 +55097,11 @@ aliados
 apito
 apitar
 amas
+acampamentos
+autismo
+acolhedora
+assistindo
+amparo
 dA
 dD
 dd
@@ -58367,6 +58390,8 @@ dirigiste
 dificultam
 desencanto
 derrotar
+desviou
+diagnosticado
 zR
 zD
 zJ
@@ -68812,6 +68837,8 @@ praga
 passaporte
 pressionar
 professoras
+participava
+pego
 OaL
 Oar
 OQ
@@ -80910,6 +80937,7 @@ molestar
 massacre
 mantinha
 madrugadas
+minioma
 qd
 qm
 qI
@@ -82636,6 +82664,7 @@ quebrando
 querias
 quicker
 quotidiano
+quimio
 ih
 ip
 iV
@@ -85256,6 +85285,9 @@ invaluable
 irreplaceable
 invocar
 impactos
+impinge
+imensos
+indescrit
 kC
 kp
 kN
@@ -104439,6 +104471,7 @@ recuam
 recruta
 recordaste
 recordo
+retoma
 hF
 hj
 hC
