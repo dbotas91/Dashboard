@@ -21446,6 +21446,7 @@ Gerais
 Gel
 Guardi
 Gostar
+Grandioso
 HeadlessChrome
 HX
 HSG
@@ -41070,6 +41071,7 @@ Escreveste
 Examina
 Escrevemos
 Escrevo
+Eterna
 true
 tTr
 tQr
