@@ -5,7 +5,7 @@ dg-publish: "true"
 dg-note-icon: chest
 noteIcon: chest
 ---
-Status: [[Por fazer]]
+Status: [[Concluído]]
 Tags: [[2026-08]], [[Zoom]]
 
 # Ordem
@@ -23,7 +23,7 @@ Grandioso És Tu
 O amor de Deus, logo eu - Karen e Camila
 
 # Leitura da Bíblia
-> [!quote]+ Salmo 121
+> [!quote]- Salmo 121
 > Elevo os olhos para os montes: de onde me virá o socorro? 2 O meu socorro _vem_ do Senhor, que fez o céu e a terra.
 > 3 Não deixará vacilar o teu pé; aquele que te guarda não tosquenejará. 4 Eis que não tosquenejará nem dormirá o guarda de Israel.
 > 5 O Senhor _é_ quem te guarda; o Senhor _é_ a tua sombra à tua direita. 6 O sol não te molestará de dia, nem a lua, de noite. 7 O Senhor te guardará de todo mal; ele guardará a tua alma. 8 O Senhor guardará a tua entrada e a tua saída, desde agora e para sempre.
@@ -38,5 +38,9 @@ O amor de Deus, logo eu - Karen e Camila
 	- [ ] Irene
 	- [ ] Alberto Miranda
 	- [ ] O irmão **_Luis da Silva_**, por ele e pela **_esposa_** **(****_Vitória_****)** que se reunem na igreja no **Luena** (Angola). Orar para que o Senhor os console.
+	- [ ] Ramiro, irmão do Armando
+	- [ ] Mariana
 - [ ] Pela obra em Angola e os irmãos que se reúnem nas várias localidades;
-- [ ] Orar pelo pregador - Carlos Alberto Oliveira
+- [ ] Orar pelo pregador - Daniel Ferreira
+
+tão fraco e tão devedor

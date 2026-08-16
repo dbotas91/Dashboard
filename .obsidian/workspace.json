@@ -21,28 +21,24 @@
             "id": "0a8b1c42b112ab9d",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
+                "file": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
-            }
-          },
-          {
-            "id": "5932a97b4de7989d",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.bibliaon.com/salmos_para_ansiedade/",
-                "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "11 salmos para aliviar a ansiedade (e acalmar a mente) - Bíblia"
+              "icon": "lucide-file",
+              "title": "Reunião Zoom IQC - 16-08-2026"
             }
           },
           {
@@ -102,17 +98,59 @@
             }
           },
           {
+            "id": "7e3c4f445ab650d0",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.google.com/maps/place/Av.+Dom+Jo%C3%A3o+I+336,+4435-456+Rio+Tinto/@41.1682154,-8.5533246,17z/data=!3m1!4b1!4m6!3m5!1s0xd24639f50596f03:0xaa20bdbddd8de8a8!8m2!3d41.1682154!4d-8.5507443!16s%2Fg%2F11c5jffrgh?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+                "title": "Av. Dom João I 336 - Google Maps",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Av. Dom João I 336 - Google Maps"
+            }
+          },
+          {
             "id": "940a2ae9655736f6",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat?assist=false",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "title": "Custos de viagem Quinta do Conde a Rio Tinto",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+              "title": "Custos de viagem Quinta do Conde a Rio Tinto"
+            }
+          },
+          {
+            "id": "c0912aece148e86a",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.segurancamaxima.pt/as-auto-estradas-portuguesas/",
+                "title": "As auto-estradas portuguesas",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "As auto-estradas portuguesas"
+            }
+          },
+          {
+            "id": "e96528a2c4ce211a",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.facebook.com/?checkpoint_src=any",
+                "title": "Facebook",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Facebook"
             }
           }
         ],
