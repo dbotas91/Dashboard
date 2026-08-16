@@ -8,12 +8,22 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9b099c858eefb4ab",
+            "id": "937aa8781f4827d6",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "0a8b1c42b112ab9d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +38,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Artigo Histórico sobre Bart Ehrman para a IQC"
+              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
             }
           },
           {
@@ -79,12 +89,26 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duckduckgo.com/?q=how+to+configure+moonlight+to+stream&ia=web",
-                "title": "how to configure moonlight to stream at DuckDuckGo",
+                "url": "https://notas-dario.vercel.app/",
+                "title": "Home",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "how to configure moonlight to stream at DuckDuckGo"
+              "title": "Home"
+            }
+          },
+          {
+            "id": "890090cf625b10dd",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
             }
           },
           {
@@ -101,7 +125,8 @@
               "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -135,7 +160,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "?",
+                "query": "C. J C",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -143,7 +168,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Procurar"
             }
           },
           {
@@ -337,7 +362,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "zk-prefixer:Crie uma nova nota única": false,
-      "obsidian-importer:Import notes": false,
       "hearth:Open Hearth home": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
@@ -360,18 +384,20 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "9b099c858eefb4ab",
+  "active": "890090cf625b10dd",
   "lastOpenFiles": [
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Vestuário Cristão.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Vestuário Cristão.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Glorificar a Deus no corpo.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Cristóvão.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
@@ -386,8 +412,6 @@
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
     "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Top 10 AI Tools That Will Transform Your Content Creation in 2025.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bookmarks - Obsidian Help.md",
-    "07 - INDEXES/Site IQC.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",

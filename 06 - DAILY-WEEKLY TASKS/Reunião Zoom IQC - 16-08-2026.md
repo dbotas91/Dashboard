@@ -1,12 +1,12 @@
 ---
 tags:
-  - 2026-07
+  - 2026-08
 dg-publish: "true"
 dg-note-icon: chest
 noteIcon: chest
 ---
-Status: [[Concluído]]
-Tags: [[2026-07]], [[Zoom]]
+Status: [[Por fazer]]
+Tags: [[2026-08]], [[Zoom]]
 
 # Ordem
 1. Oração e Leitura
@@ -32,16 +32,14 @@ Viemos Te Adorar - Karen e Camila
 > 15 Quanto a mim, contemplarei a tua face na justiça; eu me satisfarei da tua semelhança quando acordar.
 
 # Motivos de oração 
-- [ ] Dar graças pela mensagem de hoje e também a lição do GPS
+- [ ] Dar graças pela viagem do Nando a Angola
+- [ ] O casamento do Márcio na quarta-feira
 - [ ] Orar pelos vários doentes: 
 	- [ ] Liberto, pai do Paulo
-	- [ ] irmão Adolfo
-	- [ ] José Almeida (marido da irmã Celeste)
 	- [ ] Dora, prima do Nando
+	- [ ] Dinita manda saudações para todos e não consegue estar por estar a ajudar uma outra senhora. 
 	- [ ] Irene
-	- [ ] **_filha_** do irmão **_Luis da Silva_**, por ele e pela **_esposa_** **(****_Vitória_****)** que se reunem na igreja no **Luena** (Angola). Ela está com um pré-diagnóstico de Leucemia Linfoblástica Aguda (LLA).
 	- [ ] Alberto Miranda
-	- [ ] Dinita manda saudações para todos e não consegue estar por estar a ajudar uma outra senhora. Orar por ela e pela filha que vai tentar estar com ela
+	- [ ] O irmão **_Luis da Silva_**, por ele e pela **_esposa_** **(****_Vitória_****)** que se reunem na igreja no **Luena** (Angola). Orar para que o Senhor os console.
 - [ ] Pela obra em Angola e os irmãos que se reúnem nas várias localidades;
-- [ ] O **avô** do nosso jovem irmão **Rafael Maurício**, deixou este mundo. Oremos pelo Rafael, pela avó e demais família, que são um motivo de preocupação no toca à salvação da família.
 - [ ] Orar pelo pregador - Carlos Alberto Oliveira

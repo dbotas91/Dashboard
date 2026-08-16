@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
+      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
+    },
+    {
+      "basename": "Reunião Zoom IQC - 16-08-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md"
+    },
+    {
+      "basename": "O pecado dos pais para os filhos",
+      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md"
+    },
+    {
+      "basename": "Reunião Zoom IQC - 12-07-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md"
+    },
+    {
       "basename": "Artigo Histórico sobre Bart Ehrman para a IQC",
       "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md"
     },
     {
       "basename": "Vestuário Cristão",
       "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Vestuário Cristão.md"
-    },
-    {
-      "basename": "O pecado dos pais para os filhos",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md"
     },
     {
       "basename": "Glorificar a Deus no corpo",
@@ -35,10 +47,6 @@
     {
       "basename": "Estudo Bíblico - 29-07-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md"
-    },
-    {
-      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
-      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
     },
     {
       "basename": "Ceia e ED - 02-08-2026",
@@ -191,14 +199,6 @@
     {
       "basename": "Obsidian digital garden setup",
       "path": "01 - PROJECTS (PARA)/Obsidian digital garden setup.md"
-    },
-    {
-      "basename": "Tarefas no site IQC",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md"
-    },
-    {
-      "basename": "Script de migração do Joomla da versão 3 para a versão 5",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md"
     }
   ],
   "omittedPaths": [],
