@@ -139,14 +139,14 @@
             "id": "2b3a74f248864485",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "split-diff-view",
               "state": {
-                "url": "https://keep.google.com/u/2/#NOTE/1io1GCz8NUpDNknS8DHv_0mVBeatAmt1cltbG8Jzh7koyxZ1JTOxt3quHjU1FHfGV",
-                "title": "Google Keep",
-                "mode": "webview"
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "globe-2",
-              "title": "Google Keep"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           },
           {
@@ -178,7 +178,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -437,7 +437,7 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "1d5f2945fcbaaa92",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
