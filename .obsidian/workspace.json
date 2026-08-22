@@ -42,16 +42,6 @@
             }
           },
           {
-            "id": "193cfa23a90dbec0",
-            "type": "leaf",
-            "state": {
-              "type": "digital-garden-publication-center",
-              "state": {},
-              "icon": "book-up",
-              "title": "Publication Center"
-            }
-          },
-          {
             "id": "5932a97b4de7989d",
             "type": "leaf",
             "state": {
@@ -77,20 +67,6 @@
               },
               "icon": "globe-2",
               "title": "1 tim 3:8 ARC - Da mesma sorte os diáconos sejam - Bible Gateway"
-            }
-          },
-          {
-            "id": "7901284cd542bb47",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://4gnews.pt/eclipse-de-12-de-agosto-a-que-horas-ver-em-cada-distrito-de-portugal/",
-                "title": "Eclipse de 12 de agosto: a que horas ver em cada distrito de Portugal - 4gnews",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Eclipse de 12 de agosto: a que horas ver em cada distrito de Portugal - 4gnews"
             }
           },
           {
@@ -142,11 +118,11 @@
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat",
-                "title": "Real-time eclipse",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Real-time eclipse"
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
           },
           {
@@ -164,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -233,8 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281,
-    "collapsed": true
+    "width": 281
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -423,7 +398,7 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "6cdfc1d4bc87e314",
+  "active": "7634f0fc7a625c97",
   "lastOpenFiles": [
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
