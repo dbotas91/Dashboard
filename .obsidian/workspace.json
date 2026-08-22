@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9b099c858eefb4ab",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
-            }
-          },
-          {
             "id": "1d5f2945fcbaaa92",
             "type": "leaf",
             "state": {
@@ -32,12 +18,12 @@
             }
           },
           {
-            "id": "4f1c1bd147347e29",
+            "id": "6cdfc1d4bc87e314",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
+                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,31 +38,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Estudo Bíblico - 29-07-2026"
+              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
             }
           },
           {
-            "id": "be8858102b1881e8",
+            "id": "193cfa23a90dbec0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Estudo Bíblico - 12-08-2026.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Estudo Bíblico - 12-08-2026"
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
             }
           },
           {
@@ -136,17 +108,31 @@
             }
           },
           {
-            "id": "2b3a74f248864485",
+            "id": "ff3f8bf3eacd27a7",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "webviewer",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "url": "https://keep.google.com/u/3/",
+                "title": "Google Keep",
+                "mode": "webview"
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "globe-2",
+              "title": "Google Keep"
+            }
+          },
+          {
+            "id": "b51670b6de1ada02",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://drive.google.com/drive/u/3/folders/1P9hGhfSF0dvS-E6u7YwadFZXWb0s52ca",
+                "title": "PPTs - Google Drive",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "PPTs - Google Drive"
             }
           },
           {
@@ -169,16 +155,16 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.canva.com/pt_pt/",
-                "title": "Canva: um Kit de Criação Visual para todos",
+                "url": "https://www.facebook.com/groups/227102807770411",
+                "title": "IQC Memories | Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Canva: um Kit de Criação Visual para todos"
+              "title": "IQC Memories | Facebook"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -247,7 +233,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -414,7 +401,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "zk-prefixer:Crie uma nova nota única": false,
-      "obsidian-importer:Import notes": false,
       "hearth:Open Hearth home": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
@@ -437,8 +423,11 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "c4892fd3bf0af16c",
+  "active": "6cdfc1d4bc87e314",
   "lastOpenFiles": [
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
@@ -448,8 +437,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Cristóvão.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Estudo Bíblico - 12-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
@@ -464,7 +451,6 @@
     "10 - TAGS/2026-08.md",
     "10 - TAGS/2026-07.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
-    "Home.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
