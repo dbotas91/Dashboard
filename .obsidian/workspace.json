@@ -115,14 +115,15 @@
             "id": "7634f0fc7a625c97",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "split-diff-view",
               "state": {
-                "url": "https://duck.ai/chat",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
-                "mode": "webview"
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
             }
           },
           {
