@@ -2,6 +2,8 @@
   "title": "Home",
   "showTitle": true,
   "logo": "",
+  "logoIcon": "",
+  "tabIcon": "",
   "themeColorTarget": "both",
   "showSearch": true,
   "searchPlaceholder": "Search or command",
@@ -13,6 +15,10 @@
   "backgroundValue": "",
   "backgroundOpacity": 0.35,
   "backgroundBlur": 2,
+  "backgroundLayout": "full",
+  "bannerHeight": 220,
+  "bannerFade": true,
+  "bannerFullWidth": false,
   "openOnStartup": true,
   "replaceNewTabs": true,
   "focusSearchOnOpen": false,
@@ -516,5 +522,6 @@
   "customFileIcons": true,
   "iconizeIconProperty": "icon",
   "maxWidth": 1600,
-  "lastSeenVersion": "2.0.0"
+  "lastSeenVersion": "2.1.0",
+  "setupStatus": "done"
 }

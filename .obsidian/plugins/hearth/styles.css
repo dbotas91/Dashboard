@@ -30,6 +30,58 @@
 	pointer-events: none;
 }
 
+/* ---- Banner ----------------------------------------------------------
+ *
+ * The other way to wear a background: instead of filling the view, the same
+ * backdrop is cropped into a strip at the top of the content — a cover image,
+ * the way a note's banner works — and the board sits below it on the theme's
+ * own surface.
+ *
+ * It is a real element in the scroll flow rather than a fixed layer, which is
+ * what makes it cost nothing anywhere else: it scrolls away with the content,
+ * and on a fit-to-page board the grid simply gets whatever height is left.
+ * Everything inside it is the wallpaper's own `.hearth-bg` layer, so opacity,
+ * blur and the live weather sky all behave identically in both modes. */
+.hearth-banner {
+	position: relative;
+	/* Never squeezed by the flex column that fit-to-page/empty-board mode turns
+	 * the scroll area into: the height the reader set is the height they get. */
+	flex: 0 0 auto;
+	width: 100%;
+	margin: 0 auto var(--hearth-inner-gap, 28px);
+	border-radius: 12px;
+	/* Crops the layer inside to the strip — including a blurred layer's soft
+	 * edges, which are deliberately grown past this box (see renderBanner). */
+	overflow: hidden;
+	/* Decoration, not a target: clicks belong to whatever is under it. */
+	pointer-events: none;
+}
+
+/* Full-bleed: cancel the scroll area's own padding so the strip runs to the
+ * pane's edges, and drop the corner radius that only makes sense inset. */
+.hearth-banner.is-full-width {
+	max-width: none;
+	width: auto;
+	margin-top: calc(-1 * var(--hearth-scroll-pad-top, 4vh));
+	margin-left: calc(-1 * var(--hearth-scroll-pad-x, 24px));
+	margin-right: calc(-1 * var(--hearth-scroll-pad-x, 24px));
+	border-radius: 0;
+}
+
+/* Fade the lower edge into the page instead of ending on a hard line. Masking
+ * the layer (not the banner) keeps the crop above intact. */
+.hearth-banner.is-faded > .hearth-bg {
+	-webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+	mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+}
+
+/* On a fitted board the banner and the grid share one screen, so cap the strip
+ * before it can eat the whole board — a height meant for a scrolling board
+ * shouldn't leave nothing to fit. */
+.hearth-fit .hearth-banner {
+	max-height: 60%;
+}
+
 /* ---- Low power mode ---------------------------------------------------
  *
  * The paint-cost half of the setting. Everything with a value behind it — the
@@ -80,7 +132,11 @@
 	z-index: 1;
 	height: 100%;
 	overflow-y: auto;
-	padding: 4vh 24px 48px;
+	/* Kept in variables so a full-bleed banner can cancel exactly this padding,
+	 * whichever spacing mode is in force (see .hearth-banner.is-full-width). */
+	--hearth-scroll-pad-x: 24px;
+	--hearth-scroll-pad-top: 4vh;
+	padding: var(--hearth-scroll-pad-top) var(--hearth-scroll-pad-x) 48px;
 }
 
 .hearth-scroll.hearth-fit {
@@ -113,6 +169,15 @@
 .hearth-fit .hearth-inner {
 	height: 100%;
 	min-height: 0;
+}
+
+/* With a banner above it the inner is no longer alone in the fitted column, and
+ * `height: 100%` would resolve against the whole scroll area — overflowing (and
+ * clipping the bottom row of cards) by exactly the banner's height. Take the
+ * remainder instead. */
+.hearth-view.hearth-has-banner .hearth-fit .hearth-inner {
+	height: auto;
+	flex: 1 1 auto;
 }
 
 /* ---- Header --------------------------------------------------------- */
@@ -858,9 +923,9 @@
 	padding-inline: 0;
 }
 
-/* Read-only embed and jot hosts. `.hearth-embed-live` (canvas/Excalidraw) is
- * excluded — it's deliberately edge-to-edge and its body already zeroes all
- * padding.
+/* Read-only embed and jot hosts. `.hearth-embed-live` (canvas/Excalidraw) and
+ * `.hearth-embed-image` (a picture given a fit mode) are excluded — both are
+ * deliberately edge-to-edge and their bodies already zero all padding.
  *
  * The start gutter is sized from the hang itself rather than being a flat
  * number, because the hang has no upper bound. Obsidian computes
@@ -875,7 +940,8 @@
  * hang only widens it once it would otherwise eat in. The gutter is added on
  * top of the hang, not compared against it, so the checkbox keeps a full
  * gutter's clearance instead of landing flush against the clip edge. */
-.hearth-card-body.is-embed-host > .hearth-embed:not(.hearth-embed-live),
+.hearth-card-body.is-embed-host
+	> .hearth-embed:not(.hearth-embed-live):not(.hearth-embed-image),
 .hearth-card-body.is-jot-host .hearth-jot-preview {
 	padding-inline-start: max(
 		var(--hearth-card-pad-x),
@@ -949,6 +1015,73 @@
  * desktop runtime) and modern WebKit (mobile) both support `zoom`. */
 .hearth-embed.is-scaled {
 	zoom: var(--hearth-embed-scale, 1);
+}
+
+/* ---- Formatted picture embeds --------------------------------------- */
+
+/* An image embed given a fit mode is drawn by Hearth as a bare <img> (see
+ * renderFormattedImage) and takes the whole card body, so the body drops its
+ * padding and its scrollbar the way a canvas embed's does — a gutter around a
+ * picture that says "fill the card" would be a visible lie, and the picture's
+ * own corners are clipped by the card's radius. */
+.hearth-card > .hearth-card-body.hearth-card-body-image {
+	overflow: hidden;
+	padding: 0;
+}
+
+/* The custom properties come from `embedImageStyle`: the anchor point, once as
+ * an `object-position` (which doubles as the zoom's transform origin) and once
+ * as flex alignment, plus the zoom factor. The flex alignment only bites in
+ * "fit the width", the one mode where the picture doesn't span both axes. */
+.hearth-embed.hearth-embed-image {
+	display: flex;
+	justify-content: var(--hearth-embed-img-justify, center);
+	align-items: var(--hearth-embed-img-align, center);
+	overflow: hidden;
+	padding: 0;
+}
+
+.hearth-embed-image .hearth-embed-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	/* The card's own radius clips the picture; a second radius on a picture that
+	 * reaches the card's edge just cuts a notch out of the corner. */
+	border-radius: 0;
+	object-position: var(--hearth-embed-img-pos, center center);
+	/* Zoom scales the fitted picture about its anchor point, so zooming into a
+	 * cropped picture keeps looking at the same part of it. The host clips. */
+	transform: scale(var(--hearth-embed-img-scale, 1));
+	transform-origin: var(--hearth-embed-img-pos, center center);
+}
+
+.hearth-embed-image.is-fit-contain .hearth-embed-img {
+	object-fit: contain;
+}
+
+.hearth-embed-image.is-fit-cover .hearth-embed-img {
+	object-fit: cover;
+}
+
+.hearth-embed-image.is-fit-stretch .hearth-embed-img {
+	object-fit: fill;
+}
+
+/* "Fit the width": the picture spans the card and keeps its ratio, so its
+ * height is whatever that comes to and the card scrolls. Zoom widens the
+ * picture instead of transforming it — a transform wouldn't reflow the height
+ * derived from the width, leaving a gap under a shrunk picture. */
+.hearth-embed-image.is-fit-width {
+	overflow: auto;
+}
+
+.hearth-embed-image.is-fit-width .hearth-embed-img {
+	width: calc(100% * var(--hearth-embed-img-scale, 1));
+	height: auto;
+	flex: none;
+	object-fit: contain;
+	transform: none;
 }
 
 /* Editable embed: a plain textarea bound to the note's file. Uses a monospace
@@ -2366,6 +2499,53 @@
 	display: none;
 }
 
+/* ---- Lucide icon fields --------------------------------------------- */
+
+/* The live preview beside a Lucide icon field (settings, dashboard settings).
+   It keeps its box when empty so the row doesn't jump as icons come and go —
+   an unrecognised id simply leaves a dim, empty slot. */
+.hearth-icon-preview {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	flex: none;
+	border-radius: var(--radius-s, 4px);
+	color: var(--text-normal);
+	background: var(--background-modifier-form-field);
+}
+
+.hearth-icon-preview.is-empty {
+	background: transparent;
+	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+
+.hearth-icon-preview svg {
+	width: 18px;
+	height: 18px;
+}
+
+/* A row in the Lucide icon picker: the icon itself, then its id. */
+.hearth-icon-suggestion {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.hearth-icon-suggestion-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--text-muted);
+	flex: none;
+}
+
+.hearth-icon-suggestion-icon svg {
+	width: 18px;
+	height: 18px;
+}
+
 /* The small "?" help badge beside an icon field in the card editors (#119). */
 .hearth-icon-help {
 	display: inline-flex;
@@ -2464,6 +2644,16 @@
 	border-color: var(--interactive-accent);
 	background: var(--background-modifier-hover);
 	transform: translateY(-1px);
+}
+
+/* A tile whose action is still running — the Templater card creating a note,
+   which may involve a prompt of Templater's own. The tile stays in place and
+   keeps its label; it just stops accepting a second click, so an impatient
+   double-click can't make two notes. */
+.hearth-link-tile.is-busy {
+	opacity: 0.6;
+	pointer-events: none;
+	cursor: progress;
 }
 
 /* A tile fully/partially hidden behind another tile — an undesirable overlap.
@@ -5580,10 +5770,12 @@
 /* ---- Compact spacing ----------------------------------------------- */
 
 .hearth-compact .hearth-scroll {
-	padding: 1.5vh 14px 24px;
-}
-
-.hearth-compact .hearth-inner {
+	--hearth-scroll-pad-x: 14px;
+	--hearth-scroll-pad-top: 1.5vh;
+	padding: var(--hearth-scroll-pad-top) var(--hearth-scroll-pad-x) 24px;
+	/* Declared on the scroll area rather than on .hearth-inner so the banner —
+	 * inner's sibling, not its child — inherits the compact gap too and keeps
+	 * the same distance from the content as everything else. */
 	--hearth-inner-gap: 16px;
 }
 
@@ -6510,6 +6702,256 @@ body.hearth-dv-resizing {
 	background: var(--background-primary);
 	color: var(--text-normal);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* ---- Slideshow card --------------------------------------------------
+ *
+ * A picture embed that rotates. However many pictures a card has, only two
+ * layers exist — the one on screen and the one coming in — so what is
+ * composited never grows with the size of the folder. Every transition is a
+ * pair of animations on those two layers: the incoming one plays `is-in-*`, the
+ * outgoing one `is-out-*`, both with `both` fill so the pair holds its end state
+ * until the next swap clears the classes and starts over. The `is-trans-none`
+ * variant simply defines neither, which is the cut. */
+.hearth-card-body.hearth-slideshow-host {
+	padding: 0;
+	overflow: hidden;
+}
+
+.hearth-slideshow {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* Overwritten per card from the editor's transition length and hold time. */
+	--hearth-slide-ms: 700ms;
+	--hearth-slide-hold: 8000ms;
+}
+
+.hearth-slide {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+}
+
+.hearth-slide.is-active {
+	opacity: 1;
+	z-index: 2;
+}
+
+.hearth-slide-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.hearth-slideshow.is-fit-cover .hearth-slide-img {
+	object-fit: cover;
+}
+
+.hearth-slideshow.is-fit-contain .hearth-slide-img {
+	object-fit: contain;
+}
+
+/* Crossfade */
+.hearth-slideshow.is-trans-fade > .hearth-slide.is-in-next,
+.hearth-slideshow.is-trans-fade > .hearth-slide.is-in-prev {
+	animation: hearth-slide-fade-in var(--hearth-slide-ms) ease both;
+}
+
+.hearth-slideshow.is-trans-fade > .hearth-slide.is-out-next,
+.hearth-slideshow.is-trans-fade > .hearth-slide.is-out-prev {
+	animation: hearth-slide-fade-out var(--hearth-slide-ms) ease both;
+}
+
+/* Slide. Both layers stay opaque and simply move, in the direction the step was
+ * taken — so stepping back with the controls slides back rather than forward. */
+.hearth-slideshow.is-trans-slide > .hearth-slide.is-in-next {
+	animation: hearth-slide-in-next var(--hearth-slide-ms) ease both;
+}
+
+.hearth-slideshow.is-trans-slide > .hearth-slide.is-out-next {
+	animation: hearth-slide-out-next var(--hearth-slide-ms) ease both;
+}
+
+.hearth-slideshow.is-trans-slide > .hearth-slide.is-in-prev {
+	animation: hearth-slide-in-prev var(--hearth-slide-ms) ease both;
+}
+
+.hearth-slideshow.is-trans-slide > .hearth-slide.is-out-prev {
+	animation: hearth-slide-out-prev var(--hearth-slide-ms) ease both;
+}
+
+/* Zoom: the new picture comes in slightly enlarged, the old one falls back. */
+.hearth-slideshow.is-trans-zoom > .hearth-slide.is-in-next,
+.hearth-slideshow.is-trans-zoom > .hearth-slide.is-in-prev {
+	animation: hearth-slide-zoom-in var(--hearth-slide-ms) ease both;
+}
+
+.hearth-slideshow.is-trans-zoom > .hearth-slide.is-out-next,
+.hearth-slideshow.is-trans-zoom > .hearth-slide.is-out-prev {
+	animation: hearth-slide-zoom-out var(--hearth-slide-ms) ease both;
+}
+
+@keyframes hearth-slide-fade-in {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes hearth-slide-fade-out {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+@keyframes hearth-slide-in-next {
+	from { opacity: 1; transform: translateX(100%); }
+	to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes hearth-slide-out-next {
+	from { opacity: 1; transform: translateX(0); }
+	to { opacity: 1; transform: translateX(-100%); }
+}
+
+@keyframes hearth-slide-in-prev {
+	from { opacity: 1; transform: translateX(-100%); }
+	to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes hearth-slide-out-prev {
+	from { opacity: 1; transform: translateX(0); }
+	to { opacity: 1; transform: translateX(100%); }
+}
+
+@keyframes hearth-slide-zoom-in {
+	from { opacity: 0; transform: scale(1.08); }
+	to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes hearth-slide-zoom-out {
+	from { opacity: 1; transform: scale(1); }
+	to { opacity: 0; transform: scale(0.94); }
+}
+
+/* Optional slow zoom into the picture on screen ("Ken Burns"), lasting exactly
+ * as long as the picture is held so it neither finishes early nor jumps. The
+ * animation restarts on its own: the class is removed from the layer and added
+ * back on every swap. */
+.hearth-slideshow.is-kenburns > .hearth-slide.is-active .hearth-slide-img {
+	animation: hearth-slide-kenburns var(--hearth-slide-hold) ease-out both;
+}
+
+@keyframes hearth-slide-kenburns {
+	from { transform: scale(1); }
+	to { transform: scale(1.09); }
+}
+
+/* The caption sits over the picture with a gradient scrim, so it stays readable
+ * on a light photo and a dark one alike. */
+.hearth-slide-caption {
+	position: absolute;
+	inset: auto 0 0 0;
+	z-index: 3;
+	padding: 22px 12px 9px;
+	color: #fff;
+	font-size: 0.76rem;
+	font-weight: 500;
+	line-height: 1.35;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0));
+	pointer-events: none;
+}
+
+/* Previous / pause / next and the position, revealed on hover or keyboard
+ * focus like the embed card's floating view switcher. */
+.hearth-slideshow-controls {
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
+	z-index: 4;
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	padding: 2px;
+	border-radius: 8px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 140ms ease;
+}
+
+.hearth-card:hover .hearth-slideshow-controls,
+.hearth-slideshow-controls:focus-within {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/* Nothing hovers on a touch screen, so there the controls are simply always
+ * there — dimmed rather than hidden. */
+@media (hover: none) {
+	.hearth-slideshow-controls {
+		opacity: 0.85;
+		pointer-events: auto;
+	}
+}
+
+.hearth-slideshow-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3px;
+	border: none;
+	border-radius: 6px;
+	background: transparent;
+	color: var(--text-muted);
+	cursor: pointer;
+	transition:
+		background 140ms ease,
+		color 140ms ease;
+}
+
+.hearth-slideshow-btn:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-slideshow-btn .svg-icon {
+	width: 15px;
+	height: 15px;
+}
+
+/* A paused slideshow says so: the play button it now shows is accented, so a
+ * card that has stopped rotating doesn't read as a broken one. */
+.hearth-slideshow-btn.is-paused {
+	color: var(--text-accent);
+}
+
+.hearth-slideshow-count {
+	padding: 0 6px 0 3px;
+	color: var(--text-muted);
+	font-size: 0.68rem;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+}
+
+/* A reader who asked for less motion still gets the slideshow — it just stops
+ * moving: the sliding and zooming transitions become the crossfade, and the slow
+ * zoom is dropped. */
+@media (prefers-reduced-motion: reduce) {
+	.hearth-slideshow > .hearth-slide.is-in-next,
+	.hearth-slideshow > .hearth-slide.is-in-prev {
+		animation-name: hearth-slide-fade-in;
+	}
+
+	.hearth-slideshow > .hearth-slide.is-out-next,
+	.hearth-slideshow > .hearth-slide.is-out-prev {
+		animation-name: hearth-slide-fade-out;
+	}
+
+	.hearth-slideshow.is-kenburns > .hearth-slide.is-active .hearth-slide-img {
+		animation: none;
+	}
 }
 
 /* ---- Activity heatmap card ------------------------------------------ */
@@ -9025,5 +9467,478 @@ body.hearth-dv-resizing {
 
 	.hearth-picker-request-option .mod-cta {
 		grid-column: 1 / -1;
+	}
+}
+
+/* ======================================================================
+   Setup wizard (first run)
+   ----------------------------------------------------------------------
+   A stepped dialog rather than a settings page: a progress rail, one step
+   at a time, and a fixed footer. The frame's height is pinned (not maxed)
+   for the same reason the card picker's is — steps differ wildly in
+   length, and a dialog that resizes under the pointer moves the Next
+   button out from under the click that was heading for it.
+   ====================================================================== */
+
+.hearth-setup-modal {
+	max-width: 720px;
+	width: min(720px, 94vw);
+}
+
+.hearth-setup-modal .modal-content {
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+}
+
+.hearth-setup {
+	display: flex;
+	flex-direction: column;
+	min-height: 0;
+	height: min(70vh, 660px);
+}
+
+/* ---- Progress rail ---- */
+.hearth-setup-rail {
+	flex: none;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	overflow-x: auto;
+	scrollbar-width: none;
+	padding-bottom: 12px;
+	margin-bottom: 4px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.hearth-setup-rail::-webkit-scrollbar {
+	display: none;
+}
+
+.hearth-setup-rail-step {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	flex: none;
+	padding: 4px 10px;
+	border-radius: 999px;
+	color: var(--text-faint);
+	font-size: 0.82em;
+	white-space: nowrap;
+}
+
+.hearth-setup-rail-step.is-done {
+	color: var(--text-muted);
+	cursor: pointer;
+}
+
+.hearth-setup-rail-step.is-done:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-setup-rail-step.is-active {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+	font-weight: 600;
+}
+
+.hearth-setup-rail-icon {
+	display: inline-flex;
+}
+
+.hearth-setup-rail-icon .svg-icon {
+	width: 14px;
+	height: 14px;
+}
+
+/* ---- Step heading ---- */
+.hearth-setup-head {
+	flex: none;
+	padding: 16px 0 12px;
+}
+
+.hearth-setup-title {
+	font-size: 1.35em;
+	font-weight: 650;
+	line-height: 1.25;
+}
+
+.hearth-setup-subtitle {
+	margin-top: 4px;
+	color: var(--text-muted);
+	font-size: 0.9em;
+}
+
+/* ---- Step body: the only part that scrolls ---- */
+.hearth-setup-body {
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+	/* Room for the scrollbar so option tiles don't run under it. */
+	padding-right: 8px;
+}
+
+/* Settings rows inside the wizard are denser than in the settings pane:
+   there are a lot of them and the dialog is short. */
+.hearth-setup-body .setting-item {
+	padding: 10px 0;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.hearth-setup-body .setting-item:first-child {
+	border-top: none;
+}
+
+.hearth-setup-lead {
+	margin: 0 0 16px;
+	color: var(--text-muted);
+	line-height: 1.55;
+}
+
+.hearth-setup-grouplabel {
+	margin: 18px 0 8px;
+	font-size: 0.78em;
+	font-weight: 650;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--text-faint);
+}
+
+.hearth-setup-grouplabel:first-child {
+	margin-top: 0;
+}
+
+.hearth-setup-note {
+	margin-top: 14px;
+	padding: 10px 12px;
+	border-radius: 8px;
+	background: var(--background-secondary);
+	color: var(--text-muted);
+	font-size: 0.85em;
+	line-height: 1.5;
+}
+
+/* The one note that is a promise rather than an aside — "nothing you have
+   is touched" — so it reads as reassurance, not small print. */
+.hearth-setup-note.is-safe {
+	background: var(--background-modifier-success, var(--background-secondary));
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-normal);
+}
+
+/* ---- Welcome bullets ---- */
+.hearth-setup-bullets {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.hearth-setup-bullet {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.hearth-setup-bullet-icon {
+	display: inline-flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 8px;
+	background: var(--background-modifier-hover);
+	color: var(--text-accent);
+}
+
+.hearth-setup-bullet-title {
+	font-weight: 600;
+}
+
+.hearth-setup-bullet-desc {
+	margin-top: 2px;
+	color: var(--text-muted);
+	font-size: 0.88em;
+	line-height: 1.45;
+}
+
+/* ---- Option tiles ---- */
+.hearth-setup-options {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+	gap: 10px;
+}
+
+.hearth-setup-option {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 12px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	background: var(--background-primary);
+	cursor: pointer;
+	transition: border-color 120ms ease, background 120ms ease;
+}
+
+.hearth-setup-option:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-setup-option.is-selected {
+	border-color: var(--interactive-accent);
+	background: var(--background-modifier-hover);
+}
+
+.hearth-setup-option-icon {
+	display: inline-flex;
+	flex: none;
+	color: var(--text-muted);
+}
+
+.hearth-setup-option.is-selected .hearth-setup-option-icon {
+	color: var(--text-accent);
+}
+
+.hearth-setup-option-name {
+	font-weight: 600;
+	font-size: 0.92em;
+}
+
+.hearth-setup-option-desc {
+	margin-top: 3px;
+	color: var(--text-muted);
+	font-size: 0.82em;
+	line-height: 1.4;
+}
+
+/* A multi-select grid gets a checkmark on its chosen tiles: with several
+   selected at once, a border tint alone reads as "these are highlighted"
+   rather than "these are picked". */
+.hearth-setup-options.is-multi .hearth-setup-option.is-selected::after {
+	content: "✓";
+	margin-left: auto;
+	align-self: center;
+	color: var(--text-accent);
+	font-weight: 700;
+}
+
+/* ---- Integrations ---- */
+.hearth-setup-badge {
+	margin-left: 8px;
+	padding: 1px 7px;
+	border-radius: 999px;
+	background: var(--background-modifier-hover);
+	color: var(--text-accent);
+	font-size: 0.72em;
+	font-weight: 650;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	vertical-align: middle;
+}
+
+.hearth-setup-detected {
+	margin-top: 14px;
+	padding: 12px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	background: var(--background-secondary);
+}
+
+.hearth-setup-detected-title {
+	font-weight: 600;
+	font-size: 0.88em;
+	margin-bottom: 8px;
+}
+
+.hearth-setup-detected-list {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.hearth-setup-detected-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	font-size: 0.85em;
+}
+
+.hearth-setup-detected-key {
+	color: var(--text-muted);
+}
+
+.hearth-setup-detected-value {
+	font-family: var(--font-monospace);
+	color: var(--text-normal);
+	text-align: right;
+}
+
+/* ---- The board preview ---- */
+.hearth-setup-preview {
+	display: grid;
+	gap: 4px;
+	height: 190px;
+	padding: 8px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	background: var(--background-secondary);
+}
+
+.hearth-setup-preview-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 0;
+	padding: 2px 4px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 5px;
+	background: var(--background-primary);
+	overflow: hidden;
+}
+
+.hearth-setup-preview-label {
+	font-size: 0.68em;
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ---- The plan list ---- */
+.hearth-setup-plan {
+	display: flex;
+	flex-direction: column;
+	margin-top: 12px;
+}
+
+.hearth-setup-plan-row {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 6px 0;
+	border-bottom: 1px solid var(--background-modifier-border);
+	font-size: 0.88em;
+}
+
+.hearth-setup-plan-row:last-child {
+	border-bottom: none;
+}
+
+.hearth-setup-plan-name {
+	font-weight: 550;
+}
+
+.hearth-setup-plan-why {
+	color: var(--text-faint);
+	font-size: 0.9em;
+	text-align: right;
+}
+
+/* ---- Footer ---- */
+.hearth-setup-foot {
+	flex: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	padding-top: 14px;
+	margin-top: 4px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+.hearth-setup-foot-right {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-left: auto;
+}
+
+.hearth-setup-skip {
+	background: none;
+	box-shadow: none;
+	color: var(--text-muted);
+}
+
+.hearth-setup-skip:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+/* ---- The customize callout ----
+   Leads the final step, above the board preview. Everything below it is a
+   picture, a list and two controls that end at a "Build my dashboard"
+   button, so a note placed after them is a note nobody reads — and the point
+   this one makes, that the board is a starting point and all of it is yours
+   to change, is the one that must land. Given the accent edge and a tinted
+   surface so it reads as the step's opening statement rather than an aside
+   that can be skimmed past. */
+.hearth-setup-callout {
+	margin: 0 0 18px;
+	padding: 14px 16px;
+	border-left: 3px solid var(--interactive-accent);
+	border-radius: 4px 10px 10px 4px;
+	background: var(--background-secondary);
+}
+
+.hearth-setup-callout-head {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.hearth-setup-callout-icon {
+	display: inline-flex;
+	color: var(--text-accent);
+}
+
+.hearth-setup-callout-icon .svg-icon {
+	width: 16px;
+	height: 16px;
+}
+
+.hearth-setup-callout-title {
+	font-weight: 650;
+}
+
+.hearth-setup-callout-text {
+	margin: 0 0 8px;
+	color: var(--text-muted);
+	font-size: 0.88em;
+	line-height: 1.55;
+}
+
+.hearth-setup-callout-text:last-of-type {
+	margin-bottom: 0;
+}
+
+.hearth-setup-callout-hint {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid var(--background-modifier-border);
+	color: var(--text-faint);
+	font-size: 0.82em;
+	line-height: 1.5;
+}
+
+@media (max-width: 620px) {
+	.hearth-setup {
+		height: min(78vh, 660px);
+	}
+
+	.hearth-setup-options {
+		grid-template-columns: 1fr;
+	}
+
+	/* The rail's labels are the first thing to go on a phone: the icons plus
+	   the step heading below already say where you are. */
+	.hearth-setup-rail-label {
+		display: none;
+	}
+
+	.hearth-setup-preview {
+		height: 140px;
 	}
 }

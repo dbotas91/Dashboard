@@ -6,6 +6,7 @@
       {
         "id": "a13cf328d71ddc47",
         "type": "tabs",
+        "dimension": 61.29707112970711,
         "children": [
           {
             "id": "1d5f2945fcbaaa92",
@@ -23,7 +24,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -38,7 +39,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
+              "title": "Por que dividir a Bíblia corretamente"
             }
           },
           {
@@ -47,12 +48,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://iqc.pt/edificacao/devocional/meditacoes/18260-morte-da-dona-reuniao-de-oracao?highlight=WyJvcmFcdTAwZTdcdTAwZTNvIiwib3JhXHUwMGU3XHUwMGUzb1x1MjAxZC4iLCJvcmFcdTAwZTdcdTAwZTNvXHUyMDFkLCIsIm9yYVx1MDBlN1x1MDBlM28sXHUyMDFkIiwib3JhXHUwMGU3XHUwMGUzb1x1MjAxZCIsIm9yYVx1MDBlN1x1MDBlM29cdTAwYmIsIiwib3JhXHUwMGU3XHUwMGUzby1wb2VzaWEiLCJvcmFcdTAwZTdcdTAwZTNvLlx1MjAxZCIsIm9yYVx1MDBlN1x1MDBlM28uMSIsIm9yYVx1MDBlN1x1MDBlM29cdTAwYmIuIl0=",
-                "title": "Morte da Dona Reunião de Oração",
+                "url": "https://iqc.pt/",
+                "title": "Portão",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Morte da Dona Reunião de Oração"
+              "title": "Portão"
             }
           },
           {
@@ -70,78 +71,81 @@
             }
           },
           {
-            "id": "181fde27afe3bbd8",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://keep.google.com/u/0/",
-                "title": "Google Keep",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Google Keep"
-            }
-          },
-          {
-            "id": "ff3f8bf3eacd27a7",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://keep.google.com/u/3/",
-                "title": "Google Keep",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Google Keep"
-            }
-          },
-          {
-            "id": "b51670b6de1ada02",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://drive.google.com/drive/u/3/folders/1P9hGhfSF0dvS-E6u7YwadFZXWb0s52ca",
-                "title": "PPTs - Google Drive",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "PPTs - Google Drive"
-            }
-          },
-          {
-            "id": "7634f0fc7a625c97",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
-            }
-          },
-          {
             "id": "f6de484b8c27dd42",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/groups/227102807770411",
-                "title": "IQC Memories | Facebook",
+                "url": "https://www.facebook.com/",
+                "title": "Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "IQC Memories | Facebook"
+              "title": "Facebook"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
+      },
+      {
+        "id": "d4829de9d0db3671",
+        "type": "tabs",
+        "dimension": 38.70292887029289,
+        "children": [
+          {
+            "id": "ed15fb16194a876b",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://gemini.google.com/app",
+                "title": "Google Gemini",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Google Gemini"
+            }
+          },
+          {
+            "id": "ac96e6e940f7ab6f",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.reuters.com/investigations/meta-is-earning-fortune-deluge-fraudulent-ads-documents-show-2025-11-06/",
+                "title": "Meta is earning a fortune on a deluge of fraudulent ads, documents show | Reuters",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Meta is earning a fortune on a deluge of fraudulent ads, documents show | Reuters"
+            }
+          },
+          {
+            "id": "aa67005a4337c399",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Meta is earning a fortune on a deluge of fraudulent ads, documents show"
+            }
+          }
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -210,7 +214,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -399,8 +404,11 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "7634f0fc7a625c97",
+  "active": "aa67005a4337c399",
   "lastOpenFiles": [
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
@@ -424,9 +432,6 @@
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
-    "10 - TAGS/2026-08.md",
-    "10 - TAGS/2026-07.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/6 things to test before throwing away your 'broken' Fire TV Stick.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
