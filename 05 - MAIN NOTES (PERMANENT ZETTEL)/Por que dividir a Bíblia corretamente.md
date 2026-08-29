@@ -73,6 +73,11 @@ Vejamos:
 
 Aqui estão alguns motivos que quero desenvolver de porque é importante e necessário dividir a Bíblia corretamente.
 
+----
+Resumo até aqui com o ppt
+
+---
+
 # Porque dividir a Bíblia correctamente conforme o apostolado de Paulo
 ## 1 Sua Salvação
 A igreja está a enfrentar uma crise na explanação do Evangelho. Parece que hoje ninguém sabe explicar o evangelho e misturam tudo.

@@ -6,7 +6,7 @@
       {
         "id": "a13cf328d71ddc47",
         "type": "tabs",
-        "dimension": 61.29707112970711,
+        "dimension": 53.24267782426778,
         "children": [
           {
             "id": "1d5f2945fcbaaa92",
@@ -76,12 +76,26 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/",
-                "title": "Facebook",
+                "url": "https://duckduckgo.com/?q=como+aceder+%C3%A0+conta+google+no+obsidian+web+viewer%3F&ia=web",
+                "title": "como aceder à conta google no obsidian web viewer? at DuckDuckGo",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Facebook"
+              "title": "como aceder à conta google no obsidian web viewer? at DuckDuckGo"
+            }
+          },
+          {
+            "id": "68031b9f83b21f59",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://duck.ai/chat",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
           }
         ],
@@ -90,7 +104,7 @@
       {
         "id": "d4829de9d0db3671",
         "type": "tabs",
-        "dimension": 38.70292887029289,
+        "dimension": 46.75732217573222,
         "children": [
           {
             "id": "ed15fb16194a876b",
@@ -119,33 +133,8 @@
               "icon": "globe-2",
               "title": "Meta is earning a fortune on a deluge of fraudulent ads, documents show | Reuters"
             }
-          },
-          {
-            "id": "aa67005a4337c399",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Meta is earning a fortune on a deluge of fraudulent ads, documents show"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -404,10 +393,10 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "aa67005a4337c399",
+  "active": "ed15fb16194a876b",
   "lastOpenFiles": [
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",

@@ -1,6 +1,6 @@
 {
   "openExternalURLs": true,
-  "enableAdblocking": true,
+  "enableAdblocking": false,
   "markdownPath": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
   "homepage": "https://start.me"
 }
