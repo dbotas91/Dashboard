@@ -8,22 +8,22 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1d5f2945fcbaaa92",
+            "id": "937aa8781f4827d6",
             "type": "leaf",
             "state": {
               "type": "hearth-home-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "hearth-home-view"
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           },
           {
-            "id": "6cdfc1d4bc87e314",
+            "id": "66ce6f03220c62e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+                "file": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -38,21 +38,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
-            }
-          },
-          {
-            "id": "5932a97b4de7989d",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://iqc.pt/edificacao/devocional/meditacoes/18260-morte-da-dona-reuniao-de-oracao?highlight=WyJvcmFcdTAwZTdcdTAwZTNvIiwib3JhXHUwMGU3XHUwMGUzb1x1MjAxZC4iLCJvcmFcdTAwZTdcdTAwZTNvXHUyMDFkLCIsIm9yYVx1MDBlN1x1MDBlM28sXHUyMDFkIiwib3JhXHUwMGU3XHUwMGUzb1x1MjAxZCIsIm9yYVx1MDBlN1x1MDBlM29cdTAwYmIsIiwib3JhXHUwMGU3XHUwMGUzby1wb2VzaWEiLCJvcmFcdTAwZTdcdTAwZTNvLlx1MjAxZCIsIm9yYVx1MDBlN1x1MDBlM28uMSIsIm9yYVx1MDBlN1x1MDBlM29cdTAwYmIuIl0=",
-                "title": "Morte da Dona Reunião de Oração",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Morte da Dona Reunião de Oração"
+              "title": "Reunião Zoom IQC - 06-09-2026"
             }
           },
           {
@@ -61,100 +47,124 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.biblegateway.com/passage/?search=1%20tim%203%3A8&version=ARC",
-                "title": "1 tim 3:8 ARC - Da mesma sorte os diáconos sejam - Bible Gateway",
+                "url": "https://www.biblegateway.com/passage/?search=Jo%C3%A3o%2014&version=ARC",
+                "title": "João 14 ARC - Não se turbe o vosso coração; credes - Bible Gateway",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "1 tim 3:8 ARC - Da mesma sorte os diáconos sejam - Bible Gateway"
+              "title": "João 14 ARC - Não se turbe o vosso coração; credes - Bible Gateway"
             }
           },
           {
-            "id": "181fde27afe3bbd8",
+            "id": "77958e421bf881f3",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://keep.google.com/u/0/",
-                "title": "Google Keep",
+                "url": "https://studio.youtube.com/channel/UCELM1FJ0dbvwnwLy2l1gccQ/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
+                "title": "Conteúdo do canal - YouTube Studio",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Google Keep"
+              "title": "Conteúdo do canal - YouTube Studio"
             }
           },
           {
-            "id": "ff3f8bf3eacd27a7",
+            "id": "dd51a5782cf386b5",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://keep.google.com/u/3/",
-                "title": "Google Keep",
+                "url": "https://notas-dario.vercel.app/",
+                "title": "Home",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Google Keep"
+              "title": "Home"
             }
           },
           {
-            "id": "b51670b6de1ada02",
+            "id": "890090cf625b10dd",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://drive.google.com/drive/u/3/folders/1P9hGhfSF0dvS-E6u7YwadFZXWb0s52ca",
-                "title": "PPTs - Google Drive",
+                "url": "https://drive.google.com/drive/u/3/home",
+                "title": "Página inicial – Google Drive",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "PPTs - Google Drive"
+              "title": "Página inicial – Google Drive"
             }
           },
           {
-            "id": "7634f0fc7a625c97",
+            "id": "7e3c4f445ab650d0",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duck.ai/chat",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "url": "https://www.google.com/maps/place/Av.+Dom+Jo%C3%A3o+I+336,+4435-456+Rio+Tinto/@41.1682154,-8.5533246,17z/data=!3m1!4b1!4m6!3m5!1s0xd24639f50596f03:0xaa20bdbddd8de8a8!8m2!3d41.1682154!4d-8.5507443!16s%2Fg%2F11c5jffrgh?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+                "title": "Av. Dom João I 336 - Google Maps",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+              "title": "Av. Dom João I 336 - Google Maps"
             }
           },
           {
-            "id": "1ff37aea7ca98e84",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/obsidian-excalidraw-plugin/data.json",
-                "bFile": ".obsidian/plugins/obsidian-excalidraw-plugin/data.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
-            }
-          },
-          {
-            "id": "f6de484b8c27dd42",
+            "id": "940a2ae9655736f6",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/groups/227102807770411",
-                "title": "IQC Memories | Facebook",
+                "url": "https://duck.ai/chat?assist=false",
+                "title": "Custos de viagem Quinta do Conde a Rio Tinto",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "IQC Memories | Facebook"
+              "title": "Custos de viagem Quinta do Conde a Rio Tinto"
+            }
+          },
+          {
+            "id": "c0912aece148e86a",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://cinegnose.blogspot.com/2023/07/na-serie-silo-verdade-nao-esta-la-fora.html",
+                "title": "Na série 'Silo' a verdade não está lá fora... foi esquecida ~ Cinema Secreto: Cinegnose",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Na série 'Silo' a verdade não está lá fora... foi esquecida ~ Cinema Secreto: Cinegnose"
+            }
+          },
+          {
+            "id": "e96528a2c4ce211a",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.facebook.com/?should_open_composer=false&wp_discovery_redirect=true",
+                "title": "(1) Facebook",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "(1) Facebook"
+            }
+          },
+          {
+            "id": "40b7b003d037d31a",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -188,7 +198,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "?",
+                "query": "C. J C",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -196,7 +206,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Procurar"
             }
           },
           {
@@ -223,7 +233,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -412,34 +423,34 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "1ff37aea7ca98e84",
+  "active": "66ce6f03220c62e8",
   "lastOpenFiles": [
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Vestuário Cristão.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Glorificar a Deus no corpo.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Cristóvão.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Estudo Bíblico - 12-08-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro - Noivo.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Despedida de solteiro.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Fábio.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "10 - TAGS/2026-08.md",
-    "10 - TAGS/2026-07.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
