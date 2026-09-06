@@ -1,16 +1,20 @@
 {
   "title": "Home",
   "showTitle": true,
-  "logo": "",
-  "logoIcon": "",
+  "titleIcon": "",
   "tabIcon": "",
   "themeColorTarget": "both",
   "showSearch": true,
   "searchPlaceholder": "Search or command",
   "showNewNoteButton": true,
   "newNoteButtonMode": "newNote",
+  "newNoteButtonLabel": "",
+  "newNoteTemplate": "",
+  "newNoteFolder": "",
+  "newNoteFilename": "",
   "searchContents": true,
   "searchEngine": "builtin",
+  "webSearchEngine": "duckduckgo",
   "backgroundKind": "default",
   "backgroundValue": "",
   "backgroundOpacity": 0.35,
@@ -23,6 +27,7 @@
   "replaceNewTabs": true,
   "focusSearchOnOpen": false,
   "liveRefresh": false,
+  "liveSettingsSync": true,
   "mobileSearchOnly": true,
   "showMobileActionBar": true,
   "mobileActionButtons": [
@@ -55,6 +60,7 @@
       "target": "hearth:open-daily-note"
     }
   ],
+  "stackOnNarrow": true,
   "disableExternalCalls": false,
   "openIn": "tab",
   "openInOverrides": {
@@ -64,8 +70,10 @@
     "newNote": "default"
   },
   "openFromOutside": "same",
-  "lowPower": false,
+  "performanceTier": "full",
+  "mobilePerformanceTier": "balanced",
   "lowPowerBackgroundColor": "#4a4459",
+  "pauseWhenUnfocused": true,
   "compact": false,
   "arrangeButtonVisibility": "always",
   "dashboardSwitcherVisibility": "always",
@@ -502,8 +510,7 @@
       "showSearch": false,
       "header": {
         "showTitle": true,
-        "title": "Mensagens",
-        "logo": ""
+        "title": "Mensagens"
       }
     }
   ],
@@ -521,7 +528,13 @@
   "taskFields": [],
   "customFileIcons": true,
   "iconizeIconProperty": "icon",
+  "operonIntegration": true,
+  "operonWrites": false,
   "maxWidth": 1600,
-  "lastSeenVersion": "2.1.0",
-  "setupStatus": "done"
+  "fullWidth": false,
+  "lastSeenVersion": "3.1.0",
+  "setupStatus": "done",
+  "authorKey": "",
+  "authorKeySaved": false,
+  "galleryUrl": "https://gallery.o-uhnavy.com"
 }
