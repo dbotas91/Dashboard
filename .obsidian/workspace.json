@@ -103,12 +103,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://github.com/dbotas91/Dashboard/blob/eb3b3514d23a736bb3be93feea11cd7e7044a882/06%20-%20DAILY-WEEKLY%20TASKS/Reuni%C3%A3o%20Zoom%20IQC%20-%2006-09-2026.md",
-                "title": "Dashboard/06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md at eb3b3514d23a736bb3be93feea11cd7e7044a882 · dbotas91/Dashboard",
+                "url": "https://github.com/dbotas91/Dashboard/tree/main/06%20-%20DAILY-WEEKLY%20TASKS",
+                "title": "Dashboard/06 - DAILY-WEEKLY TASKS at main · dbotas91/Dashboard",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Dashboard/06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md at eb3b3514d23a736bb3be93feea11cd7e7044a882 · dbotas91/Dashboard"
+              "title": "Dashboard/06 - DAILY-WEEKLY TASKS at main · dbotas91/Dashboard"
             }
           },
           {
@@ -154,7 +154,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -412,7 +412,7 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "6cdfc1d4bc87e314",
+  "active": "ff3f8bf3eacd27a7",
   "lastOpenFiles": [
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Reunião Zoom IQC - 06-09-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
