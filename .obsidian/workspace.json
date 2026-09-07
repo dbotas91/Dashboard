@@ -11,23 +11,9 @@
             "id": "1d5f2945fcbaaa92",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
-                "bFile": "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: 2026-09  (Working Tree)"
-            }
-          },
-          {
-            "id": "6cdfc1d4bc87e314",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+                "file": "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -42,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
+              "title": "Ceia e ED - 23-08-2026"
+            }
+          },
+          {
+            "id": "6cdfc1d4bc87e314",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Reunião Zoom IQC - 06-09-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Reunião Zoom IQC - 06-09-2026"
             }
           },
           {
@@ -93,12 +103,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://keep.google.com/u/3/",
-                "title": "Google Keep",
+                "url": "https://github.com/dbotas91/Dashboard/blob/eb3b3514d23a736bb3be93feea11cd7e7044a882/06%20-%20DAILY-WEEKLY%20TASKS/Reuni%C3%A3o%20Zoom%20IQC%20-%2006-09-2026.md",
+                "title": "Dashboard/06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md at eb3b3514d23a736bb3be93feea11cd7e7044a882 · dbotas91/Dashboard",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Google Keep"
+              "title": "Dashboard/06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md at eb3b3514d23a736bb3be93feea11cd7e7044a882 · dbotas91/Dashboard"
             }
           },
           {
@@ -135,15 +145,16 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/groups/227102807770411",
-                "title": "IQC Memories | Facebook",
+                "url": "https://www.facebook.com/",
+                "title": "Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "IQC Memories | Facebook"
+              "title": "Facebook"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -401,12 +412,14 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "c4892fd3bf0af16c",
+  "active": "6cdfc1d4bc87e314",
   "lastOpenFiles": [
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Reunião Zoom IQC - 06-09-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
@@ -425,10 +438,8 @@
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "07 - INDEXES/2026 - Atividades e Tarefas.md",
-    "10 - TAGS/2026-08.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
