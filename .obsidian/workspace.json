@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Reunião Zoom IQC - 06-09-2026.md",
+                "file": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -101,28 +101,29 @@
             "id": "666accb912e39519",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "split-diff-view",
               "state": {
-                "url": "https://keep.google.com/u/2/#NOTE/1io1GCz8NUpDNknS8DHv_0mVBeatAmt1cltbG8Jzh7koyxZ1JTOxt3quHjU1FHfGV",
-                "title": "Google Keep",
-                "mode": "webview"
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "globe-2",
-              "title": "Google Keep"
+              "icon": "diff",
+              "title": "Diff: data.json  (Index)"
             }
           },
           {
             "id": "ff3f8bf3eacd27a7",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "webviewer",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
+                "url": "https://github.com/settings/tokens?page=1",
+                "title": "Personal Access Tokens (Classic)",
+                "mode": "webview"
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
+              "icon": "globe-2",
+              "title": "Personal Access Tokens (Classic)"
             }
           },
           {
@@ -168,7 +169,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -426,12 +427,13 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "ff3f8bf3eacd27a7",
+  "active": "666accb912e39519",
   "lastOpenFiles": [
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Reunião Zoom IQC - 06-09-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
+    "10 - TAGS/2026-09.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
@@ -453,7 +455,6 @@
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
-    "07 - INDEXES/2026 - Atividades e Tarefas.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",

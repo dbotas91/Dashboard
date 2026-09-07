@@ -2045,6 +2045,7 @@ Passaporte
 Premissa
 Pareceu
 POLICES
+Publico
 obj
 oQw
 ot
@@ -5859,6 +5860,7 @@ Transform
 TVs
 Trai
 Tivemos
+Transcri
 FEFF
 Form
 Font
@@ -11870,6 +11872,7 @@ Minist
 McCormick
 META
 Marketers
+Ministerio
 Linux
 Length
 LJ
@@ -16081,6 +16084,7 @@ Adapter
 Ativo
 Assunto
 Apostolado
+Armando
 KHTML
 Kn
 KA
@@ -19790,6 +19794,7 @@ levanto
 lembram
 lobbying
 legitimate
+lindas
 Gecko
 Group
 GQ
@@ -23158,6 +23163,7 @@ HDR
 Hockstein
 Hogan
 Horwitz
+HEIKOOPS
 Safari
 Skia
 Subtype
@@ -32406,6 +32412,8 @@ concert
 claiming
 casinos
 centerpiece
+canta
+capa
 BM
 BBox
 BHq
@@ -39191,6 +39199,7 @@ Reuters
 REUTERS
 Risky
 Regulators
+Ramiro
 ExtGState
 Ei
 ET
@@ -43581,6 +43590,7 @@ tratamentos
 testifying
 touting
 tickets
+traduzir
 stream
 sWz
 sj
@@ -46726,6 +46736,7 @@ scammers
 summer
 suspicious
 showed
+singularmente
 xU
 xM
 xLq
@@ -51589,6 +51600,7 @@ gentes
 glorifico
 goods
 globally
+gravadas
 am
 ah
 as
@@ -55205,6 +55217,7 @@ advertise
 air
 auction
 auctions
+anela
 dA
 dD
 dd
@@ -68966,6 +68979,8 @@ promotions
 profiled
 praised
 predators
+produzido
+pediram
 OaL
 Oar
 OQ
@@ -81068,6 +81083,7 @@ madrugadas
 minioma
 maker
 markets
+ministerio
 qd
 qm
 qI
@@ -95474,6 +95490,7 @@ fraudsters
 fines
 fraudulent
 falsely
+familia
 br
 bJ
 bW
