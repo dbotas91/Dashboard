@@ -98,17 +98,31 @@
             }
           },
           {
-            "id": "ff3f8bf3eacd27a7",
+            "id": "666accb912e39519",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://github.com/dbotas91/Dashboard/tree/main/06%20-%20DAILY-WEEKLY%20TASKS",
-                "title": "Dashboard/06 - DAILY-WEEKLY TASKS at main · dbotas91/Dashboard",
+                "url": "https://keep.google.com/u/2/#NOTE/1io1GCz8NUpDNknS8DHv_0mVBeatAmt1cltbG8Jzh7koyxZ1JTOxt3quHjU1FHfGV",
+                "title": "Google Keep",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Dashboard/06 - DAILY-WEEKLY TASKS at main · dbotas91/Dashboard"
+              "title": "Google Keep"
+            }
+          },
+          {
+            "id": "ff3f8bf3eacd27a7",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
             }
           },
           {
@@ -154,7 +168,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
