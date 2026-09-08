@@ -211,7 +211,10 @@ Vejamos alguns pontos de contraste.
 
 - Praticar boas obras e repartir: 1 Timóteo 6:18 ("Que façam bem, que sejam ricos em boas obras, generosos, prontos a repartir").
 - Investir na mensagem cristã/futuro: 1 Timóteo 6:19 ("Assim ajuntem para si tesouro melhor para o futuro, para que se apressem a possuir a vida que é verdadeiramente vida").
+---
+Até aqui nas Fontaínhas
 
+---
 ## 6 Seu Casamento
 
 Entender a mudança dispensacional da lei para a graça mudará para sempre a maneira como você pensa sobre seu relacionamento com seu cônjuge e filhos. A face sem graça do legalismo muitas vezes habita em lares e casamentos cristãos. Quando o mistério de Cristo e da igreja é ensinado, o legalismo é despejado, e o amor pode crescer entre pessoas que de outra forma seriam incompatíveis.
