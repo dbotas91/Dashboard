@@ -6,7 +6,7 @@ mature-status: Teen
 message_category: Doutrinal
 created: 2026-06-29 18:16
 speech-status: Calado
-local: fontaínhas
+local: fontaínhas, iqc
 dg-note-icon: teen
 noteIcon: teen
 updated: 2026-06-29 18:16
@@ -15,12 +15,12 @@ dgPassFrontmatter: "true"
 ---
 [[Home|Back home]]
 Status: [[Teen]], [[Calado]]
-Local: [[Fontainhas]]
+Local: [[Fontainhas]], [[IQC]]
 Tags: [[divisão da Bíblia]]
 
 # Por que e porque dividir a Bíblia corretamente
 
->[!quote] 1 Timóteo 2:15
+>[!quote] 2 Timóteo 2:15
 > Procura apresentar-te a Deus, aprovado, como obreiro que não tem de que se envergonhar, que maneja bem a palavra da verdade;
 
 Na cristandade a maioria das pessoas parece **seguir a vida cristã perfeitamente bem** sem entender **como dividir a Bíblia corretamente** e mesmo até sem entenderem por que é importante dividir corretamente. 
@@ -63,18 +63,18 @@ Sim, Deus separa certas coisas. E há coisas que ele quer ver unidas, como a Igr
 É por isso que Paulo diz em Romanos: 1.1: “chamado _para_ apóstolo, **separado** para o evangelho de Deus”. E continua a mostrar a obra de Cristo usada para revelação do mistério e a separação entre Israel (e o seu propósito) e a Igreja (e o seu propósito distinto de Israel).
 
 Por isso temos em mente as seguintes questões como:
-- Dividir corretamente a palavra da verdade é importante? 
+- Dividir correctamente a palavra da verdade é importante? 
 - Por que é importante reconhecer a importância da revelação progressiva e da dispensação especial da graça em que vivemos agora?
 
-O mistério e evangelho da Graça de Deus revelada a Paulo é a chave pela qual podemos dividir corretamente a Bíblia, compreendê-la e tirar proveito para o nosso crescimento e caminhada cristã.
+O mistério e evangelho da Graça de Deus revelada a Paulo é a chave pela qual podemos dividir correctamente a Bíblia, compreendê-la e tirar proveito para o nosso crescimento e caminhada cristã.
 
 Vejamos:
 
 
-Aqui estão alguns motivos que quero desenvolver de porque é importante e necessário dividir a Bíblia corretamente.
+Aqui estão alguns motivos que quero desenvolver de porque é importante e necessário dividir a Bíblia correctamente.
 
 ----
-Resumo até aqui com o ppt
+Resumo até aqui com o ppt para IQC
 
 ---
 
