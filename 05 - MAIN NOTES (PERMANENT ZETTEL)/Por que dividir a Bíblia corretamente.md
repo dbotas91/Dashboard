@@ -60,7 +60,7 @@ E a determinada altura, Paulo escreve assim
 Ele escreve assim, porque desde então ele foi a pessoa usada por Deus para colocar ordem. E aqui, a ordem é a divisão das coisas que Deus separou.
 
 Sim, Deus separa certas coisas. E há coisas que ele quer ver unidas, como a Igreja Corpo de Cristo, o casamento, etc. Assim como quer separar o Seu Evangelho hoje do que estava antes e fazia parte do programa anterior.
-É por isso que Paulo diz em Rm: 1.1: “chamado _para_ apóstolo, **separado** para o evangelho de Deus”. E continua a mostrar a obra de Cristo usada para revelação do mistério e a separação entre Israel (e o seu propósito) e a Igreja (e o seu propósito distinto de Israel).
+É por isso que Paulo diz em Romanos: 1.1: “chamado _para_ apóstolo, **separado** para o evangelho de Deus”. E continua a mostrar a obra de Cristo usada para revelação do mistério e a separação entre Israel (e o seu propósito) e a Igreja (e o seu propósito distinto de Israel).
 
 Por isso temos em mente as seguintes questões como:
 - Dividir corretamente a palavra da verdade é importante? 
@@ -98,9 +98,9 @@ Uma falha em dividir corretamente muitas vezes permite um evangelho sem cruz, o 
 ## 2 Sua Bíblia
 
 Uma das principais razões para as pessoas não acreditarem na Bíblia é por causa de supostas contradições. 
-Existe um historiador/ou crítico textual do Novo Testamento, que é o Bart Ehrman. Ele estudou e escreveu alguns livros com um crente historiador chamado Bruce Metzger. Em alguns vídeos ele explica que tornou-se agnóstico por não conseguir conciliar as contradições na Bíblia.
+Existe um historiador/ou crítico textual do Novo Testamento, que é o Bart Ehrman e o C. J. Cornthwaite. Ele estudou e escreveu alguns livros com um crente historiador chamado Bruce Metzger. Em alguns vídeos ele explica que tornou-se agnóstico por não conseguir conciliar as contradições na Bíblia.
 
-Mal sabe ele que a grande maioria dessas contradições aparentes é resolvida dividindo corretamente a Palavra da Verdade. 
+Mal sabe ele que a grande maioria dessas contradições aparentes é resolvida dividindo correctamente a Palavra da Verdade. 
 Sem a divisão correta, a Bíblia não significa o que diz, tem erros, ou pior, não é realmente a palavra de Deus.
 
 Deus não comete erros na Bíblia. No entanto, contextos diferentes criam versículos contraditórios na Bíblia. Essas contradições tornam impossível obedecer a todas as instruções da Bíblia. É necessário dividir corretamente as instruções do Senhor para nós hoje das instruções no tempo passado ou para aqueles nas eras que virão.
@@ -139,7 +139,8 @@ No fundo, a divisão correta da Palavra da Verdade, vai esclarecer se o entendim
 
 O crescimento espiritual só pode acontecer depois das pessoas serem salvas (veja o primeiro item acima). 
 
-Após a salvação, não dividir corretamente pode prejudicar severamente o crescimento espiritual. 
+Após a salvação, não dividir correctamente pode prejudicar severamente o crescimento espiritual. 
+
 Se um bebé cristão pensa que o seu crescimento é encontrado em:
 - manter a lei das letras vermelhas em Mateus 5, 
 - o trabalho persistente visto na epístola aos Hebreus, 
@@ -151,13 +152,65 @@ Um cristão salvo pela graça precisa andar em graça, e essa instrução é enc
 
 E nelas sabe que as boas obras foram preparadas pelo nosso Deus para nós andarmos nelas e não para mostrar o tamanho da nossa fé (Ef. 2:8-10). 
 
-Também sabe que em Romanos 6, 7 e 8, o Senhor por meio de Paulo mostra as nossas duas naturezas pecaminosas, que nenhuma condenação há para os que estão em Cristo Jesus e que a liberdade conquistada por Ele para nós tem de ser usada para fazer muito mais para Ele. A nossa condição nova, dada por graça, é dada para andarmos em novidade de vida e nas boas obras que o próprio Deus preparou para nós (Romanos 6:4; Ef. 2:10).
+Também sabe que em Romanos 6, 7 e 8, o Senhor por meio de Paulo mostra as nossas duas naturezas pecaminosas, que nenhuma condenação há para os que estão em Cristo Jesus e que a liberdade conquistada por Ele para nós tem de ser usada para fazer muito mais para Ele. 
+A nossa condição nova, dada por graça, é dada para andarmos em novidade de vida e nas boas obras que o próprio Deus preparou para nós (Romanos 6:4; Ef. 2:10).
 
 A divisão correta da Palavra da Verdade é que vai esclarecer o nosso entendimento, levar ao crescimento e saber qual a nossa caminhada.
 
 ## 5 Suas Finanças
 
-A menos que você viva debaixo de uma rocha, todo mundo sabe que há fraude financeira no que agora é uma indústria de igrejas multibilionárias. O que é menos conhecido é que é um resultado direto de uma doutrina errada. Você não seria o primeiro ou o último cristão a colocar sua última esperança de libertação financeira nas manipulações e mentiras de pastores em pele de carneiro que ensinam o princípio do dízimo da lei em vez da dispensação da graça de Deus para dar.
+A menos que você viva debaixo de uma rocha, todo mundo sabe que há fraude financeira no que agora é uma indústria de igrejas multi-bilionárias. 
+
+O que é menos conhecido é que é um resultado directo de uma doutrina errada. 
+Não seria o primeiro ou o último cristão a colocar sua última esperança de libertação financeira nas manipulações e mentiras de pastores em pele de carneiro que ensinam o princípio do *dízimo da lei em vez da dispensação da graça de Deus para trabalhar e dar*.
+
+A falta de divisão correta da Bíblia causa mais problemas financeiros do que os resolve, porque não se sabe que modelo financeiro aplicar hoje.
+Vejamos alguns pontos de contraste.
+### 1. Instruções de Jesus no Sermão da Montanha:
+
+- Dessem a quem pedisse: Mateus 5:42 ("Ao que te pedir, dá").
+- Emprestassem sem se desviarem: Lucas 6:35 ("Emprestai, não esperando receber").
+- Não vivessem ansiosos: Mateus 6:25-34 (passagem completa sobre a ansiedade quanto ao alimento e vestuário).
+- Buscassem primeiro o Reino: Mateus 6:33 ("Buscai primeiro o Reino de Deus, e a sua justiça").
+- Vendessem os seus bens: Lucas 12:33 ("Vendei tudo quanto tendes e dai esmolas").
+
+### 2. Relacionamento com a comunidade primitiva (Atos):
+
+- Venda de propriedades e recursos em comum: Atos 2:44-45 ("Todos os que criam estavam juntos, e tinham tudo em comum. Vendiam suas propriedades e bens, e repartiam com todos, segundo cada um havia necessidade").
+- Distribuição conforme a necessidade: Atos 4:32-35 (reforça a prática de não haver necessitados entre eles pois partilhavam tudo).
+
+### 3. Expectativa do Reino e a "pequena grei (rebanho)":
+
+- A pequena grei que receberia o Reino: Lucas 12:32 ("Não temais, ó pequeno rebanho, porque a vosso Pai agradou dar-vos o reino").
+	- Hoje não esperamos o Pai dar-nos algum reino.
+
+### 4. Mudança de modelo e a Igreja de Antioquia:
+
+- Ajuda "conforme cada um pudesse": 1 Coríntios 16:2 ("No primeiro dia da semana cada um de vós ponha de parte o que puder") e Atos 11:29 ("Determinaram os discípulos enviar socorro aos irmãos que habitavam na Judeia").
+- Ofertas de Paulo para os pobres de Jerusalém: Romanos 15:25-26 e 2 Coríntios 8:1-5 (onde Paulo organiza a coleta entre as igrejas da Macedónia e Acaia).
+
+### 5. Aplicação para o presente (Princípios de sustento e prudência):
+
+- Trabalhar para obter sustento / Quem não trabalha não come: 2 Tessalonicenses 3:10 ("Porque, quando ainda estávamos convosco, vos ordenamos isto: se alguém não quiser trabalhar, não coma também").
+- Cuidar da própria família: 1 Timóteo 5:8 ("Mas, se alguém não provê para os seus, e principalmente para os da sua família, negou a fé, e é pior do que o incrédulo").
+- Preparar-se prudentemente (Exemplo da formiga): Provérbios 6:6-8 ("Vai ter com a formiga, ó preguiçoso... a qual, não tendo chefe, nem supervisor, nem príncipe, prepara no verão o seu pão").
+- Ajudar conforme as possibilidades: 2 Coríntios 8:12 ("Porque a vontade é louvável; mas é louvável na medida do que alguém tem").
+
+### 6. Riqueza no programa do Reino e a comunidade:
+
+- Incompatibilidade da riqueza com a partilha: Atos 4:32-35 (onde se descreve que não havia necessitados porque todos partilhavam tudo).
+- A história de Ananias e Safira: Atos 5:1-11 (a punição por mentirem ao Espírito Santo sobre o valor da venda de uma propriedade).
+
+### 7. A riqueza na Dispensação da Graça e os seus perigos:
+
+- Confiar nas riquezas / Orgulho: 1 Timóteo 6:17 ("Aos ricos deste mundo manda que não sejam altivos, nem ponham a esperança nas riquezas incertas, mas em Deus").
+- Desejo obsessivo de ser rico: 1 Timóteo 6:9-10 ("Mas os que querem enriquecer caem em tentação... porque o amor ao dinheiro é a raiz de todos os males").
+- Administração vs. Propriedade absoluta: 1 Crónicas 29:14 ("Porque tudo vem de ti, e do que é teu to damos") e o conceito geral de mordomia cristã.
+
+### 8. Exortações aos ricos (Baseadas em 1 Timóteo 6):
+
+- Praticar boas obras e repartir: 1 Timóteo 6:18 ("Que façam bem, que sejam ricos em boas obras, generosos, prontos a repartir").
+- Investir na mensagem cristã/futuro: 1 Timóteo 6:19 ("Assim ajuntem para si tesouro melhor para o futuro, para que se apressem a possuir a vida que é verdadeiramente vida").
 
 ## 6 Seu Casamento
 

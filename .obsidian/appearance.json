@@ -5,8 +5,9 @@
   ],
   "theme": "obsidian",
   "baseFontSizeAction": true,
-  "baseFontSize": 14,
+  "baseFontSize": 17,
   "translucency": true,
   "showRibbon": true,
-  "showViewHeader": true
+  "showViewHeader": true,
+  "nativeMenus": true
 }

@@ -14,35 +14,11 @@
               "type": "hearth-home-view",
               "state": {
                 "scroll": {
-                  "dash-mryonvc1-2834": 71
+                  "dash-mryonvc1-2834": 154
                 }
               },
               "icon": "hearth-crystal-themed",
               "title": "Home"
-            }
-          },
-          {
-            "id": "6cdfc1d4bc87e314",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Reunião Zoom IQC - 06-09-2026"
             }
           },
           {
@@ -51,12 +27,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://iqc.pt/edificacao/devocional/meditacoes/18260-morte-da-dona-reuniao-de-oracao?highlight=WyJvcmFcdTAwZTdcdTAwZTNvIiwib3JhXHUwMGU3XHUwMGUzb1x1MjAxZC4iLCJvcmFcdTAwZTdcdTAwZTNvXHUyMDFkLCIsIm9yYVx1MDBlN1x1MDBlM28sXHUyMDFkIiwib3JhXHUwMGU3XHUwMGUzb1x1MjAxZCIsIm9yYVx1MDBlN1x1MDBlM29cdTAwYmIsIiwib3JhXHUwMGU3XHUwMGUzby1wb2VzaWEiLCJvcmFcdTAwZTdcdTAwZTNvLlx1MjAxZCIsIm9yYVx1MDBlN1x1MDBlM28uMSIsIm9yYVx1MDBlN1x1MDBlM29cdTAwYmIuIl0=",
-                "title": "Morte da Dona Reunião de Oração",
+                "url": "https://iqc.pt/component/finder/search?q=finan%C3%A7as&Itemid=124",
+                "title": "Portão",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Morte da Dona Reunião de Oração"
+              "title": "Portão"
             }
           },
           {
@@ -150,11 +126,11 @@
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "title": "Resumo finanças: Sermão da Montanha e o evangelho da graça de Deus",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+              "title": "Resumo finanças: Sermão da Montanha e o evangelho da graça de Deus"
             }
           },
           {
@@ -163,12 +139,43 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/?should_open_composer=false&wp_discovery_redirect=true",
+                "url": "https://www.facebook.com/",
                 "title": "Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
               "title": "Facebook"
+            }
+          }
+        ],
+        "currentTab": 9
+      },
+      {
+        "id": "bfc387a5d4a9eb67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cdfc1d4bc87e314",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Por que dividir a Bíblia corretamente"
             }
           }
         ]
@@ -240,7 +247,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -429,11 +437,13 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "1d5f2945fcbaaa92",
+  "active": "6cdfc1d4bc87e314",
   "lastOpenFiles": [
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "10 - TAGS/2026-09.md",
@@ -455,8 +465,6 @@
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Cristóvão.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
