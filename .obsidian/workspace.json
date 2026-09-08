@@ -11,24 +11,14 @@
             "id": "1d5f2945fcbaaa92",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "hearth-home-view",
               "state": {
-                "file": "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "scroll": {
+                  "dash-mryonvc1-2834": 71
                 }
               },
-              "icon": "lucide-file",
-              "title": "Ceia e ED - 23-08-2026"
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           },
           {
@@ -101,15 +91,14 @@
             "id": "666accb912e39519",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "webviewer",
               "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "url": "https://keep.google.com/u/2/#home",
+                "title": "Google Keep",
+                "mode": "webview"
               },
-              "icon": "diff",
-              "title": "Diff: data.json  (Index)"
+              "icon": "globe-2",
+              "title": "Google Keep"
             }
           },
           {
@@ -118,12 +107,26 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://github.com/settings/tokens?page=1",
-                "title": "Personal Access Tokens (Classic)",
+                "url": "https://vercel.com/darios-projects-4e59f1f1/~/deployments",
+                "title": "Deployments – Vercel",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Personal Access Tokens (Classic)"
+              "title": "Deployments – Vercel"
+            }
+          },
+          {
+            "id": "34d87d54e9e733eb",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://notas-dario.vercel.app/",
+                "title": "Home",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Home"
             }
           },
           {
@@ -160,7 +163,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/",
+                "url": "https://www.facebook.com/?should_open_composer=false&wp_discovery_redirect=true",
                 "title": "Facebook",
                 "mode": "webview"
               },
@@ -168,8 +171,7 @@
               "title": "Facebook"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -427,14 +429,14 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "666accb912e39519",
+  "active": "1d5f2945fcbaaa92",
   "lastOpenFiles": [
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
     "10 - TAGS/2026-09.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
