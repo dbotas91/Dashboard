@@ -5,7 +5,7 @@ dg-publish: "true"
 dg-note-icon: stone
 noteIcon: stone
 ---
-Status: [[Por fazer]]
+Status: [[Concluído]]
 Tags: [[2026-03]]
  
 # Músicas

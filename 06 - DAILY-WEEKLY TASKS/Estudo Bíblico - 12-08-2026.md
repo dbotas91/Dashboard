@@ -4,7 +4,7 @@ dg-publish: "true"
 dg-note-icon: stone
 noteIcon: stone
 ---
-Status: [[Por fazer]]
+Status: [[Concluído]]
 Tags: [[2026-08]], [[10 - TAGS/1 Timóteo|1 Timóteo]]
  
 # Passagem em estudo
