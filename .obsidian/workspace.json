@@ -18,18 +18,17 @@
             }
           },
           {
-            "id": "66ce6f03220c62e8",
+            "id": "9287d4068b75d257",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": ".obsidian/plugins/recent-files-obsidian/data.json",
-                "bFile": ".obsidian/plugins/recent-files-obsidian/data.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "aFile": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
+                "bFile": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
+                "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: data.json  (Index)"
+              "title": "Diff: Bible Contradictions  (Working Tree)"
             }
           },
           {
@@ -38,12 +37,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.biblegateway.com/passage/?search=Jo%C3%A3o%2014&version=ARC",
-                "title": "João 14 ARC - Não se turbe o vosso coração; credes - Bible Gateway",
+                "url": "https://www.biblegateway.com/passage/?search=Salmo%2086&version=ARC",
+                "title": "Salmo 86 ARC - Davi implora ardentemente o socorro de - Bible Gateway",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "João 14 ARC - Não se turbe o vosso coração; credes - Bible Gateway"
+              "title": "Salmo 86 ARC - Davi implora ardentemente o socorro de - Bible Gateway"
             }
           },
           {
@@ -66,12 +65,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://notas-dario.vercel.app/",
-                "title": "Home",
+                "url": "https://www.nationalgeographic.pt/ciencia/tuberculose-portugal-mundo-doencas-infecciosas-dia-mundial_3998#google_vignette",
+                "title": "Tuberculose: Uma história longe do fim",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Home"
+              "title": "Tuberculose: Uma história longe do fim"
             }
           },
           {
@@ -109,11 +108,11 @@
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat?assist=false",
-                "title": "Custos de viagem Quinta do Conde a Rio Tinto",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Custos de viagem Quinta do Conde a Rio Tinto"
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
           },
           {
@@ -136,22 +135,40 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/?should_open_composer=false&wp_discovery_redirect=true",
-                "title": "(5) Facebook",
+                "url": "https://www.facebook.com/groups/227102807770411",
+                "title": "IQC Memories | Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "(5) Facebook"
+              "title": "IQC Memories | Facebook"
             }
           },
           {
-            "id": "40b7b003d037d31a",
+            "id": "cca3333f3648a1f4",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "type": "webviewer",
+              "state": {
+                "url": "https://iqc.pt/edificacao/literatura/respigos/25020-para-o-abatido-e-desanimado",
+                "title": "Para o abatido e desanimado",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Para o abatido e desanimado"
+            }
+          },
+          {
+            "id": "fdd07b0cabda6125",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.xda-developers.com/please-stop-using-isps-dns/?link_source=ta_first_comment&taid=6aaa0ae803988b0001a22a46&utm_campaign=trueanthem&utm_medium=social&utm_source=facebook&fbclid=IwY2xjawUXXOJwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMWIxQzNwbHR4ZlpoQTVFaXFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe4CuEwxXFn_PYPz4cOR1k1HXm7GLVG0uWlHfvYn2SAwshfrijLM6sAEIbJos_aem_p1o7l_oK1BfA3Sicj_n3qQ",
+                "title": "Please stop using your ISP's DNS",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Please stop using your ISP's DNS"
             }
           }
         ],
@@ -224,7 +241,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -413,34 +431,34 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "66ce6f03220c62e8",
+  "active": "9287d4068b75d257",
   "lastOpenFiles": [
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/How to Rightly Divide.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Introducing a New Book!.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Reasons To Rightly Divide – Part III.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/List -  BibleContradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
     "09 - STATUS NOTES/Por fazer.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "10 - TAGS/2026-09.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Artigo Histórico sobre Bart Ehrman para a IQC.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Vestuário Cristão.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Glorificar a Deus no corpo.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Cristóvão.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",

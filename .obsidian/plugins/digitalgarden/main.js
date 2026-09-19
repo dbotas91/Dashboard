@@ -9429,12 +9429,12 @@ var require_lib = __commonJS({
         return dur;
       return dur.shiftToAll().normalize();
     }
-    function getFileTitle(path2) {
-      if (path2.includes("/"))
-        path2 = path2.substring(path2.lastIndexOf("/") + 1);
-      if (path2.endsWith(".md"))
-        path2 = path2.substring(0, path2.length - 3);
-      return path2;
+    function getFileTitle(path) {
+      if (path.includes("/"))
+        path = path.substring(path.lastIndexOf("/") + 1);
+      if (path.endsWith(".md"))
+        path = path.substring(0, path.length - 3);
+      return path;
     }
     parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regex(new RegExp(emojiRegex(), "")), parsimmon_umd_minExports.regex(/[0-9\p{Letter}_-]+/u).map((str) => str.toLocaleLowerCase()), parsimmon_umd_minExports.whitespace.map((_) => "-"), parsimmon_umd_minExports.any.map((_) => "")).many().map((result) => result.join(""));
     var HEADER_CANONICALIZER = parsimmon_umd_minExports.alt(parsimmon_umd_minExports.regex(new RegExp(emojiRegex(), "")), parsimmon_umd_minExports.regex(/[0-9\p{Letter}_-]+/u), parsimmon_umd_minExports.whitespace.map((_) => " "), parsimmon_umd_minExports.any.map((_) => " ")).many().map((result) => {
@@ -9771,9 +9771,9 @@ var require_lib = __commonJS({
         Object.assign(this, fields);
       }
       /** Create a link to a specific file. */
-      static file(path2, embed = false, display) {
+      static file(path, embed = false, display) {
         return new _Link({
-          path: path2,
+          path,
           embed,
           display,
           subpath: void 0,
@@ -9791,9 +9791,9 @@ var require_lib = __commonJS({
           return _Link.file(linkpath, embed, display);
       }
       /** Create a link to a specific file and header in that file. */
-      static header(path2, header, embed, display) {
+      static header(path, header, embed, display) {
         return new _Link({
-          path: path2,
+          path,
           embed,
           display,
           subpath: normalizeHeaderForLink(header),
@@ -9801,9 +9801,9 @@ var require_lib = __commonJS({
         });
       }
       /** Create a link to a specific file and block in that file. */
-      static block(path2, blockId, embed, display) {
+      static block(path, blockId, embed, display) {
         return new _Link({
-          path: path2,
+          path,
           embed,
           display,
           subpath: blockId,
@@ -9829,8 +9829,8 @@ var require_lib = __commonJS({
       }
       /** Update this link with a new path. */
       //@ts-ignore; error appeared after updating Obsidian to 0.15.4; it also updated other packages but didn't say which
-      withPath(path2) {
-        return new _Link(Object.assign({}, this, { path: path2 }));
+      withPath(path) {
+        return new _Link(Object.assign({}, this, { path }));
       }
       /** Return a new link which points to the same location but with a new display value. */
       withDisplay(display) {
@@ -10006,8 +10006,8 @@ var require_lib = __commonJS({
         return { type: "tag", tag: tag3 };
       }
       Sources2.tag = tag2;
-      function csv(path2) {
-        return { type: "csv", path: path2 };
+      function csv(path) {
+        return { type: "csv", path };
       }
       Sources2.csv = csv;
       function folder(prefix) {
@@ -10194,7 +10194,7 @@ var require_lib = __commonJS({
       rawNull: (_) => parsimmon_umd_minExports.string("null"),
       // Source parsing.
       tagSource: (q) => q.tag.map((tag2) => Sources.tag(tag2)),
-      csvSource: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("csv(").skip(parsimmon_umd_minExports.optWhitespace), q.string, parsimmon_umd_minExports.string(")"), (_1, path2, _2) => Sources.csv(path2)),
+      csvSource: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("csv(").skip(parsimmon_umd_minExports.optWhitespace), q.string, parsimmon_umd_minExports.string(")"), (_1, path, _2) => Sources.csv(path)),
       linkIncomingSource: (q) => q.link.map((link2) => Sources.link(link2.path, true)),
       linkOutgoingSource: (q) => parsimmon_umd_minExports.seqMap(parsimmon_umd_minExports.string("outgoing(").skip(parsimmon_umd_minExports.optWhitespace), q.link, parsimmon_umd_minExports.string(")"), (_1, link2, _2) => Sources.link(link2.path, false)),
       folderSource: (q) => q.string.map((str) => Sources.folder(str)),
@@ -10425,12 +10425,12 @@ var generateGardenSnapshot_exports = {};
 __export(generateGardenSnapshot_exports, {
   generateGardenSnapshot: () => generateGardenSnapshot
 });
-var import_obsidian30, import_promises2, SNAPSHOT_PATH, generateGardenSnapshot;
+var import_obsidian30, import_promises, SNAPSHOT_PATH, generateGardenSnapshot;
 var init_generateGardenSnapshot = __esm({
   "src/test/snapshot/generateGardenSnapshot.ts"() {
     "use strict";
     import_obsidian30 = require("obsidian");
-    import_promises2 = __toESM(require("fs/promises"));
+    import_promises = __toESM(require("fs/promises"));
     SNAPSHOT_PATH = "src/test/snapshot/snapshot.md";
     generateGardenSnapshot = (settings, publisher) => __async(null, null, function* () {
       const devPluginPath = settings.devPluginPath;
@@ -10440,7 +10440,7 @@ var init_generateGardenSnapshot = __esm({
       }
       const marked = yield publisher.getFilesMarkedForPublishing();
       let fileString = "IMAGES: \n";
-      fileString += marked.images.map((path2) => `${path2}
+      fileString += marked.images.map((path) => `${path}
 `);
       const assetPaths = /* @__PURE__ */ new Set();
       for (const file of marked.notes) {
@@ -10452,13 +10452,13 @@ var init_generateGardenSnapshot = __esm({
         assets.images.map((image) => assetPaths.add(image.path));
         fileString += `${content}
 `;
-        fileString += Array.from(assetPaths).map((path2) => `${path2}
+        fileString += Array.from(assetPaths).map((path) => `${path}
 `);
       }
       fileString += "==========\n";
       const fullSnapshotPath = `${devPluginPath}/${SNAPSHOT_PATH}`;
       if (import_obsidian30.Platform.isDesktop) {
-        yield import_promises2.default.writeFile(fullSnapshotPath, fileString);
+        yield import_promises.default.writeFile(fullSnapshotPath, fileString);
       }
       new import_obsidian30.Notice(`Snapshot written to ${fullSnapshotPath}`);
       new import_obsidian30.Notice(`Check snapshot to make sure nothing has accidentally changed`);
@@ -10890,16 +10890,16 @@ var RepositoryConnection = class {
       }
     });
   }
-  getFile(path2, branch2) {
+  getFile(path, branch2) {
     return __async(this, null, function* () {
       logger.info(
-        `Getting file ${path2} from repository ${this.getRepositoryName()}`
+        `Getting file ${path} from repository ${this.getRepositoryName()}`
       );
       try {
         const response = yield this.octokit.request(
           `GET /repos/{owner}/{repo}/contents/{path}?cacheBust=${Date.now()}`,
           __spreadProps(__spreadValues({}, this.getBasePayload()), {
-            path: path2,
+            path,
             ref: branch2,
             headers: {
               "If-None-Match": ""
@@ -10911,7 +10911,7 @@ var RepositoryConnection = class {
         }
       } catch (error) {
         throw new Error(
-          `Could not get file ${path2} from repository ${this.getRepositoryName()}`
+          `Could not get file ${path} from repository ${this.getRepositoryName()}`
         );
       }
     });
@@ -10938,18 +10938,18 @@ var RepositoryConnection = class {
     });
   }
   deleteFile(_0, _1) {
-    return __async(this, arguments, function* (path2, { branch: branch2, sha }) {
+    return __async(this, arguments, function* (path, { branch: branch2, sha }) {
       try {
-        sha != null ? sha : sha = yield this.getFile(path2, branch2).then((file) => file == null ? void 0 : file.sha);
+        sha != null ? sha : sha = yield this.getFile(path, branch2).then((file) => file == null ? void 0 : file.sha);
         if (!sha) {
           console.error(
-            `cannot find file ${path2} on github, not removing`
+            `cannot find file ${path} on github, not removing`
           );
           return false;
         }
         const payload = __spreadProps(__spreadValues({}, this.getBasePayload()), {
-          path: path2,
-          message: `Delete content ${path2}`,
+          path,
+          message: `Delete content ${path}`,
           sha,
           branch: branch2
         });
@@ -10958,7 +10958,7 @@ var RepositoryConnection = class {
           payload
         );
         import_js_logger.default.info(
-          `Deleted file ${path2} from repository ${this.getRepositoryName()}`
+          `Deleted file ${path} from repository ${this.getRepositoryName()}`
         );
         return result;
       } catch (error) {
@@ -11001,10 +11001,10 @@ var RepositoryConnection = class {
     });
   }
   updateFile(_0) {
-    return __async(this, arguments, function* ({ path: path2, sha, content, branch: branch2, message }) {
+    return __async(this, arguments, function* ({ path, sha, content, branch: branch2, message }) {
       const payload = __spreadProps(__spreadValues({}, this.getBasePayload()), {
-        path: path2,
-        message: message != null ? message : `Update file ${path2}`,
+        path,
+        message: message != null ? message : `Update file ${path}`,
         content,
         sha,
         branch: branch2
@@ -11057,8 +11057,8 @@ var RepositoryConnection = class {
           `Deleting ${pathChunk.length} files${commitLabel}\u2026`
         );
         yield this.commitTreeEntries(
-          pathChunk.map((path2) => ({
-            path: path2,
+          pathChunk.map((path) => ({
+            path,
             mode: "100644",
             type: "blob",
             sha: null
@@ -11120,7 +11120,7 @@ var RepositoryConnection = class {
         "GET /repos/{owner}/{repo}",
         __spreadValues({}, this.getBasePayload())
       );
-      const normalizePath = (path2) => path2.startsWith("/") ? path2.slice(1) : path2;
+      const normalizePath = (path) => path.startsWith("/") ? path.slice(1) : path;
       const uploadNote = (file) => __async(this, null, function* () {
         const [text2, _] = file.compiledFile;
         try {
@@ -11267,8 +11267,8 @@ var RepositoryConnection = class {
           };
         }))
       );
-      const deletionEntries = deletions.map((path2) => ({
-        path: path2,
+      const deletionEntries = deletions.map((path) => ({
+        path,
         mode: "100644",
         type: "blob",
         sha: null
@@ -11334,8 +11334,8 @@ var TemplateUpdateChecker = class {
     this.baseGardenConnection = baseGardenConnection;
     this.userGardenConnection = userGardenConnection;
   }
-  getFileInfoFromContent(content, path2) {
-    const file = content == null ? void 0 : content.tree.find((x) => x.path === path2);
+  getFileInfoFromContent(content, path) {
+    const file = content == null ? void 0 : content.tree.find((x) => x.path === path);
     if (!file) {
       return null;
     }
@@ -12677,12 +12677,12 @@ var DigitalGardenSiteManager = class {
     }
     return `${baseUrl}${urlPath}`;
   }
-  getNoteContent(path2) {
+  getNoteContent(path) {
     return __async(this, null, function* () {
-      if (path2.startsWith("/")) {
-        path2 = path2.substring(1);
+      if (path.startsWith("/")) {
+        path = path.substring(1);
       }
-      const response = yield (yield this.getUserGardenConnection()).getFile(notePathBase(this.settings) + path2);
+      const response = yield (yield this.getUserGardenConnection()).getFile(notePathBase(this.settings) + path);
       if (!response) {
         return "";
       }
@@ -14124,7 +14124,7 @@ var CanvasCompiler = class {
       const hasArrowTo = edge.toEnd !== "none";
       const fromSide = edge.fromSide || "right";
       const toSide = edge.toSide || "left";
-      const { path: path2, cp1, cp2 } = this.createBezierPath(
+      const { path, cp1, cp2 } = this.createBezierPath(
         fromPoint,
         toPoint,
         fromSide,
@@ -14132,7 +14132,7 @@ var CanvasCompiler = class {
       );
       const markerStart = hasArrowFrom ? `marker-start="url(#arrow-${colorId}-start)"` : "";
       const markerEnd = hasArrowTo ? `marker-end="url(#arrow-${colorId})"` : "";
-      let edgeHtml = `<path d="${path2}" fill="none" stroke="${color}" stroke-width="2" class="canvas-edge" data-edge-id="${edge.id}" ${markerStart} ${markerEnd} />`;
+      let edgeHtml = `<path d="${path}" fill="none" stroke="${color}" stroke-width="2" class="canvas-edge" data-edge-id="${edge.id}" ${markerStart} ${markerEnd} />`;
       if (edge.label) {
         const midX = (fromPoint.x + 3 * cp1.x + 3 * cp2.x + toPoint.x) / 8;
         const midY = (fromPoint.y + 3 * cp1.y + 3 * cp2.y + toPoint.y) / 8;
@@ -21367,18 +21367,18 @@ var Publisher = class {
   }
   deleteNote(vaultFilePath, sha) {
     return __async(this, null, function* () {
-      const path2 = notePathBase(this.settings) + vaultFilePath;
-      return yield this.delete(path2, sha);
+      const path = notePathBase(this.settings) + vaultFilePath;
+      return yield this.delete(path, sha);
     });
   }
   deleteImage(vaultFilePath, sha) {
     return __async(this, null, function* () {
-      const path2 = imagePathBase(this.settings) + vaultFilePath;
-      return yield this.delete(path2, sha);
+      const path = imagePathBase(this.settings) + vaultFilePath;
+      return yield this.delete(path, sha);
     });
   }
   /** If provided with sha, garden connection does not need to get it seperately! */
-  delete(path2, sha) {
+  delete(path, sha) {
     return __async(this, null, function* () {
       this.validateSettings();
       const userGardenConnection = new RepositoryConnection(
@@ -21386,7 +21386,7 @@ var Publisher = class {
           this.settings
         )
       );
-      const deleted = yield userGardenConnection.deleteFile(path2, {
+      const deleted = yield userGardenConnection.deleteFile(path, {
         sha
       });
       return !!deleted;
@@ -21420,8 +21420,8 @@ var Publisher = class {
   deleteBatch(notePaths, imagePaths, onProgress) {
     return __async(this, null, function* () {
       const repoPaths = [
-        ...notePaths.map((path2) => notePathBase(this.settings) + path2),
-        ...imagePaths.map((path2) => imagePathBase(this.settings) + path2)
+        ...notePaths.map((path) => notePathBase(this.settings) + path),
+        ...imagePaths.map((path) => imagePathBase(this.settings) + path)
       ];
       if (repoPaths.length === 0) {
         return { success: true };
@@ -21492,27 +21492,27 @@ var Publisher = class {
       return siteManager.getImageHashes(contentTree);
     });
   }
-  uploadToGithub(path2, content, remoteFileHash) {
+  uploadToGithub(path, content, remoteFileHash) {
     return __async(this, null, function* () {
       this.validateSettings();
-      let message = `Update content ${path2}`;
+      let message = `Update content ${path}`;
       const userGardenConnection = new RepositoryConnection(
         yield PublishPlatformConnectionFactory.createPublishPlatformConnection(
           this.settings
         )
       );
       if (!remoteFileHash) {
-        const file = yield userGardenConnection.getFile(path2).catch(() => {
-          import_js_logger8.default.info(`File ${path2} does not exist, adding`);
+        const file = yield userGardenConnection.getFile(path).catch(() => {
+          import_js_logger8.default.info(`File ${path} does not exist, adding`);
         });
         remoteFileHash = file == null ? void 0 : file.sha;
         if (!remoteFileHash) {
-          message = `Add content ${path2}`;
+          message = `Add content ${path}`;
         }
       }
       return yield userGardenConnection.updateFile({
         content,
-        path: path2,
+        path,
         message,
         sha: remoteFileHash
       });
@@ -21521,14 +21521,14 @@ var Publisher = class {
   uploadText(filePath, content, sha) {
     return __async(this, null, function* () {
       content = gBase64.encode(content);
-      const path2 = notePathBase(this.settings) + filePath;
-      yield this.uploadToGithub(path2, content, sha);
+      const path = notePathBase(this.settings) + filePath;
+      yield this.uploadToGithub(path, content, sha);
     });
   }
   uploadImage(filePath, content, sha) {
     return __async(this, null, function* () {
-      const path2 = sitePath(this.settings, filePath);
-      yield this.uploadToGithub(path2, content, sha);
+      const path = sitePath(this.settings, filePath);
+      yield this.uploadToGithub(path, content, sha);
     });
   }
   uploadAssets(_0) {
@@ -21618,10 +21618,10 @@ var PublishStatusManager = class {
     const deletedPaths = Object.keys(remoteNoteHashes).filter(
       (key2) => !isJsFile(key2) && !isMarkedForPublish(key2)
     );
-    const pathsWithSha = deletedPaths.map((path2) => {
+    const pathsWithSha = deletedPaths.map((path) => {
       return {
-        path: path2,
-        sha: remoteNoteHashes[path2]
+        path,
+        sha: remoteNoteHashes[path]
       };
     });
     return pathsWithSha;
@@ -22646,9 +22646,9 @@ function isVisitable(thing) {
 function removeBrackets(key2) {
   return utils_default.endsWith(key2, "[]") ? key2.slice(0, -2) : key2;
 }
-function renderKey(path2, key2, dots) {
-  if (!path2) return key2;
-  return path2.concat(key2).map(function each2(token, i) {
+function renderKey(path, key2, dots) {
+  if (!path) return key2;
+  return path.concat(key2).map(function each2(token, i) {
     token = removeBrackets(token);
     return !dots && i ? "[" + token + "]" : token;
   }).join(dots ? "." : "");
@@ -22734,13 +22734,13 @@ function toFormData(obj, formData, options) {
       return currentValue;
     });
   }
-  function defaultVisitor(value, key2, path2) {
+  function defaultVisitor(value, key2, path) {
     let arr = value;
     if (utils_default.isReactNative(formData) && utils_default.isReactNativeBlob(value)) {
-      formData.append(renderKey(path2, key2, dots), convertValue(value));
+      formData.append(renderKey(path, key2, dots), convertValue(value));
       return false;
     }
-    if (value && !path2 && typeof value === "object") {
+    if (value && !path && typeof value === "object") {
       if (utils_default.endsWith(key2, "{}")) {
         key2 = metaTokens ? key2 : key2.slice(0, -2);
         value = stringifyWithDepthLimit(value, 1);
@@ -22759,7 +22759,7 @@ function toFormData(obj, formData, options) {
     if (isVisitable(value)) {
       return true;
     }
-    formData.append(renderKey(path2, key2, dots), convertValue(value));
+    formData.append(renderKey(path, key2, dots), convertValue(value));
     return false;
   }
   const exposedHelpers = Object.assign(predicates, {
@@ -22767,17 +22767,17 @@ function toFormData(obj, formData, options) {
     convertValue,
     isVisitable
   });
-  function build(value, path2, depth = 0) {
+  function build(value, path, depth = 0) {
     if (utils_default.isUndefined(value)) return;
     throwIfMaxDepthExceeded(depth);
     if (stack2.indexOf(value) !== -1) {
-      throw new Error("Circular reference detected in " + path2.join("."));
+      throw new Error("Circular reference detected in " + path.join("."));
     }
     stack2.push(value);
     utils_default.forEach(value, function each2(el, key2) {
-      const result = !(utils_default.isUndefined(el) || el === null) && visitor.call(formData, el, utils_default.isString(key2) ? key2.trim() : key2, path2, exposedHelpers);
+      const result = !(utils_default.isUndefined(el) || el === null) && visitor.call(formData, el, utils_default.isString(key2) ? key2.trim() : key2, path, exposedHelpers);
       if (result === true) {
-        build(el, path2 ? path2.concat(key2) : [key2], depth + 1);
+        build(el, path ? path.concat(key2) : [key2], depth + 1);
       }
     });
     stack2.pop();
@@ -22969,7 +22969,7 @@ var platform_default = __spreadValues(__spreadValues({}, utils_exports), browser
 // node_modules/axios/lib/helpers/toURLEncodedForm.js
 function toURLEncodedForm(data, options) {
   return toFormData_default(data, new platform_default.classes.URLSearchParams(), __spreadValues({
-    visitor: function(value, key2, path2, helpers) {
+    visitor: function(value, key2, path, helpers) {
       if (platform_default.isNode && utils_default.isBuffer(value)) {
         this.append(key2, value.toString("base64"));
         return false;
@@ -22990,14 +22990,14 @@ function throwIfDepthExceeded(index3) {
   }
 }
 function parsePropPath(name) {
-  const path2 = [];
+  const path = [];
   const pattern = /\w+|\[(\w*)]/g;
   let match2;
   while ((match2 = pattern.exec(name)) !== null) {
-    throwIfDepthExceeded(path2.length);
-    path2.push(match2[0] === "[]" ? "" : match2[1] || match2[0]);
+    throwIfDepthExceeded(path.length);
+    path.push(match2[0] === "[]" ? "" : match2[1] || match2[0]);
   }
-  return path2;
+  return path;
 }
 function arrayToObject(arr) {
   const obj = {};
@@ -23012,12 +23012,12 @@ function arrayToObject(arr) {
   return obj;
 }
 function formDataToJSON(formData) {
-  function buildPath(path2, value, target, index3) {
+  function buildPath(path, value, target, index3) {
     throwIfDepthExceeded(index3);
-    let name = path2[index3++];
+    let name = path[index3++];
     if (name === "__proto__") return true;
     const isNumericKey = Number.isFinite(+name);
-    const isLast = index3 >= path2.length;
+    const isLast = index3 >= path.length;
     name = !name && utils_default.isArray(target) ? target.length : name;
     if (isLast) {
       if (utils_default.hasOwnProp(target, name)) {
@@ -23030,7 +23030,7 @@ function formDataToJSON(formData) {
     if (!utils_default.hasOwnProp(target, name) || !utils_default.isObject(target[name])) {
       target[name] = [];
     }
-    const result = buildPath(path2, value, target[name], index3);
+    const result = buildPath(path, value, target[name], index3);
     if (result && utils_default.isArray(target[name])) {
       target[name] = arrayToObject(target[name]);
     }
@@ -23348,14 +23348,14 @@ var isURLSameOrigin_default = platform_default.hasStandardBrowserEnv ? /* @__PUR
 var cookies_default = platform_default.hasStandardBrowserEnv ? (
   // Standard browser envs support document.cookie
   {
-    write(name, value, expires, path2, domain, secure, sameSite) {
+    write(name, value, expires, path, domain, secure, sameSite) {
       if (typeof document === "undefined") return;
       const cookie = [`${name}=${encodeURIComponent(value)}`];
       if (utils_default.isNumber(expires)) {
         cookie.push(`expires=${new Date(expires).toUTCString()}`);
       }
-      if (utils_default.isString(path2)) {
-        cookie.push(`path=${path2}`);
+      if (utils_default.isString(path)) {
+        cookie.push(`path=${path}`);
       }
       if (utils_default.isString(domain)) {
         cookie.push(`domain=${domain}`);
@@ -27990,15 +27990,15 @@ function proxy(value) {
       );
     }
   }
-  var path2 = "";
+  var path = "";
   let updating = false;
   function update_path(new_path) {
     if (updating) return;
     updating = true;
-    path2 = new_path;
-    tag(version3, `${path2} version`);
+    path = new_path;
+    tag(version3, `${path} version`);
     for (const [prop2, source2] of sources) {
-      tag(source2, get_label(path2, prop2));
+      tag(source2, get_label(path, prop2));
     }
     updating = false;
   }
@@ -28016,7 +28016,7 @@ function proxy(value) {
             var s3 = state(descriptor.value, stack2);
             sources.set(prop2, s3);
             if (dev_fallback_default && typeof prop2 === "string") {
-              tag(s3, get_label(path2, prop2));
+              tag(s3, get_label(path, prop2));
             }
             return s3;
           });
@@ -28033,7 +28033,7 @@ function proxy(value) {
             sources.set(prop2, s3);
             increment(version3);
             if (dev_fallback_default) {
-              tag(s3, get_label(path2, prop2));
+              tag(s3, get_label(path, prop2));
             }
           }
         } else {
@@ -28057,7 +28057,7 @@ function proxy(value) {
             var p = proxy(exists ? target[prop2] : UNINITIALIZED);
             var s3 = state(p, stack2);
             if (dev_fallback_default) {
-              tag(s3, get_label(path2, prop2));
+              tag(s3, get_label(path, prop2));
             }
             return s3;
           });
@@ -28101,7 +28101,7 @@ function proxy(value) {
               var p = has ? proxy(target[prop2]) : UNINITIALIZED;
               var s3 = state(p, stack2);
               if (dev_fallback_default) {
-                tag(s3, get_label(path2, prop2));
+                tag(s3, get_label(path, prop2));
               }
               return s3;
             });
@@ -28128,7 +28128,7 @@ function proxy(value) {
               other_s = with_parent(() => state(UNINITIALIZED, stack2));
               sources.set(i + "", other_s);
               if (dev_fallback_default) {
-                tag(other_s, get_label(path2, i));
+                tag(other_s, get_label(path, i));
               }
             }
           }
@@ -28137,7 +28137,7 @@ function proxy(value) {
           if (!has || ((_a6 = get_descriptor(target, prop2)) == null ? void 0 : _a6.writable)) {
             s2 = with_parent(() => state(void 0, stack2));
             if (dev_fallback_default) {
-              tag(s2, get_label(path2, prop2));
+              tag(s2, get_label(path, prop2));
             }
             set(s2, proxy(value2));
             sources.set(prop2, s2);
@@ -28185,11 +28185,11 @@ function proxy(value) {
     }
   );
 }
-function get_label(path2, prop2) {
+function get_label(path, prop2) {
   var _a6;
-  if (typeof prop2 === "symbol") return `${path2}[Symbol(${(_a6 = prop2.description) != null ? _a6 : ""})]`;
-  if (regex_is_valid_identifier.test(prop2)) return `${path2}.${prop2}`;
-  return /^\d+$/.test(prop2) ? `${path2}[${prop2}]` : `${path2}['${prop2}']`;
+  if (typeof prop2 === "symbol") return `${path}[Symbol(${(_a6 = prop2.description) != null ? _a6 : ""})]`;
+  if (regex_is_valid_identifier.test(prop2)) return `${path}.${prop2}`;
+  return /^\d+$/.test(prop2) ? `${path}[${prop2}]` : `${path}['${prop2}']`;
 }
 function get_proxied_value(value) {
   try {
@@ -29527,22 +29527,22 @@ function handle_event_propagation(event2) {
     handler_element.ownerDocument
   );
   var event_name = event2.type;
-  var path2 = ((_a6 = event2.composedPath) == null ? void 0 : _a6.call(event2)) || [];
+  var path = ((_a6 = event2.composedPath) == null ? void 0 : _a6.call(event2)) || [];
   var current_target = (
     /** @type {null | Element} */
-    path2[0] || event2.target
+    path[0] || event2.target
   );
   last_propagated_event = event2;
   var path_idx = 0;
   var handled_at = last_propagated_event === event2 && event2[event_symbol];
   if (handled_at) {
-    var at_idx = path2.indexOf(handled_at);
+    var at_idx = path.indexOf(handled_at);
     if (at_idx !== -1 && (handler_element === document || handler_element === /** @type {any} */
     window)) {
       event2[event_symbol] = handler_element;
       return;
     }
-    var handler_idx = path2.indexOf(handler_element);
+    var handler_idx = path.indexOf(handler_element);
     if (handler_idx === -1) {
       return;
     }
@@ -29551,7 +29551,7 @@ function handle_event_propagation(event2) {
     }
   }
   current_target = /** @type {Element} */
-  path2[path_idx] || event2.target;
+  path[path_idx] || event2.target;
   if (current_target === handler_element) return;
   define_property(event2, "currentTarget", {
     configurable: true,
@@ -29585,9 +29585,9 @@ function handle_event_propagation(event2) {
       }
       if (event2.cancelBubble) break;
       path_idx++;
-      current_target = path_idx < path2.length ? (
+      current_target = path_idx < path.length ? (
         /** @type {Element} */
-        path2[path_idx]
+        path[path_idx]
       ) : null;
     }
     if (throw_error) {
@@ -34162,11 +34162,11 @@ Diff.prototype = {
       }
     }
   },
-  addToPath: function addToPath(path2, added, removed, oldPosInc) {
-    var last = path2.lastComponent;
+  addToPath: function addToPath(path, added, removed, oldPosInc) {
+    var last = path.lastComponent;
     if (last && last.added === added && last.removed === removed) {
       return {
-        oldPos: path2.oldPos + oldPosInc,
+        oldPos: path.oldPos + oldPosInc,
         lastComponent: {
           count: last.count + 1,
           added,
@@ -34176,7 +34176,7 @@ Diff.prototype = {
       };
     } else {
       return {
-        oldPos: path2.oldPos + oldPosInc,
+        oldPos: path.oldPos + oldPosInc,
         lastComponent: {
           count: 1,
           added,
@@ -34488,7 +34488,7 @@ function RewriteSettings($$anchor, $$props) {
     set(saveDisabled, false);
     set(newPathRewriteRules, event2.currentTarget.value);
     const paths = yield getPathsForRewriteRules(get2(newPathRewriteRules), settings().pathRewriteRules);
-    set(diff2, paths.map((path2) => diffLines(path2.oldPath, path2.newPath)).filter((diff3) => diff3.length > 1));
+    set(diff2, paths.map((path) => diffLines(path.oldPath, path.newPath)).filter((diff3) => diff3.length > 1));
   });
   const getPathsForRewriteRules = (newRules, oldRules) => __awaiter(void 0, void 0, void 0, function* () {
     const newRewriteRules = getRewriteRules(newRules);
@@ -37416,8 +37416,8 @@ function NavigationOrderView($$anchor, $$props) {
     });
     return items;
   }
-  function applyOrdering(items, ordering, path2) {
-    const orderList = ordering[path2];
+  function applyOrdering(items, ordering, path) {
+    const orderList = ordering[path];
     let result;
     if (orderList && Array.isArray(orderList)) {
       const itemMap = new Map(items.map((item) => [item.name, item]));
@@ -37441,7 +37441,7 @@ function NavigationOrderView($$anchor, $$props) {
     }
     for (const item of result) {
       if (item.isFolder && item.children.length > 0) {
-        const childPath = path2 === "/" ? `/${item.name}` : `${path2}/${item.name}`;
+        const childPath = path === "/" ? `/${item.name}` : `${path}/${item.name}`;
         item.children = applyOrdering(item.children, ordering, childPath);
       }
     }
@@ -37464,12 +37464,12 @@ function NavigationOrderView($$anchor, $$props) {
       }
     });
   }
-  function extractOrdering(items, path2) {
+  function extractOrdering(items, path) {
     let ordering = {};
-    ordering[path2] = items.map((item) => item.name);
+    ordering[path] = items.map((item) => item.name);
     for (const item of items) {
       if (item.isFolder && item.children.length > 0) {
-        const childPath = path2 === "/" ? `/${item.name}` : `${path2}/${item.name}`;
+        const childPath = path === "/" ? `/${item.name}` : `${path}/${item.name}`;
         const childOrdering = extractOrdering(item.children, childPath);
         ordering = Object.assign(Object.assign({}, ordering), childOrdering);
       }
@@ -37670,48 +37670,52 @@ var root_15 = from_html(`<div class="dg-plugins-loading svelte-j5mgcu" role="sta
 var root_25 = from_html(`<p class="dg-plugins-error svelte-j5mgcu"> </p>`);
 var root_35 = from_html(`<p class="svelte-j5mgcu">No plugins found. If your garden predates the plugin system,
 					update your site template first.</p>`);
-var root_43 = from_html(`<span class="dg-plugin-badge svelte-j5mgcu">Core plugin</span>`);
-var root_52 = from_html(`<span class="dg-plugin-badge is-region svelte-j5mgcu"> </span>`);
-var root_62 = from_html(`<span class="dg-plugin-region-notice svelte-j5mgcu"> <strong class="svelte-j5mgcu"> </strong> \u2014 disable it to activate this plugin.</span>`);
-var root_72 = from_html(`<button class="svelte-j5mgcu">Settings</button>`);
-var root_82 = from_html(`<button class="mod-warning svelte-j5mgcu">Confirm removal</button>`);
-var root_92 = from_html(`<button class="svelte-j5mgcu">Uninstall</button>`);
-var root_102 = from_html(`<button class="svelte-j5mgcu">Update</button> <!>`, 1);
-var root_11 = from_html(`<label class="dg-plugin-setting svelte-j5mgcu"><span class="svelte-j5mgcu"><span class="dg-plugin-setting-name svelte-j5mgcu">Enabled by default on notes</span> <span class="dg-plugin-setting-desc svelte-j5mgcu">Override per note with <code class="svelte-j5mgcu"> </code> in frontmatter.</span></span> <input type="checkbox" class="svelte-j5mgcu"/></label>`);
-var root_122 = from_html(`<span class="dg-plugin-setting-desc svelte-j5mgcu"> </span>`);
-var root_132 = from_html(`<input type="checkbox" class="svelte-j5mgcu"/>`);
-var root_142 = from_html(`<option class="svelte-j5mgcu"> </option>`);
-var root_152 = from_html(`<select class="svelte-j5mgcu"></select>`);
-var root_16 = from_html(`<input class="svelte-j5mgcu"/>`);
-var root_17 = from_html(`<label class="dg-plugin-setting svelte-j5mgcu"><span class="svelte-j5mgcu"><span class="dg-plugin-setting-name svelte-j5mgcu"> </span> <!></span> <!></label>`);
-var root_18 = from_html(`<button class="mod-cta svelte-j5mgcu">Save plugin settings</button>`);
-var root_19 = from_html(`<div class="dg-plugin-settings svelte-j5mgcu"><!> <!> <!></div>`);
-var root_20 = from_html(`<div><div class="dg-plugin-row-main svelte-j5mgcu"><div class="dg-plugin-row-info svelte-j5mgcu"><span class="dg-plugin-name svelte-j5mgcu"> <span class="dg-plugin-version svelte-j5mgcu"> </span> <!> <!></span> <span class="dg-plugin-description svelte-j5mgcu"> </span> <span class="dg-plugin-author svelte-j5mgcu"> </span> <!></div> <div class="dg-plugin-row-actions svelte-j5mgcu"><!> <!> <label class="dg-plugin-toggle svelte-j5mgcu"><input type="checkbox" class="svelte-j5mgcu"/> </label></div></div> <!></div>`);
-var root_21 = from_html(`<!> <!>`, 1);
-var root_222 = from_html(
+var root_43 = from_html(`<p class="dg-plugin-order-hint svelte-j5mgcu">The order here is the render order. Plugins that share a
+					place on the page, like the bottom-right corner, stack in
+					this order.</p>`);
+var root_52 = from_html(`<span class="dg-plugin-badge svelte-j5mgcu">Core plugin</span>`);
+var root_62 = from_html(`<span class="dg-plugin-badge is-region svelte-j5mgcu"> </span>`);
+var root_72 = from_html(`<span class="dg-plugin-region-notice svelte-j5mgcu"> <strong class="svelte-j5mgcu"> </strong> \u2014 disable it to activate this plugin.</span>`);
+var root_82 = from_html(`<button aria-label="Render earlier" title="Render earlier" class="svelte-j5mgcu">\u2191</button> <button aria-label="Render later" title="Render later" class="svelte-j5mgcu">\u2193</button>`, 1);
+var root_92 = from_html(`<button class="svelte-j5mgcu">Settings</button>`);
+var root_102 = from_html(`<button class="mod-warning svelte-j5mgcu">Confirm removal</button>`);
+var root_11 = from_html(`<button class="svelte-j5mgcu">Uninstall</button>`);
+var root_122 = from_html(`<button class="svelte-j5mgcu">Update</button> <!>`, 1);
+var root_132 = from_html(`<label class="dg-plugin-setting svelte-j5mgcu"><span class="svelte-j5mgcu"><span class="dg-plugin-setting-name svelte-j5mgcu">Enabled by default on notes</span> <span class="dg-plugin-setting-desc svelte-j5mgcu">Override per note with <code class="svelte-j5mgcu"> </code> in frontmatter.</span></span> <input type="checkbox" class="svelte-j5mgcu"/></label>`);
+var root_142 = from_html(`<span class="dg-plugin-setting-desc svelte-j5mgcu"> </span>`);
+var root_152 = from_html(`<input type="checkbox" class="svelte-j5mgcu"/>`);
+var root_16 = from_html(`<option class="svelte-j5mgcu"> </option>`);
+var root_17 = from_html(`<select class="svelte-j5mgcu"></select>`);
+var root_18 = from_html(`<input class="svelte-j5mgcu"/>`);
+var root_19 = from_html(`<label class="dg-plugin-setting svelte-j5mgcu"><span class="svelte-j5mgcu"><span class="dg-plugin-setting-name svelte-j5mgcu"> </span> <!></span> <!></label>`);
+var root_20 = from_html(`<button class="mod-cta svelte-j5mgcu">Save plugin settings</button>`);
+var root_21 = from_html(`<div class="dg-plugin-settings svelte-j5mgcu"><!> <!> <!></div>`);
+var root_222 = from_html(`<div><div class="dg-plugin-row-main svelte-j5mgcu"><div class="dg-plugin-row-info svelte-j5mgcu"><span class="dg-plugin-name svelte-j5mgcu"> <span class="dg-plugin-version svelte-j5mgcu"> </span> <!> <!></span> <span class="dg-plugin-description svelte-j5mgcu"> </span> <span class="dg-plugin-author svelte-j5mgcu"> </span> <!></div> <div class="dg-plugin-row-actions svelte-j5mgcu"><!> <!> <!> <label class="dg-plugin-toggle svelte-j5mgcu"><input type="checkbox" class="svelte-j5mgcu"/> </label></div></div> <!></div>`);
+var root_232 = from_html(`<!> <!> <!>`, 1);
+var root_242 = from_html(
   `<p class="dg-plugins-intro svelte-j5mgcu">Plugins extend your garden with new features. They are stored in
 			your garden repository under <code class="svelte-j5mgcu">src/plugins/</code> \u2014 this list is
 			read directly from it.</p> <!>`,
   1
 );
-var root_232 = from_html(`<label class="dg-plugin-conflict-choice svelte-j5mgcu"><input type="checkbox" class="svelte-j5mgcu"/> <span class="svelte-j5mgcu"> <strong class="svelte-j5mgcu"> </strong> </span></label>`);
-var root_242 = from_html(`<div class="dg-plugin-confirm svelte-j5mgcu"><p class="dg-plugin-confirm-title svelte-j5mgcu"> <strong class="svelte-j5mgcu"> </strong> </p> <p class="svelte-j5mgcu"> </p> <p class="dg-plugin-confirm-warning svelte-j5mgcu">\u26A0\uFE0F Plugins run their own code in your site's build and in
+var root_252 = from_html(`<label class="dg-plugin-conflict-choice svelte-j5mgcu"><input type="checkbox" class="svelte-j5mgcu"/> <span class="svelte-j5mgcu"> <strong class="svelte-j5mgcu"> </strong> </span></label>`);
+var root_26 = from_html(`<div class="dg-plugin-confirm svelte-j5mgcu"><p class="dg-plugin-confirm-title svelte-j5mgcu"> <strong class="svelte-j5mgcu"> </strong> </p> <p class="svelte-j5mgcu"> </p> <p class="dg-plugin-confirm-warning svelte-j5mgcu">\u26A0\uFE0F Plugins run their own code in your site's build and in
 					your visitors' browsers. Only install plugins from authors
 					you trust \u2014 review the code at <a class="svelte-j5mgcu"> </a> <code class="svelte-j5mgcu"> </code>).</p> <!> <div class="dg-plugin-confirm-actions svelte-j5mgcu"><button class="mod-cta svelte-j5mgcu"> </button> <button class="svelte-j5mgcu">Cancel</button></div></div>`);
-var root_252 = from_html(`<div class="dg-skeleton-card svelte-j5mgcu"><span class="dg-skeleton dg-skeleton-title svelte-j5mgcu"></span> <span class="dg-skeleton dg-skeleton-text svelte-j5mgcu"></span> <span class="dg-skeleton dg-skeleton-text short svelte-j5mgcu"></span></div>`);
-var root_26 = from_html(`<div class="dg-plugin-grid svelte-j5mgcu" role="status" aria-label="Loading community plugins"></div>`);
-var root_27 = from_html(`<p class="svelte-j5mgcu">The community plugin directory is not available right now. You
+var root_27 = from_html(`<div class="dg-skeleton-card svelte-j5mgcu"><span class="dg-skeleton dg-skeleton-title svelte-j5mgcu"></span> <span class="dg-skeleton dg-skeleton-text svelte-j5mgcu"></span> <span class="dg-skeleton dg-skeleton-text short svelte-j5mgcu"></span></div>`);
+var root_28 = from_html(`<div class="dg-plugin-grid svelte-j5mgcu" role="status" aria-label="Loading community plugins"></div>`);
+var root_29 = from_html(`<p class="svelte-j5mgcu">The community plugin directory is not available right now. You
 				can still install any plugin from its GitHub URL above.</p>`);
-var root_28 = from_html(`<img class="dg-plugin-card-image svelte-j5mgcu" loading="lazy"/>`);
-var root_29 = from_html(`<button disabled="" class="svelte-j5mgcu">Installed</button>`);
-var root_30 = from_html(`<button class="mod-cta svelte-j5mgcu">Install</button>`);
-var root_31 = from_html(`<div class="dg-plugin-card svelte-j5mgcu"><!> <div class="dg-plugin-card-body svelte-j5mgcu"><span class="dg-plugin-name svelte-j5mgcu"> </span> <span class="dg-plugin-description svelte-j5mgcu"> </span> <span class="dg-plugin-author svelte-j5mgcu"> </span> <!></div></div>`);
-var root_322 = from_html(`<input class="dg-plugin-search svelte-j5mgcu" type="text" placeholder="Search community plugins\u2026"/> <div class="dg-plugin-grid svelte-j5mgcu"></div>`, 1);
-var root_332 = from_html(`<h3 class="svelte-j5mgcu">Install from GitHub</h3> <p class="dg-plugins-intro svelte-j5mgcu">Paste the URL of a plugin repository, e.g. <code class="svelte-j5mgcu">https://github.com/user/garden-plugin-example</code>.</p> <div class="dg-plugin-install-row svelte-j5mgcu"><input type="text" placeholder="https://github.com/user/repo" class="svelte-j5mgcu"/> <button class="mod-cta svelte-j5mgcu"> </button></div> <!> <!> <h3 class="svelte-j5mgcu">Browse community plugins</h3> <!>`, 1);
-var root_342 = from_html(`<div class="dg-plugins svelte-j5mgcu"><div class="dg-plugin-tabs svelte-j5mgcu" role="tablist"><button role="tab">Installed<!></button> <button role="tab">Browse &amp; install<!></button></div> <!></div>`);
+var root_30 = from_html(`<img class="dg-plugin-card-image svelte-j5mgcu" loading="lazy"/>`);
+var root_31 = from_html(`<button disabled="" class="svelte-j5mgcu">Installed</button>`);
+var root_322 = from_html(`<button class="mod-cta svelte-j5mgcu">Install</button>`);
+var root_332 = from_html(`<div class="dg-plugin-card svelte-j5mgcu"><!> <div class="dg-plugin-card-body svelte-j5mgcu"><span class="dg-plugin-name svelte-j5mgcu"> </span> <span class="dg-plugin-description svelte-j5mgcu"> </span> <span class="dg-plugin-author svelte-j5mgcu"> </span> <!></div></div>`);
+var root_342 = from_html(`<input class="dg-plugin-search svelte-j5mgcu" type="text" placeholder="Search community plugins\u2026"/> <div class="dg-plugin-grid svelte-j5mgcu"></div>`, 1);
+var root_352 = from_html(`<h3 class="svelte-j5mgcu">Install from GitHub</h3> <p class="dg-plugins-intro svelte-j5mgcu">Paste the URL of a plugin repository, e.g. <code class="svelte-j5mgcu">https://github.com/user/garden-plugin-example</code>.</p> <div class="dg-plugin-install-row svelte-j5mgcu"><input type="text" placeholder="https://github.com/user/repo" class="svelte-j5mgcu"/> <button class="mod-cta svelte-j5mgcu"> </button></div> <!> <!> <h3 class="svelte-j5mgcu">Browse community plugins</h3> <!>`, 1);
+var root_36 = from_html(`<div class="dg-plugins svelte-j5mgcu"><div class="dg-plugin-tabs svelte-j5mgcu" role="tablist"><button role="tab">Installed<!></button> <button role="tab">Browse &amp; install<!></button></div> <!></div>`);
 var $$css5 = {
   hash: "svelte-j5mgcu",
-  code: ".dg-plugins.svelte-j5mgcu {display:flex;flex-direction:column;gap:8px;}.dg-plugins.svelte-j5mgcu h3:where(.svelte-j5mgcu) {margin:16px 0 4px 0;}.dg-plugin-tabs.svelte-j5mgcu {display:flex;gap:4px;border-bottom:1px solid var(--background-modifier-border);margin-bottom:4px;}.dg-plugin-tabs.svelte-j5mgcu button:where(.svelte-j5mgcu) {background:none;border:none;border-bottom:2px solid transparent;border-radius:0;padding:8px 14px;font-size:0.95em;color:var(--text-muted);cursor:pointer;box-shadow:none;}.dg-plugin-tabs.svelte-j5mgcu button:where(.svelte-j5mgcu):hover {color:var(--text-normal);}.dg-plugin-tabs.svelte-j5mgcu button.is-active:where(.svelte-j5mgcu) {color:var(--text-normal);font-weight:600;border-bottom-color:var(--interactive-accent);}.dg-plugins-intro.svelte-j5mgcu {color:var(--text-muted);margin:0;}.dg-plugins-error.svelte-j5mgcu {color:var(--text-error);}.dg-plugins-loading.svelte-j5mgcu {display:flex;flex-direction:column;gap:8px;}.dg-skeleton-row.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-radius:8px;padding:10px 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;}.dg-skeleton-info.svelte-j5mgcu {display:flex;flex-direction:column;gap:6px;flex:1;}.dg-skeleton-card.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:8px;}.dg-skeleton.svelte-j5mgcu {display:block;border-radius:4px;background:var(--background-modifier-hover, rgba(128, 128, 128, 0.15));\n		animation: svelte-j5mgcu-dg-skeleton-pulse 1.4s ease-in-out infinite;animation-delay:var(--dg-skeleton-delay, 0s);}.dg-skeleton-title.svelte-j5mgcu {height:0.9rem;width:40%;}.dg-skeleton-text.svelte-j5mgcu {height:0.7rem;width:75%;}.dg-skeleton-text.short.svelte-j5mgcu {width:45%;}.dg-skeleton-pill.svelte-j5mgcu {height:1.4rem;width:5.5rem;border-radius:999px;}.dg-plugins-loading-hint.svelte-j5mgcu {display:flex;align-items:center;gap:8px;color:var(--text-muted);font-size:0.85em;margin:4px 0 0;}.dg-spinner.svelte-j5mgcu {width:12px;height:12px;border:2px solid currentColor;border-top-color:transparent;border-radius:50%;\n		animation: svelte-j5mgcu-dg-spin 0.7s linear infinite;flex-shrink:0;}\n\n	@keyframes svelte-j5mgcu-dg-skeleton-pulse {\n		0%,\n		100% {\n			opacity: 0.45;\n		}\n		50% {\n			opacity: 1;\n		}\n	}\n\n	@keyframes svelte-j5mgcu-dg-spin {\n		to {\n			transform: rotate(360deg);\n		}\n	}\n\n	@media (prefers-reduced-motion: reduce) {.dg-skeleton.svelte-j5mgcu {\n			animation: none;opacity:0.6;}.dg-spinner.svelte-j5mgcu {animation-duration:2.5s;}\n	}.dg-plugin-row.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-radius:8px;padding:10px 12px;}.dg-plugin-row.is-disabled.svelte-j5mgcu {opacity:0.6;}.dg-plugin-row-main.svelte-j5mgcu {display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;}.dg-plugin-row-info.svelte-j5mgcu {display:flex;flex-direction:column;gap:2px;min-width:200px;flex:1;}.dg-plugin-name.svelte-j5mgcu {font-weight:600;}.dg-plugin-version.svelte-j5mgcu,\n	.dg-plugin-author.svelte-j5mgcu {color:var(--text-muted);font-size:0.85em;font-weight:400;}.dg-plugin-badge.svelte-j5mgcu {background:var(--background-modifier-border);border-radius:4px;font-size:0.75em;font-weight:500;padding:1px 6px;margin-left:4px;}.dg-plugin-badge.is-region.svelte-j5mgcu {background:var(--interactive-accent);color:var(--text-on-accent, #fff);}.dg-plugin-region-notice.svelte-j5mgcu {font-size:0.85em;color:var(--text-warning, var(--text-muted));margin-top:4px;}.dg-plugin-conflict-choice.svelte-j5mgcu {display:flex;align-items:flex-start;gap:8px;margin:0 0 10px;font-size:0.92em;}.dg-plugin-conflict-choice.svelte-j5mgcu input:where(.svelte-j5mgcu) {margin-top:3px;}.dg-plugin-description.svelte-j5mgcu {font-size:0.9em;}.dg-plugin-row-actions.svelte-j5mgcu {display:flex;align-items:center;gap:8px;flex-wrap:wrap;}.dg-plugin-toggle.svelte-j5mgcu {display:flex;align-items:center;gap:4px;font-size:0.9em;}.dg-plugin-settings.svelte-j5mgcu {border-top:1px solid var(--background-modifier-border);margin-top:10px;padding-top:10px;display:flex;flex-direction:column;gap:10px;}.dg-plugin-setting.svelte-j5mgcu {display:flex;justify-content:space-between;align-items:center;gap:16px;}.dg-plugin-setting.svelte-j5mgcu > span:where(.svelte-j5mgcu) {display:flex;flex-direction:column;}.dg-plugin-setting-name.svelte-j5mgcu {font-weight:500;}.dg-plugin-setting-desc.svelte-j5mgcu {color:var(--text-muted);font-size:0.85em;}.dg-plugin-install-row.svelte-j5mgcu {display:flex;gap:8px;}.dg-plugin-install-row.svelte-j5mgcu input:where(.svelte-j5mgcu) {flex:1;}.dg-plugin-confirm.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-left:3px solid var(--interactive-accent);border-radius:8px;padding:10px 14px;}.dg-plugin-confirm-title.svelte-j5mgcu {margin-top:0;}.dg-plugin-confirm-warning.svelte-j5mgcu {color:var(--text-warning, var(--text-muted));}.dg-plugin-confirm-actions.svelte-j5mgcu {display:flex;gap:8px;}.dg-plugin-search.svelte-j5mgcu {width:100%;}.dg-plugin-grid.svelte-j5mgcu {display:grid;grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));gap:12px;}.dg-plugin-card.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;}.dg-plugin-card-image.svelte-j5mgcu {width:100%;height:90px;object-fit:cover;}.dg-plugin-card-body.svelte-j5mgcu {display:flex;flex-direction:column;gap:4px;padding:8px 10px;}"
+  code: ".dg-plugins.svelte-j5mgcu {display:flex;flex-direction:column;gap:8px;}.dg-plugins.svelte-j5mgcu h3:where(.svelte-j5mgcu) {margin:16px 0 4px 0;}.dg-plugin-tabs.svelte-j5mgcu {display:flex;gap:4px;border-bottom:1px solid var(--background-modifier-border);margin-bottom:4px;}.dg-plugin-tabs.svelte-j5mgcu button:where(.svelte-j5mgcu) {background:none;border:none;border-bottom:2px solid transparent;border-radius:0;padding:8px 14px;font-size:0.95em;color:var(--text-muted);cursor:pointer;box-shadow:none;}.dg-plugin-tabs.svelte-j5mgcu button:where(.svelte-j5mgcu):hover {color:var(--text-normal);}.dg-plugin-tabs.svelte-j5mgcu button.is-active:where(.svelte-j5mgcu) {color:var(--text-normal);font-weight:600;border-bottom-color:var(--interactive-accent);}.dg-plugins-intro.svelte-j5mgcu {color:var(--text-muted);margin:0;}.dg-plugins-error.svelte-j5mgcu {color:var(--text-error);}.dg-plugins-loading.svelte-j5mgcu {display:flex;flex-direction:column;gap:8px;}.dg-skeleton-row.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-radius:8px;padding:10px 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;}.dg-skeleton-info.svelte-j5mgcu {display:flex;flex-direction:column;gap:6px;flex:1;}.dg-skeleton-card.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:8px;}.dg-skeleton.svelte-j5mgcu {display:block;border-radius:4px;background:var(--background-modifier-hover, rgba(128, 128, 128, 0.15));\n		animation: svelte-j5mgcu-dg-skeleton-pulse 1.4s ease-in-out infinite;animation-delay:var(--dg-skeleton-delay, 0s);}.dg-skeleton-title.svelte-j5mgcu {height:0.9rem;width:40%;}.dg-skeleton-text.svelte-j5mgcu {height:0.7rem;width:75%;}.dg-skeleton-text.short.svelte-j5mgcu {width:45%;}.dg-skeleton-pill.svelte-j5mgcu {height:1.4rem;width:5.5rem;border-radius:999px;}.dg-plugins-loading-hint.svelte-j5mgcu {display:flex;align-items:center;gap:8px;color:var(--text-muted);font-size:0.85em;margin:4px 0 0;}.dg-spinner.svelte-j5mgcu {width:12px;height:12px;border:2px solid currentColor;border-top-color:transparent;border-radius:50%;\n		animation: svelte-j5mgcu-dg-spin 0.7s linear infinite;flex-shrink:0;}\n\n	@keyframes svelte-j5mgcu-dg-skeleton-pulse {\n		0%,\n		100% {\n			opacity: 0.45;\n		}\n		50% {\n			opacity: 1;\n		}\n	}\n\n	@keyframes svelte-j5mgcu-dg-spin {\n		to {\n			transform: rotate(360deg);\n		}\n	}\n\n	@media (prefers-reduced-motion: reduce) {.dg-skeleton.svelte-j5mgcu {\n			animation: none;opacity:0.6;}.dg-spinner.svelte-j5mgcu {animation-duration:2.5s;}\n	}.dg-plugin-row.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-radius:8px;padding:10px 12px;}.dg-plugin-row.is-disabled.svelte-j5mgcu {opacity:0.6;}.dg-plugin-row-main.svelte-j5mgcu {display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;}.dg-plugin-row-info.svelte-j5mgcu {display:flex;flex-direction:column;gap:2px;min-width:200px;flex:1;}.dg-plugin-name.svelte-j5mgcu {font-weight:600;}.dg-plugin-version.svelte-j5mgcu,\n	.dg-plugin-author.svelte-j5mgcu {color:var(--text-muted);font-size:0.85em;font-weight:400;}.dg-plugin-badge.svelte-j5mgcu {background:var(--background-modifier-border);border-radius:4px;font-size:0.75em;font-weight:500;padding:1px 6px;margin-left:4px;}.dg-plugin-badge.is-region.svelte-j5mgcu {background:var(--interactive-accent);color:var(--text-on-accent, #fff);}.dg-plugin-region-notice.svelte-j5mgcu {font-size:0.85em;color:var(--text-warning, var(--text-muted));margin-top:4px;}.dg-plugin-conflict-choice.svelte-j5mgcu {display:flex;align-items:flex-start;gap:8px;margin:0 0 10px;font-size:0.92em;}.dg-plugin-conflict-choice.svelte-j5mgcu input:where(.svelte-j5mgcu) {margin-top:3px;}.dg-plugin-description.svelte-j5mgcu {font-size:0.9em;}.dg-plugin-row-actions.svelte-j5mgcu {display:flex;align-items:center;gap:8px;flex-wrap:wrap;}.dg-plugin-order-hint.svelte-j5mgcu {margin:0 0 8px;color:var(--text-muted);font-size:var(--font-ui-smaller);}.dg-plugin-toggle.svelte-j5mgcu {display:flex;align-items:center;gap:4px;font-size:0.9em;}.dg-plugin-settings.svelte-j5mgcu {border-top:1px solid var(--background-modifier-border);margin-top:10px;padding-top:10px;display:flex;flex-direction:column;gap:10px;}.dg-plugin-setting.svelte-j5mgcu {display:flex;justify-content:space-between;align-items:center;gap:16px;}.dg-plugin-setting.svelte-j5mgcu > span:where(.svelte-j5mgcu) {display:flex;flex-direction:column;}.dg-plugin-setting-name.svelte-j5mgcu {font-weight:500;}.dg-plugin-setting-desc.svelte-j5mgcu {color:var(--text-muted);font-size:0.85em;}.dg-plugin-install-row.svelte-j5mgcu {display:flex;gap:8px;}.dg-plugin-install-row.svelte-j5mgcu input:where(.svelte-j5mgcu) {flex:1;}.dg-plugin-confirm.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-left:3px solid var(--interactive-accent);border-radius:8px;padding:10px 14px;}.dg-plugin-confirm-title.svelte-j5mgcu {margin-top:0;}.dg-plugin-confirm-warning.svelte-j5mgcu {color:var(--text-warning, var(--text-muted));}.dg-plugin-confirm-actions.svelte-j5mgcu {display:flex;gap:8px;}.dg-plugin-search.svelte-j5mgcu {width:100%;}.dg-plugin-grid.svelte-j5mgcu {display:grid;grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));gap:12px;}.dg-plugin-card.svelte-j5mgcu {border:1px solid var(--background-modifier-border);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;}.dg-plugin-card-image.svelte-j5mgcu {width:100%;height:90px;object-fit:cover;}.dg-plugin-card-body.svelte-j5mgcu {display:flex;flex-direction:column;gap:4px;padding:8px 10px;}"
 };
 function GardenPluginsView($$anchor, $$props) {
   push($$props, false);
@@ -37759,6 +37763,26 @@ function GardenPluginsView($$anchor, $$props) {
   }
   function installedIds() {
     return new Set(get2(installed).map((plugin) => plugin.manifest.id));
+  }
+  function move2(plugin, delta) {
+    return __awaiter(this, void 0, void 0, function* () {
+      const ids = get2(installed).map((p) => p.manifest.id);
+      const from = ids.indexOf(plugin.manifest.id);
+      const to = from + delta;
+      if (from < 0 || to < 0 || to >= ids.length) return;
+      ids.splice(from, 1);
+      ids.splice(to, 0, plugin.manifest.id);
+      set(busy, true);
+      try {
+        yield manager().setOrder(ids);
+        new import_obsidian16.Notice(`${plugin.manifest.name} moved ${delta < 0 ? "up" : "down"}. ${buildTriggeredNotice(settings())}`);
+        yield refresh();
+      } catch (error) {
+        new import_obsidian16.Notice(error instanceof Error ? error.message : "Could not save the plugin order");
+      } finally {
+        set(busy, false);
+      }
+    });
   }
   function toggleEnabled(plugin) {
     return __awaiter(this, void 0, void 0, function* () {
@@ -37919,7 +37943,7 @@ function GardenPluginsView($$anchor, $$props) {
   });
   legacy_pre_effect_reset();
   init();
-  var div = root_342();
+  var div = root_36();
   var div_1 = child(div);
   var button = child(div_1);
   let classes;
@@ -37958,8 +37982,8 @@ function GardenPluginsView($$anchor, $$props) {
   reset(div_1);
   var node_2 = sibling(div_1, 2);
   {
-    var consequent_14 = ($$anchor2) => {
-      var fragment_2 = root_222();
+    var consequent_16 = ($$anchor2) => {
+      var fragment_2 = root_242();
       var node_3 = sibling(first_child(fragment_2), 2);
       {
         var consequent_2 = ($$anchor3) => {
@@ -37975,27 +37999,37 @@ function GardenPluginsView($$anchor, $$props) {
           append2($$anchor3, div_2);
         };
         var consequent_3 = ($$anchor3) => {
-          var p = root_25();
-          var text_2 = child(p, true);
-          reset(p);
+          var p_1 = root_25();
+          var text_2 = child(p_1, true);
+          reset(p_1);
           template_effect(() => set_text(text_2, get2(loadError)));
-          append2($$anchor3, p);
+          append2($$anchor3, p_1);
         };
         var alternate_2 = ($$anchor3) => {
-          var fragment_3 = root_21();
+          var fragment_3 = root_232();
           var node_5 = first_child(fragment_3);
           {
             var consequent_4 = ($$anchor4) => {
-              var p_1 = root_35();
-              append2($$anchor4, p_1);
+              var p_2 = root_35();
+              append2($$anchor4, p_2);
             };
             if_block(node_5, ($$render) => {
               if (get2(installed), untrack(() => get2(installed).length === 0)) $$render(consequent_4);
             });
           }
           var node_6 = sibling(node_5, 2);
-          each(node_6, 1, () => get2(installed), (plugin) => plugin.manifest.id, ($$anchor4, plugin) => {
-            var div_4 = root_20();
+          {
+            var consequent_5 = ($$anchor4) => {
+              var p_3 = root_43();
+              append2($$anchor4, p_3);
+            };
+            if_block(node_6, ($$render) => {
+              if (get2(installed), untrack(() => get2(installed).length > 1)) $$render(consequent_5);
+            });
+          }
+          var node_7 = sibling(node_6, 2);
+          each(node_7, 3, () => get2(installed), (plugin) => plugin.manifest.id, ($$anchor4, plugin, index3) => {
+            var div_4 = root_222();
             let classes_2;
             var div_5 = child(div_4);
             var div_6 = child(div_5);
@@ -38004,24 +38038,24 @@ function GardenPluginsView($$anchor, $$props) {
             var span_1 = sibling(text_3);
             var text_4 = child(span_1);
             reset(span_1);
-            var node_7 = sibling(span_1, 2);
+            var node_8 = sibling(span_1, 2);
             {
-              var consequent_5 = ($$anchor5) => {
-                var span_2 = root_43();
+              var consequent_6 = ($$anchor5) => {
+                var span_2 = root_52();
                 append2($$anchor5, span_2);
               };
-              if_block(node_7, ($$render) => {
-                if (get2(plugin), untrack(() => get2(plugin).isFirstParty)) $$render(consequent_5);
+              if_block(node_8, ($$render) => {
+                if (get2(plugin), untrack(() => get2(plugin).isFirstParty)) $$render(consequent_6);
               });
             }
-            var node_8 = sibling(node_7, 2);
+            var node_9 = sibling(node_8, 2);
             each(
-              node_8,
+              node_9,
               1,
               () => (get2(plugin), untrack(() => providedRegions(get2(plugin)))),
               (region) => region,
               ($$anchor5, region) => {
-                var span_3 = root_52();
+                var span_3 = root_62();
                 var text_5 = child(span_3);
                 reset(span_3);
                 template_effect(() => {
@@ -38038,14 +38072,14 @@ function GardenPluginsView($$anchor, $$props) {
             var span_5 = sibling(span_4, 2);
             var text_7 = child(span_5);
             reset(span_5);
-            var node_9 = sibling(span_5, 2);
+            var node_10 = sibling(span_5, 2);
             each(
-              node_9,
+              node_10,
               1,
               () => (get2(plugin), untrack(() => blockedRegions(get2(plugin)))),
               (blocked) => blocked.region,
               ($$anchor5, blocked) => {
-                var span_6 = root_62();
+                var span_6 = root_72();
                 var text_8 = child(span_6);
                 var strong = sibling(text_8);
                 var text_9 = child(strong, true);
@@ -38068,73 +38102,91 @@ function GardenPluginsView($$anchor, $$props) {
             );
             reset(div_6);
             var div_7 = sibling(div_6, 2);
-            var node_10 = child(div_7);
+            var node_11 = child(div_7);
             {
-              var consequent_6 = ($$anchor5) => {
-                var button_2 = root_72();
-                template_effect(() => button_2.disabled = get2(busy));
-                event("click", button_2, () => openSettings(get2(plugin)));
-                append2($$anchor5, button_2);
+              var consequent_7 = ($$anchor5) => {
+                var fragment_4 = root_82();
+                var button_2 = first_child(fragment_4);
+                var button_3 = sibling(button_2, 2);
+                template_effect(() => {
+                  button_2.disabled = get2(busy) || get2(index3) === 0;
+                  button_3.disabled = (get2(busy), deep_read_state(get2(index3)), get2(installed), untrack(() => get2(busy) || get2(index3) === get2(installed).length - 1));
+                });
+                event("click", button_2, () => move2(get2(plugin), -1));
+                event("click", button_3, () => move2(get2(plugin), 1));
+                append2($$anchor5, fragment_4);
+              };
+              if_block(node_11, ($$render) => {
+                if (get2(installed), untrack(() => get2(installed).length > 1)) $$render(consequent_7);
+              });
+            }
+            var node_12 = sibling(node_11, 2);
+            {
+              var consequent_8 = ($$anchor5) => {
+                var button_4 = root_92();
+                template_effect(() => button_4.disabled = get2(busy));
+                event("click", button_4, () => openSettings(get2(plugin)));
+                append2($$anchor5, button_4);
               };
               var d = user_derived(() => (get2(plugin), untrack(() => {
                 var _a6;
                 return ((_a6 = get2(plugin).manifest.settings) != null ? _a6 : []).length > 0 || noteSettingKeysFor(get2(plugin)).length > 0;
               })));
-              if_block(node_10, ($$render) => {
-                if (get2(d)) $$render(consequent_6);
+              if_block(node_12, ($$render) => {
+                if (get2(d)) $$render(consequent_8);
               });
             }
-            var node_11 = sibling(node_10, 2);
+            var node_13 = sibling(node_12, 2);
             {
-              var consequent_8 = ($$anchor5) => {
-                var fragment_4 = root_102();
-                var button_3 = first_child(fragment_4);
-                var node_12 = sibling(button_3, 2);
+              var consequent_10 = ($$anchor5) => {
+                var fragment_5 = root_122();
+                var button_5 = first_child(fragment_5);
+                var node_14 = sibling(button_5, 2);
                 {
-                  var consequent_7 = ($$anchor6) => {
-                    var button_4 = root_82();
-                    template_effect(() => button_4.disabled = get2(busy));
-                    event("click", button_4, () => uninstall(get2(plugin)));
-                    append2($$anchor6, button_4);
+                  var consequent_9 = ($$anchor6) => {
+                    var button_6 = root_102();
+                    template_effect(() => button_6.disabled = get2(busy));
+                    event("click", button_6, () => uninstall(get2(plugin)));
+                    append2($$anchor6, button_6);
                   };
                   var alternate = ($$anchor6) => {
-                    var button_5 = root_92();
-                    template_effect(() => button_5.disabled = get2(busy));
-                    event("click", button_5, () => set(confirmUninstallId, get2(plugin).manifest.id));
-                    append2($$anchor6, button_5);
+                    var button_7 = root_11();
+                    template_effect(() => button_7.disabled = get2(busy));
+                    event("click", button_7, () => set(confirmUninstallId, get2(plugin).manifest.id));
+                    append2($$anchor6, button_7);
                   };
-                  if_block(node_12, ($$render) => {
-                    if (get2(confirmUninstallId), get2(plugin), untrack(() => get2(confirmUninstallId) === get2(plugin).manifest.id)) $$render(consequent_7);
+                  if_block(node_14, ($$render) => {
+                    if (get2(confirmUninstallId), get2(plugin), untrack(() => get2(confirmUninstallId) === get2(plugin).manifest.id)) $$render(consequent_9);
                     else $$render(alternate, -1);
                   });
                 }
-                template_effect(() => button_3.disabled = get2(busy));
-                event("click", button_3, () => updatePlugin(get2(plugin)));
-                append2($$anchor5, fragment_4);
+                template_effect(() => button_5.disabled = get2(busy));
+                event("click", button_5, () => updatePlugin(get2(plugin)));
+                append2($$anchor5, fragment_5);
               };
-              if_block(node_11, ($$render) => {
-                if (get2(plugin), untrack(() => !get2(plugin).isFirstParty)) $$render(consequent_8);
+              if_block(node_13, ($$render) => {
+                if (get2(plugin), untrack(() => !get2(plugin).isFirstParty)) $$render(consequent_10);
               });
             }
-            var label = sibling(node_11, 2);
+            var label = sibling(node_13, 2);
             var input = child(label);
             remove_input_defaults(input);
             var text_10 = sibling(input);
             reset(label);
             reset(div_7);
             reset(div_5);
-            var node_13 = sibling(div_5, 2);
+            var node_15 = sibling(div_5, 2);
             {
-              var consequent_13 = ($$anchor5) => {
-                var div_8 = root_19();
-                var node_14 = child(div_8);
+              var consequent_15 = ($$anchor5) => {
+                var div_8 = root_21();
+                var node_16 = child(div_8);
                 each(
-                  node_14,
+                  node_16,
                   1,
                   () => (get2(plugin), untrack(() => noteSettingKeysFor(get2(plugin)))),
                   (key2) => key2,
                   ($$anchor6, key2) => {
-                    var label_1 = root_11();
+                    var label_1 = root_132();
                     var span_7 = child(label_1);
                     var span_8 = sibling(child(span_7), 2);
                     var code = sibling(child(span_8));
@@ -38160,9 +38212,9 @@ function GardenPluginsView($$anchor, $$props) {
                     append2($$anchor6, label_1);
                   }
                 );
-                var node_15 = sibling(node_14, 2);
+                var node_17 = sibling(node_16, 2);
                 each(
-                  node_15,
+                  node_17,
                   1,
                   () => (get2(plugin), untrack(() => {
                     var _a6;
@@ -38170,29 +38222,29 @@ function GardenPluginsView($$anchor, $$props) {
                   })),
                   (entry) => entry.key,
                   ($$anchor6, entry) => {
-                    var label_2 = root_17();
+                    var label_2 = root_19();
                     var span_9 = child(label_2);
                     var span_10 = child(span_9);
                     var text_12 = child(span_10, true);
                     reset(span_10);
-                    var node_16 = sibling(span_10, 2);
+                    var node_18 = sibling(span_10, 2);
                     {
-                      var consequent_9 = ($$anchor7) => {
-                        var span_11 = root_122();
+                      var consequent_11 = ($$anchor7) => {
+                        var span_11 = root_142();
                         var text_13 = child(span_11, true);
                         reset(span_11);
                         template_effect(() => set_text(text_13, (get2(entry), untrack(() => get2(entry).description))));
                         append2($$anchor7, span_11);
                       };
-                      if_block(node_16, ($$render) => {
-                        if (get2(entry), untrack(() => get2(entry).description)) $$render(consequent_9);
+                      if_block(node_18, ($$render) => {
+                        if (get2(entry), untrack(() => get2(entry).description)) $$render(consequent_11);
                       });
                     }
                     reset(span_9);
-                    var node_17 = sibling(span_9, 2);
+                    var node_19 = sibling(span_9, 2);
                     {
-                      var consequent_10 = ($$anchor7) => {
-                        var input_2 = root_132();
+                      var consequent_12 = ($$anchor7) => {
+                        var input_2 = root_152();
                         remove_input_defaults(input_2);
                         template_effect(($0) => set_checked(input_2, $0), [
                           () => (get2(settingsDraft), get2(entry), untrack(() => Boolean(get2(settingsDraft)[get2(entry).key])))
@@ -38200,13 +38252,13 @@ function GardenPluginsView($$anchor, $$props) {
                         event("change", input_2, (event2) => mutate(settingsDraft, get2(settingsDraft)[get2(entry).key] = event2.currentTarget.checked));
                         append2($$anchor7, input_2);
                       };
-                      var consequent_11 = ($$anchor7) => {
-                        var select = root_152();
+                      var consequent_13 = ($$anchor7) => {
+                        var select = root_17();
                         each(select, 5, () => (get2(entry), untrack(() => {
                           var _a6;
                           return (_a6 = get2(entry).options) != null ? _a6 : [];
                         })), (option2) => option2, ($$anchor8, option2) => {
-                          var option_1 = root_142();
+                          var option_1 = root_16();
                           var text_14 = child(option_1, true);
                           reset(option_1);
                           var option_1_value = {};
@@ -38240,7 +38292,7 @@ function GardenPluginsView($$anchor, $$props) {
                         append2($$anchor7, select);
                       };
                       var alternate_1 = ($$anchor7) => {
-                        var input_3 = root_16();
+                        var input_3 = root_18();
                         remove_input_defaults(input_3);
                         template_effect(
                           ($0) => {
@@ -38257,9 +38309,9 @@ function GardenPluginsView($$anchor, $$props) {
                         event("input", input_3, (event2) => mutate(settingsDraft, get2(settingsDraft)[get2(entry).key] = coerce(get2(entry), event2.currentTarget.value)));
                         append2($$anchor7, input_3);
                       };
-                      if_block(node_17, ($$render) => {
-                        if (get2(entry), untrack(() => get2(entry).type === "boolean")) $$render(consequent_10);
-                        else if (get2(entry), untrack(() => get2(entry).type === "select")) $$render(consequent_11, 1);
+                      if_block(node_19, ($$render) => {
+                        if (get2(entry), untrack(() => get2(entry).type === "boolean")) $$render(consequent_12);
+                        else if (get2(entry), untrack(() => get2(entry).type === "select")) $$render(consequent_13, 1);
                         else $$render(alternate_1, -1);
                       });
                     }
@@ -38268,26 +38320,26 @@ function GardenPluginsView($$anchor, $$props) {
                     append2($$anchor6, label_2);
                   }
                 );
-                var node_18 = sibling(node_15, 2);
+                var node_20 = sibling(node_17, 2);
                 {
-                  var consequent_12 = ($$anchor6) => {
-                    var button_6 = root_18();
-                    template_effect(() => button_6.disabled = get2(busy));
-                    event("click", button_6, () => saveDraft(get2(plugin)));
-                    append2($$anchor6, button_6);
+                  var consequent_14 = ($$anchor6) => {
+                    var button_8 = root_20();
+                    template_effect(() => button_8.disabled = get2(busy));
+                    event("click", button_8, () => saveDraft(get2(plugin)));
+                    append2($$anchor6, button_8);
                   };
-                  if_block(node_18, ($$render) => {
+                  if_block(node_20, ($$render) => {
                     if (get2(plugin), untrack(() => {
                       var _a6;
                       return ((_a6 = get2(plugin).manifest.settings) != null ? _a6 : []).length > 0;
-                    })) $$render(consequent_12);
+                    })) $$render(consequent_14);
                   });
                 }
                 reset(div_8);
                 append2($$anchor5, div_8);
               };
-              if_block(node_13, ($$render) => {
-                if (get2(expandedSettingsId), get2(plugin), untrack(() => get2(expandedSettingsId) === get2(plugin).manifest.id)) $$render(consequent_13);
+              if_block(node_15, ($$render) => {
+                if (get2(expandedSettingsId), get2(plugin), untrack(() => get2(expandedSettingsId) === get2(plugin).manifest.id)) $$render(consequent_15);
               });
             }
             reset(div_4);
@@ -38316,44 +38368,44 @@ function GardenPluginsView($$anchor, $$props) {
       append2($$anchor2, fragment_2);
     };
     var alternate_5 = ($$anchor2) => {
-      var fragment_5 = root_332();
-      var div_9 = sibling(first_child(fragment_5), 4);
+      var fragment_6 = root_352();
+      var div_9 = sibling(first_child(fragment_6), 4);
       var input_4 = child(div_9);
       remove_input_defaults(input_4);
-      var button_7 = sibling(input_4, 2);
-      var text_15 = child(button_7, true);
-      reset(button_7);
+      var button_9 = sibling(input_4, 2);
+      var text_15 = child(button_9, true);
+      reset(button_9);
       reset(div_9);
-      var node_19 = sibling(div_9, 2);
-      {
-        var consequent_15 = ($$anchor3) => {
-          var p_2 = root_25();
-          var text_16 = child(p_2, true);
-          reset(p_2);
-          bind_this(p_2, ($$value) => set(installErrorEl, $$value), () => get2(installErrorEl));
-          template_effect(() => set_text(text_16, get2(installError)));
-          append2($$anchor3, p_2);
-        };
-        if_block(node_19, ($$render) => {
-          if (get2(installError)) $$render(consequent_15);
-        });
-      }
-      var node_20 = sibling(node_19, 2);
+      var node_21 = sibling(div_9, 2);
       {
         var consequent_17 = ($$anchor3) => {
-          var div_10 = root_242();
-          var p_3 = child(div_10);
-          var text_17 = child(p_3);
+          var p_4 = root_25();
+          var text_16 = child(p_4, true);
+          reset(p_4);
+          bind_this(p_4, ($$value) => set(installErrorEl, $$value), () => get2(installErrorEl));
+          template_effect(() => set_text(text_16, get2(installError)));
+          append2($$anchor3, p_4);
+        };
+        if_block(node_21, ($$render) => {
+          if (get2(installError)) $$render(consequent_17);
+        });
+      }
+      var node_22 = sibling(node_21, 2);
+      {
+        var consequent_19 = ($$anchor3) => {
+          var div_10 = root_26();
+          var p_5 = child(div_10);
+          var text_17 = child(p_5);
           var strong_1 = sibling(text_17);
           var text_18 = child(strong_1, true);
           reset(strong_1);
           var text_19 = sibling(strong_1);
-          reset(p_3);
-          var p_4 = sibling(p_3, 2);
-          var text_20 = child(p_4, true);
-          reset(p_4);
-          var p_5 = sibling(p_4, 2);
-          var a = sibling(child(p_5));
+          reset(p_5);
+          var p_6 = sibling(p_5, 2);
+          var text_20 = child(p_6, true);
+          reset(p_6);
+          var p_7 = sibling(p_6, 2);
+          var a = sibling(child(p_7));
           var text_21 = child(a);
           reset(a);
           var text_22 = sibling(a);
@@ -38361,11 +38413,11 @@ function GardenPluginsView($$anchor, $$props) {
           var text_23 = child(code_1, true);
           reset(code_1);
           next();
-          reset(p_5);
-          var node_21 = sibling(p_5, 2);
+          reset(p_7);
+          var node_23 = sibling(p_7, 2);
           {
-            var consequent_16 = ($$anchor4) => {
-              var label_3 = root_232();
+            var consequent_18 = ($$anchor4) => {
+              var label_3 = root_252();
               var input_5 = child(label_3);
               remove_input_defaults(input_5);
               var span_12 = sibling(input_5, 2);
@@ -38393,15 +38445,15 @@ function GardenPluginsView($$anchor, $$props) {
               bind_checked(input_5, () => get2(disableConflicts), ($$value) => set(disableConflicts, $$value));
               append2($$anchor4, label_3);
             };
-            if_block(node_21, ($$render) => {
-              if (get2(pendingConflicts), untrack(() => get2(pendingConflicts).length > 0)) $$render(consequent_16);
+            if_block(node_23, ($$render) => {
+              if (get2(pendingConflicts), untrack(() => get2(pendingConflicts).length > 0)) $$render(consequent_18);
             });
           }
-          var div_11 = sibling(node_21, 2);
-          var button_8 = child(div_11);
-          var text_27 = child(button_8, true);
-          reset(button_8);
-          var button_9 = sibling(button_8, 2);
+          var div_11 = sibling(node_23, 2);
+          var button_10 = child(div_11);
+          var text_27 = child(button_10, true);
+          reset(button_10);
+          var button_11 = sibling(button_10, 2);
           reset(div_11);
           reset(div_10);
           bind_this(div_10, ($$value) => set(installConfirmEl, $$value), () => get2(installConfirmEl));
@@ -38415,56 +38467,56 @@ function GardenPluginsView($$anchor, $$props) {
             set_text(text_21, `${(_c2 = (get2(pendingInstall), untrack(() => get2(pendingInstall).owner))) != null ? _c2 : ""}/${(_d = (get2(pendingInstall), untrack(() => get2(pendingInstall).repo))) != null ? _d : ""}`);
             set_text(text_22, ` (${(_e = (get2(pendingInstall), untrack(() => get2(pendingInstall).files.length))) != null ? _e : ""} files, ref `);
             set_text(text_23, (get2(pendingInstall), untrack(() => get2(pendingInstall).ref)));
-            button_8.disabled = get2(busy);
+            button_10.disabled = get2(busy);
             set_text(text_27, get2(busy) ? "Working\u2026" : get2(pendingIsUpdate) ? "Update plugin" : "Install plugin");
-            button_9.disabled = get2(busy);
+            button_11.disabled = get2(busy);
           });
-          event("click", button_8, confirmInstall);
-          event("click", button_9, () => set(pendingInstall, null));
+          event("click", button_10, confirmInstall);
+          event("click", button_11, () => set(pendingInstall, null));
           append2($$anchor3, div_10);
         };
-        if_block(node_20, ($$render) => {
-          if (get2(pendingInstall)) $$render(consequent_17);
+        if_block(node_22, ($$render) => {
+          if (get2(pendingInstall)) $$render(consequent_19);
         });
       }
-      var node_22 = sibling(node_20, 4);
+      var node_24 = sibling(node_22, 4);
       {
-        var consequent_18 = ($$anchor3) => {
-          var div_12 = root_26();
+        var consequent_20 = ($$anchor3) => {
+          var div_12 = root_28();
           each(div_12, 4, () => [0, 1, 2], (i) => i, ($$anchor4, i) => {
-            var div_13 = root_252();
+            var div_13 = root_27();
             template_effect(() => set_style(div_13, `--dg-skeleton-delay: ${i * 0.15}s`));
             append2($$anchor4, div_13);
           });
           reset(div_12);
           append2($$anchor3, div_12);
         };
-        var consequent_19 = ($$anchor3) => {
-          var p_6 = root_27();
-          append2($$anchor3, p_6);
+        var consequent_21 = ($$anchor3) => {
+          var p_8 = root_29();
+          append2($$anchor3, p_8);
         };
         var alternate_4 = ($$anchor3) => {
-          var fragment_6 = root_322();
-          var input_6 = first_child(fragment_6);
+          var fragment_7 = root_342();
+          var input_6 = first_child(fragment_7);
           remove_input_defaults(input_6);
           var div_14 = sibling(input_6, 2);
           each(div_14, 5, () => get2(filteredCommunity), (entry) => entry.id, ($$anchor4, entry) => {
-            var div_15 = root_31();
-            var node_23 = child(div_15);
+            var div_15 = root_332();
+            var node_25 = child(div_15);
             {
-              var consequent_20 = ($$anchor5) => {
-                var img = root_28();
+              var consequent_22 = ($$anchor5) => {
+                var img = root_30();
                 template_effect(() => {
                   set_attribute2(img, "alt", (get2(entry), untrack(() => get2(entry).name)));
                   set_attribute2(img, "src", (get2(entry), untrack(() => `https://raw.githubusercontent.com/${get2(entry).repo}/HEAD/${get2(entry).screenshot}`)));
                 });
                 append2($$anchor5, img);
               };
-              if_block(node_23, ($$render) => {
-                if (get2(entry), untrack(() => get2(entry).screenshot)) $$render(consequent_20);
+              if_block(node_25, ($$render) => {
+                if (get2(entry), untrack(() => get2(entry).screenshot)) $$render(consequent_22);
               });
             }
-            var div_16 = sibling(node_23, 2);
+            var div_16 = sibling(node_25, 2);
             var span_13 = child(div_16);
             var text_28 = child(span_13, true);
             reset(span_13);
@@ -38474,21 +38526,21 @@ function GardenPluginsView($$anchor, $$props) {
             var span_15 = sibling(span_14, 2);
             var text_30 = child(span_15);
             reset(span_15);
-            var node_24 = sibling(span_15, 2);
+            var node_26 = sibling(span_15, 2);
             {
-              var consequent_21 = ($$anchor5) => {
-                var button_10 = root_29();
-                append2($$anchor5, button_10);
+              var consequent_23 = ($$anchor5) => {
+                var button_12 = root_31();
+                append2($$anchor5, button_12);
               };
               var d_1 = user_derived(() => (get2(entry), untrack(() => installedIds().has(get2(entry).id))));
               var alternate_3 = ($$anchor5) => {
-                var button_11 = root_30();
-                template_effect(() => button_11.disabled = get2(inspecting) || get2(busy));
-                event("click", button_11, () => inspect2(get2(entry).repo));
-                append2($$anchor5, button_11);
+                var button_13 = root_322();
+                template_effect(() => button_13.disabled = get2(inspecting) || get2(busy));
+                event("click", button_13, () => inspect2(get2(entry).repo));
+                append2($$anchor5, button_13);
               };
-              if_block(node_24, ($$render) => {
-                if (get2(d_1)) $$render(consequent_21);
+              if_block(node_26, ($$render) => {
+                if (get2(d_1)) $$render(consequent_23);
                 else $$render(alternate_3, -1);
               });
             }
@@ -38504,18 +38556,18 @@ function GardenPluginsView($$anchor, $$props) {
           });
           reset(div_14);
           bind_value(input_6, () => get2(communityFilter), ($$value) => set(communityFilter, $$value));
-          append2($$anchor3, fragment_6);
+          append2($$anchor3, fragment_7);
         };
-        if_block(node_22, ($$render) => {
-          if (get2(communityLoading)) $$render(consequent_18);
-          else if (get2(community), untrack(() => get2(community).length === 0)) $$render(consequent_19, 1);
+        if_block(node_24, ($$render) => {
+          if (get2(communityLoading)) $$render(consequent_20);
+          else if (get2(community), untrack(() => get2(community).length === 0)) $$render(consequent_21, 1);
           else $$render(alternate_4, -1);
         });
       }
       template_effect(
         ($0) => {
           input_4.disabled = get2(inspecting) || get2(busy);
-          button_7.disabled = $0;
+          button_9.disabled = $0;
           set_text(text_15, get2(inspecting) ? "Checking\u2026" : "Install");
         },
         [
@@ -38523,11 +38575,11 @@ function GardenPluginsView($$anchor, $$props) {
         ]
       );
       bind_value(input_4, () => get2(installInput), ($$value) => set(installInput, $$value));
-      event("click", button_7, () => inspect2(get2(installInput)));
-      append2($$anchor2, fragment_5);
+      event("click", button_9, () => inspect2(get2(installInput)));
+      append2($$anchor2, fragment_6);
     };
     if_block(node_2, ($$render) => {
-      if (get2(activeTab) === "installed") $$render(consequent_14);
+      if (get2(activeTab) === "installed") $$render(consequent_16);
       else $$render(alternate_5, -1);
     });
   }
@@ -38615,14 +38667,14 @@ function parseGitHubRepoInput(input) {
   }
   return { owner, repo };
 }
-function isSafePluginPath(path2) {
-  if (typeof path2 !== "string" || path2.length === 0) {
+function isSafePluginPath(path) {
+  if (typeof path !== "string" || path.length === 0) {
     return false;
   }
-  if (path2.includes("\\") || path2.includes("\0")) {
+  if (path.includes("\\") || path.includes("\0")) {
     return false;
   }
-  const trimmed = path2.endsWith("/") ? path2.slice(0, -1) : path2;
+  const trimmed = path.endsWith("/") ? path.slice(0, -1) : path;
   if (trimmed.length === 0 || trimmed.startsWith("/")) {
     return false;
   }
@@ -38678,8 +38730,8 @@ function validateGardenPluginManifest(parsed, options = {}) {
   }
   return { manifest, errors };
 }
-function shouldSkipRepoFile(path2) {
-  const firstSegment = path2.split("/")[0];
+function shouldSkipRepoFile(path) {
+  const firstSegment = path.split("/")[0];
   return firstSegment.startsWith(".git") || firstSegment === ".github" || firstSegment === "node_modules";
 }
 
@@ -38793,8 +38845,26 @@ var GardenPluginManager = class {
         }
       }
       return plugins2.sort(
-        (a, b) => a.manifest.id.localeCompare(b.manifest.id)
+        (a, b) => {
+          var _a7, _b3, _c2, _d;
+          return ((_b3 = (_a7 = a.registryEntry) == null ? void 0 : _a7.order) != null ? _b3 : 0) - ((_d = (_c2 = b.registryEntry) == null ? void 0 : _c2.order) != null ? _d : 0) || a.manifest.id.localeCompare(b.manifest.id);
+        }
       );
+    });
+  }
+  /**
+   * Persist a render order: ids in the desired order, first renders first.
+   * Plugins sharing a slot (e.g. the floating bottom-right stack) follow it.
+   */
+  setOrder(ids) {
+    return __async(this, null, function* () {
+      yield this.writeRegistry((registry) => {
+        ids.forEach((id, index3) => {
+          registry.plugins[id] = __spreadProps(__spreadValues({}, registry.plugins[id]), {
+            order: (index3 + 1) * 10
+          });
+        });
+      }, "Reorder garden plugins");
     });
   }
   setEnabled(id, enabled) {
@@ -38962,7 +39032,7 @@ var GardenPluginManager = class {
       }
       const newFilePaths = additions.map((addition) => addition.path);
       const deletions = ((_a6 = existingEntry == null ? void 0 : existingEntry.files) != null ? _a6 : []).filter(
-        (path2) => !newFilePaths.includes(path2)
+        (path) => !newFilePaths.includes(path)
       );
       const { registry } = yield this.getRegistry();
       registry.plugins[remote.manifest.id] = __spreadProps(__spreadValues({}, existingEntry), {
@@ -41009,7 +41079,7 @@ var import_obsidian21 = require("obsidian");
 var root6 = from_html(`<span class="dg-spinner svelte-jtoci9" aria-hidden="true"></span> Checking\u2026`, 1);
 var root_110 = from_html(`<p class="dg-install-error svelte-jtoci9"> </p>`);
 var root_210 = from_html(`<label class="dg-install-conflict-choice svelte-jtoci9"><input type="checkbox" class="svelte-jtoci9"/> <span> <strong> </strong> </span></label>`);
-var root_36 = from_html(`<span class="dg-spinner svelte-jtoci9" aria-hidden="true"></span> Installing\u2026`, 1);
+var root_37 = from_html(`<span class="dg-spinner svelte-jtoci9" aria-hidden="true"></span> Installing\u2026`, 1);
 var root_44 = from_html(`<div class="dg-install-confirm svelte-jtoci9"><p class="dg-install-confirm-title svelte-jtoci9"> <strong> </strong> </p> <p> </p> <p class="dg-install-warning svelte-jtoci9">\u26A0\uFE0F Plugins run their own code in your site's build and in your
 				visitors' browsers. Only install plugins from authors you trust
 				\u2014 review the code at <a> </a> <code> </code>).</p> <!> <div class="dg-install-actions svelte-jtoci9"><button class="mod-cta svelte-jtoci9"><!></button> <button class="svelte-jtoci9">Cancel</button></div></div>`);
@@ -41177,7 +41247,7 @@ function InstallPluginView($$anchor, $$props) {
       var node_4 = child(button_1);
       {
         var consequent_3 = ($$anchor3) => {
-          var fragment_1 = root_36();
+          var fragment_1 = root_37();
           next();
           append2($$anchor3, fragment_1);
         };
@@ -41291,8 +41361,6 @@ function notifyLimitReached(error) {
 
 // src/localExport/LocalExporter.ts
 var import_obsidian24 = require("obsidian");
-var import_promises = __toESM(require("fs/promises"));
-var import_path = __toESM(require("path"));
 var import_js_logger13 = __toESM(require_logger());
 var PRESERVED_FILES = /* @__PURE__ */ new Set(["notes.json", "notes.11tydata.js"]);
 var IMG_USER_PREFIX = "/img/user/";
@@ -41304,6 +41372,7 @@ var LocalExporter = class {
   }
   export() {
     return __async(this, null, function* () {
+      yield this.loadNodeModules();
       const targetPath = this.settings.localExportPath;
       if (!targetPath) {
         new import_obsidian24.Notice(
@@ -41318,7 +41387,7 @@ var LocalExporter = class {
       try {
         yield this.copyFromVault(
           this.settings.faviconPath,
-          import_path.default.join(targetPath, base, "src", "site"),
+          this.path.join(targetPath, base, "src", "site"),
           "favicon.svg"
         );
       } catch (e) {
@@ -41327,17 +41396,17 @@ var LocalExporter = class {
       try {
         yield this.copyFromVault(
           this.settings.logoPath,
-          import_path.default.join(targetPath, base, "src", "site"),
+          this.path.join(targetPath, base, "src", "site"),
           "logo"
         );
       } catch (e) {
         import_js_logger13.default.warn("Failed to copy logo", e);
       }
       const marked = yield this.publisher.getFilesMarkedForPublishing();
-      const notesDir = import_path.default.join(targetPath, base, NOTE_PATH_BASE);
-      const imagesDir = import_path.default.join(targetPath, base, IMAGE_PATH_BASE);
-      yield import_promises.default.mkdir(notesDir, { recursive: true });
-      yield import_promises.default.mkdir(imagesDir, { recursive: true });
+      const notesDir = this.path.join(targetPath, base, NOTE_PATH_BASE);
+      const imagesDir = this.path.join(targetPath, base, IMAGE_PATH_BASE);
+      yield this.fs.mkdir(notesDir, { recursive: true });
+      yield this.fs.mkdir(imagesDir, { recursive: true });
       const writtenNotePaths = /* @__PURE__ */ new Set();
       const writtenImagePaths = /* @__PURE__ */ new Set();
       let notesWritten = 0;
@@ -41346,24 +41415,26 @@ var LocalExporter = class {
       for (const file of marked.notes) {
         try {
           const [content, assets] = yield this.publisher.compiler.generateMarkdown(file);
-          const notePath = import_path.default.join(notesDir, file.getPath());
-          yield import_promises.default.mkdir(import_path.default.dirname(notePath), { recursive: true });
-          yield import_promises.default.writeFile(notePath, content, "utf-8");
+          const notePath = this.path.join(notesDir, file.getPath());
+          yield this.fs.mkdir(this.path.dirname(notePath), {
+            recursive: true
+          });
+          yield this.fs.writeFile(notePath, content, "utf-8");
           writtenNotePaths.add(file.getPath());
           notesWritten++;
           for (const image of assets.images) {
-            const imagePath = import_path.default.join(
+            const imagePath = this.path.join(
               targetPath,
               base,
               "src",
               "site",
               image.path
             );
-            yield import_promises.default.mkdir(import_path.default.dirname(imagePath), {
+            yield this.fs.mkdir(this.path.dirname(imagePath), {
               recursive: true
             });
             const buffer = Buffer.from(image.content, "base64");
-            yield import_promises.default.writeFile(imagePath, buffer);
+            yield this.fs.writeFile(imagePath, buffer);
             const relativeImagePath = image.path.startsWith(
               IMG_USER_PREFIX
             ) ? image.path.slice(IMG_USER_PREFIX.length) : image.path;
@@ -41386,9 +41457,11 @@ var LocalExporter = class {
             continue;
           }
           const binary = yield this.vault.readBinary(imageFile);
-          const destPath = import_path.default.join(imagesDir, imagePath);
-          yield import_promises.default.mkdir(import_path.default.dirname(destPath), { recursive: true });
-          yield import_promises.default.writeFile(destPath, Buffer.from(binary));
+          const destPath = this.path.join(imagesDir, imagePath);
+          yield this.fs.mkdir(this.path.dirname(destPath), {
+            recursive: true
+          });
+          yield this.fs.writeFile(destPath, Buffer.from(binary));
           writtenImagePaths.add(imagePath);
           imagesWritten++;
         } catch (e) {
@@ -41400,18 +41473,28 @@ var LocalExporter = class {
       return { notes: notesWritten, images: imagesWritten, failed };
     });
   }
+  loadNodeModules() {
+    return __async(this, null, function* () {
+      if (!import_obsidian24.Platform.isDesktopApp) {
+        new import_obsidian24.Notice("Local export is only available on desktop.");
+        throw new Error("Local export requires the desktop app");
+      }
+      this.fs = require("fs/promises");
+      this.path = require("path");
+    });
+  }
   validateTargetPath(targetPath) {
     return __async(this, null, function* () {
       const base = normalizeContentBaseDir(this.settings.contentBaseDir);
       try {
-        yield import_promises.default.access(targetPath);
+        yield this.fs.access(targetPath);
       } catch (e) {
         new import_obsidian24.Notice(`Local garden folder not found: ${targetPath}`);
         throw new Error(`Target path does not exist: ${targetPath}`);
       }
-      const expectedSiteDir = import_path.default.join(targetPath, base, "src", "site");
+      const expectedSiteDir = this.path.join(targetPath, base, "src", "site");
       try {
-        yield import_promises.default.access(expectedSiteDir);
+        yield this.fs.access(expectedSiteDir);
       } catch (e) {
         const expectedRelative = base ? `${base}src/site/` : "src/site/";
         new import_obsidian24.Notice(
@@ -41428,8 +41511,8 @@ var LocalExporter = class {
       const base = normalizeContentBaseDir(this.settings.contentBaseDir);
       const envValues = generateEnvValues(this.settings);
       const envContent = serializeEnvValues(envValues);
-      yield import_promises.default.writeFile(
-        import_path.default.join(targetPath, base, ".env"),
+      yield this.fs.writeFile(
+        this.path.join(targetPath, base, ".env"),
         envContent,
         "utf-8"
       );
@@ -41438,7 +41521,7 @@ var LocalExporter = class {
   writeNavigationOrder(targetPath) {
     return __async(this, null, function* () {
       const base = normalizeContentBaseDir(this.settings.contentBaseDir);
-      const navOrderPath = import_path.default.join(
+      const navOrderPath = this.path.join(
         targetPath,
         base,
         "src",
@@ -41447,15 +41530,17 @@ var LocalExporter = class {
         "navigationOrder.json"
       );
       if (this.settings.navigationOrder) {
-        yield import_promises.default.mkdir(import_path.default.dirname(navOrderPath), { recursive: true });
-        yield import_promises.default.writeFile(
+        yield this.fs.mkdir(this.path.dirname(navOrderPath), {
+          recursive: true
+        });
+        yield this.fs.writeFile(
           navOrderPath,
           JSON.stringify(this.settings.navigationOrder, null, 2),
           "utf-8"
         );
       } else {
         try {
-          yield import_promises.default.unlink(navOrderPath);
+          yield this.fs.unlink(navOrderPath);
         } catch (e) {
         }
       }
@@ -41467,8 +41552,8 @@ var LocalExporter = class {
       const sourceFile = this.vault.getAbstractFileByPath(sourcePath);
       if (sourceFile instanceof import_obsidian24.TFile) {
         const fileName = (rename == null ? void 0 : rename.includes(".")) ? rename : `${rename != null ? rename : sourceFile.basename}.${sourceFile.extension}`;
-        const targetPath = import_path.default.join(targetFolder, fileName);
-        yield import_promises.default.writeFile(
+        const targetPath = this.path.join(targetFolder, fileName);
+        yield this.fs.writeFile(
           targetPath,
           Buffer.from(yield this.vault.readBinary(sourceFile))
         );
@@ -41483,22 +41568,22 @@ var LocalExporter = class {
       try {
         const existingFiles = yield this.listFilesRecursive(dir);
         for (const filePath of existingFiles) {
-          const relativePath = import_path.default.relative(dir, filePath).split(import_path.default.sep).join("/");
-          const fileName = import_path.default.basename(filePath);
+          const relativePath = this.path.relative(dir, filePath).split(this.path.sep).join("/");
+          const fileName = this.path.basename(filePath);
           if (preservedFiles.has(fileName)) {
             continue;
           }
           if (!writtenPaths.has(relativePath)) {
-            yield import_promises.default.unlink(filePath);
+            yield this.fs.unlink(filePath);
             import_js_logger13.default.debug(`Cleaned stale file: ${filePath}`);
-            let parent = import_path.default.dirname(filePath);
+            let parent = this.path.dirname(filePath);
             while (parent !== dir && parent.startsWith(dir)) {
               try {
-                yield import_promises.default.rmdir(parent);
+                yield this.fs.rmdir(parent);
               } catch (e) {
                 break;
               }
-              parent = import_path.default.dirname(parent);
+              parent = this.path.dirname(parent);
             }
           }
         }
@@ -41511,9 +41596,9 @@ var LocalExporter = class {
     return __async(this, null, function* () {
       const files = [];
       try {
-        const entries = yield import_promises.default.readdir(dir, { withFileTypes: true });
+        const entries = yield this.fs.readdir(dir, { withFileTypes: true });
         for (const entry of entries) {
-          const fullPath = import_path.default.join(dir, entry.name);
+          const fullPath = this.path.join(dir, entry.name);
           if (entry.isDirectory()) {
             files.push(...yield this.listFilesRecursive(fullPath));
           } else {
@@ -42074,7 +42159,7 @@ var root_114 = from_html(`<div><span class="dg-pc-ln svelte-de2ej4"> </span> <sp
 var root_212 = from_html(`<div class="dg-pc-unified svelte-de2ej4"></div>`);
 var $$css10 = {
   hash: "svelte-de2ej4",
-  code: ".dg-pc-unified.svelte-de2ej4 {font-family:var(--font-monospace);font-size:var(--font-smaller, 0.85rem);white-space:pre-wrap;word-break:break-word;}.dg-pc-uline.svelte-de2ej4 {display:grid;grid-template-columns:3.5em 3.5em 1em 1fr;gap:4px;}.dg-pc-add.svelte-de2ej4 {background:var(--background-modifier-success);}.dg-pc-del.svelte-de2ej4 {background:var(--background-modifier-error);}.dg-pc-ln.svelte-de2ej4 {color:var(--text-faint);text-align:right;user-select:none;}.dg-pc-sign.svelte-de2ej4 {user-select:none;}.dg-pc-gap.svelte-de2ej4 {color:var(--text-faint);text-align:center;padding:2px 0;background:var(--background-secondary);font-size:0.8rem;}"
+  code: ".dg-pc-unified.svelte-de2ej4 {font-family:var(--font-monospace);font-size:var(--font-smaller, 0.85rem);white-space:pre-wrap;word-break:break-word;}.dg-pc-uline.svelte-de2ej4 {display:grid;grid-template-columns:3.5em 3.5em 1em 1fr;gap:4px;}.dg-pc-add.svelte-de2ej4 {background:var(--background-modifier-success);}.dg-pc-del.svelte-de2ej4 {background:var(--background-modifier-error);}.dg-pc-ln.svelte-de2ej4 {color:var(--text-faint);text-align:right;user-select:none;}.dg-pc-sign.svelte-de2ej4 {user-select:none;}.dg-pc-gap.svelte-de2ej4 {color:var(--text-faint);text-align:center;padding:2px 0;background:var(--background-secondary);font-size:0.8rem;}\n\n	@container (max-width: 640px) {.dg-pc-uline.svelte-de2ej4 {grid-template-columns:2.5em 2.5em 1em 1fr;}\n	}"
 };
 function UnifiedDiff($$anchor, $$props) {
   push($$props, false);
@@ -42143,7 +42228,7 @@ var root11 = from_html(`<div class="dg-pc-srow svelte-5qm8im"><div><span class="
 var root_115 = from_html(`<div class="dg-pc-split svelte-5qm8im"></div>`);
 var $$css11 = {
   hash: "svelte-5qm8im",
-  code: ".dg-pc-split.svelte-5qm8im {font-family:var(--font-monospace);font-size:var(--font-smaller, 0.85rem);}.dg-pc-srow.svelte-5qm8im {display:grid;grid-template-columns:1fr 1fr;gap:8px;}.dg-pc-scell.svelte-5qm8im {display:grid;grid-template-columns:3.5em 1fr;gap:4px;white-space:pre-wrap;word-break:break-word;border-left:2px solid transparent;}.dg-pc-add.svelte-5qm8im {background:var(--background-modifier-success);}.dg-pc-del.svelte-5qm8im {background:var(--background-modifier-error);}.dg-pc-empty.svelte-5qm8im {background:var(--background-secondary);}.dg-pc-ln.svelte-5qm8im {color:var(--text-faint);text-align:right;user-select:none;}"
+  code: ".dg-pc-split.svelte-5qm8im {font-family:var(--font-monospace);font-size:var(--font-smaller, 0.85rem);}.dg-pc-srow.svelte-5qm8im {display:grid;grid-template-columns:1fr 1fr;gap:8px;}.dg-pc-scell.svelte-5qm8im {display:grid;grid-template-columns:3.5em 1fr;gap:4px;white-space:pre-wrap;word-break:break-word;border-left:2px solid transparent;}.dg-pc-add.svelte-5qm8im {background:var(--background-modifier-success);}.dg-pc-del.svelte-5qm8im {background:var(--background-modifier-error);}.dg-pc-empty.svelte-5qm8im {background:var(--background-secondary);}.dg-pc-ln.svelte-5qm8im {color:var(--text-faint);text-align:right;user-select:none;}\n\n	@container (max-width: 640px) {.dg-pc-srow.svelte-5qm8im {gap:4px;}.dg-pc-scell.svelte-5qm8im {grid-template-columns:2.5em 1fr;}\n	}"
 };
 function SplitDiff($$anchor, $$props) {
   push($$props, false);
@@ -42220,22 +42305,22 @@ function SplitDiff($$anchor, $$props) {
 }
 
 // src/views/PublicationCenterView/DiffPane.svelte
-var root12 = from_html(`<div class="dg-pc-diff-empty svelte-13xoyn6">Select a file from the left to see what changed.</div>`);
+var root12 = from_html(`<div class="dg-pc-diff-empty svelte-13xoyn6">Select a file to see what changed.</div>`);
 var root_116 = from_html(`<button class="dg-pc-open">Open note</button>`);
 var root_213 = from_html(`<div class="dg-pc-diff-msg svelte-13xoyn6">Loading diff\u2026</div>`);
-var root_37 = from_html(`<div class="dg-pc-diff-msg svelte-13xoyn6">No diff available.</div>`);
+var root_38 = from_html(`<div class="dg-pc-diff-msg svelte-13xoyn6">No diff available.</div>`);
 var root_45 = from_html(`<div class="dg-pc-diff-msg svelte-13xoyn6"> </div>`);
 var root_54 = from_html(`<div class="dg-pc-diff-msg svelte-13xoyn6">This image will be deleted on publish.</div>`);
 var root_63 = from_html(`<div class="dg-pc-diff-msg svelte-13xoyn6">No changes \u2014 local and published versions match.</div>`);
-var root_73 = from_html(`<div class="dg-pc-diff-header svelte-13xoyn6"><span class="dg-pc-diff-path svelte-13xoyn6"><!> </span> <span class="dg-pc-diff-actions svelte-13xoyn6"><span class="dg-pc-toggle svelte-13xoyn6"><button>Split</button> <button>Unified</button></span> <!></span></div> <div class="dg-pc-diff-body"><!></div>`, 1);
+var root_73 = from_html(`<div class="dg-pc-diff-header svelte-13xoyn6"><span class="dg-pc-diff-path svelte-13xoyn6"><!> </span> <span class="dg-pc-diff-actions svelte-13xoyn6"><span class="dg-pc-toggle svelte-13xoyn6"><button>Split</button> <button>Unified</button></span> <!></span></div> <div class="dg-pc-diff-body svelte-13xoyn6"><!></div>`, 1);
 var $$css12 = {
   hash: "svelte-13xoyn6",
-  code: ".dg-pc-diff-empty.svelte-13xoyn6,\n	.dg-pc-diff-msg.svelte-13xoyn6 {color:var(--text-muted);padding:16px;}.dg-pc-diff-header.svelte-13xoyn6 {display:flex;justify-content:space-between;align-items:center;gap:8px;padding-bottom:8px;margin-bottom:8px;border-bottom:1px solid var(--background-modifier-border);position:sticky;top:0;background:var(--background-primary);}.dg-pc-diff-path.svelte-13xoyn6 {display:inline-flex;align-items:center;gap:4px;font-family:var(--font-monospace);font-size:0.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}.dg-pc-diff-actions.svelte-13xoyn6 {display:inline-flex;gap:8px;flex:0 0 auto;}.dg-pc-toggle.svelte-13xoyn6 button:where(.svelte-13xoyn6) {border:1px solid var(--background-modifier-border);background:var(--background-secondary);color:var(--text-muted);padding:2px 8px;cursor:pointer;}.dg-pc-toggle.svelte-13xoyn6 button.active:where(.svelte-13xoyn6) {background:var(--interactive-accent);color:var(--text-on-accent);}.dg-pc-toggle.svelte-13xoyn6 button:where(.svelte-13xoyn6):first-child {border-radius:4px 0 0 4px;}.dg-pc-toggle.svelte-13xoyn6 button:where(.svelte-13xoyn6):last-child {border-radius:0 4px 4px 0;}"
+  code: ".dg-pc-diff-empty.svelte-13xoyn6,\n	.dg-pc-diff-msg.svelte-13xoyn6 {color:var(--text-muted);padding:16px;}.dg-pc-diff-header.svelte-13xoyn6 {display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px;margin-bottom:8px;border-bottom:1px solid var(--background-modifier-border);position:sticky;top:0;background:var(--background-primary);}.dg-pc-diff-body.svelte-13xoyn6 {padding:0 8px 8px;}.dg-pc-diff-path.svelte-13xoyn6 {display:inline-flex;align-items:center;gap:4px;font-family:var(--font-monospace);font-size:0.85rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}.dg-pc-diff-actions.svelte-13xoyn6 {display:inline-flex;gap:8px;flex:0 0 auto;}.dg-pc-toggle.svelte-13xoyn6 button:where(.svelte-13xoyn6) {border:1px solid var(--background-modifier-border);background:var(--background-secondary);color:var(--text-muted);padding:2px 8px;cursor:pointer;}.dg-pc-toggle.svelte-13xoyn6 button.active:where(.svelte-13xoyn6) {background:var(--interactive-accent);color:var(--text-on-accent);}.dg-pc-toggle.svelte-13xoyn6 button:where(.svelte-13xoyn6):first-child {border-radius:4px 0 0 4px;}.dg-pc-toggle.svelte-13xoyn6 button:where(.svelte-13xoyn6):last-child {border-radius:0 4px 4px 0;}\n\n	@container (max-width: 640px) {.dg-pc-diff-header.svelte-13xoyn6 {flex-wrap:wrap;}.dg-pc-diff-path.svelte-13xoyn6 {flex:1 1 100%;}\n	}"
 };
 function DiffPane($$anchor, $$props) {
   push($$props, false);
   append_styles($$anchor, $$css12);
-  let path2 = prop($$props, "path", 8);
+  let path = prop($$props, "path", 8);
   let status = prop($$props, "status", 8);
   let data = prop($$props, "data", 8);
   let loading = prop($$props, "loading", 8);
@@ -42268,7 +42353,7 @@ function DiffPane($$anchor, $$props) {
       {
         var consequent_1 = ($$anchor3) => {
           var button_2 = root_116();
-          event("click", button_2, () => dispatch("open", { path: path2() }));
+          event("click", button_2, () => dispatch("open", { path: path() }));
           append2($$anchor3, button_2);
         };
         if_block(node_2, ($$render) => {
@@ -42285,7 +42370,7 @@ function DiffPane($$anchor, $$props) {
           append2($$anchor3, div_3);
         };
         var consequent_3 = ($$anchor3) => {
-          var div_4 = root_37();
+          var div_4 = root_38();
           append2($$anchor3, div_4);
         };
         var consequent_4 = ($$anchor3) => {
@@ -42333,7 +42418,7 @@ function DiffPane($$anchor, $$props) {
       reset(div_2);
       template_effect(() => {
         var _a6;
-        set_text(text2, ` ${(_a6 = path2()) != null ? _a6 : ""}`);
+        set_text(text2, ` ${(_a6 = path()) != null ? _a6 : ""}`);
         classes = set_class(button, 1, "svelte-13xoyn6", null, classes, { active: mode() === "split" });
         classes_1 = set_class(button_1, 1, "svelte-13xoyn6", null, classes_1, { active: mode() === "unified" });
       });
@@ -42342,7 +42427,7 @@ function DiffPane($$anchor, $$props) {
       append2($$anchor2, fragment_1);
     };
     if_block(node, ($$render) => {
-      if (!path2()) $$render(consequent);
+      if (!path()) $$render(consequent);
       else $$render(alternate_1, -1);
     });
   }
@@ -42357,7 +42442,7 @@ var root_214 = from_html(`<div class="dg-pc-callout dg-pc-info svelte-gja4cc"><d
 			are now handled differently to fix rendering in tables. This may
 			cause notes with images to show as changed. This is expected and
 			safe to publish.</div></div>`);
-var root_38 = from_html(`<div class="dg-pc-callout dg-pc-info svelte-gja4cc"><div class="dg-pc-callout-header svelte-gja4cc"><div class="dg-pc-callout-title svelte-gja4cc">Bases support added</div> <button class="dg-pc-dismiss svelte-gja4cc" aria-label="Dismiss"><!></button></div> <div>Frontmatter properties are now nested differently to support
+var root_39 = from_html(`<div class="dg-pc-callout dg-pc-info svelte-gja4cc"><div class="dg-pc-callout-header svelte-gja4cc"><div class="dg-pc-callout-title svelte-gja4cc">Bases support added</div> <button class="dg-pc-dismiss svelte-gja4cc" aria-label="Dismiss"><!></button></div> <div>Frontmatter properties are now nested differently to support
 			Obsidian Bases. This may cause notes to show as changed. This is
 			expected and safe to publish. You must update your site template to
 			use Bases.</div></div>`);
@@ -42433,7 +42518,7 @@ function Notices($$anchor, $$props) {
   var node_4 = sibling(node_2, 2);
   {
     var consequent_2 = ($$anchor2) => {
-      var div_4 = root_38();
+      var div_4 = root_39();
       var div_5 = child(div_4);
       var button_1 = sibling(child(div_5), 2);
       var node_5 = child(button_1);
@@ -42457,7 +42542,7 @@ function Notices($$anchor, $$props) {
 var root14 = from_html(`<div class="dg-pc-bar svelte-zy625j"><button class="dg-pc-refresh">Refresh</button> <button class="dg-pc-publish svelte-zy625j"> </button></div>`);
 var $$css14 = {
   hash: "svelte-zy625j",
-  code: ".dg-pc-bar.svelte-zy625j {display:flex;justify-content:flex-end;gap:8px;padding:8px;border-top:1px solid var(--background-modifier-border);}.dg-pc-publish.svelte-zy625j {background:var(--interactive-accent);color:var(--text-on-accent);font-weight:bold;cursor:pointer;}.dg-pc-publish.svelte-zy625j:disabled {opacity:0.5;cursor:default;}"
+  code: ".dg-pc-bar.svelte-zy625j {display:flex;justify-content:flex-end;gap:8px;padding:8px;border-top:1px solid var(--background-modifier-border);}.dg-pc-publish.svelte-zy625j {background:var(--interactive-accent);color:var(--text-on-accent);font-weight:bold;cursor:pointer;}.dg-pc-publish.svelte-zy625j:disabled {opacity:0.5;cursor:default;}\n\n	@container (max-width: 640px) {.dg-pc-publish.svelte-zy625j {flex:1 1 auto;}\n	}"
 };
 function PublishBar($$anchor, $$props) {
   push($$props, false);
@@ -42487,7 +42572,7 @@ function PublishBar($$anchor, $$props) {
 var root15 = from_html(`<span class="dg-builds-dot running svelte-seznc9"></span> <span class="dg-builds-summary svelte-seznc9">Queued\u2026</span>`, 1);
 var root_118 = from_html(`<span></span> <span class="dg-builds-summary svelte-seznc9"> </span>`, 1);
 var root_215 = from_html(`<div class="dg-builds-row svelte-seznc9"><span class="dg-builds-dot running svelte-seznc9"></span> <span class="svelte-seznc9">Waiting for publish to start\u2026</span></div>`);
-var root_39 = from_html(`<div class="dg-builds-error-hint svelte-seznc9"> </div>`);
+var root_310 = from_html(`<div class="dg-builds-error-hint svelte-seznc9"> </div>`);
 var root_47 = from_html(`<li class="svelte-seznc9"> </li>`);
 var root_55 = from_html(`<ul class="dg-builds-error-notes svelte-seznc9"></ul>`);
 var root_64 = from_html(`<div class="dg-builds-error svelte-seznc9"><div class="svelte-seznc9"> </div> <!> <!></div>`);
@@ -42684,7 +42769,7 @@ function RecentBuilds($$anchor, $$props) {
                   var node_10 = sibling(div_5, 2);
                   {
                     var consequent_5 = ($$anchor7) => {
-                      var div_6 = root_39();
+                      var div_6 = root_310();
                       var text_7 = child(div_6, true);
                       reset(div_6);
                       template_effect(() => set_text(text_7, (get2(build), untrack(() => get2(build).friendlyError.hint))));
@@ -42832,16 +42917,17 @@ var root17 = from_html(`<div class="dg-pc-error svelte-g0az0q"> </div>`);
 var root_119 = from_html(`<div class="dg-pc-loading svelte-g0az0q"><!> <div>Calculating publication status\u2026</div></div>`);
 var root_216 = from_html(`<div class="dg-pc-callout dg-pc-home-banner"><div class="dg-pc-callout-header"><div class="dg-pc-callout-title">\u{1F3E1} No home page yet</div> <button class="mod-cta">Choose home page</button></div> <div>Visitors see a plain list of notes at your site root until
 					you pick a note as the home page.</div></div>`);
-var root_310 = from_html(`<div class="dg-pc-syncing svelte-g0az0q">Updating\u2026</div>`);
+var root_311 = from_html(`<div class="dg-pc-syncing svelte-g0az0q">Updating\u2026</div>`);
 var root_48 = from_html(`<div class="dg-pc-progress svelte-g0az0q"><div> </div> <div class="dg-pc-progress-track svelte-g0az0q"><div class="dg-pc-progress-fill svelte-g0az0q"></div></div> <div class="dg-pc-progress-current svelte-g0az0q"> </div></div>`);
 var root_56 = from_html(`<div class="dg-pc-publish-error svelte-g0az0q"><div class="dg-pc-publish-error-header svelte-g0az0q"><strong>Publishing failed</strong> <div class="dg-pc-publish-error-actions svelte-g0az0q"><button>Copy details</button> <button>Dismiss</button></div></div> <pre class="dg-pc-publish-error-message svelte-g0az0q"> </pre> <div class="dg-pc-publish-error-hint svelte-g0az0q">Nothing was lost \u2014 your notes are unchanged. Often
 					publishing again just works. If it keeps failing, click
 					"Copy details" and paste it in the Discord so we can help.</div></div>`);
-var root_65 = from_html(`<!> <!> <!> <!> <!> <!> <div class="dg-pc-layout svelte-g0az0q"><div class="dg-pc-tree-pane svelte-g0az0q"><!> <!></div> <div class="dg-pc-diff-pane svelte-g0az0q"><!></div></div> <!> <!>`, 1);
-var root_75 = from_html(`<div class="dg-pc-root svelte-g0az0q"><!></div>`);
+var root_65 = from_html(`<label class="dg-pc-select-all svelte-g0az0q"><input type="checkbox"/> <span>Select all</span> <span class="dg-pc-select-all-count svelte-g0az0q"> </span></label>`);
+var root_75 = from_html(`<!> <!> <!> <!> <!> <!> <div><div class="dg-pc-tree-pane svelte-g0az0q"><!> <!> <!></div> <div class="dg-pc-diff-pane svelte-g0az0q"><!></div></div> <!> <!>`, 1);
+var root_84 = from_html(`<div class="dg-pc-root svelte-g0az0q"><!></div>`);
 var $$css17 = {
   hash: "svelte-g0az0q",
-  code: ".dg-pc-root.svelte-g0az0q {display:flex;flex-direction:column;height:100%;}.dg-pc-layout.svelte-g0az0q {display:flex;flex:1;min-height:0;}.dg-pc-tree-pane.svelte-g0az0q {flex:0 0 33%;max-width:33%;overflow:auto;border-right:1px solid var(--background-modifier-border);padding:8px;}.dg-pc-diff-pane.svelte-g0az0q {flex:1;overflow:auto;padding:8px;}.dg-pc-loading.svelte-g0az0q {display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-size:1.2rem;gap:8px;}.dg-pc-error.svelte-g0az0q {color:var(--text-error);padding:16px;}.dg-pc-publish-error.svelte-g0az0q {margin:8px 16px;padding:10px 12px;border:1px solid var(--background-modifier-error);border-radius:6px;background-color:var(--background-modifier-error-hover, transparent);}.dg-pc-publish-error-header.svelte-g0az0q {display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--text-error);}.dg-pc-publish-error-actions.svelte-g0az0q {display:flex;gap:6px;}.dg-pc-publish-error-message.svelte-g0az0q {margin:8px 0;padding:6px 8px;max-height:120px;overflow:auto;white-space:pre-wrap;word-break:break-word;font-size:var(--font-ui-smaller);background-color:var(--background-primary);border-radius:4px;}.dg-pc-publish-error-hint.svelte-g0az0q {color:var(--text-muted);font-size:var(--font-ui-smaller);}.dg-pc-syncing.svelte-g0az0q {color:var(--text-muted);font-size:0.8rem;padding:2px 4px 6px;}.dg-pc-progress.svelte-g0az0q {padding:8px;border-bottom:1px solid var(--background-modifier-border);}.dg-pc-progress-track.svelte-g0az0q {height:4px;background:var(--background-modifier-border);border-radius:2px;margin:6px 0;}.dg-pc-progress-fill.svelte-g0az0q {height:100%;background:var(--interactive-accent);transition:width 0.3s ease;}.dg-pc-progress-current.svelte-g0az0q {color:var(--text-muted);font-size:0.8rem;}"
+  code: ".dg-pc-root.svelte-g0az0q {display:flex;flex-direction:column;height:100%;box-sizing:border-box;\n		/* Obsidian mobile overlays its navbar on the view; this variable is\n		   the navbar's height there and 0 on desktop. */padding-bottom:var(--view-bottom-spacing, 0px);container-type:inline-size;}.dg-pc-layout.svelte-g0az0q {display:flex;flex:1;min-height:0;}.dg-pc-tree-pane.svelte-g0az0q {flex:0 0 33%;max-width:33%;overflow:auto;border-right:1px solid var(--background-modifier-border);padding:8px;}.dg-pc-diff-pane.svelte-g0az0q {flex:1;overflow:auto;\n		/* No padding here: the sticky diff header can't cover a scroll\n		   container's padding, which left a strip of content visible above\n		   it. The header and body carry the padding instead. */padding:0;}.dg-pc-select-all.svelte-g0az0q {display:flex;align-items:center;gap:4px;padding:2px 2px 6px;margin-bottom:4px;border-bottom:1px solid var(--background-modifier-border);font-size:0.9rem;cursor:pointer;user-select:none;}.dg-pc-select-all-count.svelte-g0az0q {margin-left:auto;color:var(--text-muted);font-size:0.8rem;font-variant-numeric:tabular-nums;}.dg-pc-loading.svelte-g0az0q {display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;font-size:1.2rem;gap:8px;}.dg-pc-error.svelte-g0az0q {color:var(--text-error);padding:16px;}.dg-pc-publish-error.svelte-g0az0q {margin:8px 16px;padding:10px 12px;border:1px solid var(--background-modifier-error);border-radius:6px;background-color:var(--background-modifier-error-hover, transparent);}.dg-pc-publish-error-header.svelte-g0az0q {display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--text-error);}.dg-pc-publish-error-actions.svelte-g0az0q {display:flex;gap:6px;}.dg-pc-publish-error-message.svelte-g0az0q {margin:8px 0;padding:6px 8px;max-height:120px;overflow:auto;white-space:pre-wrap;word-break:break-word;font-size:var(--font-ui-smaller);background-color:var(--background-primary);border-radius:4px;}.dg-pc-publish-error-hint.svelte-g0az0q {color:var(--text-muted);font-size:var(--font-ui-smaller);}.dg-pc-syncing.svelte-g0az0q {color:var(--text-muted);font-size:0.8rem;padding:2px 4px 6px;}.dg-pc-progress.svelte-g0az0q {padding:8px;border-bottom:1px solid var(--background-modifier-border);}.dg-pc-progress-track.svelte-g0az0q {height:4px;background:var(--background-modifier-border);border-radius:2px;margin:6px 0;}.dg-pc-progress-fill.svelte-g0az0q {height:100%;background:var(--interactive-accent);transition:width 0.3s ease;}.dg-pc-progress-current.svelte-g0az0q {color:var(--text-muted);font-size:0.8rem;}\n\n	/* Narrow views (phones, slim side panes): stack the tree above the diff\n	   instead of squeezing both side by side. */\n	@container (max-width: 640px) {.dg-pc-layout.svelte-g0az0q {flex-direction:column;}.dg-pc-tree-pane.svelte-g0az0q {flex:1 1 auto;max-width:none;border-right:none;border-bottom:1px solid var(--background-modifier-border);}.dg-pc-diff-pane.svelte-g0az0q {flex:0 0 auto;}.dg-pc-layout.dg-pc-has-file.svelte-g0az0q .dg-pc-tree-pane:where(.svelte-g0az0q) {flex:0 1 auto;max-height:45%;}.dg-pc-layout.dg-pc-has-file.svelte-g0az0q .dg-pc-diff-pane:where(.svelte-g0az0q) {flex:1 1 0;}\n	}"
 };
 function PublicationCenter($$anchor, $$props) {
   push($$props, false);
@@ -42850,6 +42936,10 @@ function PublicationCenter($$anchor, $$props) {
   const activeFile = mutable_source();
   const tree = mutable_source();
   const visibleTree = mutable_source();
+  const visiblePaths = mutable_source();
+  const visibleSelectedCount = mutable_source();
+  const allVisibleSelected = mutable_source();
+  const someVisibleSelected = mutable_source();
   const counts = mutable_source();
   var _a6 = mutable_source();
   var _b3 = mutable_source();
@@ -42891,10 +42981,18 @@ function PublicationCenter($$anchor, $$props) {
     yield navigator.clipboard.writeText(details);
     new import_obsidian25.Notice("Error details copied to clipboard.");
   });
-  let diffMode = mutable_source("split");
+  let diffMode = mutable_source(import_obsidian25.Platform.isMobile ? "unified" : "split");
   let diffCache = /* @__PURE__ */ new Map();
   let diffData = mutable_source(null);
   let diffLoading = mutable_source(false);
+  const setIndeterminate = (el, params) => {
+    el.indeterminate = params.indeterminate;
+    return {
+      update(p) {
+        el.indeterminate = p.indeterminate;
+      }
+    };
+  };
   function loadStatus({ background = false } = {}) {
     return __awaiter(this, void 0, void 0, function* () {
       if (get2(refreshing)) return;
@@ -43007,11 +43105,11 @@ function PublicationCenter($$anchor, $$props) {
             set(progressCurrent, message);
           });
           if (deleteResult.success) {
-            for (const path2 of plan.notesToDelete) {
-              removedPaths.add(path2);
+            for (const path of plan.notesToDelete) {
+              removedPaths.add(path);
             }
-            for (const path2 of plan.imagesToDelete) {
-              removedPaths.add(path2);
+            for (const path of plan.imagesToDelete) {
+              removedPaths.add(path);
             }
           } else {
             hadFailure = true;
@@ -43085,21 +43183,21 @@ function PublicationCenter($$anchor, $$props) {
       return { kind: "diff", changes: diffLines(remote, local) };
     });
   }
-  function selectFile(path2) {
+  function selectFile(path) {
     return __awaiter(this, void 0, void 0, function* () {
-      set(activePath, path2);
-      const file = get2(annotated).find((f) => f.path === path2);
+      set(activePath, path);
+      const file = get2(annotated).find((f) => f.path === path);
       if (!file) return;
-      if (diffCache.has(path2)) {
+      if (diffCache.has(path)) {
         set(diffLoading, false);
-        set(diffData, diffCache.get(path2));
+        set(diffData, diffCache.get(path));
         return;
       }
       set(diffLoading, true);
       set(diffData, null);
       const data = yield loadDiff(file);
-      diffCache.set(path2, data);
-      if (get2(activePath) === path2) set(diffData, data);
+      diffCache.set(path, data);
+      if (get2(activePath) === path) set(diffData, data);
       set(diffLoading, false);
     });
   }
@@ -43128,6 +43226,18 @@ function PublicationCenter($$anchor, $$props) {
       set(visibleTree, set(_b3, filterTree(get2(tree), get2(activeFilters))) !== null && safe_get(_b3) !== void 0 ? safe_get(_b3) : { name: "", path: "", isFolder: true, children: [] });
     }
   );
+  legacy_pre_effect(() => (collectFilePaths, get2(visibleTree)), () => {
+    set(visiblePaths, collectFilePaths(get2(visibleTree)));
+  });
+  legacy_pre_effect(() => (get2(visiblePaths), get2(selected)), () => {
+    set(visibleSelectedCount, get2(visiblePaths).filter((p) => get2(selected).has(p)).length);
+  });
+  legacy_pre_effect(() => (get2(visiblePaths), get2(visibleSelectedCount)), () => {
+    set(allVisibleSelected, get2(visiblePaths).length > 0 && get2(visibleSelectedCount) === get2(visiblePaths).length);
+  });
+  legacy_pre_effect(() => (get2(visibleSelectedCount), get2(allVisibleSelected)), () => {
+    set(someVisibleSelected, get2(visibleSelectedCount) > 0 && !get2(allVisibleSelected));
+  });
   legacy_pre_effect(() => get2(annotated), () => {
     set(counts, {
       changed: get2(annotated).filter((f) => f.status === "changed").length,
@@ -43138,7 +43248,7 @@ function PublicationCenter($$anchor, $$props) {
   });
   legacy_pre_effect_reset();
   init();
-  var div = root_75();
+  var div = root_84();
   var node = child(div);
   {
     var consequent = ($$anchor2) => {
@@ -43163,7 +43273,7 @@ function PublicationCenter($$anchor, $$props) {
       append2($$anchor2, div_2);
     };
     var alternate = ($$anchor2) => {
-      var fragment = root_65();
+      var fragment = root_75();
       var node_2 = first_child(fragment);
       Tutorial(node_2, {});
       var node_3 = sibling(node_2, 2);
@@ -43194,7 +43304,7 @@ function PublicationCenter($$anchor, $$props) {
       var node_5 = sibling(node_4, 2);
       {
         var consequent_3 = ($$anchor3) => {
-          var div_5 = root_310();
+          var div_5 = root_311();
           append2($$anchor3, div_5);
         };
         if_block(node_5, ($$render) => {
@@ -43252,6 +43362,7 @@ function PublicationCenter($$anchor, $$props) {
         });
       }
       var div_14 = sibling(node_7, 2);
+      let classes;
       var div_15 = child(div_14);
       var node_8 = child(div_15);
       StatusFilters(node_8, {
@@ -43264,7 +43375,30 @@ function PublicationCenter($$anchor, $$props) {
         $$events: { toggle: (e) => toggleFilter(e.detail.status) }
       });
       var node_9 = sibling(node_8, 2);
-      FileTree(node_9, {
+      {
+        var consequent_6 = ($$anchor3) => {
+          var label = root_65();
+          var input = child(label);
+          remove_input_defaults(input);
+          action(input, ($$node, $$action_arg) => setIndeterminate == null ? void 0 : setIndeterminate($$node, $$action_arg), () => ({ indeterminate: get2(someVisibleSelected) }));
+          effect(() => event("click", input, () => toggleSelection(get2(visiblePaths), !get2(allVisibleSelected))));
+          var span = sibling(input, 4);
+          var text_4 = child(span);
+          reset(span);
+          reset(label);
+          template_effect(() => {
+            var _a7, _b4;
+            set_checked(input, get2(allVisibleSelected));
+            set_text(text_4, `${(_a7 = get2(visibleSelectedCount)) != null ? _a7 : ""} / ${(_b4 = (get2(visiblePaths), untrack(() => get2(visiblePaths).length))) != null ? _b4 : ""}`);
+          });
+          append2($$anchor3, label);
+        };
+        if_block(node_9, ($$render) => {
+          if (get2(visiblePaths), untrack(() => get2(visiblePaths).length > 0)) $$render(consequent_6);
+        });
+      }
+      var node_10 = sibling(node_9, 2);
+      FileTree(node_10, {
         get node() {
           return get2(visibleTree);
         },
@@ -43281,13 +43415,13 @@ function PublicationCenter($$anchor, $$props) {
       });
       reset(div_15);
       var div_16 = sibling(div_15, 2);
-      var node_10 = child(div_16);
+      var node_11 = child(div_16);
       {
         let $0 = derived_safe_equal(() => (get2(activeFile), untrack(() => {
           var _a7, _b4;
           return (_b4 = (_a7 = get2(activeFile)) == null ? void 0 : _a7.status) != null ? _b4 : null;
         })));
-        DiffPane(node_10, {
+        DiffPane(node_11, {
           get path() {
             return get2(activePath);
           },
@@ -43311,21 +43445,21 @@ function PublicationCenter($$anchor, $$props) {
       }
       reset(div_16);
       reset(div_14);
-      var node_11 = sibling(div_14, 2);
+      var node_12 = sibling(div_14, 2);
       {
-        var consequent_6 = ($$anchor3) => {
+        var consequent_7 = ($$anchor3) => {
           RecentBuilds($$anchor3, {
             get tracker() {
               return siteUpdateTracker();
             }
           });
         };
-        if_block(node_11, ($$render) => {
-          if (siteUpdateTracker()) $$render(consequent_6);
+        if_block(node_12, ($$render) => {
+          if (siteUpdateTracker()) $$render(consequent_7);
         });
       }
-      var node_12 = sibling(node_11, 2);
-      PublishBar(node_12, {
+      var node_13 = sibling(node_12, 2);
+      PublishBar(node_13, {
         get selectedCount() {
           return get2(selectedCount);
         },
@@ -43334,6 +43468,7 @@ function PublicationCenter($$anchor, $$props) {
         },
         $$events: { publish: publishSelected, refresh }
       });
+      template_effect(() => classes = set_class(div_14, 1, "dg-pc-layout svelte-g0az0q", null, classes, { "dg-pc-has-file": get2(activePath) !== null }));
       append2($$anchor2, fragment);
     };
     if_block(node, ($$render) => {
@@ -43404,7 +43539,7 @@ var PublicationCenterView = class extends import_obsidian26.ItemView {
         // vault scan runs on each status refresh.
         homePageMissing: this.plugin.siteUpdateTracker ? () => findHomePageFiles(app).length === 0 : null,
         onChooseHomePage: () => this.plugin.openHomePagePicker(),
-        openFile: (path2) => this.openFile(path2),
+        openFile: (path) => this.openFile(path),
         registerApi: (api) => {
           this.refreshApi = api;
         }
@@ -43425,9 +43560,9 @@ var PublicationCenterView = class extends import_obsidian26.ItemView {
     var _a6;
     (_a6 = this.refreshApi) == null ? void 0 : _a6.maybeRefresh();
   }
-  openFile(path2) {
+  openFile(path) {
     return __async(this, null, function* () {
-      const file = this.plugin.app.vault.getAbstractFileByPath(path2);
+      const file = this.plugin.app.vault.getAbstractFileByPath(path);
       if (file instanceof import_obsidian26.TFile) {
         yield this.plugin.app.workspace.getLeaf("tab").openFile(file);
       }

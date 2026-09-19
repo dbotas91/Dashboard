@@ -51,6 +51,7 @@ Estão organizados por ano-mês com referências às Tags.
 - [[Reunião Zoom IQC - 16-08-2026]]
 - [[Ceia e ED - 23-08-2026]]
 - [[Reunião Zoom IQC - 06-09-2026]]
+- [[Ceia e ED - 20-09-2026]]
 
 ## 2025
 ### Tags (Por ano-mês)
