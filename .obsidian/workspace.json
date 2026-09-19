@@ -8,27 +8,89 @@
         "type": "tabs",
         "children": [
           {
-            "id": "937aa8781f4827d6",
+            "id": "1d5f2945fcbaaa92",
             "type": "leaf",
             "state": {
               "type": "hearth-home-view",
-              "state": {},
+              "state": {
+                "scroll": {
+                  "dash-mryonvc1-2834": 154
+                }
+              },
               "icon": "hearth-crystal-themed",
               "title": "Home"
             }
           },
           {
-            "id": "9287d4068b75d257",
+            "id": "73ea074b1d152f45",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
-                "bFile": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
-                "aRef": ""
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: Bible Contradictions  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Ceia e ED - 20-09-2026"
+            }
+          },
+          {
+            "id": "d7c54b8d556cd2e1",
+            "type": "leaf",
+            "state": {
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
+            }
+          },
+          {
+            "id": "6cdfc1d4bc87e314",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Por que dividir a Bíblia corretamente"
+            }
+          },
+          {
+            "id": "5932a97b4de7989d",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://iqc.pt/component/finder/search?q=finan%C3%A7as&Itemid=124",
+                "title": "Portão",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Portão"
             }
           },
           {
@@ -37,142 +99,128 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.biblegateway.com/passage/?search=Salmo%2086&version=ARC",
-                "title": "Salmo 86 ARC - Davi implora ardentemente o socorro de - Bible Gateway",
+                "url": "https://www.biblegateway.com/passage/?search=1%20tim%203%3A8&version=ARC",
+                "title": "1 tim 3:8 ARC - Da mesma sorte os diáconos sejam - Bible Gateway",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Salmo 86 ARC - Davi implora ardentemente o socorro de - Bible Gateway"
+              "title": "1 tim 3:8 ARC - Da mesma sorte os diáconos sejam - Bible Gateway"
             }
           },
           {
-            "id": "77958e421bf881f3",
+            "id": "181fde27afe3bbd8",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://studio.youtube.com/channel/UCELM1FJ0dbvwnwLy2l1gccQ/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
-                "title": "Conteúdo do canal - YouTube Studio",
+                "url": "https://keep.google.com/u/0/",
+                "title": "Google Keep",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Conteúdo do canal - YouTube Studio"
+              "title": "Google Keep"
             }
           },
           {
-            "id": "dd51a5782cf386b5",
+            "id": "666accb912e39519",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.nationalgeographic.pt/ciencia/tuberculose-portugal-mundo-doencas-infecciosas-dia-mundial_3998#google_vignette",
-                "title": "Tuberculose: Uma história longe do fim",
+                "url": "https://keep.google.com/u/2/#home",
+                "title": "Google Keep",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Tuberculose: Uma história longe do fim"
+              "title": "Google Keep"
             }
           },
           {
-            "id": "890090cf625b10dd",
+            "id": "ff3f8bf3eacd27a7",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://drive.google.com/drive/u/3/home",
-                "title": "Página inicial – Google Drive",
+                "url": "https://vercel.com/darios-projects-4e59f1f1/~/deployments",
+                "title": "Deployments – Vercel",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Página inicial – Google Drive"
+              "title": "Deployments – Vercel"
             }
           },
           {
-            "id": "7e3c4f445ab650d0",
+            "id": "34d87d54e9e733eb",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.google.com/maps/place/Av.+Dom+Jo%C3%A3o+I+336,+4435-456+Rio+Tinto/@41.1682154,-8.5533246,17z/data=!3m1!4b1!4m6!3m5!1s0xd24639f50596f03:0xaa20bdbddd8de8a8!8m2!3d41.1682154!4d-8.5507443!16s%2Fg%2F11c5jffrgh?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
-                "title": "Av. Dom João I 336 - Google Maps",
+                "url": "https://notas-dario.vercel.app/",
+                "title": "Home",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Av. Dom João I 336 - Google Maps"
+              "title": "Home"
             }
           },
           {
-            "id": "940a2ae9655736f6",
+            "id": "b51670b6de1ada02",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duck.ai/chat?assist=false",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "url": "https://drive.google.com/drive/u/3/folders/1P9hGhfSF0dvS-E6u7YwadFZXWb0s52ca",
+                "title": "PPTs - Google Drive",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+              "title": "PPTs - Google Drive"
             }
           },
           {
-            "id": "c0912aece148e86a",
+            "id": "7634f0fc7a625c97",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://cinegnose.blogspot.com/2023/07/na-serie-silo-verdade-nao-esta-la-fora.html",
-                "title": "Na série 'Silo' a verdade não está lá fora... foi esquecida ~ Cinema Secreto: Cinegnose",
+                "url": "https://duck.ai/chat",
+                "title": "Resumo finanças: Sermão da Montanha e o evangelho da graça de Deus",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Na série 'Silo' a verdade não está lá fora... foi esquecida ~ Cinema Secreto: Cinegnose"
+              "title": "Resumo finanças: Sermão da Montanha e o evangelho da graça de Deus"
             }
           },
           {
-            "id": "e96528a2c4ce211a",
+            "id": "f6de484b8c27dd42",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/groups/227102807770411",
-                "title": "IQC Memories | Facebook",
+                "url": "https://www.facebook.com/",
+                "title": "(1) Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "IQC Memories | Facebook"
+              "title": "(1) Facebook"
             }
           },
           {
-            "id": "cca3333f3648a1f4",
+            "id": "842c83e1e8cbc32f",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "split-diff-view",
               "state": {
-                "url": "https://iqc.pt/edificacao/literatura/respigos/25020-para-o-abatido-e-desanimado",
-                "title": "Para o abatido e desanimado",
-                "mode": "webview"
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": ""
               },
-              "icon": "globe-2",
-              "title": "Para o abatido e desanimado"
-            }
-          },
-          {
-            "id": "fdd07b0cabda6125",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.xda-developers.com/please-stop-using-isps-dns/?link_source=ta_first_comment&taid=6aaa0ae803988b0001a22a46&utm_campaign=trueanthem&utm_medium=social&utm_source=facebook&fbclid=IwY2xjawUXXOJwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMWIxQzNwbHR4ZlpoQTVFaXFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe4CuEwxXFn_PYPz4cOR1k1HXm7GLVG0uWlHfvYn2SAwshfrijLM6sAEIbJos_aem_p1o7l_oK1BfA3Sicj_n3qQ",
-                "title": "Please stop using your ISP's DNS",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Please stop using your ISP's DNS"
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -206,7 +254,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "C. J C",
+                "query": "?",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -214,7 +262,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Procurar"
+              "title": "Search"
             }
           },
           {
@@ -241,8 +289,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281,
-    "collapsed": true
+    "width": 281
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -431,34 +478,34 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "9287d4068b75d257",
+  "active": "842c83e1e8cbc32f",
   "lastOpenFiles": [
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/How to Rightly Divide.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Introducing a New Book!.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Reasons To Rightly Divide – Part III.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/List -  BibleContradictions.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Reasons To Rightly Divide – Part III.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/List -  BibleContradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Introducing a New Book!.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/How to Rightly Divide.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
-    "09 - STATUS NOTES/Por fazer.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
-    "10 - TAGS/2026-09.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 12-07-2026.md",
+    "10 - TAGS/2026-09.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
