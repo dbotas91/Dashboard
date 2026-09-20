@@ -11,14 +11,14 @@
             "id": "1d5f2945fcbaaa92",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
+              "type": "split-diff-view",
               "state": {
-                "scroll": {
-                  "dash-mryonvc1-2834": 154
-                }
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": ""
               },
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
             }
           },
           {
@@ -49,14 +49,14 @@
             "id": "5932a97b4de7989d",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "webviewer",
               "state": {
-                "aFile": "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
-                "bFile": "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
-                "aRef": ""
+                "url": "https://iqc.pt/component/finder/search?q=finan%C3%A7as&Itemid=124",
+                "title": "Portão",
+                "mode": "webview"
               },
-              "icon": "diff",
-              "title": "Diff: Ceia e ED - 20-09-2026  (Working Tree)"
+              "icon": "globe-2",
+              "title": "Portão"
             }
           },
           {
@@ -164,15 +164,14 @@
               "type": "webviewer",
               "state": {
                 "url": "https://www.facebook.com/",
-                "title": "Facebook",
+                "title": "(2) Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Facebook"
+              "title": "(2) Facebook"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -430,7 +429,7 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "5932a97b4de7989d",
+  "active": "1d5f2945fcbaaa92",
   "lastOpenFiles": [
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
