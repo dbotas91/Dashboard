@@ -121,12 +121,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://notas-dario.vercel.app/",
-                "title": "Home",
+                "url": "https://opencode.ai/docs#configura%C3%A7%C3%A3o",
+                "title": "Introdução | OpenCode",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Home"
+              "title": "Introdução | OpenCode"
             }
           },
           {
@@ -150,11 +150,11 @@
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat",
-                "title": "Resumo finanças: Sermão da Montanha e o evangelho da graça de Deus",
+                "title": "Instalação alterna do Gemini CLI",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Resumo finanças: Sermão da Montanha e o evangelho da graça de Deus"
+              "title": "Instalação alterna do Gemini CLI"
             }
           },
           {
@@ -163,15 +163,16 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/",
-                "title": "(2) Facebook",
+                "url": "https://www.facebook.com/?should_open_composer=false&wp_discovery_redirect=true",
+                "title": "Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "(2) Facebook"
+              "title": "Facebook"
             }
           }
-        ]
+        ],
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -240,7 +241,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -429,8 +431,20 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "1d5f2945fcbaaa92",
+  "active": "7634f0fc7a625c97",
   "lastOpenFiles": [
+    "07 - INDEXES/2025 - Atividades e Tarefas.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "07 - INDEXES/Site IQC.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_manha_10032025.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
+    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
@@ -445,18 +459,6 @@
     "07 - INDEXES/Mensagens de Domingo.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e culto.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/O pecado dos pais para os filhos.md",
-    "10 - TAGS/2026-09.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Meta is earning a fortune on a deluge of fraudulent ads, documents show.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
