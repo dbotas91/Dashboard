@@ -43,6 +43,25 @@
           "ctime": 1785770562294,
           "url": "https://www.howtogeek.com/microsoft-excel-python-handle-spreadsheet-tasks-usually-put-off/",
           "title": "I started using Python in Excel for boring tasks, and it completely changed my workflow"
+        },
+        {
+          "type": "group",
+          "ctime": 1790255309845,
+          "items": [
+            {
+              "type": "url",
+              "ctime": 1790255234307,
+              "url": "https://docs.karatelabs.io/",
+              "title": "Karate Documentation | Karate"
+            },
+            {
+              "type": "url",
+              "ctime": 1790255291493,
+              "url": "https://karatelabs.io/api-testing",
+              "title": "API Testing Framework: REST, GraphQL, SOAP | Karate Open-Source"
+            }
+          ],
+          "title": "Test Automation"
         }
       ],
       "title": "Notas online"
