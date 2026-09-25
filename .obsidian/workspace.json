@@ -144,6 +144,20 @@
             }
           },
           {
+            "id": "49773633cfbfc7e4",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.radiopopular.pt/categoria/desktop?pf-filters=%28%28brand+eq+%27Apple%27%29%29",
+                "title": "Desktop |radiopopular.pt na Radio Popular | Entregas em 24 horas!",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Desktop |radiopopular.pt na Radio Popular | Entregas em 24 horas!"
+            }
+          },
+          {
             "id": "fdd07b0cabda6125",
             "type": "leaf",
             "state": {
@@ -158,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -230,7 +244,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -419,7 +434,7 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "d187ad581aa11266",
+  "active": "e96528a2c4ce211a",
   "lastOpenFiles": [
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types -  which to use and when.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS 1.md",
