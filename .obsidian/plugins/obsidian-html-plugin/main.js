@@ -23178,10 +23178,11 @@ async function sanitizeAndApplyPatches(doc) {
   for (const elm of doc.all) {
     let illSet = /* @__PURE__ */ new Set();
     for (const attr of elm.attributes) {
-      let name = attr.name;
-      if (name.indexOf("-") > 0)
-        name = `${name.split("-")[0]}-*`;
-      if (!BM_ALLOWED_ATTRS.contains(name) && !illSet.has(attr.name))
+      const lowerName = attr.name.toLowerCase();
+      let allowed = lowerName !== "http-equiv" && BM_ALLOWED_ATTRS.contains(lowerName);
+      if (!allowed && lowerName.indexOf("-") > 0)
+        allowed = BM_ALLOWED_ATTRS.contains(`${lowerName.split("-")[0]}-*`);
+      if (!allowed && !illSet.has(attr.name))
         illSet.add(attr.name);
     }
     for (const attrName of illSet) {

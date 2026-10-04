@@ -8,13 +8,79 @@
         "type": "tabs",
         "children": [
           {
-            "id": "937aa8781f4827d6",
+            "id": "571dfc8decc43c28",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS 1.md",
+                "bFile": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS 1.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Please stop using your ISP's DNS 1  (Working Tree)"
+            }
+          },
+          {
+            "id": "f6878e1bf0ab8b69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Please stop using your ISP's DNS"
+            }
+          },
+          {
+            "id": "6cdfc1d4bc87e314",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Por que dividir a Bíblia corretamente"
+            }
+          },
+          {
+            "id": "5932a97b4de7989d",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://iqc.pt/component/finder/search?q=finan%C3%A7as&Itemid=124",
+                "title": "Portão",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Portão"
             }
           },
           {
@@ -23,105 +89,129 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.biblegateway.com/passage/?search=Salmo%2086&version=ARC",
-                "title": "Salmo 86 ARC - Davi implora ardentemente o socorro de - Bible Gateway",
+                "url": "https://www.biblegateway.com/passage/?search=Ef%C3%A9sios%203&version=ARC",
+                "title": "Efésios 3 ARC - O ministério da vocação dos gentios - Bible Gateway",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Salmo 86 ARC - Davi implora ardentemente o socorro de - Bible Gateway"
+              "title": "Efésios 3 ARC - O ministério da vocação dos gentios - Bible Gateway"
             }
           },
           {
-            "id": "77958e421bf881f3",
+            "id": "181fde27afe3bbd8",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://studio.youtube.com/channel/UCELM1FJ0dbvwnwLy2l1gccQ/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D",
-                "title": "Conteúdo do canal - YouTube Studio",
+                "url": "https://keep.google.com/u/0/",
+                "title": "Google Keep",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Conteúdo do canal - YouTube Studio"
+              "title": "Google Keep"
             }
           },
           {
-            "id": "dd51a5782cf386b5",
+            "id": "666accb912e39519",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.nationalgeographic.pt/ciencia/tuberculose-portugal-mundo-doencas-infecciosas-dia-mundial_3998#google_vignette",
-                "title": "Tuberculose: Uma história longe do fim",
+                "url": "https://keep.google.com/u/2/#home",
+                "title": "Google Keep",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Tuberculose: Uma história longe do fim"
+              "title": "Google Keep"
             }
           },
           {
-            "id": "890090cf625b10dd",
+            "id": "ff3f8bf3eacd27a7",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://drive.google.com/drive/u/3/home",
-                "title": "Página inicial – Google Drive",
+                "url": "https://vercel.com/darios-projects-4e59f1f1/~/deployments",
+                "title": "Deployments – Vercel",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Página inicial – Google Drive"
+              "title": "Deployments – Vercel"
             }
           },
           {
-            "id": "7e3c4f445ab650d0",
+            "id": "34d87d54e9e733eb",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.youtube.com/watch?v=A3nAnuGMrbU&list=TLPQMjgwOTIwMjZDN1Q91cYnFg&index=5",
-                "title": "Lenovo Legion C700 Hands On First Look! - YouTube",
+                "url": "https://opencode.ai/docs#configura%C3%A7%C3%A3o",
+                "title": "Introdução | OpenCode",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Lenovo Legion C700 Hands On First Look! - YouTube"
+              "title": "Introdução | OpenCode"
             }
           },
           {
-            "id": "940a2ae9655736f6",
+            "id": "b51670b6de1ada02",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duck.ai/chat?assist=false",
-                "title": "Tablets com alimentação USB-C direta",
+                "url": "https://drive.google.com/drive/u/3/folders/1P9hGhfSF0dvS-E6u7YwadFZXWb0s52ca",
+                "title": "PPTs - Google Drive",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Tablets com alimentação USB-C direta"
+              "title": "PPTs - Google Drive"
             }
           },
           {
-            "id": "74e63fbaf87d040f",
+            "id": "7634f0fc7a625c97",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.worten.pt/produtos/monitor-portatil-asus-zenscreen-mb169ck-15-6-full-hd-5-ms-60-hz-8379732",
-                "title": "Monitor Portátil Asus ZenScreen MB169CK (15.6'' - Full HD - 5 ms - 60 Hz) | Worten.pt",
+                "url": "https://duck.ai/chat",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Monitor Portátil Asus ZenScreen MB169CK (15.6'' - Full HD - 5 ms - 60 Hz) | Worten.pt"
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
           },
           {
-            "id": "e96528a2c4ce211a",
+            "id": "5decc4e3c4086ef8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Ceia e ED - 20-09-2026"
+            }
+          },
+          {
+            "id": "f6de484b8c27dd42",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/ObservadorOnTime/posts/pfbid02LpBtMh4NJKZq53KENCuCGFRPVrXeonBoSPqor4oEtrtmvGNJGVN8fAdXP3nxvcSal",
+                "url": "https://www.facebook.com/?should_open_composer=false&wp_discovery_redirect=true",
                 "title": "Facebook",
                 "mode": "webview"
               },
@@ -130,77 +220,21 @@
             }
           },
           {
-            "id": "4ae1b7e384c9e223",
+            "id": "231c6c9c8b11ec6b",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duckduckgo.com/?q=que+feramentas+existem+para+automa%C3%A7%C3%A3o+de+testes+web+apps+e+api+em+C%23%3F&ia=web",
-                "title": "que feramentas existem para automação de testes web apps e api em C#? at DuckDuckGo",
+                "url": "https://www.howtogeek.com/i-tried-the-viral-linux-distro-that-raised-millions/?link_source=ta_first_comment&taid=6ab01a73b3a9c4000143f263&utm_campaign=trueanthem&utm_medium=social&utm_source=facebook&fbclid=IwY2xjawUdEK1wZG9mBWV4dG4DYWVtAjEwAGJyaWQRMDlzWERFb3RGM0RUTnE1RFZzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEek4S_ytyWC7y-SoOIPpud5xKduE6R32IVSQl2jdxrV-8gPmsJm0YbQ38z3hs_aem_HfmJMdH43KFoWEwxwkVG6Q",
+                "title": "I tried the viral Linux distro that raised $18,700,000",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "que feramentas existem para automação de testes web apps e api em C#? at DuckDuckGo"
-            }
-          },
-          {
-            "id": "e1c494234ce3a3d8",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://sicnoticias.pt/meteorologia/2026-09-27-ciclogenese-explosiva-atinge-indiretamente-portugal-e-deixa-sete-distritos-sob-aviso-esta-segunda-feira-b4ce2508?fbclid=IwY2xjawUnBxdleHRuA2FlbQIxMABwZG9mBWJyaWQRMFB3eDlCdzY2aVgzR201eFdzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeFAZp6hamdin4h2Vhd1d8M5ImC1SRwwopKu81-49CSD8QD1B1WP5FoT0eZ24_aem_JBQ4Lc9YKnShIxu5EosyKA#Echobox=1790543940",
-                "title": "\"Ciclogénese explosiva\" atinge indiretamente Portugal e deixa sete distritos sob aviso esta segunda-feira - SIC Notícias",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "\"Ciclogénese explosiva\" atinge indiretamente Portugal e deixa sete distritos sob aviso esta segunda-feira - SIC Notícias"
-            }
-          },
-          {
-            "id": "49773633cfbfc7e4",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.radiopopular.pt/categoria/desktop?pf-filters=%28%28brand+eq+%27Apple%27%29%29",
-                "title": "Desktop |radiopopular.pt na Radio Popular | Entregas em 24 horas!",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Desktop |radiopopular.pt na Radio Popular | Entregas em 24 horas!"
-            }
-          },
-          {
-            "id": "fdd07b0cabda6125",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://karatelabs.io/api-testing",
-                "title": "API Testing Framework: REST, GraphQL, SOAP | Karate Open-Source",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "API Testing Framework: REST, GraphQL, SOAP | Karate Open-Source"
-            }
-          },
-          {
-            "id": "c0912aece148e86a",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://duckduckgo.com/?q=how+can+i+create+malicious+images+to+test+an+upload+system%3F&ia=web",
-                "title": "how can i create malicious images to test an upload system? at DuckDuckGo",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "how can i create malicious images to test an upload system? at DuckDuckGo"
+              "title": "I tried the viral Linux distro that raised $18,700,000"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -234,7 +268,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "C. J C",
+                "query": "?",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -242,7 +276,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Procurar"
+              "title": "Search"
             }
           },
           {
@@ -272,8 +306,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281,
-    "collapsed": true
+    "width": 281
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -462,34 +495,34 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "7e3c4f445ab650d0",
+  "active": "f6878e1bf0ab8b69",
   "lastOpenFiles": [
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types -  which to use and when.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS 1.md",
-    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types - which to use and when.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-10.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 20-09-2026.md",
     "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/How to Rightly Divide.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Introducing a New Book!.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Reasons To Rightly Divide – Part III.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/List -  BibleContradictions.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e culto - 29-03-2026.md",
-    "09 - STATUS NOTES/Por fazer.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 29-07-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
-    "10 - TAGS/2026-09.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-09.md",
+    "07 - INDEXES/2025 - Atividades e Tarefas.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "07 - INDEXES/Site IQC.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_manha_10032025.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
+    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Reasons To Rightly Divide – Part III.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/List -  BibleContradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Introducing a New Book!.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/How to Rightly Divide.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",

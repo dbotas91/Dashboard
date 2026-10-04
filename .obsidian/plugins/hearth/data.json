@@ -13,6 +13,8 @@
   "newNoteFolder": "",
   "newNoteFilename": "",
   "searchContents": true,
+  "searchInstantAnswers": true,
+  "hiddenInstantAnswers": [],
   "searchEngine": "builtin",
   "webSearchEngine": "duckduckgo",
   "backgroundKind": "default",
@@ -61,6 +63,7 @@
     }
   ],
   "stackOnNarrow": true,
+  "narrowWidth": 700,
   "disableExternalCalls": false,
   "openIn": "tab",
   "openInOverrides": {
@@ -532,7 +535,7 @@
   "operonWrites": false,
   "maxWidth": 1600,
   "fullWidth": false,
-  "lastSeenVersion": "3.1.0",
+  "lastSeenVersion": "3.3.0",
   "setupStatus": "done",
   "authorKey": "",
   "authorKeySaved": false,

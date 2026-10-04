@@ -10,6 +10,7 @@
   "autoCommitOnlyStaged": false,
   "disablePush": false,
   "pullBeforePush": true,
+  "squashCommitsBeforePush": false,
   "disablePopups": false,
   "showErrorNotices": true,
   "disablePopupsForNoChanges": false,
@@ -35,6 +36,8 @@
   "authorInHistoryView": "full",
   "dateInHistoryView": true,
   "diffStyle": "split",
+  "diffTimeout": 50,
+  "autoStageOnEmptyIndex": true,
   "hunks": {
     "showSigns": true,
     "hunkCommands": false,

@@ -2041,8 +2041,8 @@ var require_logger = __commonJS({
   "node_modules/js-logger/src/logger.js"(exports, module2) {
     (function(global2) {
       "use strict";
-      var Logger16 = {};
-      Logger16.VERSION = "1.6.1";
+      var Logger17 = {};
+      Logger17.VERSION = "1.6.1";
       var logHandler;
       var contextualLoggersByNameMap = {};
       var bind2 = function(scope, func) {
@@ -2064,13 +2064,13 @@ var require_logger = __commonJS({
       var defineLogLevel = function(value, name) {
         return { value, name };
       };
-      Logger16.TRACE = defineLogLevel(1, "TRACE");
-      Logger16.DEBUG = defineLogLevel(2, "DEBUG");
-      Logger16.INFO = defineLogLevel(3, "INFO");
-      Logger16.TIME = defineLogLevel(4, "TIME");
-      Logger16.WARN = defineLogLevel(5, "WARN");
-      Logger16.ERROR = defineLogLevel(8, "ERROR");
-      Logger16.OFF = defineLogLevel(99, "OFF");
+      Logger17.TRACE = defineLogLevel(1, "TRACE");
+      Logger17.DEBUG = defineLogLevel(2, "DEBUG");
+      Logger17.INFO = defineLogLevel(3, "INFO");
+      Logger17.TIME = defineLogLevel(4, "TIME");
+      Logger17.WARN = defineLogLevel(5, "WARN");
+      Logger17.ERROR = defineLogLevel(8, "ERROR");
+      Logger17.OFF = defineLogLevel(99, "OFF");
       var ContextualLogger = function(defaultContext) {
         this.context = defaultContext;
         this.setLevel(defaultContext.filterLevel);
@@ -2093,28 +2093,28 @@ var require_logger = __commonJS({
           return lvl.value >= filterLevel.value;
         },
         trace: function() {
-          this.invoke(Logger16.TRACE, arguments);
+          this.invoke(Logger17.TRACE, arguments);
         },
         debug: function() {
-          this.invoke(Logger16.DEBUG, arguments);
+          this.invoke(Logger17.DEBUG, arguments);
         },
         info: function() {
-          this.invoke(Logger16.INFO, arguments);
+          this.invoke(Logger17.INFO, arguments);
         },
         warn: function() {
-          this.invoke(Logger16.WARN, arguments);
+          this.invoke(Logger17.WARN, arguments);
         },
         error: function() {
-          this.invoke(Logger16.ERROR, arguments);
+          this.invoke(Logger17.ERROR, arguments);
         },
         time: function(label) {
           if (typeof label === "string" && label.length > 0) {
-            this.invoke(Logger16.TIME, [label, "start"]);
+            this.invoke(Logger17.TIME, [label, "start"]);
           }
         },
         timeEnd: function(label) {
           if (typeof label === "string" && label.length > 0) {
-            this.invoke(Logger16.TIME, [label, "end"]);
+            this.invoke(Logger17.TIME, [label, "end"]);
           }
         },
         // Invokes the logger callback if it's not being filtered.
@@ -2124,9 +2124,9 @@ var require_logger = __commonJS({
           }
         }
       };
-      var globalLogger = new ContextualLogger({ filterLevel: Logger16.OFF });
+      var globalLogger = new ContextualLogger({ filterLevel: Logger17.OFF });
       (function() {
-        var L = Logger16;
+        var L = Logger17;
         L.enabledFor = bind2(globalLogger, globalLogger.enabledFor);
         L.trace = bind2(globalLogger, globalLogger.trace);
         L.debug = bind2(globalLogger, globalLogger.debug);
@@ -2137,10 +2137,10 @@ var require_logger = __commonJS({
         L.error = bind2(globalLogger, globalLogger.error);
         L.log = L.info;
       })();
-      Logger16.setHandler = function(func) {
+      Logger17.setHandler = function(func) {
         logHandler = func;
       };
-      Logger16.setLevel = function(level) {
+      Logger17.setLevel = function(level) {
         globalLogger.setLevel(level);
         for (var key2 in contextualLoggersByNameMap) {
           if (contextualLoggersByNameMap.hasOwnProperty(key2)) {
@@ -2148,13 +2148,13 @@ var require_logger = __commonJS({
           }
         }
       };
-      Logger16.getLevel = function() {
+      Logger17.getLevel = function() {
         return globalLogger.getLevel();
       };
-      Logger16.get = function(name) {
+      Logger17.get = function(name) {
         return contextualLoggersByNameMap[name] || (contextualLoggersByNameMap[name] = new ContextualLogger(merge3({ name }, globalLogger.context)));
       };
-      Logger16.createDefaultHandler = function(options) {
+      Logger17.createDefaultHandler = function(options) {
         options = options || {};
         options.formatter = options.formatter || function defaultMessageFormatter(messages, context2) {
           if (context2.name) {
@@ -2173,7 +2173,7 @@ var require_logger = __commonJS({
           messages = Array.prototype.slice.call(messages);
           var hdlr = console.log;
           var timerLabel;
-          if (context2.level === Logger16.TIME) {
+          if (context2.level === Logger17.TIME) {
             timerLabel = (context2.name ? "[" + context2.name + "] " : "") + messages[0];
             if (messages[1] === "start") {
               if (console.time) {
@@ -2189,15 +2189,15 @@ var require_logger = __commonJS({
               }
             }
           } else {
-            if (context2.level === Logger16.WARN && console.warn) {
+            if (context2.level === Logger17.WARN && console.warn) {
               hdlr = console.warn;
-            } else if (context2.level === Logger16.ERROR && console.error) {
+            } else if (context2.level === Logger17.ERROR && console.error) {
               hdlr = console.error;
-            } else if (context2.level === Logger16.INFO && console.info) {
+            } else if (context2.level === Logger17.INFO && console.info) {
               hdlr = console.info;
-            } else if (context2.level === Logger16.DEBUG && console.debug) {
+            } else if (context2.level === Logger17.DEBUG && console.debug) {
               hdlr = console.debug;
-            } else if (context2.level === Logger16.TRACE && console.trace) {
+            } else if (context2.level === Logger17.TRACE && console.trace) {
               hdlr = console.trace;
             }
             options.formatter(messages, context2);
@@ -2205,22 +2205,22 @@ var require_logger = __commonJS({
           }
         };
       };
-      Logger16.useDefaults = function(options) {
-        Logger16.setLevel(options && options.defaultLevel || Logger16.DEBUG);
-        Logger16.setHandler(Logger16.createDefaultHandler(options));
+      Logger17.useDefaults = function(options) {
+        Logger17.setLevel(options && options.defaultLevel || Logger17.DEBUG);
+        Logger17.setHandler(Logger17.createDefaultHandler(options));
       };
-      Logger16.setDefaults = Logger16.useDefaults;
+      Logger17.setDefaults = Logger17.useDefaults;
       if (typeof define === "function" && define.amd) {
-        define(Logger16);
+        define(Logger17);
       } else if (typeof module2 !== "undefined" && module2.exports) {
-        module2.exports = Logger16;
+        module2.exports = Logger17;
       } else {
-        Logger16._prevLogger = global2.Logger;
-        Logger16.noConflict = function() {
-          global2.Logger = Logger16._prevLogger;
-          return Logger16;
+        Logger17._prevLogger = global2.Logger;
+        Logger17.noConflict = function() {
+          global2.Logger = Logger17._prevLogger;
+          return Logger17;
         };
-        global2.Logger = Logger16;
+        global2.Logger = Logger17;
       }
     })(exports);
   }
@@ -11109,12 +11109,18 @@ var RepositoryConnection = class {
       state2.baseTreeSha = newTree.data.sha;
     });
   }
+  /**
+   * Publish notes and their changed images as one commit (or a few chained
+   * commits for very large batches). Returns the paths whose upload failed
+   * and were logged and left out of the commit, so callers can tell a
+   * partial publish from a full one.
+   */
   updateFiles(_0) {
     return __async(this, arguments, function* (files, remoteImageHashes = {}, onProgress) {
       const latestCommit = yield this.getLatestCommit();
       if (!latestCommit) {
         logger.error("Could not get latest commit");
-        return;
+        return files.map((file) => file.getPath());
       }
       const repoDataPromise = this.octokit.request(
         "GET /repos/{owner}/{repo}",
@@ -11195,12 +11201,16 @@ var RepositoryConnection = class {
         baseTreeSha: latestCommit.commit.tree.sha,
         defaultBranch: (yield repoDataPromise).data.default_branch
       };
+      const failedPaths = [];
       for (const [index3, jobChunk] of chunks.entries()) {
         const treeList = yield Promise.all(
           jobChunk.map((job) => __async(this, null, function* () {
             const entry = yield job.run();
             stepsDone += 1;
             onProgress == null ? void 0 : onProgress(stepsDone, totalSteps, `Uploaded ${job.path}`);
+            if (!entry) {
+              failedPaths.push(job.path);
+            }
             return entry;
           }))
         );
@@ -11223,6 +11233,7 @@ var RepositoryConnection = class {
         stepsDone += 1;
       }
       onProgress == null ? void 0 : onProgress(totalSteps, totalSteps, "Published");
+      return failedPaths;
     });
   }
   /**
@@ -12932,7 +12943,7 @@ var fixMarkdownHeaderSyntax = (rawHeading) => {
 };
 
 // src/compiler/GardenPageCompiler.ts
-var import_js_logger7 = __toESM(require_logger());
+var import_js_logger8 = __toESM(require_logger());
 
 // src/compiler/DataviewCompiler.ts
 var import_obsidian4 = require("obsidian");
@@ -13472,6 +13483,128 @@ function delay(milliseconds) {
     setTimeout(resolve, milliseconds);
   });
 }
+
+// src/compiler/FastTextColorCompiler.ts
+var import_js_logger7 = __toESM(require_logger());
+var builtin = (id) => ({
+  id,
+  color: "#000000",
+  useCssColorVariable: true,
+  colorVariable: `--color-${id}`
+});
+var DEFAULT_FTC_SETTINGS = {
+  themeIndex: 0,
+  themes: [
+    {
+      name: "builtin",
+      colors: [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "cyan",
+        "blue",
+        "purple",
+        "pink"
+      ].map(builtin)
+    },
+    {
+      name: "default",
+      colors: [
+        { id: "red", color: "#ff0000" },
+        { id: "green", color: "#00ff00" },
+        { id: "blue", color: "#0000ff" },
+        { id: "cyan", color: "#00ffff" },
+        { id: "magenta", color: "#ff00ff" },
+        { id: "yellow", color: "#ffff00" },
+        { id: "black", color: "#000000" }
+      ]
+    }
+  ]
+};
+var TOKEN = /~=\{([^\s}]+)\}|=~|\n[ \t]*\n/g;
+var resolveCssVariable = (name) => {
+  const value = getComputedStyle(document.body).getPropertyValue(name).trim();
+  return value ? `var(${name}, ${value})` : `var(${name})`;
+};
+var toInlineStyle = (color, resolveVariable = resolveCssVariable) => {
+  var _a6, _b3, _c2;
+  return [
+    `color: ${color.useCssColorVariable && color.colorVariable ? resolveVariable(color.colorVariable) : color.color}`,
+    color.italic && "font-style: italic",
+    color.bold && "font-weight: bold",
+    ((_a6 = color.line_mode) == null ? void 0 : _a6.state) && color.line_mode.state !== "none" && `text-decoration: ${color.line_mode.state}`,
+    ((_b3 = color.cap_mode) == null ? void 0 : _b3.state) === "all_caps" && "text-transform: uppercase",
+    ((_c2 = color.cap_mode) == null ? void 0 : _c2.state) === "small_caps" && "font-variant: small-caps"
+  ].filter(Boolean).join("; ").replace(/"/g, "&quot;");
+};
+var convertFastTextColor = (text2, themeName, colors, resolveVariable) => {
+  const open = [];
+  const closeAll = () => "</span>".repeat(open.splice(0).filter(Boolean).length);
+  const converted = transformMarkdownSync(text2, (node) => {
+    if (node.type === "codeblock" || node.type === "frontmatter") {
+      return open.length ? closeAll() + node.source : void 0;
+    }
+    if (node.type !== "text") {
+      return;
+    }
+    return node.source.replace(TOKEN, (match2, id) => {
+      if (id) {
+        const color = colors.find((c) => c.id === id);
+        open.push(!!color);
+        return color ? `<span class="ftc-color-${themeName}-${id}" style="${toInlineStyle(
+          color,
+          resolveVariable
+        )}">` : match2;
+      }
+      if (match2 === "=~") {
+        return open.pop() ? "</span>" : match2;
+      }
+      return closeAll() + match2;
+    });
+  });
+  return converted + closeAll();
+};
+var FastTextColorCompiler = class {
+  constructor(vault) {
+    this.vault = vault;
+    this.compile = (file) => (text2) => __async(this, null, function* () {
+      var _a6, _b3, _c2;
+      if (!text2.includes("~={")) {
+        return text2;
+      }
+      const settings = yield this.loadSettings();
+      if (!settings) {
+        return text2;
+      }
+      const themeName = (_c2 = (_a6 = file.frontmatter) == null ? void 0 : _a6["ftcTheme"]) != null ? _c2 : (_b3 = settings.themes[settings.themeIndex]) == null ? void 0 : _b3.name;
+      const theme = settings.themes.find((t) => t.name === themeName);
+      if (!theme) {
+        return text2;
+      }
+      return convertFastTextColor(text2, theme.name, theme.colors);
+    });
+  }
+  loadSettings() {
+    return __async(this, null, function* () {
+      const pluginDir = `${this.vault.configDir}/plugins/fast-text-color`;
+      try {
+        if (!(yield this.vault.adapter.exists(`${pluginDir}/manifest.json`))) {
+          return null;
+        }
+        if (!(yield this.vault.adapter.exists(`${pluginDir}/data.json`))) {
+          return DEFAULT_FTC_SETTINGS;
+        }
+        return __spreadValues(__spreadValues({}, DEFAULT_FTC_SETTINGS), JSON.parse(
+          yield this.vault.adapter.read(`${pluginDir}/data.json`)
+        ));
+      } catch (error) {
+        import_js_logger7.default.warn("Could not read Fast Text Color settings", error);
+        return null;
+      }
+    });
+  }
+};
 
 // src/compiler/CanvasCompiler.ts
 var import_obsidian5 = require("obsidian");
@@ -20305,7 +20438,7 @@ function selectBaseView(baseFileText, viewName, baseFileName) {
       (view) => (view == null ? void 0 : view.name) === viewName
     );
     if (!selectedView) {
-      import_js_logger7.default.warn(
+      import_js_logger8.default.warn(
         `Base view "${viewName}" not found in ${baseFileLabel}. Embedding all views.`
       );
       return baseFileText;
@@ -20314,7 +20447,7 @@ function selectBaseView(baseFileText, viewName, baseFileName) {
       views: [selectedView]
     }));
   } catch (error) {
-    import_js_logger7.default.warn(
+    import_js_logger8.default.warn(
       `Failed to parse ${baseFileLabel} while selecting view "${viewName}". Embedding all views.`,
       error
     );
@@ -20351,7 +20484,7 @@ var GardenPageCompiler = class {
             filter2.replace
           );
         } catch (e) {
-          import_js_logger7.default.error(
+          import_js_logger8.default.error(
             `Invalid regex: ${filter2.pattern} ${filter2.flags}`
           );
           new import_obsidian6.Notice(
@@ -20380,6 +20513,10 @@ var GardenPageCompiler = class {
     this.convertDataViews = (file) => (text2) => __async(null, null, function* () {
       const dataviewCompiler = new DataviewCompiler();
       return yield dataviewCompiler.compile(file)(text2);
+    });
+    this.convertFastTextColor = (file) => (text2) => __async(this, null, function* () {
+      const fastTextColorCompiler = new FastTextColorCompiler(this.vault);
+      return yield fastTextColorCompiler.compile(file)(text2);
     });
     this.convertLinksToFullPath = (file) => (text2) => __async(this, null, function* () {
       return yield transformMarkdown(text2, (node) => {
@@ -20868,7 +21005,7 @@ ${headerSection}
           const cmsPdfPath = yield readAsset(linkedFile);
           return generatePdfIframe(cmsPdfPath, altText);
         } catch (e) {
-          import_js_logger7.default.warn("Error processing transcluded PDF link:", e);
+          import_js_logger8.default.warn("Error processing transcluded PDF link:", e);
           return buildWikilinkFallback(
             pdfNameFromFile,
             metadataParts
@@ -20891,7 +21028,7 @@ ${headerSection}
           const cmsImgPath = yield readAsset(linkedFile);
           return `![${node.label}](${encodeURI(cmsImgPath)})`;
         } catch (e) {
-          import_js_logger7.default.warn("Error processing image link:", e);
+          import_js_logger8.default.warn("Error processing image link:", e);
           return;
         }
       });
@@ -20932,7 +21069,7 @@ ${headerSection}
             pdfName || linkedFile.basename
           );
         } catch (e) {
-          import_js_logger7.default.warn("Error processing PDF link:", e);
+          import_js_logger8.default.warn("Error processing PDF link:", e);
           return `[${pdfName || "PDF"}](${encodeURI(pdfPath)})`;
         }
       });
@@ -20957,7 +21094,7 @@ ${headerSection}
           const cmsImgPath = `/img/user/${linkedFile.path}`;
           return `[${linkDisplayName}](${encodeURI(cmsImgPath)})`;
         } catch (e) {
-          import_js_logger7.default.warn("Error processing linked image:", e);
+          import_js_logger8.default.warn("Error processing linked image:", e);
           return;
         }
       };
@@ -21024,6 +21161,7 @@ ${headerSection}
         this.createBlockIDs,
         this.createTranscludedText(0),
         this.convertDataViews,
+        this.convertFastTextColor,
         this.convertLinksToFullPath,
         this.convertMarkdownLinksToFullPath,
         this.removeObsidianComments,
@@ -21066,6 +21204,7 @@ ${headerSection}
         this.createBlockIDs,
         this.createTranscludedText(0),
         this.convertDataViews,
+        this.convertFastTextColor,
         this.convertLinksToFullPath,
         this.convertMarkdownLinksToFullPath,
         this.removeObsidianComments,
@@ -21160,7 +21299,7 @@ ${headerSection}
 };
 
 // src/publisher/Publisher.ts
-var import_js_logger8 = __toESM(require_logger());
+var import_js_logger9 = __toESM(require_logger());
 
 // src/utils/debugLog.ts
 var MAX_LINES = 500;
@@ -21318,7 +21457,7 @@ var Publisher = class {
           }
         }
       } catch (e) {
-        import_js_logger8.default.error(
+        import_js_logger9.default.error(
           `Failed to extract images from canvas ${file.path}`,
           e
         );
@@ -21356,7 +21495,7 @@ var Publisher = class {
             }
           }
         } catch (e) {
-          import_js_logger8.default.error(e);
+          import_js_logger9.default.error(e);
         }
       }
       return {
@@ -21365,44 +21504,28 @@ var Publisher = class {
       };
     });
   }
-  deleteNote(vaultFilePath, sha) {
-    return __async(this, null, function* () {
-      const path = notePathBase(this.settings) + vaultFilePath;
-      return yield this.delete(path, sha);
-    });
-  }
-  deleteImage(vaultFilePath, sha) {
-    return __async(this, null, function* () {
-      const path = imagePathBase(this.settings) + vaultFilePath;
-      return yield this.delete(path, sha);
-    });
-  }
-  /** If provided with sha, garden connection does not need to get it seperately! */
-  delete(path, sha) {
-    return __async(this, null, function* () {
-      this.validateSettings();
-      const userGardenConnection = new RepositoryConnection(
-        yield PublishPlatformConnectionFactory.createPublishPlatformConnection(
-          this.settings
-        )
-      );
-      const deleted = yield userGardenConnection.deleteFile(path, {
-        sha
-      });
-      return !!deleted;
-    });
-  }
+  /**
+   * Publish one note and its changed images as a single commit, so it costs
+   * one build (and one Forestry publish) however many images it carries.
+   */
   publish(file) {
     return __async(this, null, function* () {
       if (!isPublishFrontmatterValid(file.frontmatter)) {
         return false;
       }
       try {
-        const [text2, assets] = file.compiledFile;
+        this.validateSettings();
+        const userGardenConnection = new RepositoryConnection(
+          yield PublishPlatformConnectionFactory.createPublishPlatformConnection(
+            this.settings
+          )
+        );
         const remoteImageHashes = yield this.getRemoteImageHashes();
-        yield this.uploadText(file.getPath(), text2, file == null ? void 0 : file.remoteHash);
-        yield this.uploadAssets(assets, remoteImageHashes);
-        return true;
+        const failedPaths = yield userGardenConnection.updateFiles(
+          [file],
+          remoteImageHashes
+        );
+        return failedPaths.length === 0;
       } catch (error) {
         if (error instanceof LimitReachedError) {
           throw error;
@@ -21439,7 +21562,7 @@ var Publisher = class {
         if (error instanceof LimitReachedError) {
           throw error;
         }
-        import_js_logger8.default.error("Batch delete failed", error);
+        import_js_logger9.default.error("Batch delete failed", error);
         return { success: false, error: describeError(error) };
       }
     });
@@ -21469,7 +21592,7 @@ var Publisher = class {
         if (error instanceof LimitReachedError) {
           throw error;
         }
-        import_js_logger8.default.error("Batch publish failed", error);
+        import_js_logger9.default.error("Batch publish failed", error);
         return { success: false, error: describeError(error) };
       }
     });
@@ -21490,57 +21613,6 @@ var Publisher = class {
         this.settings
       );
       return siteManager.getImageHashes(contentTree);
-    });
-  }
-  uploadToGithub(path, content, remoteFileHash) {
-    return __async(this, null, function* () {
-      this.validateSettings();
-      let message = `Update content ${path}`;
-      const userGardenConnection = new RepositoryConnection(
-        yield PublishPlatformConnectionFactory.createPublishPlatformConnection(
-          this.settings
-        )
-      );
-      if (!remoteFileHash) {
-        const file = yield userGardenConnection.getFile(path).catch(() => {
-          import_js_logger8.default.info(`File ${path} does not exist, adding`);
-        });
-        remoteFileHash = file == null ? void 0 : file.sha;
-        if (!remoteFileHash) {
-          message = `Add content ${path}`;
-        }
-      }
-      return yield userGardenConnection.updateFile({
-        content,
-        path,
-        message,
-        sha: remoteFileHash
-      });
-    });
-  }
-  uploadText(filePath, content, sha) {
-    return __async(this, null, function* () {
-      content = gBase64.encode(content);
-      const path = notePathBase(this.settings) + filePath;
-      yield this.uploadToGithub(path, content, sha);
-    });
-  }
-  uploadImage(filePath, content, sha) {
-    return __async(this, null, function* () {
-      const path = sitePath(this.settings, filePath);
-      yield this.uploadToGithub(path, content, sha);
-    });
-  }
-  uploadAssets(_0) {
-    return __async(this, arguments, function* (assets, remoteImageHashes = {}) {
-      for (const image of assets.images) {
-        const remoteHash = remoteImageHashes[imageHashKey(image.path)];
-        if (remoteHash && image.localHash && remoteHash === image.localHash) {
-          import_js_logger8.default.debug(`Skipping unchanged image: ${image.path}`);
-          continue;
-        }
-        yield this.uploadImage(image.path, image.content, remoteHash);
-      }
     });
   }
   validateSettings() {
@@ -34558,10 +34630,10 @@ function RewriteSettings($$anchor, $$props) {
 }
 
 // src/views/SettingsView/SettingView.ts
-var import_js_logger11 = __toESM(require_logger());
+var import_js_logger12 = __toESM(require_logger());
 
 // src/forestry/ForestryApi.ts
-var import_js_logger9 = __toESM(require_logger());
+var import_js_logger10 = __toESM(require_logger());
 function getForestryBaseUrl() {
   return "https://api.forestry.md/app";
 }
@@ -34631,7 +34703,7 @@ var ForestryApi = class {
         return value;
       } catch (e) {
         if (e instanceof ForestryApiError) throw e;
-        import_js_logger9.default.error(e);
+        import_js_logger10.default.error(e);
         throw classifyError(e);
       }
     });
@@ -34656,7 +34728,7 @@ var ForestryApi = class {
         }
         return { ok: true, value: response.data };
       } catch (e) {
-        import_js_logger9.default.error(e);
+        import_js_logger10.default.error(e);
         const error = classifyError(e);
         return { ok: false, kind: error.kind, message: error.message };
       }
@@ -34679,7 +34751,7 @@ var ForestryApi = class {
         }
         return response.data.value;
       } catch (e) {
-        import_js_logger9.default.error(e);
+        import_js_logger10.default.error(e);
         return null;
       }
     });
@@ -34695,7 +34767,7 @@ var ForestryApi = class {
         }
         return response.data;
       } catch (e) {
-        import_js_logger9.default.error(e);
+        import_js_logger10.default.error(e);
         return null;
       }
     });
@@ -38632,7 +38704,7 @@ var GardenPluginsModal = class {
 };
 
 // src/gardenPlugins/GardenPluginManager.ts
-var import_js_logger10 = __toESM(require_logger());
+var import_js_logger11 = __toESM(require_logger());
 
 // src/gardenPlugins/manifest.ts
 var GARDEN_PLUGIN_MANIFEST_NAME = "garden-plugin.json";
@@ -38736,7 +38808,7 @@ function shouldSkipRepoFile(path) {
 }
 
 // src/gardenPlugins/GardenPluginManager.ts
-var logger4 = import_js_logger10.default.get("garden-plugin-manager");
+var logger4 = import_js_logger11.default.get("garden-plugin-manager");
 var COMMUNITY_PLUGINS_URL = "https://raw.githubusercontent.com/oleeskild/digitalgarden-plugins/main/community-plugins.json";
 var GardenPluginManager = class {
   constructor(userGardenConnection, settings, createSourceConnection = (owner, repo) => new RepositoryConnection(
@@ -39212,9 +39284,9 @@ var SettingView = class {
       new import_obsidian18.Setting(this.settingsRootElement).setName("Enable debug logging").setDesc(
         "Show detailed logs in the developer console. Useful for troubleshooting."
       ).addToggle((toggle) => {
-        toggle.setValue(this.settings.logLevel === import_js_logger11.default.DEBUG).onChange((value) => __async(this, null, function* () {
-          this.settings.logLevel = value ? import_js_logger11.default.DEBUG : void 0;
-          import_js_logger11.default.setLevel(value ? import_js_logger11.default.DEBUG : import_js_logger11.default.WARN);
+        toggle.setValue(this.settings.logLevel === import_js_logger12.default.DEBUG).onChange((value) => __async(this, null, function* () {
+          this.settings.logLevel = value ? import_js_logger12.default.DEBUG : void 0;
+          import_js_logger12.default.setLevel(value ? import_js_logger12.default.DEBUG : import_js_logger12.default.WARN);
           yield this.saveSettings();
         }));
       });
@@ -39948,7 +40020,7 @@ var SettingView = class {
           try {
             yield this.addFavicon(octokit, owner, repo);
           } catch (error) {
-            import_js_logger11.default.error("Failed to update favicon", error);
+            import_js_logger12.default.error("Failed to update favicon", error);
             new import_obsidian18.Notice(
               "Failed to update favicon. Check the developer console for details."
             );
@@ -39956,7 +40028,7 @@ var SettingView = class {
           try {
             yield this.addLogo(octokit, owner, repo);
           } catch (error) {
-            import_js_logger11.default.error("Failed to update logo", error);
+            import_js_logger12.default.error("Failed to update logo", error);
             new import_obsidian18.Notice(
               "Failed to update logo. Check the developer console for details."
             );
@@ -40446,7 +40518,7 @@ var SettingView = class {
         faviconsAreIdentical = // @ts-expect-error TODO: abstract octokit response
         currentFaviconOnSite.data.content.replace(/\n/g, "") === base64SettingsFaviconContent;
         if (faviconsAreIdentical) {
-          import_js_logger11.default.info("Favicons are identical, skipping update");
+          import_js_logger12.default.info("Favicons are identical, skipping update");
           return;
         }
       } catch (error) {
@@ -40468,7 +40540,7 @@ var SettingView = class {
   addLogo(octokit, owner, repo) {
     return __async(this, null, function* () {
       var _a6;
-      import_js_logger11.default.info(
+      import_js_logger12.default.info(
         `addLogo called, logoPath setting: "${this.settings.logoPath}", owner: "${owner}", repo: "${repo}"`
       );
       const logoBasePath = sitePath(this.settings, "/logo");
@@ -40517,7 +40589,7 @@ var SettingView = class {
       const base64LogoContent = arrayBufferToBase64(logoContent);
       const logoExtension = logoFile.extension.toLowerCase();
       const logoPath = `${logoBasePath}.${logoExtension}`;
-      import_js_logger11.default.info(
+      import_js_logger12.default.info(
         `Uploading logo from ${this.settings.logoPath} to ${logoPath}`
       );
       let logoExists = true;
@@ -40535,7 +40607,7 @@ var SettingView = class {
         logosAreIdentical = // @ts-expect-error TODO: abstract octokit response
         currentLogoOnSite.data.content.replace(/\n/g, "") === base64LogoContent;
         if (logosAreIdentical) {
-          import_js_logger11.default.info("Logos are identical, skipping update");
+          import_js_logger12.default.info("Logos are identical, skipping update");
           return;
         }
       } catch (e) {
@@ -40555,7 +40627,7 @@ var SettingView = class {
             requestPayload
           );
         } catch (error) {
-          import_js_logger11.default.error("Failed to upload logo", error);
+          import_js_logger12.default.error("Failed to upload logo", error);
           new import_obsidian18.Notice(
             "Failed to upload logo. Check the developer console for details."
           );
@@ -40758,12 +40830,12 @@ var SettingView = class {
         button.setButtonText("Checking...");
         button.setDisabled(true);
       });
-      import_js_logger11.default.time("checkForUpdate");
+      import_js_logger12.default.time("checkForUpdate");
       let updater;
       try {
         updater = yield (yield siteManager.getTemplateUpdater()).checkForUpdates();
       } catch (error) {
-        import_js_logger11.default.warn("Failed to check for template updates", error);
+        import_js_logger12.default.warn("Failed to check for template updates", error);
         loadingContainer.empty();
         new import_obsidian18.Setting(loadingContainer).setName("Site Template").setDesc(
           "Unable to check for updates. Please check your connection and credentials."
@@ -40773,7 +40845,7 @@ var SettingView = class {
         });
         return;
       }
-      import_js_logger11.default.timeEnd("checkForUpdate");
+      import_js_logger12.default.timeEnd("checkForUpdate");
       loadingContainer.empty();
       const updateAvailable = hasUpdates(updater);
       new import_obsidian18.Setting(loadingContainer).setName("Site Template").setDesc(
@@ -41002,7 +41074,7 @@ var UpdateGardenRepositoryModal = class extends import_obsidian19.Modal {
 };
 
 // src/views/DigitalGardenSettingTab.ts
-var import_js_logger12 = __toESM(require_logger());
+var import_js_logger13 = __toESM(require_logger());
 var DigitalGardenSettingTab = class extends import_obsidian20.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
@@ -41043,9 +41115,9 @@ var DigitalGardenSettingTab = class extends import_obsidian20.PluginSettingTab {
           return;
         }
         try {
-          import_js_logger12.default.time("update");
+          import_js_logger13.default.time("update");
           const prUrl = yield updater.updateTemplate();
-          import_js_logger12.default.timeEnd("update");
+          import_js_logger13.default.timeEnd("update");
           if (prUrl) {
             this.plugin.settings.prHistory.push(prUrl);
             yield this.plugin.saveSettings();
@@ -41069,7 +41141,7 @@ var DigitalGardenSettingTab = class extends import_obsidian20.PluginSettingTab {
 };
 
 // main.ts
-var import_js_logger15 = __toESM(require_logger());
+var import_js_logger16 = __toESM(require_logger());
 
 // src/views/GardenPluginSettings/InstallPluginModal.ts
 var import_obsidian22 = require("obsidian");
@@ -41361,7 +41433,7 @@ function notifyLimitReached(error) {
 
 // src/localExport/LocalExporter.ts
 var import_obsidian24 = require("obsidian");
-var import_js_logger13 = __toESM(require_logger());
+var import_js_logger14 = __toESM(require_logger());
 var PRESERVED_FILES = /* @__PURE__ */ new Set(["notes.json", "notes.11tydata.js"]);
 var IMG_USER_PREFIX = "/img/user/";
 var LocalExporter = class {
@@ -41391,7 +41463,7 @@ var LocalExporter = class {
           "favicon.svg"
         );
       } catch (e) {
-        import_js_logger13.default.warn("Failed to copy favicon", e);
+        import_js_logger14.default.warn("Failed to copy favicon", e);
       }
       try {
         yield this.copyFromVault(
@@ -41400,7 +41472,7 @@ var LocalExporter = class {
           "logo"
         );
       } catch (e) {
-        import_js_logger13.default.warn("Failed to copy logo", e);
+        import_js_logger14.default.warn("Failed to copy logo", e);
       }
       const marked = yield this.publisher.getFilesMarkedForPublishing();
       const notesDir = this.path.join(targetPath, base, NOTE_PATH_BASE);
@@ -41442,7 +41514,7 @@ var LocalExporter = class {
             imagesWritten++;
           }
         } catch (e) {
-          import_js_logger13.default.error(`Failed to export ${file.getPath()}`, e);
+          import_js_logger14.default.error(`Failed to export ${file.getPath()}`, e);
           failed++;
         }
       }
@@ -41453,7 +41525,7 @@ var LocalExporter = class {
         try {
           const imageFile = this.vault.getAbstractFileByPath(imagePath);
           if (!(imageFile instanceof import_obsidian24.TFile)) {
-            import_js_logger13.default.warn(`Image not found in vault: ${imagePath}`);
+            import_js_logger14.default.warn(`Image not found in vault: ${imagePath}`);
             continue;
           }
           const binary = yield this.vault.readBinary(imageFile);
@@ -41465,7 +41537,7 @@ var LocalExporter = class {
           writtenImagePaths.add(imagePath);
           imagesWritten++;
         } catch (e) {
-          import_js_logger13.default.error(`Failed to export image ${imagePath}`, e);
+          import_js_logger14.default.error(`Failed to export image ${imagePath}`, e);
         }
       }
       yield this.cleanStaleFiles(notesDir, writtenNotePaths, PRESERVED_FILES);
@@ -41557,9 +41629,9 @@ var LocalExporter = class {
           targetPath,
           Buffer.from(yield this.vault.readBinary(sourceFile))
         );
-        import_js_logger13.default.debug(`Copied file from ${sourcePath} to ${targetPath}`);
+        import_js_logger14.default.debug(`Copied file from ${sourcePath} to ${targetPath}`);
       } else {
-        import_js_logger13.default.warn(`File not found at '${sourcePath}'`);
+        import_js_logger14.default.warn(`File not found at '${sourcePath}'`);
       }
     });
   }
@@ -41575,7 +41647,7 @@ var LocalExporter = class {
           }
           if (!writtenPaths.has(relativePath)) {
             yield this.fs.unlink(filePath);
-            import_js_logger13.default.debug(`Cleaned stale file: ${filePath}`);
+            import_js_logger14.default.debug(`Cleaned stale file: ${filePath}`);
             let parent = this.path.dirname(filePath);
             while (parent !== dir && parent.startsWith(dir)) {
               try {
@@ -41588,7 +41660,7 @@ var LocalExporter = class {
           }
         }
       } catch (e) {
-        import_js_logger13.default.warn("Failed to clean stale files", e);
+        import_js_logger14.default.warn("Failed to clean stale files", e);
       }
     });
   }
@@ -42912,7 +42984,7 @@ function Tutorial($$anchor) {
 }
 
 // src/views/PublicationCenterView/PublicationCenter.svelte
-var import_js_logger14 = __toESM(require_logger());
+var import_js_logger15 = __toESM(require_logger());
 var root17 = from_html(`<div class="dg-pc-error svelte-g0az0q"> </div>`);
 var root_119 = from_html(`<div class="dg-pc-loading svelte-g0az0q"><!> <div>Calculating publication status\u2026</div></div>`);
 var root_216 = from_html(`<div class="dg-pc-callout dg-pc-home-banner"><div class="dg-pc-callout-header"><div class="dg-pc-callout-title">\u{1F3E1} No home page yet</div> <button class="mod-cta">Choose home page</button></div> <div>Visitors see a plain list of notes at your site root until
@@ -43121,7 +43193,7 @@ function PublicationCenter($$anchor, $$props) {
         if (e instanceof LimitReachedError) {
           notifyLimitReached(e);
         } else {
-          import_js_logger14.default.error("Publication Center: publish failed", e);
+          import_js_logger15.default.error("Publication Center: publish failed", e);
           set(publishError, describeError(e));
           new import_obsidian25.Notice("Publishing failed. See the details in the Publication Center.");
         }
@@ -43943,20 +44015,20 @@ var DEFAULT_SETTINGS = {
   localExportPath: "",
   contentBaseDir: ""
 };
-import_js_logger15.default.useDefaults({
-  defaultLevel: import_js_logger15.default.WARN,
+import_js_logger16.default.useDefaults({
+  defaultLevel: import_js_logger16.default.WARN,
   formatter: function(messages, _context) {
     messages.unshift((/* @__PURE__ */ new Date()).toUTCString());
     messages.unshift("DG: ");
   }
 });
-var consoleLogHandler = import_js_logger15.default.createDefaultHandler({
+var consoleLogHandler = import_js_logger16.default.createDefaultHandler({
   formatter: function(messages, _context) {
     messages.unshift((/* @__PURE__ */ new Date()).toUTCString());
     messages.unshift("DG: ");
   }
 });
-import_js_logger15.default.setHandler((messages, context2) => {
+import_js_logger16.default.setHandler((messages, context2) => {
   appendDebugLogLine(context2.level.name, Array.from(messages));
   consoleLogHandler(messages, context2);
 });
@@ -43978,9 +44050,9 @@ var DigitalGarden = class extends import_obsidian31.Plugin {
       setDebugLogContext(`v${this.appVersion}`);
       console.log("Initializing DigitalGarden plugin v" + this.appVersion);
       yield this.loadSettings();
-      this.settings.logLevel && import_js_logger15.default.setLevel(this.settings.logLevel);
-      import_js_logger15.default.info(
-        "Digital garden log level set to " + import_js_logger15.default.getLevel().name
+      this.settings.logLevel && import_js_logger16.default.setLevel(this.settings.logLevel);
+      import_js_logger16.default.info(
+        "Digital garden log level set to " + import_js_logger16.default.getLevel().name
       );
       this.addSettingTab(new DigitalGardenSettingTab(this.app, this));
       yield this.addCommands();
@@ -44026,7 +44098,7 @@ var DigitalGarden = class extends import_obsidian31.Plugin {
       if (forestrySettings.forestryPageName === pageInfo.value.pageName && forestrySettings.baseUrl === pageInfo.value.baseUrl) {
         return;
       }
-      import_js_logger15.default.info(
+      import_js_logger16.default.info(
         `Garden info changed (${forestrySettings.baseUrl} -> ${pageInfo.value.baseUrl}); updating stored settings`
       );
       forestrySettings.forestryPageName = pageInfo.value.pageName;
@@ -44201,7 +44273,7 @@ var DigitalGarden = class extends import_obsidian31.Plugin {
         })
       });
       if (this.settings["ENABLE_DEVELOPER_TOOLS"] && import_obsidian31.Platform.isDesktop) {
-        import_js_logger15.default.info("Developer tools enabled");
+        import_js_logger16.default.info("Developer tools enabled");
         const publisher = new Publisher(
           this.app.vault,
           this.app.metadataCache,
@@ -44219,7 +44291,7 @@ var DigitalGarden = class extends import_obsidian31.Plugin {
             })
           });
         }).catch((e) => {
-          import_js_logger15.default.error("Unable to load generateGardenSnapshot", e);
+          import_js_logger16.default.error("Unable to load generateGardenSnapshot", e);
         });
       }
       this.addCommand({
@@ -44227,7 +44299,7 @@ var DigitalGarden = class extends import_obsidian31.Plugin {
         name: "Publish All Notes Marked for Publish",
         // TODO: move to publisher?
         callback: () => __async(this, null, function* () {
-          var _a6, _b3;
+          var _a6, _b3, _c2;
           if (this.isPublishing) {
             new import_obsidian31.Notice(
               "A publish operation is already in progress. Please wait for it to complete."
@@ -44284,16 +44356,23 @@ Run "Copy debug log" from the command palette to share details when asking for h
               );
             }
             statusBar.incrementMultiple(filesToPublish.length);
-            for (const file of filesToDelete) {
-              yield publisher.deleteNote(file.path);
-              statusBar.increment();
+            const deleteResult = yield publisher.deleteBatch(
+              filesToDelete.map((file) => file.path),
+              imagesToDelete.map((image) => image.path)
+            );
+            if (!deleteResult.success) {
+              new import_obsidian31.Notice(
+                `Deleting failed: ${(_b3 = deleteResult.error) != null ? _b3 : "unknown error"}
+
+Run "Copy debug log" from the command palette to share details when asking for help.`,
+                0
+              );
             }
-            for (const image of imagesToDelete) {
-              yield publisher.deleteImage(image.path);
-              statusBar.increment();
-            }
+            statusBar.incrementMultiple(
+              filesToDelete.length + imagesToDelete.length
+            );
             statusBar.finish(8e3);
-            (_b3 = this.siteUpdateTracker) == null ? void 0 : _b3.notifyPublished();
+            (_c2 = this.siteUpdateTracker) == null ? void 0 : _c2.notifyPublished();
             new import_obsidian31.Notice(
               `Successfully published ${filesToPublish.length} notes to your garden.`
             );
@@ -44413,7 +44492,7 @@ Run "Copy debug log" from the command palette to share details when asking for h
           );
         }
       } catch (e) {
-        import_js_logger15.default.error("Local export failed", e);
+        import_js_logger16.default.error("Local export failed", e);
       }
     });
   }
@@ -44701,7 +44780,7 @@ Run "Copy debug log" from the command palette to share details when asking for h
         this.openHomePagePicker();
         return;
       }
-      import_js_logger15.default.info("Ignoring digital-garden deep link", params);
+      import_js_logger16.default.info("Ignoring digital-garden deep link", params);
     });
   }
   connectWithCode(code) {
@@ -44719,7 +44798,7 @@ Run "Copy debug log" from the command palette to share details when asking for h
         );
         this.afterForestryConnected();
       } catch (e) {
-        import_js_logger15.default.error("Connect via deep link failed", e);
+        import_js_logger16.default.error("Connect via deep link failed", e);
         if (e instanceof ForestryApiError && e.kind === "unauthorized") {
           new import_obsidian31.Notice(
             "This connect link is invalid or has expired. Open your garden in the Forestry.md dashboard and click Connect again.",
