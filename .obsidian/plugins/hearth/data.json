@@ -230,6 +230,75 @@
       "iconLucide": "scroll-text"
     },
     {
+      "id": "dash-mrys1og4-5375",
+      "name": "Mensagens",
+      "cards": [
+        {
+          "id": "card-mrysdkfq-486",
+          "x": 0,
+          "y": 0,
+          "kind": "web",
+          "title": "",
+          "url": "https://www.biblegateway.com",
+          "w": 6,
+          "h": 4,
+          "fx": 0,
+          "fy": 336,
+          "fw": 1,
+          "fh": 713,
+          "sandboxTrusted": true,
+          "leafView": {
+            "viewType": "webviewer"
+          }
+        },
+        {
+          "id": "card-mrytohcq-9864",
+          "x": 0,
+          "y": 4,
+          "kind": "embed",
+          "title": "",
+          "w": 4,
+          "h": 3,
+          "fx": 0,
+          "fy": 0,
+          "fw": 0.5,
+          "fh": 320,
+          "target": "07 - INDEXES/Mensagens de Domingo.md",
+          "editable": true,
+          "secondView": {
+            "target": "07 - INDEXES/Reunião de Homens.md",
+            "editable": true
+          }
+        },
+        {
+          "id": "card-mryu0cnx-8123",
+          "x": 6,
+          "y": 0,
+          "kind": "embed",
+          "title": "",
+          "target": "07 - INDEXES/Reuniões de Jovens.md",
+          "w": 6,
+          "h": 3,
+          "fx": 0.5050632911392405,
+          "fy": 0,
+          "fw": 0.49493670886075947,
+          "fh": 320,
+          "secondView": {
+            "target": "07 - INDEXES/Meditações.md",
+            "editable": true
+          },
+          "editable": true
+        }
+      ],
+      "iconLucide": "book",
+      "fitToPage": false,
+      "showSearch": false,
+      "header": {
+        "showTitle": true,
+        "title": "Mensagens"
+      }
+    },
+    {
       "id": "dash-mryn5rqa-6356",
       "name": "Atividades e tarefas",
       "cards": [
@@ -446,78 +515,9 @@
       },
       "fitToPage": false,
       "showSearch": false
-    },
-    {
-      "id": "dash-mrys1og4-5375",
-      "name": "Redes sociais",
-      "cards": [
-        {
-          "id": "card-mrysdkfq-486",
-          "x": 0,
-          "y": 0,
-          "kind": "web",
-          "title": "",
-          "url": "https://www.biblegateway.com",
-          "w": 6,
-          "h": 4,
-          "fx": 0,
-          "fy": 336,
-          "fw": 1,
-          "fh": 713,
-          "sandboxTrusted": true,
-          "leafView": {
-            "viewType": "webviewer"
-          }
-        },
-        {
-          "id": "card-mrytohcq-9864",
-          "x": 0,
-          "y": 4,
-          "kind": "embed",
-          "title": "",
-          "w": 4,
-          "h": 3,
-          "fx": 0,
-          "fy": 0,
-          "fw": 0.5,
-          "fh": 320,
-          "target": "07 - INDEXES/Mensagens de Domingo.md",
-          "editable": true,
-          "secondView": {
-            "target": "07 - INDEXES/Reunião de Homens.md",
-            "editable": true
-          }
-        },
-        {
-          "id": "card-mryu0cnx-8123",
-          "x": 6,
-          "y": 0,
-          "kind": "embed",
-          "title": "",
-          "target": "07 - INDEXES/Reuniões de Jovens.md",
-          "w": 6,
-          "h": 3,
-          "fx": 0.5050632911392405,
-          "fy": 0,
-          "fw": 0.49493670886075947,
-          "fh": 320,
-          "secondView": {
-            "target": "07 - INDEXES/Meditações.md",
-            "editable": true
-          },
-          "editable": true
-        }
-      ],
-      "iconLucide": "book",
-      "fitToPage": false,
-      "showSearch": false,
-      "header": {
-        "showTitle": true,
-        "title": "Mensagens"
-      }
     }
   ],
-  "activeDashboardId": "dash-mryn5rqa-6356",
+  "activeDashboardId": "dash-mryonvc1-2834",
   "pinnedCards": [],
   "gridColumns": 12,
   "rowHeight": 92,

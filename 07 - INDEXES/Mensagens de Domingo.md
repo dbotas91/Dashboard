@@ -25,6 +25,7 @@ kanban-plugin: board
 - [ ] [[As promessas de Deus para nós hoje]]
 - [ ] Por que não sou islâmico
 - [ ] [[Por que não sou ateu]]
+- [ ] [[Estímulos]]
 
 
 ## A falar

@@ -18,24 +18,43 @@ Tags: [[2026-10]], [[Zoom]]
 7. final - oração
 
 # Músicas
-Digno - ministerio
-Aqui não é meu lar - ministerio
-Como o cervo anela - Ministerio
+Comigo fica
+No Controle
+Quero andar com meu Jesus
 
 # Leitura da Bíblia
-> [!quote]- Gálatas 6
-> 3 Por esta causa, eu, Paulo, _sou_ o prisioneiro de Jesus Cristo por vós, os gentios, 2 se é que tendes ouvido a dispensação da graça de Deus, que para convosco me foi dada; 3 como me foi este mistério manifestado pela revelação como acima, em pouco, vos escrevi, 4 pelo que, quando ledes, podeis perceber a minha compreensão do mistério de Cristo, 5 o qual, noutros séculos, não foi manifestado aos filhos dos homens, como, agora, tem sido revelado pelo Espírito aos seus santos apóstolos e profetas, 6 _a saber,_ que os gentios são coerdeiros, e de um mesmo corpo, e participantes da promessa em Cristo pelo evangelho; 7 do qual fui feito ministro, pelo dom da graça de Deus, que me foi dado segundo a operação do seu poder. 8 A mim, o mínimo de todos os santos, me foi dada esta graça de anunciar entre os gentios, por meio do evangelho, as riquezas incompreensíveis de Cristo 9 e demonstrar a todos qual seja a dispensação do mistério, que, desde os séculos, esteve oculto em Deus, que tudo criou; 10 para que, agora, pela igreja, a multiforme sabedoria de Deus seja conhecida dos principados e potestades nos céus, 11 segundo o eterno propósito que fez em Cristo Jesus, nosso Senhor, 12 no qual temos ousadia e acesso com confiança, pela nossa fé nele. 13 Portanto, _vos_ peço que não desfaleçais nas minhas tribulações por vós, que são a vossa glória.
+> [!quote]- Efésios 3
+> 3 Por esta causa, eu, Paulo, _sou_ o prisioneiro de Jesus Cristo por vós, os gentios, 
+> 2 se é que tendes ouvido a dispensação da graça de Deus, que para convosco me foi dada; 
+> 3 como me foi este mistério manifestado pela revelação como acima, em pouco, vos escrevi, 
+> 4 pelo que, quando ledes, podeis perceber a minha compreensão do mistério de Cristo, 
+> 5 o qual, noutros séculos, não foi manifestado aos filhos dos homens, como, agora, tem sido revelado pelo Espírito aos seus santos apóstolos e profetas, 
+> 6 _a saber,_ que os gentios são coerdeiros, e de um mesmo corpo, e participantes da promessa em Cristo pelo evangelho; 
+> 7 do qual fui feito ministro, pelo dom da graça de Deus, que me foi dado segundo a operação do seu poder. 
+> 8 A mim, o mínimo de todos os santos, me foi dada esta graça de anunciar entre os gentios, por meio do evangelho, as riquezas incompreensíveis de Cristo 
+> 9 e demonstrar a todos qual seja a dispensação do mistério, que, desde os séculos, esteve oculto em Deus, que tudo criou; 
+> 10 para que, agora, pela igreja, a multiforme sabedoria de Deus seja conhecida dos principados e potestades nos céus, 
+> 11 segundo o eterno propósito que fez em Cristo Jesus, nosso Senhor, 
+> 12 no qual temos ousadia e acesso com confiança, pela nossa fé nele. 
+> 13 Portanto, _vos_ peço que não desfaleçais nas minhas tribulações por vós, que são a vossa glória.
 > ### A oração de Paulo pelos efésios
-> 14 Por causa disso, me ponho de joelhos perante o Pai de nosso Senhor Jesus Cristo, 15 do qual toda a família nos céus e na terra toma o nome, 16 para que, segundo as riquezas da sua glória, vos conceda que sejais corroborados com poder pelo seu Espírito no homem interior; 17 para que Cristo habite, pela fé, no vosso coração; a fim de, estando arraigados e fundados em amor, 18 poderdes perfeitamente compreender, com todos os santos, qual seja a largura, e o comprimento, e a altura, e a profundidade 19 e conhecer o amor de Cristo, que excede _todo_ entendimento, para que sejais cheios de toda a plenitude de Deus.
-> 20 Ora, àquele que é poderoso para fazer tudo muito mais abundantemente além daquilo que pedimos ou pensamos, segundo o poder que em nós opera, 21 a esse glória na igreja, por Jesus Cristo, em todas as gerações, para todo o sempre. Amém!
+> 14 Por causa disso, me ponho de joelhos perante o Pai de nosso Senhor Jesus Cristo, 
+> 15 do qual toda a família nos céus e na terra toma o nome, 
+> 16 para que, segundo as riquezas da sua glória, vos conceda que sejais corroborados com poder pelo seu Espírito no homem interior; 
+> 17 para que Cristo habite, pela fé, no vosso coração; a fim de, estando arraigados e fundados em amor, 
+> 18 poderdes perfeitamente compreender, com todos os santos, qual seja a largura, e o comprimento, e a altura, e a profundidade 
+> 19 e conhecer o amor de Cristo, que excede _todo_ entendimento, para que sejais cheios de toda a plenitude de Deus.
+> 20 Ora, àquele que é poderoso para fazer tudo muito mais abundantemente além daquilo que pedimos ou pensamos, segundo o poder que em nós opera, 
+> 21 a esse glória na igreja, por Jesus Cristo, em todas as gerações, para todo o sempre. Amém!
 
 # Motivos de oração 
-- [ ] Paulo Ferreira e família
+- [ ] Paulo Ferreira e família (irmã Cláudia e irmã Lucinda)
 - [ ] Irmã Dinita - A prima da Dinita, que estava muito doente, e de quem ela cuidou durante uns dias, faleceu. Orem pela Dinita. Estive a falar com ela ao telefone um bom bocado e ela envia saudações para os irmãos. 
+- [ ] Irmão Tibério
 - [ ] Irmão Carlos Cerqueira
 	- [ ] Ministério dos irmãos Peter e Nelly Cerqueira
 - [ ] Obra em Angola, Emiliano e família
-- [ ] 
+- [ ] Orar pelo Miguel Gonçalves
 - [x] Transcrição do Casamento do Márcio e da Naná para Portugal ✅ 2026-10-04
 	- [x] Momento importante para a família ouvir novamente o evangelho da Graça de Deus ✅ 2026-10-04
 - [x] Ministério dos irmãos Peter e Nelly Cerqueira ✅ 2026-10-04
