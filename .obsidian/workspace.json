@@ -93,12 +93,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://keep.google.com/u/0/",
-                "title": "Google Keep",
+                "url": "https://duckduckgo.com/?q=brave&ia=web",
+                "title": "brave at DuckDuckGo",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Google Keep"
+              "title": "brave at DuckDuckGo"
             }
           },
           {
@@ -135,7 +135,7 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://opencode.ai/docs#configura%C3%A7%C3%A3o",
+                "url": "https://opencode.ai/docs/pt-br",
                 "title": "Introdução | OpenCode",
                 "mode": "webview"
               },
@@ -163,12 +163,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://www.facebook.com/?should_open_composer=false&wp_discovery_redirect=true",
-                "title": "(2) Facebook",
+                "url": "https://www.facebook.com/",
+                "title": "Facebook",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "(2) Facebook"
+              "title": "Facebook"
             }
           },
           {
@@ -186,7 +186,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -258,7 +258,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 281,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -447,8 +448,9 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "f6de484b8c27dd42",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/I tried the viral Linux distro that raised $18,700,000.md",
     "06 - DAILY-WEEKLY TASKS/0. Read me - Tasks.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
@@ -474,7 +476,6 @@
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa_github_public_key_continue.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
     "Site IQC/Tarefas",
     "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",

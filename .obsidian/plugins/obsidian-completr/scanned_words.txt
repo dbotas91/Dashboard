@@ -2047,6 +2047,8 @@ Pareceu
 POLICES
 Publico
 Praticar
+Popular
+Pinta
 obj
 oQw
 ot
@@ -3972,6 +3974,8 @@ offsetting
 ordenamos
 obsessivo
 operas
+opinionated
+overlaps
 Title
 Type
 Transparency
@@ -5866,6 +5870,7 @@ Trai
 Tivemos
 Transcri
 TLS
+Towards
 FEFF
 Form
 Font
@@ -9911,6 +9916,8 @@ Cornthwaite
 Confiar
 Cinak
 Comigo
+Claude
+Chromium
 Mozilla
 ModDate
 MK
@@ -11884,6 +11891,8 @@ Marketers
 Ministerio
 Montanha
 Minimization
+Moonlight
+Minimum
 Linux
 Length
 LJ
@@ -13670,6 +13679,8 @@ Lembran
 Lembro
 Louvar
 Lovells
+LibreOffice
+LocalSend
 AppleWebKit
 ADN
 Ak
@@ -16098,6 +16109,7 @@ Apostolado
 Armando
 Administra
 Alegra
+Arch
 KHTML
 Kn
 KA
@@ -17636,6 +17648,8 @@ Kyrios
 Kochba
 Kansas
 KGgoAAAANSUhEUgAAAIAAAACACAMAAAD
+Kdenlive
+KVM
 like
 lxF
 lgrufo
@@ -19811,6 +19825,9 @@ lindas
 louv
 livraste
 locally
+letting
+launcher
+launches
 Gecko
 Group
 GQ
@@ -21489,6 +21506,9 @@ Guardi
 Gostar
 Grandioso
 GMTUpdated
+Ghosh
+Granted
+GPU
 HeadlessChrome
 HX
 HSG
@@ -23181,6 +23201,7 @@ Hogan
 Horwitz
 HEIKOOPS
 HTTPS
+Hyprland
 Safari
 Skia
 Subtype
@@ -28491,6 +28512,8 @@ esmolas
 enriquecer
 encrypted
 envia
+experimentation
+existed
 ca
 cW
 cEu
@@ -32444,6 +32467,9 @@ confundam
 consolares
 claw
 circumvents
+consumed
+cramming
+conventional
 BM
 BBox
 BHq
@@ -34132,6 +34158,9 @@ Boost
 Boss
 Buscassem
 Baseadas
+Bloat
+Beyond
+Basecamp
 Normal
 NM
 Nf
@@ -35883,6 +35912,7 @@ Nasci
 NOIVO
 Nestas
 Nigeria
+Newcomers
 XObject
 Xf
 XW
@@ -39234,6 +39264,9 @@ Regulators
 Ramiro
 Relacionamento
 Riqueza
+Ruby
+Rails
+Ryzen
 ExtGState
 Ei
 ET
@@ -43633,6 +43666,9 @@ tickets
 traduzir
 triangulated
 telefone
+toolkit
+tap
+tons
 stream
 sWz
 sj
@@ -46785,6 +46821,11 @@ sidestep
 smartphones
 securely
 sniff
+shutting
+screensavers
+snapshots
+snapshot
+slate
 xU
 xM
 xLq
@@ -51651,6 +51692,11 @@ globally
 gravadas
 grei
 guaranteed
+guessed
+guy
+genuinely
+godsend
+gate
 am
 ah
 as
@@ -55275,6 +55321,9 @@ andarei
 anonymous
 anonymize
 anycast
+agentic
+awake
+arranges
 dA
 dD
 dd
@@ -58576,6 +58625,16 @@ desviarem
 disk
 domains
 desfale
+dollar
+distro
+desktops
+dig
+distributions
+dedicate
+dense
+decent
+disappointment
+distros
 zR
 zD
 zJ
@@ -61869,6 +61928,8 @@ wireless
 weeding
 whichever
 worrisome
+windows
+workloads
 Is
 IL
 If
@@ -65552,6 +65613,9 @@ neatly
 near
 necessitados
 necessitado
+networking
+nightlight
+noticeably
 pM
 pg
 pd
@@ -69056,6 +69120,11 @@ prostrar
 procuraram
 puseram
 provider
+preinstalled
+passthrough
+purists
+picks
+prebuilt
 OaL
 Oar
 OQ
@@ -70674,6 +70743,8 @@ Ofertas
 Orgulho
 Okay
 Orem
+Omarchy
+OBS
 WR
 Wfwp
 WY
@@ -72317,6 +72388,8 @@ WebBrowser
 Would
 Wcd
 Were
+Walker
+WhatsApp
 jg
 jr
 jN
@@ -75533,6 +75606,7 @@ Umberto
 Uzias
 Unlimited
 Ultra
+Ubuntu
 VP
 Vn
 VD
@@ -78721,6 +78795,9 @@ Quinta
 Quimbo
 QNAME
 Quic
+Quattro
+Quickshell
+QEMU
 mL
 mc
 mn
@@ -81171,6 +81248,7 @@ maker
 markets
 ministerio
 mentirem
+macOS
 qd
 qm
 qI
@@ -95584,6 +95662,10 @@ falsely
 familia
 forthcoming
 fallback
+futuristic
+floating
+fills
+fiddle
 br
 bJ
 bW
@@ -97835,6 +97917,14 @@ boil
 bundling
 browsing
 bocado
+brim
+boot
+bloat
+buffet
+bare
+barely
+beast
+bypasses
 vdjL
 vd
 vR
@@ -101723,6 +101813,9 @@ Dessem
 Determinaram
 Desejo
 DNSSEC
+Dibakar
+Discord
+Docker
 rQ
 ru
 rg
@@ -104755,6 +104848,9 @@ recovering
 recruiter
 repartiam
 rebanho
+rearranges
+recipe
+ridiculously
 hF
 hj
 hC
@@ -106533,6 +106629,13 @@ hoax
 habitavam
 host
 hogs
+houses
+hop
+harness
+headaches
+hosted
+heavier
+humble
 Äb
 Äc
 Äj
