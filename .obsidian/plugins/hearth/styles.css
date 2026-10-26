@@ -2119,6 +2119,15 @@ button.hearth-tips-example:hover {
 	--table-row-background: transparent;
 	--table-row-alt-background: transparent;
 	--table-header-background: var(--hearth-card-surface, var(--background-primary));
+
+	/* On a phone Obsidian pushes every view in the main area down past its
+	   floating header, and a note's text further still (a view top spacing, a
+	   markdown one, and a bottom one past the navigation bar), by selectors
+	   that reach a hosted view too. A card has neither bar over it, so the note
+	   in a Daily note card opened on some 100px of nothing. */
+	--view-top-spacing: 0px;
+	--view-top-spacing-markdown: 0px;
+	--view-bottom-spacing: 0px;
 }
 
 .hearth-leaf-host > .workspace-leaf {
@@ -2364,6 +2373,27 @@ button.hearth-tips-example:hover {
 	background: transparent;
 }
 
+/* A setting tagged beside its name (Legacy), in the status pill's muted look. */
+.hearth-setting-tagged .setting-item-name {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.hearth-setting-tag {
+	flex: 0 0 auto;
+	padding: 1px 7px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 999px;
+	background: var(--background-modifier-hover);
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	font-weight: var(--font-normal);
+	line-height: 1.5;
+	white-space: nowrap;
+}
+
 /* Where this integration's settings live (or that it has none). Quieter than
  * the description above it — it's a signpost, not the point of the row. */
 .hearth-integration-where {
@@ -2575,6 +2605,23 @@ button.hearth-tips-example:hover {
 	display: block;
 	border: none;
 	padding: 0;
+}
+
+/* On a phone, and in a pane under 400px, Obsidian stacks every row that isn't
+   a toggle (or a link or an action): the control goes full width and to the
+   start, the name to the top. The rules are descendant selectors, so through
+   the host, which is such a row, they also reached every toggle in the pane:
+   the switch took the row and squeezed a name with no description under it
+   down to a few letters. Give those rows back the layout Obsidian gives them
+   outside the host, name beside a switch at the end. */
+.hearth-settings-host .setting-item:is(.mod-toggle, .mod-navigable, .mod-action) .setting-item-control,
+.is-phone .modal .hearth-settings-host .setting-item:is(.mod-toggle, .mod-navigable, .mod-action) .setting-item-control {
+	width: auto;
+	justify-content: flex-end;
+}
+
+.hearth-settings-host .setting-item:is(.mod-toggle, .mod-navigable, .mod-action) .setting-item-info {
+	align-self: auto;
 }
 
 /* ---- Settings tab: the category index -------------------------------
@@ -2886,6 +2933,12 @@ button.hearth-tips-example:hover {
    (style) doesn't make the modal jump in height on every click. */
 .hearth-modal-tabbody {
 	min-height: 220px;
+	/* On a phone the modal's content is a scrolling flex column, and the
+	   explicit min-height above replaces the `auto` floor that keeps a flex item
+	   from shrinking below its content. The body shrank to 220px, its rows
+	   spilled out of it, and the footer sat right under the shrunken box: in the
+	   middle of the rows, scrolling with them. */
+	flex-shrink: 0;
 	animation: hearth-tab-fade 140ms ease;
 }
 
@@ -2907,6 +2960,33 @@ button.hearth-tips-example:hover {
 
 .hearth-modal-footer .setting-item-control {
 	gap: 8px;
+}
+
+/* On a phone the dialog fills the screen, so the footer stays in reach at its
+   foot while the rows scroll, as the ribbon stays at the top, and on the same
+   terms: only on a surface it can match exactly (see the ribbon above). The
+   empty name column Obsidian stacks above the buttons there is dropped. */
+.is-phone .hearth-surface-solid > .hearth-modal-footer {
+	position: sticky;
+	bottom: calc(-1 * var(--size-4-4));
+	z-index: 5;
+	margin-top: auto;
+	margin-bottom: calc(-1 * var(--size-4-4));
+	padding-bottom: calc(var(--size-4-4) + var(--safe-area-inset-bottom, 0px));
+	background: var(--hearth-modal-surface);
+}
+
+/* Both bars reach over the content's padding (Obsidian's --size-4-4 on a
+   phone) and paint it, so no strip of rows shows past them where they stick;
+   the negative margin keeps them where they sat. */
+.is-phone .hearth-surface-solid > .hearth-modal-ribbon {
+	top: calc(-1 * var(--size-4-4));
+	margin-top: calc(-1 * var(--size-4-4));
+	padding-top: var(--size-4-4);
+}
+
+.is-phone .hearth-modal-footer .setting-item-info {
+	display: none;
 }
 
 /* ---- Icon+label buttons and the Ko-fi tip button --------------------
@@ -3961,9 +4041,34 @@ button.hearth-kofi-btn:focus-visible {
 	pointer-events: none;
 }
 
-/* In arrange mode, tiles show a grab cursor to signal they're repositionable. */
+/* In arrange mode, tiles show a grab cursor to signal they're repositionable.
+ * A press on one is a drag, so it must not select the label or raise the
+ * system's long-press callout either. */
 .hearth-grid.is-arranging .hearth-link-tile {
 	cursor: grab;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+/* On a free-form board a finger on a tile drags it at once, so the tile claims
+ * the touch the way the card overlay does — otherwise the browser takes the
+ * move for a scroll and cancels the drag. A stacked board has to scroll with a
+ * finger, so there a tile is picked up by resting on it first (see
+ * `onTileGrab` in cardbodies.ts) and only lets the vertical pan through until
+ * then, like the card shield around it. */
+.hearth-grid:not(.is-stacked) .hearth-tiles-arrange .hearth-link-tile {
+	touch-action: none;
+}
+
+.hearth-grid.is-stacked .hearth-tiles-arrange .hearth-link-tile {
+	touch-action: pan-y;
+}
+
+/* Picked up by a held finger, before it moves: lifted, so the hold reads. */
+.hearth-link-tile.is-tile-held {
+	border-color: var(--interactive-accent);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
 }
 
 /* While any tile in a card is being resized or dragged, hide the card's
@@ -4332,6 +4437,7 @@ button.hearth-kofi-btn:focus-visible {
 }
 
 .hearth-rss-tablist {
+	position: relative;
 	display: flex;
 	gap: 4px;
 	overflow-x: auto;
@@ -4340,13 +4446,30 @@ button.hearth-kofi-btn:focus-visible {
 	min-width: 0;
 }
 
+/* The edge with more chips beyond it fades (src/tabstrip.ts). */
+.hearth-rss-tablist.is-fade-end {
+	mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+
+.hearth-rss-tablist.is-fade-start {
+	mask-image: linear-gradient(to left, #000 calc(100% - 28px), transparent);
+}
+
+.hearth-rss-tablist.is-fade-start.is-fade-end {
+	mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+}
+
 .hearth-rss-tablist::-webkit-scrollbar {
 	display: none;
 }
 
+/* A chip is as wide as its name; only a name longer than the whole row is
+   cut, with …. */
 .hearth-rss-tab {
+	display: inline-flex;
+	align-items: center;
 	flex: 0 0 auto;
-	max-width: 140px;
+	max-width: 100%;
 	padding: 2px 10px;
 	border: none;
 	border-radius: 999px;
@@ -4354,9 +4477,52 @@ button.hearth-kofi-btn:focus-visible {
 	color: var(--text-muted);
 	font-size: 0.78rem;
 	white-space: nowrap;
+	cursor: pointer;
+}
+
+.hearth-rss-tab-label {
+	min-width: 0;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.hearth-rss-tab-count {
+	flex: 0 0 auto;
+}
+
+/* "+3": the chips not fully in view, and a menu of every feed. */
+.hearth-rss-tabmore {
+	display: none;
+	flex: 0 0 auto;
+	align-items: center;
+	gap: 2px;
+	height: 22px;
+	padding: 0 7px;
+	border: none;
+	border-radius: 999px;
+	background: var(--background-modifier-hover);
+	box-shadow: none;
+	color: var(--text-muted);
+	font-size: 0.75rem;
+	font-variant-numeric: tabular-nums;
 	cursor: pointer;
+}
+
+.hearth-rss-tabmore.is-shown {
+	display: inline-flex;
+}
+
+.hearth-rss-tabmore:hover {
+	color: var(--text-normal);
+}
+
+.hearth-rss-tabmore-icon {
+	display: inline-flex;
+}
+
+.hearth-rss-tabmore-icon :is(.svg-icon, svg) {
+	width: 14px;
+	height: 14px;
 }
 
 .hearth-rss-tab.is-active {
@@ -8384,6 +8550,472 @@ button.hearth-kofi-btn:focus-visible {
 	height: 16px;
 }
 
+/* ---- RSS reader (#377) ------------------------------------------------------
+   One page in two hosts: a dialog over the board and a tab of its own. The
+   feeds along the top, the entries down the side, the entry on the right at a
+   reading width. The reader is a size container, so the list steps aside on
+   a narrow dialog or a phone without the page knowing which host it is in. */
+.modal.hearth-rss-reader-modal {
+	width: min(1180px, 95vw);
+	max-width: none;
+	height: min(92vh, 1100px);
+	max-height: none;
+}
+
+.hearth-rss-reader-modal .modal-content {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	min-height: 0;
+	padding-top: 4px;
+	overflow: hidden;
+}
+
+.hearth-rss-reader-view.view-content {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	overflow: hidden;
+}
+
+.hearth-rss-reader-view.hearth-x-modal {
+	background: var(--x-dialog);
+}
+
+.hearth-rss-reader-view.hearth-t-modal {
+	background: var(--tui-bg);
+	color: var(--tui-fg);
+	font-family: var(--tui-font);
+	font-variant-ligatures: none;
+}
+
+.hearth-rss-reader {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	min-height: 0;
+	height: 100%;
+	outline: none;
+	container-type: inline-size;
+}
+
+.hearth-rss-reader-view .hearth-rss-reader-bar {
+	padding: var(--size-4-2) var(--size-4-4);
+}
+
+.hearth-rss-reader-bar {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	flex: 0 0 auto;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.hearth-rss-reader-bar .hearth-rss-tablist {
+	flex: 0 1 auto;
+}
+
+.hearth-rss-reader-bar .hearth-rss-tab {
+	padding: 3px 10px;
+	font-size: var(--font-ui-small);
+}
+
+.hearth-rss-reader-spacer {
+	flex: 1 1 auto;
+}
+
+.hearth-rss-reader-iconbtn {
+	flex: 0 0 auto;
+}
+
+/* The unread count on a feed's tab, here and on the card. */
+.hearth-rss-tab-count {
+	display: inline-block;
+	margin-left: 6px;
+	padding: 0 6px;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--interactive-accent) 22%, transparent);
+	color: var(--text-normal);
+	font-size: 0.85em;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-rss-tab.is-active .hearth-rss-tab-count {
+	background: color-mix(in srgb, var(--text-on-accent) 25%, transparent);
+	color: inherit;
+}
+
+.hearth-rss-reader-main {
+	display: flex;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+.hearth-rss-reader-list {
+	flex: 0 0 300px;
+	padding: 8px 8px 8px 0;
+	border-right: 1px solid var(--background-modifier-border);
+}
+
+.hearth-rss-reader-view .hearth-rss-reader-list {
+	padding-left: var(--size-4-2);
+}
+
+.hearth-rss-reader.is-list-hidden .hearth-rss-reader-list {
+	display: none;
+}
+
+.hearth-rss-item.is-current {
+	background: color-mix(in srgb, var(--interactive-accent) 14%, transparent);
+}
+
+.hearth-rss-reader-article {
+	flex: 1 1 auto;
+	min-width: 0;
+	overflow-y: auto;
+	padding: 16px 32px 32px;
+}
+
+/* A line length to read at, whatever the dialog's width. */
+.hearth-rss-reader-article > * {
+	box-sizing: border-box;
+	max-width: 46rem;
+	margin-inline: auto;
+}
+
+.hearth-rss-reader-meta {
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
+h1.hearth-rss-reader-title {
+	margin-top: 6px;
+	margin-bottom: 14px;
+	font-size: 1.75em;
+	line-height: 1.2;
+	overflow-wrap: anywhere;
+}
+
+.hearth-rss-reader-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 18px;
+}
+
+.hearth-rss-reader-action {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.hearth-rss-reader-btnicon {
+	display: inline-flex;
+}
+
+.hearth-rss-reader-btnicon :is(.svg-icon, svg) {
+	width: 16px;
+	height: 16px;
+}
+
+.hearth-rss-reader-blocked {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 16px;
+	padding: 8px 12px;
+	border-radius: var(--radius-m);
+	background: var(--background-secondary);
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
+.hearth-rss-reader-blocked-text {
+	flex: 1 1 auto;
+}
+
+.hearth-rss-reader-body {
+	font-size: var(--font-text-size);
+	line-height: 1.65;
+	overflow-wrap: anywhere;
+	user-select: text;
+}
+
+.hearth-rss-reader-body.is-plain {
+	white-space: pre-wrap;
+}
+
+.hearth-rss-reader-body * {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.hearth-rss-reader-body img {
+	height: auto;
+	border-radius: var(--radius-s);
+}
+
+/* Inline table widths are lifted in tidyReaderBody, so this only has to beat
+ * the theme's table rules, not the sender's markup. */
+.hearth-rss-reader-body table {
+	width: auto;
+}
+
+.hearth-rss-reader-nav {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	align-items: center;
+	gap: 12px;
+	margin-top: 32px;
+	padding-top: 16px;
+	border-top: 1px solid var(--background-modifier-border);
+}
+
+button.hearth-rss-reader-step {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	height: auto;
+	min-width: 0;
+	padding: 8px 12px;
+	text-align: left;
+	white-space: normal;
+}
+
+button.hearth-rss-reader-step.is-next {
+	justify-content: flex-end;
+	text-align: right;
+}
+
+button.hearth-rss-reader-step.is-empty {
+	visibility: hidden;
+}
+
+.hearth-rss-reader-steplabel {
+	min-width: 0;
+}
+
+.hearth-rss-reader-stepdir {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+}
+
+.hearth-rss-reader-steptitle {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-weight: 600;
+}
+
+.hearth-rss-reader-pos {
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-rss-reader-keys {
+	margin-top: 14px;
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+	text-align: center;
+}
+
+.is-mobile .hearth-rss-reader-keys {
+	display: none;
+}
+
+.hearth-rss-reader-empty {
+	margin: auto;
+	padding: 48px 16px;
+	color: var(--text-muted);
+	text-align: center;
+}
+
+/* Narrow (a phone, a slim pane): the list sits over the entry, short, and
+   the entry takes the full width. */
+@container (max-width: 720px) {
+	.hearth-rss-reader-main {
+		flex-direction: column;
+	}
+
+	.hearth-rss-reader-list {
+		flex: 0 0 auto;
+		max-height: 34%;
+		padding: 6px 0;
+		border-right: none;
+		border-bottom: 1px solid var(--background-modifier-border);
+	}
+
+	.hearth-rss-reader-article {
+		padding: 12px 4px 24px;
+	}
+
+	.hearth-rss-reader-view .hearth-rss-reader-article {
+		padding-inline: var(--size-4-4);
+	}
+
+	h1.hearth-rss-reader-title {
+		font-size: 1.4em;
+	}
+}
+
+/* Unread marks, on the card and in the reader's list: a dot while unread, a
+   quieter title once read. */
+.hearth-rss-dot {
+	flex: 0 0 7px;
+	align-self: flex-start;
+	width: 7px;
+	height: 7px;
+	margin-top: 0.45em;
+	border-radius: 50%;
+	background: var(--interactive-accent);
+}
+
+.hearth-rss-item.is-read .hearth-rss-dot {
+	background: transparent;
+}
+
+.hearth-rss-item.is-read .hearth-rss-title {
+	color: var(--text-muted);
+	font-weight: 500;
+}
+
+.hearth-rss-refresh.is-active {
+	background: color-mix(in srgb, var(--interactive-accent) 20%, transparent);
+	color: var(--text-accent);
+}
+
+/* ---- Note templates (event notes, saved feed entries) ---- */
+.hearth-clip-editor .hearth-clip-input {
+	width: min(22rem, 100%);
+}
+
+.hearth-clip-prop .setting-item-control {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.hearth-clip-prop .setting-item-info {
+	display: none;
+}
+
+.hearth-clip-prop-name {
+	width: 9rem;
+}
+
+.hearth-clip-prop-value {
+	flex: 1 1 14rem;
+	font-family: var(--font-monospace);
+}
+
+.hearth-clip-body {
+	flex-wrap: wrap;
+}
+
+.hearth-clip-body .setting-item-control {
+	flex: 1 1 100%;
+}
+
+.hearth-clip-textarea {
+	width: 100%;
+	min-height: 8em;
+	font-family: var(--font-monospace);
+	font-size: var(--font-ui-small);
+}
+
+.hearth-clip-ref,
+.hearth-clip-preview {
+	margin: 12px 0;
+	padding: 12px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+}
+
+.hearth-clip-ref-head {
+	font-weight: 600;
+}
+
+.hearth-clip-ref-hint {
+	margin: 2px 0 8px;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
+.hearth-clip-vars {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+	gap: 4px;
+}
+
+button.hearth-clip-chip {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1px;
+	height: auto;
+	padding: 5px 9px;
+	text-align: left;
+	white-space: normal;
+}
+
+.hearth-clip-chip-code {
+	font-family: var(--font-monospace);
+	font-size: var(--font-ui-small);
+	color: var(--text-accent);
+}
+
+.hearth-clip-chip-desc {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+}
+
+.hearth-clip-filters {
+	margin-top: 10px;
+}
+
+.hearth-clip-filters > summary {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.hearth-clip-filterlist {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+	gap: 4px 16px;
+	font-size: var(--font-ui-small);
+}
+
+.hearth-clip-filter {
+	display: flex;
+	flex-direction: column;
+}
+
+.hearth-clip-filter span {
+	color: var(--text-muted);
+}
+
+.hearth-clip-preview-path {
+	margin-bottom: 6px;
+	font-family: var(--font-monospace);
+	font-size: var(--font-ui-small);
+	color: var(--text-accent);
+}
+
+.hearth-clip-preview-text {
+	max-height: 18rem;
+	margin: 0;
+	padding: 10px;
+	overflow: auto;
+	border-radius: var(--radius-s);
+	background: var(--background-secondary);
+	font-size: var(--font-ui-small);
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+}
+
 /* Keep the optional date-format input from crowding the field-routing row. */
 .hearth-event-format {
 	max-width: 9em;
@@ -9676,6 +10308,56 @@ button.hearth-kofi-btn:focus-visible {
 .is-mobile .hearth-mobile-actions {
 	bottom: var(--hearth-mobile-safe-bottom);
 	padding-bottom: 4px;
+}
+
+/* ---- Tablet button padding ------------------------------------------- */
+
+/* Obsidian's tablet layout pads every button that isn't a .clickable-icon:
+ * `.is-tablet button:not(.clickable-icon) { padding: 4px 20px }` (0,2,1),
+ * which outranks the one-class rules that size Hearth's icon buttons. A 24–44px
+ * icon button then carries 40px of side padding: it swells into an empty pill
+ * and its icon, a shrinkable flex item, collapses to nothing (#381). Restate
+ * each icon-only button's own padding at (0,2,2) — enough to beat that rule,
+ * still below the Expressive overrides (`.hearth-x-ui …`, (0,3,0)). Text
+ * buttons keep Obsidian's tablet padding; they only grow wider. Keep each
+ * value in step with the button's base rule. */
+body.is-tablet button:is(
+	.hearth-dash-btn,
+	.hearth-calendar-nav,
+	.hearth-sched-navbtn,
+	.hearth-card-expand,
+	.hearth-jira-refresh,
+	.hearth-rss-refresh,
+	.hearth-task-add,
+	.hearth-web-external
+) {
+	padding: 0;
+}
+
+body.is-tablet button:is(
+	.hearth-kanban-col-sort,
+	.hearth-kanban-col-done,
+	.hearth-kanban-col-hide,
+	.hearth-gallery-comment-remove
+) {
+	padding: 2px;
+}
+
+body.is-tablet button:is(.hearth-slideshow-btn, .hearth-git-refresh),
+body.is-tablet button.is-icon:where(.hearth-tool-btn) {
+	padding: 3px;
+}
+
+body.is-tablet button:is(.hearth-open-btn, .hearth-gallery-vote-btn, .hearth-market-icon-button) {
+	padding: 4px;
+}
+
+body.is-tablet button.hearth-card-action {
+	padding: 5px;
+}
+
+body.is-tablet button.hearth-gallery-icon-btn {
+	padding: 6px;
 }
 
 /* ---- Mobile search focus (keyboard up) ------------------------------- */
@@ -12215,6 +12897,14 @@ body.hearth-dv-resizing {
 	opacity: 1;
 }
 
+/* A finger needs more than the mouse's 22px corner to land on. */
+@media (pointer: coarse) {
+	.hearth-tile-resize {
+		width: 32px;
+		height: 32px;
+	}
+}
+
 /* While a tile is being resized, bring it above its siblings. */
 .hearth-link-tile.is-tile-resizing {
 	z-index: 15;
@@ -14590,6 +15280,13 @@ body.hearth-dv-resizing {
 	vertical-align: middle;
 }
 
+/* Experimental: an outline in the warning colour, apart from "Recommended". */
+.hearth-setup-badge.is-experimental {
+	background: transparent;
+	box-shadow: inset 0 0 0 1px var(--text-warning);
+	color: var(--text-warning);
+}
+
 .hearth-setup-detected {
 	margin-top: 14px;
 	padding: 12px;
@@ -14745,6 +15442,18 @@ body.hearth-dv-resizing {
 	background: color-mix(in srgb, var(--background-primary) var(--sample-opacity, 100%), transparent);
 	backdrop-filter: blur(var(--sample-blur, 0px));
 	-webkit-backdrop-filter: blur(var(--sample-blur, 0px));
+}
+
+/* Terminal mode in miniature: square boxes drawn in one line weight on the
+ * theme's own background, in a monospaced face. */
+.hearth-setup-board.is-terminal .hearth-setup-board-page {
+	font-family: var(--font-monospace);
+}
+
+.hearth-setup-board.is-terminal .hearth-setup-board-card {
+	border: 1px solid var(--text-faint);
+	border-radius: 0;
+	background: transparent;
 }
 
 /* The Expressive frame in miniature: opaque and tonal, big corners, no border
@@ -15289,12 +15998,14 @@ body.hearth-dv-resizing {
  * A plugin board spends no space on itself. The hosted view is the board, so
  * everything Hearth would normally put around a grid of cards — the page
  * gutter, the column gap, the card frame — comes off, and the only chrome left
- * is the switcher row with the board's settings gear on the end of it.
+ * is the switcher row with the board's settings gear on the end of it. A
+ * single-card board (.hearth-single-card-view) is laid out the same way: its
+ * one card is the board.
  *
  * Written against `.hearth-view.hearth-plugin-view` (two classes on the root)
  * so it matches the specificity of the narrow-board padding rule above and wins
  * on source order, rather than by reaching for !important. */
-.hearth-view.hearth-plugin-view .hearth-scroll {
+.hearth-view:is(.hearth-plugin-view, .hearth-single-card-view) .hearth-scroll {
 	--hearth-scroll-pad-x: 0px;
 	--hearth-scroll-pad-top: 0px;
 	padding: 0;
@@ -15302,7 +16013,7 @@ body.hearth-dv-resizing {
 
 /* No column gap: the switcher row carries its own padding (below) and the board
  * begins immediately under it. */
-.hearth-view.hearth-plugin-view .hearth-inner {
+.hearth-view:is(.hearth-plugin-view, .hearth-single-card-view) .hearth-inner {
 	gap: 0;
 }
 
@@ -15310,12 +16021,12 @@ body.hearth-dv-resizing {
  * breathing room instead of borrowing the page gutter. The negative margin it
  * normally carries exists to pull a *header* up under it; with no header on a
  * plugin board it would pull the hosted view up under the buttons instead. */
-.hearth-view.hearth-plugin-view .hearth-dash-switcher-zone {
+.hearth-view:is(.hearth-plugin-view, .hearth-single-card-view) .hearth-dash-switcher-zone {
 	padding: 6px 8px;
 	gap: 8px;
 }
 
-.hearth-view.hearth-plugin-view .hearth-dash-switcher {
+.hearth-view:is(.hearth-plugin-view, .hearth-single-card-view) .hearth-dash-switcher {
 	margin-bottom: 0;
 }
 
@@ -15339,6 +16050,44 @@ body.hearth-dv-resizing {
  * centre it instead of letting it sit against the top edge. */
 .hearth-plugin-board > .hearth-card-empty {
 	flex: 1 1 auto;
+}
+
+/* ---- Single-card boards ----------------------------------------------
+ *
+ * A dashboard whose whole board is one of its own Hearth cards
+ * (Dashboard.mode === "single"; see src/singlecard.ts). The card is built by
+ * the ordinary board renderer and keeps its frame, design and frost; only its
+ * placement changes. view.ts forces `.hearth-fit` on, so the grid has a
+ * definite height, and the card fills it instead of sitting at its stored
+ * geometry (renderDashboard sets no inline position on it).
+ *
+ * The board goes edge to edge exactly as a plugin board does (the shared
+ * rules under "Edge to edge" above), so the card loses its frame here too:
+ * it *is* the board. Its surface tint and blur stay. */
+.hearth-grid.is-single > .hearth-card {
+	/* Every edge and both sizes, so the card never shrinks to its content. */
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* A single-card board before it has its card: the empty state and the button
+ * that adds one, centred on the board. */
+.hearth-single-card-empty {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+
+.hearth-single-card-empty > .hearth-card-empty {
+	height: auto;
 }
 
 /* ==========================================================================
@@ -15537,6 +16286,31 @@ button:is(.hearth-gallery-rail-btn, .hearth-gallery-rail-publish, .hearth-picker
 	flex: 1 1 auto;
 	min-width: 0;
 	overflow-y: auto;
+}
+
+/* The rail's stand-in on a phone (see renderScopeBar): the category as a
+   dropdown on one line, and Publish beside it. Hidden wherever the rail fits. */
+.hearth-gallery-scopebar {
+	display: none;
+}
+
+@media (max-width: 620px) {
+	.hearth-gallery-scopebar {
+		flex: none;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-bottom: 12px;
+	}
+
+	.hearth-gallery-scope {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	.hearth-gallery-rail {
+		display: none;
+	}
 }
 
 .hearth-gallery-count {
@@ -16982,24 +17756,64 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	gap: 0 18px;
 }
 
+/* Each subfolder is a panel of its own — a heading bar over its contents — so
+   where one folder ends and the next begins never has to be read off the rows.
+   The folder's own files, between the panels, stay on the page itself. */
 .hearth-folder-section {
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
+	overflow: hidden;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	background: var(--background-secondary);
 }
 
-/* A subfolder's heading — itself the way into that folder. */
+.hearth-folder-section > :is(.hearth-folder-files, .hearth-folder-browser-tiles) {
+	padding: 6px;
+}
+
+.hearth-folder-section > .hearth-folder-browser-tiles {
+	padding: 10px;
+}
+
+/* A subfolder's heading — itself the way into that folder; the chevron at its
+   start folds the panel instead. */
 .hearth-folder-head {
 	display: flex;
 	align-items: center;
 	gap: 8px;
-	padding: 4px 8px;
-	border-radius: 7px;
+	padding: 7px 10px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary-alt);
 	cursor: pointer;
 }
 
 .hearth-folder-head:hover {
 	background: var(--background-modifier-hover);
+}
+
+/* Folded, the panel is its heading alone. */
+.hearth-folder-section.is-folded > .hearth-folder-head {
+	border-bottom: none;
+}
+
+.hearth-folder-head-toggle {
+	display: flex;
+	flex: 0 0 auto;
+	margin-inline-start: -4px;
+	padding: 2px;
+	border-radius: 5px;
+	color: var(--text-faint);
+}
+
+.hearth-folder-head-toggle:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-folder-head-toggle .svg-icon {
+	width: 14px;
+	height: 14px;
 }
 
 .hearth-folder-head-icon {
@@ -17025,6 +17839,374 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	padding: 4px 8px;
 	color: var(--text-faint);
 	font-size: var(--font-ui-smaller);
+}
+
+/* The layout switch and the "open in a tab" button: icons at the end of the
+   row, beside the sort picker, never wrapping away from it. */
+.hearth-folder-bar-button {
+	flex: 0 0 auto;
+}
+
+/* The browser in tiles (#375): bigger than the card's tiles, because each one
+   carries the start of its note — a name and a few lines, the way a notes app
+   shows a folder. As many per row as the page is wide. */
+.hearth-folder-browser-tiles {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	gap: 10px;
+}
+
+.hearth-folder-tile {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	height: 168px;
+	padding: 10px 12px;
+	overflow: hidden;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 10px;
+	background: var(--background-primary);
+	cursor: pointer;
+}
+
+.hearth-folder-tile:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-folder-tile-head {
+	display: flex;
+	align-items: flex-start;
+	gap: 6px;
+	min-width: 0;
+}
+
+.hearth-folder-tile-icon {
+	display: flex;
+	flex: 0 0 auto;
+	color: var(--text-muted);
+}
+
+.hearth-folder-tile-icon .svg-icon {
+	width: 16px;
+	height: 16px;
+}
+
+/* Two lines of the name, as on the card's tiles. */
+.hearth-folder-tile-name {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	overflow: hidden;
+	overflow-wrap: anywhere;
+	font-size: var(--font-ui-small);
+	font-weight: var(--font-semibold);
+	line-height: 1.3;
+}
+
+.hearth-folder-tile .hearth-folder-count {
+	margin-inline-start: auto;
+}
+
+/* The note's first lines: small on purpose — enough to recognise a note by,
+   not to read it — with its line breaks kept, and faded out where the tile
+   ends rather than cut mid-line. The size is the card's setting, and a CSS
+   snippet can override the variable. */
+.hearth-folder-tile-preview {
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow: hidden;
+	color: var(--text-muted);
+	font-size: var(--hearth-folder-preview-size, 8px);
+	line-height: 1.35;
+	white-space: pre-line;
+	overflow-wrap: anywhere;
+	-webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent);
+	mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+
+.hearth-folder-tile-preview.is-empty {
+	display: none;
+}
+
+/* Pictures on the tiles — Full performance tier only (see picturesAllowed in
+   src/folderbrowse.ts). An image file fills the tile under its name; a note's
+   cover sits above its name, and appears only once the note turns out to have
+   one, so a note without one never leaves a gap. Both bleed to the tile's
+   edges. */
+.hearth-folder-tile-picture,
+.hearth-folder-tile-cover {
+	overflow: hidden;
+	background: var(--background-secondary);
+}
+
+.hearth-folder-tile-picture {
+	flex: 1 1 auto;
+	min-height: 0;
+	margin: 0 -12px -10px;
+	border-radius: 0 0 9px 9px;
+}
+
+.hearth-folder-tile-cover {
+	order: -1;
+	flex: 0 0 64px;
+	margin: -10px -12px 0;
+	border-radius: 9px 9px 0 0;
+}
+
+.hearth-folder-tile:not(.has-cover) .hearth-folder-tile-cover,
+.hearth-folder-tile-picture.is-empty {
+	display: none;
+}
+
+.hearth-folder-tile-picture img,
+.hearth-folder-tile-cover img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* A folder's tile has no text to show, so its icon takes the room instead. */
+.hearth-folder-tile.is-folder {
+	justify-content: center;
+}
+
+.hearth-folder-tile.is-folder .hearth-folder-tile-head {
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.hearth-folder-tile.is-folder .hearth-folder-tile-icon .svg-icon {
+	width: 32px;
+	height: 32px;
+}
+
+.hearth-folder-tile.is-folder .hearth-folder-count {
+	margin-inline-start: 0;
+}
+
+/* The browser in a tab of its own: the page is the browser, and the browser
+   is what scrolls, so the sticky bar sits flush with the top of the tab. */
+.hearth-folder-view.view-content {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	overflow: hidden;
+}
+
+.hearth-folder-view .hearth-folder-browser {
+	flex: 1 1 auto;
+	max-height: none;
+	padding: 0 var(--size-4-6) var(--size-4-6);
+}
+
+.hearth-folder-view .hearth-folder-bar {
+	padding-top: var(--size-4-3);
+}
+
+/* The tab wears the dialog's design (applyPageDesign in src/uidesign.ts): the
+   dialog's classes reach everything inside it, and these give the page the
+   ground a dialog's frame would have given it. */
+.hearth-folder-view.hearth-x-modal {
+	background: var(--x-dialog);
+}
+
+.hearth-folder-view.hearth-t-modal {
+	background: var(--tui-bg);
+	color: var(--tui-fg);
+	font-family: var(--tui-font);
+	font-variant-ligatures: none;
+}
+
+/* The RSS reader in terminal mode, in a tab or a terminal dialog: the
+   feeds as a tab line, the list as rows with a ● for unread, the entry
+   under a reversed heading, the steps as boxed links. */
+.hearth-t-modal .hearth-rss-reader-bar {
+	border-bottom: 1px dashed var(--tui-line);
+}
+
+.hearth-t-modal .hearth-rss-reader-nav {
+	border-top: 1px dashed var(--tui-line);
+}
+
+.hearth-t-modal .hearth-rss-reader-list {
+	border-right: 1px dashed var(--tui-line);
+}
+
+/* Tabs and steps are not "[ buttons ]": a tab line reverses the active
+   one, as the card's own tab line does. */
+.hearth-t-modal button:is(.hearth-rss-tab, .hearth-rss-reader-step, .hearth-clip-chip):not(.clickable-icon):not(.modal-close-button)::before,
+.hearth-t-modal button:is(.hearth-rss-tab, .hearth-rss-reader-step, .hearth-clip-chip):not(.clickable-icon):not(.modal-close-button)::after {
+	content: none;
+}
+
+.hearth-t-modal button.hearth-rss-tab:not(.clickable-icon):not(.modal-close-button) {
+	border-radius: 0;
+	background: transparent;
+	color: var(--tui-dim);
+}
+
+.hearth-t-modal button.hearth-rss-tab.is-active:not(.clickable-icon):not(.modal-close-button) {
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+	font-weight: 700;
+}
+
+.hearth-t-modal .hearth-rss-tab-count {
+	border-radius: 0;
+	background: transparent;
+	color: var(--tui-accent);
+	padding: 0;
+}
+
+.hearth-t-modal .hearth-rss-tab.is-active .hearth-rss-tab-count {
+	background: transparent;
+	color: inherit;
+}
+
+.hearth-t-modal .hearth-rss-item {
+	border-radius: 0;
+	border-bottom: none;
+}
+
+.hearth-t-modal .hearth-rss-item.is-current {
+	background: var(--tui-sel-bg);
+}
+
+.hearth-t-modal .hearth-rss-item.is-current :is(.hearth-rss-title, .hearth-rss-meta) {
+	color: var(--tui-sel-fg);
+}
+
+.hearth-t-modal .hearth-rss-dot {
+	width: auto;
+	height: auto;
+	flex-basis: 2ch;
+	margin-top: 0;
+	border-radius: 0;
+	background: none;
+	color: var(--tui-accent);
+}
+
+.hearth-t-modal .hearth-rss-dot::before {
+	content: "●";
+}
+
+.hearth-t-modal .hearth-rss-item.is-read .hearth-rss-dot::before {
+	content: " ";
+}
+
+.hearth-t-modal .hearth-rss-item.is-current .hearth-rss-dot {
+	color: var(--tui-sel-fg);
+}
+
+.hearth-t-modal h1.hearth-rss-reader-title {
+	font-family: var(--tui-font);
+	font-size: 1.15em;
+}
+
+.hearth-t-modal h1.hearth-rss-reader-title::before {
+	content: "# ";
+	color: var(--tui-accent);
+}
+
+.hearth-t-modal .hearth-rss-reader-meta {
+	color: var(--tui-dim);
+}
+
+.hearth-t-modal .hearth-rss-reader-blocked {
+	border-radius: 0;
+	border: 1px dashed var(--tui-line);
+	background: transparent;
+	color: var(--tui-dim);
+}
+
+.hearth-t-modal .hearth-rss-reader-body {
+	font-family: var(--tui-font);
+	font-size: inherit;
+	line-height: 1.5;
+}
+
+.hearth-t-modal .hearth-rss-reader-body img {
+	border-radius: 0;
+}
+
+.hearth-t-modal button.hearth-rss-reader-step:not(.clickable-icon):not(.modal-close-button) {
+	border: 1px solid var(--tui-line);
+	color: var(--tui-fg);
+}
+
+.hearth-t-modal button.hearth-rss-reader-step:not(.clickable-icon):not(.modal-close-button):hover {
+	border-color: var(--tui-accent);
+}
+
+.hearth-t-modal .hearth-rss-reader-stepdir {
+	color: var(--tui-accent);
+}
+
+.hearth-t-modal :is(.hearth-clip-ref, .hearth-clip-preview) {
+	border: 1px dashed var(--tui-line);
+	border-radius: 0;
+}
+
+.hearth-t-modal .hearth-clip-preview-text {
+	border-radius: 0;
+	background: var(--tui-bg-alt);
+	font-family: var(--tui-font);
+}
+
+.hearth-t-modal button.hearth-clip-chip:not(.clickable-icon):not(.modal-close-button) {
+	color: var(--tui-fg);
+}
+
+/* The browser in terminal mode, in a tab or a terminal dialog: square, ruled,
+   on the scheme's own colours. */
+.hearth-t-modal .hearth-folder-bar {
+	background: var(--tui-bg);
+	border-bottom-color: var(--tui-line);
+}
+
+.hearth-t-modal :is(.hearth-folder-crumb, .hearth-folder-head, .hearth-list-item, .hearth-folder-count) {
+	border-radius: 0;
+}
+
+.hearth-t-modal .hearth-folder-section {
+	border: 1px solid var(--tui-line);
+	border-radius: 0;
+	background: var(--tui-bg);
+}
+
+.hearth-t-modal .hearth-folder-head {
+	border-bottom-color: var(--tui-line);
+	background: var(--tui-bg-alt);
+}
+
+.hearth-t-modal .hearth-folder-head:hover {
+	background: var(--tui-hover);
+}
+
+.hearth-t-modal .hearth-folder-head-toggle {
+	border-radius: 0;
+	color: var(--tui-dim);
+}
+
+.hearth-t-modal .hearth-folder-tile {
+	border: 1px solid var(--tui-line);
+	border-radius: 0;
+	background: var(--tui-bg);
+}
+
+.hearth-t-modal .hearth-folder-tile:hover {
+	background: var(--tui-hover);
+}
+
+.hearth-t-modal :is(.hearth-folder-tile-picture, .hearth-folder-tile-cover) {
+	border-radius: 0;
+}
+
+.hearth-t-modal .hearth-folder-tile-preview {
+	color: var(--tui-dim);
 }
 
 /* ======================================================================
@@ -18104,6 +19286,1318 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	}
 
 	.hearth-market-tape.is-moving .hearth-market-tape-track {
+		animation: none;
+	}
+}
+
+/* ======================================================================
+ * World Tension card (src/cards/tension.ts)
+ *
+ * Kagi News' World Tension index. Two styles, each in both designs:
+ * `is-minimal` — the score, its band and the scale — and `is-artistic`, a
+ * diorama edge to edge (`.hearth-tension-flush` on the body, as the weather
+ * card's painted sky). `is-band-<band>` on the card sets `--tn-band`, the
+ * colour everything that names the band is drawn in.
+ * ====================================================================== */
+.hearth-tension {
+	--tn-cool: #2f86d4;
+	--tn-mild: #25996a;
+	--tn-warm: #c98d12;
+	--tn-hot: #e0621f;
+	--tn-burning: #d2332a;
+	--tn-band: var(--text-muted);
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-height: 100%;
+	color: var(--text-normal);
+	cursor: pointer;
+}
+
+.theme-dark .hearth-tension {
+	--tn-cool: #6cb2f0;
+	--tn-mild: #5cc794;
+	--tn-warm: #f0bb45;
+	--tn-hot: #ff8a4d;
+	--tn-burning: #ff6154;
+}
+
+.hearth-tension.is-band-cool { --tn-band: var(--tn-cool); }
+.hearth-tension.is-band-mild { --tn-band: var(--tn-mild); }
+.hearth-tension.is-band-warm { --tn-band: var(--tn-warm); }
+.hearth-tension.is-band-hot { --tn-band: var(--tn-hot); }
+.hearth-tension.is-band-burning { --tn-band: var(--tn-burning); }
+
+.hearth-tension:focus-visible {
+	outline: 2px solid var(--interactive-accent);
+	outline-offset: -2px;
+	border-radius: var(--radius-m);
+}
+
+/* The body is the size container the score measures against, as the weather
+ * card's is. */
+.hearth-card-body.hearth-tension-host {
+	container-type: size;
+}
+
+.hearth-card > .hearth-card-body.hearth-tension-flush {
+	padding: 0;
+	overflow: hidden;
+}
+
+.hearth-card-body.hearth-tension-flush .hearth-card-empty {
+	padding: 12px 14px;
+}
+
+/* ---- Minimal ---- */
+.hearth-tension.is-minimal {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 5px;
+}
+
+.hearth-tension-hero {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-width: 0;
+}
+
+.hearth-tension-glyph {
+	position: relative;
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1em;
+	height: 1em;
+	font-size: clamp(1.2rem, min(13cqw, 24cqh), 2.8rem);
+	color: var(--tn-band);
+}
+
+.hearth-tension-glyph-icon,
+.hearth-tension-glyph-icon .svg-icon {
+	width: 1em;
+	height: 1em;
+	display: flex;
+}
+
+.hearth-tension-score {
+	display: flex;
+	align-items: baseline;
+	gap: 2px;
+	font-size: clamp(1.6rem, min(22cqw, 36cqh), 4.4rem);
+	font-weight: 300;
+	line-height: 1.08;
+	letter-spacing: -0.02em;
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-tension-score-max {
+	font-size: 0.28em;
+	font-weight: 500;
+	letter-spacing: 0;
+	color: var(--text-faint);
+}
+
+.hearth-tension-meta {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	flex-wrap: wrap;
+	font-size: 0.86rem;
+	line-height: 1.25;
+}
+
+.hearth-tension-band {
+	color: var(--tn-band);
+	font-weight: 600;
+}
+
+.hearth-tension-change {
+	font-size: 0.74rem;
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+}
+
+/* Rising tension is the bad direction, so up is red and down is green. */
+.hearth-tension-change.is-up { color: var(--tn-burning); }
+.hearth-tension-change.is-down { color: var(--tn-mild); }
+
+/* The scale: five bands, the score marked on them. */
+.hearth-tension-scale {
+	position: relative;
+	width: min(100%, 220px);
+	padding: 5px 0;
+}
+
+.hearth-tension-scale-track {
+	display: flex;
+	gap: 2px;
+	height: 4px;
+}
+
+.hearth-tension-scale-seg {
+	flex: 1 1 0;
+	border-radius: 2px;
+	opacity: 0.4;
+}
+
+.hearth-tension-scale-seg.is-band-cool { background: var(--tn-cool); }
+.hearth-tension-scale-seg.is-band-mild { background: var(--tn-mild); }
+.hearth-tension-scale-seg.is-band-warm { background: var(--tn-warm); }
+.hearth-tension-scale-seg.is-band-hot { background: var(--tn-hot); }
+.hearth-tension-scale-seg.is-band-burning { background: var(--tn-burning); }
+
+.hearth-tension-scale-marker {
+	position: absolute;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: var(--tn-band);
+	border: 2px solid var(--background-primary);
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+}
+
+/* The last days, on the whole 0–100 scale. */
+.hearth-tension-history {
+	position: relative;
+	width: min(100%, 260px);
+	height: 26px;
+	flex: 0 0 auto;
+}
+
+.hearth-tension-history svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+.hearth-tension-history-line {
+	fill: none;
+	stroke: var(--tn-band);
+	stroke-width: 1.5px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.hearth-tension-history-area {
+	fill: var(--tn-band);
+	opacity: 0.12;
+}
+
+.hearth-tension-history-dot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--tn-band);
+	transform: translate(-50%, -50%);
+}
+
+.hearth-tension-summary {
+	max-width: 36em;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: var(--text-muted);
+}
+
+.hearth-tension-summary-source {
+	margin-top: 2px;
+	font-size: 0.68rem;
+	color: var(--text-faint);
+}
+
+.hearth-tension-updated {
+	font-size: 0.7rem;
+	color: var(--text-faint);
+}
+
+/* ---- Minimal, Expressive: the glyph on a cookie, the band on a chip, a
+ * chunky scale and a tonal container for the explanation. ---- */
+.hearth-tension.is-expressive .hearth-tension-glyph {
+	font-size: clamp(1.9rem, min(19cqw, 34cqh), 4rem);
+}
+
+.hearth-tension-cookie {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hearth-tension-cookie path {
+	fill: color-mix(in srgb, var(--tn-band) 22%, var(--background-primary));
+}
+
+.hearth-tension.is-expressive .hearth-tension-glyph-icon {
+	position: relative;
+	font-size: 0.5em;
+}
+
+.hearth-tension.is-expressive .hearth-tension-glyph-icon .svg-icon {
+	stroke-width: 2.6px;
+}
+
+.hearth-tension.is-expressive .hearth-tension-score {
+	font-weight: 750;
+	letter-spacing: -0.045em;
+}
+
+.hearth-tension.is-expressive .hearth-tension-band {
+	padding: 2px 10px;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--tn-band) 20%, var(--background-primary));
+	color: color-mix(in srgb, var(--tn-band) 70%, var(--text-normal));
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.hearth-tension.is-expressive .hearth-tension-change {
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: var(--x-surface-high, var(--background-modifier-hover));
+	font-weight: 700;
+}
+
+.hearth-tension.is-expressive .hearth-tension-scale-track {
+	height: 10px;
+	gap: 3px;
+}
+
+.hearth-tension.is-expressive .hearth-tension-scale-seg {
+	border-radius: 5px;
+	opacity: 0.3;
+}
+
+.hearth-tension.is-expressive .hearth-tension-scale-marker {
+	width: 18px;
+	height: 18px;
+	border-width: 4px;
+	border-color: var(--x-surface, var(--background-primary));
+}
+
+.hearth-tension.is-expressive .hearth-tension-history-line {
+	stroke-width: 3px;
+}
+
+.hearth-tension.is-expressive .hearth-tension-history-area {
+	opacity: 0.18;
+}
+
+.hearth-tension.is-expressive .hearth-tension-summary {
+	padding: 8px 12px;
+	border-radius: 16px;
+	background: var(--x-surface-high, var(--background-modifier-hover));
+	color: var(--text-normal);
+	text-align: start;
+}
+
+/* ---- Artistic: the reading over the diorama ---- */
+.hearth-tension.is-artistic {
+	gap: 0;
+	height: 100%;
+}
+
+.hearth-tension-art-content {
+	position: absolute;
+	inset: 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 8px;
+	padding: 12px 14px;
+	color: #fff;
+	/* The same soft scrim the painted sky lays under its text: a pale cloud or
+	 * the sun can sit right behind a line. */
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.4) 100%);
+	overflow-y: auto;
+	scrollbar-width: none;
+}
+
+.hearth-tension-art-content::-webkit-scrollbar {
+	display: none;
+}
+
+.hearth-tension-art-top,
+.hearth-tension-art-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	min-width: 0;
+}
+
+.hearth-tension-art-title {
+	font-size: 0.86rem;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hearth-tension-art-meta {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 0.76rem;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.hearth-tension-art-meta .hearth-tension-band,
+.hearth-tension-art-meta .hearth-tension-change {
+	color: inherit;
+	opacity: 0.9;
+	font-weight: 500;
+}
+
+.hearth-tension-art-score {
+	display: flex;
+	align-items: baseline;
+	gap: 3px;
+	font-size: clamp(1.6rem, min(22cqw, 32cqh), 4.6rem);
+	font-weight: 200;
+	line-height: 1.05;
+	letter-spacing: -0.03em;
+	font-variant-numeric: tabular-nums;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.hearth-tension-art-score .hearth-tension-score-max {
+	color: inherit;
+	opacity: 0.7;
+}
+
+.hearth-tension-art-content .hearth-tension-history {
+	--tn-band: #fff;
+	width: min(100%, 220px);
+	height: 20px;
+}
+
+.hearth-tension-art-summary {
+	max-width: 34em;
+	font-size: 0.74rem;
+	line-height: 1.35;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hearth-tension-art-summary .hearth-tension-summary-source,
+.hearth-tension-art-content .hearth-tension-updated {
+	color: inherit;
+	opacity: 0.7;
+	font-size: 0.66rem;
+}
+
+@container (max-height: 170px) {
+	.hearth-tension-scene .hearth-tension-art-content {
+		padding: 8px 10px;
+		gap: 2px;
+	}
+
+	.hearth-tension-scene .hearth-tension-art-title {
+		font-size: 0.78rem;
+	}
+
+	.hearth-tension-scene .hearth-tension-art-meta,
+	.hearth-tension-scene .hearth-tension-art-summary {
+		font-size: 0.68rem;
+	}
+}
+
+/* Expressive over its flat scene: heavy type, no shadows, the band on a chip. */
+.is-expressive .hearth-tension-art-content {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0) 32%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.26) 100%);
+}
+
+.is-expressive .hearth-tension-art-content * {
+	text-shadow: none;
+}
+
+.is-expressive .hearth-tension-art-title {
+	font-weight: 700;
+}
+
+.is-expressive .hearth-tension-art-score {
+	font-weight: 750;
+	letter-spacing: -0.045em;
+}
+
+.is-expressive .hearth-tension-art-meta .hearth-tension-band {
+	padding: 1px 9px;
+	border-radius: 999px;
+	background: rgba(0, 0, 0, 0.28);
+	font-weight: 700;
+	opacity: 1;
+}
+
+.is-expressive .hearth-tension-art-summary {
+	padding: 6px 10px;
+	border-radius: 14px;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.is-expressive .hearth-tension-art-content .hearth-tension-history-line {
+	stroke-width: 2.5px;
+}
+
+/* ---- The artistic style's diorama (src/tensionscene.ts) ----
+ *
+ * Every colour in the scene is a variable set per band, so the geometry never
+ * knows what it is painted with: `.is-<band>` picks the palette and
+ * `.is-expressive` swaps it for the flat tonal one. The scene is an
+ * illustration with a light of its own (a spring morning, a red dusk, a night
+ * lit by fires), so it keeps the same palette in light and dark themes, like
+ * the weather card's painted sky. */
+.hearth-tension-scene {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	color: #fff;
+
+	--ts-sky-top: #6fb8ec;
+	--ts-sky-mid: #a9daf8;
+	--ts-sky-bottom: #e4f5ff;
+	--ts-sky-flat: #8ccaf2;
+	--ts-sky-band: #b4ddf7;
+	--ts-sun: #fff1a6;
+	--ts-moon: #e8dfd2;
+	--ts-cloud: #ffffff;
+	--ts-cloud-dark: #dfe7ee;
+	--ts-hill-far: #a5d69c;
+	--ts-hill-mid: #7cc070;
+	--ts-ground: #5aaa55;
+	--ts-tree: #3d8c47;
+	--ts-tree-light: #5aa85f;
+	--ts-trunk: #6f5238;
+	--ts-silhouette: #2a2222;
+	--ts-wall: #f6ecd9;
+	--ts-wall-shade: #e0cfb2;
+	--ts-roof: #d0674a;
+	--ts-window: #6a8fa8;
+	--ts-window-lit: #ffd27a;
+	--ts-door: #8a5a3c;
+	--ts-ruin: #5b4a44;
+	--ts-sail: #fbf7ee;
+	--ts-flag: #c73a2d;
+	--ts-army: #5d6440;
+	--ts-army-dark: #3c4129;
+	--ts-plane: #3a3f46;
+	--ts-contrail: #ffffff;
+	--ts-beam: #fff6c8;
+	--ts-fire: #ff7a2a;
+	--ts-fire-core: #ffd65a;
+	--ts-smoke: #5a5050;
+	--ts-glow: #ff7a3a;
+	--ts-bird: #34465a;
+	--ts-wire: #3a3a36;
+	--ts-sand: #c9b48a;
+	--ts-sand-edge: #9c8762;
+	--ts-crater: #1a1214;
+}
+
+/* Mild: an afternoon, clouds coming in. */
+.hearth-tension-scene.is-mild {
+	--ts-sky-top: #7fb0d8;
+	--ts-sky-mid: #b8d2e6;
+	--ts-sky-bottom: #f1e6cc;
+	--ts-sky-flat: #9cc1df;
+	--ts-sky-band: #d6dcd6;
+	--ts-sun: #ffe08a;
+	--ts-cloud: #f6f7f8;
+	--ts-cloud-dark: #d4dbe2;
+	--ts-hill-far: #a7c992;
+	--ts-hill-mid: #87b36d;
+	--ts-ground: #6ea05a;
+	--ts-tree: #4a8a4a;
+	--ts-tree-light: #64a35c;
+	--ts-roof: #c55f43;
+}
+
+/* Warm: an amber overcast; the army has arrived. */
+.hearth-tension-scene.is-warm {
+	--ts-sky-top: #a39a8a;
+	--ts-sky-mid: #cdb58e;
+	--ts-sky-bottom: #eec688;
+	--ts-sky-flat: #c2b294;
+	--ts-sky-band: #dfc08e;
+	--ts-sun: #ffc36b;
+	--ts-cloud: #b9b0a2;
+	--ts-cloud-dark: #8f877c;
+	--ts-hill-far: #aaa27a;
+	--ts-hill-mid: #8d8a5d;
+	--ts-ground: #76754b;
+	--ts-tree: #5f6b3c;
+	--ts-tree-light: #74804a;
+	--ts-wall: #e2d3b6;
+	--ts-wall-shade: #c8b594;
+	--ts-roof: #9d5a3f;
+	--ts-window: #5c6a72;
+	--ts-bird: #3b3a38;
+}
+
+/* Hot: a red dusk, smoke on the horizon. */
+.hearth-tension-scene.is-hot {
+	--ts-sky-top: #3f2c44;
+	--ts-sky-mid: #93465a;
+	--ts-sky-bottom: #f07a48;
+	--ts-sky-flat: #7a3f55;
+	--ts-sky-band: #c9584c;
+	--ts-sun: #ff9e5e;
+	--ts-cloud: #7a4a52;
+	--ts-cloud-dark: #4d3038;
+	--ts-hill-far: #6d4546;
+	--ts-hill-mid: #4d3334;
+	--ts-ground: #3a2828;
+	--ts-silhouette: #1e1415;
+	--ts-trunk: #2c1f1d;
+	--ts-wall: #b89886;
+	--ts-wall-shade: #94766a;
+	--ts-roof: #5e3226;
+	--ts-window-lit: #ffcd6e;
+	--ts-door: #3e2720;
+	--ts-army: #6a6150;
+	--ts-army-dark: #2a241f;
+	--ts-plane: #1f1a1c;
+	--ts-contrail: #ffd8c4;
+	--ts-smoke: #2e2224;
+	--ts-glow: #ff6a2a;
+	--ts-wire: #1c1515;
+	--ts-sand: #7d6650;
+	--ts-sand-edge: #54432f;
+}
+
+/* Burning: night over a village at war. */
+.hearth-tension-scene.is-burning {
+	--ts-sky-top: #0c0912;
+	--ts-sky-mid: #2b1320;
+	--ts-sky-bottom: #7c2414;
+	--ts-sky-flat: #1d1220;
+	--ts-sky-band: #4a1a1c;
+	--ts-moon: #cbbfb0;
+	--ts-cloud: #3a2426;
+	--ts-cloud-dark: #25181b;
+	--ts-hill-far: #2e1b1d;
+	--ts-hill-mid: #211416;
+	--ts-ground: #160e10;
+	--ts-silhouette: #0c0809;
+	--ts-trunk: #140d0d;
+	--ts-wall: #3c2a28;
+	--ts-wall-shade: #2c1e1d;
+	--ts-roof: #22171a;
+	--ts-window-lit: #ff8a3a;
+	--ts-door: #140d0d;
+	--ts-ruin: #4a302b;
+	--ts-army: #4d4438;
+	--ts-army-dark: #1c1714;
+	--ts-plane: #070506;
+	--ts-contrail: #ffb08a;
+	--ts-beam: #ffe0b0;
+	--ts-fire: #ff5a1f;
+	--ts-fire-core: #ffd24a;
+	--ts-smoke: #1a1213;
+	--ts-glow: #ff4a14;
+	--ts-wire: #0c0808;
+	--ts-sand: #4a3a2c;
+	--ts-sand-edge: #2c2219;
+	--ts-crater: #070405;
+}
+
+/* The flat Expressive palettes: brighter, fewer steps, no haze. */
+.hearth-tension-scene.is-expressive.is-cool {
+	--ts-sky-flat: #9ad3fb;
+	--ts-sky-band: #c3e6ff;
+	--ts-sun: #ffcf33;
+	--ts-hill-far: #9fdc8e;
+	--ts-hill-mid: #6cc35c;
+	--ts-ground: #48a848;
+	--ts-tree: #2f8f3f;
+	--ts-roof: #ee6a4a;
+}
+
+.hearth-tension-scene.is-expressive.is-mild {
+	--ts-sky-flat: #a9cdee;
+	--ts-sky-band: #e6e2cf;
+	--ts-sun: #ffc93d;
+	--ts-hill-far: #b0d48e;
+	--ts-hill-mid: #86bd62;
+	--ts-ground: #63a54e;
+}
+
+.hearth-tension-scene.is-expressive.is-warm {
+	--ts-sky-flat: #d8c29a;
+	--ts-sky-band: #efcf8f;
+	--ts-sun: #ffb13d;
+	--ts-cloud: #c7bba8;
+	--ts-cloud-dark: #a09480;
+	--ts-hill-far: #bdb07a;
+	--ts-hill-mid: #9c9658;
+	--ts-ground: #7f7c44;
+	--ts-army: #62693a;
+}
+
+.hearth-tension-scene.is-expressive.is-hot {
+	--ts-sky-flat: #8e3f5c;
+	--ts-sky-band: #e0654f;
+	--ts-sun: #ffb35c;
+	--ts-hill-far: #7a4449;
+	--ts-hill-mid: #563236;
+	--ts-ground: #3e2527;
+	--ts-fire: #ff7b2e;
+}
+
+.hearth-tension-scene.is-expressive.is-burning {
+	--ts-sky-flat: #231426;
+	--ts-sky-band: #5a1c22;
+	--ts-hill-far: #3a1e24;
+	--ts-hill-mid: #28151a;
+	--ts-ground: #190d11;
+	--ts-fire: #ff6424;
+	--ts-fire-core: #ffd23f;
+}
+
+.hearth-tension-art {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* A card taller than the scene would crop the village off both sides. There
+ * the scene stands on the bottom edge at no more than half again the card's
+ * width — cropping a little of the sides, centred on the village rather than
+ * the middle, which is where the story is — and its sky, drawn on past the
+ * top of its box (`.ts-sky-over`), fills the card above it. */
+@container (max-aspect-ratio: 36 / 22) {
+	.hearth-tension-scene .hearth-tension-art {
+		--tn-art-w: min(150cqw, 163.6cqh);
+		top: auto;
+		right: auto;
+		/* The village's middle on the card's middle, but never so far over
+		 * that an edge of the card goes uncovered. */
+		left: clamp(calc(100cqw - var(--tn-art-w)), calc(50cqw - 0.58 * var(--tn-art-w)), 0px);
+		width: var(--tn-art-w);
+		height: auto;
+		aspect-ratio: 360 / 220;
+		overflow: visible;
+	}
+}
+
+.ts-sky-over {
+	fill: var(--ts-sky-top);
+}
+
+.is-expressive .ts-sky-over {
+	fill: var(--ts-sky-flat);
+}
+
+/* Sky */
+.ts-sky-top {
+	stop-color: var(--ts-sky-top);
+}
+
+.ts-sky-mid {
+	stop-color: var(--ts-sky-mid);
+}
+
+.ts-sky-bottom {
+	stop-color: var(--ts-sky-bottom);
+}
+
+.is-expressive .ts-sky {
+	fill: var(--ts-sky-flat);
+}
+
+.ts-sky-band {
+	fill: var(--ts-sky-band);
+}
+
+.ts-glow-in {
+	stop-color: var(--ts-glow);
+	stop-opacity: 0.7;
+}
+
+.ts-glow-out {
+	stop-color: var(--ts-glow);
+	stop-opacity: 0;
+}
+
+.ts-sun-disc {
+	fill: var(--ts-sun);
+}
+
+.ts-sun-glow {
+	fill: var(--ts-sun);
+	opacity: 0.22;
+}
+
+.is-expressive .ts-sun-glow {
+	opacity: 0.3;
+}
+
+.ts-moon {
+	fill: var(--ts-moon);
+}
+
+.ts-moon-bite {
+	fill: var(--ts-sky-top);
+}
+
+.is-expressive .ts-moon-bite {
+	fill: var(--ts-sky-flat);
+}
+
+.ts-star {
+	fill: #fff;
+	opacity: 0.75;
+}
+
+.ts-cloud {
+	fill: var(--ts-cloud);
+	opacity: 0.92;
+}
+
+.ts-cloud-dark {
+	fill: var(--ts-cloud-dark);
+	opacity: 0.92;
+}
+
+.is-expressive .ts-cloud,
+.is-expressive .ts-cloud-dark {
+	opacity: 1;
+}
+
+.ts-sky-flash {
+	fill: var(--ts-fire);
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* Land */
+.ts-hill-far {
+	fill: var(--ts-hill-far);
+}
+
+.ts-hill-mid {
+	fill: var(--ts-hill-mid);
+}
+
+.ts-ground {
+	fill: var(--ts-ground);
+}
+
+.ts-tree {
+	fill: var(--ts-tree);
+}
+
+.ts-tree-light {
+	fill: var(--ts-tree-light);
+}
+
+.ts-trunk {
+	fill: var(--ts-trunk);
+}
+
+.ts-tree-dead {
+	fill: none;
+	stroke: var(--ts-silhouette);
+	stroke-width: 1.4px;
+	stroke-linecap: round;
+}
+
+.ts-flower-a {
+	fill: #ffd84d;
+}
+
+.ts-flower-b {
+	fill: #ff93b4;
+}
+
+.ts-flower-c {
+	fill: #ffffff;
+}
+
+.ts-wool {
+	fill: #f8f5ec;
+}
+
+.ts-sheep-head {
+	fill: #3a3430;
+}
+
+.ts-leg {
+	stroke: #3a3430;
+	stroke-width: 1px;
+}
+
+.ts-crater-rim {
+	fill: var(--ts-hill-mid);
+}
+
+.ts-crater {
+	fill: var(--ts-crater);
+}
+
+/* Buildings */
+.ts-wall,
+.ts-mill {
+	fill: var(--ts-wall);
+}
+
+.ts-wall-shade {
+	fill: var(--ts-wall-shade);
+}
+
+.ts-roof {
+	fill: var(--ts-roof);
+}
+
+.ts-roof.is-round,
+.ts-tent.is-round,
+.ts-tower-roof.is-round {
+	stroke-linejoin: round;
+	stroke-width: 2.2px;
+}
+
+.ts-roof.is-round {
+	stroke: var(--ts-roof);
+}
+
+.ts-window {
+	fill: var(--ts-window);
+}
+
+.ts-window-lit {
+	fill: var(--ts-window-lit);
+}
+
+.ts-door {
+	fill: var(--ts-door);
+}
+
+.ts-ruin {
+	fill: var(--ts-ruin);
+}
+
+.ts-cross {
+	fill: none;
+	stroke: var(--ts-roof);
+	stroke-width: 1.2px;
+	stroke-linecap: round;
+}
+
+.ts-blade,
+.ts-hub {
+	fill: var(--ts-trunk);
+}
+
+.ts-blade-sail {
+	fill: var(--ts-sail);
+}
+
+.ts-tower-legs,
+.ts-pole,
+.ts-post {
+	fill: none;
+	stroke: var(--ts-trunk);
+	stroke-width: 1.4px;
+	stroke-linecap: round;
+}
+
+.ts-tower,
+.ts-tower-roof {
+	fill: var(--ts-trunk);
+}
+
+.ts-tower-roof.is-round {
+	stroke: var(--ts-trunk);
+}
+
+.ts-flag {
+	fill: #ffffff;
+}
+
+.ts-flag-war {
+	fill: var(--ts-flag);
+}
+
+/* The army */
+.ts-tent {
+	fill: var(--ts-army);
+}
+
+.ts-tent.is-round {
+	stroke: var(--ts-army);
+}
+
+.ts-tent-door {
+	fill: var(--ts-army-dark);
+}
+
+.ts-tank {
+	fill: var(--ts-army);
+}
+
+.ts-tank-track {
+	fill: var(--ts-army-dark);
+}
+
+.ts-tank-wheel {
+	fill: var(--ts-army);
+}
+
+.ts-flash {
+	fill: var(--ts-fire-core);
+}
+
+.ts-beam {
+	fill: var(--ts-beam);
+	opacity: 0.16;
+}
+
+.ts-lamp {
+	fill: var(--ts-beam);
+}
+
+.ts-jet,
+.ts-bomber,
+.ts-bomb,
+.ts-bomb-fin {
+	fill: var(--ts-plane);
+}
+
+.ts-bomber-glass {
+	fill: var(--ts-window-lit);
+}
+
+.ts-contrail {
+	fill: none;
+	stroke: var(--ts-contrail);
+	stroke-width: 1.3px;
+	stroke-linecap: round;
+	opacity: 0.55;
+}
+
+.ts-coil {
+	fill: none;
+	stroke: var(--ts-wire);
+	stroke-width: 0.7px;
+}
+
+.ts-sandbag {
+	fill: var(--ts-sand);
+	stroke: var(--ts-sand-edge);
+	stroke-width: 0.6px;
+}
+
+/* Fire and smoke */
+.ts-fire,
+.ts-blast {
+	fill: var(--ts-fire);
+}
+
+.ts-fire-core,
+.ts-blast-core,
+.ts-flak-spark {
+	fill: var(--ts-fire-core);
+}
+
+.ts-blast-glow {
+	fill: var(--ts-fire);
+	opacity: 0.22;
+}
+
+.ts-smoke {
+	fill: var(--ts-smoke);
+	opacity: 0.55;
+}
+
+.ts-flak-puff {
+	fill: var(--ts-smoke);
+	opacity: 0.85;
+}
+
+.is-expressive .ts-smoke {
+	opacity: 0.7;
+}
+
+.ts-bird {
+	fill: none;
+	stroke: var(--ts-bird);
+	stroke-width: 1.2px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/* ---- Motion ----
+ * Every moving part is drawn around its own origin (a blade round its hub, a
+ * flame on its base), so the default SVG transform origin is the right one. */
+.hearth-tension-scene.is-animated .ts-spin {
+	animation: ts-spin 9s linear infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-sunny {
+	animation: ts-spin 60s linear infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-drift {
+	animation: ts-sway 38s ease-in-out infinite alternate;
+}
+
+.hearth-tension-scene.is-animated .ts-drift.is-lane-1 {
+	animation-duration: 52s;
+}
+
+.hearth-tension-scene.is-animated .ts-drift.is-lane-2 {
+	animation-duration: 64s;
+}
+
+.hearth-tension-scene.is-animated .ts-flock {
+	animation: ts-sway 24s ease-in-out infinite alternate;
+}
+
+.hearth-tension-scene.is-animated .ts-flap {
+	animation: ts-flap 0.55s ease-in-out infinite alternate;
+}
+
+.hearth-tension-scene.is-animated .ts-wave {
+	animation: ts-wave 1.3s ease-in-out infinite alternate;
+}
+
+.hearth-tension-scene.is-animated .ts-star {
+	animation: ts-twinkle 3s ease-in-out infinite alternate;
+}
+
+.hearth-tension-scene.is-animated .ts-flicker {
+	animation: ts-flicker 0.7s ease-in-out infinite alternate;
+}
+
+.hearth-tension-scene.is-animated .ts-smoke {
+	transform-box: fill-box;
+	transform-origin: center;
+	animation: ts-rise 6s linear infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-sweep {
+	animation: ts-sweep 7s ease-in-out infinite alternate;
+}
+
+.hearth-tension-scene.is-animated .ts-muzzle {
+	animation: ts-muzzle 4s linear infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-fly-jet {
+	animation: ts-jet 11s linear infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-fly-bomber {
+	animation: ts-bomber 24s linear infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-drop {
+	animation: ts-drop 2.7s ease-in infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-boom {
+	animation: ts-boom 3.2s ease-out infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-flak {
+	animation: ts-flak 2.4s ease-out infinite;
+}
+
+.hearth-tension-scene.is-animated .ts-sky-flash {
+	animation: ts-skyflash 3.2s linear infinite;
+}
+
+/* Still (motion off): the planes sit where they read best, the bombs hang
+ * under the bomber and the muzzles are dark. */
+.hearth-tension-scene:not(.is-animated) .ts-muzzle {
+	opacity: 0;
+}
+
+@keyframes ts-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes ts-sway {
+	from {
+		transform: translateX(-14px);
+	}
+	to {
+		transform: translateX(14px);
+	}
+}
+
+@keyframes ts-flap {
+	from {
+		transform: scaleY(1);
+	}
+	to {
+		transform: scaleY(0.35);
+	}
+}
+
+@keyframes ts-wave {
+	from {
+		transform: skewY(0deg) scaleX(1);
+	}
+	to {
+		transform: skewY(10deg) scaleX(0.9);
+	}
+}
+
+@keyframes ts-twinkle {
+	from {
+		opacity: 0.25;
+	}
+	to {
+		opacity: 0.9;
+	}
+}
+
+@keyframes ts-flicker {
+	from {
+		transform: scale(1, 1);
+	}
+	to {
+		transform: scale(0.88, 0.78);
+	}
+}
+
+@keyframes ts-rise {
+	from {
+		transform: translate(0, 0) scale(0.7);
+		opacity: 0.65;
+	}
+	to {
+		transform: translate(8px, -30px) scale(1.7);
+		opacity: 0;
+	}
+}
+
+@keyframes ts-sweep {
+	from {
+		transform: rotate(-28deg);
+	}
+	to {
+		transform: rotate(24deg);
+	}
+}
+
+@keyframes ts-muzzle {
+	0%, 100% {
+		opacity: 0;
+		transform: scale(0.4);
+	}
+	2% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	8% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+}
+
+@keyframes ts-jet {
+	0% {
+		transform: translateX(400px);
+	}
+	45%, 100% {
+		transform: translateX(-130px);
+	}
+}
+
+@keyframes ts-bomber {
+	from {
+		transform: translateX(-70px);
+	}
+	to {
+		transform: translateX(440px);
+	}
+}
+
+@keyframes ts-drop {
+	0% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+	8% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(80px);
+		opacity: 0;
+	}
+}
+
+@keyframes ts-boom {
+	0% {
+		transform: scale(0.2);
+		opacity: 0;
+	}
+	6% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	30% {
+		transform: scale(1.35);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.35);
+		opacity: 0;
+	}
+}
+
+@keyframes ts-flak {
+	0% {
+		transform: scale(0.3);
+		opacity: 0;
+	}
+	8% {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+	60% {
+		transform: scale(1.4);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.4);
+		opacity: 0;
+	}
+}
+
+@keyframes ts-skyflash {
+	0%, 100% {
+		opacity: 0;
+	}
+	3% {
+		opacity: 0.22;
+	}
+	12% {
+		opacity: 0;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.hearth-tension-scene.is-animated *:not(#hearth-boost) {
 		animation: none;
 	}
 }
@@ -19605,6 +22099,13 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	color: var(--x-on-primary);
 }
 
+:is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-rss-tabmore {
+	height: 24px;
+	background: var(--x-surface-high);
+	color: var(--x-on-container);
+	font-weight: 650;
+}
+
 :is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-rss-refresh,
 :is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-jira-refresh,
 :is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-git-refresh {
@@ -20084,6 +22585,16 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	border-radius: 999px;
 }
 
+/* Obsidian pins a date field's calendar icon to the start edge and makes room
+   for it with a padding it only sets on desktop, so on a phone the paddings
+   above left the icon over "dd.mm.yyyy". Keep that room everywhere. After the
+   Expressive rule above, with its specificity, so it wins there too; desktop's
+   own rule outranks it and is unchanged. */
+.hearth-taskdetail-input[type="date"],
+.hearth-operon-add-due {
+	padding-inline-start: var(--size-4-6);
+}
+
 /* ---- The task filter: chips as Material filter chips ---- */
 .hearth-x-modal .hearth-taskfilter-chip {
 	padding: 5px 12px;
@@ -20101,7 +22612,163 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	font-weight: 750;
 }
 
+/* ---- The RSS reader ---- */
+.hearth-x-modal .hearth-rss-reader-bar {
+	border-bottom: none;
+}
+
+.hearth-x-modal .hearth-rss-reader-list {
+	padding-right: 12px;
+	border-right: none;
+}
+
+.hearth-x-modal .hearth-rss-item.is-current {
+	background: var(--x-container);
+	border-radius: 20px;
+}
+
+.hearth-x-modal .hearth-rss-reader-article {
+	margin: 0 0 4px;
+	border-radius: 28px;
+	background: var(--x-surface);
+}
+
+.hearth-x-modal h1.hearth-rss-reader-title {
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
+
+.hearth-x-modal .hearth-rss-reader-meta {
+	color: var(--x-on-container);
+	font-weight: 600;
+}
+
+.hearth-x-modal button.hearth-rss-reader-action,
+.hearth-x-modal button.hearth-rss-reader-step,
+.hearth-x-modal button.hearth-clip-chip {
+	border: none;
+	border-radius: 999px;
+	background: var(--x-surface-high);
+	box-shadow: none;
+	color: var(--x-on-container);
+	font-weight: 650;
+	padding-inline: 16px;
+}
+
+.hearth-x-modal button.hearth-rss-reader-action:hover,
+.hearth-x-modal button.hearth-rss-reader-step:hover,
+.hearth-x-modal button.hearth-clip-chip:hover {
+	background: var(--x-surface-highest);
+}
+
+.hearth-x-modal button.hearth-rss-reader-action.mod-cta {
+	background: var(--x-primary);
+	color: var(--x-on-primary);
+}
+
+.hearth-x-modal button.hearth-rss-reader-step {
+	border-radius: 20px;
+	padding-block: 10px;
+}
+
+.hearth-x-modal button.hearth-clip-chip {
+	border-radius: 14px;
+	padding-inline: 10px;
+}
+
+.hearth-x-modal .hearth-rss-reader-blocked {
+	border-radius: 20px;
+	background: var(--x-surface-high);
+	color: var(--x-on-container);
+}
+
+.hearth-x-modal .hearth-rss-reader-blocked button.hearth-rss-reader-action {
+	background: var(--x-container);
+}
+
+.hearth-x-modal .hearth-rss-reader-nav {
+	border-top: none;
+}
+
+.hearth-x-modal :is(.hearth-clip-ref, .hearth-clip-preview) {
+	border: none;
+	border-radius: 22px;
+	background: var(--x-surface);
+}
+
+.hearth-x-modal .hearth-clip-preview-text {
+	border-radius: 14px;
+	background: var(--x-surface-high);
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-rss-tab-count {
+	background: var(--x-container);
+	color: var(--x-on-container);
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-rss-tab.is-active .hearth-rss-tab-count {
+	background: color-mix(in srgb, var(--x-on-primary) 25%, transparent);
+	color: inherit;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-rss-dot {
+	width: 8px;
+	height: 8px;
+	flex-basis: 8px;
+	background: var(--x-primary);
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-rss-item.is-read .hearth-rss-dot {
+	background: transparent;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-rss-item.is-read .hearth-rss-title {
+	font-weight: 550;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-rss-refresh.is-active {
+	background: var(--x-container);
+	color: var(--x-on-container);
+}
+
 /* ---- The folder browser ---- */
+.hearth-x-modal .hearth-folder-section {
+	border: none;
+	border-radius: 22px;
+	background: var(--x-surface);
+}
+
+.hearth-x-modal .hearth-folder-head {
+	border-bottom: none;
+	background: var(--x-surface-high);
+}
+
+.hearth-x-modal .hearth-folder-head:hover {
+	background: var(--x-surface-highest);
+}
+
+.hearth-x-modal .hearth-folder-head-toggle {
+	border-radius: 999px;
+}
+
+.hearth-x-modal .hearth-folder-tile {
+	border: none;
+	border-radius: 16px;
+	background: var(--x-surface-high);
+}
+
+.hearth-x-modal .hearth-folder-tile:hover {
+	background: var(--x-surface-highest);
+}
+
+.hearth-x-modal .hearth-folder-tile-picture {
+	border-radius: 0 0 16px 16px;
+}
+
+.hearth-x-modal .hearth-folder-tile-cover {
+	border-radius: 16px 16px 0 0;
+}
+
 .hearth-x-modal .hearth-folder-bar {
 	padding-bottom: 10px;
 	border-bottom: none;
@@ -21275,8 +23942,9 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 
 .hearth-design-choice-name {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	gap: 8px;
+	gap: 4px 8px;
 	font-weight: 700;
 	color: var(--text-normal);
 }
@@ -21288,6 +23956,15 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	color: var(--text-on-accent);
 	font-size: var(--font-ui-smaller);
 	font-weight: 650;
+}
+
+/* Experimental: an outline beside the filled "In use", so the two read as
+ * different kinds of label. */
+.hearth-design-choice-badge.is-experimental {
+	padding: 0 7px;
+	border: 1px solid var(--text-warning);
+	background: transparent;
+	color: var(--text-warning);
 }
 
 .hearth-design-choice-desc {
@@ -21417,4 +24094,1008 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 .hearth-design-choice.is-expressive .hearth-design-preview-button {
 	border-radius: 999px;
 	background: var(--hd-accent);
+}
+
+/* =============================================================================
+ * Terminal mode (src/tui/)
+ * =============================================================================
+ *
+ * The whole plugin as a text interface. Everything below is scoped to one of
+ * four roots, so nothing here reaches anything that isn't Hearth's:
+ *
+ *   .hearth-tui          a Hearth view drawn in terminal mode
+ *   .hearth-t-modal      a Hearth dialog opened while terminal mode is on
+ *   .hearth-t-menu       a Hearth menu, likewise
+ *   .hearth-t-settings   Hearth's settings pane, likewise
+ *
+ * The board is a character grid. Every position on it is a whole number of
+ * cells — `--tui-ch` wide and `--tui-lh` tall, measured from the font by
+ * src/tui/metrics.ts — so the text inside a card body and the box-drawn frame
+ * around it can never drift apart.
+ *
+ * The font is JetBrains Mono, subset to Latin (with Czech and the rest of
+ * Latin Extended), Greek, Cyrillic, box drawing, block elements and the symbol
+ * blocks terminal mode draws with, and embedded here so every glyph on the
+ * grid comes from the one font and sits at exactly one cell.
+ *   Copyright 2020 The JetBrains Mono Project Authors
+ *   (https://github.com/JetBrains/JetBrainsMono), licensed under the SIL Open
+ *   Font License 1.1. The notice and the licence travel inside the font's own
+ *   name records (0, 13 and 14); the full text is also in the repository at
+ *   assets/fonts/JetBrainsMono-OFL.txt. JetBrains Mono declares no Reserved
+ *   Font Name; the subset is served here as "Hearth Mono" all the same.
+ * Bold is synthesised from the regular face, which keeps the advance width and
+ * halves what the stylesheet carries.
+ */
+@font-face {
+	font-family: "Hearth Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("data:font/woff2;base64,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") format("woff2");
+}
+
+/* ---- Colour schemes ---------------------------------------------------------
+ * "theme" (the default) reads every colour from the Obsidian theme. The fixed
+ * schemes set both the terminal's own colours and the theme variables a
+ * graphical card body or a dialog control reads, so those match too. */
+.hearth-tui,
+.hearth-t-modal,
+.hearth-t-menu,
+.hearth-t-settings {
+	--tui-font: "Hearth Mono", "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	--tui-bg: var(--background-primary);
+	--tui-bg-alt: var(--background-secondary);
+	--tui-fg: var(--text-normal);
+	--tui-dim: var(--text-muted);
+	--tui-faint: var(--text-faint);
+	--tui-line: var(--text-faint);
+	--tui-accent: var(--text-accent);
+	--tui-sel-bg: var(--text-accent);
+	--tui-sel-fg: var(--background-primary);
+	--tui-hdr-bg: var(--color-green);
+	--tui-hdr-fg: var(--background-primary);
+	--tui-green: var(--color-green);
+	--tui-red: var(--color-red);
+	--tui-yellow: var(--color-yellow);
+	--tui-blue: var(--color-blue);
+	--tui-magenta: var(--color-purple);
+	--tui-cyan: var(--color-cyan);
+	--tui-hover: var(--background-modifier-hover);
+	--tui-heat1: color-mix(in srgb, var(--tui-green) 28%, var(--tui-bg));
+	--tui-heat2: color-mix(in srgb, var(--tui-green) 52%, var(--tui-bg));
+	--tui-heat3: color-mix(in srgb, var(--tui-green) 76%, var(--tui-bg));
+	--tui-heat4: var(--tui-green);
+}
+
+.hearth-tui-scheme-htop {
+	--tui-bg: #0e1013;
+	--tui-bg-alt: #151920;
+	--tui-fg: #d4d7dc;
+	--tui-dim: #7c8390;
+	--tui-faint: #555c67;
+	--tui-line: #3b414b;
+	--tui-accent: #5fd0e0;
+	--tui-sel-bg: #5fd0e0;
+	--tui-sel-fg: #0e1013;
+	--tui-hdr-bg: #6fbf73;
+	--tui-hdr-fg: #0e1013;
+	--tui-green: #8ccf7e;
+	--tui-red: #ef7474;
+	--tui-yellow: #e5c07b;
+	--tui-blue: #6aa7f0;
+	--tui-magenta: #c792ea;
+	--tui-cyan: #5fd0e0;
+	--tui-hover: #1d2229;
+}
+
+.hearth-tui-scheme-hearth {
+	--tui-bg: #16141b;
+	--tui-bg-alt: #1d1a24;
+	--tui-fg: #e6e1ef;
+	--tui-dim: #8c84a0;
+	--tui-faint: #5f5870;
+	--tui-line: #4a4459;
+	--tui-accent: #b8a4f0;
+	--tui-sel-bg: #b8a4f0;
+	--tui-sel-fg: #16141b;
+	--tui-hdr-bg: #8e7cc3;
+	--tui-hdr-fg: #16141b;
+	--tui-green: #9fd4a3;
+	--tui-red: #f08a8a;
+	--tui-yellow: #ecc98a;
+	--tui-blue: #93b4f5;
+	--tui-magenta: #d9a4f0;
+	--tui-cyan: #9ed8e6;
+	--tui-hover: #221f2a;
+	--tui-heat1: #3a2f55;
+	--tui-heat2: #5b4a8a;
+	--tui-heat3: #8e7cc3;
+	--tui-heat4: #c9b8ff;
+}
+
+.hearth-tui-scheme-amber {
+	--tui-bg: #100b03;
+	--tui-bg-alt: #1a1206;
+	--tui-fg: #ffb341;
+	--tui-dim: #a8742a;
+	--tui-faint: #7a5418;
+	--tui-line: #5c4216;
+	--tui-accent: #ffd28a;
+	--tui-sel-bg: #ffb341;
+	--tui-sel-fg: #100b03;
+	--tui-hdr-bg: #ffb341;
+	--tui-hdr-fg: #100b03;
+	--tui-green: #ffcf7a;
+	--tui-red: #ff7a3d;
+	--tui-yellow: #ffe0a3;
+	--tui-blue: #e0a050;
+	--tui-magenta: #ffc070;
+	--tui-cyan: #ffd28a;
+	--tui-hover: #23180a;
+	--tui-heat1: #4a3210;
+	--tui-heat2: #7a5418;
+	--tui-heat3: #b87d22;
+	--tui-heat4: #ffb341;
+}
+
+.hearth-tui-scheme-paper {
+	--tui-bg: #f3f4f6;
+	--tui-bg-alt: #e8eaee;
+	--tui-fg: #1d2127;
+	--tui-dim: #5f6773;
+	--tui-faint: #8a929e;
+	--tui-line: #aeb5bf;
+	--tui-accent: #006d85;
+	--tui-sel-bg: #006d85;
+	--tui-sel-fg: #ffffff;
+	--tui-hdr-bg: #2e7d32;
+	--tui-hdr-fg: #ffffff;
+	--tui-green: #2e7d32;
+	--tui-red: #b42318;
+	--tui-yellow: #8a5a00;
+	--tui-blue: #1f5fbf;
+	--tui-magenta: #8a3aa0;
+	--tui-cyan: #006d85;
+	--tui-hover: #e3e6ea;
+	--tui-heat1: #c6e7cf;
+	--tui-heat2: #8fcf9f;
+	--tui-heat3: #4fa566;
+	--tui-heat4: #1f6f3a;
+}
+
+/* A fixed scheme also repaints the theme variables everything else reads. */
+:is(.hearth-tui-scheme-htop, .hearth-tui-scheme-hearth, .hearth-tui-scheme-amber, .hearth-tui-scheme-paper) {
+	--background-primary: var(--tui-bg);
+	--background-primary-alt: var(--tui-bg-alt);
+	--background-secondary: var(--tui-bg-alt);
+	--background-secondary-alt: var(--tui-bg-alt);
+	--background-modifier-hover: var(--tui-hover);
+	--background-modifier-border: var(--tui-line);
+	--background-modifier-border-hover: var(--tui-dim);
+	--background-modifier-form-field: var(--tui-bg);
+	--text-normal: var(--tui-fg);
+	--text-muted: var(--tui-dim);
+	--text-faint: var(--tui-faint);
+	--text-accent: var(--tui-accent);
+	--text-accent-hover: var(--tui-accent);
+	--interactive-accent: var(--tui-accent);
+	--interactive-accent-hover: var(--tui-accent);
+	--text-on-accent: var(--tui-sel-fg);
+	--color-green: var(--tui-green);
+	--color-red: var(--tui-red);
+	--color-yellow: var(--tui-yellow);
+	--color-blue: var(--tui-blue);
+	--color-purple: var(--tui-magenta);
+	--color-cyan: var(--tui-cyan);
+	--color-orange: var(--tui-yellow);
+	--icon-color: var(--tui-dim);
+}
+
+/* ---- The view ----------------------------------------------------------------- */
+.hearth-view.hearth-tui {
+	background: var(--tui-bg);
+	color: var(--tui-fg);
+	font-family: var(--tui-font);
+	font-size: var(--tui-font-size, 13px);
+	line-height: 1.32;
+	font-variant-ligatures: none;
+	font-variant-numeric: tabular-nums;
+	font-feature-settings: "calt" 0, "liga" 0;
+}
+
+.hearth-tui .hearth-tui-scroll {
+	--hearth-scroll-pad-x: 12px;
+	--hearth-scroll-pad-top: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 8px 12px 0;
+	/* The board keeps its column count down to a readable width; narrower
+	 * than that, the pane scrolls sideways instead of squeezing the cards. */
+	overflow-x: auto;
+}
+
+.hearth-tui .hearth-tui-screen {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.hearth-tui-line {
+	white-space: pre;
+	overflow: hidden;
+}
+
+.hearth-tui-probe,
+.hearth-tui-probe-inline {
+	position: absolute;
+	visibility: hidden;
+	white-space: pre;
+	pointer-events: none;
+	left: -10000px;
+	top: 0;
+}
+
+.hearth-tui-probe {
+	width: max-content;
+}
+
+/* ---- Text styles ---------------------------------------------------------------- */
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-dim { color: var(--tui-dim); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-faint { color: var(--tui-faint); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-accent { color: var(--tui-accent); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-green { color: var(--tui-green); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-red { color: var(--tui-red); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-yellow { color: var(--tui-yellow); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-blue { color: var(--tui-blue); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-magenta { color: var(--tui-magenta); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-cyan { color: var(--tui-cyan); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-heat1 { color: var(--tui-heat1); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-heat2 { color: var(--tui-heat2); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-heat3 { color: var(--tui-heat3); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-heat4 { color: var(--tui-heat4); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-bold { font-weight: 700; }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-italic { font-style: italic; }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-underline { text-decoration: underline; text-underline-offset: 2px; }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-strike { text-decoration: line-through; }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-header { background: var(--tui-hdr-bg); color: var(--tui-hdr-fg); }
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-header-sort { background: var(--tui-sel-bg); color: var(--tui-sel-fg); font-weight: 700; }
+/* A solid cell, painted as background so neighbouring rows touch with no gap
+ * between them — a block glyph stops short of the line height. */
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-block { background: var(--tui-accent); }
+/* A full cell of a chart: its colour as a background, so stacked cells meet
+ * without the gap a block glyph leaves inside a taller line. */
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-solid { background: currentColor; }
+/* An inline background covers only the font's content box, which is shorter
+ * than the line; a solid cell is stretched to the whole line so the rows of a
+ * chart or of big digits meet. */
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-bg { background: var(--tui-seg-bg); }
+:is(.hearth-tui, .hearth-t-modal) :is(.hearth-tui-solid, .hearth-tui-block, .hearth-tui-bg) {
+	display: inline-block;
+	height: 1lh;
+	vertical-align: top;
+}
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-reverse,
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-reverse:hover {
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+}
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-rule { color: var(--tui-line); }
+
+.hearth-tui-wide {
+	display: inline-block;
+	width: 2ch;
+	text-align: center;
+	overflow: hidden;
+	vertical-align: top;
+}
+
+.hearth-tui-act {
+	cursor: pointer;
+	border-radius: 0;
+}
+
+.hearth-tui-act:hover {
+	background: var(--tui-hover);
+}
+
+.hearth-tui-act:focus-visible {
+	outline: 1px solid var(--tui-accent);
+	outline-offset: -1px;
+}
+
+/* ---- The board ---------------------------------------------------------------- */
+.hearth-tui .hearth-tui-dash {
+	position: relative;
+	flex: 1 0 auto;
+	min-width: 0;
+	padding: 4px 0 8px;
+}
+
+.hearth-tui-board {
+	position: relative;
+	width: calc(var(--tui-cols, 80) * var(--tui-ch, 8px));
+	height: calc(var(--tui-rows, 24) * var(--tui-lh, 17px));
+	outline: none;
+	user-select: none;
+}
+
+.hearth-tui-board.is-dragging {
+	cursor: grabbing;
+}
+
+.hearth-tui-frames {
+	position: absolute;
+	inset: 0;
+	color: var(--tui-line);
+}
+
+.hearth-tui-frames .hearth-tui-line {
+	height: var(--tui-lh, 17px);
+}
+
+.hearth-tui-body {
+	position: absolute;
+	z-index: 1;
+	left: calc(var(--tui-x) * var(--tui-ch));
+	top: calc(var(--tui-y) * var(--tui-lh));
+	width: calc(var(--tui-w) * var(--tui-ch));
+	height: calc(var(--tui-h) * var(--tui-lh));
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width: none;
+	user-select: text;
+}
+
+.hearth-tui-body::-webkit-scrollbar {
+	display: none;
+}
+
+.hearth-tui-body.is-shielded {
+	pointer-events: none;
+}
+
+.hearth-tui-textbody {
+	position: absolute;
+}
+
+.hearth-tui-lines {
+	position: relative;
+}
+
+/* The lines that stay put while the body scrolls: a toolbar, a table header. */
+.hearth-tui-sticky {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background: var(--tui-bg);
+}
+
+.hearth-tui-mounts {
+	position: absolute;
+	inset: 0 auto auto 0;
+	width: 100%;
+	height: 0;
+}
+
+.hearth-tui-mount {
+	position: absolute;
+	left: calc(var(--tui-x) * var(--tui-ch, 1ch));
+	top: calc(var(--tui-y) * var(--tui-lh, 1.32em));
+	width: calc(var(--tui-w) * var(--tui-ch, 1ch));
+	height: calc(var(--tui-h) * var(--tui-lh, 1.32em));
+}
+
+/* Controls a text renderer mounts: a field, an editor. They are text too. */
+.hearth-tui-mount :is(textarea, input) {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	color: var(--tui-fg);
+	font: inherit;
+	line-height: inherit;
+	resize: none;
+	caret-color: var(--tui-accent);
+}
+
+.hearth-tui-mount :is(textarea, input):focus {
+	background: var(--tui-hover);
+	box-shadow: none;
+}
+
+.hearth-tui-mount :is(textarea, input)::placeholder {
+	color: var(--tui-faint);
+}
+
+/* ---- A card drawn graphically, inside its frame ------------------------------- */
+.hearth-tui-body.is-graphical {
+	overflow: hidden;
+}
+
+.hearth-tui .hearth-tui-guicard,
+.hearth-t-modal .hearth-tui-guicard {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	backdrop-filter: none;
+	--card-opacity: 0;
+	--hearth-card-radius: 0px;
+	--card-border-width: 0px;
+}
+
+.hearth-tui .hearth-tui-guicard > .hearth-card-body,
+.hearth-t-modal .hearth-tui-guicard > .hearth-card-body {
+	flex: 1;
+	min-height: 0;
+	padding: 0;
+	overflow: auto;
+	font-family: var(--tui-font);
+}
+
+.hearth-tui .hearth-tui-guicard :is(img, video, canvas) {
+	image-rendering: auto;
+	border-radius: 0;
+}
+
+/* ---- Tabs, title, toolbar ------------------------------------------------------ */
+.hearth-tui-tabs,
+.hearth-tui-titlerow,
+.hearth-tui-toolbar {
+	flex: none;
+	min-width: 0;
+}
+
+.hearth-tui-titlerow {
+	margin-bottom: 4px;
+}
+
+.hearth-tui-toolbar {
+	margin-top: 4px;
+}
+
+/* ---- Search: Hearth's search section, in terminal dress ------------------------ */
+.hearth-tui .hearth-tui-searchwrap {
+	display: block;
+	margin: 0 0 4px;
+	max-width: none;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-search-col {
+	position: relative;
+	width: 100%;
+}
+
+.hearth-tui .hearth-tui-searchrow {
+	display: flex;
+	align-items: center;
+	gap: 1ch;
+	min-width: 0;
+}
+
+.hearth-tui .hearth-tui-searchlabel {
+	flex: none;
+	padding: 0 1ch;
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+	font-weight: 700;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-search-bar {
+	flex: 1;
+	min-width: 0;
+	height: auto;
+	padding: 0;
+	border: 0;
+	border-bottom: 1px dashed var(--tui-line);
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	backdrop-filter: none;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-search-bar:focus-within {
+	border-bottom-color: var(--tui-accent);
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-search-icon {
+	display: none;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-search-input {
+	height: var(--tui-lh, 1.32em);
+	padding: 0 1ch;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	color: var(--tui-fg);
+	font: inherit;
+	caret-color: var(--tui-accent);
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-search-input::placeholder {
+	color: var(--tui-faint);
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-newnote {
+	height: auto;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	color: var(--tui-accent);
+	font: inherit;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-newnote::before { content: "["; }
+.hearth-tui .hearth-tui-searchwrap .hearth-newnote::after { content: "]"; }
+
+.hearth-tui .hearth-tui-searchwrap .hearth-newnote:hover {
+	background: var(--tui-hover);
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-newnote-icon {
+	display: none;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-searchonline {
+	display: inline-flex;
+	gap: 0;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 1ch;
+	margin: 0;
+	padding: 0;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-filter {
+	height: auto;
+	padding: 0 1ch;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	color: var(--tui-dim);
+	font: inherit;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-filter.is-active {
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-filter-icon {
+	display: none;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-search-results {
+	top: calc(100% + 2px);
+	padding: 0;
+	border: 1px solid var(--tui-accent);
+	border-radius: 0;
+	box-shadow: none;
+	background: var(--tui-bg);
+	background-image: none;
+	backdrop-filter: none;
+	font-family: var(--tui-font);
+}
+
+/* The search bar card: its results are rows of the card, not a dropdown
+ * over the board. */
+.hearth-tui .hearth-tui-cardsearch,
+.hearth-tui .hearth-tui-cardsearch .hearth-search-col {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+
+.hearth-tui .hearth-tui-cardsearch .hearth-search-results {
+	position: static;
+	flex: 1 1 auto;
+	min-height: 0;
+	max-height: none;
+	overflow-y: auto;
+	border: 0;
+	border-top: 1px dashed var(--tui-faint);
+	margin-top: 0;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-result {
+	gap: 1ch;
+	padding: 0 1ch;
+	border-radius: 0;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-result.is-selected,
+.hearth-tui .hearth-tui-searchwrap .hearth-result:hover {
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-result.is-selected :is(.hearth-result-path, .hearth-result-badge, .hearth-result-text),
+.hearth-tui .hearth-tui-searchwrap .hearth-result:hover :is(.hearth-result-path, .hearth-result-badge, .hearth-result-text) {
+	color: inherit;
+}
+
+/* Every part of a result on the grid's own size: a name, a path, an excerpt
+ * are all one line of the terminal's text. */
+.hearth-tui .hearth-tui-searchwrap .hearth-result :is(.hearth-result-name, .hearth-result-path, .hearth-result-text, .hearth-result-badge) {
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: normal;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-result .hearth-result-name {
+	font-weight: bold;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-result-icon {
+	flex: none;
+	width: 2ch;
+	color: var(--tui-dim);
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-result-badge {
+	border-radius: 0;
+	background: transparent;
+	color: var(--tui-magenta);
+}
+
+.hearth-tui .hearth-tui-searchwrap :is(.hearth-instant, .hearth-instant *) {
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.hearth-tui .hearth-tui-searchwrap .hearth-instant-value {
+	color: var(--tui-accent);
+	font-weight: 700;
+}
+
+/* ---- Status line and function keys --------------------------------------------- */
+.hearth-tui .hearth-tui-bottom {
+	position: sticky;
+	bottom: 0;
+	z-index: 5;
+	flex: none;
+	padding: 2px 0 calc(6px + env(safe-area-inset-bottom, 0px));
+	background: var(--tui-bg);
+}
+
+.hearth-tui-fkeys {
+	display: flex;
+	flex-wrap: wrap;
+	white-space: pre;
+}
+
+.hearth-tui-fkey {
+	display: inline-flex;
+	cursor: pointer;
+}
+
+.hearth-tui-fkey-n {
+	color: var(--tui-fg);
+}
+
+.hearth-tui-fkey-label {
+	min-width: 7ch;
+	margin-right: 1ch;
+	padding-right: 1ch;
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+}
+
+.hearth-tui-fkey:hover .hearth-tui-fkey-label {
+	background: var(--tui-accent);
+	filter: brightness(1.12);
+}
+
+/* ---- Icons drawn as characters (src/glyphs.ts) --------------------------------- */
+.hearth-glyph {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1ch;
+	font-family: "Hearth Mono", var(--font-monospace);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	white-space: pre;
+}
+
+.hearth-glyph > svg {
+	display: none;
+}
+
+/* ---- Dialogs ------------------------------------------------------------------- */
+.modal.hearth-t-modal {
+	border: 3px double var(--tui-line);
+	border-radius: 0;
+	box-shadow: none;
+	background: var(--tui-bg);
+	color: var(--tui-fg);
+	font-family: var(--tui-font);
+	font-variant-ligatures: none;
+	backdrop-filter: none;
+}
+
+.hearth-t-modal :is(.modal-title, .modal-content, .setting-item, .setting-item-name, .setting-item-description, input, textarea, select, button, .dropdown) {
+	font-family: var(--tui-font);
+}
+
+.hearth-t-modal .modal-title {
+	display: inline-block;
+	padding: 0 1ch;
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+	font-size: inherit;
+	font-weight: 700;
+}
+
+.hearth-t-modal .modal-close-button {
+	border-radius: 0;
+}
+
+.hearth-t-modal .modal-close-button::before {
+	content: "[x]";
+	color: var(--tui-dim);
+}
+
+.hearth-t-modal :is(button, .mod-cta, .dropdown, input[type="text"], input[type="search"], input[type="number"], input[type="date"], input[type="time"], textarea) {
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.hearth-t-modal button:not(.clickable-icon):not(.modal-close-button) {
+	border: 0;
+	background: transparent;
+	color: var(--tui-accent);
+}
+
+.hearth-t-modal button:not(.clickable-icon):not(.modal-close-button)::before { content: "[ "; }
+.hearth-t-modal button:not(.clickable-icon):not(.modal-close-button)::after { content: " ]"; }
+
+.hearth-t-modal button:not(.clickable-icon):not(.modal-close-button):hover {
+	background: var(--tui-hover);
+}
+
+.hearth-t-modal button.mod-cta {
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+}
+
+.hearth-t-modal button.mod-warning {
+	color: var(--tui-red);
+}
+
+.hearth-t-modal :is(input[type="text"], input[type="search"], input[type="number"], input[type="date"], input[type="time"], textarea) {
+	border: 0;
+	border-bottom: 1px dashed var(--tui-line);
+	background: transparent;
+}
+
+.hearth-t-modal :is(input, textarea):focus {
+	border-bottom-color: var(--tui-accent);
+	box-shadow: none;
+}
+
+.hearth-t-modal .dropdown {
+	border: 0;
+	border-bottom: 1px dashed var(--tui-line);
+	background-color: transparent;
+}
+
+/* A toggle becomes a checkbox you can read: [x] or [ ]. */
+:is(.hearth-t-modal, .hearth-t-settings) .checkbox-container {
+	width: 3ch;
+	height: auto;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+}
+
+:is(.hearth-t-modal, .hearth-t-settings) .checkbox-container::before {
+	content: "[ ]";
+	color: var(--tui-dim);
+	font-family: var(--tui-font);
+}
+
+:is(.hearth-t-modal, .hearth-t-settings) .checkbox-container.is-enabled::before {
+	content: "[x]";
+	color: var(--tui-accent);
+}
+
+:is(.hearth-t-modal, .hearth-t-settings) .checkbox-container::after {
+	display: none;
+}
+
+.hearth-t-modal .setting-item {
+	border-top: 1px dashed var(--tui-line);
+}
+
+.hearth-t-modal :is(.hearth-modal-tabs, .hearth-tabs) * {
+	border-radius: 0;
+}
+
+/* Zoom: a card at full size. */
+.modal.hearth-tui-zoom {
+	width: min(96vw, 1400px);
+	max-width: none;
+	height: min(90vh, 1000px);
+	max-height: none;
+}
+
+.hearth-tui-zoom .modal-content {
+	flex: 1;
+	display: flex;
+	min-height: 0;
+}
+
+.hearth-tui-zoombody {
+	position: relative;
+	flex: 1;
+	min-height: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	outline: none;
+	font-size: var(--tui-font-size, 13px);
+	line-height: 1.32;
+	scrollbar-width: none;
+}
+
+.hearth-tui-zoombody::-webkit-scrollbar {
+	display: none;
+}
+
+.hearth-tui-zoombody.hearth-tui-textbody {
+	position: relative;
+}
+
+.hearth-tui-helpbody {
+	font-size: var(--tui-font-size, 13px);
+	line-height: 1.32;
+}
+
+/* ---- Menus --------------------------------------------------------------------- */
+.menu.hearth-t-menu {
+	padding: 0;
+	border: 3px double var(--tui-line);
+	border-radius: 0;
+	box-shadow: none;
+	background: var(--tui-bg);
+	color: var(--tui-fg);
+	font-family: var(--tui-font);
+	backdrop-filter: none;
+}
+
+.hearth-t-menu .menu-item {
+	padding: 0 2ch 0 1ch;
+	border-radius: 0;
+}
+
+.hearth-t-menu .menu-item-icon {
+	display: none;
+}
+
+.hearth-t-menu .menu-item.selected:not(.is-disabled):not(.is-label),
+.hearth-t-menu .menu-item:hover:not(.is-disabled):not(.is-label) {
+	background: var(--tui-sel-bg);
+	color: var(--tui-sel-fg);
+}
+
+.hearth-t-menu .menu-item.is-warning {
+	color: var(--tui-red);
+}
+
+.hearth-t-menu .menu-separator {
+	margin: 0;
+	border-bottom: 1px solid var(--tui-line);
+}
+
+.hearth-t-menu .menu-item.mod-checked::before,
+.hearth-t-menu .menu-item-title::before {
+	font-family: var(--tui-font);
+}
+
+/* ---- The settings pane ----------------------------------------------------------- */
+.hearth-t-settings {
+	font-family: var(--tui-font);
+	font-variant-ligatures: none;
+}
+
+.hearth-t-settings :is(input, select, textarea, button, .dropdown, .setting-item-name, .setting-item-description) {
+	font-family: var(--tui-font);
+}
+
+.hearth-t-settings :is(.hearth-section-body, .hearth-settings-index-rows, .hearth-design-hero, .hearth-design-choice) {
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.hearth-t-settings :is(.hearth-section-body, .hearth-settings-index-rows) {
+	border: 1px solid var(--tui-line);
+}
+
+/* ---- The Terminal choice in the design hero ------------------------------------ */
+.hearth-design-choices.has-three {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 720px) {
+	.hearth-design-choices.has-three {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.hearth-design-preview.is-terminal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 6px;
+	border-radius: 0;
+	background: #0e1013;
+	color: #d4d7dc;
+	font-family: "Hearth Mono", var(--font-monospace);
+	font-size: 11px;
+	line-height: 1.32;
+	overflow: hidden;
+}
+
+.hearth-design-preview-tline {
+	white-space: pre;
+}
+
+.hearth-design-preview-tline:first-child {
+	color: #5fd0e0;
+}
+
+/* ---- Text renderers' own controls ---------------------------------------------- */
+.hearth-tui-calc-prompt {
+	display: flex;
+	align-items: center;
+}
+
+.hearth-tui-mount .hearth-tui-calc-input {
+	flex: 1;
+	min-width: 0;
+	height: var(--tui-lh, 1.32em);
+	border-bottom: 1px dashed var(--tui-line);
+}
+
+.hearth-tui-mount .hearth-tui-calc-input:focus {
+	border-bottom-color: var(--tui-accent);
+}
+
+.hearth-tui-mount textarea.hearth-tui-editor {
+	display: block;
+	white-space: pre-wrap;
+	overflow-y: auto;
+	scrollbar-width: thin;
+}
+
+.hearth-tui .hearth-tui-colored,
+.hearth-t-modal .hearth-tui-colored {
+	color: var(--tui-seg-color);
+}
+
+:is(.hearth-tui, .hearth-t-modal) .hearth-tui-reverse.hearth-tui-colored {
+	color: var(--tui-sel-fg);
 }

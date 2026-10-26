@@ -66,6 +66,13 @@ h4 {
 	margin-left: -9px;
 }
 
+.dg-advanced-settings > summary {
+	cursor: pointer;
+	padding: 0.75em 0;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+}
+
 /* Connection status styles */
 .connection-status {
 	display: inline-flex;
@@ -630,12 +637,14 @@ h4 {
 	border-left: 3px solid var(--text-warning);
 }
 
-.dg-home-prompt-hint {
+.dg-home-prompt-hint,
+.dg-connect-confirm-hint {
 	color: var(--text-muted);
 	font-size: 0.9em;
 }
 
-.dg-home-prompt-buttons {
+.dg-home-prompt-buttons,
+.dg-connect-confirm-buttons {
 	display: flex;
 	gap: 10px;
 	justify-content: flex-end;
