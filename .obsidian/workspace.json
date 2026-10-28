@@ -69,7 +69,8 @@
               "title": "xampp para linux com php 8.5"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,8 +139,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242,
-    "collapsed": true
+    "width": 239.00260543823242
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -343,8 +343,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1f40c708c0856b57",
+  "active": "50b56630b26bdeb6",
   "lastOpenFiles": [
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
@@ -370,7 +371,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Cristóvão.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
