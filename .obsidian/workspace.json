@@ -8,17 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1541459b099e8d77",
+            "id": "1f40c708c0856b57",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
-                "bFile": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
-                "aRef": ""
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "diff",
-              "title": "Diff: Auditoria_IQC_MoonSec  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Guia de atualização do Joomla no ambiente local"
             }
           },
           {
@@ -32,31 +42,31 @@
             }
           },
           {
-            "id": "48953dc80634d6e8",
-            "type": "leaf",
-            "state": {
-              "type": "hearth-home-view",
-              "state": {
-                "scroll": {
-                  "dash-mryonvc1-2834": 197
-                }
-              },
-              "icon": "lucide-ghost",
-              "title": "hearth-home-view"
-            }
-          },
-          {
             "id": "50b56630b26bdeb6",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duckduckgo.com/?q=atualiza%C3%A7ao+joomla&ia=web",
-                "title": "atualizaçao joomla at DuckDuckGo",
+                "url": "https://www.minix.com.hk/pt/products/minix-er947-ai-mini-pc-eu?ref=yjmjldih",
+                "title": "MINIX ER947-AI Mini PC AMD Ryzen AI 9 HX 470",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "atualizaçao joomla at DuckDuckGo"
+              "title": "MINIX ER947-AI Mini PC AMD Ryzen AI 9 HX 470"
+            }
+          },
+          {
+            "id": "b493a33f2ac7d56b",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://duck.ai/chat?chatID=c11dbb80-4105-4ba3-8170-d48e0ae2720a",
+                "title": "xampp para linux com php 8.5",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "xampp para linux com php 8.5"
             }
           }
         ]
@@ -128,7 +138,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242
+    "width": 239.00260543823242,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -332,12 +343,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1541459b099e8d77",
+  "active": "1f40c708c0856b57",
   "lastOpenFiles": [
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
     "10 - TAGS/2026-10.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
