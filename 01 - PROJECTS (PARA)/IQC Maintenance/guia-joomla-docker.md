@@ -205,14 +205,42 @@ No Linux, o Apache corre com o utilizador `www-data`. Para que o Joomla consiga 
 sudo chown -R www-data:www-data ~/web-server/htdocs
 ```
 
-### Passo C: Importar a Base de Dados no phpMyAdmin
+### Passo C: Importar a Base de Dados
+
+Existem duas formas de importar o seu ficheiro de base de dados para o MariaDB do Docker:
+
+#### Método 1: Direto pelo Terminal (Mais rápido, sem limites e recomendado para ficheiros grandes)
+Se a sua base de dados foi descarregada no Windows (por exemplo, na pasta Transferências/Downloads) ou tiver mais de 50 MB (ou formato `.sql.gz`), este é o método ideal, pois contorna todas as restrições de upload e *timeouts* do navegador.
+
+O WSL acede diretamente a todos os discos e ficheiros do Windows através do caminho `/mnt/c/Users/<Utilizador>/`:
+
+* **Se o ficheiro estiver compactado em `.sql.gz`:**
+  ```bash
+  cd ~/web-server
+  zcat /mnt/c/Users/Lenovo/Downloads/nome_do_ficheiro.sql.gz | docker compose exec -T db mariadb -u root -prootpassword joomla_db
+  ```
+  *(O utilitário `zcat` lê e descompacta o ficheiro diretamente em memória para o MariaDB em apenas 10-20 segundos).*
+
+* **Se o ficheiro for um `.sql` normal descompactado:**
+  ```bash
+  cd ~/web-server
+  docker compose exec -T db mariadb -u root -prootpassword joomla_db < /mnt/c/Users/Lenovo/Downloads/nome_do_ficheiro.sql
+  ```
+
+#### Método 2: Pela Interface Web do phpMyAdmin (Para ficheiros pequenos < 64MB)
 1. Aceda no navegador a: **`http://localhost:8081`**
 2. Inicie sessão com:
    * **Utilizador:** `root`
    * **Palavra-passe:** `rootpassword`
 3. No menu lateral esquerdo, clique no nome da base de dados **`joomla_db`**.
 4. No menu superior, clique em **Importar** (*Import*).
-5. Escolha o ficheiro `.sql` (ou `.sql.gz` / `.zip`) e clique em **Executar** (*Go*).
+5. Clique em **Escolher ficheiro** (*Browse*).
+   > [!TIP]
+   > **Como aceder aos ficheiros do Ubuntu a partir do seletor do Windows:**
+   > Como o navegador está a correr no Windows, a janela abrirá as pastas do Windows. Se o ficheiro estiver guardado dentro do Ubuntu (WSL):
+   > * Clique no ícone do pinguim **Linux** na barra lateral esquerda do Explorador de Ficheiros do Windows;
+   > * Ou cole na barra de endereços do Explorador: `\\wsl.localhost\Ubuntu\home\dbotas\`
+6. Clique em **Executar** (*Go*).
 
 ### Passo D: Atualizar o ficheiro `configuration.php` do Joomla
 Abra o ficheiro `~/web-server/htdocs/configuration.php` e certifique-se de que os seguintes parâmetros correspondem ao ambiente Docker:
@@ -338,6 +366,10 @@ Se tiver vários sites ou colocar o Joomla dentro de uma subpasta como `htdocs/i
 #### Erro "Error connecting to the database"
 * **Causa:** O ficheiro `configuration.php` está com `public $host = 'localhost';` ou credenciais erradas.
 * **Solução:** Altere para `public $host = 'db';` (o nome do serviço na rede Docker) e confirme o utilizador (`root` ou `joomla_user`) e senha (`rootpassword` ou `joomlapassword`).
+
+#### Erro "File exceeds upload_max_filesize" ou Timeout no phpMyAdmin
+* **Causa:** O phpMyAdmin tem um limite predefinido de 64 MB para upload através do navegador. Ficheiros grandes de bancos de dados geram erro ou excedem o tempo limite.
+* **Solução:** Utilize o método de importação direta pelo terminal com `zcat` (ver Secção 4 - Passo C, Método 1). Além de não ter limite de tamanho, importa em segundos.
 
 #### Erro de permissões ao enviar fotos ou instalar extensões no Joomla
 * **Causa:** Os ficheiros foram criados pelo seu utilizador do Linux sem permissão de escrita para o Apache (`www-data`).
