@@ -2054,6 +2054,7 @@ Painel
 Pane
 Pressione
 Pain
+Periodicamente
 obj
 oQw
 ot
@@ -3981,6 +3982,7 @@ obsessivo
 operas
 opinionated
 overlaps
+operativo
 Title
 Type
 Transparency
@@ -5880,6 +5882,7 @@ TMUX
 Tecla
 TPM
 Tmux
+Timeout
 FEFF
 Form
 Font
@@ -7708,6 +7711,8 @@ FINAL
 FRAUD
 Fechar
 Funcionamento
+Frequentes
+Forbidden
 Creator
 CreationDate
 CW
@@ -9934,6 +9939,10 @@ Configura
 Computador
 Continuum
 Comandos
+Compose
+Correspond
+Composer
+Chrome
 Mozilla
 ModDate
 MK
@@ -11915,6 +11924,8 @@ Mudar
 Modo
 Mode
 Manuais
+MariaDB
+Manuten
 Linux
 Length
 LJ
@@ -13703,6 +13714,7 @@ Louvar
 Lovells
 LibreOffice
 LocalSend
+LTS
 AppleWebKit
 ADN
 Ak
@@ -16138,6 +16150,9 @@ Autom
 Automaticamente
 Abrir
 Atalhos
+Arquitetura
+Ajustar
+Aceda
 KHTML
 Kn
 KA
@@ -25356,6 +25371,8 @@ Sess
 Shell
 Separadores
 Sair
+Solu
+Sites
 endobj
 endstream
 eV
@@ -28548,6 +28565,9 @@ experimentation
 existed
 encerramento
 encerrado
+executados
+exceeds
+excedem
 ca
 cW
 cEu
@@ -32505,6 +32525,14 @@ consumed
 cramming
 conventional
 continuum
+contentores
+comunicam
+contorna
+compactado
+cone
+contentor
+compactar
+connecting
 BM
 BBox
 BHq
@@ -34196,6 +34224,7 @@ Baseadas
 Bloat
 Beyond
 Basecamp
+Banco
 Normal
 NM
 Nf
@@ -39308,6 +39337,8 @@ Resurrect
 Recomendado
 Recarregar
 Reconectar
+Rotinas
+Reinicie
 ExtGState
 Ei
 ET
@@ -41262,6 +41293,9 @@ EDNS
 ECS
 Estive
 Encerramento
+Explorador
+Erro
+Edge
 true
 tTr
 tQr
@@ -43714,6 +43748,8 @@ tons
 tmux
 tecla
 tmuxconf
+termine
+timeouts
 stream
 sWz
 sj
@@ -46874,6 +46910,12 @@ slate
 separadores
 solte
 setas
+substituindo
+suportam
+seletor
+subpastas
+subpasta
+selecionar
 xU
 xM
 xLq
@@ -51747,6 +51789,7 @@ guy
 genuinely
 godsend
 gate
+geram
 am
 ah
 as
@@ -55378,6 +55421,8 @@ atalhos
 ativar
 atalho
 arrasta
+arquitetura
+aceda
 dA
 dD
 dd
@@ -58692,6 +58737,13 @@ distros
 dotfiles
 desligado
 desligar
+docker
+descarregada
+discos
+descompacta
+descompactado
+detached
+desativa
 zR
 zD
 zJ
@@ -63819,6 +63871,7 @@ Incompatibilidade
 Investir
 Inclina
 ISP
+Inicie
 nk
 nu
 nC
@@ -65675,6 +65728,7 @@ networking
 nightlight
 noticeably
 navegador
+navegadores
 pM
 pg
 pd
@@ -69185,6 +69239,10 @@ purists
 picks
 prebuilt
 prefixo
+passe
+pinguim
+predefinido
+partilham
 OaL
 Oar
 OQ
@@ -81310,6 +81368,9 @@ markets
 ministerio
 mentirem
 macOS
+mariadb
+montagem
+mount
 qd
 qm
 qI
@@ -85666,6 +85727,9 @@ illicit
 initiative
 impacting
 incertas
+isola
+identificador
+inode
 kC
 kp
 kN
@@ -90333,6 +90397,8 @@ unlicensed
 une
 untampered
 unencrypted
+ubuntu
+utilit
 YJ
 YQ
 YCG
@@ -97989,6 +98055,7 @@ beast
 bypasses
 bloqueado
 bloco
+bloqueada
 vdjL
 vd
 vR
@@ -101883,6 +101950,7 @@ Discord
 Docker
 Desbloquear
 Desanexar
+Digite
 rQ
 ru
 rg
@@ -104922,6 +104990,10 @@ resurrect
 rato
 rece
 registado
+recarregar
+regressar
+recriada
+renomeou
 hF
 hj
 hC

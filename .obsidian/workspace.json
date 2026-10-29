@@ -70,21 +70,45 @@
             }
           },
           {
+            "id": "e66dd6024175e68f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "guia-joomla-docker"
+            }
+          },
+          {
             "id": "b493a33f2ac7d56b",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat?chatID=c11dbb80-4105-4ba3-8170-d48e0ae2720a",
-                "title": "xampp para linux com php 8.5",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "xampp para linux com php 8.5"
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -357,10 +381,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4d5b759df54e36bd",
+  "active": "e66dd6024175e68f",
   "lastOpenFiles": [
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
