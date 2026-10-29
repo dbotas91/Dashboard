@@ -35,10 +35,24 @@
             "id": "4d5b759df54e36bd",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "type": "markdown",
+              "state": {
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "guia-tmux-completo"
             }
           },
           {
@@ -70,7 +84,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -343,8 +357,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50b56630b26bdeb6",
+  "active": "4d5b759df54e36bd",
   "lastOpenFiles": [
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
@@ -370,7 +385,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Cristóvão.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",

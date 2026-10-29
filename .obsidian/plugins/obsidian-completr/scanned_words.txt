@@ -2049,6 +2049,11 @@ Publico
 Praticar
 Popular
 Pinta
+Prefixo
+Painel
+Pane
+Pressione
+Pain
 obj
 oQw
 ot
@@ -5871,6 +5876,10 @@ Tivemos
 Transcri
 TLS
 Towards
+TMUX
+Tecla
+TPM
+Tmux
 FEFF
 Form
 Font
@@ -7697,6 +7706,8 @@ Familiar
 FASE
 FINAL
 FRAUD
+Fechar
+Funcionamento
 Creator
 CreationDate
 CW
@@ -9918,6 +9929,11 @@ Cinak
 Comigo
 Claude
 Chromium
+Completo
+Configura
+Computador
+Continuum
+Comandos
 Mozilla
 ModDate
 MK
@@ -11893,6 +11909,12 @@ Montanha
 Minimization
 Moonlight
 Minimum
+Multiplexer
+Mude
+Mudar
+Modo
+Mode
+Manuais
 Linux
 Length
 LJ
@@ -16110,6 +16132,12 @@ Armando
 Administra
 Alegra
 Arch
+Abas
+Atalho
+Autom
+Automaticamente
+Abrir
+Atalhos
 KHTML
 Kn
 KA
@@ -25324,6 +25352,10 @@ Steve
 Stecklow
 Serm
 Subnet
+Sess
+Shell
+Separadores
+Sair
 endobj
 endstream
 eV
@@ -28514,6 +28546,8 @@ encrypted
 envia
 experimentation
 existed
+encerramento
+encerrado
 ca
 cW
 cEu
@@ -32470,6 +32504,7 @@ circumvents
 consumed
 cramming
 conventional
+continuum
 BM
 BBox
 BHq
@@ -39267,6 +39302,12 @@ Riqueza
 Ruby
 Rails
 Ryzen
+Replicar
+Restaurar
+Resurrect
+Recomendado
+Recarregar
+Reconectar
 ExtGState
 Ei
 ET
@@ -41220,6 +41261,7 @@ Expectativa
 EDNS
 ECS
 Estive
+Encerramento
 true
 tTr
 tQr
@@ -43669,6 +43711,9 @@ telefone
 toolkit
 tap
 tons
+tmux
+tecla
+tmuxconf
 stream
 sWz
 sj
@@ -46826,6 +46871,9 @@ screensavers
 snapshots
 snapshot
 slate
+separadores
+solte
+setas
 xU
 xM
 xLq
@@ -49826,6 +49874,8 @@ Justa
 Jogo
 Judiciary
 Jeff
+Janela
+Janelas
 gh
 grd
 gCy
@@ -55324,6 +55374,10 @@ anycast
 agentic
 awake
 arranges
+atalhos
+ativar
+atalho
+arrasta
 dA
 dD
 dd
@@ -58635,6 +58689,9 @@ dense
 decent
 disappointment
 distros
+dotfiles
+desligado
+desligar
 zR
 zD
 zJ
@@ -61930,6 +61987,7 @@ whichever
 worrisome
 windows
 workloads
+wsl
 Is
 IL
 If
@@ -65616,6 +65674,7 @@ necessitado
 networking
 nightlight
 noticeably
+navegador
 pM
 pg
 pd
@@ -69125,6 +69184,7 @@ passthrough
 purists
 picks
 prebuilt
+prefixo
 OaL
 Oar
 OQ
@@ -72390,6 +72450,7 @@ Wcd
 Were
 Walker
 WhatsApp
+WSL
 jg
 jr
 jN
@@ -95666,6 +95727,7 @@ futuristic
 floating
 fills
 fiddle
+feche
 br
 bJ
 bW
@@ -97925,6 +97987,8 @@ bare
 barely
 beast
 bypasses
+bloqueado
+bloco
 vdjL
 vd
 vR
@@ -99942,6 +100006,7 @@ vowing
 violated
 violate
 vivessem
+verticalmente
 Dnb
 DFp
 DX
@@ -101816,6 +101881,8 @@ DNSSEC
 Dibakar
 Discord
 Docker
+Desbloquear
+Desanexar
 rQ
 ru
 rg
@@ -104851,6 +104918,10 @@ rebanho
 rearranges
 recipe
 ridiculously
+resurrect
+rato
+rece
+registado
 hF
 hj
 hC
@@ -106636,6 +106707,7 @@ headaches
 hosted
 heavier
 humble
+horizontalmente
 Äb
 Äc
 Äj

@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "guia-tmux-completo",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md"
+    },
+    {
       "basename": "Guia de atualização do Joomla no ambiente local",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Adult",
       "path": "09 - STATUS NOTES/Adult.md"
-    },
-    {
-      "basename": "Ceia e culto - 26-10-2025",
-      "path": "06 - DAILY-WEEKLY TASKS/Ceia e culto - 26-10-2025.md"
     }
   ],
   "omittedPaths": [],
