@@ -94,21 +94,35 @@
             }
           },
           {
+            "id": "4119e842d97b7f1c",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {
+                "scroll": {
+                  "dash-mryonvc1-2834": 255
+                }
+              },
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
+            }
+          },
+          {
             "id": "b493a33f2ac7d56b",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat?chatID=c11dbb80-4105-4ba3-8170-d48e0ae2720a",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "title": "xampp para linux com php 8.5",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+              "title": "xampp para linux com php 8.5"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -381,8 +395,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e66dd6024175e68f",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
@@ -407,8 +423,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Emiliano.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Cristóvão.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
