@@ -97,14 +97,14 @@
             "id": "4119e842d97b7f1c",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
+              "type": "split-diff-view",
               "state": {
-                "scroll": {
-                  "dash-mryonvc1-2834": 255
-                }
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           },
           {
@@ -395,8 +395,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4892fd3bf0af16c",
+  "active": "4119e842d97b7f1c",
   "lastOpenFiles": [
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
@@ -422,7 +423,6 @@
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Fábio.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
