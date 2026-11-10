@@ -70,6 +70,16 @@
             }
           },
           {
+            "id": "cf72b449fdc985eb",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
+            }
+          },
+          {
             "id": "e66dd6024175e68f",
             "type": "leaf",
             "state": {
@@ -94,20 +104,6 @@
             }
           },
           {
-            "id": "4119e842d97b7f1c",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
-            }
-          },
-          {
             "id": "b493a33f2ac7d56b",
             "type": "leaf",
             "state": {
@@ -122,7 +118,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -395,13 +391,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4119e842d97b7f1c",
+  "active": "cf72b449fdc985eb",
   "lastOpenFiles": [
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
