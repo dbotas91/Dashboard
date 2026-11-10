@@ -52,16 +52,17 @@ Copie este conteúdo exatamente como está para o ficheiro `~/.tmux.conf`:
 # CONFIGURAÇÃO PESSOAL DO TMUX
 # ==============================================================================
 
+# Altera o prefixo ("Prefix") padrão de Ctrl+b para Ctrl+a
+set -g prefix C-a
+unbind C-b
+bind C-a send-prefix
+
+# Atalho para recarregar a configuração rapidamente com "Prefix + r"
+bind r source-file ~/.tmux.conf \; display-message "Configuração recarregada!"
+
 # --- Usabilidade Geral ---
 # Ativar suporte total ao rato (clicar para focar painel, redimensionar, scroll)
 set -g mouse on
-
-# Numeração de janelas e painéis a começar em 1 (em vez de 0)
-set -g base-index 1
-setw -g pane-base-index 1
-
-# Renumerar automaticamente as janelas quando uma for fechada
-set -g renumber-windows on
 
 # Aumentar o limite do histórico de linhas do terminal (scrollback)
 set -g history-limit 10000
@@ -85,10 +86,20 @@ bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
 
+# Ou navegação entre painéis estilo VIM (Prefix + h/j/k/l)
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
 # --- Aspeto Visual e Cores ---
 # Ativar suporte a 256 cores e cores reais (TrueColor)
-set -g default-terminal "xterm-256color"
+set -g default-terminal "xterm-256color" # ou "screen-256color"
 set -as terminal-overrides ",xterm-256color:Tc"
+
+# Mais cores
+# set -g default-terminal "tmux-256color"
+# set -ga terminal-overrides ",*256col*:Tc"
 
 # Barra de estado (Status Bar) na parte inferior
 set -g status-position bottom
@@ -106,9 +117,30 @@ set -g window-status-current-format "#[fg=black,bg=green,bold] #I:#W "
 set -g pane-border-style fg=brightblack
 set -g pane-active-border-style fg=green
 
+# Inicia a numeração de janelas e painéis em 1 em vez de 0
+# Numeração de janelas e painéis a começar em 1 (em vez de 0)
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Renumerar automaticamente as janelas quando uma for fechada
+set -g renumber-windows on
+
+
 # Barra de mensagens internas do tmux
 set -g message-style bg=yellow,fg=black,bold
 
+# ====================================================================
+# 2. GERENCIADOR DE PLUGINS & TEMAS
+# ====================================================================
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Exemplo de Tema: Catppuccin
+set -g @plugin 'catppuccin/tmux'
+set -g @catppuccin_flavour 'mocha' # Opções: latte, frappe, macchiato, mocha
+
+# --- Outros plugins ---
 # --- Plugins e Persistência de Sessões (TPM) ---
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
