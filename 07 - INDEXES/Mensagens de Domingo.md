@@ -26,6 +26,7 @@ kanban-plugin: board
 - [ ] Por que não sou islâmico
 - [ ] [[Por que não sou ateu]]
 - [ ] [[Estímulos]]
+- [ ] [[O que te acontece quando morreres]]
 
 
 ## A falar

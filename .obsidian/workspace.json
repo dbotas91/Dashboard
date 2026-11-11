@@ -73,10 +73,20 @@
             "id": "cf72b449fdc985eb",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "type": "kanban",
+              "state": {
+                "file": "07 - INDEXES/Mensagens de Domingo.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "Mensagens de Domingo"
             }
           },
           {
@@ -119,6 +129,36 @@
           }
         ],
         "currentTab": 3
+      },
+      {
+        "id": "c0de4a1dbe74e589",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0673e00d02f49e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "O que te acontece quando morreres"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -391,8 +431,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cf72b449fdc985eb",
+  "active": "d0673e00d02f49e7",
   "lastOpenFiles": [
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
@@ -417,8 +459,6 @@
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro - Noivo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Carta ao Ignaldio.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",

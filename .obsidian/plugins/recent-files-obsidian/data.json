@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "O que te acontece quando morreres",
+      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md"
+    },
+    {
+      "basename": "Mensagens de Domingo",
+      "path": "07 - INDEXES/Mensagens de Domingo.md"
+    },
+    {
       "basename": "guia-tmux-completo",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md"
     },
@@ -55,10 +63,6 @@
     {
       "basename": "Mensagens Escritas",
       "path": "00 - MAPS OF CONTENT/Mensagens Escritas.md"
-    },
-    {
-      "basename": "Mensagens de Domingo",
-      "path": "07 - INDEXES/Mensagens de Domingo.md"
     },
     {
       "basename": "Estímulos",
@@ -195,10 +199,6 @@
     {
       "basename": "Carta ao Ignaldio",
       "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Ignaldio.md"
-    },
-    {
-      "basename": "Carta ao Emiliano",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Carta ao Emiliano.md"
     }
   ],
   "omittedPaths": [],
