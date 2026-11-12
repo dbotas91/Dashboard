@@ -133,24 +133,96 @@ However, there is no evidence that 90% of all code globally became AI-generated 
 
 ## Primary Sources
 
-1. Dario Amodei, CEO of <Organization>Anthropic</Organization>, interview and discussion at the <Organization>Council on Foreign Relations (CFR)</Organization>, March 2025. Source of the widely cited prediction that AI would write 90% of code within 3-6 months and nearly all code within 12 months. 【1-bd252c】【2-eb3c35】【3-6a0826】
+### 1. Dario Amodei - *Machines of Loving Grace* (October 2024)
 
-2. Dario Amodei, *Machines of Loving Grace* essay, October 2024. Discusses the arrival of powerful AI systems capable of performing many cognitive and knowledge-work tasks at or above human level, including software development. 【4-b8dfe7】【5-119b0e】
+Anthropic CEO Dario Amodei's essay outlining his vision of powerful AI systems and their impact on intellectual work, including software development.
 
-3. Statements by Dario Amodei at the World Economic Forum in Davos, January 2026, where he expanded his prediction from code generation to end-to-end software engineering automation. 【6-d59aca】【7-f27213】【8-7111f3】
+Link:
+https://www.darioamodei.com/machines-of-loving-grace
 
-4. Follow-up interviews and public comments by Dario Amodei in February 2026, refining the distinction between AI generating code and AI performing the complete role of a software engineer. 【9-e5c263】【10-66ad05】
+---
+
+### 2. Council on Foreign Relations (CFR) Event - March 2025
+
+The source of the widely quoted statement:
+
+> "AI is writing 90% of the code in 3-6 months and essentially all of the code within 12 months."
+
+Link:
+https://www.cfr.org/event/conversation-dario-amodei
+
+---
+
+### 3. World Economic Forum (Davos) - January 2026
+
+Discussion where Amodei expanded the prediction from code generation to end-to-end software engineering automation.
+
+Link:
+https://www.weforum.org/events/world-economic-forum-annual-meeting-2026
+
+---
 
 ## Secondary Sources
 
-- Coverage and analysis from major technology and business publications discussing the March 2025 forecast and its practical implications for software engineering. 【11-f40260】【12-fb8414】【13-4f4648】
+### Axios
 
-- Industry reporting tracking the adoption of AI-assisted development tools such as <Product>Claude Code</Product>, <Product>GitHub Copilot</Product>, and <Product>Cursor</Product>, and evaluating whether Amodei's predictions materialized within the projected timeframe. 【11-f40260】【12-fb8414】【13-4f4648】
+Coverage of Amodei's prediction that AI would generate nearly all code.
 
-## Notes on Interpretation
+https://www.axios.com/
 
-- The "90% of code" prediction refers specifically to code generation, not necessarily to the complete replacement of software engineers. 【1-bd252c】【2-eb3c35】
+Search:
+"Dario Amodei 90% of code Axios"
 
-- Beginning in 2026, Dario Amodei increasingly framed the discussion around automation of the entire software engineering lifecycle, including requirements analysis, testing, debugging, documentation, and deployment, rather than code generation alone. 【6-d59aca】【7-f27213】【9-e5c263】
+---
 
-- Several later analyses concluded that AI-assisted coding adoption increased substantially, but the claim that AI generated 90% of all software code globally within the forecast period was not supported by available evidence. 【11-f40260】【12-fb8414】【13-4f4648】
+### Business Insider
+
+Reporting and interviews covering Anthropic's forecasts regarding software engineering automation.
+
+https://www.businessinsider.com/
+
+Search:
+"Dario Amodei AI software engineers"
+
+---
+
+### Fortune
+
+Coverage of Anthropic's expectations regarding AI replacing significant portions of programming work.
+
+https://fortune.com/
+
+Search:
+"Dario Amodei 90% code"
+
+---
+
+### TechCrunch
+
+Reporting and analysis of Anthropic's AI roadmap and coding automation forecasts.
+
+https://techcrunch.com/
+
+Search:
+"Dario Amodei coding automation"
+
+---
+
+### Ars Technica
+
+Technical analysis and commentary on Amodei's software engineering predictions.
+
+https://arstechnica.com/
+
+Search:
+"Dario Amodei software engineering AI"
+
+---
+
+## Recommended Citation
+
+Amodei, D. (2024). *Machines of Loving Grace: How AI Could Transform the World for the Better*. Anthropic. https://www.darioamodei.com/machines-of-loving-grace
+
+Amodei, D. (2025). Remarks at the Council on Foreign Relations (CFR). https://www.cfr.org/event/conversation-dario-amodei
+
+World Economic Forum. (2026). Davos 2026 discussions on Artificial Intelligence and Software Engineering. https://www.weforum.org/events/world-economic-forum-annual-meeting-2026
