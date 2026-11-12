@@ -42,6 +42,21 @@
 	pointer-events: none;
 }
 
+/* A video backdrop (see applyVaultVideo in background.ts). It fills the layer
+ * the way a picture does, cropping to cover — the layer already carries the
+ * opacity and blur, so nothing about them is repeated here. Whether it plays or
+ * holds still is the performance tier's call, not this stylesheet's: a paused
+ * video keeps painting its current frame, which is exactly what a frozen
+ * backdrop should look like. */
+.hearth-bg > .hearth-bg-video {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
 /* ---- Hearth's own wallpaper -------------------------------------------
  *
  * The "default" background, drawn in wallpaper.ts. The SVG only names its
@@ -693,12 +708,15 @@ body.is-translucent .hearth-view.hearth-macos *:not(#hearth-boost)::after {
 /* While the mobile keyboard is open, constrain the scroll area to the visible
    viewport height and allow scrolling so nothing hides behind the keyboard
    (overrides fit-to-page clipping for the duration). Keyed off the focus flag
-   as well as the viewport heuristic — focus is set reliably from search.ts even
-   on devices where the visualViewport size change doesn't register. */
+   as well as the viewport heuristic — focus is set reliably from search.ts
+   (and view.ts for card fields, see trackFieldFocus) even on devices where
+   the visualViewport size change doesn't register. */
 .hearth-view.hearth-kbd-open .hearth-scroll,
 .hearth-view.hearth-kbd-open .hearth-scroll.hearth-fit,
 .hearth-view.hearth-search-active .hearth-scroll,
-.hearth-view.hearth-search-active .hearth-scroll.hearth-fit {
+.hearth-view.hearth-search-active .hearth-scroll.hearth-fit,
+.hearth-view.hearth-field-active .hearth-scroll,
+.hearth-view.hearth-field-active .hearth-scroll.hearth-fit {
 	height: var(--hearth-vh, 100%);
 	overflow-y: auto;
 }
@@ -1968,8 +1986,16 @@ button.hearth-tips-example:hover {
  * theme's `.markdown-rendered` overflow can't stack a second vertical scrollbar
  * next to it. Fills the body and scrolls vertically only — horizontal overflow
  * is clipped so text wraps (code blocks scroll within themselves via Obsidian's
- * own `pre` styling). */
+ * own `pre` styling).
+ *
+ * `position: relative` makes the host the containing block for anything the
+ * embedded content positions absolutely. Without it that block is the card
+ * (itself absolutely positioned on the grid), which sits outside this scroll
+ * container — so such an element stays put while the rest scrolls past it,
+ * e.g. the icon in a Tasks query's filter box (#402). Reading view's own
+ * scroller is positioned for the same reason. */
 .hearth-embed {
+	position: relative;
 	overflow-y: auto;
 	overflow-x: hidden;
 	height: 100%;
@@ -3486,6 +3512,9 @@ button.hearth-kofi-btn:focus-visible {
 }
 
 .hearth-jot-preview {
+	/* The scroll container is the containing block for absolutely positioned
+	 * content, as on .hearth-embed (#402). */
+	position: relative;
 	height: 100%;
 	overflow: auto;
 	cursor: text;
@@ -3554,7 +3583,14 @@ button.hearth-kofi-btn:focus-visible {
  * does the same on its sizer. In a full tab that lets the last line reach the
  * top; in a card it means the note always overflows, however short it is and
  * however tall the card — a scrollbar that just rescales as the card grows.
- * !important because the padding is an inline style the editor rewrites. */
+ * !important because the padding is an inline style the editor rewrites:
+ * CodeMirror's scroll-past-end extension writes `paddingBottom` onto the content
+ * element itself, reading mode writes `min-height` onto its sizer, and no
+ * selector outranks an inline style, so higher specificity cannot replace this
+ * (see the `:not(#hearth-boost)` note at the top of this file, which covers the
+ * rules that only have to beat other stylesheets). Removing the flags brings the
+ * scrollbar back, so the plugin review's "avoid !important" note stays — this is
+ * the one place where it cannot be honoured. */
 .hearth-jot-live .cm-content,
 .hearth-jot-live .markdown-preview-sizer {
 	padding-bottom: 0 !important;
@@ -3991,7 +4027,7 @@ button.hearth-kofi-btn:focus-visible {
 	display: none;
 }
 
-/* In arrange mode, tile cards (links/commands) keep their drag overlay active
+/* In arrange mode, tile cards (links/templater) keep their drag overlay active
  * so the card can still be dragged from empty areas of its body. Tiles and
  * their resize handles sit above the overlay so they're interactive. */
 .hearth-grid.is-arranging .hearth-card.is-tile-card .hearth-link-tile {
@@ -10281,7 +10317,8 @@ button.hearth-clip-chip {
 
 /* Hide while the on-screen keyboard is up so it doesn't sit on top of it or
  * cover the search results dropdown. */
-.hearth-view.hearth-kbd-open .hearth-mobile-actions {
+.hearth-view.hearth-kbd-open .hearth-mobile-actions,
+.hearth-view.hearth-field-active .hearth-mobile-actions {
 	display: none;
 }
 
@@ -10367,19 +10404,22 @@ body.is-tablet button.hearth-gallery-icon-btn {
  * to the top so the results list stays above the keyboard instead of behind it.
  * Set on focus from search.ts, so it's reliable even when the viewport-size
  * keyboard heuristic doesn't fire. */
-.hearth-view.hearth-search-active .hearth-mobile-actions {
+.hearth-view.hearth-search-active .hearth-mobile-actions,
+.hearth-view.hearth-field-active .hearth-mobile-actions {
 	display: none;
 }
 
 .hearth-view.hearth-search-active .hearth-scroll,
-.hearth-view.hearth-kbd-open .hearth-scroll {
+.hearth-view.hearth-kbd-open .hearth-scroll,
+.hearth-view.hearth-field-active .hearth-scroll {
 	justify-content: flex-start;
 	/* Let the field/results scroll into the visible area above the keyboard. */
 	overflow-y: auto;
 }
 
 .hearth-view.hearth-search-active .hearth-inner,
-.hearth-view.hearth-kbd-open .hearth-inner {
+.hearth-view.hearth-kbd-open .hearth-inner,
+.hearth-view.hearth-field-active .hearth-inner {
 	justify-content: flex-start;
 }
 
@@ -11666,51 +11706,106 @@ body.hearth-dv-resizing {
 	background: transparent;
 }
 
-/* ---- Embed second-view switcher ------------------------------------- */
-/* A small segmented control toggling an embed card between its two views. */
-.hearth-embed-switch {
+/* ---- View switcher (cards with views, #385) ---------------------------
+ *
+ * The control that switches a card between its views. It sits in the header
+ * of a titled card or floats over one of its corners (src/viewswitcher.ts),
+ * drawn as tabs, icons, dots or a single drop-down button. However many views
+ * there are, it never grows the card: a row too wide for its place scrolls
+ * sideways, its scrollbar hidden, and keeps the view on show in sight. */
+.hearth-view-switch {
 	display: inline-flex;
+	align-items: center;
 	gap: 2px;
 	padding: 2px;
+	min-width: 0;
 	border-radius: 8px;
 	background: var(--background-modifier-hover);
 	border: 1px solid var(--background-modifier-border);
+	overflow-x: auto;
+	scrollbar-width: none;
 }
 
-/* In a titled card's header, sit at the far right of the title row. */
-.hearth-embed-switch.is-inline {
+.hearth-view-switch::-webkit-scrollbar {
+	display: none;
+}
+
+/* In a titled card's header, at the far right of the title row. */
+.hearth-view-switch.is-header {
 	margin-left: auto;
 	max-width: 62%;
+	flex-shrink: 1;
 }
 
-/* Untitled (headerless) cards: float over the top-right corner and reveal only
- * on hover / keyboard focus, so the switch stays out of the way otherwise. */
-.hearth-embed-switch.is-floating {
+.hearth-card.has-views .hearth-card-head .hearth-card-title {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-right: 8px;
+}
+
+/* Over one of the card's corners. */
+.hearth-view-switch.is-floating {
 	position: absolute;
-	top: 6px;
-	right: 6px;
 	z-index: 5;
-	opacity: 0;
-	pointer-events: none;
+	max-width: calc(100% - 12px);
 	background: var(--background-secondary);
 	transition: opacity 140ms ease;
 }
 
-.hearth-card:hover .hearth-embed-switch.is-floating,
-.hearth-embed-switch.is-floating:focus-within {
+.hearth-view-switch.is-top-left {
+	top: 6px;
+	left: 6px;
+}
+
+.hearth-view-switch.is-top-right {
+	top: 6px;
+	right: 6px;
+}
+
+.hearth-view-switch.is-bottom-left {
+	bottom: 6px;
+	left: 6px;
+}
+
+.hearth-view-switch.is-bottom-right {
+	bottom: 6px;
+	right: 6px;
+}
+
+/* A floating switcher can stay out of the way until the pointer is over the
+ * card, or it has keyboard focus. */
+.hearth-view-switch.is-reveal-hover {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.hearth-card:hover .hearth-view-switch.is-reveal-hover,
+.hearth-view-switch.is-reveal-hover:focus-within {
 	opacity: 1;
 	pointer-events: auto;
 }
 
-.hearth-embed-switch-btn {
+/* A touch screen has no hover to reveal it with, so it always shows there. */
+@media (hover: none) {
+	.hearth-view-switch.is-reveal-hover {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+.hearth-view-switch-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	flex-shrink: 0;
 	max-width: 140px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	padding: 2px 9px;
 	border: none;
 	border-radius: 6px;
 	background: transparent;
+	box-shadow: none;
 	color: var(--text-muted);
 	font-size: 0.72rem;
 	font-weight: 600;
@@ -11721,14 +11816,131 @@ body.hearth-dv-resizing {
 		color 140ms ease;
 }
 
-.hearth-embed-switch-btn:hover {
+.hearth-view-switch-label {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.hearth-view-switch-icon,
+.hearth-view-switch-chevron {
+	display: inline-flex;
+	flex-shrink: 0;
+}
+
+.hearth-view-switch-icon svg,
+.hearth-view-switch-chevron svg {
+	width: 13px;
+	height: 13px;
+}
+
+.hearth-view-switch-btn:hover {
 	color: var(--text-normal);
 }
 
-.hearth-embed-switch-btn.is-active {
+.hearth-view-switch-btn.is-active {
 	background: var(--background-primary);
 	color: var(--text-normal);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.hearth-view-switch.is-style-icons .hearth-view-switch-btn {
+	padding: 3px 6px;
+}
+
+.hearth-view-switch.is-style-dropdown .hearth-view-switch-btn {
+	max-width: 180px;
+}
+
+/* Dots: a quiet row of points, the one on show filled in. */
+.hearth-view-switch.is-style-dots {
+	gap: 0;
+	padding: 3px 4px;
+}
+
+.hearth-view-switch-btn.is-dot {
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	justify-content: center;
+	background: transparent;
+	box-shadow: none;
+}
+
+.hearth-view-switch-btn.is-dot::before {
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--text-faint);
+	transition:
+		background 140ms ease,
+		transform 140ms ease;
+}
+
+.hearth-view-switch-btn.is-dot.is-active {
+	background: transparent;
+	box-shadow: none;
+}
+
+.hearth-view-switch-btn.is-dot.is-active::before {
+	background: var(--card-accent, var(--interactive-accent));
+	transform: scale(1.3);
+}
+
+/* Drop-to-merge on the arrange board: the card under the pointer, once the
+ * hold has armed the merge, and the card being dropped into it. */
+.hearth-card.is-merge-target {
+	outline: 2px dashed var(--interactive-accent);
+	outline-offset: 3px;
+}
+
+.hearth-card.is-merge-source {
+	opacity: 0.7;
+}
+
+/* The card editor: which view the Content tab edits, and the Views tab's list. */
+.hearth-view-picker {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 4px;
+}
+
+.hearth-view-picker-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.hearth-view-picker-chip.is-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.hearth-view-picker-icon,
+.hearth-view-row-icon {
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.hearth-view-picker-icon svg,
+.hearth-view-row-icon svg {
+	width: 14px;
+	height: 14px;
+}
+
+.hearth-view-row-icon {
+	margin-right: 6px;
+	color: var(--text-muted);
+}
+
+.hearth-danger-icon:hover {
+	color: var(--text-error);
 }
 
 /* ---- Slideshow card --------------------------------------------------
@@ -11960,6 +12172,40 @@ body.hearth-dv-resizing {
 	font-size: 0.68rem;
 	font-weight: 600;
 	font-variant-numeric: tabular-nums;
+	/* Also the way in to a jump — clicking it opens a field over itself — so it
+	 * has to read as pressable, without taking on a button's box and shifting the
+	 * controls. */
+	cursor: pointer;
+	border-radius: 4px;
+	transition: color 140ms ease;
+}
+
+.hearth-slideshow-count:hover,
+.hearth-slideshow-count:focus-visible {
+	color: var(--text-normal);
+}
+
+/* Out of the way while the field stands in its place. */
+.hearth-slideshow-count.is-jumping {
+	display: none;
+}
+
+/* The number field the counter becomes: sized to the counter it replaces, so the
+ * controls don't jump when it opens. */
+.hearth-slideshow-jump {
+	width: 3.6em;
+	height: 1.7em;
+	min-height: 0;
+	padding: 0 3px;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 4px;
+	background: var(--background-primary);
+	box-shadow: none;
+	color: var(--text-normal);
+	font-size: 0.68rem;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	text-align: center;
 }
 
 /* A reader who asked for less motion still gets the slideshow — it just stops
@@ -12023,6 +12269,17 @@ body.hearth-dv-resizing {
 		calc(0.15 + var(--heat, 0) * 0.2125)
 	);
 	cursor: pointer;
+}
+
+/* A card that was given its own grid colour (#430): the same fade, its own hue.
+ * `heatTint()` sets `--heat-color` and `has-tint` on the wrap, so a card with no
+ * colour never reaches this rule and paints exactly as it always has. */
+.hearth-heatmap.has-tint .hearth-heatmap-cell.has-heat {
+	background-color: color-mix(
+		in srgb,
+		var(--heat-color) calc(15% + var(--heat, 0) * 21.25%),
+		transparent
+	);
 }
 
 .hearth-heatmap-legend {
@@ -12853,7 +13110,7 @@ body.hearth-dv-resizing {
 	border-radius: 8px;
 }
 
-/* ---- Tile resize handle (commands & links) -------------------------- */
+/* ---- Tile resize handle (links & templater) -------------------------- */
 .hearth-tiles-sized .hearth-link-tile {
 	position: relative;
 }
@@ -20852,7 +21109,7 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	color: var(--x-on-container);
 }
 
-/* ---- Tiles: links, commands, templater, favourites -------------------- */
+/* ---- Tiles: links, templater, favourites ------------------------------ */
 :is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-link-tile,
 :is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-fav-card {
 	border: none;
@@ -21398,6 +21655,18 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 	);
 }
 
+/* The Expressive line mixes towards the card surface rather than transparency,
+ * so a custom colour has to mix against that same surface — otherwise a tinted
+ * Expressive grid would fade towards nothing and look nothing like the theme
+ * grid it replaced. */
+:is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-heatmap.has-tint .hearth-heatmap-cell.has-heat {
+	background-color: color-mix(
+		in srgb,
+		var(--heat-color) calc(25% + var(--heat, 0) * 18.75%),
+		var(--background-primary)
+	);
+}
+
 :is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-heatmap-legend {
 	gap: 4px;
 	font-weight: 600;
@@ -21607,6 +21876,62 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 :is(.hearth-card.is-expressive, .hearth-x-modal, .hearth-search-wrap.is-expressive) .hearth-tasks-filter.is-active {
 	background: var(--x-container);
 	color: var(--x-on-container);
+}
+
+/* Matrix: quadrants as tonal containers in their own colour, the counts as
+ * pills, the axes in the accent's tone — the Kanban columns' recipe. */
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix {
+	--hearth-matrix-gap: 12px;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-q {
+	border-radius: 20px;
+	background: color-mix(in srgb, var(--hearth-matrix-q) 13%, var(--background-primary));
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-q-head {
+	padding: 9px 12px 5px;
+	font-weight: 750;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-q-count {
+	min-width: 20px;
+	padding: 0 6px;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--hearth-matrix-q) 24%, var(--background-primary));
+	color: color-mix(in srgb, var(--hearth-matrix-q) 70%, var(--text-normal));
+	font-weight: 700;
+	text-align: center;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-q-body {
+	padding: 2px 8px 8px;
+	gap: 6px;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-axis-label {
+	color: var(--x-on-container);
+	font-weight: 750;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-grid::before {
+	background: linear-gradient(to bottom, transparent, var(--x-container) 12%, var(--x-container) 88%, transparent);
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-grid::after {
+	background: linear-gradient(to right, transparent, var(--x-container) 12%, var(--x-container) 88%, transparent);
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-unsorted {
+	border: none;
+	border-radius: 20px;
+	background: var(--x-surface);
+	padding: 8px 10px 10px;
+}
+
+:is(.hearth-card.is-expressive, .hearth-x-modal) .hearth-matrix-unsorted-head {
+	color: var(--x-on-container);
+	font-weight: 750;
 }
 
 /* ---- Full calendar (schedule) --------------------------------------- */
@@ -25098,4 +25423,1263 @@ body.hearth-snapshot-capturing .hearth-view:not(#hearth-boost) {
 
 :is(.hearth-tui, .hearth-t-modal) .hearth-tui-reverse.hearth-tui-colored {
 	color: var(--tui-sel-fg);
+}
+
+/* ---- Tasks: Eisenhower matrix ---------------------------------------- */
+
+/* The matrix fills the card: a top axis (urgent / not urgent) over the two
+ * columns, a side axis (important / not important) beside the two rows, and
+ * the four quadrants between them with the cross drawn through the gaps. The
+ * host is the size container the narrow rules below query. */
+.hearth-matrix-host {
+	flex: 1;
+	min-height: 0;
+	container-type: inline-size;
+	display: flex;
+	flex-direction: column;
+}
+
+.hearth-matrix {
+	--hearth-matrix-gap: 10px;
+	flex: 1;
+	min-height: 0;
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	grid-template-rows: auto minmax(0, 1fr) auto;
+	gap: 4px 6px;
+}
+
+.hearth-matrix-axis.is-top {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--hearth-matrix-gap);
+}
+
+.hearth-matrix-axis.is-side {
+	display: grid;
+	grid-template-rows: repeat(2, minmax(0, 1fr));
+	gap: var(--hearth-matrix-gap);
+}
+
+.hearth-matrix-axis-label {
+	font-size: 0.66rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--text-faint);
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* The side labels read bottom-to-top, like a chart's y axis. */
+.hearth-matrix-axis.is-side .hearth-matrix-axis-label {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hearth-matrix-grid {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-rows: repeat(2, minmax(0, 1fr));
+	gap: var(--hearth-matrix-gap);
+	min-height: 0;
+}
+
+/* The cross: two hairlines through the middle of the gaps, fading out at the
+ * ends so they read as axes rather than a frame. */
+.hearth-matrix-grid::before,
+.hearth-matrix-grid::after {
+	content: "";
+	position: absolute;
+	pointer-events: none;
+	border-radius: 2px;
+}
+
+.hearth-matrix-grid::before {
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 2px;
+	transform: translateX(-50%);
+	background: linear-gradient(
+		to bottom,
+		transparent,
+		var(--background-modifier-border-hover) 12%,
+		var(--background-modifier-border-hover) 88%,
+		transparent
+	);
+}
+
+.hearth-matrix-grid::after {
+	left: 0;
+	right: 0;
+	top: 50%;
+	height: 2px;
+	transform: translateY(-50%);
+	background: linear-gradient(
+		to right,
+		transparent,
+		var(--background-modifier-border-hover) 12%,
+		var(--background-modifier-border-hover) 88%,
+		transparent
+	);
+}
+
+/* A quadrant is a tinted lane like a Kanban column — its colour says which one
+ * it is — scaled by the card's opacity so a see-through card stays one. */
+.hearth-matrix-q {
+	--hearth-matrix-q: var(--color-red);
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	min-height: 0;
+	border-radius: 8px;
+	background: color-mix(
+		in srgb,
+		var(--hearth-matrix-q) calc(var(--card-opacity, 1) * 8%),
+		transparent
+	);
+	transition: background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.hearth-matrix-q.is-schedule {
+	--hearth-matrix-q: var(--color-blue);
+}
+
+.hearth-matrix-q.is-delegate {
+	--hearth-matrix-q: var(--color-orange);
+}
+
+.hearth-matrix-q.is-eliminate {
+	--hearth-matrix-q: var(--text-faint);
+}
+
+.hearth-matrix-q-head {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 9px 3px;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.hearth-matrix-q-dot {
+	flex: none;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: var(--hearth-matrix-q);
+}
+
+.hearth-matrix-q-title {
+	flex: 1;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: var(--text-normal);
+}
+
+.hearth-matrix-q-count {
+	flex: none;
+	color: var(--text-faint);
+	font-weight: 500;
+	font-variant-numeric: tabular-nums;
+}
+
+.hearth-matrix-q-body {
+	flex: 1;
+	min-height: 0;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 2px 6px 6px;
+}
+
+/* A quadrant scrolls; its tasks keep their height rather than squeezing. */
+.hearth-matrix-q-body > * {
+	flex-shrink: 0;
+}
+
+.hearth-matrix-q-empty {
+	margin: auto;
+	padding: 6px;
+	font-size: 0.72rem;
+	color: var(--text-faint);
+	text-align: center;
+}
+
+/* A quadrant with no priority takes no drops; it says so by staying quiet. */
+.hearth-matrix-q.is-locked .hearth-matrix-q-empty {
+	visibility: hidden;
+}
+
+/* While a task is dragged, the places it can go light up a little; the one
+ * under the pointer gets the outline. */
+.hearth-matrix.is-dragging .hearth-matrix-q:not(.is-locked),
+.hearth-matrix.is-dragging .hearth-matrix-unsorted {
+	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--hearth-matrix-q, var(--interactive-accent)) 35%, transparent);
+}
+
+.hearth-matrix-q.is-drop-target,
+.hearth-matrix-unsorted.is-drop-target {
+	background: color-mix(in srgb, var(--hearth-matrix-q, var(--interactive-accent)) 16%, transparent);
+	box-shadow: inset 0 0 0 2px var(--hearth-matrix-q, var(--interactive-accent));
+}
+
+/* Tasks inside are board cards, a touch tighter. */
+.hearth-matrix-card {
+	padding: 5px 7px;
+	font-size: 0.8rem;
+}
+
+/* Tasks no quadrant holds: a dashed strip under the cross, which is also where
+ * a task is dropped to clear its priority. */
+.hearth-matrix-unsorted {
+	--hearth-matrix-q: var(--interactive-accent);
+	grid-column: 1 / -1;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	max-height: 9.5em;
+	min-height: 0;
+	overflow-y: auto;
+	padding: 5px 8px 7px;
+	border: 1px dashed var(--background-modifier-border);
+	border-radius: 8px;
+}
+
+.hearth-matrix-unsorted-head {
+	display: flex;
+	align-items: baseline;
+	gap: 6px;
+	min-width: 0;
+	font-size: 0.75rem;
+	font-weight: 600;
+	color: var(--text-muted);
+}
+
+.hearth-matrix-unsorted-hint {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 400;
+	font-size: 0.7rem;
+	color: var(--text-faint);
+}
+
+.hearth-matrix-unsorted-body {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.hearth-matrix-unsorted-body:empty {
+	display: none;
+}
+
+.hearth-matrix-unsorted-body .hearth-matrix-card {
+	flex: 1 1 150px;
+	min-width: 0;
+}
+
+/* A quadrant's name renamed in place (double-click it). */
+.hearth-matrix-q-rename {
+	flex: 1;
+	min-width: 0;
+	padding: 1px 4px;
+	border-radius: 4px;
+	border: 1px solid var(--interactive-accent);
+	background: var(--background-primary);
+	font: inherit;
+	color: var(--text-normal);
+}
+
+/* A narrow card keeps the cross but gives the room to the tasks: the axis
+ * labels go, and the quadrants close up. */
+@container (max-width: 340px) {
+	.hearth-matrix {
+		--hearth-matrix-gap: 6px;
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-rows: minmax(0, 1fr) auto;
+	}
+
+	.hearth-matrix-corner,
+	.hearth-matrix-axis.is-top,
+	.hearth-matrix-axis.is-side {
+		display: none;
+	}
+
+	.hearth-matrix-q-head {
+		padding: 5px 7px 2px;
+	}
+
+	.hearth-matrix-q-body {
+		padding: 2px 4px 4px;
+	}
+
+	.hearth-matrix-unsorted-hint {
+		display: none;
+	}
+}
+
+/* The matrix editor: each quadrant's priorities as toggle chips under its
+ * name, the quadrant's colour on the left edge so it matches the card. */
+.hearth-matrix-editor-row {
+	flex-wrap: wrap;
+	border-left: 3px solid var(--color-red);
+	padding-left: 10px;
+}
+
+.hearth-matrix-editor-row.is-schedule {
+	border-left-color: var(--color-blue);
+}
+
+.hearth-matrix-editor-row.is-delegate {
+	border-left-color: var(--color-orange);
+}
+
+.hearth-matrix-editor-row.is-eliminate {
+	border-left-color: var(--text-faint);
+}
+
+.hearth-matrix-editor-chips {
+	flex-basis: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	padding-top: 8px;
+}
+
+.hearth-matrix-editor-chip {
+	height: auto;
+	padding: 3px 10px;
+	border-radius: 999px;
+	font-size: 0.78rem;
+	box-shadow: none;
+	border: 1px solid var(--background-modifier-border);
+	background: transparent;
+	color: var(--text-muted);
+	cursor: pointer;
+}
+
+.hearth-matrix-editor-chip:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-matrix-editor-chip.is-on {
+	background: var(--interactive-accent);
+	border-color: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+/* Held by another quadrant: clickable, but dimmed so the row reads as "these
+ * are the ones here". */
+.hearth-matrix-editor-chip.is-elsewhere {
+	opacity: 0.55;
+	border-style: dashed;
+}
+
+.hearth-matrix-editor-label {
+	font-size: 0.78rem;
+	color: var(--text-muted);
+}
+
+/* The editor's preview of the cross: the axis names and the quadrant names,
+ * where the card will draw them. */
+.hearth-matrix-preview {
+	display: grid;
+	grid-template-columns: auto repeat(2, minmax(0, 1fr));
+	gap: 4px 6px;
+	max-width: 420px;
+	margin: 4px 0 12px;
+	font-size: 0.78rem;
+}
+
+.hearth-matrix-preview-axis {
+	font-size: 0.66rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--text-faint);
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-matrix-preview-axis.is-side {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	align-self: center;
+}
+
+.hearth-matrix-preview-q {
+	--hearth-matrix-q: var(--color-red);
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	min-width: 0;
+	padding: 10px 10px;
+	border-radius: 8px;
+	background: color-mix(in srgb, var(--hearth-matrix-q) 12%, transparent);
+	font-weight: 600;
+}
+
+.hearth-matrix-preview-q.is-schedule {
+	--hearth-matrix-q: var(--color-blue);
+}
+
+.hearth-matrix-preview-q.is-delegate {
+	--hearth-matrix-q: var(--color-orange);
+}
+
+.hearth-matrix-preview-q.is-eliminate {
+	--hearth-matrix-q: var(--text-faint);
+}
+
+.hearth-matrix-editor-warn {
+	color: var(--text-warning);
+	padding: 0 0 8px;
+}
+
+/* ---- Tasks: description formatting ----------------------------------- */
+
+/* The inline Markdown a description line keeps, drawn small and quiet to
+ * match the muted sub-bullets. */
+.hearth-task-desc-text code {
+	font-family: var(--font-monospace);
+	font-size: 0.92em;
+	padding: 0 3px;
+	border-radius: 3px;
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-task-desc-text strong {
+	color: var(--text-normal);
+	font-weight: 600;
+}
+
+.hearth-task-desc-text mark,
+.hearth-taskdesc-preview mark {
+	background: var(--text-highlight-bg);
+	color: inherit;
+	border-radius: 2px;
+	padding: 0 1px;
+}
+
+.hearth-task-desc-tag {
+	color: var(--tag-color, var(--text-accent));
+}
+
+/* The description editor: the textarea, a live warning for lines a sub-bullet
+ * can't hold, and the collapsible guide to what works. */
+.hearth-taskdesc-field {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.hearth-taskdetail-desc.has-issues {
+	border-color: color-mix(in srgb, var(--text-warning) 65%, var(--background-modifier-border));
+}
+
+.hearth-taskdesc-help {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.hearth-taskdesc-issues {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.hearth-taskdesc-issues.is-empty {
+	display: none;
+}
+
+.hearth-taskdesc-issue {
+	display: flex;
+	align-items: flex-start;
+	gap: 5px;
+	font-size: 0.72rem;
+	line-height: 1.35;
+	color: var(--text-warning);
+}
+
+.hearth-taskdesc-issue.is-more {
+	padding-left: 17px;
+}
+
+.hearth-taskdesc-issue-icon,
+.hearth-taskdesc-col-icon {
+	flex: none;
+	display: inline-flex;
+}
+
+.hearth-taskdesc-issue-icon .svg-icon {
+	width: 12px;
+	height: 12px;
+	margin-top: 1px;
+}
+
+.hearth-taskdesc-guide > summary {
+	width: fit-content;
+	font-size: 0.72rem;
+	color: var(--text-faint);
+	cursor: pointer;
+	user-select: none;
+}
+
+.hearth-taskdesc-guide > summary:hover {
+	color: var(--text-muted);
+}
+
+.hearth-taskdesc-guide[open] {
+	padding: 6px 8px 8px;
+	border-radius: 6px;
+	background: var(--background-secondary);
+}
+
+.hearth-taskdesc-intro {
+	margin: 4px 0 8px;
+	font-size: 0.74rem;
+	line-height: 1.4;
+	color: var(--text-muted);
+}
+
+.hearth-taskdesc-cols {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 8px 16px;
+}
+
+.hearth-taskdesc-col {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	min-width: 0;
+}
+
+.hearth-taskdesc-col-head {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	margin-bottom: 2px;
+	font-size: 0.68rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.hearth-taskdesc-col.is-works .hearth-taskdesc-col-head {
+	color: var(--color-green);
+}
+
+.hearth-taskdesc-col.is-fails .hearth-taskdesc-col-head {
+	color: var(--color-red);
+}
+
+.hearth-taskdesc-col-icon .svg-icon {
+	width: 12px;
+	height: 12px;
+}
+
+.hearth-taskdesc-item {
+	display: grid;
+	grid-template-columns: minmax(0, 10em) minmax(0, 1fr);
+	align-items: baseline;
+	gap: 0 8px;
+	font-size: 0.74rem;
+	line-height: 1.45;
+	color: var(--text-muted);
+}
+
+.hearth-taskdesc-sample {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.7rem;
+	padding: 0 4px;
+	border-radius: 3px;
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+	justify-self: start;
+	max-width: 100%;
+}
+
+.hearth-taskdesc-result {
+	min-width: 0;
+}
+
+.hearth-taskdesc-preview {
+	color: var(--text-normal);
+}
+
+.hearth-taskdesc-preview code {
+	font-family: var(--font-monospace);
+	font-size: 0.92em;
+}
+
+.hearth-taskdesc-result .hearth-taskdesc-name {
+	color: var(--text-faint);
+}
+
+.hearth-taskdesc-result .hearth-taskdesc-name::before {
+	content: " — ";
+}
+
+.hearth-taskdesc-col.is-fails .hearth-taskdesc-sample {
+	text-decoration: line-through;
+	color: var(--text-muted);
+}
+
+/* ---- Music card (src/cards/music.ts) ---------------------------------
+ *
+ * One card, two sources (vault audio and the Stereo plugin) and four layouts.
+ * The layout is an arrangement, not a skin: Classic is a row of text with the
+ * queue hanging off it, Medium turns the artwork into a square beside the
+ * details, Full artwork makes the artwork the card with the controls on a
+ * scrim, and Large artwork gives the artwork half the card and the details the
+ * other half.
+ *
+ * Two rules shape everything below.
+ *
+ * `.hearth-music` is its own element inside the card body, never the body
+ * itself — the body carries a zeroing `padding` rule that out-ranks anything a
+ * single class could set, and `container-type: size` must measure a box whose
+ * height is the player's own, not the card's.
+ *
+ * `box-sizing: border-box` is stated here because Hearth does not set it
+ * globally: `height: 100%` plus padding under `content-box` overflows by the
+ * padding, which clips the bottom of the player and squeezes the queue to
+ * nothing.
+ *
+ * The vault source has no album art. Where the artwork is the point (Medium,
+ * Full and Large artwork) the stand-in is a record that spins while playing — a
+ * CSS animation, so the board's motion gate freezes it with everything else. */
+
+.hearth-card-body.hearth-music-host {
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+}
+
+.hearth-music,
+.hearth-music * {
+	box-sizing: border-box;
+}
+
+.hearth-music {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	height: 100%;
+	min-height: 0;
+	padding: 12px var(--hearth-card-pad-x);
+	/* What the container queries at the bottom measure. */
+	container-type: size;
+}
+
+/* ---- Artwork ---- */
+
+.hearth-music-art {
+	position: relative;
+	flex: 0 0 auto;
+	display: grid;
+	place-items: center;
+	width: 46px;
+	height: 46px;
+	border-radius: 12px;
+	overflow: hidden;
+	color: var(--text-muted);
+	background: var(--background-modifier-hover);
+}
+
+.hearth-music-art .svg-icon {
+	width: 22px;
+	height: 22px;
+}
+
+.hearth-music-cover {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* The record stand-in. Sized by its box, so the same element reads as a chip in
+ * Medium and as the picture in Full artwork. */
+.hearth-music-disc {
+	position: relative;
+	display: grid;
+	place-items: center;
+	width: min(84%, 84cqh);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: radial-gradient(circle, #1b1b1e 0 30%, #0e0e10 31% 100%);
+	box-shadow:
+		inset 0 0 0 1px rgb(255 255 255 / 10%),
+		0 2px 10px rgb(0 0 0 / 45%);
+}
+
+.hearth-music-disc::before {
+	content: "";
+	position: absolute;
+	inset: 16%;
+	border: 1px solid rgb(255 255 255 / 8%);
+	border-radius: 50%;
+}
+
+.hearth-music-disc-label {
+	width: 38%;
+	height: 38%;
+	border-radius: 50%;
+	background: var(--interactive-accent);
+}
+
+.hearth-music-disc-hole {
+	position: absolute;
+	width: 9%;
+	height: 9%;
+	border-radius: 50%;
+	background: var(--background-primary);
+}
+
+.hearth-music-art.is-playing .hearth-music-disc {
+	animation: hearth-music-spin 3.8s linear infinite;
+}
+
+/* ---- Text and seek row ---- */
+
+.hearth-music-meta {
+	min-width: 0;
+	flex: 0 1 auto;
+}
+
+.hearth-music-title {
+	font-size: var(--font-ui-small);
+	font-weight: var(--font-semibold);
+	color: var(--text-normal);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-music-sub {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-music-progress {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex: 0 0 auto;
+}
+
+.hearth-music-time {
+	min-width: 3ch;
+	font-size: var(--font-ui-smaller);
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+}
+
+.hearth-music-time.is-total {
+	text-align: end;
+}
+
+.hearth-music-seek {
+	flex: 1 1 auto;
+	width: auto;
+	height: 4px;
+	margin: 0;
+	accent-color: var(--interactive-accent);
+}
+
+.hearth-music-seek:disabled {
+	opacity: 0.4;
+}
+
+/* ---- Transport ---- */
+
+.hearth-music-transport {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	flex: 0 0 auto;
+}
+
+.hearth-music-btn {
+	display: grid;
+	place-items: center;
+	width: 28px;
+	height: 28px;
+	padding: 0;
+	border: none;
+	border-radius: 8px;
+	background: none;
+	box-shadow: none;
+	color: var(--text-muted);
+	cursor: pointer;
+}
+
+.hearth-music-btn:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.hearth-music-btn .svg-icon {
+	width: 17px;
+	height: 17px;
+}
+
+.hearth-music-btn.is-play {
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+.hearth-music-btn.is-play:hover {
+	background: var(--interactive-accent-hover);
+	color: var(--text-on-accent);
+}
+
+.hearth-music-btn.is-play .svg-icon {
+	width: 18px;
+	height: 18px;
+}
+
+.hearth-music-btn.is-on {
+	color: var(--interactive-accent);
+}
+
+.hearth-music-tools {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	margin-inline-start: auto;
+}
+
+.hearth-music-volume {
+	width: 58px;
+	height: 4px;
+	margin: 0 0 0 4px;
+	accent-color: var(--interactive-accent);
+}
+
+.hearth-music-status {
+	display: none;
+	font-size: var(--font-ui-smaller);
+	color: var(--text-error);
+}
+
+.hearth-music-status.is-shown {
+	display: block;
+}
+
+/* ---- Queue ---- */
+
+/* Full-bleed inside the player's padding, so the hover highlight reaches the
+ * card edge instead of floating in a gutter. */
+.hearth-music-queue {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow-y: auto;
+	margin: 0 calc(var(--hearth-card-pad-x) * -1);
+	padding: 0 var(--hearth-card-pad-x);
+}
+
+/* No queue is not the same as an empty flexible box: left alone, an empty queue
+ * still eats the space between the transport and the card's bottom edge and
+ * reads as a layout bug. */
+.hearth-music-queue:empty {
+	display: none;
+}
+
+.hearth-music-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	padding: 5px 7px;
+	border: none;
+	border-radius: 7px;
+	background: none;
+	box-shadow: none;
+	color: var(--text-normal);
+	text-align: start;
+	cursor: pointer;
+}
+
+.hearth-music-row:hover {
+	background: var(--background-modifier-hover);
+}
+
+.hearth-music-row.is-current {
+	background: var(--background-modifier-hover);
+	color: var(--interactive-accent);
+}
+
+.hearth-music-row-text {
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.hearth-music-row-label {
+	font-size: var(--font-ui-smaller);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-music-row.is-current .hearth-music-row-label {
+	font-weight: var(--font-semibold);
+}
+
+.hearth-music-row-sub {
+	font-size: var(--font-ui-smaller);
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.hearth-music-row-more {
+	padding: 4px 7px;
+	font-size: var(--font-ui-smaller);
+	color: var(--text-faint);
+}
+
+/* ==== Layout: Classic ===================================================
+ * The arrangement the card shipped with: chip, text, seek, transport, queue. */
+
+.hearth-music.is-layout-plain .hearth-music-now {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	min-width: 0;
+	flex: 0 0 auto;
+}
+
+/* A taller card spends the height on the artwork rather than on a gap above
+ * the queue — the size steps are what make the player look like it belongs to
+ * the card instead of sitting in the corner of a big empty one. */
+@container (min-height: 210px) {
+	.hearth-music.is-layout-plain .hearth-music-art {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+@container (min-height: 258px) {
+	.hearth-music.is-layout-plain .hearth-music-art {
+		width: 76px;
+		height: 76px;
+		border-radius: 16px;
+	}
+}
+
+/* ==== Layout: Medium ====================================================
+ * Square artwork on the left, details and transport beside it. */
+
+.hearth-music.is-layout-medium .hearth-music-main {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	flex: 0 0 auto;
+	min-width: 0;
+}
+
+.hearth-music.is-layout-medium .hearth-music-art {
+	align-self: center;
+	/* Container units rather than a max-width: a square clamped only on one axis
+	 * is a rectangle, and a stretched record looks like a bug. */
+	width: min(40cqw, 100cqh);
+	height: auto;
+	aspect-ratio: 1;
+	border-radius: 14px;
+}
+
+.hearth-music.is-layout-medium .hearth-music-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8px;
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+/* ==== Layout: Full artwork ==============================================
+ * The artwork is the card; details and transport sit on a scrim at the bottom,
+ * in white, because the surface under them is a picture rather than a theme
+ * colour. */
+
+.hearth-music.is-layout-cover {
+	padding: 0;
+	gap: 0;
+}
+
+.hearth-music.is-layout-cover .hearth-music-stage {
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.hearth-music.is-layout-cover .hearth-music-art {
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	background: linear-gradient(
+		160deg,
+		color-mix(in srgb, var(--interactive-accent) 30%, #0b0c0e),
+		#0b0c0e 72%
+	);
+	color: rgb(255 255 255 / 75%);
+}
+
+.hearth-music.is-layout-cover .hearth-music-disc {
+	width: min(52%, 200px);
+}
+
+.hearth-music.is-layout-cover .hearth-music-scrim {
+	position: absolute;
+	inset: auto 0 0 0;
+	height: 58%;
+	pointer-events: none;
+	background: linear-gradient(to top, rgb(0 0 0 / 88%), rgb(0 0 0 / 55%) 45%, transparent);
+}
+
+.hearth-music.is-layout-cover .hearth-music-overlay {
+	position: absolute;
+	inset: auto 0 0 0;
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	padding: 10px 14px 12px;
+}
+
+.hearth-music.is-layout-cover .hearth-music-title {
+	color: #fff;
+	font-size: var(--font-ui-medium);
+}
+
+.hearth-music.is-layout-cover .hearth-music-sub,
+.hearth-music.is-layout-cover .hearth-music-time {
+	color: rgb(255 255 255 / 78%);
+}
+
+.hearth-music.is-layout-cover .hearth-music-btn {
+	color: rgb(255 255 255 / 85%);
+}
+
+.hearth-music.is-layout-cover .hearth-music-btn:hover {
+	background: rgb(255 255 255 / 14%);
+	color: #fff;
+}
+
+.hearth-music.is-layout-cover .hearth-music-seek,
+.hearth-music.is-layout-cover .hearth-music-volume {
+	accent-color: #fff;
+}
+
+.hearth-music.is-layout-cover .hearth-music-status {
+	position: absolute;
+	inset: auto 14px 14px 14px;
+	color: #ffb4a8;
+}
+
+/* ==== Layout: Large artwork =============================================
+ * Artwork down the left at full height, details and queue on the right. The
+ * artwork keeps its own square corners and a little inset, so it reads as a
+ * picture placed in the card rather than as the card's own edge. */
+
+.hearth-music.is-layout-panel .hearth-music-split {
+	display: flex;
+	align-items: stretch;
+	gap: 14px;
+	flex: 1 1 auto;
+	min-height: 0;
+}
+
+.hearth-music.is-layout-panel .hearth-music-stage {
+	flex: 0 0 auto;
+	align-self: center;
+	/* The smaller of "44% of the width" and "the full height", so the picture
+	 * stays a square at both ends of the card's shape. */
+	width: min(44cqw, 100cqh);
+	height: auto;
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	border-radius: 14px;
+	background: var(--background-modifier-hover);
+}
+
+.hearth-music.is-layout-panel .hearth-music-art {
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+	background: none;
+}
+
+.hearth-music.is-layout-panel .hearth-music-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 9px;
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 0;
+	overflow: hidden;
+}
+
+/* ---- Adaptivity ------------------------------------------------------
+ * One set of rules for every layout: as the card gets shorter the queue goes
+ * first, then the seek row, then (when it is also narrow) the volume. Nothing
+ * is ever clipped mid-control. */
+
+@container (max-height: 172px) {
+	.hearth-music-queue {
+		display: none;
+	}
+}
+
+@container (max-height: 126px) {
+	.hearth-music-progress {
+		display: none;
+	}
+
+	.hearth-music.is-layout-cover .hearth-music-sub {
+		display: none;
+	}
+
+	.hearth-music.is-layout-panel .hearth-music-stage {
+		width: min(34cqw, 100cqh);
+	}
+}
+
+@container (max-width: 228px) {
+	.hearth-music-volume {
+		display: none;
+	}
+}
+
+@container (max-width: 250px) {
+	.hearth-music.is-layout-panel .hearth-music-split {
+		flex-direction: column;
+	}
+
+	.hearth-music.is-layout-panel .hearth-music-stage {
+		width: min(100cqw, 46cqh);
+		align-self: center;
+	}
+
+	.hearth-music.is-layout-panel .hearth-music-art {
+		border-radius: 12px;
+	}
+}
+
+@keyframes hearth-music-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* A reader who asked the machine to hold still gets the record as a still
+ * picture — the same request the sky and the pet honour. */
+@media (prefers-reduced-motion: reduce) {
+	.hearth-music-art.is-playing .hearth-music-disc {
+		animation: none;
+	}
+}
+
+/* ==== Expressive ======================================================
+ * The Expressive frame is already a filled tonal surface, so the artwork and the
+ * play button take the design's own accents: a container chip for the art and a
+ * filled circle for the one control that matters. Full artwork keeps its dark
+ * scrim — a picture with a theme-coloured wash over it looks like a bug. */
+
+.hearth-card.is-expressive .hearth-music.is-layout-plain .hearth-music-art,
+.hearth-card.is-expressive .hearth-music.is-layout-medium .hearth-music-art {
+	background: var(--x-surface-high);
+	color: var(--x-on-container);
+}
+
+.hearth-card.is-expressive .hearth-music.is-layout-plain .hearth-music-art {
+	border-radius: 16px;
+}
+
+.hearth-card.is-expressive .hearth-music-title {
+	font-weight: var(--font-bold);
+}
+
+.hearth-card.is-expressive .hearth-music-btn {
+	border-radius: 50%;
+}
+
+.hearth-card.is-expressive .hearth-music-btn.is-play {
+	width: 40px;
+	height: 40px;
+	background: var(--x-primary);
+	color: var(--x-on-primary);
+}
+
+.hearth-card.is-expressive .hearth-music-btn.is-on {
+	color: var(--x-primary);
+}
+
+.hearth-card.is-expressive .hearth-music-row {
+	border-radius: 999px;
+	padding: 6px 10px;
+}
+
+.hearth-card.is-expressive .hearth-music-row.is-current {
+	background: var(--x-container);
+	color: var(--x-on-container);
+}
+
+.hearth-card.is-expressive .hearth-music-row.is-current .hearth-music-row-label {
+	color: var(--x-on-container);
+}
+
+.hearth-card.is-expressive .hearth-music.is-layout-panel .hearth-music-stage {
+	border-radius: 24px;
+}
+
+.hearth-card.is-expressive .hearth-music-seek,
+.hearth-card.is-expressive .hearth-music-volume {
+	accent-color: var(--x-primary);
+}
+
+/* The music card's own <audio> element, parked in the document so mobile
+ * webviews keep playing when the app is backgrounded. It paints nothing. */
+.hearth-music-audio {
+	display: none;
 }

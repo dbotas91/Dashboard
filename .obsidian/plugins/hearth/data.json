@@ -13,6 +13,7 @@
   "newNoteFolder": "",
   "newNoteFilename": "",
   "searchContents": true,
+  "searchScrollToMatch": true,
   "searchInstantAnswers": true,
   "hiddenInstantAnswers": [],
   "searchEngine": "builtin",
@@ -30,6 +31,7 @@
   "focusSearchOnOpen": false,
   "liveRefresh": false,
   "liveSettingsSync": true,
+  "deviceLocalState": false,
   "mobileSearchOnly": true,
   "showMobileActionBar": true,
   "mobileActionButtons": [
@@ -85,6 +87,7 @@
   "cardRadius": 14,
   "cardBorderWidth": 1,
   "hiddenFilters": [],
+  "strictFilters": false,
   "dashboards": [
     {
       "id": "dash-mrylwy5u-271",
@@ -265,10 +268,18 @@
           "fh": 320,
           "target": "07 - INDEXES/Mensagens de Domingo.md",
           "editable": true,
-          "secondView": {
-            "target": "07 - INDEXES/Reunião de Homens.md",
-            "editable": true
-          }
+          "views": [
+            {
+              "id": "card-mrytohcq-9864-view-2",
+              "kind": "embed",
+              "x": 0,
+              "y": 0,
+              "w": 1,
+              "h": 1,
+              "target": "07 - INDEXES/Reunião de Homens.md",
+              "editable": true
+            }
+          ]
         },
         {
           "id": "card-mryu0cnx-8123",
@@ -283,11 +294,19 @@
           "fy": 0,
           "fw": 0.49493670886075947,
           "fh": 320,
-          "secondView": {
-            "target": "07 - INDEXES/Meditações.md",
-            "editable": true
-          },
-          "editable": true
+          "editable": true,
+          "views": [
+            {
+              "id": "card-mryu0cnx-8123-view-2",
+              "kind": "embed",
+              "x": 0,
+              "y": 0,
+              "w": 1,
+              "h": 1,
+              "target": "07 - INDEXES/Meditações.md",
+              "editable": true
+            }
+          ]
         }
       ],
       "iconLucide": "book",
@@ -531,12 +550,13 @@
   "taskFields": [],
   "customFileIcons": true,
   "iconizeIconProperty": "icon",
+  "frontmatterIconsWithoutPlugin": false,
   "frontMatterTitles": true,
   "operonIntegration": true,
   "operonWrites": false,
   "maxWidth": 1600,
   "fullWidth": false,
-  "lastSeenVersion": "3.4.0",
+  "lastSeenVersion": "3.7.0",
   "rssRead": {},
   "setupStatus": "done",
   "authorKey": "",

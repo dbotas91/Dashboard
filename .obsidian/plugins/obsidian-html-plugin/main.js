@@ -22933,11 +22933,14 @@ var HtmlView = class extends import_obsidian2.FileView {
       index_es_default.enableBoundaryChecking(false);
       let parser = new DOMParser();
       this.mainView = this.contentEl.createDiv();
-      this.mainView.setAttribute("style", "display: flex; flex-direction: column; height: 100%; padding: 0;");
+      if (this.app.isMobile)
+        this.mainView.setAttribute("style", "display: flex; flex-direction: column; height: 100dvh !important; padding: 0; overflow: hidden !important;");
+      else
+        this.mainView.setAttribute("style", "display: flex; flex-direction: column; height: 100%; padding: 0;");
       let mainViewEl = parser.parseFromString(MAINVIEW_HTML, "text/html");
       this.mainView.appendChild(mainViewEl.body.childNodes[0]);
       this.mainView.appendChild(mainViewEl.body.childNodes[1]);
-      const searchBar = this.mainView.querySelector("#ohpMainView");
+      const searchBar = this.mainView.querySelector("#ohpSearchBar");
       const iframe = this.mainView.querySelector("#ohpIframe");
       const baseHref = getHtmlBaseHref(this.app, file);
       let dom = null, applyAnchorFix = true;
@@ -23005,6 +23008,8 @@ var HtmlView = class extends import_obsidian2.FileView {
         iframe.contentWindow.document.body.instanceOf = (typeObject) => {
           return false;
         };
+        if (iframe.mainView.app.isMobile)
+          applyMobileMethods(iframe);
       };
       dispatchEvent(new CustomEvent("DOMContentLoaded"));
     } catch (error) {
@@ -23213,19 +23218,17 @@ async function sanitizeAndApplyPatches(doc) {
 }
 function applyUserInteractivePatches(doc) {
   if (!doc.body.style) {
-    doc.body.setAttribute("style", "overflow-x: hidden; overflow-y: auto; user-select: text; max-width: 100%; word-wrap: break-word;");
+    doc.body.setAttribute("style", "overflow-x: auto; overflow-y: auto; user-select: text; max-width: 100%; word-wrap: break-word;");
     return;
   }
   if (doc.body.style.overflow === "") {
-    doc.body.style.overflowX = "hidden";
+    doc.body.style.overflowX = "auto";
     doc.body.style.overflowY = "auto";
   }
   if (doc.body.style.maxWidth === "")
     doc.body.style.maxWidth = "100%";
   if (doc.body.style.userSelect === "")
     doc.body.style.userSelect = "text";
-  if (doc.documentElement.style.overflowX === "")
-    doc.documentElement.style.overflowX = "hidden";
 }
 async function removeScriptTagsAndExtScripts(doc) {
   let allNodes = doc.querySelectorAll("script");
@@ -23928,11 +23931,43 @@ async function buildUserInteractiveFacilities(mainView) {
     touchMoving = 0;
   }, { passive: false });
 }
+function applyMobileMethods(iframe) {
+  if (!iframe)
+    return;
+  const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
+  if (!iframeDoc)
+    return;
+  const settings = iframe.mainView.settings;
+  switch (settings.opMode) {
+    case "LowRestrictedMode" /* LowRestricted */:
+    case "UnestrictedMode" /* Unrestricted */:
+      break;
+    default:
+      return;
+  }
+  iframeDoc.addEventListener("focusin", (evt) => {
+    const target = evt.target;
+    if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        if (window.visualViewport) {
+          window.scrollTo(0, 0);
+        }
+      }, 300);
+    }
+  }, true);
+  iframeDoc.addEventListener("focusout", () => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+      iframeDoc.body.scrollTop = iframeDoc.body.scrollTop;
+    }, 100);
+  }, true);
+}
 var Hotkey = class {
 };
 var HIGHLIGHT_CLASS_NAME = "obsidian-search-match-mark";
 var MAINVIEW_HTML = `
-<div class="document-search-container" style="display: none; border: none; width: 100%" width="100%" id="ohpMainView">
+<div class="document-search-container" style="display: none; border: none; width: 100%" width="100%" id="ohpSearchBar">
   <div class="document-search">
     <input class="document-search-input" type="search" placeholder="${i18next.t("editor.search.placeholder-find")}" id="ohpSearchInput">
     <div class="document-search-buttons">
@@ -23944,7 +23979,7 @@ var MAINVIEW_HTML = `
   </div>
 </div>
 
-<iframe style="border: none; flex-grow: 1; width: 100%; overflow-x: hidden; overflow-y: auto;" loading="eager" margin="0" padding="0"  width="100%" height="100%" id="ohpIframe">
+<iframe style="border: none; flex-grow: 1; height: 100%; width: 100%; min-width: 0; overflow-x: auto; overflow-y: auto;" loading="eager" margin="0" padding="0" width="100%" height="100%" id="ohpIframe">
 </iframe>
 `;
 var HIGHLIGHT_STYLE = `

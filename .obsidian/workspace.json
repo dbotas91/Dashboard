@@ -70,23 +70,41 @@
             }
           },
           {
-            "id": "cf72b449fdc985eb",
+            "id": "85f1855cc78e377a",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "split-diff-view",
               "state": {
-                "file": "07 - INDEXES/Mensagens de Domingo.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "aFile": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+                "bFile": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+                "aRef": ""
               },
-              "icon": "lucide-trello",
-              "title": "Mensagens de Domingo"
+              "icon": "lucide-ghost",
+              "title": "split-diff-view"
+            }
+          },
+          {
+            "id": "f804ef4550a1df55",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "550b3a1f512ddccb",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://publish.obsidian.md/git-doc/Authentication",
+                "title": "Authentication - Git Documentation - Obsidian Publish",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Authentication - Git Documentation - Obsidian Publish"
             }
           },
           {
@@ -114,51 +132,35 @@
             }
           },
           {
+            "id": "4119e842d97b7f1c",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {
+                "scroll": {
+                  "dash-mryonvc1-2834": 255
+                }
+              },
+              "icon": "lucide-ghost",
+              "title": "hearth-home-view"
+            }
+          },
+          {
             "id": "b493a33f2ac7d56b",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat?chatID=c11dbb80-4105-4ba3-8170-d48e0ae2720a",
-                "title": "xampp para linux com php 8.5",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "xampp para linux com php 8.5"
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
             }
           }
         ],
-        "currentTab": 3
-      },
-      {
-        "id": "c0de4a1dbe74e589",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d0673e00d02f49e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "O que te acontece quando morreres"
-            }
-          }
-        ]
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -219,8 +221,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           }
         ]
@@ -321,8 +323,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           },
           {
@@ -353,8 +355,8 @@
             "state": {
               "type": "git-history-view",
               "state": {},
-              "icon": "history",
-              "title": "History"
+              "icon": "lucide-ghost",
+              "title": "git-history-view"
             }
           }
         ],
@@ -371,8 +373,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -409,8 +411,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "zk-prefixer:Crie uma nova nota única": false,
-      "obsidian-importer:Importar notas": false,
-      "hearth:Open Hearth home": false,
       "canvas:Criar novo Canvas": false,
       "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
@@ -423,20 +423,22 @@
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
+      "obsidian-importer:Importar notas": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "hearth:Open Hearth home": false
     }
   },
-  "active": "d0673e00d02f49e7",
+  "active": "f804ef4550a1df55",
   "lastOpenFiles": [
-    "07 - INDEXES/Mensagens de Domingo.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
