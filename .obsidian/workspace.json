@@ -87,10 +87,24 @@
             "id": "f804ef4550a1df55",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "type": "markdown",
+              "state": {
+                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Edição de Gifs"
             }
           },
           {
@@ -435,6 +449,7 @@
   },
   "active": "f804ef4550a1df55",
   "lastOpenFiles": [
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
@@ -470,7 +485,6 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.esm.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/plugin.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
