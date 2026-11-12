@@ -149,6 +149,9 @@ set -g @plugin 'tmux-plugins/tmux-continuum'
 # Restaurar automaticamente a última sessão salva ao iniciar o tmux
 set -g @continuum-restore 'on'
 
+# Gravar o estado a cada 5 minutos (evita perder janelas se fechar o WSL de repente)
+set -g @continuum-save-interval '5'
+
 # Restaurar também o conteúdo do texto dos painéis e sessões ativas do Neovim
 set -g @resurrect-capture-pane-contents 'on'
 set -g @resurrect-strategy-nvim 'session'
@@ -246,8 +249,8 @@ Se preferir correr por comando direto:
 ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh
 ```
 
-### 4. Onde ficam os ficheiros salvos no disco?
-Os ficheiros de sessão guardam o layout e o histórico em:
+### 4. Onde ficam os ficheiros salvos no disco e como inspecionar
+Os ficheiros de sessão guardam o layout, comandos e histórico em:
 ```text
 ~/.local/share/tmux/resurrect/
 ```
@@ -256,6 +259,47 @@ Para verificar a lista de sessões gravadas com data e hora:
 ls -lt ~/.local/share/tmux/resurrect/
 ```
 *(O link simbólico `last` aponta sempre para o ponto de restauro mais recente).*
+
+Para ver exatamente o que está salvo e será restaurado (sessões, janelas e painéis):
+```bash
+cat ~/.local/share/tmux/resurrect/last
+```
+> [!TIP]
+> Se o ficheiro `last` tiver linhas como `window principal 1`, `window principal 2` e `window principal 3`, significa que as 3 janelas estão gravadas em disco e serão restauradas. Se só tiver 1 janela listada, significa que o estado ainda não tinha sido guardado antes do encerramento.
+
+---
+
+### 5. Resolução de Problemas no WSL (Porque só restaura 1 janela em vez de 3?)
+
+Se tinhas 3 janelas abertas mas ao reabrir o WSL o tmux apenas restaurou 1 janela, o motivo decorre de como o WSL e o `tmux-continuum` funcionam em conjunto:
+
+#### O Diagnóstico do Problema:
+1. **O intervalo padrão do Continuum é de 15 minutos:** O plugin grava o estado automaticamente a cada 15 minutos. Se criares a 2ª e a 3ª janelas e fechares o terminal passado poucos minutos, o temporizador ainda não disparou e essas janelas **nunca chegaram a ser escritas em disco**.
+2. **O fecho do WSL é abrupto:** Ao fechar a janela do Windows Terminal (clicando no **"X"**), o Windows mata os processos do WSL imediatamente (*kill signal*). O tmux não tem oportunidade de executar um encerramento gracioso (*graceful exit*) para salvar o estado antes de morrer.
+3. **Condição de corrida no `.bashrc`:** Se o `.bashrc` executa `tmux new -s principal` antes do script de restauro do continuum correr em segundo plano, ele cria logo uma sessão vazia de 1 janela que pode conflitar com o restauro.
+
+#### Como Garantir o Restauro Correto das 3 Janelas:
+
+* **Regra de Ouro (Salvar manualmente antes de fechar):**
+  Antes de fechar o Windows Terminal, prime:
+  ```text
+  Ctrl + a   depois   Ctrl + s   (ou Ctrl + b se o prefixo for padrão)
+  ```
+  Surgirá no rodapé a mensagem: **`Tmux environment saved!`**. Agora podes fechar a janela com 100% de certeza de que as 3 janelas foram salvas.
+
+* **Reduzir o intervalo de auto-save no `~/.tmux.conf`:**
+  Define a gravação para acontecer a cada 5 minutos em vez de 15:
+  ```tmux
+  set -g @continuum-save-interval '5'
+  ```
+  *(Depois recarrega a configuração com `Prefix + r`).*
+
+* **Forçar o restauro manual se algo falhar:**
+  Se ao abrir o terminal notares que alguma janela não apareceu:
+  ```text
+  Ctrl + a   depois   Ctrl + r   (ou Ctrl + b)
+  ```
+  O tmux recarregará imediatamente o estado completo a partir do ficheiro `last`.
 
 ---
 
