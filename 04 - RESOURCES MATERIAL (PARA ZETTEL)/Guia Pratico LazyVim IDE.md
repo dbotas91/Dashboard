@@ -61,25 +61,51 @@ fc-cache -fv
 
 ---
 
-## 🗂️ 3. Navegação, Pesquisa e Janelas
+## 🗂️ 3. Navegação e Pesquisa de Texto (No Ficheiro e no Projeto)
 
-### Pesquisa no Modo Normal (Dentro do Ficheiro)
-* **`/palavra` + `<Enter>`**: Procura do cursor para a **frente**.
-* **`?palavra` + `<Enter>`**: Procura do cursor para **trás**.
+```mermaid
+flowchart TD
+    Search["Pesquisa de Texto"]
+    Search --> FileSearch["No Ficheiro Atual"]
+    Search --> ProjectSearch["Em Todo o Projeto"]
+    
+    FileSearch --> Slash["/palavra + Enter\nPesquisar para a frente (n/N)"]
+    FileSearch --> Asterisk["* (Shift + 8)\nPesquisar palavra sob o cursor"]
+    FileSearch --> Lines["<Espaço>s/ ou <Espaço>sb\nLista interativa de linhas"]
+    
+    ProjectSearch --> LiveGrep["<Espaço>/ ou <Espaço>sg\nLive Grep em tempo real"]
+    ProjectSearch --> WordGrep["<Espaço>sw\nPesquisar palavra sob o cursor ou seleção"]
+    ProjectSearch --> FileNames["<Espaço><Espaço> ou <Espaço>ff\nLocalizar ficheiro por nome"]
+```
+
+### 3.1. Procurar Texto DENTRO do Ficheiro Atual
+* **`/palavra` + `<Enter>`**: Procura da posição atual para a **frente**.
+* **`?palavra` + `<Enter>`**: Procura da posição atual para **trás**.
 * **`n`**: Salta para a ocorrência **seguinte**.
 * **`N`**: Salta para a ocorrência **anterior**.
 * **`*`** (Shift + 8): Procura instantânea da palavra exata sob o cursor para a frente (sem escrever).
 * **`#`**: Procura instantânea da palavra sob o cursor para trás.
 * **`<Esc>`** (ou `:noh`): Limpa o realce amarelo da pesquisa.
-* **`<Espaço>s/`** (ou `<Espaço>sb`): Pesquisa interativa por linhas no ficheiro atual via Snacks.
+* **`<Espaço>s/`** (ou `<Espaço>sb`): Abre a janela interativa com filtro por linhas em tempo real e pré-visualização.
+* **`<Espaço>ss`** (*Document Symbols*): Pesquisa métodos, funções e variáveis definidos no ficheiro atual.
 
-### Ficheiros e Pesquisa Global no Projeto
-* `<Espaço><Espaço>` ou `<Espaço>ff`: Localizar ficheiro por nome (*Fuzzy finder*).
-* `<Espaço>/` ou `<Espaço>sg`: Pesquisar texto em todos os ficheiros do projeto (*Live Grep*).
-* `<Espaço>e`: Alternar a barra lateral com a árvore de diretórios (Neo-tree).
-  * Dentro da árvore: `a` cria ficheiro/pasta, `d` apaga, `r` renomeia.
+### 3.2. Procurar Texto em TODO O PROJETO (Vários Ficheiros)
+* **`<Espaço>/`** ou **`<Espaço>sg`** (*Live Grep*):
+  * **O atalho principal de pesquisa.** Pesquisa de texto em tempo real em todos os ficheiros do repositório/pasta (através do *ripgrep*).
+  * Mostra no lado direito a pré-visualização imediata do ficheiro e da linha correspondente.
+  * Prime **`<Enter>`** para saltar diretamente para a linha encontrada.
+* **`<Espaço>sw`** (*Search Word*):
+  * Procura a **palavra sob o cursor** em todos os ficheiros do projeto sem precisares de a escrever.
+  * **Em Modo Visual:** seleciona qualquer bloco de texto com `v` e prime `<Espaço>sw` para procurar essa frase exata no projeto.
+* **`<Espaço>sS`** (*Workspace Symbols*):
+  * Pesquisa símbolos globais do projeto (classes, interfaces e métodos de qualquer ficheiro).
 
-### Janelas (Splits) e Abas (Buffers)
+### 3.3. Procurar Ficheiros pelo Nome
+* **`<Espaço><Espaço>`** ou **`<Espaço>ff`**: Localizar ficheiro por nome (*Fuzzy finder*).
+* **`<Espaço>fr`**: Ficheiros recentes (*Recent Files*).
+* **`<Espaço>e`**: Alternar a árvore de ficheiros (Neo-tree).
+
+### 3.4. Janelas (Splits) e Abas (Buffers)
 * `Shift + h` / `Shift + l`: Alternar entre ficheiros abertos na barra superior (esquerda/direita).
 * `<Espaço>bd`: Fechar o buffer (ficheiro) atual.
 * `<Espaço>|`: Dividir o ecrã na vertical.
@@ -279,17 +305,22 @@ git pull --rebase origin main
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                    NAVEGAÇÃO & EDIÇÃO                        │
+│                    PESQUISA & NAVEGAÇÃO                      │
 ├──────────────────────────────┬───────────────────────────────┤
-│ /palavra  /  ?palavra        │ Procurar para frente / trás   │
+│ /palavra  /  ?palavra        │ Procurar no ficheiro (frente) │
 │ n  /  N                      │ Próxima / anterior ocorrência │
 │ *  /  #                      │ Procurar palavra sob o cursor │
 │ <Espaço>s/                   │ Pesquisa interativa no buffer │
-│ <Espaço><Espaço>             │ Encontrar ficheiro no projeto │
-│ <Espaço>sg                   │ Pesquisar texto em ficheiros  │
+│ <Espaço>/  ou  <Espaço>sg    │ Live Grep (em todo o projeto) │
+│ <Espaço>sw                   │ Grep palavra atual no projeto │
+│ <Espaço><Espaço>             │ Encontrar ficheiro pelo nome  │
+│ <Espaço>fr                   │ Ficheiros recentes            │
 │ <Espaço>e                    │ Explorador de pastas (Neo-tree│
 │ Shift + h / Shift + l        │ Alternar abas/buffers         │
 │ Ctrl + /                     │ Abrir/fechar terminal de logs │
+├──────────────────────────────┼───────────────────────────────┤
+│                     EDIÇÃO & REGISTOS                        │
+├──────────────────────────────┬───────────────────────────────┤
 │ Ctrl + r depois " ou +       │ Colar no modo Insert          │
 │ Ctrl + o depois p / yy / dd  │ Executar 1 comando em Insert  │
 │ Ctrl + w / Ctrl + u          │ Cortar palavra / até ao início│
