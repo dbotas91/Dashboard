@@ -113,7 +113,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -128,7 +128,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
+              "title": "guia-tmux-completo"
             }
           },
           {
@@ -160,7 +160,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "a57d03adde9ffdf1",
@@ -264,8 +264,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242,
-    "collapsed": true
+    "width": 239.00260543823242
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -409,8 +408,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -469,35 +468,35 @@
       "hearth:Open Hearth home": false
     }
   },
-  "active": "e66dd6024175e68f",
+  "active": "4119e842d97b7f1c",
   "lastOpenFiles": [
+    "09 - STATUS NOTES/Adult.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 15-11-2026.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-11.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "Home.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
     "10 - TAGS/2026-10.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types - which to use and when.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/I tried the viral Linux distro that raised $18,700,000.md",
-    "10 - TAGS/2026-09.md",
-    "10 - TAGS/2026-08.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",

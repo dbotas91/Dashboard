@@ -8,6 +8,13 @@ tags:
   - wsl
   - produtividade
   - dotfiles
+dg-publish: "true"
+mature-status: canon
+created: 2026-03-04 11:58
+dg-note-icon: canon
+noteIcon: canon
+updated: 2026-03-04 11:58
+dgPassFrontmatter: "true"
 ---
 
 # 💻 Guia Completo e Configuração do TMUX

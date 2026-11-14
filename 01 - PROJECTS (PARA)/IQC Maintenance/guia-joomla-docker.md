@@ -8,6 +8,13 @@ tags:
   - mariadb
   - ubuntu
   - dev-environment
+dg-publish: "true"
+mature-status: canon
+created: 2026-03-04 11:58
+dg-note-icon: canon
+noteIcon: canon
+updated: 2026-03-04 11:58
+dgPassFrontmatter: "true"
 ---
 
 # 🚀 Guia Completo: Ambiente Docker para Joomla no Ubuntu
