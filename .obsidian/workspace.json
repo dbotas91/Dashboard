@@ -70,20 +70,6 @@
             }
           },
           {
-            "id": "85f1855cc78e377a",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
-                "bFile": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
-                "aRef": ""
-              },
-              "icon": "lucide-ghost",
-              "title": "split-diff-view"
-            }
-          },
-          {
             "id": "f804ef4550a1df55",
             "type": "leaf",
             "state": {
@@ -127,7 +113,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
+                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -142,7 +128,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "guia-joomla-docker"
+              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
             }
           },
           {
@@ -152,11 +138,11 @@
               "type": "hearth-home-view",
               "state": {
                 "scroll": {
-                  "dash-mryonvc1-2834": 255
+                  "dash-mryonvc1-2834": 375
                 }
               },
-              "icon": "lucide-ghost",
-              "title": "hearth-home-view"
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           },
           {
@@ -174,7 +160,42 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
+      },
+      {
+        "id": "a57d03adde9ffdf1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6369838592c6fe0a",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://duck.ai/chat?chatID=b5305ded-df3c-4261-91a0-17cceacd2996",
+                "title": "Salmos curtos (≤ 20 versos)",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Salmos curtos (≤ 20 versos)"
+            }
+          },
+          {
+            "id": "969d1f3f703b5ac5",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://iqc.pt/edificacao/ensino/doutrinal/7220-a-mesa-do-senhor-e-a-ceia-do-senhor?highlight=WyJjZWlhIiwiY2VpYVx1MjAxZCwiLCJjZWlhXHUwMGJiIiwiY2VpYXMiLCJjZWlhXHUyMDFkIiwiZG9zIiwiZG91dHJpbmFsIiwiZG8iLCJkb21pbmljYWwiLCJkb2N1bWVudGF0aW9uIl0=",
+                "title": "A Mesa do Senhor e a Ceia do Senhor",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "A Mesa do Senhor e a Ceia do Senhor"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -243,7 +264,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242
+    "width": 239.00260543823242,
+    "collapsed": true
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -337,8 +359,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "advanced-tables-toolbar"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -369,8 +391,8 @@
             "state": {
               "type": "git-history-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-history-view"
+              "icon": "history",
+              "title": "History"
             }
           }
         ],
@@ -447,16 +469,23 @@
       "hearth:Open Hearth home": false
     }
   },
-  "active": "f804ef4550a1df55",
+  "active": "e66dd6024175e68f",
   "lastOpenFiles": [
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 15-11-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-11.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "Home.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
@@ -464,18 +493,11 @@
     "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
     "10 - TAGS/2026-10.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types - which to use and when.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/I tried the viral Linux distro that raised $18,700,000.md",
     "10 - TAGS/2026-09.md",
     "10 - TAGS/2026-08.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 23-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 02-08-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Despedida de solteiro.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",

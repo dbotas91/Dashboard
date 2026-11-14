@@ -24,6 +24,8 @@ Estão organizados por ano-mês com referências às Tags.
 - [[2026-07]]
 - [[2026-08]]
 - [[2026-09]]
+- [[2026-10]]
+- [[2026-11]]
 
 ### Todas as notas (ordenadas por data ascendente)
 - [[Reunião Zoom IQC - 01-02-2025]]
@@ -52,6 +54,7 @@ Estão organizados por ano-mês com referências às Tags.
 - [[Ceia e ED - 23-08-2026]]
 - [[Reunião Zoom IQC - 06-09-2026]]
 - [[Ceia e ED - 20-09-2026]]
+- [[Ceia e ED - 15-11-2026]]
 
 ## 2025
 ### Tags (Por ano-mês)
