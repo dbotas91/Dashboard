@@ -6,7 +6,6 @@
       {
         "id": "4509724f8bf84da7",
         "type": "tabs",
-        "dimension": 62.337662337662344,
         "children": [
           {
             "id": "1f40c708c0856b57",
@@ -71,41 +70,23 @@
             }
           },
           {
-            "id": "f804ef4550a1df55",
+            "id": "cf72b449fdc985eb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "07 - INDEXES/Mensagens de Domingo.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false
+                  ]
                 }
               },
-              "icon": "lucide-file",
-              "title": "Edição de Gifs"
-            }
-          },
-          {
-            "id": "550b3a1f512ddccb",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://publish.obsidian.md/git-doc/Authentication",
-                "title": "Authentication - Git Documentation - Obsidian Publish",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Authentication - Git Documentation - Obsidian Publish"
+              "icon": "lucide-trello",
+              "title": "Mensagens de Domingo"
             }
           },
           {
@@ -114,7 +95,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -129,45 +110,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "guia-tmux-completo"
-            }
-          },
-          {
-            "id": "4119e842d97b7f1c",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
-            }
-          },
-          {
-            "id": "d4e639b94f5d6df2",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/plugins/digitalgarden/data.json",
-                "bFile": ".obsidian/plugins/digitalgarden/data.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: data.json  (Working Tree)"
-            }
-          },
-          {
-            "id": "570648f79a8029e2",
-            "type": "leaf",
-            "state": {
-              "type": "digital-garden-publication-center",
-              "state": {},
-              "icon": "book-up",
-              "title": "Publication Center"
+              "title": "guia-joomla-docker"
             }
           },
           {
@@ -177,47 +120,52 @@
               "type": "webviewer",
               "state": {
                 "url": "https://duck.ai/chat?chatID=c11dbb80-4105-4ba3-8170-d48e0ae2720a",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "title": "xampp para linux com php 8.5",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+              "title": "xampp para linux com php 8.5"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       },
       {
-        "id": "a57d03adde9ffdf1",
+        "id": "c0de4a1dbe74e589",
         "type": "tabs",
-        "dimension": 37.66233766233766,
         "children": [
           {
-            "id": "6369838592c6fe0a",
+            "id": "d0673e00d02f49e7",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://duck.ai/chat?chatID=b5305ded-df3c-4261-91a0-17cceacd2996",
-                "title": "Salmos curtos (≤ 20 versos)",
-                "mode": "webview"
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "globe-2",
-              "title": "Salmos curtos (≤ 20 versos)"
+              "icon": "lucide-file",
+              "title": "O que te acontece quando morreres"
             }
           },
           {
-            "id": "969d1f3f703b5ac5",
+            "id": "240127237d248bc8",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://iqc.pt/edificacao/ensino/doutrinal/7220-a-mesa-do-senhor-e-a-ceia-do-senhor?highlight=WyJjZWlhIiwiY2VpYVx1MjAxZCwiLCJjZWlhXHUwMGJiIiwiY2VpYXMiLCJjZWlhXHUyMDFkIiwiZG9zIiwiZG91dHJpbmFsIiwiZG8iLCJkb21pbmljYWwiLCJkb2N1bWVudGF0aW9uIl0=",
-                "title": "A Mesa do Senhor e a Ceia do Senhor",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "A Mesa do Senhor e a Ceia do Senhor"
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
             }
           }
         ],
@@ -283,7 +231,7 @@
               "type": "recent-files",
               "state": {},
               "icon": "clock",
-              "title": "Recent files"
+              "title": "Recent Files"
             }
           }
         ]
@@ -472,6 +420,8 @@
   "left-ribbon": {
     "hiddenItems": {
       "zk-prefixer:Crie uma nova nota única": false,
+      "obsidian-importer:Importar notas": false,
+      "hearth:Open Hearth home": false,
       "canvas:Criar novo Canvas": false,
       "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
@@ -484,45 +434,43 @@
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
-      "obsidian-importer:Importar notas": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false,
-      "hearth:Open Hearth home": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d4e639b94f5d6df2",
+  "active": "240127237d248bc8",
   "lastOpenFiles": [
-    "09 - STATUS NOTES/Adult.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 15-11-2026.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-11.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 15-11-2026.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-11.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
-    "Home.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
     "10 - TAGS/2026-10.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types - which to use and when.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/I tried the viral Linux distro that raised $18,700,000.md",
+    "10 - TAGS/2026-09.md",
+    "10 - TAGS/2026-08.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",

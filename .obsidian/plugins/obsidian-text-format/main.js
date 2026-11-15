@@ -7058,7 +7058,7 @@ var TextFormatSettingTab = class extends import_obsidian4.PluginSettingTab {
   getSettingDefinitions() {
     return [{
       name: "Text Format settings",
-      render: (_setting, group) => this.renderSettings(group.listEl)
+      render: (setting) => this.renderSettings(setting.settingEl)
     }];
   }
   renderSettings(containerEl) {
