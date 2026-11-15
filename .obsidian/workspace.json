@@ -6,6 +6,7 @@
       {
         "id": "4509724f8bf84da7",
         "type": "tabs",
+        "dimension": 62.337662337662344,
         "children": [
           {
             "id": "1f40c708c0856b57",
@@ -135,14 +136,38 @@
             "id": "4119e842d97b7f1c",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
+              "type": "split-diff-view",
               "state": {
-                "scroll": {
-                  "dash-mryonvc1-2834": 375
-                }
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": ""
               },
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
+            }
+          },
+          {
+            "id": "d4e639b94f5d6df2",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/plugins/digitalgarden/data.json",
+                "bFile": ".obsidian/plugins/digitalgarden/data.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
+            }
+          },
+          {
+            "id": "570648f79a8029e2",
+            "type": "leaf",
+            "state": {
+              "type": "digital-garden-publication-center",
+              "state": {},
+              "icon": "book-up",
+              "title": "Publication Center"
             }
           },
           {
@@ -160,11 +185,12 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       },
       {
         "id": "a57d03adde9ffdf1",
         "type": "tabs",
+        "dimension": 37.66233766233766,
         "children": [
           {
             "id": "6369838592c6fe0a",
@@ -256,8 +282,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "recent-files"
+              "icon": "clock",
+              "title": "Recent files"
             }
           }
         ]
@@ -468,7 +494,7 @@
       "hearth:Open Hearth home": false
     }
   },
-  "active": "4119e842d97b7f1c",
+  "active": "d4e639b94f5d6df2",
   "lastOpenFiles": [
     "09 - STATUS NOTES/Adult.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
