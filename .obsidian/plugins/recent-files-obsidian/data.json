@@ -1,20 +1,44 @@
 {
   "recentFiles": [
     {
-      "basename": "Adult",
-      "path": "09 - STATUS NOTES/Adult.md"
+      "basename": "Reunião Zoom IQC - 15-11-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 15-11-2026.md"
+    },
+    {
+      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
+      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
     },
     {
       "basename": "guia-tmux-completo",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md"
     },
     {
-      "basename": "guia-mysql-phpmyadmin",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md"
+      "basename": "O que te acontece quando morreres",
+      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md"
+    },
+    {
+      "basename": "Reunião Zoom IQC - 14-06-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md"
+    },
+    {
+      "basename": "Ceia e ED - 15-11-2026",
+      "path": "06 - DAILY-WEEKLY TASKS/Ceia e ED - 15-11-2026.md"
     },
     {
       "basename": "guia-joomla-docker",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "Adult",
+      "path": "09 - STATUS NOTES/Adult.md"
+    },
+    {
+      "basename": "guia-mysql-phpmyadmin",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md"
     },
     {
       "basename": "Script de migração do Joomla da versão 3 para a versão 5",
@@ -37,20 +61,12 @@
       "path": "07 - INDEXES/Mensagens de Domingo.md"
     },
     {
-      "basename": "Ceia e ED - 15-11-2026",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 15-11-2026.md"
-    },
-    {
-      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
-      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
-    },
-    {
       "basename": "Guia Pratico LazyVim IDE",
       "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md"
     },
     {
       "basename": "2026-11",
-      "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-11.md"
+      "path": "10 - TAGS/2026-11.md"
     },
     {
       "basename": "Edição de Gifs",
@@ -65,16 +81,8 @@
       "path": "00 - MAPS OF CONTENT/Atividades e tarefas.md"
     },
     {
-      "basename": "Home",
-      "path": "Home.md"
-    },
-    {
       "basename": "Quando Deus não alivia a dor",
       "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md"
-    },
-    {
-      "basename": "O que te acontece quando morreres",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md"
     },
     {
       "basename": "Auditoria_IQC_MoonSec",
@@ -191,14 +199,6 @@
     {
       "basename": "Estudo Bíblico - 25-02-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 25-02-2026.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 15-07-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 15-07-2026.md"
-    },
-    {
-      "basename": "Estudo Bíblico - 22-07-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 22-07-2026.md"
     }
   ],
   "omittedPaths": [],

@@ -56,40 +56,6 @@
             }
           },
           {
-            "id": "50b56630b26bdeb6",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.minix.com.hk/pt/products/minix-er947-ai-mini-pc-eu?ref=yjmjldih",
-                "title": "MINIX ER947-AI Mini PC AMD Ryzen AI 9 HX 470",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "MINIX ER947-AI Mini PC AMD Ryzen AI 9 HX 470"
-            }
-          },
-          {
-            "id": "cf72b449fdc985eb",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "07 - INDEXES/Mensagens de Domingo.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Mensagens de Domingo"
-            }
-          },
-          {
             "id": "e66dd6024175e68f",
             "type": "leaf",
             "state": {
@@ -126,14 +92,35 @@
               "icon": "globe-2",
               "title": "xampp para linux com php 8.5"
             }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "c0de4a1dbe74e589",
-        "type": "tabs",
-        "children": [
+          },
+          {
+            "id": "027f82d59f9cc411",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://notas-dario.vercel.app/",
+                "title": "Home",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "81ada27c6f88cf93",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://docs.forestry.md/getting-started/03-note-settings/",
+                "title": "03 Note settings",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "03 Note settings"
+            }
+          },
           {
             "id": "d0673e00d02f49e7",
             "type": "leaf",
@@ -159,17 +146,55 @@
             }
           },
           {
-            "id": "240127237d248bc8",
+            "id": "6a13aaa60e1172dc",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "type": "markdown",
+              "state": {
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "guia-tmux-completo"
+            }
+          },
+          {
+            "id": "2f1c55e5fcb14dfd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -294,7 +319,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Etiquetas"
             }
           },
           {
@@ -303,13 +328,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "09 - STATUS NOTES/Adult.md",
+                "file": "Home.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Adult"
+              "title": "Índice"
             }
           },
           {
@@ -415,7 +440,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 218
+    "width": 295.4000244140625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -442,20 +467,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "240127237d248bc8",
+  "active": "027f82d59f9cc411",
   "lastOpenFiles": [
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 15-11-2026.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 15-11-2026.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
+    "Home.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Reunião Zoom IQC - 15-11-2026.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
+    "10 - TAGS/2026-11.md",
+    "07 - INDEXES/2026 - Atividades e Tarefas.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Ceia e ED - 15-11-2026.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/2026-11.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
@@ -464,13 +496,6 @@
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types - which to use and when.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/I tried the viral Linux distro that raised $18,700,000.md",
-    "10 - TAGS/2026-09.md",
-    "10 - TAGS/2026-08.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 16-08-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Estudo Bíblico - 12-08-2026.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
