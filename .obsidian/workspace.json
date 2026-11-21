@@ -4,16 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "a13cf328d71ddc47",
         "type": "tabs",
         "children": [
           {
-            "id": "1f40c708c0856b57",
+            "id": "1d5f2945fcbaaa92",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "hearth-home-view"
+            }
+          },
+          {
+            "id": "6cdfc1d4bc87e314",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,173 +38,117 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Guia de atualização do Joomla no ambiente local"
+              "title": "Por que dividir a Bíblia corretamente"
             }
           },
           {
-            "id": "4d5b759df54e36bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "guia-tmux-completo"
-            }
-          },
-          {
-            "id": "e66dd6024175e68f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "guia-joomla-docker"
-            }
-          },
-          {
-            "id": "b493a33f2ac7d56b",
+            "id": "5932a97b4de7989d",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duck.ai/chat?chatID=c11dbb80-4105-4ba3-8170-d48e0ae2720a",
-                "title": "xampp para linux com php 8.5",
+                "url": "https://iqc.pt/",
+                "title": "Portão",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "xampp para linux com php 8.5"
+              "title": "Portão"
             }
           },
           {
-            "id": "027f82d59f9cc411",
+            "id": "ed007ed2c004fa06",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://notas-dario.vercel.app/",
-                "title": "Home",
+                "url": "https://www.biblegateway.com/passage/?search=1%20tim%203%3A8&version=ARC",
+                "title": "1 tim 3:8 ARC - Da mesma sorte os diáconos sejam - Bible Gateway",
                 "mode": "webview"
               },
               "icon": "globe-2",
+              "title": "1 tim 3:8 ARC - Da mesma sorte os diáconos sejam - Bible Gateway"
+            }
+          },
+          {
+            "id": "f6de484b8c27dd42",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://duckduckgo.com/?q=como+aceder+%C3%A0+conta+google+no+obsidian+web+viewer%3F&ia=web",
+                "title": "como aceder à conta google no obsidian web viewer? at DuckDuckGo",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "como aceder à conta google no obsidian web viewer? at DuckDuckGo"
+            }
+          },
+          {
+            "id": "68031b9f83b21f59",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://duck.ai/chat",
+                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
+            }
+          },
+          {
+            "id": "ad1c0397bb64ca7f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.1"
+              },
+              "icon": "lucide-book-up",
+              "title": "Notas da versão 1.15.1"
+            }
+          },
+          {
+            "id": "36b3e6e6c1cc9a6a",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://obsidian.md/download?os=mac&arch=arm64",
+                "title": "Download - Obsidian",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Download - Obsidian"
+            }
+          },
+          {
+            "id": "d836df1acd8dd839",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
               "title": "Home"
             }
           },
           {
-            "id": "81ada27c6f88cf93",
+            "id": "ac96e6e940f7ab6f",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "split-diff-view",
               "state": {
-                "url": "https://docs.forestry.md/getting-started/03-note-settings/",
-                "title": "03 Note settings",
-                "mode": "webview"
+                "aFile": ".obsidian/plugins/obsidian-excalidraw-plugin/data.json",
+                "bFile": ".obsidian/plugins/obsidian-excalidraw-plugin/data.json",
+                "aRef": ""
               },
-              "icon": "globe-2",
-              "title": "03 Note settings"
-            }
-          },
-          {
-            "id": "d0673e00d02f49e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "O que te acontece quando morreres"
-            }
-          },
-          {
-            "id": "6a13aaa60e1172dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "guia-tmux-completo"
-            }
-          },
-          {
-            "id": "2f1c55e5fcb14dfd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
+              "icon": "diff",
+              "title": "Diff: data.json  (Working Tree)"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -246,7 +200,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Marcadores"
             }
           },
           {
@@ -256,14 +210,14 @@
               "type": "recent-files",
               "state": {},
               "icon": "clock",
-              "title": "Recent Files"
+              "title": "Recent files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 239.00260543823242
+    "width": 281
   },
   "right": {
     "id": "a359acdbbd8fb8e7",
@@ -272,7 +226,7 @@
       {
         "id": "66d2499bd7c7c2cf",
         "type": "tabs",
-        "dimension": 71.48760330578513,
+        "dimension": 51.864035087719294,
         "children": [
           {
             "id": "ca992fb3ee138cd9",
@@ -319,7 +273,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Etiquetas"
+              "title": "Tags"
             }
           },
           {
@@ -328,7 +282,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -399,7 +352,7 @@
       {
         "id": "aa213c339baded63",
         "type": "tabs",
-        "dimension": 28.512396694214875,
+        "dimension": 48.135964912280706,
         "children": [
           {
             "id": "4f23ffc45f683c25",
@@ -415,24 +368,10 @@
             "id": "c7bf261309fc083c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "09 - STATUS NOTES/Adult.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Adult"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização de diagrama de grafo"
             }
           }
         ],
@@ -440,13 +379,14 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295.4000244140625
+    "width": 337
   },
   "left-ribbon": {
     "hiddenItems": {
       "zk-prefixer:Crie uma nova nota única": false,
-      "obsidian-importer:Importar notas": false,
       "hearth:Open Hearth home": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
       "canvas:Criar novo Canvas": false,
       "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
@@ -460,51 +400,50 @@
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-importer:Importar notas": false
     }
   },
-  "active": "027f82d59f9cc411",
+  "active": "ac96e6e940f7ab6f",
   "lastOpenFiles": [
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 15-11-2026.md",
-    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 15-11-2026.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
-    "Home.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Reunião Zoom IQC - 15-11-2026.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "10 - TAGS/2026-11.md",
-    "07 - INDEXES/2026 - Atividades e Tarefas.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Script de migração do Joomla da versão 3 para a versão 5.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md",
     "10 - TAGS/2026-10.md",
+    "10 - TAGS/2026-09.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 15-11-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
     "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 15-11-2026.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Reasons To Rightly Divide – Part III.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types - which to use and when.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/List -  BibleContradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Introducing a New Book!.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/I tried the viral Linux distro that raised $18,700,000.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/How to Rightly Divide.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-mysql-phpmyadmin.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
+    "Site IQC/Tarefas",
+    "Site IQC",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/plugin.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.js",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/search/search.esm.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/whiteboard.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/sponge.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-yellow.png",
