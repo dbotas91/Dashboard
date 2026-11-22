@@ -27,6 +27,7 @@ kanban-plugin: board
 - [ ] [[Por que não sou ateu]]
 - [ ] [[Estímulos]]
 - [ ] [[O que te acontece quando morreres]]
+- [ ] [[José e o Egito]]
 
 
 ## A falar

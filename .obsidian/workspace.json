@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
+                "file": "03 - ROUGH NOTES (FLEETING ZETTEL)/Email learning and certification plan.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Build your optimal study environment"
+              "title": "Email learning and certification plan"
             }
           },
           {
@@ -87,14 +87,28 @@
             "id": "f6de484b8c27dd42",
             "type": "leaf",
             "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "03 - ROUGH NOTES (FLEETING ZETTEL)/Email learning and certification plan.md",
+                "bFile": "03 - ROUGH NOTES (FLEETING ZETTEL)/Email learning and certification plan.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Email learning and certification plan  (Working Tree)"
+            }
+          },
+          {
+            "id": "fffe86e5e374adc7",
+            "type": "leaf",
+            "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duckduckgo.com/?q=como+aceder+%C3%A0+conta+google+no+obsidian+web+viewer%3F&ia=web",
-                "title": "como aceder à conta google no obsidian web viewer? at DuckDuckGo",
+                "url": "https://aistudio.google.com/api-keys",
+                "title": "API keys | Google AI Studio",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "como aceder à conta google no obsidian web viewer? at DuckDuckGo"
+              "title": "API keys | Google AI Studio"
             }
           },
           {
@@ -103,24 +117,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://duck.ai/chat",
-                "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito.",
+                "url": "https://duck.ai/chat?chatID=c4824b21-a5d5-4770-8255-e53bee2db357",
+                "title": "Nariz sangrando bebê",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Duck.ai da DuckDuckGo. Chat privado de IA. Gratuito."
-            }
-          },
-          {
-            "id": "ad1c0397bb64ca7f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.15.1"
-              },
-              "icon": "lucide-book-up",
-              "title": "Notas da versão 1.15.1"
+              "title": "Nariz sangrando bebê"
             }
           },
           {
@@ -129,12 +131,12 @@
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://obsidian.md/download?os=mac&arch=arm64",
-                "title": "Download - Obsidian",
+                "url": "https://www.youtube.com/watch?v=WdTXjE_iQa0",
+                "title": "Wes Huff Scandal Goes Deeper Than You Think - YouTube",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Download - Obsidian"
+              "title": "Wes Huff Scandal Goes Deeper Than You Think - YouTube"
             }
           },
           {
@@ -148,30 +150,27 @@
             }
           },
           {
-            "id": "ac96e6e940f7ab6f",
+            "id": "f53e55e2e7fd7e67",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "Home.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "07 - INDEXES/Mensagens de Domingo.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false
+                  ]
                 }
               },
-              "icon": "lucide-file",
-              "title": "Home"
+              "icon": "lucide-trello",
+              "title": "Mensagens de Domingo"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -205,7 +204,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "?",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -213,7 +212,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Procurar"
             }
           },
           {
@@ -402,7 +401,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337
+    "width": 384.7073974609375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -429,34 +428,34 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "1d5f2945fcbaaa92",
+  "active": "f6de484b8c27dd42",
   "lastOpenFiles": [
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/José e o Egito.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
+    "00 - MAPS OF CONTENT/Livros.md",
+    "00 - MAPS OF CONTENT/Formação.md",
+    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-11-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 15-11-2026.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/202611221931.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/202611221933.md",
+    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
+    "02 - AREAS (PARA)/O meu currículo.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Email learning and certification plan.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "Home.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Meta's Crime Empire.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "10 - TAGS/2026-11.md",
     "10 - TAGS/2026-10.md",
     "10 - TAGS/2026-09.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 15-11-2026.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md",
-    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 15-11-2026.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/neovim.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Why I bought a $160 Mac Mini instead of a Raspberry Pi.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/The Key to Contradictions.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Reasons To Rightly Divide – Part III.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types - which to use and when.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/List -  BibleContradictions.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Introducing a New Book!.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/I tried the viral Linux distro that raised $18,700,000.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/How to Rightly Divide.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Bible Contradictions.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
     "Site IQC/Tarefas",
     "Site IQC",
