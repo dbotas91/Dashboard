@@ -1,0 +1,14 @@
+_Preso por ter cão e preso por não ter_ é uma expressão que ainda se utiliza muito hoje em dia. Ela pode parecer que faz algum sentido, até que alguém pense um pouco mais em todo o tema e se aperceba de que toda a ideia é um pouco estranha, quer dizer, porque razão seria alguém preso por não ter um canídeo? Ou pelo facto de o ter, se o pobre animal nunca tiver feito nada de errado? Não é uma ideia de fácil compreensão – ao seu verdadeiro significado, já lá iremos – mas existe uma pequena lenda que parece explicar a origem de toda a expressão.
+
+![Preso por ter cão e preso por não ter, origem e significado](https://mitologia.pt/wp-content/uploads/2026/06/Preso-por-ter-cao-e-preso-por-nao-ter.jpg)
+
+Conta-se que no tempo das Invasões Francesas foi imposta uma lei segundo a qual todos os moinhos nacionais tinham de ter um cão a guardá-los. A ideia seria, supostamente, a de garantir que ninguém andava a roubar as farinhas e que pagava a totalidade dos seus impostos.
+
+Um dia, em cumprimento dessa mesma lei, um determinado moleiro, cujo nome ou a localidade de residência já há muito foram esquecidos, obteve o seu cão, um belíssimo cão como o da imagem acima, com um nariz esbranquiçado. E tudo estava bem, mas quando os Franceses fizeram uma vistoria ao respectivo moinho, viram este cão assim mesmo, com o seu nariz branco, e supuseram que o animal andava a comer parte da farinha – e isto levou a que o seu dono fosse preso por algum tempo.
+
+Depois, ele acabou por ser libertado e decidiu livrar-se do tal cão, face aos problemas que este lhe tinha criado. Livrou-se do animal, como pretendia, mas foi novamente visitado pelos Franceses no mesmo dia – azar dos azares! – e levado para a prisão uma segunda vez, agora pelo facto de não ter o animal que a lei lhe exigia. E, face a uma tal estranheza, terá então sido ele o primeiro a dizer “_fui preso por ter cão e preso por não ter!_“
+
+Terá sido esta verdadeira origem da expressão “preso por ter cão e preso por não ter cão”? Será que há mesmo uma verdade histórica por detrás do que aqui considerámos pura lenda? Não sabemos, e seria agora muito difícil conseguir descobri-lo com 100% de certezas, mas o seu verdadeiro significado é compreensível – as leis devem ser criadas de uma forma lógica, com limites que se possam perceber devidamente, sob pena de acontecer às pessoas o mesmo que teve lugar com o moleiro de toda esta história. Uma pessoa não pode – ou, pelo menos, teoricamente não deveria poder – ser culpada por um mesmo acto e pelo seu contrário, e é a isso que se refere a expressão a que dedicámos as linhas de hoje!
+
+##### Gostas de mitos, lendas, livros e curiosidades antigas?  
+Subscreve grátis e recebe os nossos novos artigos por e-mail!
