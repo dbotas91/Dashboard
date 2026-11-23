@@ -177,10 +177,24 @@
             "id": "d836df1acd8dd839",
             "type": "leaf",
             "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
+              "type": "markdown",
+              "state": {
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_playlist_PLKunsVYqLCvc_todos_por_mes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "catalogo_playlist_PLKunsVYqLCvc_todos_por_mes"
             }
           },
           {
@@ -204,7 +218,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -462,16 +476,18 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "f6de484b8c27dd42",
+  "active": "d836df1acd8dd839",
   "lastOpenFiles": [
+    "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_iqcmultimedia_todos_por_mes.md",
+    "07 - INDEXES/Mensagens de Domingo.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_playlist_PLKunsVYqLCvc_todos_por_mes.md",
+    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/“Preso por ter cão e preso por não ter”, origem e significado - Mitologia em Português.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/José e o Egito.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "00 - MAPS OF CONTENT/Livros.md",
     "00 - MAPS OF CONTENT/Formação.md",
     "00 - MAPS OF CONTENT/Atividades e tarefas.md",
@@ -488,8 +504,6 @@
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Meta's Crime Empire.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
-    "10 - TAGS/2026-11.md",
-    "10 - TAGS/2026-10.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
     "Site IQC/Tarefas",
     "Site IQC",
