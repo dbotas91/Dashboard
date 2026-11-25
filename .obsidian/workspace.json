@@ -216,9 +216,23 @@
               "icon": "lucide-trello",
               "title": "Mensagens de Domingo"
             }
+          },
+          {
+            "id": "3b1e5251a2fa83f5",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "03 - ROUGH NOTES (FLEETING ZETTEL)/Email learning and certification plan.md",
+                "bFile": "03 - ROUGH NOTES (FLEETING ZETTEL)/Email learning and certification plan.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Email learning and certification plan  (Working Tree)"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -476,11 +490,15 @@
       "obsidian-importer:Importar notas": false
     }
   },
-  "active": "d836df1acd8dd839",
+  "active": "3b1e5251a2fa83f5",
   "lastOpenFiles": [
-    "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_iqcmultimedia_todos_por_mes.md",
+    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Glorificar a Deus no corpo.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Meta's Crime Empire.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Email learning and certification plan.md",
     "07 - INDEXES/Mensagens de Domingo.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_playlist_PLKunsVYqLCvc_todos_por_mes.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_iqcmultimedia_todos_por_mes.md",
     "00 - MAPS OF CONTENT/Mensagens Escritas.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/“Preso por ter cão e preso por não ter”, origem e significado - Mitologia em Português.md",
@@ -496,14 +514,10 @@
     "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/202611221931.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/202611221933.md",
-    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
     "02 - AREAS (PARA)/O meu currículo.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Email learning and certification plan.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
     "Home.md",
     "03 - ROUGH NOTES (FLEETING ZETTEL)/Baroque Forms Kandinsky.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Meta's Crime Empire.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
     "Site IQC/Tarefas",
     "Site IQC",
