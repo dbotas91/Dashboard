@@ -22,3 +22,5 @@ Tags:
 # References
 
 [Meta’s Empire Crime](https://www.youtube.com/watch?v=z8wdS7TTw2w)
+[Meta is earning fortune deluge fraudulent ADS document show](https://www.reuters.com/investigations/meta-is-earning-fortune-deluge-fraudulent-ads-documents-show-2025-11-06/)
+[Meta making billions from scam ADS](https://www.abc.net.au/news/2025-11-07/meta-making-billions-from-scam-ads/105983808)

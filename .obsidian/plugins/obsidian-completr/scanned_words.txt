@@ -108688,3 +108688,6 @@ Invisível
 DOMINGO
 Conferencia
 Fev
+fortune
+deluge
+ADS
