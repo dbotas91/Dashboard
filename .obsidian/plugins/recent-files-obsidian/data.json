@@ -1,8 +1,72 @@
 {
   "recentFiles": [
     {
+      "basename": "guia-joomla-docker",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md"
+    },
+    {
       "basename": "guia-tmux-completo",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md"
+    },
+    {
+      "basename": "Guia de atualização do Joomla no ambiente local",
+      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
+    },
+    {
+      "basename": "Adult",
+      "path": "09 - STATUS NOTES/Adult.md"
+    },
+    {
+      "basename": "Rascunhos",
+      "path": "11 - TEMPLATES/Rascunhos.md"
+    },
+    {
+      "basename": "Estudos Bíblicos",
+      "path": "11 - TEMPLATES/Estudos Bíblicos.md"
+    },
+    {
+      "basename": "Meeting Notes",
+      "path": "11 - TEMPLATES/Meeting Notes.md"
+    },
+    {
+      "basename": "Message Note",
+      "path": "11 - TEMPLATES/Message Note.md"
+    },
+    {
+      "basename": "Index Note",
+      "path": "11 - TEMPLATES/Index Note.md"
+    },
+    {
+      "basename": "b545f302-6e3b-472b-8110-493d34c52c1e_Secularismo_e_a_maldio_das_naes",
+      "path": "08 - ATTACHMENTS/b545f302-6e3b-472b-8110-493d34c52c1e_Secularismo_e_a_maldio_das_naes.pdf"
+    },
+    {
+      "basename": "2099120-ffffff",
+      "path": "08 - ATTACHMENTS/2099120-ffffff.svg"
+    },
+    {
+      "basename": "160ae410-5bcf-4826-8309-89a6b553f9eb---ca3pia-AzG7OMGx6nH9M6Jd",
+      "path": "08 - ATTACHMENTS/160ae410-5bcf-4826-8309-89a6b553f9eb---ca3pia-AzG7OMGx6nH9M6Jd.avif"
+    },
+    {
+      "basename": "06 - Tratado De Tordesilhas",
+      "path": "08 - ATTACHMENTS/06 - Tratado De Tordesilhas.pdf"
+    },
+    {
+      "basename": "“Preso por ter cão e preso por não ter”, origem e significado - Mitologia em Português",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/“Preso por ter cão e preso por não ter”, origem e significado - Mitologia em Português.md"
+    },
+    {
+      "basename": "Edição de Gifs",
+      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md"
+    },
+    {
+      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
+      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
+    },
+    {
+      "basename": "O que te acontece quando morreres",
+      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md"
     },
     {
       "basename": "Guia Pratico LazyVim IDE",
@@ -27,10 +91,6 @@
     {
       "basename": "Meta's Crime Empire",
       "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Meta's Crime Empire.md"
-    },
-    {
-      "basename": "“Preso por ter cão e preso por não ter”, origem e significado - Mitologia em Português",
-      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/“Preso por ter cão e preso por não ter”, origem e significado - Mitologia em Português.md"
     },
     {
       "basename": "Obsidian digital garden setup",
@@ -63,10 +123,6 @@
     {
       "basename": "Estímulos",
       "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md"
-    },
-    {
-      "basename": "O que te acontece quando morreres",
-      "path": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md"
     },
     {
       "basename": "Livros",
@@ -109,24 +165,12 @@
       "path": "03 - ROUGH NOTES (FLEETING ZETTEL)/Build your optimal study environment.md"
     },
     {
-      "basename": "Ceia do Senhor, Oração e Estudo Bíblico",
-      "path": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md"
-    },
-    {
       "basename": "Reunião Zoom IQC - 14-06-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md"
     },
     {
       "basename": "Ceia e ED - 15-11-2026",
       "path": "06 - DAILY-WEEKLY TASKS/Ceia e ED - 15-11-2026.md"
-    },
-    {
-      "basename": "guia-joomla-docker",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md"
-    },
-    {
-      "basename": "Adult",
-      "path": "09 - STATUS NOTES/Adult.md"
     },
     {
       "basename": "guia-mysql-phpmyadmin",
@@ -139,66 +183,6 @@
     {
       "basename": "Criação da Estrutura de menus e categorias para Joomla 6",
       "path": "01 - PROJECTS (PARA)/IQC Maintenance/Criação da Estrutura de menus e categorias para Joomla 6.md"
-    },
-    {
-      "basename": "Guia de atualização do Joomla no ambiente local",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md"
-    },
-    {
-      "basename": "2026-11",
-      "path": "10 - TAGS/2026-11.md"
-    },
-    {
-      "basename": "Edição de Gifs",
-      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md"
-    },
-    {
-      "basename": "Ceia e ED - 20-09-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Ceia e ED - 20-09-2026.md"
-    },
-    {
-      "basename": "Quando Deus não alivia a dor",
-      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Quando Deus não alivia a dor.md"
-    },
-    {
-      "basename": "Auditoria_IQC_MoonSec",
-      "path": "01 - PROJECTS (PARA)/IQC Maintenance/Auditoria_IQC_MoonSec.md"
-    },
-    {
-      "basename": "I tried the viral Linux distro that raised $18,700,000",
-      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/I tried the viral Linux distro that raised $18,700,000.md"
-    },
-    {
-      "basename": "0. Read me - Tasks",
-      "path": "06 - DAILY-WEEKLY TASKS/0. Read me - Tasks.md"
-    },
-    {
-      "basename": "Reunião Zoom IQC - 04-10-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 04-10-2026.md"
-    },
-    {
-      "basename": "2026-10",
-      "path": "10 - TAGS/2026-10.md"
-    },
-    {
-      "basename": "Please stop using your ISP's DNS",
-      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Please stop using your ISP's DNS.md"
-    },
-    {
-      "basename": "Performance Test Types - which to use and when",
-      "path": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Performance Test Types - which to use and when.md"
-    },
-    {
-      "basename": "Reunião Zoom IQC - 06-09-2026",
-      "path": "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 06-09-2026.md"
-    },
-    {
-      "basename": "2025 - Atividades e Tarefas",
-      "path": "07 - INDEXES/2025 - Atividades e Tarefas.md"
-    },
-    {
-      "basename": "2026 - Atividades e Tarefas",
-      "path": "07 - INDEXES/2026 - Atividades e Tarefas.md"
     }
   ],
   "omittedPaths": [],

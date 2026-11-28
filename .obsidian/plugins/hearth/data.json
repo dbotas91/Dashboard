@@ -17,6 +17,7 @@
   "searchInstantAnswers": true,
   "hiddenInstantAnswers": [],
   "searchEngine": "builtin",
+  "numberFormat": ".",
   "webSearchEngine": "duckduckgo",
   "backgroundKind": "default",
   "backgroundValue": "",
@@ -556,8 +557,10 @@
   "operonWrites": false,
   "maxWidth": 1600,
   "fullWidth": false,
-  "lastSeenVersion": "3.9.0",
-  "rssRead": {},
+  "lastSeenVersion": "3.10.0",
+  "rssRead": {
+    "lfx1tdsi5f": 20785
+  },
   "setupStatus": "done",
   "authorKey": "",
   "authorKeySaved": false,

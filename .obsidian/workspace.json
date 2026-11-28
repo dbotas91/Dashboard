@@ -4,26 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a13cf328d71ddc47",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "1d5f2945fcbaaa92",
-            "type": "leaf",
-            "state": {
-              "type": "hearth-home-view",
-              "state": {},
-              "icon": "hearth-crystal-themed",
-              "title": "Home"
-            }
-          },
-          {
-            "id": "6cdfc1d4bc87e314",
+            "id": "1f40c708c0856b57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -38,91 +28,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Por que dividir a Bíblia corretamente"
+              "title": "Guia de atualização do Joomla no ambiente local"
             }
           },
           {
-            "id": "5932a97b4de7989d",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://iqc.pt/administrator/index.php?option=com_finder&view=index",
-                "title": "IQC - Administração",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "IQC - Administração"
-            }
-          },
-          {
-            "id": "ed007ed2c004fa06",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://www.biblegateway.com/passage/?search=1%20tim%203%3A10&version=ARC",
-                "title": "1 tim 3:10 ARC - E também estes sejam primeiro - Bible Gateway",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "1 tim 3:10 ARC - E também estes sejam primeiro - Bible Gateway"
-            }
-          },
-          {
-            "id": "f6de484b8c27dd42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Mensagens Escritas"
-            }
-          },
-          {
-            "id": "fffe86e5e374adc7",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://accounts.google.com/v3/signin/identifier?continue=https://aistudio.google.com/api-keys&followup=https://aistudio.google.com/api-keys&ltmpl=aistudio&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-904937184:1795793543515492",
-                "title": "Iniciar sessão – Contas Google",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Iniciar sessão – Contas Google"
-            }
-          },
-          {
-            "id": "68031b9f83b21f59",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://duck.ai/chat?chatID=c4824b21-a5d5-4770-8255-e53bee2db357",
-                "title": "Nariz sangrando bebê",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Nariz sangrando bebê"
-            }
-          },
-          {
-            "id": "36b3e6e6c1cc9a6a",
+            "id": "4d5b759df54e36bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,21 +56,45 @@
             }
           },
           {
-            "id": "94fd94b3ff83546e",
+            "id": "e66dd6024175e68f",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://github.com/ValveSoftware/SteamOS/issues/3075",
-                "title": "Legion Go S: \"Slow Charger\" dialog repeatedly appears while charging normally with 65W/100W chargers (SteamOS 3.9.5) · Issue #3075 · ValveSoftware/SteamOS",
-                "mode": "webview"
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "globe-2",
-              "title": "Legion Go S: \"Slow Charger\" dialog repeatedly appears while charging normally with 65W/100W chargers (SteamOS 3.9.5) · Issue #3075 · ValveSoftware/SteamOS"
+              "icon": "lucide-file",
+              "title": "guia-joomla-docker"
             }
           },
           {
-            "id": "4ec4f5e63c18a499",
+            "id": "b493a33f2ac7d56b",
+            "type": "leaf",
+            "state": {
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
+                "bFile": "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Edição de Gifs  (Working Tree)"
+            }
+          },
+          {
+            "id": "eeff0b86dd1cce69",
             "type": "leaf",
             "state": {
               "type": "webviewer",
@@ -174,21 +108,199 @@
             }
           },
           {
-            "id": "a717298acffe3003",
+            "id": "027f82d59f9cc411",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "guia-tmux-completo"
+            }
+          },
+          {
+            "id": "b1ba80b92ffee0c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "11 - TEMPLATES/Estudos Bíblicos.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Estudos Bíblicos"
+            }
+          },
+          {
+            "id": "5c5cbdfb63f31b66",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "11 - TEMPLATES/Rascunhos.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Rascunhos"
+            }
+          },
+          {
+            "id": "412c167942a76b3f",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "930f56d96d657b54",
+            "type": "leaf",
+            "state": {
+              "type": "hearth-home-view",
+              "state": {},
+              "icon": "hearth-crystal-themed",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "7fa29687d32e9cbc",
             "type": "leaf",
             "state": {
               "type": "webviewer",
               "state": {
-                "url": "https://gemini.google.com/app",
-                "title": "Google Gemini",
+                "url": "https://www.howtogeek.com/6-things-linux-does-better-than-windows-11-out-of-the-box/",
+                "title": "6 things Linux does better than Windows 11 out of the box",
                 "mode": "webview"
               },
               "icon": "globe-2",
-              "title": "Google Gemini"
+              "title": "6 things Linux does better than Windows 11 out of the box"
+            }
+          },
+          {
+            "id": "81ada27c6f88cf93",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://docs.forestry.md/getting-started/03-note-settings/",
+                "title": "03 Note settings",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "03 Note settings"
+            }
+          },
+          {
+            "id": "d0673e00d02f49e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "O que te acontece quando morreres"
+            }
+          },
+          {
+            "id": "6a13aaa60e1172dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "guia-tmux-completo"
+            }
+          },
+          {
+            "id": "2f1c55e5fcb14dfd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Ceia do Senhor, Oração e Estudo Bíblico"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -222,7 +334,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "?",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -230,7 +342,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Procurar"
+              "title": "Search"
             }
           },
           {
@@ -240,7 +352,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Marcadores"
+              "title": "Bookmarks"
             }
           },
           {
@@ -250,14 +362,14 @@
               "type": "recent-files",
               "state": {},
               "icon": "clock",
-              "title": "Recent files"
+              "title": "Recent Files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 281,
+    "width": 252.20001220703125,
     "collapsed": true
   },
   "right": {
@@ -267,7 +379,7 @@
       {
         "id": "66d2499bd7c7c2cf",
         "type": "tabs",
-        "dimension": 51.864035087719294,
+        "dimension": 59.72222222222222,
         "children": [
           {
             "id": "ca992fb3ee138cd9",
@@ -314,7 +426,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Etiquetas"
             }
           },
           {
@@ -323,6 +435,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Home.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -342,7 +455,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "Todas as propriedades"
+              "title": "All properties"
             }
           },
           {
@@ -393,7 +506,7 @@
       {
         "id": "aa213c339baded63",
         "type": "tabs",
-        "dimension": 48.135964912280706,
+        "dimension": 40.27777777777778,
         "children": [
           {
             "id": "4f23ffc45f683c25",
@@ -401,30 +514,45 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
             "id": "c7bf261309fc083c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização de diagrama de grafo"
+              "type": "markdown",
+              "state": {
+                "file": "09 - STATUS NOTES/Adult.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Adult"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 384.7073974609375
+    "width": 290.5999755859375
   },
   "left-ribbon": {
     "hiddenItems": {
       "zk-prefixer:Crie uma nova nota única": false,
+      "obsidian-importer:Importar notas": false,
+      "hearth:Open Hearth home": false,
       "canvas:Criar novo Canvas": false,
       "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
@@ -437,49 +565,50 @@
       "templater-obsidian:Templater": false,
       "quickadd:QuickAdd": false,
       "smart-random-note:Open Random Note from Search": false,
-      "obsidian-importer:Importar notas": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-kanban:Create new board": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false,
-      "hearth:Open Hearth home": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "36b3e6e6c1cc9a6a",
+  "active": "b493a33f2ac7d56b",
   "lastOpenFiles": [
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Sem título.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/guia-joomla-docker.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/guia-tmux-completo.md",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Guia Pratico LazyVim IDE.md",
-    "00 - MAPS OF CONTENT/Mensagens Escritas.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Por que dividir a Bíblia corretamente.md",
-    "07 - INDEXES/Mensagens de Domingo.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_playlist_PLKunsVYqLCvc_todos_por_mes.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Meta's Crime Empire.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/Guia de atualização do Joomla no ambiente local.md",
+    "09 - STATUS NOTES/Adult.md",
+    "11 - TEMPLATES/Rascunhos.md",
+    "11 - TEMPLATES/Estudos Bíblicos.md",
+    "11 - TEMPLATES/Meeting Notes.md",
+    "11 - TEMPLATES/Message Note.md",
+    "11 - TEMPLATES/Index Note.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Sem título 1.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Sem título.canvas",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/202611281734.md",
+    "08 - ATTACHMENTS/b545f302-6e3b-472b-8110-493d34c52c1e_Secularismo_e_a_maldio_das_naes.pdf",
+    "08 - ATTACHMENTS/2099120-ffffff.svg",
+    "08 - ATTACHMENTS/160ae410-5bcf-4826-8309-89a6b553f9eb---ca3pia-AzG7OMGx6nH9M6Jd.avif",
+    "08 - ATTACHMENTS/06 - Tratado De Tordesilhas.pdf",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/“Preso por ter cão e preso por não ter”, origem e significado - Mitologia em Português.md",
-    "01 - PROJECTS (PARA)/Obsidian digital garden setup.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/Glorificar a Deus no corpo.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Email learning and certification plan.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_iqcmultimedia_todos_por_mes.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/conversa.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/José e o Egito.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/As promessas de Deus para nós hoje.md",
-    "05 - MAIN NOTES (PERMANENT ZETTEL)/Estímulos.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Edição de Gifs.md",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web/Dominios.pt, Alojamento Web e Cloud Server.md",
+    "07 - INDEXES/Ceia do Senhor, Oração e Estudo Bíblico.md",
     "05 - MAIN NOTES (PERMANENT ZETTEL)/O que te acontece quando morreres.md",
-    "00 - MAPS OF CONTENT/Livros.md",
-    "00 - MAPS OF CONTENT/Formação.md",
-    "00 - MAPS OF CONTENT/Atividades e tarefas.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 22-11-2026.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/José e o Egito.md",
+    "05 - MAIN NOTES (PERMANENT ZETTEL)/Email learning and certification plan.md",
+    "03 - ROUGH NOTES (FLEETING ZETTEL)/Meta's Crime Empire.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_playlist_PLKunsVYqLCvc_todos_por_mes.md",
+    "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_iqcmultimedia_todos_por_mes.md",
     "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 15-11-2026.md",
-    "01 - PROJECTS (PARA)/IQC Maintenance/Tarefas no site IQC.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/202611221931.md",
-    "03 - ROUGH NOTES (FLEETING ZETTEL)/202611221933.md",
-    "02 - AREAS (PARA)/O meu currículo.md",
+    "06 - DAILY-WEEKLY TASKS/Reunião Zoom IQC - 14-06-2026.md",
+    "06 - DAILY-WEEKLY TASKS/Ceia e ED - 15-11-2026.md",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Articles/Dario Amodei's Predictions About AI Replacing Programming Work",
-    "Site IQC/Tarefas",
-    "Site IQC",
-    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Mestrado",
+    "04 - RESOURCES MATERIAL (PARA ZETTEL)/Bookmarks Web",
     "04 - RESOURCES MATERIAL (PARA ZETTEL)/Elearning/Descobrindo o porquê da fé",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.js",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/zoom/zoom.esm.js",
@@ -493,8 +622,6 @@
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-purple.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-orange.png",
     "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-green.png",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/chalk-blue.png",
-    "02 - AREAS (PARA)/Presentations/A tua morte é um dever! - apresentação/plugin/chalkboard/img/boardmarker-yellow.png",
     "00 - MAPS OF CONTENT/DashBoard.canvas",
     "Untitled.canvas"
   ]
