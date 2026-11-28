@@ -287,8 +287,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "recent-files"
+              "icon": "clock",
+              "title": "Recent files"
             }
           }
         ]
@@ -379,7 +379,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "Todas as propriedades"
             }
           },
           {
@@ -484,7 +484,7 @@
       "hearth:Open Hearth home": false
     }
   },
-  "active": "36b3e6e6c1cc9a6a",
+  "active": "c4892fd3bf0af16c",
   "lastOpenFiles": [
     "07 - INDEXES/Mensagens de Domingo.md",
     "01 - PROJECTS (PARA)/IQC Maintenance/catalogo_playlist_PLKunsVYqLCvc_todos_por_mes.md",
